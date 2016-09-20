@@ -28,6 +28,7 @@ class AddTest : public::Test
 TEST_F(AddTest, from_roman){
    string num   = "MDCC"; /* 1700 */
    string num1  = "LXXIX"; /* 79 */
+   string numex  = "LXXiX"; /* 79 */
    string num2  = "DCCCXCIX"; /* 899 */
    //string momo = "MDXLIX";
    string num3  = "MCMXLIX"; /* 1949 */
@@ -35,6 +36,7 @@ TEST_F(AddTest, from_roman){
    string num5  = "MCMXCIX"; /* 1999 */
    string num6  = "MMDCCCLXXXVIII"; /* 2888 */
    string num7  = "MMCMXCIX"; /* 2999 */
+   string num8  = "mmcmxcix"; /* 2999 minusculo*/
    string emp   = ""; /* string vazia */
    /* Strings com numeros ou conteudo invalido */
    string wrng  = "VV";
@@ -43,7 +45,13 @@ TEST_F(AddTest, from_roman){
    string wrng4 = "DD";
    string wrng5 = "iiiii";
    string wrng6 = "ll";
-   string wrng7 = "iiv";
+   string wrng7 = "IXL";
+   string wrng8 = "IIV";
+   string wrng9 = "XXL";
+   string wrng10 = "XXC";
+   string wrng11 = "CCD";
+   string wrng12 = "CCM";
+   string wrng13 = "ixl";
    string err   = "MCMXDXCIX";
    string err2  = "MCMXDXCIX";
    string err3  = "21421";
@@ -56,12 +64,14 @@ TEST_F(AddTest, from_roman){
    /* Testes */
    EXPECT_EQ(1700, addition.from_roman(num));
    EXPECT_EQ(79, addition.from_roman(num1));
+   EXPECT_EQ(79, addition.from_roman(numex));
    EXPECT_EQ(899, addition.from_roman(num2));
    EXPECT_EQ(1949, addition.from_roman(num3));
    EXPECT_EQ(1984, addition.from_roman(num4));
    EXPECT_EQ(1999, addition.from_roman(num5));
    EXPECT_EQ(2888, addition.from_roman(num6));
    EXPECT_EQ(2999, addition.from_roman(num7));
+   EXPECT_EQ(2999, addition.from_roman(num8));
    EXPECT_EQ(-1, addition.from_roman(emp));
    EXPECT_EQ(-1, addition.from_roman(wrng));
    EXPECT_EQ(-1, addition.from_roman(wrng2));
@@ -70,6 +80,12 @@ TEST_F(AddTest, from_roman){
    EXPECT_EQ(-1, addition.from_roman(wrng5));
    EXPECT_EQ(-1, addition.from_roman(wrng6));
    EXPECT_EQ(-1, addition.from_roman(wrng7));
+   EXPECT_EQ(-1, addition.from_roman(wrng8));
+   EXPECT_EQ(-1, addition.from_roman(wrng9));
+   EXPECT_EQ(-1, addition.from_roman(wrng10));
+   EXPECT_EQ(-1, addition.from_roman(wrng11));
+   EXPECT_EQ(-1, addition.from_roman(wrng12));
+   EXPECT_EQ(-1, addition.from_roman(wrng13));
    EXPECT_EQ(-1, addition.from_roman(err));
    EXPECT_EQ(-1, addition.from_roman(err2));
    EXPECT_EQ(-1, addition.from_roman(err3));

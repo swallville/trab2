@@ -28,6 +28,13 @@ int Addition::value(char roman)
         case 'C':return 100;
         case 'D':return 500;
         case 'M':return 1000;
+        case 'i':return 1;
+        case 'v':return 5;
+        case 'x':return 10;
+        case 'l':return 50;
+        case 'c':return 100;
+        case 'd':return 500;
+        case 'm':return 1000;
             
         default: return 0;  /* Se o caracter nao for valido */
     }
@@ -48,6 +55,7 @@ int Addition::from_roman(const string& input)
     char prev = input[input.length() - 1];
     char aux;
     string result = "";
+    string result_prev = "";
     
     if ((value(prev) < 1) || ((input.length() - 1) > 30) || ((input.length() - 1) < 1)) {
         return -1;
@@ -78,16 +86,14 @@ int Addition::from_roman(const string& input)
         {
             return -1;
         }
-        
-        
         /* Verifica com o auxilio de it_contains se
          a sequencia de numeros romanos desejada existe
          */
         if(value(input[i]) < value(prev)) {
-            aux = input[i];
+            aux = toupper(input[i]);
             result += aux;
-            result += prev;
-            
+            result += toupper(prev);
+            result_prev = result;
             if (((it_contains(result)) == false)) {
                 return -1;
             }
@@ -119,6 +125,11 @@ int Addition::from_roman(const string& input)
             }
             prev = input[i];
         }
+        
+        if ((it_contains(result_prev) == true) && value(input[i - 1]) < sum) {
+            return -1;
+        }
+        result_prev = "";
     }
     /* Retorna -1 se a soma for maior que 3000, a soma do contrario */
     return (sum > 3000 ? -1 : sum);
@@ -144,6 +155,12 @@ bool Addition::it_contains (string input)
         {40, "XL"},
         {9, "IX"},
         {4, "IV"},
+        {900, "cm"},
+        {400, "cd"},
+        {90, "xc"},
+        {40, "xl"},
+        {9, "ix"},
+        {4, "iv"},
         {0, NULL} };
 
     for (romandata_t const* current = romandata; current->numeral != NULL; ++current)
