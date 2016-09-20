@@ -1,0 +1,7 @@
+* ac77fea - lukas, 59 seconds ago : Editando README.txt
+* c04a543 - lukas, 3 minutes ago : Verificando virtualenv do projeto, adicionando makefile e verificado funcionamento do gtest, gconv e cppcheck
+* 762d76a - lukas, 4 minutes ago : Adicionando .cpp com as funcoes do programa
+* fae8630 - lukas, 5 minutes ago : Adicionando testes para func. auxiliar que tranforma um int para uma string corresponde em romano
+* eac38cf - lukas, 7 minutes ago : Versionando: Adicionando testes para verificar casos de erro de string de numero romano: string vazia, num nao existente, caracteres invalidos, mais que 30 chars
+* 5891140 - lukas, 10 minutes ago : Adicionando testes para funcao from_roman: se a string romana devolve o numero em int correto
+* 2cbe5c8 - lukas, 13 minutes ago : Setando Projeto
