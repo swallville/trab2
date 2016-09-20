@@ -1,0 +1,113 @@
+commit a5f0dc547a0ae4c2c54efd7b05d5660f4c84289c
+Author: lukas <unlisislukasferreira@hotmail.com>
+Date:   Tue Sep 20 01:34:02 2016 -0300
+
+    Editando log.txt
+
+commit 24bd7c8f3a9b6200571c1c7fc7e5950d189decc3
+Author: lukas <unlisislukasferreira@hotmail.com>
+Date:   Tue Sep 20 01:33:02 2016 -0300
+
+    Adicionando comentarios nos testes
+
+commit 37f305aeb2eef4c47891fa1612fb6a6e4203410e
+Author: Lukas Ferreira Machado <unlisislukasferreira@hotmail.com>
+Date:   Tue Sep 20 01:28:39 2016 -0300
+
+    Update README.md
+
+commit 644ffb8468c66bc16c410b671425661128e8590d
+Author: Lukas Ferreira Machado <unlisislukasferreira@hotmail.com>
+Date:   Tue Sep 20 01:26:49 2016 -0300
+
+    Update README.md
+
+commit 49208405760c86aecabb652bf5391a3f99bfb2ec
+Author: Lukas Ferreira Machado <unlisislukasferreira@hotmail.com>
+Date:   Tue Sep 20 01:06:41 2016 -0300
+
+    Update README.md
+
+commit 4e4f7812b5528ba1ad66add303e0b07f55d665d3
+Author: Lukas Ferreira Machado <unlisislukasferreira@hotmail.com>
+Date:   Tue Sep 20 01:05:20 2016 -0300
+
+    Update README.md
+
+commit 112720081cf6a630d0987a03bc9a675c1d1c5596
+Author: Lukas Ferreira Machado <unlisislukasferreira@hotmail.com>
+Date:   Tue Sep 20 01:02:21 2016 -0300
+
+    Update README.md
+
+commit df89e6c978eb51c9c250a84477eec70b30534dd1
+Author: lukas <unlisislukasferreira@hotmail.com>
+Date:   Tue Sep 20 00:58:05 2016 -0300
+
+    Adicionando README.md
+
+commit 04e22bc851c8c9c0e7593f7cd207897e65e5e49e
+Author: lukas <unlisislukasferreira@hotmail.com>
+Date:   Tue Sep 20 00:56:39 2016 -0300
+
+    Editando log.txt
+
+commit 994a1d4663584541cba1b1aa43a5e3208ba980e0
+Author: lukas <unlisislukasferreira@hotmail.com>
+Date:   Tue Sep 20 00:55:59 2016 -0300
+
+    Adicinando modulo de teste para funcao it_contains e reducao de codigo em funcs.cpp
+
+commit 7f6e408d7f87b3feac06a47191e30dbea599f5ed
+Author: lukas <unlisislukasferreira@hotmail.com>
+Date:   Tue Sep 20 00:43:54 2016 -0300
+
+    Adicionando arquivos intermediarios de execucao do programa: *.o, *.gcda, *.gcov
+
+commit 602c393efdaf1bc5164e75933bb676595a703dca
+Author: lukas <unlisislukasferreira@hotmail.com>
+Date:   Tue Sep 20 00:41:04 2016 -0300
+
+    Adicionando log.txt
+
+commit ac77fea0c94da73b0f5c950a589358ef93df714d
+Author: lukas <unlisislukasferreira@hotmail.com>
+Date:   Tue Sep 20 00:39:16 2016 -0300
+
+    Editando README.txt
+
+commit c04a54369fe53998b295b3ecb5f3eca454d2c3f8
+Author: lukas <unlisislukasferreira@hotmail.com>
+Date:   Tue Sep 20 00:37:43 2016 -0300
+
+    Verificando virtualenv do projeto, adicionando makefile e verificado funcionamento do gtest, gconv e cppcheck
+
+commit 762d76a25d7ec9bbb53915fbe1fdd5aa61d987aa
+Author: lukas <unlisislukasferreira@hotmail.com>
+Date:   Tue Sep 20 00:35:47 2016 -0300
+
+    Adicionando .cpp com as funcoes do programa
+
+commit fae863017003b53246ee4e4a0b8f644b6e6817a2
+Author: lukas <unlisislukasferreira@hotmail.com>
+Date:   Tue Sep 20 00:34:50 2016 -0300
+
+    Adicionando testes para func. auxiliar que tranforma um int para uma string corresponde em romano
+
+commit eac38cfb856fc2a3bf0496e565533daa7aa66e6b
+Author: lukas <unlisislukasferreira@hotmail.com>
+Date:   Tue Sep 20 00:33:37 2016 -0300
+
+    Versionando: Adicionando testes para verificar casos de erro de string de numero romano: string vazia, num nao existente, caracteres invalidos, mais que 30 chars
+
+commit 58911406584ff89295523538f6c3e262798a203c
+Author: lukas <unlisislukasferreira@hotmail.com>
+Date:   Tue Sep 20 00:30:44 2016 -0300
+
+    Adicionando testes para funcao from_roman: se a string romana devolve o numero em int correto
+
+commit 2cbe5c8c85154e43789c94ed083bfee421edcf24
+Author: lukas <unlisislukasferreira@hotmail.com>
+Date:   Tue Sep 20 00:27:36 2016 -0300
+
+    Setando Projeto
