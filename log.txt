@@ -1,19 +1,25 @@
-* a5f0dc5 - lukas, 42 seconds ago : Editando log.txt
-* 24bd7c8 - lukas, 2 minutes ago : Adicionando comentarios nos testes
-* 37f305a - Lukas Ferreira Machado, 6 minutes ago : Update README.md
-* 644ffb8 - Lukas Ferreira Machado, 8 minutes ago : Update README.md
-* 4920840 - Lukas Ferreira Machado, 28 minutes ago : Update README.md
-* 4e4f781 - Lukas Ferreira Machado, 29 minutes ago : Update README.md
-* 1127200 - Lukas Ferreira Machado, 32 minutes ago : Update README.md
-* df89e6c - lukas, 37 minutes ago : Adicionando README.md
-* 04e22bc - lukas, 38 minutes ago : Editando log.txt
-* 994a1d4 - lukas, 39 minutes ago : Adicinando modulo de teste para funcao it_contains e reducao de codigo em funcs.cpp
-* 7f6e408 - lukas, 51 minutes ago : Adicionando arquivos intermediarios de execucao do programa: *.o, *.gcda, *.gcov
-* 602c393 - lukas, 54 minutes ago : Adicionando log.txt
-* ac77fea - lukas, 55 minutes ago : Editando README.txt
-* c04a543 - lukas, 57 minutes ago : Verificando virtualenv do projeto, adicionando makefile e verificado funcionamento do gtest, gconv e cppcheck
-* 762d76a - lukas, 59 minutes ago : Adicionando .cpp com as funcoes do programa
-* fae8630 - lukas, 60 minutes ago : Adicionando testes para func. auxiliar que tranforma um int para uma string corresponde em romano
-* eac38cf - lukas, 61 minutes ago : Versionando: Adicionando testes para verificar casos de erro de string de numero romano: string vazia, num nao existente, caracteres invalidos, mais que 30 chars
-* 5891140 - lukas, 64 minutes ago : Adicionando testes para funcao from_roman: se a string romana devolve o numero em int correto
-* 2cbe5c8 - lukas, 67 minutes ago : Setando Projeto
+* e50832f - lukas, 5 minutes ago : Corrigido bugs no programa e adicionada mais testes para verificar erros
+*   fd02b93 - lukas, 11 hours ago : Merge branch 'master' of github.com:swallville/trab2
+|\  
+| * cd8d645 - Lukas Ferreira Machado, 11 hours ago : Update README.md
+* | 896162d - lukas, 11 hours ago : Adicionando full_log
+|/  
+* a5f0dc5 - lukas, 11 hours ago : Editando log.txt
+* 24bd7c8 - lukas, 11 hours ago : Adicionando comentarios nos testes
+* 37f305a - Lukas Ferreira Machado, 11 hours ago : Update README.md
+* 644ffb8 - Lukas Ferreira Machado, 11 hours ago : Update README.md
+* 4920840 - Lukas Ferreira Machado, 11 hours ago : Update README.md
+* 4e4f781 - Lukas Ferreira Machado, 11 hours ago : Update README.md
+* 1127200 - Lukas Ferreira Machado, 11 hours ago : Update README.md
+* df89e6c - lukas, 11 hours ago : Adicionando README.md
+* 04e22bc - lukas, 11 hours ago : Editando log.txt
+* 994a1d4 - lukas, 11 hours ago : Adicinando modulo de teste para funcao it_contains e reducao de codigo em funcs.cpp
+* 7f6e408 - lukas, 12 hours ago : Adicionando arquivos intermediarios de execucao do programa: *.o, *.gcda, *.gcov
+* 602c393 - lukas, 12 hours ago : Adicionando log.txt
+* ac77fea - lukas, 12 hours ago : Editando README.txt
+* c04a543 - lukas, 12 hours ago : Verificando virtualenv do projeto, adicionando makefile e verificado funcionamento do gtest, gconv e cppcheck
+* 762d76a - lukas, 12 hours ago : Adicionando .cpp com as funcoes do programa
+* fae8630 - lukas, 12 hours ago : Adicionando testes para func. auxiliar que tranforma um int para uma string corresponde em romano
+* eac38cf - lukas, 12 hours ago : Versionando: Adicionando testes para verificar casos de erro de string de numero romano: string vazia, num nao existente, caracteres invalidos, mais que 30 chars
+* 5891140 - lukas, 12 hours ago : Adicionando testes para funcao from_roman: se a string romana devolve o numero em int correto
+* 2cbe5c8 - lukas, 12 hours ago : Setando Projeto

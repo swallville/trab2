@@ -1,3 +1,28 @@
+commit e50832fbe526aa5642de9d771526778be7cedc73
+Author: lukas <unlisislukasferreira@hotmail.com>
+Date:   Tue Sep 20 12:16:31 2016 -0300
+
+    Corrigido bugs no programa e adicionada mais testes para verificar erros
+
+commit fd02b939bf85b3c87ac0900fa55f1732df090490
+Merge: 896162d cd8d645
+Author: lukas <unlisislukasferreira@hotmail.com>
+Date:   Tue Sep 20 01:43:17 2016 -0300
+
+    Merge branch 'master' of github.com:swallville/trab2
+
+commit 896162df9485fb10893491b24b1a99064be13d8d
+Author: lukas <unlisislukasferreira@hotmail.com>
+Date:   Tue Sep 20 01:42:48 2016 -0300
+
+    Adicionando full_log
+
+commit cd8d64534f822b92e713727ace040ad034efab25
+Author: Lukas Ferreira Machado <unlisislukasferreira@hotmail.com>
+Date:   Tue Sep 20 01:38:07 2016 -0300
+
+    Update README.md
+
 commit a5f0dc547a0ae4c2c54efd7b05d5660f4c84289c
 Author: lukas <unlisislukasferreira@hotmail.com>
 Date:   Tue Sep 20 01:34:02 2016 -0300
