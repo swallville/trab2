@@ -14,9 +14,8 @@ Faça o checkout do projeto
         $ git@github.com:swallville/trab2.git
 
 Instale as bibliotecas de sistema necessárias para usar o programa:
-(vide [https://github.com/google/googletest])
-(vide [https://cmake.org])
-(vide [https://cmake.org/cmake/help/v3.0/manual/ccmake.1.html])
+--------------------------------------------------------------------
+(vide [https://github.com/google/googletest]), (vide [https://cmake.org]), (vide [https://cmake.org/cmake/help/v3.0/manual/ccmake.1.html])
 
 Getting Help
 -----------------
