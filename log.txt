@@ -1,4 +1,5 @@
-* 9c2c76e - lukas, 4 minutes ago : Adicionando Documentacao Doxygen
+* 0741f26 - lukas, 52 seconds ago : Adicionado mudancas na documentacao Doxygen
+* 9c2c76e - lukas, 26 minutes ago : Adicionando Documentacao Doxygen
 * e50832f - lukas, 4 hours ago : Corrigido bugs no programa e adicionada mais testes para verificar erros
 *   fd02b93 - lukas, 15 hours ago : Merge branch 'master' of github.com:swallville/trab2
 |\  
@@ -9,12 +10,12 @@
 * 24bd7c8 - lukas, 15 hours ago : Adicionando comentarios nos testes
 * 37f305a - Lukas Ferreira Machado, 15 hours ago : Update README.md
 * 644ffb8 - Lukas Ferreira Machado, 15 hours ago : Update README.md
-* 4920840 - Lukas Ferreira Machado, 15 hours ago : Update README.md
-* 4e4f781 - Lukas Ferreira Machado, 15 hours ago : Update README.md
-* 1127200 - Lukas Ferreira Machado, 15 hours ago : Update README.md
-* df89e6c - lukas, 15 hours ago : Adicionando README.md
-* 04e22bc - lukas, 15 hours ago : Editando log.txt
-* 994a1d4 - lukas, 15 hours ago : Adicinando modulo de teste para funcao it_contains e reducao de codigo em funcs.cpp
+* 4920840 - Lukas Ferreira Machado, 16 hours ago : Update README.md
+* 4e4f781 - Lukas Ferreira Machado, 16 hours ago : Update README.md
+* 1127200 - Lukas Ferreira Machado, 16 hours ago : Update README.md
+* df89e6c - lukas, 16 hours ago : Adicionando README.md
+* 04e22bc - lukas, 16 hours ago : Editando log.txt
+* 994a1d4 - lukas, 16 hours ago : Adicinando modulo de teste para funcao it_contains e reducao de codigo em funcs.cpp
 * 7f6e408 - lukas, 16 hours ago : Adicionando arquivos intermediarios de execucao do programa: *.o, *.gcda, *.gcov
 * 602c393 - lukas, 16 hours ago : Adicionando log.txt
 * ac77fea - lukas, 16 hours ago : Editando README.txt

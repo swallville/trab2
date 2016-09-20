@@ -1,3 +1,9 @@
+commit 0741f2622f2be5f735c5cd752755c8eda9f0c2c2
+Author: lukas <unlisislukasferreira@hotmail.com>
+Date:   Tue Sep 20 16:37:11 2016 -0300
+
+    Adicionado mudancas na documentacao Doxygen
+
 commit 9c2c76e1b2668e8e14ce46f0e918516e179d1040
 Author: lukas <unlisislukasferreira@hotmail.com>
 Date:   Tue Sep 20 16:12:24 2016 -0300
