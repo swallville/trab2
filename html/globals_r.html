@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +53,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('globals_r.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -64,116 +85,8 @@ $(function() {
 <div class="textblock">Here is a list of all file members with links to the files they belong to:</div>
 
 <h3><a id="index_r"></a>- r -</h3><ul>
-<li>Raise
-: <a class="el" href="_python-ast_8h.html#a848cb93d9dbab05992a08c7e6b50fc74">Python-ast.h</a>
-</li>
-<li>Raise_kind
-: <a class="el" href="_python-ast_8h.html#a3f8747ef1343a8899c10bb4911deed50a3bce7f55bcb5c8dac65e7653467de014">Python-ast.h</a>
-</li>
-<li>raise_stmt
-: <a class="el" href="graminit_8h.html#a84f12faf14c6ee34f70f38950f45b558">graminit.h</a>
-</li>
-<li>RAISE_VARARGS
-: <a class="el" href="opcode_8h.html#a583899c3d447f6753fc0588c75aef796">opcode.h</a>
-</li>
-<li>RBRACE
-: <a class="el" href="token_8h.html#a301875c1e1858bdc810760f25fcd02d2">token.h</a>
-</li>
-<li>RCHILD
-: <a class="el" href="node_8h.html#ae36e76c681f41c2d10d730b5d4a0c1c5">node.h</a>
-</li>
-<li>READ_RESTRICTED
-: <a class="el" href="structmember_8h.html#abfc5ab344d64224b53030aa7546c26f4">structmember.h</a>
-</li>
-<li>readbufferproc
-: <a class="el" href="object_8h.html#ae0408759caade68a38d4261a98a46f9a">object.h</a>
-</li>
-<li>READONLY
-: <a class="el" href="structmember_8h.html#a4fe050ad41ce8823deb2010f9c75ae85">structmember.h</a>
-</li>
-<li>readonly
-: <a class="el" href="abstract_8h.html#ade5dcb4690dedd5793822a0586829b33">abstract.h</a>
-</li>
 <li>REGISTER_TYPED_TEST_CASE_P()
 : <a class="el" href="gtest__list__tests__unittest___8cc.html#a3316a9dc1c581f96a50ec10e0c116e5c">gtest_list_tests_unittest_.cc</a>
-</li>
-<li>releasebufferproc
-: <a class="el" href="object_8h.html#a3fe4e7546166ee0acefe1bfe178455b0">object.h</a>
-</li>
-<li>Repr
-: <a class="el" href="_python-ast_8h.html#a88bd2651256da6ccebace0dfb90d8b72">Python-ast.h</a>
-</li>
-<li>Repr_kind
-: <a class="el" href="_python-ast_8h.html#a5040779a586bc1f6938f47df869170a5adae03b605e50d2ad74e3b012e9ddca67">Python-ast.h</a>
-</li>
-<li>reprfunc
-: <a class="el" href="object_8h.html#a880e8271f8f3f984e0baecc0255c312f">object.h</a>
-</li>
-<li>REQ
-: <a class="el" href="node_8h.html#af71929eb520068c1cafca386caf66d3d">node.h</a>
-</li>
-<li>ResObj_Convert()
-: <a class="el" href="pymactoolbox_8h.html#a4c61e93b9d9fe1bd0a576f67d9e530df">pymactoolbox.h</a>
-</li>
-<li>ResObj_New()
-: <a class="el" href="pymactoolbox_8h.html#a7e5d367a505ffff002cd1980bb08e014">pymactoolbox.h</a>
-</li>
-<li>RESTRICTED
-: <a class="el" href="structmember_8h.html#aedb0804dfadf0c8d668cab284168494f">structmember.h</a>
-</li>
-<li>result
-: <a class="el" href="abstract_8h.html#aa689992a2c3ad3c7231845abcc79f8c9">abstract.h</a>
-</li>
-<li>RETSIGTYPE
-: <a class="el" href="pyconfig_8h.html#adbe5dcee9c146b338794974137c55e70">pyconfig.h</a>
-</li>
-<li>Return
-: <a class="el" href="_python-ast_8h.html#abdae7f49d66ce8e500825bb53aa14901">Python-ast.h</a>
-</li>
-<li>Return_kind
-: <a class="el" href="_python-ast_8h.html#a3f8747ef1343a8899c10bb4911deed50a828b1087744f86659f3c0820b967de93">Python-ast.h</a>
-</li>
-<li>return_stmt
-: <a class="el" href="graminit_8h.html#ad0048056564847a45fa5daed3a6f60fd">graminit.h</a>
-</li>
-<li>RETURN_VALUE
-: <a class="el" href="opcode_8h.html#a4624dbb836fe1fc7317421b08e0882a0">opcode.h</a>
-</li>
-<li>RHS
-: <a class="el" href="metagrammar_8h.html#afcfa26f7fd6ea292d85613ece7c02ace">metagrammar.h</a>
-</li>
-<li>richcmpfunc
-: <a class="el" href="object_8h.html#a34e21b7b63def5f9f5deaf89840f587a">object.h</a>
-</li>
-<li>RIGHTSHIFT
-: <a class="el" href="token_8h.html#a9cc204da9bdc2eed73ef1ea3dbd375e0">token.h</a>
-</li>
-<li>RIGHTSHIFTEQUAL
-: <a class="el" href="token_8h.html#af5bfc03a0262d01aed1fd3cec5509aa1">token.h</a>
-</li>
-<li>RO
-: <a class="el" href="structmember_8h.html#a628642b04c07236ae1e986c248a79ae5">structmember.h</a>
-</li>
-<li>ROT_FOUR
-: <a class="el" href="opcode_8h.html#a731b83bb33c17badb1d3194131795926">opcode.h</a>
-</li>
-<li>ROT_THREE
-: <a class="el" href="opcode_8h.html#a80f366b7c356146f3ffe053822b5f804">opcode.h</a>
-</li>
-<li>ROT_TWO
-: <a class="el" href="opcode_8h.html#a52e89ed3e39985fc09bcf5ba601cde1c">opcode.h</a>
-</li>
-<li>RPAR
-: <a class="el" href="token_8h.html#a5e78e592b96d384fb9f910870af69cb0">token.h</a>
-</li>
-<li>RShift
-: <a class="el" href="_python-ast_8h.html#ab9d92a0f505af42d2049e62ae49ef932a98d0c110bdfdcc86bd18e372f0836bf3">Python-ast.h</a>
-</li>
-<li>RSQB
-: <a class="el" href="token_8h.html#ae4b905b76e3306cb3be37144c3cbde38">token.h</a>
-</li>
-<li>RULE
-: <a class="el" href="metagrammar_8h.html#ac2f06b3729559aefeb2c260309ccdb30">metagrammar.h</a>
 </li>
 <li>RUN_ALL_TESTS()
 : <a class="el" href="gtest_8h.html#a853a3792807489591d3d4a2f2ff9359f">gtest.h</a>
@@ -181,16 +94,16 @@ $(function() {
 <li>RunAllTests()
 : <a class="el" href="gtest__output__test___8cc.html#ae0ca194f6b730e168850ce3179ad4f63">gtest_output_test_.cc</a>
 </li>
-<li>rve
-: <a class="el" href="dtoa_8h.html#a682c1d80bad94954d31f1fa03b008269">dtoa.h</a>
-</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.12
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
 </body>
 </html>

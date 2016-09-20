@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('namespacefuse__gmock__files.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,7 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a> &#124;
@@ -94,17 +115,17 @@ Variables</h2></td></tr>
 <tr class="separator:a900b64b34e20c7430b72252192a3c7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fb36dbe8d361f9ecc54e1aa4b94b068"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefuse__gmock__files.html#a3fb36dbe8d361f9ecc54e1aa4b94b068">gtest</a> = fuse_gtest_files</td></tr>
 <tr class="separator:a3fb36dbe8d361f9ecc54e1aa4b94b068"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb4457451f878d6bc8a42f7ff3e5f6cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefuse__gmock__files.html#aeb4457451f878d6bc8a42f7ff3e5f6cf">INCLUDE_GMOCK_FILE_REGEX</a> = re.compile(r'^\<a class="el" href="stringobject_8h.html#ad912d811fca4c9cfee37905bed81eb65">s</a>*#\<a class="el" href="stringobject_8h.html#ad912d811fca4c9cfee37905bed81eb65">s</a>*<a class="el" href="stringobject_8h.html#ad912d811fca4c9cfee37905bed81eb65">include\s</a>*&quot;(gmock/.+)&quot;')</td></tr>
+<tr class="memitem:aeb4457451f878d6bc8a42f7ff3e5f6cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefuse__gmock__files.html#aeb4457451f878d6bc8a42f7ff3e5f6cf">INCLUDE_GMOCK_FILE_REGEX</a> = re.compile(r'^\s*#\s*include\s*&quot;(gmock/.+)&quot;')</td></tr>
 <tr class="separator:aeb4457451f878d6bc8a42f7ff3e5f6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa31b816a9048fb3fa9d482eeac69c139"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefuse__gmock__files.html#aa31b816a9048fb3fa9d482eeac69c139">GMOCK_H_SEED</a> = 'include/gmock/gmock.h'</td></tr>
+<tr class="memitem:aa31b816a9048fb3fa9d482eeac69c139"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefuse__gmock__files.html#aa31b816a9048fb3fa9d482eeac69c139">GMOCK_H_SEED</a> = 'include/gmock/gmock.h'</td></tr>
 <tr class="separator:aa31b816a9048fb3fa9d482eeac69c139"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a518e1f3cc3f184747e6ed3f2d0233c99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefuse__gmock__files.html#a518e1f3cc3f184747e6ed3f2d0233c99">GMOCK_ALL_CC_SEED</a> = '<a class="el" href="abstract_8h.html#a621a32e8b783a69481c248adfbb4bd18">src</a>/gmock-all.cc'</td></tr>
+<tr class="memitem:a518e1f3cc3f184747e6ed3f2d0233c99"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefuse__gmock__files.html#a518e1f3cc3f184747e6ed3f2d0233c99">GMOCK_ALL_CC_SEED</a> = 'src/gmock-all.cc'</td></tr>
 <tr class="separator:a518e1f3cc3f184747e6ed3f2d0233c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a385c31d8542b0a2e4b7f46cb2a32d7da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefuse__gmock__files.html#a385c31d8542b0a2e4b7f46cb2a32d7da">GTEST_H_OUTPUT</a> = '<a class="el" href="namespacefuse__gmock__files.html#a3fb36dbe8d361f9ecc54e1aa4b94b068">gtest</a>/gtest.h'</td></tr>
+<tr class="memitem:a385c31d8542b0a2e4b7f46cb2a32d7da"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefuse__gmock__files.html#a385c31d8542b0a2e4b7f46cb2a32d7da">GTEST_H_OUTPUT</a> = '<a class="el" href="namespacefuse__gmock__files.html#a3fb36dbe8d361f9ecc54e1aa4b94b068">gtest</a>/gtest.h'</td></tr>
 <tr class="separator:a385c31d8542b0a2e4b7f46cb2a32d7da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba0664abeb60f34cfdf59e8475a465d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefuse__gmock__files.html#aba0664abeb60f34cfdf59e8475a465d0">GMOCK_H_OUTPUT</a> = 'gmock/gmock.h'</td></tr>
+<tr class="memitem:aba0664abeb60f34cfdf59e8475a465d0"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefuse__gmock__files.html#aba0664abeb60f34cfdf59e8475a465d0">GMOCK_H_OUTPUT</a> = 'gmock/gmock.h'</td></tr>
 <tr class="separator:aba0664abeb60f34cfdf59e8475a465d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9759f3f6c404e3292c26c9317792e846"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefuse__gmock__files.html#a9759f3f6c404e3292c26c9317792e846">GMOCK_GTEST_ALL_CC_OUTPUT</a> = 'gmock-<a class="el" href="namespacefuse__gmock__files.html#a3fb36dbe8d361f9ecc54e1aa4b94b068">gtest</a>-all.cc'</td></tr>
+<tr class="memitem:a9759f3f6c404e3292c26c9317792e846"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefuse__gmock__files.html#a9759f3f6c404e3292c26c9317792e846">GMOCK_GTEST_ALL_CC_OUTPUT</a> = 'gmock-<a class="el" href="namespacefuse__gmock__files.html#a3fb36dbe8d361f9ecc54e1aa4b94b068">gtest</a>-all.cc'</td></tr>
 <tr class="separator:a9759f3f6c404e3292c26c9317792e846"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -337,7 +358,7 @@ The function aborts the program on failure.
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> fuse_gmock_files.GMOCK_ALL_CC_SEED = '<a class="el" href="abstract_8h.html#a621a32e8b783a69481c248adfbb4bd18">src</a>/gmock-all.cc'</td>
+          <td class="memname">string fuse_gmock_files.GMOCK_ALL_CC_SEED = 'src/gmock-all.cc'</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -353,7 +374,7 @@ The function aborts the program on failure.
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> fuse_gmock_files.GMOCK_GTEST_ALL_CC_OUTPUT = 'gmock-<a class="el" href="namespacefuse__gmock__files.html#a3fb36dbe8d361f9ecc54e1aa4b94b068">gtest</a>-all.cc'</td>
+          <td class="memname">string fuse_gmock_files.GMOCK_GTEST_ALL_CC_OUTPUT = 'gmock-<a class="el" href="namespacefuse__gmock__files.html#a3fb36dbe8d361f9ecc54e1aa4b94b068">gtest</a>-all.cc'</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -369,7 +390,7 @@ The function aborts the program on failure.
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> fuse_gmock_files.GMOCK_H_OUTPUT = 'gmock/gmock.h'</td>
+          <td class="memname">string fuse_gmock_files.GMOCK_H_OUTPUT = 'gmock/gmock.h'</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -385,7 +406,7 @@ The function aborts the program on failure.
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> fuse_gmock_files.GMOCK_H_SEED = 'include/gmock/gmock.h'</td>
+          <td class="memname">string fuse_gmock_files.GMOCK_H_SEED = 'include/gmock/gmock.h'</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -417,7 +438,7 @@ The function aborts the program on failure.
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> fuse_gmock_files.GTEST_H_OUTPUT = '<a class="el" href="namespacefuse__gmock__files.html#a3fb36dbe8d361f9ecc54e1aa4b94b068">gtest</a>/gtest.h'</td>
+          <td class="memname">string fuse_gmock_files.GTEST_H_OUTPUT = '<a class="el" href="namespacefuse__gmock__files.html#a3fb36dbe8d361f9ecc54e1aa4b94b068">gtest</a>/gtest.h'</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -433,7 +454,7 @@ The function aborts the program on failure.
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">fuse_gmock_files.INCLUDE_GMOCK_FILE_REGEX = re.compile(r'^\<a class="el" href="stringobject_8h.html#ad912d811fca4c9cfee37905bed81eb65">s</a>*#\<a class="el" href="stringobject_8h.html#ad912d811fca4c9cfee37905bed81eb65">s</a>*<a class="el" href="stringobject_8h.html#ad912d811fca4c9cfee37905bed81eb65">include\s</a>*&quot;(gmock/.+)&quot;')</td>
+          <td class="memname">fuse_gmock_files.INCLUDE_GMOCK_FILE_REGEX = re.compile(r'^\s*#\s*include\s*&quot;(gmock/.+)&quot;')</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -443,11 +464,15 @@ The function aborts the program on failure.
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.12
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacefuse__gmock__files.html">fuse_gmock_files</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
 </body>
 </html>

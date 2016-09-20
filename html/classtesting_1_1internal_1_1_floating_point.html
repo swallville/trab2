@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classtesting_1_1internal_1_1_floating_point.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="namespacetesting_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classtesting_1_1internal_1_1_floating_point.html">FloatingPoint</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -86,7 +103,7 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0dabf840863e0df84046f171c891fe71"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_floating_point.html#a0dabf840863e0df84046f171c891fe71">FloatingPoint</a> (const RawType &amp;<a class="el" href="stringobject_8h.html#a280f2393c503127fff91ecbc558e288d">x</a>)</td></tr>
+<tr class="memitem:a0dabf840863e0df84046f171c891fe71"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_floating_point.html#a0dabf840863e0df84046f171c891fe71">FloatingPoint</a> (const RawType &amp;x)</td></tr>
 <tr class="separator:a0dabf840863e0df84046f171c891fe71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab053be914bdc9e507c0db89740c318c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classtesting_1_1internal_1_1_floating_point.html#abf228bf6cd48f12c8b44c85b4971a731">Bits</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_floating_point.html#aab053be914bdc9e507c0db89740c318c">bits</a> () const</td></tr>
 <tr class="separator:aab053be914bdc9e507c0db89740c318c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -96,9 +113,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa17337e50a2ac855719bc0676529558f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb8a816bb598225d775caaf43a893ef0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1internal_1_1_floating_point.html#abf228bf6cd48f12c8b44c85b4971a731">Bits</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_floating_point.html#afb8a816bb598225d775caaf43a893ef0">sign_bit</a> () const</td></tr>
 <tr class="separator:afb8a816bb598225d775caaf43a893ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fc654fd206efa98e480aa1e034f30d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_floating_point.html#a1fc654fd206efa98e480aa1e034f30d5">is_nan</a> () const</td></tr>
+<tr class="memitem:a1fc654fd206efa98e480aa1e034f30d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_floating_point.html#a1fc654fd206efa98e480aa1e034f30d5">is_nan</a> () const</td></tr>
 <tr class="separator:a1fc654fd206efa98e480aa1e034f30d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a965214c1af2f9ac5adb1393794aa81e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_floating_point.html#a965214c1af2f9ac5adb1393794aa81e5">AlmostEquals</a> (const <a class="el" href="classtesting_1_1internal_1_1_floating_point.html">FloatingPoint</a> &amp;rhs) const</td></tr>
+<tr class="memitem:a965214c1af2f9ac5adb1393794aa81e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_floating_point.html#a965214c1af2f9ac5adb1393794aa81e5">AlmostEquals</a> (const <a class="el" href="classtesting_1_1internal_1_1_floating_point.html">FloatingPoint</a> &amp;rhs) const</td></tr>
 <tr class="separator:a965214c1af2f9ac5adb1393794aa81e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2eda9331e679229a1baa3404b57b51d"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:af2eda9331e679229a1baa3404b57b51d"><td class="memTemplItemLeft" align="right" valign="top">float&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_floating_point.html#af2eda9331e679229a1baa3404b57b51d">Max</a> ()</td></tr>
@@ -118,11 +135,11 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:ab819d2e8f93e9e482373999f0f8d71b9"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="pymem_8h.html#a7b60c5629e55e8ec87a4547dd4abced4">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_floating_point.html#ab819d2e8f93e9e482373999f0f8d71b9">kBitCount</a> = 8*sizeof(RawType)</td></tr>
+<tr class="memitem:ab819d2e8f93e9e482373999f0f8d71b9"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_floating_point.html#ab819d2e8f93e9e482373999f0f8d71b9">kBitCount</a> = 8*sizeof(RawType)</td></tr>
 <tr class="separator:ab819d2e8f93e9e482373999f0f8d71b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b756a6d2a4f5f5b41ca79651c06c043"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="pymem_8h.html#a7b60c5629e55e8ec87a4547dd4abced4">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_floating_point.html#a0b756a6d2a4f5f5b41ca79651c06c043">kFractionBitCount</a></td></tr>
+<tr class="memitem:a0b756a6d2a4f5f5b41ca79651c06c043"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_floating_point.html#a0b756a6d2a4f5f5b41ca79651c06c043">kFractionBitCount</a></td></tr>
 <tr class="separator:a0b756a6d2a4f5f5b41ca79651c06c043"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1973d843c00781053d3073daa8a40119"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="pymem_8h.html#a7b60c5629e55e8ec87a4547dd4abced4">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_floating_point.html#a1973d843c00781053d3073daa8a40119">kExponentBitCount</a> = <a class="el" href="classtesting_1_1internal_1_1_floating_point.html#ab819d2e8f93e9e482373999f0f8d71b9">kBitCount</a> - 1 - <a class="el" href="classtesting_1_1internal_1_1_floating_point.html#a0b756a6d2a4f5f5b41ca79651c06c043">kFractionBitCount</a></td></tr>
+<tr class="memitem:a1973d843c00781053d3073daa8a40119"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_floating_point.html#a1973d843c00781053d3073daa8a40119">kExponentBitCount</a> = <a class="el" href="classtesting_1_1internal_1_1_floating_point.html#ab819d2e8f93e9e482373999f0f8d71b9">kBitCount</a> - 1 - <a class="el" href="classtesting_1_1internal_1_1_floating_point.html#a0b756a6d2a4f5f5b41ca79651c06c043">kFractionBitCount</a></td></tr>
 <tr class="separator:a1973d843c00781053d3073daa8a40119"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca98b5ea6f2222a66a82e52421682efa"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classtesting_1_1internal_1_1_floating_point.html#abf228bf6cd48f12c8b44c85b4971a731">Bits</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_floating_point.html#aca98b5ea6f2222a66a82e52421682efa">kSignBitMask</a> = static_cast&lt;<a class="el" href="classtesting_1_1internal_1_1_floating_point.html#abf228bf6cd48f12c8b44c85b4971a731">Bits</a>&gt;(1) &lt;&lt; (<a class="el" href="classtesting_1_1internal_1_1_floating_point.html#ab819d2e8f93e9e482373999f0f8d71b9">kBitCount</a> - 1)</td></tr>
 <tr class="separator:aca98b5ea6f2222a66a82e52421682efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,7 +147,7 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a0ac75d4ffd24f14bca452abe8a718da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66065dfc4d5f41100f686159637af23b"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classtesting_1_1internal_1_1_floating_point.html#abf228bf6cd48f12c8b44c85b4971a731">Bits</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_floating_point.html#a66065dfc4d5f41100f686159637af23b">kExponentBitMask</a> = ~(<a class="el" href="classtesting_1_1internal_1_1_floating_point.html#aca98b5ea6f2222a66a82e52421682efa">kSignBitMask</a> | <a class="el" href="classtesting_1_1internal_1_1_floating_point.html#a0ac75d4ffd24f14bca452abe8a718da1">kFractionBitMask</a>)</td></tr>
 <tr class="separator:a66065dfc4d5f41100f686159637af23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac498b3714d93f8e88cdc30e4c5935f6"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="pymem_8h.html#a7b60c5629e55e8ec87a4547dd4abced4">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_floating_point.html#aac498b3714d93f8e88cdc30e4c5935f6">kMaxUlps</a> = 4</td></tr>
+<tr class="memitem:aac498b3714d93f8e88cdc30e4c5935f6"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_floating_point.html#aac498b3714d93f8e88cdc30e4c5935f6">kMaxUlps</a> = 4</td></tr>
 <tr class="separator:aac498b3714d93f8e88cdc30e4c5935f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -202,7 +219,7 @@ template&lt;typename RawType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> <a class="el" href="classtesting_1_1internal_1_1_floating_point.html">testing::internal::FloatingPoint</a>&lt; RawType &gt;::AlmostEquals </td>
+          <td class="memname">bool <a class="el" href="classtesting_1_1internal_1_1_floating_point.html">testing::internal::FloatingPoint</a>&lt; RawType &gt;::AlmostEquals </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classtesting_1_1internal_1_1_floating_point.html">FloatingPoint</a>&lt; RawType &gt; &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
@@ -348,7 +365,7 @@ template&lt;typename RawType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> <a class="el" href="classtesting_1_1internal_1_1_floating_point.html">testing::internal::FloatingPoint</a>&lt; RawType &gt;::is_nan </td>
+          <td class="memname">bool <a class="el" href="classtesting_1_1internal_1_1_floating_point.html">testing::internal::FloatingPoint</a>&lt; RawType &gt;::is_nan </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -522,7 +539,7 @@ template&lt;typename RawType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="pymem_8h.html#a7b60c5629e55e8ec87a4547dd4abced4">size_t</a> <a class="el" href="classtesting_1_1internal_1_1_floating_point.html">testing::internal::FloatingPoint</a>&lt; RawType &gt;::kBitCount = 8*sizeof(RawType)</td>
+          <td class="memname">const size_t <a class="el" href="classtesting_1_1internal_1_1_floating_point.html">testing::internal::FloatingPoint</a>&lt; RawType &gt;::kBitCount = 8*sizeof(RawType)</td>
         </tr>
       </table>
   </td>
@@ -548,7 +565,7 @@ template&lt;typename RawType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="pymem_8h.html#a7b60c5629e55e8ec87a4547dd4abced4">size_t</a> <a class="el" href="classtesting_1_1internal_1_1_floating_point.html">testing::internal::FloatingPoint</a>&lt; RawType &gt;::kExponentBitCount = <a class="el" href="classtesting_1_1internal_1_1_floating_point.html#ab819d2e8f93e9e482373999f0f8d71b9">kBitCount</a> - 1 - <a class="el" href="classtesting_1_1internal_1_1_floating_point.html#a0b756a6d2a4f5f5b41ca79651c06c043">kFractionBitCount</a></td>
+          <td class="memname">const size_t <a class="el" href="classtesting_1_1internal_1_1_floating_point.html">testing::internal::FloatingPoint</a>&lt; RawType &gt;::kExponentBitCount = <a class="el" href="classtesting_1_1internal_1_1_floating_point.html#ab819d2e8f93e9e482373999f0f8d71b9">kBitCount</a> - 1 - <a class="el" href="classtesting_1_1internal_1_1_floating_point.html#a0b756a6d2a4f5f5b41ca79651c06c043">kFractionBitCount</a></td>
         </tr>
       </table>
   </td>
@@ -600,7 +617,7 @@ template&lt;typename RawType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="pymem_8h.html#a7b60c5629e55e8ec87a4547dd4abced4">size_t</a> <a class="el" href="classtesting_1_1internal_1_1_floating_point.html">testing::internal::FloatingPoint</a>&lt; RawType &gt;::kFractionBitCount</td>
+          <td class="memname">const size_t <a class="el" href="classtesting_1_1internal_1_1_floating_point.html">testing::internal::FloatingPoint</a>&lt; RawType &gt;::kFractionBitCount</td>
         </tr>
       </table>
   </td>
@@ -609,7 +626,7 @@ template&lt;typename RawType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">    <a class="code" href="stringobject_8h.html#ad2f6480d654ec9190275a40948267323">std::numeric_limits&lt;RawType&gt;::digits</a> - 1</div></div><!-- fragment -->
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">    std::numeric_limits&lt;RawType&gt;::digits - 1</div></div><!-- fragment -->
 <p>Definition at line <a class="el" href="gtest-internal_8h_source.html#l00274">274</a> of file <a class="el" href="gtest-internal_8h_source.html">gtest-internal.h</a>.</p>
 
 </div>
@@ -652,7 +669,7 @@ template&lt;typename RawType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="pymem_8h.html#a7b60c5629e55e8ec87a4547dd4abced4">size_t</a> <a class="el" href="classtesting_1_1internal_1_1_floating_point.html">testing::internal::FloatingPoint</a>&lt; RawType &gt;::kMaxUlps = 4</td>
+          <td class="memname">const size_t <a class="el" href="classtesting_1_1internal_1_1_floating_point.html">testing::internal::FloatingPoint</a>&lt; RawType &gt;::kMaxUlps = 4</td>
         </tr>
       </table>
   </td>
@@ -693,14 +710,18 @@ template&lt;typename RawType&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/sineideferreira/Documents/12_0127377_Lukas/lib/googletest-master/googletest/include/gtest/internal/<a class="el" href="gtest-internal_8h_source.html">gtest-internal.h</a></li>
+<li>lib/googletest-master/googletest/include/gtest/internal/<a class="el" href="gtest-internal_8h_source.html">gtest-internal.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.12
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="namespacetesting_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classtesting_1_1internal_1_1_floating_point.html">FloatingPoint</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +53,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_vars_o.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -64,76 +85,14 @@ $(function() {
 &#160;
 
 <h3><a id="index_o"></a>- o -</h3><ul>
-<li>ob_alloc
-: <a class="el" href="struct_py_byte_array_object.html#a5af2f0ff78873b2ee1fd81e6d4fde508">PyByteArrayObject</a>
-</li>
-<li>ob_bytes
-: <a class="el" href="struct_py_byte_array_object.html#a115f41ec4bbe6444f2331a8080a226e8">PyByteArrayObject</a>
-</li>
-<li>ob_digit
-: <a class="el" href="struct__longobject.html#a51d41b184bbe2c21854826c1f5ef4a99">_longobject</a>
-</li>
-<li>ob_exports
-: <a class="el" href="struct_py_byte_array_object.html#a302f6ed193ac551931000971ac882169">PyByteArrayObject</a>
-</li>
-<li>ob_fval
-: <a class="el" href="struct_py_float_object.html#ae7096f8767b95c9cf877f9c3cb03d4a2">PyFloatObject</a>
-</li>
-<li>ob_item
-: <a class="el" href="struct_py_list_object.html#acf0d6da7facc80844c97ce9924b0a552">PyListObject</a>
-, <a class="el" href="struct_py_struct_sequence.html#a35f9790f4d2b35fb3e148ce87a6b710c">PyStructSequence</a>
-, <a class="el" href="struct_py_tuple_object.html#ab28040a8b2ac21163a7df75596c1c431">PyTupleObject</a>
-</li>
-<li>ob_ival
-: <a class="el" href="struct_py_int_object.html#aa77a9bf9a89d57114a62899133e4370c">PyIntObject</a>
-</li>
-<li>ob_ref
-: <a class="el" href="struct_py_cell_object.html#a8801f944d71f980fbb18f94562ab38a1">PyCellObject</a>
-</li>
-<li>ob_shash
-: <a class="el" href="struct_py_string_object.html#af33fcc1603eed71de2fbb8c54ba32262">PyStringObject</a>
-</li>
-<li>ob_sstate
-: <a class="el" href="struct_py_string_object.html#a44f9f0102f89d22cb0d4ae4042ab92a1">PyStringObject</a>
-</li>
-<li>ob_sval
-: <a class="el" href="struct_py_string_object.html#aa8286d87404dd10caf82bcd4835116d6">PyStringObject</a>
-</li>
-<li>obj
-: <a class="el" href="structbufferinfo.html#a0287133b4101fc4c9a99234d50f33d26">bufferinfo</a>
-</li>
-<li>offset
-: <a class="el" href="structmemberlist.html#a55dfff380cf83407e78a6bb7913f5d7d">memberlist</a>
-, <a class="el" href="structperrdetail.html#acb64a7271e6ebe6c57791b152bbfed19">perrdetail</a>
-, <a class="el" href="struct_py_member_def.html#a78c440b432b027928ec9a7c88cff74d7">PyMemberDef</a>
-, <a class="el" href="struct_py_syntax_error_object.html#a0cb77b0acc909058c6c74cfdaa1ffdda">PySyntaxErrorObject</a>
-, <a class="el" href="structwrapperbase.html#aee6e2c07d565ab34389ac8d45d952ea2">wrapperbase</a>
-</li>
 <li>one_bits_
 : <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_floating_point_test.html#ae26de8492d307d2b4c30f6b952d9a412">testing::gmock_matchers_test::FloatingPointTest&lt; RawType &gt;</a>
-</li>
-<li>op
-: <a class="el" href="struct__expr.html#a14d9cfe44b98767d7ca6ae45774a9e90">_expr</a>
-, <a class="el" href="struct__stmt.html#a569578bba46e986e59d57381b4a14a26">_stmt</a>
 </li>
 <li>opener
 : <a class="el" href="classupload_1_1_abstract_rpc_server.html#aa931446476e0e86f3ade7fef0a0aea5a">upload.AbstractRpcServer</a>
 </li>
-<li>operand
-: <a class="el" href="struct__expr.html#ab27f68df0bce07742004816407b34ce9">_expr</a>
-</li>
-<li>ops
-: <a class="el" href="struct__expr.html#a67c65cbe747db86cb97b5c8cd803ac12">_expr</a>
-</li>
-<li>optional_vars
-: <a class="el" href="struct__stmt.html#afd56617c6467fd7d12983ccf75fdb6e4">_stmt</a>
-</li>
 <li>options
 : <a class="el" href="classupload_1_1_version_control_system.html#a4d57d043bc408887b94269fe4cea9556">upload.VersionControlSystem</a>
-</li>
-<li>orelse
-: <a class="el" href="struct__expr.html#a2c9d3108e3e7d0d1068d97bc23958c20">_expr</a>
-, <a class="el" href="struct__stmt.html#a66f6f20b75eafa36433ac6584cefbbd9">_stmt</a>
 </li>
 <li>output
 : <a class="el" href="classgtest__test__utils_1_1_subprocess.html#a170f722b867e51f3e97b5b60399988cf">gtest_test_utils.Subprocess</a>
@@ -144,11 +103,14 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.12
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
 </body>
 </html>

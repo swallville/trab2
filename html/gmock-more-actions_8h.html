@@ -5,10 +5,17 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.12"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Trab2: /Users/sineideferreira/Documents/12_0127377_Lukas/lib/googletest-master/googlemock/include/gmock/gmock-more-actions.h File Reference</title>
+<title>Trab2: lib/googletest-master/googlemock/include/gmock/gmock-more-actions.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('gmock-more-actions_8h.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_fd040b3fd6fd6580b63cc52590f909a2.html">Documents</a></li><li class="navelem"><a class="el" href="dir_19d6c1f8e4691420a561191421364ebd.html">12_0127377_Lukas</a></li><li class="navelem"><a class="el" href="dir_0eb27892baca89b5444e5838e452c039.html">lib</a></li><li class="navelem"><a class="el" href="dir_8abc3a0d10bafbb9177d86a50dc259be.html">googletest-master</a></li><li class="navelem"><a class="el" href="dir_82e91e03b9fbdecfe63fc20e90a9b7eb.html">googlemock</a></li><li class="navelem"><a class="el" href="dir_f7c519a18899fea64f0b939f4ac28236.html">include</a></li><li class="navelem"><a class="el" href="dir_3d9cffac3bac6e03f3ce3eebbb8c3546.html">gmock</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -109,27 +126,31 @@ Functions</h2></td></tr>
 <tr class="memitem:af76590c6cecc621e1ab4b681a9ea209b"><td class="memTemplParams" colspan="2">template&lt;int k, typename InnerAction &gt; </td></tr>
 <tr class="memitem:af76590c6cecc621e1ab4b681a9ea209b"><td class="memTemplItemLeft" align="right" valign="top">internal::WithArgsAction&lt; InnerAction, k &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting.html#af76590c6cecc621e1ab4b681a9ea209b">testing::WithArg</a> (const InnerAction &amp;action)</td></tr>
 <tr class="separator:af76590c6cecc621e1ab4b681a9ea209b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a109d48f969260878ed1e743006196992"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a109d48f969260878ed1e743006196992">testing::ACTION_TEMPLATE</a> (ReturnArg, HAS_1_TEMPLATE_PARAMS(<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>, k), AND_0_VALUE_PARAMS())</td></tr>
+<tr class="memitem:a109d48f969260878ed1e743006196992"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a109d48f969260878ed1e743006196992">testing::ACTION_TEMPLATE</a> (ReturnArg, HAS_1_TEMPLATE_PARAMS(int, k), AND_0_VALUE_PARAMS())</td></tr>
 <tr class="separator:a109d48f969260878ed1e743006196992"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0478a3464d31f6726d5bc47b1be46491"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a0478a3464d31f6726d5bc47b1be46491">testing::ACTION_TEMPLATE</a> (SaveArg, HAS_1_TEMPLATE_PARAMS(<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>, k), AND_1_VALUE_PARAMS(<a class="el" href="pycapsule_8h.html#abc7cbbec1f024bd23164936bd765b06d">pointer</a>))</td></tr>
+<tr class="memitem:a0478a3464d31f6726d5bc47b1be46491"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a0478a3464d31f6726d5bc47b1be46491">testing::ACTION_TEMPLATE</a> (SaveArg, HAS_1_TEMPLATE_PARAMS(int, k), AND_1_VALUE_PARAMS(pointer))</td></tr>
 <tr class="separator:a0478a3464d31f6726d5bc47b1be46491"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31565a90ad7f08c1a88e4b138957172c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a31565a90ad7f08c1a88e4b138957172c">testing::ACTION_TEMPLATE</a> (SaveArgPointee, HAS_1_TEMPLATE_PARAMS(<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>, k), AND_1_VALUE_PARAMS(<a class="el" href="pycapsule_8h.html#abc7cbbec1f024bd23164936bd765b06d">pointer</a>))</td></tr>
+<tr class="memitem:a31565a90ad7f08c1a88e4b138957172c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a31565a90ad7f08c1a88e4b138957172c">testing::ACTION_TEMPLATE</a> (SaveArgPointee, HAS_1_TEMPLATE_PARAMS(int, k), AND_1_VALUE_PARAMS(pointer))</td></tr>
 <tr class="separator:a31565a90ad7f08c1a88e4b138957172c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfd3c9538285d257370f955aa81488f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#adfd3c9538285d257370f955aa81488f1">testing::ACTION_TEMPLATE</a> (SetArgReferee, HAS_1_TEMPLATE_PARAMS(<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>, k), AND_1_VALUE_PARAMS(<a class="el" href="dictobject_8h.html#a4eabde677fab7743b016294ac2f430b9">value</a>))</td></tr>
+<tr class="memitem:adfd3c9538285d257370f955aa81488f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#adfd3c9538285d257370f955aa81488f1">testing::ACTION_TEMPLATE</a> (SetArgReferee, HAS_1_TEMPLATE_PARAMS(int, k), AND_1_VALUE_PARAMS(value))</td></tr>
 <tr class="separator:adfd3c9538285d257370f955aa81488f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b0f090219db3bb0630d5ce6f7d911d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a2b0f090219db3bb0630d5ce6f7d911d8">testing::ACTION_TEMPLATE</a> (SetArrayArgument, HAS_1_TEMPLATE_PARAMS(<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>, k), AND_2_VALUE_PARAMS(first, last))</td></tr>
+<tr class="memitem:a2b0f090219db3bb0630d5ce6f7d911d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a2b0f090219db3bb0630d5ce6f7d911d8">testing::ACTION_TEMPLATE</a> (SetArrayArgument, HAS_1_TEMPLATE_PARAMS(int, k), AND_2_VALUE_PARAMS(first, last))</td></tr>
 <tr class="separator:a2b0f090219db3bb0630d5ce6f7d911d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37a5ebfe68fd8dedf8bd82a5ebddcb7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a37a5ebfe68fd8dedf8bd82a5ebddcb7b">testing::ACTION_TEMPLATE</a> (DeleteArg, HAS_1_TEMPLATE_PARAMS(<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>, k), AND_0_VALUE_PARAMS())</td></tr>
+<tr class="memitem:a37a5ebfe68fd8dedf8bd82a5ebddcb7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a37a5ebfe68fd8dedf8bd82a5ebddcb7b">testing::ACTION_TEMPLATE</a> (DeleteArg, HAS_1_TEMPLATE_PARAMS(int, k), AND_0_VALUE_PARAMS())</td></tr>
 <tr class="separator:a37a5ebfe68fd8dedf8bd82a5ebddcb7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d58f0d746946064154cd257d368599d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a3d58f0d746946064154cd257d368599d">testing::ACTION_P</a> (ReturnPointee, <a class="el" href="pycapsule_8h.html#abc7cbbec1f024bd23164936bd765b06d">pointer</a>)</td></tr>
+<tr class="memitem:a3d58f0d746946064154cd257d368599d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a3d58f0d746946064154cd257d368599d">testing::ACTION_P</a> (ReturnPointee, pointer)</td></tr>
 <tr class="separator:a3d58f0d746946064154cd257d368599d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.12
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_b80f002a4112fc8defa29deee9464b28.html">googletest-master</a></li><li class="navelem"><a class="el" href="dir_8bfa859b63a87f624554ba57ff7df488.html">googlemock</a></li><li class="navelem"><a class="el" href="dir_45a0859a1de6ede9f8dd632c95469544.html">include</a></li><li class="navelem"><a class="el" href="dir_89e14424eabda61878d2b529645c19b0.html">gmock</a></li><li class="navelem"><a class="el" href="gmock-more-actions_8h.html">gmock-more-actions.h</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
 </body>
 </html>

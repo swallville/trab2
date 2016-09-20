@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="namespacetesting_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html">PrettyUnitTestResultPrinter</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -89,7 +106,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9219a4263ef0057c98a2a2a41f35ee15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a6b6de195b4ef3c9f2edd2e6c270f3e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#a7a6b6de195b4ef3c9f2edd2e6c270f3e">OnTestProgramStart</a> (const <a class="el" href="classtesting_1_1_unit_test.html">UnitTest</a> &amp;)</td></tr>
 <tr class="separator:a7a6b6de195b4ef3c9f2edd2e6c270f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdba10a8c97e272ab4cee97cb652c957"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#abdba10a8c97e272ab4cee97cb652c957">OnTestIterationStart</a> (const <a class="el" href="classtesting_1_1_unit_test.html">UnitTest</a> &amp;unit_test, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> iteration)</td></tr>
+<tr class="memitem:abdba10a8c97e272ab4cee97cb652c957"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#abdba10a8c97e272ab4cee97cb652c957">OnTestIterationStart</a> (const <a class="el" href="classtesting_1_1_unit_test.html">UnitTest</a> &amp;unit_test, int iteration)</td></tr>
 <tr class="separator:abdba10a8c97e272ab4cee97cb652c957"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a846a5e82b421e04fcdd2b1b2b64b162f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#a846a5e82b421e04fcdd2b1b2b64b162f">OnEnvironmentsSetUpStart</a> (const <a class="el" href="classtesting_1_1_unit_test.html">UnitTest</a> &amp;unit_test)</td></tr>
 <tr class="separator:a846a5e82b421e04fcdd2b1b2b64b162f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,7 +116,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adcb68c729565d4bcdf8418a52902c3de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5078ee71cfa97e37ae7a9366149195c5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#a5078ee71cfa97e37ae7a9366149195c5">OnTestStart</a> (const <a class="el" href="classtesting_1_1_test_info.html">TestInfo</a> &amp;test_info)</td></tr>
 <tr class="separator:a5078ee71cfa97e37ae7a9366149195c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7589e8df7485349498a3a81bf16e2f68"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#a7589e8df7485349498a3a81bf16e2f68">OnTestPartResult</a> (const <a class="el" href="classtesting_1_1_test_part_result.html">TestPartResult</a> &amp;<a class="el" href="abstract_8h.html#aa689992a2c3ad3c7231845abcc79f8c9">result</a>)</td></tr>
+<tr class="memitem:a7589e8df7485349498a3a81bf16e2f68"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#a7589e8df7485349498a3a81bf16e2f68">OnTestPartResult</a> (const <a class="el" href="classtesting_1_1_test_part_result.html">TestPartResult</a> &amp;result)</td></tr>
 <tr class="separator:a7589e8df7485349498a3a81bf16e2f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06749ff2b32a16c127374ecd015f13e0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#a06749ff2b32a16c127374ecd015f13e0">OnTestEnd</a> (const <a class="el" href="classtesting_1_1_test_info.html">TestInfo</a> &amp;test_info)</td></tr>
 <tr class="separator:a06749ff2b32a16c127374ecd015f13e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,7 +126,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afea9dc849c92fdbc1d8505f4c74ffc1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab23094ef3b714778b2f742d39818c280"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#ab23094ef3b714778b2f742d39818c280">OnEnvironmentsTearDownEnd</a> (const <a class="el" href="classtesting_1_1_unit_test.html">UnitTest</a> &amp;)</td></tr>
 <tr class="separator:ab23094ef3b714778b2f742d39818c280"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac29b30216023baddda04ef5889f484ff"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#ac29b30216023baddda04ef5889f484ff">OnTestIterationEnd</a> (const <a class="el" href="classtesting_1_1_unit_test.html">UnitTest</a> &amp;unit_test, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> iteration)</td></tr>
+<tr class="memitem:ac29b30216023baddda04ef5889f484ff"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#ac29b30216023baddda04ef5889f484ff">OnTestIterationEnd</a> (const <a class="el" href="classtesting_1_1_unit_test.html">UnitTest</a> &amp;unit_test, int iteration)</td></tr>
 <tr class="separator:ac29b30216023baddda04ef5889f484ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c92c062889abdb940b04ffe113f5980"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#a8c92c062889abdb940b04ffe113f5980">OnTestProgramEnd</a> (const <a class="el" href="classtesting_1_1_unit_test.html">UnitTest</a> &amp;)</td></tr>
 <tr class="separator:a8c92c062889abdb940b04ffe113f5980"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,7 +136,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a5b60a9aed1db02837b11450f6e8d0f71"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#a5b60a9aed1db02837b11450f6e8d0f71">PrintTestName</a> (const char *test_case, const char *<a class="el" href="graminit_8h.html#af04af1bc6d042a68a2b24d6e1312d253">test</a>)</td></tr>
+<tr class="memitem:a5b60a9aed1db02837b11450f6e8d0f71"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#a5b60a9aed1db02837b11450f6e8d0f71">PrintTestName</a> (const char *test_case, const char *test)</td></tr>
 <tr class="separator:a5b60a9aed1db02837b11450f6e8d0f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -382,7 +399,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>iteration</em>&#160;</td>
         </tr>
         <tr>
@@ -422,7 +439,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>iteration</em>&#160;</td>
         </tr>
         <tr>
@@ -603,14 +620,18 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/sineideferreira/Documents/12_0127377_Lukas/lib/googletest-master/googletest/src/<a class="el" href="gtest_8cc_source.html">gtest.cc</a></li>
+<li>lib/googletest-master/googletest/src/<a class="el" href="gtest_8cc_source.html">gtest.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.12
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="namespacetesting_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html">PrettyUnitTestResultPrinter</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
 </body>
 </html>

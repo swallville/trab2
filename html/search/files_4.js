@@ -1,15 +1,18 @@
 var searchData=
 [
-  ['datetime_2eh',['datetime.h',['../datetime_8h.html',1,'']]],
-  ['descrobject_2eh',['descrobject.h',['../descrobject_8h.html',1,'']]],
-  ['designdoc_2emd',['DesignDoc.md',['../_design_doc_8md.html',1,'']]],
-  ['devguide_2emd',['DevGuide.md',['../googlemock_2docs_2_dev_guide_8md.html',1,'']]],
-  ['devguide_2emd',['DevGuide.md',['../googletest_2docs_2_dev_guide_8md.html',1,'']]],
-  ['dictobject_2eh',['dictobject.h',['../dictobject_8h.html',1,'']]],
-  ['documentation_2emd',['Documentation.md',['../googlemock_2docs_2v1__6_2_documentation_8md.html',1,'']]],
-  ['documentation_2emd',['Documentation.md',['../googlemock_2docs_2v1__7_2_documentation_8md.html',1,'']]],
-  ['documentation_2emd',['Documentation.md',['../googletest_2docs_2_documentation_8md.html',1,'']]],
-  ['documentation_2emd',['Documentation.md',['../googlemock_2docs_2_documentation_8md.html',1,'']]],
-  ['documentation_2emd',['Documentation.md',['../googlemock_2docs_2v1__5_2_documentation_8md.html',1,'']]],
-  ['dtoa_2eh',['dtoa.h',['../dtoa_8h.html',1,'']]]
+  ['faq_2emd',['FAQ.md',['../_f_a_q_8md.html',1,'']]],
+  ['feature_5ftests_2ec',['feature_tests.c',['../feature__tests_8c.html',1,'']]],
+  ['feature_5ftests_2ecxx',['feature_tests.cxx',['../feature__tests_8cxx.html',1,'']]],
+  ['fordummies_2emd',['ForDummies.md',['../_for_dummies_8md.html',1,'']]],
+  ['fordummies_2emd',['ForDummies.md',['../v1__6_2_for_dummies_8md.html',1,'']]],
+  ['fordummies_2emd',['ForDummies.md',['../v1__7_2_for_dummies_8md.html',1,'']]],
+  ['fordummies_2emd',['ForDummies.md',['../v1__5_2_for_dummies_8md.html',1,'']]],
+  ['frequentlyaskedquestions_2emd',['FrequentlyAskedQuestions.md',['../v1__6_2_frequently_asked_questions_8md.html',1,'']]],
+  ['frequentlyaskedquestions_2emd',['FrequentlyAskedQuestions.md',['../v1__7_2_frequently_asked_questions_8md.html',1,'']]],
+  ['frequentlyaskedquestions_2emd',['FrequentlyAskedQuestions.md',['../v1__5_2_frequently_asked_questions_8md.html',1,'']]],
+  ['frequentlyaskedquestions_2emd',['FrequentlyAskedQuestions.md',['../_frequently_asked_questions_8md.html',1,'']]],
+  ['funcs_2ecpp',['funcs.cpp',['../funcs_8cpp.html',1,'']]],
+  ['funcs_2ehpp',['funcs.hpp',['../funcs_8hpp.html',1,'']]],
+  ['fuse_5fgmock_5ffiles_2epy',['fuse_gmock_files.py',['../fuse__gmock__files_8py.html',1,'']]],
+  ['fuse_5fgtest_5ffiles_2epy',['fuse_gtest_files.py',['../fuse__gtest__files_8py.html',1,'']]]
 ];

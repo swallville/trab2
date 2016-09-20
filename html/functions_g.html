@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +53,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_g.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -64,33 +85,6 @@ $(function() {
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a id="index_g"></a>- g -</h3><ul>
-<li>g_accel
-: <a class="el" href="structgrammar.html#a6bfa088665e4923c32933b3f40343ce2">grammar</a>
-</li>
-<li>g_dfa
-: <a class="el" href="structgrammar.html#a5f1487bf454c13350ffbd11ed08cd160">grammar</a>
-</li>
-<li>g_ll
-: <a class="el" href="structgrammar.html#a44c2b2bf052d04fe115c96ebcd3cdb6d">grammar</a>
-</li>
-<li>g_ndfas
-: <a class="el" href="structgrammar.html#abf22ce0269bc0d85b5664fc390f5441f">grammar</a>
-</li>
-<li>g_start
-: <a class="el" href="structgrammar.html#a07f66956b24bcf1d2560f64e97738843">grammar</a>
-</li>
-<li>gc
-: <a class="el" href="union__gc__head.html#a4e94124e215576effdc084dc291effe1">_gc_head</a>
-</li>
-<li>gc_next
-: <a class="el" href="union__gc__head.html#a1ecfab1b9a966dd1d7f861e91dfb4431">_gc_head</a>
-</li>
-<li>gc_prev
-: <a class="el" href="union__gc__head.html#ab555545d58e92dbb75891616a50502b5">_gc_head</a>
-</li>
-<li>gc_refs
-: <a class="el" href="union__gc__head.html#ac1c34c7f388c2eb1ab37198fafea082a">_gc_head</a>
-</li>
 <li>GeMatcher()
 : <a class="el" href="classtesting_1_1internal_1_1_ge_matcher.html#aba23cbb4040d08be1a9db09b73906182">testing::internal::GeMatcher&lt; Rhs &gt;</a>
 </li>
@@ -113,22 +107,13 @@ $(function() {
 <li>GenerateUniqueFileName()
 : <a class="el" href="classtesting_1_1internal_1_1_file_path.html#a2280a77adb394cf80bb5f73fc292e8c8">testing::internal::FilePath</a>
 </li>
-<li>GeneratorExp
-: <a class="el" href="struct__expr.html#a45271472d60cc7aa968a0990d3399615">_expr</a>
-</li>
-<li>generators
-: <a class="el" href="struct__expr.html#a4f5c683305e32502095b6c36148ebee8">_expr</a>
-</li>
-<li>get
-: <a class="el" href="struct_py_get_set_def.html#a88b9bd1a9bde46a5bd261e03927219fa">PyGetSetDef</a>
-</li>
 <li>Get()
 : <a class="el" href="classtesting_1_1_default_value.html#a4dc6dfee4cbc9cdb36f5c9cde5cf2b83">testing::DefaultValue&lt; T &gt;</a>
 , <a class="el" href="classtesting_1_1_default_value_3_01_t_01_6_01_4.html#a1310448dd8c171aecfcbf7c8df5de7bd">testing::DefaultValue&lt; T &amp; &gt;</a>
 , <a class="el" href="classtesting_1_1_default_value_3_01void_01_4.html#acda4c367a5b0c0cfb28bc2289f385eed">testing::DefaultValue&lt; void &gt;</a>
 </li>
 <li>get()
-: <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_const_propagating_ptr.html#a39a09d46453380ec1b8be8ce40adc453">testing::gmock_matchers_test::ConstPropagatingPtr&lt; T &gt;</a>
+: <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_const_propagating_ptr.html#a92d7c8429246ef33a020e8a3d840b9c3">testing::gmock_matchers_test::ConstPropagatingPtr&lt; T &gt;</a>
 </li>
 <li>Get()
 : <a class="el" href="classtesting_1_1internal_1_1_built_in_default_value.html#a7e26c1df14a887c8f393b29d6ea162e6">testing::internal::BuiltInDefaultValue&lt; T &gt;</a>
@@ -160,23 +145,11 @@ $(function() {
 <li>GetCharPtrValue()
 : <a class="el" href="class_widget.html#a50791a556979f22f5593383143c7f815">Widget</a>
 </li>
-<li>getcode
-: <a class="el" href="struct___py_unicode___name___c_a_p_i.html#ad4efd77b965fd09f2ae3325fb1784a02">_PyUnicode_Name_CAPI</a>
-</li>
 <li>GetCurrentDir()
 : <a class="el" href="classtesting_1_1internal_1_1_file_path.html#aaff39ccd7bfb7a1c09c0220a64326387">testing::internal::FilePath</a>
 </li>
 <li>GetDescriber()
 : <a class="el" href="classtesting_1_1internal_1_1_matcher_base.html#a9b816eb60ee16780703768d704c105e3">testing::internal::MatcherBase&lt; T &gt;</a>
-</li>
-<li>GetErrorCode
-: <a class="el" href="struct_py_expat___c_a_p_i.html#ae4ba4b470a4d80ba107c556eada59492">PyExpat_CAPI</a>
-</li>
-<li>GetErrorColumnNumber
-: <a class="el" href="struct_py_expat___c_a_p_i.html#a52fccb9618f4a0db6c6a5ef8f799f4f7">PyExpat_CAPI</a>
-</li>
-<li>GetErrorLineNumber
-: <a class="el" href="struct_py_expat___c_a_p_i.html#a238c98224fe4c4761527fdb823e565cd">PyExpat_CAPI</a>
 </li>
 <li>GetFilesToBranch()
 : <a class="el" href="classrelease__docs_1_1_wiki_brancher.html#a05fc4282f501fb0210ecb33fd1d209a6">release_docs.WikiBrancher</a>
@@ -207,9 +180,6 @@ $(function() {
 </li>
 <li>GetMutableTestCase()
 : <a class="el" href="classtesting_1_1internal_1_1_unit_test_impl.html#a2ca71a08060037357fc7e1a406b89add">testing::internal::UnitTestImpl</a>
-</li>
-<li>getname
-: <a class="el" href="struct___py_unicode___name___c_a_p_i.html#a78b09e5d34c24880c4e24ca6cb51dda9">_PyUnicode_Name_CAPI</a>
 </li>
 <li>GetName()
 : <a class="el" href="classcpp_1_1ast_1_1_ast_builder.html#a327957c4228325fc5f64821b047bdc6f">cpp.ast.AstBuilder</a>
@@ -304,29 +274,8 @@ $(function() {
 <li>GetValue()
 : <a class="el" href="classpump_1_1_env.html#a43c3609179d5e458266731199e35313b">pump.Env</a>
 </li>
-<li>gi_code
-: <a class="el" href="struct_py_gen_object.html#ac2e960157445b48e1bbd95e2290649b5">PyGenObject</a>
-</li>
-<li>gi_frame
-: <a class="el" href="struct_py_gen_object.html#a9601d467ad3d67fc2c0ddc563b8a9435">PyGenObject</a>
-</li>
-<li>gi_running
-: <a class="el" href="struct_py_gen_object.html#aeaf20c6a757c6759fbd586f7ef6a7d1a">PyGenObject</a>
-</li>
-<li>gi_weakreflist
-: <a class="el" href="struct_py_gen_object.html#a0d828fd28fbb252b6afd214d40154b43">PyGenObject</a>
-</li>
 <li>GiantTemplate()
 : <a class="el" href="structtesting_1_1gmock__generated__actions__test_1_1_giant_template.html#aaa836b162de31fbd538ffcbed448f430">testing::gmock_generated_actions_test::GiantTemplate&lt; T1, T2, T3, k4, k5, k6, T7, T8, T9 &gt;</a>
-</li>
-<li>gilstate_counter
-: <a class="el" href="struct__ts.html#a2a1af12986d8ab605b22d0840f2c23cf">_ts</a>
-</li>
-<li>Global
-: <a class="el" href="struct__stmt.html#a449e08678ec7366c66635f4220469706">_stmt</a>
-</li>
-<li>globals
-: <a class="el" href="struct__stmt.html#ac46d3b2efe76daff8ed15a47f243582e">_stmt</a>
 </li>
 <li>GreaterThanMatcher()
 : <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_greater_than_matcher.html#a605c50137599a1dba0701bbd735bf1e8">testing::gmock_matchers_test::GreaterThanMatcher</a>
@@ -378,7 +327,7 @@ $(function() {
 , <a class="el" href="classtesting_1_1internal_1_1_unordered_elements_are_matcher_impl.html#a6e8b7d421741a66ee7f2ebff7372897e">testing::internal::UnorderedElementsAreMatcherImpl&lt; Container &gt;</a>
 </li>
 <li>gtest_trace_stack()
-: <a class="el" href="classtesting_1_1internal_1_1_unit_test_impl.html#af8c7c0a0c954e36d83e6e4690d3fb938">testing::internal::UnitTestImpl</a>
+: <a class="el" href="classtesting_1_1internal_1_1_unit_test_impl.html#ad82fed50f13f13f11867af9dad4a2cf6">testing::internal::UnitTestImpl</a>
 </li>
 <li>GTestFlagSaver()
 : <a class="el" href="classtesting_1_1internal_1_1_g_test_flag_saver.html#ad94262f7765927bbe9a08e25f9c67530">testing::internal::GTestFlagSaver</a>
@@ -397,11 +346,14 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.12
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
 </body>
 </html>

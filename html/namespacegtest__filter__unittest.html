@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('namespacegtest__filter__unittest.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,7 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -77,13 +98,13 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8ba027a73134bf97696651252457b492"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#a8ba027a73134bf97696651252457b492">SetEnvVar</a> (env_var, <a class="el" href="dictobject_8h.html#a4eabde677fab7743b016294ac2f430b9">value</a>)</td></tr>
+<tr class="memitem:a8ba027a73134bf97696651252457b492"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#a8ba027a73134bf97696651252457b492">SetEnvVar</a> (env_var, value)</td></tr>
 <tr class="separator:a8ba027a73134bf97696651252457b492"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb83ed30067e0d13161fd89868ed476b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#abb83ed30067e0d13161fd89868ed476b">RunAndReturnOutput</a> (<a class="el" href="eval_8h.html#ad61773d508168edac5109211128610c7">args</a>=None)</td></tr>
+<tr class="memitem:abb83ed30067e0d13161fd89868ed476b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#abb83ed30067e0d13161fd89868ed476b">RunAndReturnOutput</a> (args=None)</td></tr>
 <tr class="separator:abb83ed30067e0d13161fd89868ed476b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf6916ce9c936a238afeb79a4d326a12"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#aaf6916ce9c936a238afeb79a4d326a12">RunAndExtractTestList</a> (<a class="el" href="eval_8h.html#ad61773d508168edac5109211128610c7">args</a>=None)</td></tr>
+<tr class="memitem:aaf6916ce9c936a238afeb79a4d326a12"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#aaf6916ce9c936a238afeb79a4d326a12">RunAndExtractTestList</a> (args=None)</td></tr>
 <tr class="separator:aaf6916ce9c936a238afeb79a4d326a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bfd6ae10e7002148bc25e505bd61534"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#a2bfd6ae10e7002148bc25e505bd61534">InvokeWithModifiedEnv</a> (extra_env, function, <a class="el" href="eval_8h.html#ad61773d508168edac5109211128610c7">args</a>, kwargs)</td></tr>
+<tr class="memitem:a2bfd6ae10e7002148bc25e505bd61534"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#a2bfd6ae10e7002148bc25e505bd61534">InvokeWithModifiedEnv</a> (extra_env, function, args, kwargs)</td></tr>
 <tr class="separator:a2bfd6ae10e7002148bc25e505bd61534"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d88cc7e4faf5305640a66dc487b33fb"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#a4d88cc7e4faf5305640a66dc487b33fb">RunWithSharding</a> (total_shards, shard_index, command)</td></tr>
 <tr class="separator:a4d88cc7e4faf5305640a66dc487b33fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -98,29 +119,29 @@ Variables</h2></td></tr>
 <tr class="separator:ab9e86ba00496d09ea6830a60e3eb3cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7afca8c162042da19f58cb569805d627"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#a7afca8c162042da19f58cb569805d627">CAN_TEST_EMPTY_FILTER</a> = (<a class="el" href="namespacegtest__filter__unittest.html#a3ac12d5141273a483e2fd6d44ab2eef0">CAN_PASS_EMPTY_ENV</a> and <a class="el" href="namespacegtest__filter__unittest.html#ab9e86ba00496d09ea6830a60e3eb3cc0">CAN_UNSET_ENV</a>)</td></tr>
 <tr class="separator:a7afca8c162042da19f58cb569805d627"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dbe99165209787d4d138d30673c95f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#a3dbe99165209787d4d138d30673c95f5">FILTER_ENV_VAR</a> = 'GTEST_FILTER'</td></tr>
+<tr class="memitem:a3dbe99165209787d4d138d30673c95f5"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#a3dbe99165209787d4d138d30673c95f5">FILTER_ENV_VAR</a> = 'GTEST_FILTER'</td></tr>
 <tr class="separator:a3dbe99165209787d4d138d30673c95f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b9a50b994f774c1cebbc52971708e4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#a3b9a50b994f774c1cebbc52971708e4e">TOTAL_SHARDS_ENV_VAR</a> = 'GTEST_TOTAL_SHARDS'</td></tr>
+<tr class="memitem:a3b9a50b994f774c1cebbc52971708e4e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#a3b9a50b994f774c1cebbc52971708e4e">TOTAL_SHARDS_ENV_VAR</a> = 'GTEST_TOTAL_SHARDS'</td></tr>
 <tr class="separator:a3b9a50b994f774c1cebbc52971708e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a082d5120f29f56d497db94401d773ca7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#a082d5120f29f56d497db94401d773ca7">SHARD_INDEX_ENV_VAR</a> = 'GTEST_SHARD_INDEX'</td></tr>
+<tr class="memitem:a082d5120f29f56d497db94401d773ca7"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#a082d5120f29f56d497db94401d773ca7">SHARD_INDEX_ENV_VAR</a> = 'GTEST_SHARD_INDEX'</td></tr>
 <tr class="separator:a082d5120f29f56d497db94401d773ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc2e06353cabc6015c98bc37413a63ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#acc2e06353cabc6015c98bc37413a63ee">SHARD_STATUS_FILE_ENV_VAR</a> = 'GTEST_SHARD_STATUS_FILE'</td></tr>
+<tr class="memitem:acc2e06353cabc6015c98bc37413a63ee"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#acc2e06353cabc6015c98bc37413a63ee">SHARD_STATUS_FILE_ENV_VAR</a> = 'GTEST_SHARD_STATUS_FILE'</td></tr>
 <tr class="separator:acc2e06353cabc6015c98bc37413a63ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90fceef31e3329f712cd41244c5e923d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#a90fceef31e3329f712cd41244c5e923d">FILTER_FLAG</a> = 'gtest_filter'</td></tr>
+<tr class="memitem:a90fceef31e3329f712cd41244c5e923d"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#a90fceef31e3329f712cd41244c5e923d">FILTER_FLAG</a> = 'gtest_filter'</td></tr>
 <tr class="separator:a90fceef31e3329f712cd41244c5e923d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2da713fbaa08fdbaa7cd78c45974edf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#aa2da713fbaa08fdbaa7cd78c45974edf">ALSO_RUN_DISABED_TESTS_FLAG</a> = 'gtest_also_run_disabled_tests'</td></tr>
+<tr class="memitem:aa2da713fbaa08fdbaa7cd78c45974edf"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#aa2da713fbaa08fdbaa7cd78c45974edf">ALSO_RUN_DISABED_TESTS_FLAG</a> = 'gtest_also_run_disabled_tests'</td></tr>
 <tr class="separator:aa2da713fbaa08fdbaa7cd78c45974edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf600b005b9c09e727b55b60fdf8f507"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#aaf600b005b9c09e727b55b60fdf8f507">COMMAND</a> = <a class="el" href="namespacegtest__test__utils.html#a89ed3717984a80ffbb7a9c92f71b86a2">gtest_test_utils.GetTestExecutablePath</a>('gtest_filter_unittest_')</td></tr>
 <tr class="separator:aaf600b005b9c09e727b55b60fdf8f507"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fbf875f4ea83b2d5239a2e99e080526"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#a8fbf875f4ea83b2d5239a2e99e080526">PARAM_TEST_REGEX</a> = re.compile(r'/ParamTest')</td></tr>
 <tr class="separator:a8fbf875f4ea83b2d5239a2e99e080526"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76b555691fb57191f50a4328134fb4d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#a76b555691fb57191f50a4328134fb4d8">TEST_CASE_REGEX</a> = re.compile(r'^\[\-+\] \<a class="el" href="pystrtod_8h.html#aebc55cdba1447f899efca30032620f9e">d</a>+ tests? from (\w+(/\w+)?)')</td></tr>
+<tr class="memitem:a76b555691fb57191f50a4328134fb4d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#a76b555691fb57191f50a4328134fb4d8">TEST_CASE_REGEX</a> = re.compile(r'^\[\-+\] \d+ tests? from (\w+(/\w+)?)')</td></tr>
 <tr class="separator:a76b555691fb57191f50a4328134fb4d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9327e0f4c9fab06a346228cc5bab53f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#a9327e0f4c9fab06a346228cc5bab53f2">TEST_REGEX</a> = re.compile(r'^\[\<a class="el" href="stringobject_8h.html#ad912d811fca4c9cfee37905bed81eb65">s</a>*<a class="el" href="stringobject_8h.html#ad912d811fca4c9cfee37905bed81eb65">RUN\s</a>*\].*\.(\w+(/\w+)?)')</td></tr>
+<tr class="memitem:a9327e0f4c9fab06a346228cc5bab53f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#a9327e0f4c9fab06a346228cc5bab53f2">TEST_REGEX</a> = re.compile(r'^\[\s*RUN\s*\].*\.(\w+(/\w+)?)')</td></tr>
 <tr class="separator:a9327e0f4c9fab06a346228cc5bab53f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b3bb8eda9c6b1716e992d433b1e586c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#a9b3bb8eda9c6b1716e992d433b1e586c">LIST_TESTS_FLAG</a> = '--gtest_list_tests'</td></tr>
+<tr class="memitem:a9b3bb8eda9c6b1716e992d433b1e586c"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#a9b3bb8eda9c6b1716e992d433b1e586c">LIST_TESTS_FLAG</a> = '--gtest_list_tests'</td></tr>
 <tr class="separator:a9b3bb8eda9c6b1716e992d433b1e586c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a660f467579ec78f8f856b588c6f6f270"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#a660f467579ec78f8f856b588c6f6f270">SUPPORTS_DEATH_TESTS</a></td></tr>
+<tr class="memitem:a660f467579ec78f8f856b588c6f6f270"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#a660f467579ec78f8f856b588c6f6f270">SUPPORTS_DEATH_TESTS</a></td></tr>
 <tr class="separator:a660f467579ec78f8f856b588c6f6f270"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c414863f1e2e9ac993ce4afda33f6b9"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__filter__unittest.html#a4c414863f1e2e9ac993ce4afda33f6b9">PARAM_TESTS</a></td></tr>
 <tr class="separator:a4c414863f1e2e9ac993ce4afda33f6b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -308,7 +329,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> gtest_filter_unittest.ALSO_RUN_DISABED_TESTS_FLAG = 'gtest_also_run_disabled_tests'</td>
+          <td class="memname">string gtest_filter_unittest.ALSO_RUN_DISABED_TESTS_FLAG = 'gtest_also_run_disabled_tests'</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -453,7 +474,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> gtest_filter_unittest.FILTER_ENV_VAR = 'GTEST_FILTER'</td>
+          <td class="memname">string gtest_filter_unittest.FILTER_ENV_VAR = 'GTEST_FILTER'</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -469,7 +490,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> gtest_filter_unittest.FILTER_FLAG = 'gtest_filter'</td>
+          <td class="memname">string gtest_filter_unittest.FILTER_FLAG = 'gtest_filter'</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -485,7 +506,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> gtest_filter_unittest.LIST_TESTS_FLAG = '--gtest_list_tests'</td>
+          <td class="memname">string gtest_filter_unittest.LIST_TESTS_FLAG = '--gtest_list_tests'</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -549,7 +570,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> gtest_filter_unittest.SHARD_INDEX_ENV_VAR = 'GTEST_SHARD_INDEX'</td>
+          <td class="memname">string gtest_filter_unittest.SHARD_INDEX_ENV_VAR = 'GTEST_SHARD_INDEX'</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -565,7 +586,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> gtest_filter_unittest.SHARD_STATUS_FILE_ENV_VAR = 'GTEST_SHARD_STATUS_FILE'</td>
+          <td class="memname">string gtest_filter_unittest.SHARD_STATUS_FILE_ENV_VAR = 'GTEST_SHARD_STATUS_FILE'</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -581,7 +602,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> gtest_filter_unittest.SUPPORTS_DEATH_TESTS</td>
+          <td class="memname">string gtest_filter_unittest.SUPPORTS_DEATH_TESTS</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -598,7 +619,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">gtest_filter_unittest.TEST_CASE_REGEX = re.compile(r'^\[\-+\] \<a class="el" href="pystrtod_8h.html#aebc55cdba1447f899efca30032620f9e">d</a>+ tests? from (\w+(/\w+)?)')</td>
+          <td class="memname">gtest_filter_unittest.TEST_CASE_REGEX = re.compile(r'^\[\-+\] \d+ tests? from (\w+(/\w+)?)')</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -614,7 +635,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">gtest_filter_unittest.TEST_REGEX = re.compile(r'^\[\<a class="el" href="stringobject_8h.html#ad912d811fca4c9cfee37905bed81eb65">s</a>*<a class="el" href="stringobject_8h.html#ad912d811fca4c9cfee37905bed81eb65">RUN\s</a>*\].*\.(\w+(/\w+)?)')</td>
+          <td class="memname">gtest_filter_unittest.TEST_REGEX = re.compile(r'^\[\s*RUN\s*\].*\.(\w+(/\w+)?)')</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -630,7 +651,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> gtest_filter_unittest.TOTAL_SHARDS_ENV_VAR = 'GTEST_TOTAL_SHARDS'</td>
+          <td class="memname">string gtest_filter_unittest.TOTAL_SHARDS_ENV_VAR = 'GTEST_TOTAL_SHARDS'</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -640,11 +661,15 @@ Variables</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.12
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacegtest__filter__unittest.html">gtest_filter_unittest</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
 </body>
 </html>

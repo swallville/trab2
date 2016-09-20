@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['label',['label',['../structlabel.html',1,'']]],
-  ['labellist',['labellist',['../structlabellist.html',1,'']]],
   ['le2matcher',['Le2Matcher',['../classtesting_1_1internal_1_1_le2_matcher.html',1,'testing::internal']]],
   ['lematcher',['LeMatcher',['../classtesting_1_1internal_1_1_le_matcher.html',1,'testing::internal']]],
   ['lessbyname',['LessByName',['../structtesting_1_1internal_1_1_less_by_name.html',1,'testing::internal']]],

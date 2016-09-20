@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classtesting_1_1_action.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="classtesting_1_1_action.html">Action</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -95,9 +112,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a806bacddaa1f1daf61f89674564bdf0f"><td class="memTemplParams" colspan="2">template&lt;typename Func &gt; </td></tr>
 <tr class="memitem:a806bacddaa1f1daf61f89674564bdf0f"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtesting_1_1_action.html#a806bacddaa1f1daf61f89674564bdf0f">Action</a> (const <a class="el" href="classtesting_1_1_action.html">Action</a>&lt; Func &gt; &amp;action)</td></tr>
 <tr class="separator:a806bacddaa1f1daf61f89674564bdf0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4468ca2ea5e9f7363271145992d09dba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_action.html#a4468ca2ea5e9f7363271145992d09dba">IsDoDefault</a> () const</td></tr>
+<tr class="memitem:a4468ca2ea5e9f7363271145992d09dba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_action.html#a4468ca2ea5e9f7363271145992d09dba">IsDoDefault</a> () const</td></tr>
 <tr class="separator:a4468ca2ea5e9f7363271145992d09dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad00a03062885685da84b308e6e8ff4cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1_action.html#a9af08a21ad329331fde856cba9b6dea2">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_action.html#ad00a03062885685da84b308e6e8ff4cb">Perform</a> (const <a class="el" href="classtesting_1_1_action.html#ae27fda510696a9294f991de5b1abfaf2">ArgumentTuple</a> &amp;<a class="el" href="eval_8h.html#ad61773d508168edac5109211128610c7">args</a>) const</td></tr>
+<tr class="memitem:ad00a03062885685da84b308e6e8ff4cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1_action.html#a9af08a21ad329331fde856cba9b6dea2">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_action.html#ad00a03062885685da84b308e6e8ff4cb">Perform</a> (const <a class="el" href="classtesting_1_1_action.html#ae27fda510696a9294f991de5b1abfaf2">ArgumentTuple</a> &amp;args) const</td></tr>
 <tr class="separator:ad00a03062885685da84b308e6e8ff4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af23eef2fff5a92d8ff2ed7ac7a542005"><td class="memTemplParams" colspan="2">template&lt;typename From &gt; </td></tr>
 <tr class="memitem:af23eef2fff5a92d8ff2ed7ac7a542005"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtesting_1_1_action.html#af23eef2fff5a92d8ff2ed7ac7a542005">Action</a> (const <a class="el" href="classtesting_1_1_action.html">Action</a>&lt; From &gt; &amp;from)</td></tr>
@@ -309,7 +326,7 @@ template&lt;typename F&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> <a class="el" href="classtesting_1_1_action.html">testing::Action</a>&lt; F &gt;::IsDoDefault </td>
+          <td class="memname">bool <a class="el" href="classtesting_1_1_action.html">testing::Action</a>&lt; F &gt;::IsDoDefault </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -386,14 +403,18 @@ template&lt;typename F1 , typename F2 &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/sineideferreira/Documents/12_0127377_Lukas/lib/googletest-master/googlemock/include/gmock/<a class="el" href="gmock-actions_8h_source.html">gmock-actions.h</a></li>
+<li>lib/googletest-master/googlemock/include/gmock/<a class="el" href="gmock-actions_8h_source.html">gmock-actions.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.12
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="classtesting_1_1_action.html">Action</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
 </body>
 </html>

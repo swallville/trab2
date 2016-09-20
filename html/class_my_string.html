@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_my_string.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,7 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -78,13 +99,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1cb17852b83614394b59720779c5f918"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28134eb91b6698f46b12accefa157d0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_my_string.html#a28134eb91b6698f46b12accefa157d0f">MyString</a> (const char *a_c_string)</td></tr>
 <tr class="separator:a28134eb91b6698f46b12accefa157d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae24c7cf89a58dd2287303df2ac054c66"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_my_string.html#ae24c7cf89a58dd2287303df2ac054c66">MyString</a> (const <a class="el" href="class_my_string.html">MyString</a> &amp;<a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>)</td></tr>
+<tr class="memitem:ae24c7cf89a58dd2287303df2ac054c66"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_my_string.html#ae24c7cf89a58dd2287303df2ac054c66">MyString</a> (const <a class="el" href="class_my_string.html">MyString</a> &amp;string)</td></tr>
 <tr class="separator:ae24c7cf89a58dd2287303df2ac054c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bee4fe8ad82a0b7b8f65b02054b156b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_my_string.html#a7bee4fe8ad82a0b7b8f65b02054b156b">~MyString</a> ()</td></tr>
 <tr class="separator:a7bee4fe8ad82a0b7b8f65b02054b156b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff2af0cf30db39fe24a235670ee6ff25"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_my_string.html#aff2af0cf30db39fe24a235670ee6ff25">c_string</a> () const</td></tr>
 <tr class="separator:aff2af0cf30db39fe24a235670ee6ff25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4eb168b1ec401a732b3859abe004d648"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pymem_8h.html#a7b60c5629e55e8ec87a4547dd4abced4">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_my_string.html#a4eb168b1ec401a732b3859abe004d648">Length</a> () const</td></tr>
+<tr class="memitem:a4eb168b1ec401a732b3859abe004d648"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_my_string.html#a4eb168b1ec401a732b3859abe004d648">Length</a> () const</td></tr>
 <tr class="separator:a4eb168b1ec401a732b3859abe004d648"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a521c4cd7eccac6ce554d8a51505e4970"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_my_string.html#a521c4cd7eccac6ce554d8a51505e4970">Set</a> (const char *<a class="el" href="class_my_string.html#aff2af0cf30db39fe24a235670ee6ff25">c_string</a>)</td></tr>
 <tr class="separator:a521c4cd7eccac6ce554d8a51505e4970"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,7 +295,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="pymem_8h.html#a7b60c5629e55e8ec87a4547dd4abced4">size_t</a> MyString::Length </td>
+          <td class="memname">size_t MyString::Length </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -312,15 +333,19 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/Users/sineideferreira/Documents/12_0127377_Lukas/lib/googletest-master/googletest/samples/<a class="el" href="sample2_8h_source.html">sample2.h</a></li>
-<li>/Users/sineideferreira/Documents/12_0127377_Lukas/lib/googletest-master/googletest/samples/<a class="el" href="sample2_8cc_source.html">sample2.cc</a></li>
+<li>lib/googletest-master/googletest/samples/<a class="el" href="sample2_8h_source.html">sample2.h</a></li>
+<li>lib/googletest-master/googletest/samples/<a class="el" href="sample2_8cc_source.html">sample2.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.12
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_my_string.html">MyString</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
 </body>
 </html>

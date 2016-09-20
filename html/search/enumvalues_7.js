@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['honor_5fsharding_5fprotocol',['HONOR_SHARDING_PROTOCOL',['../classtesting_1_1internal_1_1_unit_test_impl.html#acc5ffd3f9bc2e87bb3dba4218f58af43abec11f1c4bb8a3e2b99fa8328bccd58c',1,'testing::internal::UnitTestImpl']]]
+  ['value',['value',['../structtesting_1_1internal_1_1_kind_of.html#a4866389a4bc8d5522b5f8ae61a42f520a30d28b30579739dfb2d410825ac3aaa8',1,'testing::internal::KindOf::value()'],['../structtesting_1_1internal_1_1_static_assert_type_eq_helper_3_01_t_00_01_t_01_4.html#acdb69a9c4164628ea6a80bd6442058c6a63c475f543e4e977d43c5093dd2b7f3f',1,'testing::internal::StaticAssertTypeEqHelper&lt; T, T &gt;::value()']]]
 ];

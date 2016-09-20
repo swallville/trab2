@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +53,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('globals_func_m.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -66,19 +87,8 @@ $(function() {
 <h3><a id="index_m"></a>- m -</h3><ul>
 <li>main()
 : <a class="el" href="gmock__main_8cc.html#a7f83bdc516d2cb86e20235d94ddf055a">gmock_main.cc</a>
-, <a class="el" href="gmock-spec-builders__test_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gmock-spec-builders_test.cc</a>
-, <a class="el" href="gmock__stress__test_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gmock_stress_test.cc</a>
-, <a class="el" href="feature__tests_8cxx.html#a3c04138a5bfe5d72780bb7e82a18e627">feature_tests.cxx</a>
-, <a class="el" href="gtest__break__on__failure__unittest___8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gtest_break_on_failure_unittest_.cc</a>
-, <a class="el" href="gtest__xml__output__unittest___8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gtest_xml_output_unittest_.cc</a>
 , <a class="el" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main.cpp</a>
-, <a class="el" href="gtest__catch__exceptions__test___8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gtest_catch_exceptions_test_.cc</a>
-, <a class="el" href="sample10__unittest_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">sample10_unittest.cc</a>
-, <a class="el" href="gtest__color__test___8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gtest_color_test_.cc</a>
-, <a class="el" href="gtest__env__var__test___8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gtest_env_var_test_.cc</a>
-, <a class="el" href="_c_make_c_compiler_id_8c.html#a0ddf1224851353fc92bfbff6f499fa97">CMakeCCompilerId.c</a>
-, <a class="el" href="sample9__unittest_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">sample9_unittest.cc</a>
-, <a class="el" href="gtest__environment__test_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gtest_environment_test.cc</a>
+, <a class="el" href="gtest__xml__output__unittest___8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gtest_xml_output_unittest_.cc</a>
 , <a class="el" href="gtest__uninitialized__test___8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">gtest_uninitialized_test_.cc</a>
 , <a class="el" href="gtest__throw__on__failure__test___8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gtest_throw_on_failure_test_.cc</a>
 , <a class="el" href="gtest__throw__on__failure__ex__test_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gtest_throw_on_failure_ex_test.cc</a>
@@ -88,57 +98,38 @@ $(function() {
 , <a class="el" href="gtest__premature__exit__test_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gtest_premature_exit_test.cc</a>
 , <a class="el" href="gtest__output__test___8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gtest_output_test_.cc</a>
 , <a class="el" href="gtest__no__test__unittest_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gtest_no_test_unittest.cc</a>
-, <a class="el" href="gtest__filter__unittest___8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gtest_filter_unittest_.cc</a>
-, <a class="el" href="gtest__main_8cc.html#a7f83bdc516d2cb86e20235d94ddf055a">gtest_main.cc</a>
 , <a class="el" href="gtest__list__tests__unittest___8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gtest_list_tests_unittest_.cc</a>
-, <a class="el" href="gmock__output__test___8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gmock_output_test_.cc</a>
-, <a class="el" href="_c_make_c_x_x_compiler_id_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">CMakeCXXCompilerId.cpp</a>
-, <a class="el" href="gtest-death-test__ex__test_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gtest-death-test_ex_test.cc</a>
-, <a class="el" href="gtest-listener__test_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gtest-listener_test.cc</a>
+, <a class="el" href="gtest__filter__unittest___8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gtest_filter_unittest_.cc</a>
+, <a class="el" href="gtest__environment__test_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gtest_environment_test.cc</a>
+, <a class="el" href="gtest__env__var__test___8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gtest_env_var_test_.cc</a>
+, <a class="el" href="gtest__color__test___8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gtest_color_test_.cc</a>
+, <a class="el" href="gtest__catch__exceptions__test___8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gtest_catch_exceptions_test_.cc</a>
+, <a class="el" href="gtest__break__on__failure__unittest___8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gtest_break_on_failure_unittest_.cc</a>
 , <a class="el" href="gtest-unittest-api__test_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gtest-unittest-api_test.cc</a>
-, <a class="el" href="feature__tests_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">feature_tests.c</a>
 , <a class="el" href="gtest-param-test__test_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gtest-param-test_test.cc</a>
-</li>
-<li>MediaObj_Convert()
-: <a class="el" href="pymactoolbox_8h.html#a50e157c33c442f04ce970c597242e9d0">pymactoolbox.h</a>
-</li>
-<li>MediaObj_New()
-: <a class="el" href="pymactoolbox_8h.html#a816dc7540a027765b2c0e1a99604a3d2">pymactoolbox.h</a>
-</li>
-<li>MenuObj_Convert()
-: <a class="el" href="pymactoolbox_8h.html#a8dac2bc8ca634b83bd335e7262bd1ab6">pymactoolbox.h</a>
-</li>
-<li>MenuObj_New()
-: <a class="el" href="pymactoolbox_8h.html#a284d53ce909a8117993388cb29b8f86c">pymactoolbox.h</a>
-</li>
-<li>mergebitset()
-: <a class="el" href="bitset_8h.html#ab8f4cf4bc3668e8bd8cd31e7d5281ccf">bitset.h</a>
-</li>
-<li>meta_grammar()
-: <a class="el" href="pgen_8h.html#a9ccbb002cafeeb5d7e8a78be3a615abc">pgen.h</a>
-</li>
-<li>modf()
-: <a class="el" href="pymath_8h.html#a660dd661ca1336737739215f835447f8">pymath.h</a>
-</li>
-<li>MovieCtlObj_Convert()
-: <a class="el" href="pymactoolbox_8h.html#a15f836626de45c62b367b860c65d21f6">pymactoolbox.h</a>
-</li>
-<li>MovieCtlObj_New()
-: <a class="el" href="pymactoolbox_8h.html#a244d8436532a3873e2d6e17d9b8ea098">pymactoolbox.h</a>
-</li>
-<li>MovieObj_Convert()
-: <a class="el" href="pymactoolbox_8h.html#aef12c1d45277ea1b2e8041be1cd9312f">pymactoolbox.h</a>
-</li>
-<li>MovieObj_New()
-: <a class="el" href="pymactoolbox_8h.html#a44a1ff57de5ec2513236dad555d541a9">pymactoolbox.h</a>
+, <a class="el" href="gtest-listener__test_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gtest-listener_test.cc</a>
+, <a class="el" href="gtest-death-test__ex__test_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gtest-death-test_ex_test.cc</a>
+, <a class="el" href="gtest__main_8cc.html#a7f83bdc516d2cb86e20235d94ddf055a">gtest_main.cc</a>
+, <a class="el" href="sample9__unittest_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">sample9_unittest.cc</a>
+, <a class="el" href="sample10__unittest_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">sample10_unittest.cc</a>
+, <a class="el" href="feature__tests_8cxx.html#a3c04138a5bfe5d72780bb7e82a18e627">feature_tests.cxx</a>
+, <a class="el" href="feature__tests_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">feature_tests.c</a>
+, <a class="el" href="_c_make_c_x_x_compiler_id_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">CMakeCXXCompilerId.cpp</a>
+, <a class="el" href="_c_make_c_compiler_id_8c.html#a0ddf1224851353fc92bfbff6f499fa97">CMakeCCompilerId.c</a>
+, <a class="el" href="gmock__stress__test_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gmock_stress_test.cc</a>
+, <a class="el" href="gmock__output__test___8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gmock_output_test_.cc</a>
+, <a class="el" href="gmock-spec-builders__test_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">gmock-spec-builders_test.cc</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.12
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
 </body>
 </html>

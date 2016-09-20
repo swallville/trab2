@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('namespacestd_1_1tr1.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacestd.html">std</a></li><li class="navelem"><a class="el" href="namespacestd_1_1tr1.html">tr1</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
@@ -181,10 +198,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a7c131d0c2462612a78012be16114f61d"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestd_1_1tr1.html#a7c131d0c2462612a78012be16114f61d">GTEST_BY_REF_</a> (<a class="el" href="gtest-tuple_8h.html#a1b7f133d8aa02e0b7afed7b66781eeb7">GTEST_TUPLE_ELEMENT_</a>(k, <a class="el" href="namespacestd_1_1tr1.html#aa636d3269bf1f368a7bc09ff158bc482">GTEST_10_TUPLE_</a>(T))) get(const <a class="el" href="namespacestd_1_1tr1.html#aa636d3269bf1f368a7bc09ff158bc482">GTEST_10_TUPLE_</a>(T)&amp;t)</td></tr>
 <tr class="separator:a7c131d0c2462612a78012be16114f61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4516de784404381f9b14797694b6311"><td class="memTemplParams" colspan="2">template&lt;GTEST_10_TYPENAMES_(T) , GTEST_10_TYPENAMES_(U) &gt; </td></tr>
-<tr class="memitem:af4516de784404381f9b14797694b6311"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestd_1_1tr1.html#af4516de784404381f9b14797694b6311">operator==</a> (const <a class="el" href="namespacestd_1_1tr1.html#aa636d3269bf1f368a7bc09ff158bc482">GTEST_10_TUPLE_</a>(T)&amp;t, const <a class="el" href="namespacestd_1_1tr1.html#aa636d3269bf1f368a7bc09ff158bc482">GTEST_10_TUPLE_</a>(U)&amp;u)</td></tr>
+<tr class="memitem:af4516de784404381f9b14797694b6311"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestd_1_1tr1.html#af4516de784404381f9b14797694b6311">operator==</a> (const <a class="el" href="namespacestd_1_1tr1.html#aa636d3269bf1f368a7bc09ff158bc482">GTEST_10_TUPLE_</a>(T)&amp;t, const <a class="el" href="namespacestd_1_1tr1.html#aa636d3269bf1f368a7bc09ff158bc482">GTEST_10_TUPLE_</a>(U)&amp;u)</td></tr>
 <tr class="separator:af4516de784404381f9b14797694b6311"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a058882c51de469b5e78d29076f864940"><td class="memTemplParams" colspan="2">template&lt;GTEST_10_TYPENAMES_(T) , GTEST_10_TYPENAMES_(U) &gt; </td></tr>
-<tr class="memitem:a058882c51de469b5e78d29076f864940"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestd_1_1tr1.html#a058882c51de469b5e78d29076f864940">operator!=</a> (const <a class="el" href="namespacestd_1_1tr1.html#aa636d3269bf1f368a7bc09ff158bc482">GTEST_10_TUPLE_</a>(T)&amp;t, const <a class="el" href="namespacestd_1_1tr1.html#aa636d3269bf1f368a7bc09ff158bc482">GTEST_10_TUPLE_</a>(U)&amp;u)</td></tr>
+<tr class="memitem:a058882c51de469b5e78d29076f864940"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestd_1_1tr1.html#a058882c51de469b5e78d29076f864940">operator!=</a> (const <a class="el" href="namespacestd_1_1tr1.html#aa636d3269bf1f368a7bc09ff158bc482">GTEST_10_TUPLE_</a>(T)&amp;t, const <a class="el" href="namespacestd_1_1tr1.html#aa636d3269bf1f368a7bc09ff158bc482">GTEST_10_TUPLE_</a>(U)&amp;u)</td></tr>
 <tr class="separator:a058882c51de469b5e78d29076f864940"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -772,7 +789,7 @@ template&lt;GTEST_10_TYPENAMES_(T) , GTEST_10_TYPENAMES_(U) &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> std::tr1::operator!= </td>
+          <td class="memname">bool std::tr1::operator!= </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespacestd_1_1tr1.html#aa636d3269bf1f368a7bc09ff158bc482">GTEST_10_TUPLE_</a>(T)&amp;&#160;</td>
           <td class="paramname"><em>t</em>, </td>
@@ -812,7 +829,7 @@ template&lt;GTEST_10_TYPENAMES_(T) , GTEST_10_TYPENAMES_(U) &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> std::tr1::operator== </td>
+          <td class="memname">bool std::tr1::operator== </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespacestd_1_1tr1.html#aa636d3269bf1f368a7bc09ff158bc482">GTEST_10_TUPLE_</a>(T)&amp;&#160;</td>
           <td class="paramname"><em>t</em>, </td>
@@ -1040,11 +1057,15 @@ template&lt;GTEST_10_TYPENAMES_(T) , GTEST_10_TYPENAMES_(U) &gt; </div>
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.12
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacestd.html">std</a></li><li class="navelem"><a class="el" href="namespacestd_1_1tr1.html">tr1</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
 </body>
 </html>

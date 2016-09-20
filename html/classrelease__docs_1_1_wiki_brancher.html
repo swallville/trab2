@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classrelease__docs_1_1_wiki_brancher.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacerelease__docs.html">release_docs</a></li><li class="navelem"><a class="el" href="classrelease__docs_1_1_wiki_brancher.html">WikiBrancher</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -79,19 +96,18 @@ Inheritance diagram for release_docs.WikiBrancher:</div>
  <div class="center">
   <img src="classrelease__docs_1_1_wiki_brancher.png" usemap="#release_5Fdocs.WikiBrancher_map" alt=""/>
   <map id="release_5Fdocs.WikiBrancher_map" name="release_docs.WikiBrancher_map">
-<area href="struct__object.html" alt="_object" shape="rect" coords="0,0,168,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a344b32e2b65f0e8bab9fbf1e670d33fd"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrelease__docs_1_1_wiki_brancher.html#a344b32e2b65f0e8bab9fbf1e670d33fd">__init__</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>, dot_version)</td></tr>
+<tr class="memitem:a344b32e2b65f0e8bab9fbf1e670d33fd"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrelease__docs_1_1_wiki_brancher.html#a344b32e2b65f0e8bab9fbf1e670d33fd">__init__</a> (self, dot_version)</td></tr>
 <tr class="separator:a344b32e2b65f0e8bab9fbf1e670d33fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05fc4282f501fb0210ecb33fd1d209a6"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrelease__docs_1_1_wiki_brancher.html#a05fc4282f501fb0210ecb33fd1d209a6">GetFilesToBranch</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
+<tr class="memitem:a05fc4282f501fb0210ecb33fd1d209a6"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrelease__docs_1_1_wiki_brancher.html#a05fc4282f501fb0210ecb33fd1d209a6">GetFilesToBranch</a> (self)</td></tr>
 <tr class="separator:a05fc4282f501fb0210ecb33fd1d209a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ef284f7e1742f465ecd0c14d2667327"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrelease__docs_1_1_wiki_brancher.html#a5ef284f7e1742f465ecd0c14d2667327">BranchFiles</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
+<tr class="memitem:a5ef284f7e1742f465ecd0c14d2667327"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrelease__docs_1_1_wiki_brancher.html#a5ef284f7e1742f465ecd0c14d2667327">BranchFiles</a> (self)</td></tr>
 <tr class="separator:a5ef284f7e1742f465ecd0c14d2667327"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0bc4b1b78426fe7a8496d570b540f1d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrelease__docs_1_1_wiki_brancher.html#aa0bc4b1b78426fe7a8496d570b540f1d">UpdateLinksInBranchedFiles</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
+<tr class="memitem:aa0bc4b1b78426fe7a8496d570b540f1d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrelease__docs_1_1_wiki_brancher.html#aa0bc4b1b78426fe7a8496d570b540f1d">UpdateLinksInBranchedFiles</a> (self)</td></tr>
 <tr class="separator:aa0bc4b1b78426fe7a8496d570b540f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -302,14 +318,18 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/sineideferreira/Documents/12_0127377_Lukas/lib/googletest-master/googletest/scripts/<a class="el" href="release__docs_8py_source.html">release_docs.py</a></li>
+<li>lib/googletest-master/googletest/scripts/<a class="el" href="release__docs_8py_source.html">release_docs.py</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.12
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacerelease__docs.html">release_docs</a></li><li class="navelem"><a class="el" href="classrelease__docs_1_1_wiki_brancher.html">WikiBrancher</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
 </body>
 </html>

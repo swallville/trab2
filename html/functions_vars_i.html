@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +53,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_vars_i.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,9 +88,6 @@ $(function() {
 <li>i
 : <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_derived.html#a357d6747c44d7af7159fb5898a782f1b">testing::gmock_matchers_test::Derived</a>
 </li>
-<li>id
-: <a class="el" href="struct__expr.html#a041b70e629efb93b154c329c681c3ca0">_expr</a>
-</li>
 <li>identifier
 : <a class="el" href="classpump_1_1_for_node.html#a2444199e135e43696b3a006bd0d38982">pump.ForNode</a>
 , <a class="el" href="classpump_1_1_range_node.html#ae75b9f31ba8c3bd048cf09b22035efa0">pump.RangeNode</a>
@@ -78,58 +96,18 @@ $(function() {
 <li>identifying_attribute
 : <a class="el" href="classgtest__xml__test__utils_1_1_g_test_x_m_l_test_case.html#a0e3a4e84e18f29d2248dcd670a0a6ae6">gtest_xml_test_utils.GTestXMLTestCase</a>
 </li>
-<li>If
-: <a class="el" href="struct__stmt.html#ac842ded5357e1c0b87f517c1f838952e">_stmt</a>
-</li>
-<li>IfExp
-: <a class="el" href="struct__expr.html#ae560e582dd35f86f59bfd95b23aefb97">_expr</a>
-</li>
-<li>ifs
-: <a class="el" href="struct__comprehension.html#abe4e5448c7e19c25ced95cf7027df493">_comprehension</a>
-</li>
-<li>im_class
-: <a class="el" href="struct_py_method_object.html#a6a45e86d1c896c5ad310b1f8aa304a9c">PyMethodObject</a>
-</li>
-<li>im_func
-: <a class="el" href="struct_py_method_object.html#a94a16dd58736bda5aff3a5441de6fd40">PyMethodObject</a>
-</li>
-<li>im_self
-: <a class="el" href="struct_py_method_object.html#ab269f412ca4beb02b3c3c08ba1732ba5">PyMethodObject</a>
-</li>
-<li>im_weakreflist
-: <a class="el" href="struct_py_method_object.html#a723bb6933db81c59f188d65d3156101d">PyMethodObject</a>
-</li>
-<li>imag
-: <a class="el" href="struct_py__complex.html#ac526cca68a8fab49c976359998e44d92">Py_complex</a>
-</li>
 <li>immediate_prerequisites_
 : <a class="el" href="classtesting_1_1internal_1_1_expectation_base.html#a186eff0fdcacc8c1e1a2becdec11d3cd">testing::internal::ExpectationBase</a>
-</li>
-<li>Import
-: <a class="el" href="struct__stmt.html#a03ea941e67fe9fde759f8338d1233686">_stmt</a>
-</li>
-<li>ImportFrom
-: <a class="el" href="struct__stmt.html#a33d57369f9b5833576cf9c3cfadb8827">_stmt</a>
 </li>
 <li>in_class
 : <a class="el" href="classcpp_1_1ast_1_1_ast_builder.html#a9edc1e10a3f005b463fd9316d83dd15d">cpp.ast.AstBuilder</a>
 , <a class="el" href="classcpp_1_1ast_1_1_method.html#aa67244c3673afed43398b5d3e3fa6c1c">cpp.ast.Method</a>
-, <a class="el" href="struct_py_instance_object.html#a6c55822cadd340367810c20eac45e6bd">PyInstanceObject</a>
 </li>
 <li>in_class_name_only
 : <a class="el" href="classcpp_1_1ast_1_1_ast_builder.html#a376583354ab9afa308b7f34105bf3f4a">cpp.ast.AstBuilder</a>
 </li>
-<li>in_dict
-: <a class="el" href="struct_py_instance_object.html#a975ee7e3ec12b936d7774ef38c41eec7">PyInstanceObject</a>
-</li>
 <li>in_function
 : <a class="el" href="classcpp_1_1ast_1_1_ast_builder.html#ad5ac0612dfff44241033864832dbdfe3">cpp.ast.AstBuilder</a>
-</li>
-<li>in_weakreflist
-: <a class="el" href="struct_py_instance_object.html#ab2da032abfb9112c0b0021afc739a6ef">PyInstanceObject</a>
-</li>
-<li>Index
-: <a class="el" href="struct__slice.html#a9fe8f78ccae30cd4575987c43761034f">_slice</a>
 </li>
 <li>infinity_
 : <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_floating_point_test.html#a21d8a019a6365ddff80e301a6163f43f">testing::gmock_matchers_test::FloatingPointTest&lt; RawType &gt;</a>
@@ -137,41 +115,22 @@ $(function() {
 <li>infinity_bits_
 : <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_floating_point_test.html#a3c25f403d51e6c8ed3fe7856cab1330b">testing::gmock_matchers_test::FloatingPointTest&lt; RawType &gt;</a>
 </li>
-<li>initfunc
-: <a class="el" href="struct__inittab.html#afd7487f89cc489d793eff8f4249d44bc">_inittab</a>
-</li>
 <li>initial_value
 : <a class="el" href="classcpp_1_1ast_1_1_variable_declaration.html#a7c259ca42a06e264679e8ab66e7ea374">cpp.ast.VariableDeclaration</a>
 </li>
 <li>inner_matcher_
 : <a class="el" href="classtesting_1_1internal_1_1_quantifier_matcher_impl.html#af0ee2a4697f5cb8e937fd29dd75e2a30">testing::internal::QuantifierMatcherImpl&lt; Container &gt;</a>
 </li>
-<li>inst
-: <a class="el" href="struct__stmt.html#a7e058de69ac9cb2c466166a8e414fa0e">_stmt</a>
-</li>
-<li>Interactive
-: <a class="el" href="struct__mod.html#a71cddb1a1a9cb0c254b2f61ad945f41d">_mod</a>
-</li>
-<li>internal
-: <a class="el" href="structbufferinfo.html#ab238becb9fa7b6940afa059083e4d27e">bufferinfo</a>
-</li>
-<li>interp
-: <a class="el" href="struct__ts.html#a218498c5d2725df0a11a604c873c7af2">_ts</a>
-</li>
-<li>itemsize
-: <a class="el" href="structbufferinfo.html#aa0de675754767fa69b18b75a579d9edc">bufferinfo</a>
-</li>
-<li>iter
-: <a class="el" href="struct__comprehension.html#ab351ea193dabc5c156b6c571f7f80681">_comprehension</a>
-, <a class="el" href="struct__stmt.html#a01937d69e8ba0212ddd700bd1ddf7d35">_stmt</a>
-</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.12
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
 </body>
 </html>

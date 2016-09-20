@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +53,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_d.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -64,63 +85,6 @@ $(function() {
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a id="index_d"></a>- d -</h3><ul>
-<li>d_base
-: <a class="el" href="struct_py_wrapper_descr_object.html#a519791b757bde55de79e71995921a55f">PyWrapperDescrObject</a>
-</li>
-<li>d_first
-: <a class="el" href="structdfa.html#ad650d40c7f33bf9556eda163df616d20">dfa</a>
-</li>
-<li>d_getset
-: <a class="el" href="struct_py_get_set_descr_object.html#a5fea3428311519839767a9c26edddb70">PyGetSetDescrObject</a>
-</li>
-<li>d_initial
-: <a class="el" href="structdfa.html#a5e8fc3fd1cb02df885c177bd234c9475">dfa</a>
-</li>
-<li>d_member
-: <a class="el" href="struct_py_member_descr_object.html#a3169c9bdd945c9cf780b3940d3300387">PyMemberDescrObject</a>
-</li>
-<li>d_method
-: <a class="el" href="struct_py_method_descr_object.html#a2ac410c4f8d6288431aa7c915d2bbf35">PyMethodDescrObject</a>
-</li>
-<li>d_name
-: <a class="el" href="structdfa.html#a714ab213ebbb5228584fe7593399e038">dfa</a>
-</li>
-<li>d_nstates
-: <a class="el" href="structdfa.html#ab53253e48bbb638e9bb9cb9ca744004b">dfa</a>
-</li>
-<li>d_state
-: <a class="el" href="structdfa.html#aa70e502038acab62cce1c115f71cba7b">dfa</a>
-</li>
-<li>d_type
-: <a class="el" href="structdfa.html#a69ef1e4934ea32fd079f99bcd8018946">dfa</a>
-</li>
-<li>d_wrapped
-: <a class="el" href="struct_py_wrapper_descr_object.html#a7cd533134c75902cc81d4a92631b5f5b">PyWrapperDescrObject</a>
-</li>
-<li>data
-: <a class="el" href="struct_py_date_time___date.html#ab9c69c1645e8c6db8fd199110bb95b66">PyDateTime_Date</a>
-</li>
-<li>Date_FromDate
-: <a class="el" href="struct_py_date_time___c_a_p_i.html#aa87be8a59753b780632df32f8e450477">PyDateTime_CAPI</a>
-</li>
-<li>Date_FromTimestamp
-: <a class="el" href="struct_py_date_time___c_a_p_i.html#a5f2e838aedbb4a18c649736ba252613b">PyDateTime_CAPI</a>
-</li>
-<li>DateTime_FromDateAndTime
-: <a class="el" href="struct_py_date_time___c_a_p_i.html#afecc6e6c8d9e677f9242e78fe3138b12">PyDateTime_CAPI</a>
-</li>
-<li>DateTime_FromTimestamp
-: <a class="el" href="struct_py_date_time___c_a_p_i.html#af647a82aacdc468e9a5036a35f7e43eb">PyDateTime_CAPI</a>
-</li>
-<li>DateTimeType
-: <a class="el" href="struct_py_date_time___c_a_p_i.html#a85f29d980c43599949a37890882e5051">PyDateTime_CAPI</a>
-</li>
-<li>DateType
-: <a class="el" href="struct_py_date_time___c_a_p_i.html#abfafd0453a7f387ab8f4365431543905">PyDateTime_CAPI</a>
-</li>
-<li>days
-: <a class="el" href="struct_py_date_time___delta.html#a41436e9bfcd0b005c33f0d57bb4ab3a0">PyDateTime_Delta</a>
-</li>
 <li>death_test_use_fork
 : <a class="el" href="structtesting_1_1_flags.html#a7cdef4e6e102771fc15940931dd07e5c">testing::Flags</a>
 </li>
@@ -135,9 +99,6 @@ $(function() {
 </li>
 <li>DeclarationToParts()
 : <a class="el" href="classcpp_1_1ast_1_1_type_converter.html#a7c9d20d107c2bc0eb80afdf04957825f">cpp.ast.TypeConverter</a>
-</li>
-<li>decorator_list
-: <a class="el" href="struct__stmt.html#a739b41aa7343830a6bcfb7833155ba86">_stmt</a>
 </li>
 <li>default
 : <a class="el" href="classcpp_1_1ast_1_1_parameter.html#a4ceae2ac87d82c5542c4e7385eb4c97e">cpp.ast.Parameter</a>
@@ -154,27 +115,17 @@ $(function() {
 <li>DefaultPerThreadTestPartResultReporter()
 : <a class="el" href="classtesting_1_1internal_1_1_default_per_thread_test_part_result_reporter.html#a968a846e5a90d2ffea8b2ce2746099bd">testing::internal::DefaultPerThreadTestPartResultReporter</a>
 </li>
-<li>defaults
-: <a class="el" href="struct__arguments.html#a23d24a2fa218bdb0a430df6353d19b63">_arguments</a>
-</li>
 <li>definition
 : <a class="el" href="classcpp_1_1ast_1_1_define.html#a0c636652dfeb2f15e62793afea1153c9">cpp.ast.Define</a>
 </li>
-<li>Delete
-: <a class="el" href="struct__stmt.html#a37717d9de4a7c0e8fc9a4f827f76e71b">_stmt</a>
-, <a class="el" href="classtesting_1_1gmock__nice__strict__test_1_1_mock_foo.html#a7bdec6a6353e4396d551dbf8f2beac54">testing::gmock_nice_strict_test::MockFoo</a>
+<li>Delete()
+: <a class="el" href="classtesting_1_1gmock__nice__strict__test_1_1_mock_foo.html#a7bdec6a6353e4396d551dbf8f2beac54">testing::gmock_nice_strict_test::MockFoo</a>
 </li>
 <li>DeleteFilesAndDir()
 : <a class="el" href="classgtest__xml__outfiles__test_1_1_g_test_x_m_l_out_files_test.html#a503d2fbc9cd782ae57ac4307d2db43e1">gtest_xml_outfiles_test.GTestXMLOutFilesTest</a>
 </li>
 <li>DeletionTester()
 : <a class="el" href="classtesting_1_1gmock__more__actions__test_1_1_deletion_tester.html#a3b9670fc6d29cb9d120fb0fdd2ba68d8">testing::gmock_more_actions_test::DeletionTester</a>
-</li>
-<li>Delta_FromDelta
-: <a class="el" href="struct_py_date_time___c_a_p_i.html#aeac28563c38854bbb88403ec237cf46a">PyDateTime_CAPI</a>
-</li>
-<li>DeltaType
-: <a class="el" href="struct_py_date_time___c_a_p_i.html#a0fb84e80d67fd689d265d94811418231">PyDateTime_CAPI</a>
 </li>
 <li>depart()
 : <a class="el" href="classtesting_1_1internal_1_1linked__ptr__internal.html#a8699e539d9702d363ef0351012d1b3ca">testing::internal::linked_ptr_internal</a>
@@ -185,9 +136,6 @@ $(function() {
 <li>Derived()
 : <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_derived.html#a3de17d9e4bfb19dcafb88d3cccbbeaf2">testing::gmock_matchers_test::Derived</a>
 , <a class="el" href="classtesting_1_1internal_1_1_derived.html#a05a8e8354c7c09a9f3728a96c96f1edd">testing::internal::Derived</a>
-</li>
-<li>desc
-: <a class="el" href="struct_py_c_object.html#a4fe770b568a3b1535e65e6628fc3b6ba">PyCObject</a>
 </li>
 <li>Desc()
 : <a class="el" href="classtesting_1_1internal_1_1_eq2_matcher.html#a87c049778ac3d124641b21e47ef558dc">testing::internal::Eq2Matcher</a>
@@ -295,28 +243,6 @@ $(function() {
 <li>DescribeToImpl()
 : <a class="el" href="classtesting_1_1internal_1_1_unordered_elements_are_matcher_impl_base.html#a40318adf9a89d830a26a96b2eb06b4e3">testing::internal::UnorderedElementsAreMatcherImplBase</a>
 </li>
-<li>dest
-: <a class="el" href="struct__stmt.html#a760c7987187a06e882bfcbab14b7fdb9">_stmt</a>
-</li>
-<li>destructor
-: <a class="el" href="struct_py_c_object.html#aabeacd210067fddb5b0d328269326d0d">PyCObject</a>
-</li>
-<li>Dict
-: <a class="el" href="struct__expr.html#a1cff648c6583ac900fd738bbccfa968d">_expr</a>
-</li>
-<li>dict
-: <a class="el" href="struct__ts.html#acd979c9d066dde17e31d442cf653e9d5">_ts</a>
-, <a class="el" href="struct_py_base_exception_object.html#a5e62f1ac7d915523f0a4792bde1ea4a8">PyBaseExceptionObject</a>
-, <a class="el" href="struct_py_environment_error_object.html#a9b6363c4c36c3fe124dd1173d6bea6dd">PyEnvironmentErrorObject</a>
-, <a class="el" href="struct_py_syntax_error_object.html#add421cb74568917d40dbb80577959429">PySyntaxErrorObject</a>
-, <a class="el" href="struct_py_system_exit_object.html#af813e336ff6727fccce5ba305adaf03d">PySystemExitObject</a>
-</li>
-<li>DictComp
-: <a class="el" href="struct__expr.html#a7b603aeec8e947b21fceef29e88ad476">_expr</a>
-</li>
-<li>dims
-: <a class="el" href="struct__slice.html#a93030a4ad534e07757aee5a01339c4e1">_slice</a>
-</li>
 <li>DirectoryExists()
 : <a class="el" href="classtesting_1_1internal_1_1_file_path.html#a74ba8435e822d77f79f137c38de9bfeb">testing::internal::FilePath</a>
 </li>
@@ -337,13 +263,6 @@ $(function() {
 <li>DoBothAction()
 : <a class="el" href="classtesting_1_1internal_1_1_do_both_action.html#a55727c4dbdc1816ba6f1fe124e96088b">testing::internal::DoBothAction&lt; Action1, Action2 &gt;</a>
 </li>
-<li>doc
-: <a class="el" href="struct_py_get_set_def.html#ab3ac0bcf9fada67b8a33854192c23226">PyGetSetDef</a>
-, <a class="el" href="struct_py_member_def.html#a52eba722acb02c6745ea662056a1479c">PyMemberDef</a>
-, <a class="el" href="struct_py_struct_sequence___desc.html#a96a9c56395cf81931030bbb69a1ce504">PyStructSequence_Desc</a>
-, <a class="el" href="struct_py_struct_sequence___field.html#a6ba9e53c3ef3bb4b92a1a2ff70f71f64">PyStructSequence_Field</a>
-, <a class="el" href="structwrapperbase.html#a827bda21121a05de0996818cd83c5767">wrapperbase</a>
-</li>
 <li>DoThat()
 : <a class="el" href="classtesting_1_1gmock__nice__strict__test_1_1_foo.html#a8527a459b03f333a809a3376311a9f8b">testing::gmock_nice_strict_test::Foo</a>
 </li>
@@ -353,9 +272,6 @@ $(function() {
 <li>Double()
 : <a class="el" href="class_queue_test.html#a2c7e0d1edb558dbbc4c085316d3d1ee6">QueueTest</a>
 </li>
-<li>dummy
-: <a class="el" href="union__gc__head.html#ac3dd0fc3bbc73d3dffd5df3589c00939">_gc_head</a>
-</li>
 <li>dummy_
 : <a class="el" href="classtesting_1_1internal_1_1_type_id_helper.html#a372268b1520d965d0bdf01ebad3d270e">testing::internal::TypeIdHelper&lt; T &gt;</a>
 </li>
@@ -364,11 +280,14 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.12
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
 </body>
 </html>

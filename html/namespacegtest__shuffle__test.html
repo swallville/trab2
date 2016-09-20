@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('namespacegtest__shuffle__test.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,7 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -81,15 +102,15 @@ Functions</h2></td></tr>
 <tr class="separator:a91033ae962b37f040a95fb90062aacb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa849ecba21a2796be477040bd303b700"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__shuffle__test.html#aa849ecba21a2796be477040bd303b700">FilterFlag</a> (test_filter)</td></tr>
 <tr class="separator:aa849ecba21a2796be477040bd303b700"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a193f6cd2eeb35e7925dca6d8f72f75d3"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__shuffle__test.html#a193f6cd2eeb35e7925dca6d8f72f75d3">RepeatFlag</a> (<a class="el" href="longobject_8h.html#a0a1cb627ccae562872efc91e5b752be1">n</a>)</td></tr>
+<tr class="memitem:a193f6cd2eeb35e7925dca6d8f72f75d3"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__shuffle__test.html#a193f6cd2eeb35e7925dca6d8f72f75d3">RepeatFlag</a> (n)</td></tr>
 <tr class="separator:a193f6cd2eeb35e7925dca6d8f72f75d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab593e060bf2a9b2f0cb0dc8e18eb2088"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__shuffle__test.html#ab593e060bf2a9b2f0cb0dc8e18eb2088">ShuffleFlag</a> ()</td></tr>
 <tr class="separator:ab593e060bf2a9b2f0cb0dc8e18eb2088"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf2a94c748f266c4267ac7e7bb3451fd"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__shuffle__test.html#aaf2a94c748f266c4267ac7e7bb3451fd">RandomSeedFlag</a> (<a class="el" href="longobject_8h.html#a0a1cb627ccae562872efc91e5b752be1">n</a>)</td></tr>
+<tr class="memitem:aaf2a94c748f266c4267ac7e7bb3451fd"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__shuffle__test.html#aaf2a94c748f266c4267ac7e7bb3451fd">RandomSeedFlag</a> (n)</td></tr>
 <tr class="separator:aaf2a94c748f266c4267ac7e7bb3451fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbe879c2b3fdfed12b777b813359dbd4"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__shuffle__test.html#afbe879c2b3fdfed12b777b813359dbd4">RunAndReturnOutput</a> (extra_env, <a class="el" href="eval_8h.html#ad61773d508168edac5109211128610c7">args</a>)</td></tr>
+<tr class="memitem:afbe879c2b3fdfed12b777b813359dbd4"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__shuffle__test.html#afbe879c2b3fdfed12b777b813359dbd4">RunAndReturnOutput</a> (extra_env, args)</td></tr>
 <tr class="separator:afbe879c2b3fdfed12b777b813359dbd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18c7606bf0d41acb73a4a6a2994d36fc"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__shuffle__test.html#a18c7606bf0d41acb73a4a6a2994d36fc">GetTestsForAllIterations</a> (extra_env, <a class="el" href="eval_8h.html#ad61773d508168edac5109211128610c7">args</a>)</td></tr>
+<tr class="memitem:a18c7606bf0d41acb73a4a6a2994d36fc"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__shuffle__test.html#a18c7606bf0d41acb73a4a6a2994d36fc">GetTestsForAllIterations</a> (extra_env, args)</td></tr>
 <tr class="separator:a18c7606bf0d41acb73a4a6a2994d36fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5328e9cbee0e357d6abf16255df13f7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__shuffle__test.html#af5328e9cbee0e357d6abf16255df13f7">GetTestCases</a> (tests)</td></tr>
 <tr class="separator:af5328e9cbee0e357d6abf16255df13f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,11 +121,11 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a33b8a2fc24ccd6476d1e27b084142a25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__shuffle__test.html#a33b8a2fc24ccd6476d1e27b084142a25">COMMAND</a> = <a class="el" href="namespacegtest__test__utils.html#a89ed3717984a80ffbb7a9c92f71b86a2">gtest_test_utils.GetTestExecutablePath</a>('gtest_shuffle_test_')</td></tr>
 <tr class="separator:a33b8a2fc24ccd6476d1e27b084142a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29088c2bb51a4550fa2a668d972f973a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__shuffle__test.html#a29088c2bb51a4550fa2a668d972f973a">TOTAL_SHARDS_ENV_VAR</a> = 'GTEST_TOTAL_SHARDS'</td></tr>
+<tr class="memitem:a29088c2bb51a4550fa2a668d972f973a"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__shuffle__test.html#a29088c2bb51a4550fa2a668d972f973a">TOTAL_SHARDS_ENV_VAR</a> = 'GTEST_TOTAL_SHARDS'</td></tr>
 <tr class="separator:a29088c2bb51a4550fa2a668d972f973a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3215c444f0e35ae2764f862194fe743"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__shuffle__test.html#ab3215c444f0e35ae2764f862194fe743">SHARD_INDEX_ENV_VAR</a> = 'GTEST_SHARD_INDEX'</td></tr>
+<tr class="memitem:ab3215c444f0e35ae2764f862194fe743"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__shuffle__test.html#ab3215c444f0e35ae2764f862194fe743">SHARD_INDEX_ENV_VAR</a> = 'GTEST_SHARD_INDEX'</td></tr>
 <tr class="separator:ab3215c444f0e35ae2764f862194fe743"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2a2a6c7c009be4f94bc9c8bc0c51bb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__shuffle__test.html#ac2a2a6c7c009be4f94bc9c8bc0c51bb5">TEST_FILTER</a> = 'A*.A:A*.B:C*'</td></tr>
+<tr class="memitem:ac2a2a6c7c009be4f94bc9c8bc0c51bb5"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__shuffle__test.html#ac2a2a6c7c009be4f94bc9c8bc0c51bb5">TEST_FILTER</a> = 'A*.A:A*.B:C*'</td></tr>
 <tr class="separator:ac2a2a6c7c009be4f94bc9c8bc0c51bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aede96442ff7a7c9ac9a8baaaeb48e86c"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__shuffle__test.html#aede96442ff7a7c9ac9a8baaaeb48e86c">ALL_TESTS</a> = []</td></tr>
 <tr class="separator:aede96442ff7a7c9ac9a8baaaeb48e86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -410,7 +431,7 @@ Returns:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> gtest_shuffle_test.SHARD_INDEX_ENV_VAR = 'GTEST_SHARD_INDEX'</td>
+          <td class="memname">string gtest_shuffle_test.SHARD_INDEX_ENV_VAR = 'GTEST_SHARD_INDEX'</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -506,7 +527,7 @@ Returns:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> gtest_shuffle_test.TEST_FILTER = 'A*.A:A*.B:C*'</td>
+          <td class="memname">string gtest_shuffle_test.TEST_FILTER = 'A*.A:A*.B:C*'</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -522,7 +543,7 @@ Returns:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> gtest_shuffle_test.TOTAL_SHARDS_ENV_VAR = 'GTEST_TOTAL_SHARDS'</td>
+          <td class="memname">string gtest_shuffle_test.TOTAL_SHARDS_ENV_VAR = 'GTEST_TOTAL_SHARDS'</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -532,11 +553,15 @@ Returns:
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.12
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacegtest__shuffle__test.html">gtest_shuffle_test</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
 </body>
 </html>

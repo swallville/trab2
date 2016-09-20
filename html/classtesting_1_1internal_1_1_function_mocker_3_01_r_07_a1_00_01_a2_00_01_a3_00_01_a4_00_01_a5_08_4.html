@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classtesting_1_1internal_1_1_function_mocker_3_01_r_07_a1_00_01_a2_00_01_a3_00_01_a4_00_01_a5_08_4.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="namespacetesting_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classtesting_1_1internal_1_1_function_mocker_3_01_r_07_a1_00_01_a2_00_01_a3_00_01_a4_00_01_a5_08_4.html">FunctionMocker&lt; R(A1, A2, A3, A4, A5)&gt;</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -111,9 +128,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2206d80aad533ba6bf1f5e09c909aee0 inherit pub_methods_classtesting_1_1internal_1_1_function_mocker_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c33e7b4aa0e28e5bd46eb072f511068 inherit pub_methods_classtesting_1_1internal_1_1_function_mocker_base"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#a3c33e7b4aa0e28e5bd46eb072f511068">~FunctionMockerBase</a> () <a class="el" href="gtest-port_8h.html#a69abff5a4efdd07bd5faebe3dd318d06">GTEST_LOCK_EXCLUDED_</a>(g_gmock_mutex)</td></tr>
 <tr class="separator:a3c33e7b4aa0e28e5bd46eb072f511068 inherit pub_methods_classtesting_1_1internal_1_1_function_mocker_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bcd2e8191ffc44bd59b8d8d25eefd3e inherit pub_methods_classtesting_1_1internal_1_1_function_mocker_base"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classtesting_1_1internal_1_1_on_call_spec.html">OnCallSpec</a>&lt; R(A1, A2, A3, A4, A5) &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#a3bcd2e8191ffc44bd59b8d8d25eefd3e">FindOnCallSpec</a> (const <a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#a336432a07e544af4ffb8103603471ca3">ArgumentTuple</a> &amp;<a class="el" href="eval_8h.html#ad61773d508168edac5109211128610c7">args</a>) const</td></tr>
+<tr class="memitem:a3bcd2e8191ffc44bd59b8d8d25eefd3e inherit pub_methods_classtesting_1_1internal_1_1_function_mocker_base"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classtesting_1_1internal_1_1_on_call_spec.html">OnCallSpec</a>&lt; R(A1, A2, A3, A4, A5) &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#a3bcd2e8191ffc44bd59b8d8d25eefd3e">FindOnCallSpec</a> (const <a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#a336432a07e544af4ffb8103603471ca3">ArgumentTuple</a> &amp;args) const</td></tr>
 <tr class="separator:a3bcd2e8191ffc44bd59b8d8d25eefd3e inherit pub_methods_classtesting_1_1internal_1_1_function_mocker_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbef6e1af840c9c14c3a6acee01007b2 inherit pub_methods_classtesting_1_1internal_1_1_function_mocker_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#aa50abc4055b4d3a14ad64c317bccec8d">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#adbef6e1af840c9c14c3a6acee01007b2">PerformDefaultAction</a> (const <a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#a336432a07e544af4ffb8103603471ca3">ArgumentTuple</a> &amp;<a class="el" href="eval_8h.html#ad61773d508168edac5109211128610c7">args</a>, const <a class="el" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">string</a> &amp;call_description) const</td></tr>
+<tr class="memitem:adbef6e1af840c9c14c3a6acee01007b2 inherit pub_methods_classtesting_1_1internal_1_1_function_mocker_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#aa50abc4055b4d3a14ad64c317bccec8d">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#adbef6e1af840c9c14c3a6acee01007b2">PerformDefaultAction</a> (const <a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#a336432a07e544af4ffb8103603471ca3">ArgumentTuple</a> &amp;args, const <a class="el" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">string</a> &amp;call_description) const</td></tr>
 <tr class="separator:adbef6e1af840c9c14c3a6acee01007b2 inherit pub_methods_classtesting_1_1internal_1_1_function_mocker_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed1c6248ba1b50437ee3a5f72c5f7bf3 inherit pub_methods_classtesting_1_1internal_1_1_function_mocker_base"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtesting_1_1internal_1_1_untyped_action_result_holder_base.html">UntypedActionResultHolderBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#aed1c6248ba1b50437ee3a5f72c5f7bf3">UntypedPerformDefaultAction</a> (const void *untyped_args, const <a class="el" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">string</a> &amp;call_description) const</td></tr>
 <tr class="separator:aed1c6248ba1b50437ee3a5f72c5f7bf3 inherit pub_methods_classtesting_1_1internal_1_1_function_mocker_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,11 +143,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aedfa95e65d80936e4dff040140513b36 inherit pub_methods_classtesting_1_1internal_1_1_untyped_function_mocker_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6badd47a3fe2a439ef98aa91bf73d721 inherit pub_methods_classtesting_1_1internal_1_1_untyped_function_mocker_base"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_untyped_function_mocker_base.html#a6badd47a3fe2a439ef98aa91bf73d721">~UntypedFunctionMockerBase</a> ()</td></tr>
 <tr class="separator:a6badd47a3fe2a439ef98aa91bf73d721 inherit pub_methods_classtesting_1_1internal_1_1_untyped_function_mocker_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f1d62a1662a3daa2895b3af963be269 inherit pub_methods_classtesting_1_1internal_1_1_untyped_function_mocker_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_untyped_function_mocker_base.html#a3f1d62a1662a3daa2895b3af963be269">VerifyAndClearExpectationsLocked</a> () <a class="el" href="gtest-port_8h.html#a149f693bd59fa1bc937af54c0cdcb32f">GTEST_EXCLUSIVE_LOCK_REQUIRED_</a>(g_gmock_mutex)</td></tr>
+<tr class="memitem:a3f1d62a1662a3daa2895b3af963be269 inherit pub_methods_classtesting_1_1internal_1_1_untyped_function_mocker_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_untyped_function_mocker_base.html#a3f1d62a1662a3daa2895b3af963be269">VerifyAndClearExpectationsLocked</a> () <a class="el" href="gtest-port_8h.html#a149f693bd59fa1bc937af54c0cdcb32f">GTEST_EXCLUSIVE_LOCK_REQUIRED_</a>(g_gmock_mutex)</td></tr>
 <tr class="separator:a3f1d62a1662a3daa2895b3af963be269 inherit pub_methods_classtesting_1_1internal_1_1_untyped_function_mocker_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cd3dd14b92c714eab690c9597f32ffd inherit pub_methods_classtesting_1_1internal_1_1_untyped_function_mocker_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_untyped_function_mocker_base.html#a0cd3dd14b92c714eab690c9597f32ffd">RegisterOwner</a> (const void *mock_obj) <a class="el" href="gtest-port_8h.html#a69abff5a4efdd07bd5faebe3dd318d06">GTEST_LOCK_EXCLUDED_</a>(g_gmock_mutex)</td></tr>
 <tr class="separator:a0cd3dd14b92c714eab690c9597f32ffd inherit pub_methods_classtesting_1_1internal_1_1_untyped_function_mocker_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a287bcacee639b7d123cec29e0614fe96 inherit pub_methods_classtesting_1_1internal_1_1_untyped_function_mocker_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_untyped_function_mocker_base.html#a287bcacee639b7d123cec29e0614fe96">SetOwnerAndName</a> (const void *mock_obj, const char *<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>) <a class="el" href="gtest-port_8h.html#a69abff5a4efdd07bd5faebe3dd318d06">GTEST_LOCK_EXCLUDED_</a>(g_gmock_mutex)</td></tr>
+<tr class="memitem:a287bcacee639b7d123cec29e0614fe96 inherit pub_methods_classtesting_1_1internal_1_1_untyped_function_mocker_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_untyped_function_mocker_base.html#a287bcacee639b7d123cec29e0614fe96">SetOwnerAndName</a> (const void *mock_obj, const char *name) <a class="el" href="gtest-port_8h.html#a69abff5a4efdd07bd5faebe3dd318d06">GTEST_LOCK_EXCLUDED_</a>(g_gmock_mutex)</td></tr>
 <tr class="separator:a287bcacee639b7d123cec29e0614fe96 inherit pub_methods_classtesting_1_1internal_1_1_untyped_function_mocker_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71863dd67193a7082078d5b366d5ce51 inherit pub_methods_classtesting_1_1internal_1_1_untyped_function_mocker_base"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_untyped_function_mocker_base.html#a71863dd67193a7082078d5b366d5ce51">MockObject</a> () const <a class="el" href="gtest-port_8h.html#a69abff5a4efdd07bd5faebe3dd318d06">GTEST_LOCK_EXCLUDED_</a>(g_gmock_mutex)</td></tr>
 <tr class="separator:a71863dd67193a7082078d5b366d5ce51 inherit pub_methods_classtesting_1_1internal_1_1_untyped_function_mocker_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,11 +167,11 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a36480bd395e110b4eae5b0d0402de966 inherit pro_types_classtesting_1_1internal_1_1_untyped_function_mocker_base"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="classtesting_1_1internal_1_1linked__ptr.html">internal::linked_ptr</a>&lt; <a class="el" href="classtesting_1_1internal_1_1_expectation_base.html">ExpectationBase</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_untyped_function_mocker_base.html#a36480bd395e110b4eae5b0d0402de966">UntypedExpectations</a></td></tr>
 <tr class="separator:a36480bd395e110b4eae5b0d0402de966 inherit pro_types_classtesting_1_1internal_1_1_untyped_function_mocker_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classtesting_1_1internal_1_1_function_mocker_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classtesting_1_1internal_1_1_function_mocker_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html">testing::internal::FunctionMockerBase&lt; R(A1, A2, A3, A4, A5)&gt;</a></td></tr>
-<tr class="memitem:a869ec713f000b4e7829c660efc25e8cd inherit pro_methods_classtesting_1_1internal_1_1_function_mocker_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#aa50abc4055b4d3a14ad64c317bccec8d">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#a869ec713f000b4e7829c660efc25e8cd">InvokeWith</a> (const <a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#a336432a07e544af4ffb8103603471ca3">ArgumentTuple</a> &amp;<a class="el" href="eval_8h.html#ad61773d508168edac5109211128610c7">args</a>) <a class="el" href="gtest-port_8h.html#a69abff5a4efdd07bd5faebe3dd318d06">GTEST_LOCK_EXCLUDED_</a>(g_gmock_mutex)</td></tr>
+<tr class="memitem:a869ec713f000b4e7829c660efc25e8cd inherit pro_methods_classtesting_1_1internal_1_1_function_mocker_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#aa50abc4055b4d3a14ad64c317bccec8d">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#a869ec713f000b4e7829c660efc25e8cd">InvokeWith</a> (const <a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#a336432a07e544af4ffb8103603471ca3">ArgumentTuple</a> &amp;args) <a class="el" href="gtest-port_8h.html#a69abff5a4efdd07bd5faebe3dd318d06">GTEST_LOCK_EXCLUDED_</a>(g_gmock_mutex)</td></tr>
 <tr class="separator:a869ec713f000b4e7829c660efc25e8cd inherit pro_methods_classtesting_1_1internal_1_1_function_mocker_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22ece3b6e8d24f11d8f4ba9c17b737c4 inherit pro_methods_classtesting_1_1internal_1_1_function_mocker_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1internal_1_1_on_call_spec.html">OnCallSpec</a>&lt; R(A1, A2, A3, A4, A5) &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#a22ece3b6e8d24f11d8f4ba9c17b737c4">AddNewOnCallSpec</a> (const char *file, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> line, const <a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#ab790bcb1dcf57fa6659365386723ae5a">ArgumentMatcherTuple</a> &amp;<a class="el" href="abstract_8h.html#a61c2f43341311f6f63e8f440c4fd3892">m</a>) <a class="el" href="gtest-port_8h.html#a69abff5a4efdd07bd5faebe3dd318d06">GTEST_LOCK_EXCLUDED_</a>(g_gmock_mutex)</td></tr>
+<tr class="memitem:a22ece3b6e8d24f11d8f4ba9c17b737c4 inherit pro_methods_classtesting_1_1internal_1_1_function_mocker_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1internal_1_1_on_call_spec.html">OnCallSpec</a>&lt; R(A1, A2, A3, A4, A5) &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#a22ece3b6e8d24f11d8f4ba9c17b737c4">AddNewOnCallSpec</a> (const char *file, int line, const <a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#ab790bcb1dcf57fa6659365386723ae5a">ArgumentMatcherTuple</a> &amp;m) <a class="el" href="gtest-port_8h.html#a69abff5a4efdd07bd5faebe3dd318d06">GTEST_LOCK_EXCLUDED_</a>(g_gmock_mutex)</td></tr>
 <tr class="separator:a22ece3b6e8d24f11d8f4ba9c17b737c4 inherit pro_methods_classtesting_1_1internal_1_1_function_mocker_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2c35c565f08d3649436af443ece468f inherit pro_methods_classtesting_1_1internal_1_1_function_mocker_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1internal_1_1_typed_expectation.html">TypedExpectation</a>&lt; R(A1, A2, A3, A4, A5) &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#aa2c35c565f08d3649436af443ece468f">AddNewExpectation</a> (const char *file, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> line, const <a class="el" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">string</a> &amp;source_text, const <a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#ab790bcb1dcf57fa6659365386723ae5a">ArgumentMatcherTuple</a> &amp;<a class="el" href="abstract_8h.html#a61c2f43341311f6f63e8f440c4fd3892">m</a>) <a class="el" href="gtest-port_8h.html#a69abff5a4efdd07bd5faebe3dd318d06">GTEST_LOCK_EXCLUDED_</a>(g_gmock_mutex)</td></tr>
+<tr class="memitem:aa2c35c565f08d3649436af443ece468f inherit pro_methods_classtesting_1_1internal_1_1_function_mocker_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1internal_1_1_typed_expectation.html">TypedExpectation</a>&lt; R(A1, A2, A3, A4, A5) &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#aa2c35c565f08d3649436af443ece468f">AddNewExpectation</a> (const char *file, int line, const <a class="el" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">string</a> &amp;source_text, const <a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#ab790bcb1dcf57fa6659365386723ae5a">ArgumentMatcherTuple</a> &amp;m) <a class="el" href="gtest-port_8h.html#a69abff5a4efdd07bd5faebe3dd318d06">GTEST_LOCK_EXCLUDED_</a>(g_gmock_mutex)</td></tr>
 <tr class="separator:aa2c35c565f08d3649436af443ece468f inherit pro_methods_classtesting_1_1internal_1_1_function_mocker_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a744318106e20b346f4f1efbf5a601644 inherit pro_methods_classtesting_1_1internal_1_1_function_mocker_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1internal_1_1_mock_spec.html">MockSpec</a>&lt; R(A1, A2, A3, A4, A5) &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#a744318106e20b346f4f1efbf5a601644">current_spec</a> ()</td></tr>
 <tr class="separator:a744318106e20b346f4f1efbf5a601644 inherit pro_methods_classtesting_1_1internal_1_1_function_mocker_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -332,14 +349,18 @@ template&lt;typename R , typename A1 , typename A2 , typename A3 , typename A4 ,
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/sineideferreira/Documents/12_0127377_Lukas/lib/googletest-master/googlemock/include/gmock/<a class="el" href="gmock-generated-function-mockers_8h_source.html">gmock-generated-function-mockers.h</a></li>
+<li>lib/googletest-master/googlemock/include/gmock/<a class="el" href="gmock-generated-function-mockers_8h_source.html">gmock-generated-function-mockers.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.12
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="namespacetesting_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classtesting_1_1internal_1_1_function_mocker_3_01_r_07_a1_00_01_a2_00_01_a3_00_01_a4_00_01_a5_08_4.html">FunctionMocker&lt; R(A1, A2, A3, A4, A5)&gt;</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
 </body>
 </html>

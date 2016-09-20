@@ -5,10 +5,17 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.12"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Trab2: /Users/sineideferreira/Documents/12_0127377_Lukas/lib/googletest-master/googletest/src/gtest-internal-inl.h File Reference</title>
+<title>Trab2: lib/googletest-master/googletest/src/gtest-internal-inl.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('gtest-internal-inl_8h.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_fd040b3fd6fd6580b63cc52590f909a2.html">Documents</a></li><li class="navelem"><a class="el" href="dir_19d6c1f8e4691420a561191421364ebd.html">12_0127377_Lukas</a></li><li class="navelem"><a class="el" href="dir_0eb27892baca89b5444e5838e452c039.html">lib</a></li><li class="navelem"><a class="el" href="dir_8abc3a0d10bafbb9177d86a50dc259be.html">googletest-master</a></li><li class="navelem"><a class="el" href="dir_5f240beeca7e577fb39e5b88b238bb77.html">googletest</a></li><li class="navelem"><a class="el" href="dir_018d396de2df5903cd2b8d47a745725f.html">src</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -123,52 +140,52 @@ Functions</h2></td></tr>
 <tr class="separator:a534f0743e7c42c55d27dcd0dd3d38f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66b46943a429e6efb1db456d4cae90c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> TimeInMillis&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#ae66b46943a429e6efb1db456d4cae90c">testing::internal::GetTimeInMillis</a> ()</td></tr>
 <tr class="separator:ae66b46943a429e6efb1db456d4cae90c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1db1b4603967a6c4404f31cbbac31a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> <a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#ac1db1b4603967a6c4404f31cbbac31a6">testing::internal::ShouldUseColor</a> (<a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> stdout_is_tty)</td></tr>
+<tr class="memitem:ac1db1b4603967a6c4404f31cbbac31a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#ac1db1b4603967a6c4404f31cbbac31a6">testing::internal::ShouldUseColor</a> (bool stdout_is_tty)</td></tr>
 <tr class="separator:ac1db1b4603967a6c4404f31cbbac31a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a904485f27a54be8a5a92856e2d838797"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> <a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a904485f27a54be8a5a92856e2d838797">testing::internal::FormatTimeInMillisAsSeconds</a> (TimeInMillis ms)</td></tr>
+<tr class="memitem:a904485f27a54be8a5a92856e2d838797"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a904485f27a54be8a5a92856e2d838797">testing::internal::FormatTimeInMillisAsSeconds</a> (TimeInMillis ms)</td></tr>
 <tr class="separator:a904485f27a54be8a5a92856e2d838797"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ef227c4a610e7ff638b12dfb25b068e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> <a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a5ef227c4a610e7ff638b12dfb25b068e">testing::internal::FormatEpochTimeInMillisAsIso8601</a> (TimeInMillis ms)</td></tr>
+<tr class="memitem:a5ef227c4a610e7ff638b12dfb25b068e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a5ef227c4a610e7ff638b12dfb25b068e">testing::internal::FormatEpochTimeInMillisAsIso8601</a> (TimeInMillis ms)</td></tr>
 <tr class="separator:a5ef227c4a610e7ff638b12dfb25b068e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3449e173767750b613114ceac6d916a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> <a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#ae3449e173767750b613114ceac6d916a">testing::internal::ParseInt32Flag</a> (const char *<a class="el" href="node_8h.html#a62b34ca1362fe946082b7aa0cd9be844">str</a>, const char *flag, Int32 *<a class="el" href="dictobject_8h.html#a4eabde677fab7743b016294ac2f430b9">value</a>)</td></tr>
+<tr class="memitem:ae3449e173767750b613114ceac6d916a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#ae3449e173767750b613114ceac6d916a">testing::internal::ParseInt32Flag</a> (const char *str, const char *flag, Int32 *value)</td></tr>
 <tr class="separator:ae3449e173767750b613114ceac6d916a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae74fedbdaebaac8d1202192266243b9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#ae74fedbdaebaac8d1202192266243b9e">testing::internal::GetRandomSeedFromFlag</a> (Int32 random_seed_flag)</td></tr>
+<tr class="memitem:ae74fedbdaebaac8d1202192266243b9e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#ae74fedbdaebaac8d1202192266243b9e">testing::internal::GetRandomSeedFromFlag</a> (Int32 random_seed_flag)</td></tr>
 <tr class="separator:ae74fedbdaebaac8d1202192266243b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e07a655cb987d131cd8fbeba9a7f1eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a6e07a655cb987d131cd8fbeba9a7f1eb">testing::internal::GetNextRandomSeed</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> seed)</td></tr>
+<tr class="memitem:a6e07a655cb987d131cd8fbeba9a7f1eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a6e07a655cb987d131cd8fbeba9a7f1eb">testing::internal::GetNextRandomSeed</a> (int seed)</td></tr>
 <tr class="separator:a6e07a655cb987d131cd8fbeba9a7f1eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c0f9558efb9abb965851c4738cdc725"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> <a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a0c0f9558efb9abb965851c4738cdc725">testing::internal::CodePointToUtf8</a> (UInt32 code_point)</td></tr>
+<tr class="memitem:a0c0f9558efb9abb965851c4738cdc725"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a0c0f9558efb9abb965851c4738cdc725">testing::internal::CodePointToUtf8</a> (UInt32 code_point)</td></tr>
 <tr class="separator:a0c0f9558efb9abb965851c4738cdc725"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05b8c86ff38243f34d8f839a0eadefb1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> <a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a05b8c86ff38243f34d8f839a0eadefb1">testing::internal::WideStringToUtf8</a> (const wchar_t *<a class="el" href="node_8h.html#a62b34ca1362fe946082b7aa0cd9be844">str</a>, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> num_chars)</td></tr>
+<tr class="memitem:a05b8c86ff38243f34d8f839a0eadefb1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a05b8c86ff38243f34d8f839a0eadefb1">testing::internal::WideStringToUtf8</a> (const wchar_t *str, int num_chars)</td></tr>
 <tr class="separator:a05b8c86ff38243f34d8f839a0eadefb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19b35b39782d41e6ef76e1910a3a502e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a19b35b39782d41e6ef76e1910a3a502e">testing::internal::WriteToShardStatusFileIfNeeded</a> ()</td></tr>
 <tr class="separator:a19b35b39782d41e6ef76e1910a3a502e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fe41657b1d1ab7ec4e37ec07403ee6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> <a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a0fe41657b1d1ab7ec4e37ec07403ee6c">testing::internal::ShouldShard</a> (const char *total_shards_str, const char *shard_index_str, <a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> in_subprocess_for_death_test)</td></tr>
+<tr class="memitem:a0fe41657b1d1ab7ec4e37ec07403ee6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a0fe41657b1d1ab7ec4e37ec07403ee6c">testing::internal::ShouldShard</a> (const char *total_shards_str, const char *shard_index_str, bool in_subprocess_for_death_test)</td></tr>
 <tr class="separator:a0fe41657b1d1ab7ec4e37ec07403ee6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa576613655c2f380278c255c3ec5fef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> Int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#aaa576613655c2f380278c255c3ec5fef">testing::internal::Int32FromEnvOrDie</a> (const char *env_var, Int32 default_val)</td></tr>
 <tr class="separator:aaa576613655c2f380278c255c3ec5fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a437bd89f5bc532778d7467600e210395"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> <a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a437bd89f5bc532778d7467600e210395">testing::internal::ShouldRunTestOnShard</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> total_shards, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> shard_index, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> test_id)</td></tr>
+<tr class="memitem:a437bd89f5bc532778d7467600e210395"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a437bd89f5bc532778d7467600e210395">testing::internal::ShouldRunTestOnShard</a> (int total_shards, int shard_index, int test_id)</td></tr>
 <tr class="separator:a437bd89f5bc532778d7467600e210395"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e77a774d910346eff11a86d8df783a5"><td class="memTemplParams" colspan="2">template&lt;class Container , typename Predicate &gt; </td></tr>
-<tr class="memitem:a1e77a774d910346eff11a86d8df783a5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a1e77a774d910346eff11a86d8df783a5">testing::internal::CountIf</a> (const Container &amp;c, Predicate predicate)</td></tr>
+<tr class="memitem:a1e77a774d910346eff11a86d8df783a5"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a1e77a774d910346eff11a86d8df783a5">testing::internal::CountIf</a> (const Container &amp;c, Predicate predicate)</td></tr>
 <tr class="separator:a1e77a774d910346eff11a86d8df783a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52f5504ed65d116201ccb8f99a44fd7e"><td class="memTemplParams" colspan="2">template&lt;class Container , typename Functor &gt; </td></tr>
 <tr class="memitem:a52f5504ed65d116201ccb8f99a44fd7e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a52f5504ed65d116201ccb8f99a44fd7e">testing::internal::ForEach</a> (const Container &amp;c, Functor functor)</td></tr>
 <tr class="separator:a52f5504ed65d116201ccb8f99a44fd7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71fdd20a0686bea3dc0cdcd95e0bca1c"><td class="memTemplParams" colspan="2">template&lt;typename E &gt; </td></tr>
-<tr class="memitem:a71fdd20a0686bea3dc0cdcd95e0bca1c"><td class="memTemplItemLeft" align="right" valign="top">E&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a71fdd20a0686bea3dc0cdcd95e0bca1c">testing::internal::GetElementOr</a> (const std::vector&lt; E &gt; &amp;<a class="el" href="floatobject_8h.html#a3b90d5a73541ab9402511d87bed076ef">v</a>, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> <a class="el" href="abstract_8h.html#a13235ab5ddf5c2ccd5ca35ab01d91328">i</a>, E default_value)</td></tr>
+<tr class="memitem:a71fdd20a0686bea3dc0cdcd95e0bca1c"><td class="memTemplItemLeft" align="right" valign="top">E&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a71fdd20a0686bea3dc0cdcd95e0bca1c">testing::internal::GetElementOr</a> (const std::vector&lt; E &gt; &amp;v, int i, E default_value)</td></tr>
 <tr class="separator:a71fdd20a0686bea3dc0cdcd95e0bca1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e1d3dc36138a591769412d4c7779861"><td class="memTemplParams" colspan="2">template&lt;typename E &gt; </td></tr>
-<tr class="memitem:a0e1d3dc36138a591769412d4c7779861"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a0e1d3dc36138a591769412d4c7779861">testing::internal::ShuffleRange</a> (internal::Random *random, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> begin, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> end, std::vector&lt; E &gt; *<a class="el" href="floatobject_8h.html#a3b90d5a73541ab9402511d87bed076ef">v</a>)</td></tr>
+<tr class="memitem:a0e1d3dc36138a591769412d4c7779861"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a0e1d3dc36138a591769412d4c7779861">testing::internal::ShuffleRange</a> (internal::Random *random, int begin, int end, std::vector&lt; E &gt; *v)</td></tr>
 <tr class="separator:a0e1d3dc36138a591769412d4c7779861"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90d9e6ffe8522a7eb1b2ce9b1a0c4673"><td class="memTemplParams" colspan="2">template&lt;typename E &gt; </td></tr>
-<tr class="memitem:a90d9e6ffe8522a7eb1b2ce9b1a0c4673"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a90d9e6ffe8522a7eb1b2ce9b1a0c4673">testing::internal::Shuffle</a> (internal::Random *random, std::vector&lt; E &gt; *<a class="el" href="floatobject_8h.html#a3b90d5a73541ab9402511d87bed076ef">v</a>)</td></tr>
+<tr class="memitem:a90d9e6ffe8522a7eb1b2ce9b1a0c4673"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a90d9e6ffe8522a7eb1b2ce9b1a0c4673">testing::internal::Shuffle</a> (internal::Random *random, std::vector&lt; E &gt; *v)</td></tr>
 <tr class="separator:a90d9e6ffe8522a7eb1b2ce9b1a0c4673"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a2bbf069f75bc99873976ad6fc356ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> FilePath&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a7a2bbf069f75bc99873976ad6fc356ad">testing::internal::GetCurrentExecutableName</a> ()</td></tr>
 <tr class="separator:a7a2bbf069f75bc99873976ad6fc356ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bd0caf5d16512de38b39599c13ee634"><td class="memItemLeft" align="right" valign="top">class UnitTestImpl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a9bd0caf5d16512de38b39599c13ee634">testing::internal::GetUnitTestImpl</a> ()</td></tr>
 <tr class="separator:a9bd0caf5d16512de38b39599c13ee634"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a472880afbcc592a41e3d623e2dec8412"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a472880afbcc592a41e3d623e2dec8412">testing::internal::ParseGoogleTestFlagsOnly</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> *<a class="el" href="eval_8h.html#a9e4bf27daf5ceabe639e59fd5e9fd3b2">argc</a>, char **<a class="el" href="pythonrun_8h.html#af3cb49c013b6d4b79e7a00fc6807e954">argv</a>)</td></tr>
+<tr class="memitem:a472880afbcc592a41e3d623e2dec8412"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a472880afbcc592a41e3d623e2dec8412">testing::internal::ParseGoogleTestFlagsOnly</a> (int *argc, char **argv)</td></tr>
 <tr class="separator:a472880afbcc592a41e3d623e2dec8412"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3c81a67914856448d0778990d9d9cab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#aa3c81a67914856448d0778990d9d9cab">testing::internal::ParseGoogleTestFlagsOnly</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> *<a class="el" href="eval_8h.html#a9e4bf27daf5ceabe639e59fd5e9fd3b2">argc</a>, wchar_t **<a class="el" href="pythonrun_8h.html#af3cb49c013b6d4b79e7a00fc6807e954">argv</a>)</td></tr>
+<tr class="memitem:aa3c81a67914856448d0778990d9d9cab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#aa3c81a67914856448d0778990d9d9cab">testing::internal::ParseGoogleTestFlagsOnly</a> (int *argc, wchar_t **argv)</td></tr>
 <tr class="separator:aa3c81a67914856448d0778990d9d9cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -205,17 +222,21 @@ Variables</h2></td></tr>
 <tr class="separator:ad9efcf363de3483afd91c7393a4fefb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1ffe15dea227d4dded912e43a8eed84"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#aa1ffe15dea227d4dded912e43a8eed84">testing::internal::kFlagfileFlag</a> [] = &quot;flagfile&quot;</td></tr>
 <tr class="separator:aa1ffe15dea227d4dded912e43a8eed84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41bd421ace53d23dbe85d9618c3afaee"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a41bd421ace53d23dbe85d9618c3afaee">testing::internal::kMaxRandomSeed</a> = 99999</td></tr>
+<tr class="memitem:a41bd421ace53d23dbe85d9618c3afaee"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a41bd421ace53d23dbe85d9618c3afaee">testing::internal::kMaxRandomSeed</a> = 99999</td></tr>
 <tr class="separator:a41bd421ace53d23dbe85d9618c3afaee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93a772f5e51973b105d91cbb66a203f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> <a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a93a772f5e51973b105d91cbb66a203f4">testing::internal::g_help_flag</a> = <a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c">false</a></td></tr>
+<tr class="memitem:a93a772f5e51973b105d91cbb66a203f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a93a772f5e51973b105d91cbb66a203f4">testing::internal::g_help_flag</a> = false</td></tr>
 <tr class="separator:a93a772f5e51973b105d91cbb66a203f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.12
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_b80f002a4112fc8defa29deee9464b28.html">googletest-master</a></li><li class="navelem"><a class="el" href="dir_8339ebd0c16062e901f0dca0f5626014.html">googletest</a></li><li class="navelem"><a class="el" href="dir_96d9d8c9a22bf07f3a0497a9a75036c9.html">src</a></li><li class="navelem"><a class="el" href="gtest-internal-inl_8h.html">gtest-internal-inl.h</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
 </body>
 </html>

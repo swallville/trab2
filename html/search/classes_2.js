@@ -2,9 +2,9 @@ var searchData=
 [
   ['backtrackingbpmtest',['BacktrackingBPMTest',['../classtesting_1_1gmock__matchers__test_1_1_backtracking_b_p_m_test.html',1,'testing::gmock_matchers_test']]],
   ['barenvironment',['BarEnvironment',['../class_bar_environment.html',1,'']]],
-  ['base',['Base',['../classtesting_1_1internal_1_1_base.html',1,'testing::internal']]],
   ['base',['Base',['../class_base.html',1,'']]],
   ['base',['Base',['../classtesting_1_1gmock__matchers__test_1_1_base.html',1,'testing::gmock_matchers_test']]],
+  ['base',['Base',['../classtesting_1_1internal_1_1_base.html',1,'testing::internal']]],
   ['beginenddistanceismatcher',['BeginEndDistanceIsMatcher',['../classtesting_1_1internal_1_1_begin_end_distance_is_matcher.html',1,'testing::internal']]],
   ['big',['Big',['../structtesting_1_1gtest__printers__test_1_1_big.html',1,'testing::gtest_printers_test']]],
   ['biggestintconvertible',['BiggestIntConvertible',['../class_biggest_int_convertible.html',1,'']]],
@@ -20,7 +20,6 @@ var searchData=
   ['bothofmatcher',['BothOfMatcher',['../classtesting_1_1internal_1_1_both_of_matcher.html',1,'testing::internal']]],
   ['bothofmatcherimpl',['BothOfMatcherImpl',['../classtesting_1_1internal_1_1_both_of_matcher_impl.html',1,'testing::internal']]],
   ['boundsecondmatcher',['BoundSecondMatcher',['../classtesting_1_1internal_1_1_bound_second_matcher.html',1,'testing::internal']]],
-  ['bufferinfo',['bufferinfo',['../structbufferinfo.html',1,'']]],
   ['builtindefaultvalue',['BuiltInDefaultValue',['../classtesting_1_1internal_1_1_built_in_default_value.html',1,'testing::internal']]],
   ['builtindefaultvalue_3c_20const_20t_20_3e',['BuiltInDefaultValue&lt; const T &gt;',['../classtesting_1_1internal_1_1_built_in_default_value_3_01const_01_t_01_4.html',1,'testing::internal']]],
   ['builtindefaultvalue_3c_20t_20_2a_20_3e',['BuiltInDefaultValue&lt; T * &gt;',['../classtesting_1_1internal_1_1_built_in_default_value_3_01_t_01_5_01_4.html',1,'testing::internal']]],

@@ -9,8 +9,6 @@ var searchData=
   ['big',['Big',['../structtesting_1_1gtest__printers__test_1_1_big.html#adb57fb0e14adb81177e3bfd7ed39966c',1,'testing::gtest_printers_test::Big']]],
   ['binary',['Binary',['../classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface.html#a59ea28b711ece054ce9d57c2dc574ba0',1,'testing::gmock_generated_function_mockers_test::FooInterface::Binary()'],['../classtesting_1_1gmock__more__actions__test_1_1_foo.html#a15d8082ba501899c8ac1d93543ed9ad3',1,'testing::gmock_more_actions_test::Foo::Binary()'],['../namespacetesting_1_1gmock__generated__actions__test.html#a3ec2020ddbfa6f2e993e0f88be1e691f',1,'testing::gmock_generated_actions_test::Binary()'],['../namespacetesting_1_1gmock__more__actions__test.html#a853c9f048674a60798b930750b74a1df',1,'testing::gmock_more_actions_test::Binary()']]],
   ['bits',['bits',['../classtesting_1_1internal_1_1_floating_point.html#aab053be914bdc9e507c0db89740c318c',1,'testing::internal::FloatingPoint']]],
-  ['bmobj_5fconvert',['BMObj_Convert',['../pymactoolbox_8h.html#affb5717b6287839ccb16b86ad09ab5d4',1,'pymactoolbox.h']]],
-  ['bmobj_5fnew',['BMObj_New',['../pymactoolbox_8h.html#aaef98b94460929b046c1e3ffa3727508',1,'pymactoolbox.h']]],
   ['bool',['Bool',['../struct_bool.html#a03dfd4851b13abb29414887fcada7fca',1,'Bool']]],
   ['boolfromgtestenv',['BoolFromGTestEnv',['../namespacetesting_1_1internal.html#a67132cdce23fb71b6c38ee34ef81eb4c',1,'testing::internal']]],
   ['boolresetter',['BoolResetter',['../classtesting_1_1gmock__generated__actions__test_1_1_bool_resetter.html#a55776cb9ef3b358e48898bb0257646ea',1,'testing::gmock_generated_actions_test::BoolResetter']]],

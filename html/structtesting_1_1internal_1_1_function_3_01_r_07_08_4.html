@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="namespacetesting_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html">Function&lt; R()&gt;</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -99,7 +116,7 @@ Public Types</h2></td></tr>
 <tr class="separator:a5c228a886ef598ac10988f8de5e32ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad483c3128c470d8cdb55c3ac1c575c11"><td class="memItemLeft" align="right" valign="top">typedef ::testing::tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html#ad483c3128c470d8cdb55c3ac1c575c11">ArgumentTuple</a></td></tr>
 <tr class="separator:ad483c3128c470d8cdb55c3ac1c575c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bec5cf8937e8af99dedab2f40129fab"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structtesting_1_1internal_1_1_matcher_tuple.html">MatcherTuple</a>&lt; <a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html#ad483c3128c470d8cdb55c3ac1c575c11">ArgumentTuple</a> &gt;::<a class="el" href="pystrtod_8h.html#aa4a86d796321c3142c092ce30a5c2512">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html#a9bec5cf8937e8af99dedab2f40129fab">ArgumentMatcherTuple</a></td></tr>
+<tr class="memitem:a9bec5cf8937e8af99dedab2f40129fab"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structtesting_1_1internal_1_1_matcher_tuple.html">MatcherTuple</a>&lt; <a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html#ad483c3128c470d8cdb55c3ac1c575c11">ArgumentTuple</a> &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html#a9bec5cf8937e8af99dedab2f40129fab">ArgumentMatcherTuple</a></td></tr>
 <tr class="separator:a9bec5cf8937e8af99dedab2f40129fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a666b5ad3bf155529d3a0f9fe6d5c897b"><td class="memItemLeft" align="right" valign="top">typedef void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html#a666b5ad3bf155529d3a0f9fe6d5c897b">MakeResultVoid</a>()</td></tr>
 <tr class="separator:a666b5ad3bf155529d3a0f9fe6d5c897b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,7 +139,7 @@ struct testing::internal::Function&lt; R()&gt;</h3>
 template&lt;typename R &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="structtesting_1_1internal_1_1_matcher_tuple.html">MatcherTuple</a>&lt;<a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html#ad483c3128c470d8cdb55c3ac1c575c11">ArgumentTuple</a>&gt;::<a class="el" href="pystrtod_8h.html#aa4a86d796321c3142c092ce30a5c2512">type</a> <a class="el" href="structtesting_1_1internal_1_1_function.html">testing::internal::Function</a>&lt; R()&gt;::<a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html#a9bec5cf8937e8af99dedab2f40129fab">ArgumentMatcherTuple</a></td>
+          <td class="memname">typedef <a class="el" href="structtesting_1_1internal_1_1_matcher_tuple.html">MatcherTuple</a>&lt;<a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html#ad483c3128c470d8cdb55c3ac1c575c11">ArgumentTuple</a>&gt;::type <a class="el" href="structtesting_1_1internal_1_1_function.html">testing::internal::Function</a>&lt; R()&gt;::<a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html#a9bec5cf8937e8af99dedab2f40129fab">ArgumentMatcherTuple</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -204,14 +221,18 @@ template&lt;typename R &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/Users/sineideferreira/Documents/12_0127377_Lukas/lib/googletest-master/googlemock/include/gmock/internal/<a class="el" href="gmock-generated-internal-utils_8h_source.html">gmock-generated-internal-utils.h</a></li>
+<li>lib/googletest-master/googlemock/include/gmock/internal/<a class="el" href="gmock-generated-internal-utils_8h_source.html">gmock-generated-internal-utils.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.12
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="namespacetesting_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html">Function&lt; R()&gt;</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
 </body>
 </html>

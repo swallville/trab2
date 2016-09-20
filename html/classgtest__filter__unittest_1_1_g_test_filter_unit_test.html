@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classgtest__filter__unittest_1_1_g_test_filter_unit_test.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacegtest__filter__unittest.html">gtest_filter_unittest</a></li><li class="navelem"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html">GTestFilterUnitTest</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -83,57 +100,57 @@ Inheritance diagram for gtest_filter_unittest.GTestFilterUnitTest:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aeebdbdcc59594ad0a69cf11eafe94997"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#aeebdbdcc59594ad0a69cf11eafe94997">AssertSetEqual</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>, lhs, rhs)</td></tr>
+<tr class="memitem:aeebdbdcc59594ad0a69cf11eafe94997"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#aeebdbdcc59594ad0a69cf11eafe94997">AssertSetEqual</a> (self, lhs, rhs)</td></tr>
 <tr class="separator:aeebdbdcc59594ad0a69cf11eafe94997"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87656eac0cf4136252eef43da0121381"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a87656eac0cf4136252eef43da0121381">AssertPartitionIsValid</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>, set_var, list_of_sets)</td></tr>
+<tr class="memitem:a87656eac0cf4136252eef43da0121381"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a87656eac0cf4136252eef43da0121381">AssertPartitionIsValid</a> (self, set_var, list_of_sets)</td></tr>
 <tr class="separator:a87656eac0cf4136252eef43da0121381"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11c48bf404bca6806b14a1a71d169ace"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a11c48bf404bca6806b14a1a71d169ace">AdjustForParameterizedTests</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>, tests_to_run)</td></tr>
+<tr class="memitem:a11c48bf404bca6806b14a1a71d169ace"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a11c48bf404bca6806b14a1a71d169ace">AdjustForParameterizedTests</a> (self, tests_to_run)</td></tr>
 <tr class="separator:a11c48bf404bca6806b14a1a71d169ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf341ed9a265b346a050afa9a9a85c65"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#acf341ed9a265b346a050afa9a9a85c65">RunAndVerify</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>, gtest_filter, tests_to_run)</td></tr>
+<tr class="memitem:acf341ed9a265b346a050afa9a9a85c65"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#acf341ed9a265b346a050afa9a9a85c65">RunAndVerify</a> (self, gtest_filter, tests_to_run)</td></tr>
 <tr class="separator:acf341ed9a265b346a050afa9a9a85c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2022ed99e18a6e5afd1023b9dd19d6e0"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a2022ed99e18a6e5afd1023b9dd19d6e0">RunAndVerifyWithSharding</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>, gtest_filter, total_shards, tests_to_run, <a class="el" href="eval_8h.html#ad61773d508168edac5109211128610c7">args</a>=None, check_exit_0=False)</td></tr>
+<tr class="memitem:a2022ed99e18a6e5afd1023b9dd19d6e0"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a2022ed99e18a6e5afd1023b9dd19d6e0">RunAndVerifyWithSharding</a> (self, gtest_filter, total_shards, tests_to_run, args=None, check_exit_0=False)</td></tr>
 <tr class="separator:a2022ed99e18a6e5afd1023b9dd19d6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae52bd70ef1dcb68c83c0379ddfb987a9"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#ae52bd70ef1dcb68c83c0379ddfb987a9">RunAndVerifyAllowingDisabled</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>, gtest_filter, tests_to_run)</td></tr>
+<tr class="memitem:ae52bd70ef1dcb68c83c0379ddfb987a9"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#ae52bd70ef1dcb68c83c0379ddfb987a9">RunAndVerifyAllowingDisabled</a> (self, gtest_filter, tests_to_run)</td></tr>
 <tr class="separator:ae52bd70ef1dcb68c83c0379ddfb987a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af20a71b1659314a5cc1093d77a673495"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#af20a71b1659314a5cc1093d77a673495">setUp</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
+<tr class="memitem:af20a71b1659314a5cc1093d77a673495"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#af20a71b1659314a5cc1093d77a673495">setUp</a> (self)</td></tr>
 <tr class="separator:af20a71b1659314a5cc1093d77a673495"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adef3a9b539c73bda785a631a5aac424f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#adef3a9b539c73bda785a631a5aac424f">testDefaultBehavior</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
+<tr class="memitem:adef3a9b539c73bda785a631a5aac424f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#adef3a9b539c73bda785a631a5aac424f">testDefaultBehavior</a> (self)</td></tr>
 <tr class="separator:adef3a9b539c73bda785a631a5aac424f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d5ad564f41c052864a3957a71daa535"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a8d5ad564f41c052864a3957a71daa535">testDefaultBehaviorWithShards</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
+<tr class="memitem:a8d5ad564f41c052864a3957a71daa535"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a8d5ad564f41c052864a3957a71daa535">testDefaultBehaviorWithShards</a> (self)</td></tr>
 <tr class="separator:a8d5ad564f41c052864a3957a71daa535"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afce65847b463ec5bca4458e9348d9a9f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#afce65847b463ec5bca4458e9348d9a9f">testEmptyFilter</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
+<tr class="memitem:afce65847b463ec5bca4458e9348d9a9f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#afce65847b463ec5bca4458e9348d9a9f">testEmptyFilter</a> (self)</td></tr>
 <tr class="separator:afce65847b463ec5bca4458e9348d9a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2456062c177350a53244aea030aaf617"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a2456062c177350a53244aea030aaf617">testBadFilter</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
+<tr class="memitem:a2456062c177350a53244aea030aaf617"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a2456062c177350a53244aea030aaf617">testBadFilter</a> (self)</td></tr>
 <tr class="separator:a2456062c177350a53244aea030aaf617"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a336d9203e26493bae11fbb514af38a6b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a336d9203e26493bae11fbb514af38a6b">testFullName</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
+<tr class="memitem:a336d9203e26493bae11fbb514af38a6b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a336d9203e26493bae11fbb514af38a6b">testFullName</a> (self)</td></tr>
 <tr class="separator:a336d9203e26493bae11fbb514af38a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9da48a79483e22e3f986e57de0dee37"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#ae9da48a79483e22e3f986e57de0dee37">testUniversalFilters</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
+<tr class="memitem:ae9da48a79483e22e3f986e57de0dee37"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#ae9da48a79483e22e3f986e57de0dee37">testUniversalFilters</a> (self)</td></tr>
 <tr class="separator:ae9da48a79483e22e3f986e57de0dee37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac59206c94324afdc09adbe5853856174"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#ac59206c94324afdc09adbe5853856174">testFilterByTestCase</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
+<tr class="memitem:ac59206c94324afdc09adbe5853856174"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#ac59206c94324afdc09adbe5853856174">testFilterByTestCase</a> (self)</td></tr>
 <tr class="separator:ac59206c94324afdc09adbe5853856174"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaea691324a6c0765403b26a895702a63"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#aaea691324a6c0765403b26a895702a63">testFilterByTest</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
+<tr class="memitem:aaea691324a6c0765403b26a895702a63"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#aaea691324a6c0765403b26a895702a63">testFilterByTest</a> (self)</td></tr>
 <tr class="separator:aaea691324a6c0765403b26a895702a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d962adae2ee2697b3b92e84b60a795a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a6d962adae2ee2697b3b92e84b60a795a">testFilterDisabledTests</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
+<tr class="memitem:a6d962adae2ee2697b3b92e84b60a795a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a6d962adae2ee2697b3b92e84b60a795a">testFilterDisabledTests</a> (self)</td></tr>
 <tr class="separator:a6d962adae2ee2697b3b92e84b60a795a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af855132606c1fa02fb765e8619108114"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#af855132606c1fa02fb765e8619108114">testWildcardInTestCaseName</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
+<tr class="memitem:af855132606c1fa02fb765e8619108114"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#af855132606c1fa02fb765e8619108114">testWildcardInTestCaseName</a> (self)</td></tr>
 <tr class="separator:af855132606c1fa02fb765e8619108114"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b1e6b35e158d7c6d11b8f4d2cb600cb"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a9b1e6b35e158d7c6d11b8f4d2cb600cb">testWildcardInTestName</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
+<tr class="memitem:a9b1e6b35e158d7c6d11b8f4d2cb600cb"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a9b1e6b35e158d7c6d11b8f4d2cb600cb">testWildcardInTestName</a> (self)</td></tr>
 <tr class="separator:a9b1e6b35e158d7c6d11b8f4d2cb600cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a874aea28690300d8c0dc0910304f7ab2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a874aea28690300d8c0dc0910304f7ab2">testFilterWithoutDot</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
+<tr class="memitem:a874aea28690300d8c0dc0910304f7ab2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a874aea28690300d8c0dc0910304f7ab2">testFilterWithoutDot</a> (self)</td></tr>
 <tr class="separator:a874aea28690300d8c0dc0910304f7ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2563885e647205586b135c5ead55e6ab"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a2563885e647205586b135c5ead55e6ab">testTwoPatterns</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
+<tr class="memitem:a2563885e647205586b135c5ead55e6ab"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a2563885e647205586b135c5ead55e6ab">testTwoPatterns</a> (self)</td></tr>
 <tr class="separator:a2563885e647205586b135c5ead55e6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4858e153245f0974632fd36dc1dd804"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#af4858e153245f0974632fd36dc1dd804">testThreePatterns</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
+<tr class="memitem:af4858e153245f0974632fd36dc1dd804"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#af4858e153245f0974632fd36dc1dd804">testThreePatterns</a> (self)</td></tr>
 <tr class="separator:af4858e153245f0974632fd36dc1dd804"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff878809d524797f62e2fe38bbfcc8da"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#aff878809d524797f62e2fe38bbfcc8da">testNegativeFilters</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
+<tr class="memitem:aff878809d524797f62e2fe38bbfcc8da"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#aff878809d524797f62e2fe38bbfcc8da">testNegativeFilters</a> (self)</td></tr>
 <tr class="separator:aff878809d524797f62e2fe38bbfcc8da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81e4256da0e0ad8cb4b764ffd573cc6d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a81e4256da0e0ad8cb4b764ffd573cc6d">testFlagOverridesEnvVar</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
+<tr class="memitem:a81e4256da0e0ad8cb4b764ffd573cc6d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a81e4256da0e0ad8cb4b764ffd573cc6d">testFlagOverridesEnvVar</a> (self)</td></tr>
 <tr class="separator:a81e4256da0e0ad8cb4b764ffd573cc6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a2c7b8d758abba0ae883bbb272f344b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a7a2c7b8d758abba0ae883bbb272f344b">testShardStatusFileIsCreated</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
+<tr class="memitem:a7a2c7b8d758abba0ae883bbb272f344b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a7a2c7b8d758abba0ae883bbb272f344b">testShardStatusFileIsCreated</a> (self)</td></tr>
 <tr class="separator:a7a2c7b8d758abba0ae883bbb272f344b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dac68948f6170e39ae9ee7bca0bc1eb"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a1dac68948f6170e39ae9ee7bca0bc1eb">testShardStatusFileIsCreatedWithListTests</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
+<tr class="memitem:a1dac68948f6170e39ae9ee7bca0bc1eb"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a1dac68948f6170e39ae9ee7bca0bc1eb">testShardStatusFileIsCreatedWithListTests</a> (self)</td></tr>
 <tr class="separator:a1dac68948f6170e39ae9ee7bca0bc1eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b4f7428d9219dff5960968477927626"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a4b4f7428d9219dff5960968477927626">testShardingWorksWithDeathTests</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
+<tr class="memitem:a4b4f7428d9219dff5960968477927626"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a4b4f7428d9219dff5960968477927626">testShardingWorksWithDeathTests</a> (self)</td></tr>
 <tr class="separator:a4b4f7428d9219dff5960968477927626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -794,14 +811,18 @@ sets the flags accordingly.
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/sineideferreira/Documents/12_0127377_Lukas/lib/googletest-master/googletest/test/<a class="el" href="gtest__filter__unittest_8py_source.html">gtest_filter_unittest.py</a></li>
+<li>lib/googletest-master/googletest/test/<a class="el" href="gtest__filter__unittest_8py_source.html">gtest_filter_unittest.py</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.12
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacegtest__filter__unittest.html">gtest_filter_unittest</a></li><li class="navelem"><a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html">GTestFilterUnitTest</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
 </body>
 </html>

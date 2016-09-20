@@ -5,10 +5,17 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.12"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Trab2: /Users/sineideferreira/Documents/12_0127377_Lukas/lib/googletest-master/googlemock/test/gmock_test.cc File Reference</title>
+<title>Trab2: lib/googletest-master/googlemock/test/gmock_test.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('gmock__test_8cc.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_fd040b3fd6fd6580b63cc52590f909a2.html">Documents</a></li><li class="navelem"><a class="el" href="dir_19d6c1f8e4691420a561191421364ebd.html">12_0127377_Lukas</a></li><li class="navelem"><a class="el" href="dir_0eb27892baca89b5444e5838e452c039.html">lib</a></li><li class="navelem"><a class="el" href="dir_8abc3a0d10bafbb9177d86a50dc259be.html">googletest-master</a></li><li class="navelem"><a class="el" href="dir_82e91e03b9fbdecfe63fc20e90a9b7eb.html">googlemock</a></li><li class="navelem"><a class="el" href="dir_467ee2b288061e58b909e48decc75fdb.html">test</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
@@ -80,7 +97,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ac9c8ae8722c330d47f75dee43fb8ab78"><td class="memTemplParams" colspan="2">template&lt;typename Char , int M, int N&gt; </td></tr>
-<tr class="memitem:ac9c8ae8722c330d47f75dee43fb8ab78"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="gmock__test_8cc.html#ac9c8ae8722c330d47f75dee43fb8ab78">TestInitGoogleMock</a> (const Char *(&amp;<a class="el" href="pythonrun_8h.html#af3cb49c013b6d4b79e7a00fc6807e954">argv</a>)[M], const Char *(&amp;new_argv)[N], const ::<a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">std::string</a> &amp;expected_gmock_verbose)</td></tr>
+<tr class="memitem:ac9c8ae8722c330d47f75dee43fb8ab78"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="gmock__test_8cc.html#ac9c8ae8722c330d47f75dee43fb8ab78">TestInitGoogleMock</a> (const Char *(&amp;argv)[M], const Char *(&amp;new_argv)[N], const ::std::string &amp;expected_gmock_verbose)</td></tr>
 <tr class="separator:ac9c8ae8722c330d47f75dee43fb8ab78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c86c6c98b72e903135c1b01370a13f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock__test_8cc.html#a7c86c6c98b72e903135c1b01370a13f3">TEST</a> (InitGoogleMockTest, ParsesInvalidCommandLine)</td></tr>
 <tr class="separator:a7c86c6c98b72e903135c1b01370a13f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -459,7 +476,7 @@ template&lt;typename Char , int M, int N&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const ::<a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">std::string</a> &amp;&#160;</td>
+          <td class="paramtype">const ::std::string &amp;&#160;</td>
           <td class="paramname"><em>expected_gmock_verbose</em>&#160;</td>
         </tr>
         <tr>
@@ -475,11 +492,15 @@ template&lt;typename Char , int M, int N&gt; </div>
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.12
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_b80f002a4112fc8defa29deee9464b28.html">googletest-master</a></li><li class="navelem"><a class="el" href="dir_8bfa859b63a87f624554ba57ff7df488.html">googlemock</a></li><li class="navelem"><a class="el" href="dir_824fa66a05f8f971de6150c7500e1a3d.html">test</a></li><li class="navelem"><a class="el" href="gmock__test_8cc.html">gmock_test.cc</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
 </body>
 </html>

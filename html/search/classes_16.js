@@ -7,6 +7,5 @@ var searchData=
   ['whensortedbymatcher',['WhenSortedByMatcher',['../classtesting_1_1internal_1_1_when_sorted_by_matcher.html',1,'testing::internal']]],
   ['widget',['Widget',['../class_widget.html',1,'']]],
   ['wikibrancher',['WikiBrancher',['../classrelease__docs_1_1_wiki_brancher.html',1,'release_docs']]],
-  ['withargsaction',['WithArgsAction',['../classtesting_1_1internal_1_1_with_args_action.html',1,'testing::internal']]],
-  ['wrapperbase',['wrapperbase',['../structwrapperbase.html',1,'']]]
+  ['withargsaction',['WithArgsAction',['../classtesting_1_1internal_1_1_with_args_action.html',1,'testing::internal']]]
 ];

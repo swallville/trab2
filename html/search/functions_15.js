@@ -36,7 +36,5 @@ var searchData=
   ['uploadbasefiles',['UploadBaseFiles',['../classupload_1_1_version_control_system.html#a7e334f967301b9e85e5a9c39f5036823',1,'upload.VersionControlSystem.UploadBaseFiles(self, issue, rpc_server, patch_list, patchset, options, files)'],['../classupload_1_1_version_control_system.html#a7e334f967301b9e85e5a9c39f5036823',1,'upload.VersionControlSystem.UploadBaseFiles(self, issue, rpc_server, patch_list, patchset, options, files)']]],
   ['uploadseparatepatches',['UploadSeparatePatches',['../namespaceupload.html#a7ec83cb7f7bfb9109c19b6f91552b3ee',1,'upload']]],
   ['uponleavinggtest',['UponLeavingGTest',['../classtesting_1_1internal_1_1_os_stack_trace_getter_interface.html#a791bd120428b5a53d5eeba1b27296a39',1,'testing::internal::OsStackTraceGetterInterface::UponLeavingGTest()'],['../classtesting_1_1internal_1_1_os_stack_trace_getter.html#a8ae0237629b6b5672b4b5ef8e292205c',1,'testing::internal::OsStackTraceGetter::UponLeavingGTest()']]],
-  ['userdataobj_5fconvert',['UserDataObj_Convert',['../pymactoolbox_8h.html#afbe5f0ad35299566b9042a27f4a32ebd',1,'pymactoolbox.h']]],
-  ['userdataobj_5fnew',['UserDataObj_New',['../pymactoolbox_8h.html#a833f9e1ef786d5f4e2efa576960e1e9b',1,'pymactoolbox.h']]],
   ['usescolor',['UsesColor',['../namespacegtest__color__test.html#a96a2e5fa77bff1cba4a791ad1e5bdafa',1,'gtest_color_test']]]
 ];

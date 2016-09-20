@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classupload_1_1_version_control_system.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceupload.html">upload</a></li><li class="navelem"><a class="el" href="classupload_1_1_version_control_system.html">VersionControlSystem</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -79,8 +96,6 @@ Inheritance diagram for upload.VersionControlSystem:</div>
  <div class="center">
   <img src="classupload_1_1_version_control_system.png" usemap="#upload.VersionControlSystem_map" alt=""/>
   <map id="upload.VersionControlSystem_map" name="upload.VersionControlSystem_map">
-<area href="struct__object.html" alt="_object" shape="rect" coords="378,0,557,24"/>
-<area href="struct__object.html" alt="_object" shape="rect" coords="567,0,746,24"/>
 <area href="classupload_1_1_git_v_c_s.html" alt="upload.GitVCS" shape="rect" coords="0,112,179,136"/>
 <area href="classupload_1_1_git_v_c_s.html" alt="upload.GitVCS" shape="rect" coords="189,112,368,136"/>
 <area href="classupload_1_1_mercurial_v_c_s.html" alt="upload.MercurialVCS" shape="rect" coords="378,112,557,136"/>
@@ -92,37 +107,37 @@ Inheritance diagram for upload.VersionControlSystem:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ace97e5785a2b40011404ae6fbb956ecf"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#ace97e5785a2b40011404ae6fbb956ecf">__init__</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>, <a class="el" href="classupload_1_1_version_control_system.html#a4d57d043bc408887b94269fe4cea9556">options</a>)</td></tr>
+<tr class="memitem:ace97e5785a2b40011404ae6fbb956ecf"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#ace97e5785a2b40011404ae6fbb956ecf">__init__</a> (self, <a class="el" href="classupload_1_1_version_control_system.html#a4d57d043bc408887b94269fe4cea9556">options</a>)</td></tr>
 <tr class="separator:ace97e5785a2b40011404ae6fbb956ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5eb260c96e7016dab36b5fc136c9f49"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#aa5eb260c96e7016dab36b5fc136c9f49">GenerateDiff</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>, <a class="el" href="eval_8h.html#ad61773d508168edac5109211128610c7">args</a>)</td></tr>
+<tr class="memitem:aa5eb260c96e7016dab36b5fc136c9f49"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#aa5eb260c96e7016dab36b5fc136c9f49">GenerateDiff</a> (self, args)</td></tr>
 <tr class="separator:aa5eb260c96e7016dab36b5fc136c9f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56a60e56aa9aff3df4001d2f84cab884"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#a56a60e56aa9aff3df4001d2f84cab884">GetUnknownFiles</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
+<tr class="memitem:a56a60e56aa9aff3df4001d2f84cab884"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#a56a60e56aa9aff3df4001d2f84cab884">GetUnknownFiles</a> (self)</td></tr>
 <tr class="separator:a56a60e56aa9aff3df4001d2f84cab884"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2923d691a1b1047e9359c5b7c1c103f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#ad2923d691a1b1047e9359c5b7c1c103f">CheckForUnknownFiles</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
+<tr class="memitem:ad2923d691a1b1047e9359c5b7c1c103f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#ad2923d691a1b1047e9359c5b7c1c103f">CheckForUnknownFiles</a> (self)</td></tr>
 <tr class="separator:ad2923d691a1b1047e9359c5b7c1c103f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfd9d4ecba422102233a2ba13e5bfaf5"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#adfd9d4ecba422102233a2ba13e5bfaf5">GetBaseFile</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>, filename)</td></tr>
+<tr class="memitem:adfd9d4ecba422102233a2ba13e5bfaf5"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#adfd9d4ecba422102233a2ba13e5bfaf5">GetBaseFile</a> (self, filename)</td></tr>
 <tr class="separator:adfd9d4ecba422102233a2ba13e5bfaf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a812c3b3daf90c88b015fa4b26252e291"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#a812c3b3daf90c88b015fa4b26252e291">GetBaseFiles</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>, diff)</td></tr>
+<tr class="memitem:a812c3b3daf90c88b015fa4b26252e291"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#a812c3b3daf90c88b015fa4b26252e291">GetBaseFiles</a> (self, diff)</td></tr>
 <tr class="separator:a812c3b3daf90c88b015fa4b26252e291"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e334f967301b9e85e5a9c39f5036823"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#a7e334f967301b9e85e5a9c39f5036823">UploadBaseFiles</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>, issue, rpc_server, patch_list, patchset, <a class="el" href="classupload_1_1_version_control_system.html#a4d57d043bc408887b94269fe4cea9556">options</a>, files)</td></tr>
+<tr class="memitem:a7e334f967301b9e85e5a9c39f5036823"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#a7e334f967301b9e85e5a9c39f5036823">UploadBaseFiles</a> (self, issue, rpc_server, patch_list, patchset, <a class="el" href="classupload_1_1_version_control_system.html#a4d57d043bc408887b94269fe4cea9556">options</a>, files)</td></tr>
 <tr class="separator:a7e334f967301b9e85e5a9c39f5036823"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a846889ecd2ef40870b456ddb5b349e02"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#a846889ecd2ef40870b456ddb5b349e02">IsImage</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>, filename)</td></tr>
+<tr class="memitem:a846889ecd2ef40870b456ddb5b349e02"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#a846889ecd2ef40870b456ddb5b349e02">IsImage</a> (self, filename)</td></tr>
 <tr class="separator:a846889ecd2ef40870b456ddb5b349e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace97e5785a2b40011404ae6fbb956ecf"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#ace97e5785a2b40011404ae6fbb956ecf">__init__</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>, <a class="el" href="classupload_1_1_version_control_system.html#a4d57d043bc408887b94269fe4cea9556">options</a>)</td></tr>
+<tr class="memitem:ace97e5785a2b40011404ae6fbb956ecf"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#ace97e5785a2b40011404ae6fbb956ecf">__init__</a> (self, <a class="el" href="classupload_1_1_version_control_system.html#a4d57d043bc408887b94269fe4cea9556">options</a>)</td></tr>
 <tr class="separator:ace97e5785a2b40011404ae6fbb956ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5eb260c96e7016dab36b5fc136c9f49"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#aa5eb260c96e7016dab36b5fc136c9f49">GenerateDiff</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>, <a class="el" href="eval_8h.html#ad61773d508168edac5109211128610c7">args</a>)</td></tr>
+<tr class="memitem:aa5eb260c96e7016dab36b5fc136c9f49"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#aa5eb260c96e7016dab36b5fc136c9f49">GenerateDiff</a> (self, args)</td></tr>
 <tr class="separator:aa5eb260c96e7016dab36b5fc136c9f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56a60e56aa9aff3df4001d2f84cab884"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#a56a60e56aa9aff3df4001d2f84cab884">GetUnknownFiles</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
+<tr class="memitem:a56a60e56aa9aff3df4001d2f84cab884"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#a56a60e56aa9aff3df4001d2f84cab884">GetUnknownFiles</a> (self)</td></tr>
 <tr class="separator:a56a60e56aa9aff3df4001d2f84cab884"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2923d691a1b1047e9359c5b7c1c103f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#ad2923d691a1b1047e9359c5b7c1c103f">CheckForUnknownFiles</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
+<tr class="memitem:ad2923d691a1b1047e9359c5b7c1c103f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#ad2923d691a1b1047e9359c5b7c1c103f">CheckForUnknownFiles</a> (self)</td></tr>
 <tr class="separator:ad2923d691a1b1047e9359c5b7c1c103f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfd9d4ecba422102233a2ba13e5bfaf5"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#adfd9d4ecba422102233a2ba13e5bfaf5">GetBaseFile</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>, filename)</td></tr>
+<tr class="memitem:adfd9d4ecba422102233a2ba13e5bfaf5"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#adfd9d4ecba422102233a2ba13e5bfaf5">GetBaseFile</a> (self, filename)</td></tr>
 <tr class="separator:adfd9d4ecba422102233a2ba13e5bfaf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a812c3b3daf90c88b015fa4b26252e291"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#a812c3b3daf90c88b015fa4b26252e291">GetBaseFiles</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>, diff)</td></tr>
+<tr class="memitem:a812c3b3daf90c88b015fa4b26252e291"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#a812c3b3daf90c88b015fa4b26252e291">GetBaseFiles</a> (self, diff)</td></tr>
 <tr class="separator:a812c3b3daf90c88b015fa4b26252e291"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e334f967301b9e85e5a9c39f5036823"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#a7e334f967301b9e85e5a9c39f5036823">UploadBaseFiles</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>, issue, rpc_server, patch_list, patchset, <a class="el" href="classupload_1_1_version_control_system.html#a4d57d043bc408887b94269fe4cea9556">options</a>, files)</td></tr>
+<tr class="memitem:a7e334f967301b9e85e5a9c39f5036823"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#a7e334f967301b9e85e5a9c39f5036823">UploadBaseFiles</a> (self, issue, rpc_server, patch_list, patchset, <a class="el" href="classupload_1_1_version_control_system.html#a4d57d043bc408887b94269fe4cea9556">options</a>, files)</td></tr>
 <tr class="separator:a7e334f967301b9e85e5a9c39f5036823"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a846889ecd2ef40870b456ddb5b349e02"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#a846889ecd2ef40870b456ddb5b349e02">IsImage</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>, filename)</td></tr>
+<tr class="memitem:a846889ecd2ef40870b456ddb5b349e02"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_version_control_system.html#a846889ecd2ef40870b456ddb5b349e02">IsImage</a> (self, filename)</td></tr>
 <tr class="separator:a846889ecd2ef40870b456ddb5b349e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -701,14 +716,18 @@ Returns:
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/sineideferreira/Documents/12_0127377_Lukas/lib/googletest-master/googlemock/scripts/<a class="el" href="googlemock_2scripts_2upload_8py_source.html">upload.py</a></li>
+<li>lib/googletest-master/googlemock/scripts/<a class="el" href="googlemock_2scripts_2upload_8py_source.html">upload.py</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.12
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceupload.html">upload</a></li><li class="navelem"><a class="el" href="classupload_1_1_version_control_system.html">VersionControlSystem</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
 </body>
 </html>

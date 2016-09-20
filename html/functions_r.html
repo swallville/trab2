@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +53,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_r.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -64,9 +85,6 @@ $(function() {
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a id="index_r"></a>- r -</h3><ul>
-<li>Raise
-: <a class="el" href="struct__stmt.html#a057aaedd3d710e17882b1cce2f710fb5">_stmt</a>
-</li>
 <li>Random()
 : <a class="el" href="classtesting_1_1internal_1_1_random.html#a6e112be5e7cce00551f6383025f69460">testing::internal::Random</a>
 </li>
@@ -96,17 +114,8 @@ $(function() {
 <li>ReactionToSharding
 : <a class="el" href="classtesting_1_1internal_1_1_unit_test_impl.html#acc5ffd3f9bc2e87bb3dba4218f58af43">testing::internal::UnitTestImpl</a>
 </li>
-<li>readable
-: <a class="el" href="struct_py_file_object.html#ad399dcd51687bf7ed6870078ec0dfd56">PyFileObject</a>
-</li>
 <li>ReadFile()
 : <a class="el" href="classupload_1_1_subversion_v_c_s.html#a340d269b74386ac863636f6b0683d9f4">upload.SubversionVCS</a>
-</li>
-<li>readonly
-: <a class="el" href="structbufferinfo.html#ac642ba143cd5883184a5000fde3c0273">bufferinfo</a>
-</li>
-<li>real
-: <a class="el" href="struct_py__complex.html#aac636cf827db042e0e9dd8737a669ad3">Py_complex</a>
 </li>
 <li>reason
 : <a class="el" href="classupload_1_1_client_login_error.html#ae0555feb182d89d1e4d7944afbfe14e5">upload.ClientLoginError</a>
@@ -115,9 +124,6 @@ $(function() {
 : <a class="el" href="classtesting_1_1internal_1_1_test_result_accessor.html#abcc4b32d1b201eeef92f0ec0ae161cf9">testing::internal::TestResultAccessor</a>
 , <a class="el" href="classtesting_1_1internal_1_1_unit_test_impl.html#a15e4af4df167d2504decbc8fcc108a6f">testing::internal::UnitTestImpl</a>
 , <a class="el" href="classtesting_1_1_test.html#a1559ce1c83f56993b582650c091535a7">testing::Test</a>
-</li>
-<li>recursion_depth
-: <a class="el" href="struct__ts.html#a6b8d0637b018eecff79f70a6e23292ac">_ts</a>
 </li>
 <li>reference
 : <a class="el" href="classcpp_1_1ast_1_1_type.html#a8d2cddd631397c3bf86198cc420d584d">cpp.ast.Type</a>
@@ -202,9 +208,6 @@ $(function() {
 , <a class="el" href="classtesting_1_1_scoped_fake_test_part_result_reporter.html#a82531434f51632d98ed7cdcdb10b8b92">testing::ScopedFakeTestPartResultReporter</a>
 , <a class="el" href="classtesting_1_1_test_part_result_reporter_interface.html#aa2f920e7a5a0a6d0faf19e3727928c22">testing::TestPartResultReporterInterface</a>
 </li>
-<li>Repr
-: <a class="el" href="struct__expr.html#ae55835e98c3e876e87310b255309979f">_expr</a>
-</li>
 <li>Requires()
 : <a class="el" href="classcpp_1_1ast_1_1_class.html#a347673e0a2a7b840b7d2d1cae13977f7">cpp.ast.Class</a>
 , <a class="el" href="classcpp_1_1ast_1_1_expr.html#a9c92416eb1285068f190dcda8fd33682">cpp.ast.Expr</a>
@@ -262,9 +265,6 @@ $(function() {
 <li>RetiresOnSaturation()
 : <a class="el" href="classtesting_1_1internal_1_1_typed_expectation.html#ae7c42958a5d2c336ba7a42a871bf7709">testing::internal::TypedExpectation&lt; F &gt;</a>
 </li>
-<li>Return
-: <a class="el" href="struct__stmt.html#ad4730cf31428697c112b57b769372755">_stmt</a>
-</li>
 <li>return_type
 : <a class="el" href="classcpp_1_1ast_1_1_function.html#af750fd788d7ab33163ee066534780212">cpp.ast.Function</a>
 </li>
@@ -295,9 +295,6 @@ $(function() {
 <li>RhsView
 : <a class="el" href="classtesting_1_1internal_1_1_pointwise_matcher.html#a215d397bfaf0f8bc948cb7b5ff9100c9">testing::internal::PointwiseMatcher&lt; TupleMatcher, RhsContainer &gt;</a>
 </li>
-<li>right
-: <a class="el" href="struct__expr.html#a710aaab4ce6f94cd332448a7e895111f">_expr</a>
-</li>
 <li>Run()
 : <a class="el" href="classtesting_1_1internal_1_1_transform_tuple_values_helper.html#a27773f284f43c712ec72923a872d35fc">testing::internal::TransformTupleValuesHelper&lt; Tuple, Func, OutIter &gt;</a>
 , <a class="el" href="classtesting_1_1_unit_test.html#a2febc800536b44500565f4c423f359d3">testing::UnitTest</a>
@@ -319,11 +316,14 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.12
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
 </body>
 </html>

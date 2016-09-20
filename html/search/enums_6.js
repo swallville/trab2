@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['gtestcolor',['GTestColor',['../namespacetesting_1_1internal.html#a648c1bc94c2ef9e868ff3f9dff0f9c4e',1,'testing::internal']]],
-  ['gtestlogseverity',['GTestLogSeverity',['../namespacetesting_1_1internal.html#aa6255ef3b023c5b4e1a2198d887fb977',1,'testing::internal']]]
+  ['logseverity',['LogSeverity',['../namespacetesting_1_1internal.html#a203d1a8a2147a53d12bbdae40d443914',1,'testing::internal']]]
 ];
