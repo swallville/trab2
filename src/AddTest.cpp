@@ -79,6 +79,15 @@ TEST_F(AddTest, from_roman){
    EXPECT_EQ(-1, addition.from_roman(err7));
 }
 
+/* Teste da funcao to_roman():
+ Descrição:
+    Converte um numero decimal para romano
+ Parâmetros:
+    value - inteiro a ser convertido para romano
+ Retorno:
+    string - numero decimal em sua forma romana
+ */
+
 TEST_F(AddTest, to_roman){
     int momo = 1786;
     int momo2 = 400;
@@ -91,6 +100,16 @@ TEST_F(AddTest, to_roman){
     EXPECT_EQ("MMDXLVII", addition.to_roman(momo3));
     EXPECT_NE("CCCC", addition.to_roman(400));
 }
+
+/* Teste da funcao it_contains():
+ Descrição:
+    Verifica se o numero romano e 900 ou 400 ou 90 ou 9 ou 4
+ Parâmetros:
+    input - numero romano a ser verificado
+ Retorno:
+    True se o numero romano existir, False do contrario
+ */
+
 
 TEST_F(AddTest, it_contains){
     string caseA = "CM";
