@@ -79,3 +79,16 @@ TEST_F(AddTest, from_roman){
    EXPECT_EQ(-1, addition.from_roman(err6));
    EXPECT_EQ(-1, addition.from_roman(err7));
 }
+
+TEST_F(AddTest, to_roman){
+    int momo = 1786;
+    int momo2 = 400;
+    int momo3 = 2547;
+    
+    Addition addition;
+    
+    EXPECT_EQ("MDCCLXXXVI", addition.to_roman(momo));
+    EXPECT_EQ("CD", addition.to_roman(momo2));
+    EXPECT_EQ("MMDXLVII", addition.to_roman(momo3));
+    EXPECT_NE("CCCC", addition.to_roman(400));
+}
