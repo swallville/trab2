@@ -1,4 +1,4 @@
-Informações Gerenciais
+Informações Gerais
 ==========================
 	1. Execute antes make clear para remover arquivos intermediários gerados na compilação e execução do programa;
 	2. Compile e rode o programa com make run;
