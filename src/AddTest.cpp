@@ -63,4 +63,19 @@ TEST_F(AddTest, from_roman){
    EXPECT_EQ(1999, addition.from_roman(num5));
    EXPECT_EQ(2888, addition.from_roman(num6));
    EXPECT_EQ(2999, addition.from_roman(num7));
+   EXPECT_EQ(-1, addition.from_roman(emp));
+   EXPECT_EQ(-1, addition.from_roman(wrng));
+   EXPECT_EQ(-1, addition.from_roman(wrng2));
+   EXPECT_EQ(-1, addition.from_roman(wrng3));
+   EXPECT_EQ(-1, addition.from_roman(wrng4));
+   EXPECT_EQ(-1, addition.from_roman(wrng5));
+   EXPECT_EQ(-1, addition.from_roman(wrng6));
+   EXPECT_EQ(-1, addition.from_roman(wrng7));
+   EXPECT_EQ(-1, addition.from_roman(err));
+   EXPECT_EQ(-1, addition.from_roman(err2));
+   EXPECT_EQ(-1, addition.from_roman(err3));
+   EXPECT_EQ(-1, addition.from_roman(err4));
+   EXPECT_EQ(-1, addition.from_roman(err5));
+   EXPECT_EQ(-1, addition.from_roman(err6));
+   EXPECT_EQ(-1, addition.from_roman(err7));
 }
