@@ -28,13 +28,6 @@ int Addition::value(char roman)
         case 'C':return 100;
         case 'D':return 500;
         case 'M':return 1000;
-        case 'i':return 1;
-        case 'v':return 5;
-        case 'x':return 10;
-        case 'l':return 50;
-        case 'c':return 100;
-        case 'd':return 500;
-        case 'm':return 1000;
             
         default: return 0;  /* Se o caracter nao for valido */
     }

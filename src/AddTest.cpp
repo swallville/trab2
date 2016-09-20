@@ -16,7 +16,6 @@ class AddTest : public::Test
     virtual void TearDown(){}
     
 };
-
 /* Teste da funcao from_roman():
   Descrição:
     Converte um numero romano para decimal
@@ -91,4 +90,29 @@ TEST_F(AddTest, to_roman){
     EXPECT_EQ("CD", addition.to_roman(momo2));
     EXPECT_EQ("MMDXLVII", addition.to_roman(momo3));
     EXPECT_NE("CCCC", addition.to_roman(400));
+}
+
+TEST_F(AddTest, it_contains){
+    string caseA = "CM";
+    string caseB = "CD";
+    string caseC = "XC";
+    string caseD = "XL";
+    string caseE = "IX";
+    string caseF = "IV";
+    string err1  = "MCMXDXCIX";
+    string emp   = ""; /* string vazia */
+    string num   = "MDCC"; /* 1700 */
+    
+    Addition addition;
+    
+    EXPECT_EQ(true, addition.it_contains(caseA));
+    EXPECT_EQ(true, addition.it_contains(caseB));
+    EXPECT_EQ(true, addition.it_contains(caseC));
+    EXPECT_EQ(true, addition.it_contains(caseD));
+    EXPECT_EQ(true, addition.it_contains(caseF));
+    EXPECT_EQ(true, addition.it_contains(caseE));
+    EXPECT_EQ(true, addition.it_contains(caseF));
+    EXPECT_NE(true, addition.it_contains(err1));
+    EXPECT_NE(true, addition.it_contains(emp));
+    EXPECT_NE(true, addition.it_contains(num));
 }
