@@ -1,6 +1,8 @@
-* 0741f26 - lukas, 52 seconds ago : Adicionado mudancas na documentacao Doxygen
-* 9c2c76e - lukas, 26 minutes ago : Adicionando Documentacao Doxygen
-* e50832f - lukas, 4 hours ago : Corrigido bugs no programa e adicionada mais testes para verificar erros
+* 1ce5572 - Lukas Ferreira Machado, 2 minutes ago : Update README.md
+* 25fc040 - lukas, 3 minutes ago : Modificacoes em README.txt
+* 0741f26 - lukas, 9 minutes ago : Adicionado mudancas na documentacao Doxygen
+* 9c2c76e - lukas, 34 minutes ago : Adicionando Documentacao Doxygen
+* e50832f - lukas, 5 hours ago : Corrigido bugs no programa e adicionada mais testes para verificar erros
 *   fd02b93 - lukas, 15 hours ago : Merge branch 'master' of github.com:swallville/trab2
 |\  
 | * cd8d645 - Lukas Ferreira Machado, 15 hours ago : Update README.md

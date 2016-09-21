@@ -1,0 +1,136 @@
+        -:    0:Source:AddTest.cpp
+        -:    0:Graph:AddTest.gcno
+        -:    0:Data:AddTest.gcda
+        -:    0:Runs:2
+        -:    0:Programs:1
+        -:    1:/*
+        -:    2:*  AddTest.cpp
+        -:    3:*  Lab2
+        -:    4:*
+        -:    5:*  Created by Lukas Ferreira on 14/09/16.
+        -:    6:*  Copyright © 2016 Lukas Ferreira. All rights reserved.
+        -:    7:*/
+        -:    8:
+        -:    9:#include "funcs.hpp"
+        -:   10:using namespace Add;
+        -:   11:using namespace testing;
+        -:   12:
+        8:   13:class AddTest : public::Test
+        -:   14:{
+        4:   15:    void SetUp(){}
+        4:   16:    virtual void TearDown(){}
+        -:   17:    
+        -:   18:};
+        -:   19:/* Teste da funcao from_roman():
+        -:   20:  Descrição:
+        -:   21:    Converte um numero romano para decimal
+        -:   22:  Parâmetros:
+        -:   23:    input - referencia para a string do numero romano
+        -:   24:  Retorno:
+        -:   25:    int - numero romano em sua forma decimal
+        -:   26:*/
+        -:   27:
+       28:   28:TEST_F(AddTest, from_roman){
+        2:   29:   string num   = "MDCC"; /* 1700 */
+        2:   30:   string num1  = "LXXIX"; /* 79 */
+        2:   31:   string numex  = "LXXiX"; /* 79 */
+        2:   32:   string num2  = "DCCCXCIX"; /* 899 */
+        -:   33:   //string momo = "MDXLIX";
+        2:   34:   string num3  = "MCMXLIX"; /* 1949 */
+        2:   35:   string num4  = "MCMLXXXIV"; /* 1984 */
+        2:   36:   string num5  = "MCMXCIX"; /* 1999 */
+        2:   37:   string num6  = "MMDCCCLXXXVIII"; /* 2888 */
+        2:   38:   string num7  = "MMCMXCIX"; /* 2999 */
+        2:   39:   string num8  = "mmcmxcix"; /* 2999 minusculo*/
+        2:   40:   string emp   = ""; /* string vazia */
+        -:   41:   /* Strings com numeros ou conteudo invalido */
+        2:   42:   string wrng  = "VV";
+        2:   43:   string wrng2 = "VVV";
+        2:   44:   string wrng3 = "CCCC";
+        2:   45:   string wrng4 = "DD";
+        2:   46:   string wrng5 = "iiiii";
+        2:   47:   string wrng6 = "ll";
+        2:   48:   string wrng7 = "IXL";
+        2:   49:   string wrng8 = "IIV";
+        2:   50:   string wrng9 = "XXL";
+        2:   51:   string wrng10 = "XXC";
+        2:   52:   string wrng11 = "CCD";
+        2:   53:   string wrng12 = "CCM";
+        2:   54:   string wrng13 = "ixl";
+        2:   55:   string err   = "MCMXDXCIX";
+        2:   56:   string err2  = "MCMXDXCIX";
+        2:   57:   string err3  = "21421";
+        2:   58:   string err4  = "HOMEMPASSARO";
+        2:   59:   string err5  = "MMMX"; /* 3010 */
+        2:   60:   string err6  = "MMC MXCIX"; /* 2999, mas com caracter invalido */
+        2:   61:   string err7  = "!MMCMXCIX"; /* 2999, mas com caracter invalido */
+        -:   62:
+        -:   63:   Addition addition;
+        -:   64:   /* Testes */
+       12:   65:   EXPECT_EQ(1700, addition.from_roman(num));
+       12:   66:   EXPECT_EQ(79, addition.from_roman(num1));
+       12:   67:   EXPECT_EQ(79, addition.from_roman(numex));
+       12:   68:   EXPECT_EQ(899, addition.from_roman(num2));
+       12:   69:   EXPECT_EQ(1949, addition.from_roman(num3));
+       12:   70:   EXPECT_EQ(1984, addition.from_roman(num4));
+       12:   71:   EXPECT_EQ(1999, addition.from_roman(num5));
+       12:   72:   EXPECT_EQ(2888, addition.from_roman(num6));
+       12:   73:   EXPECT_EQ(2999, addition.from_roman(num7));
+       12:   74:   EXPECT_EQ(2999, addition.from_roman(num8));
+       12:   75:   EXPECT_EQ(-1, addition.from_roman(emp));
+       12:   76:   EXPECT_EQ(-1, addition.from_roman(wrng));
+       12:   77:   EXPECT_EQ(-1, addition.from_roman(wrng2));
+       12:   78:   EXPECT_EQ(-1, addition.from_roman(wrng3));
+       12:   79:   EXPECT_EQ(-1, addition.from_roman(wrng4));
+       12:   80:   EXPECT_EQ(-1, addition.from_roman(wrng5));
+       12:   81:   EXPECT_EQ(-1, addition.from_roman(wrng6));
+       12:   82:   EXPECT_EQ(-1, addition.from_roman(wrng7));
+       12:   83:   EXPECT_EQ(-1, addition.from_roman(wrng8));
+       12:   84:   EXPECT_EQ(-1, addition.from_roman(wrng9));
+       12:   85:   EXPECT_EQ(-1, addition.from_roman(wrng10));
+       12:   86:   EXPECT_EQ(-1, addition.from_roman(wrng11));
+       12:   87:   EXPECT_EQ(-1, addition.from_roman(wrng12));
+       12:   88:   EXPECT_EQ(-1, addition.from_roman(wrng13));
+       12:   89:   EXPECT_EQ(-1, addition.from_roman(err));
+       12:   90:   EXPECT_EQ(-1, addition.from_roman(err2));
+       12:   91:   EXPECT_EQ(-1, addition.from_roman(err3));
+       12:   92:   EXPECT_EQ(-1, addition.from_roman(err4));
+       12:   93:   EXPECT_EQ(-1, addition.from_roman(err5));
+       12:   94:   EXPECT_EQ(-1, addition.from_roman(err6));
+       12:   95:   EXPECT_EQ(-1, addition.from_roman(err7));
+       62:   96:}
+        -:   97:
+        -:   98:/* Teste da funcao it_contains():
+        -:   99: Descrição:
+        -:  100:    Verifica se o numero romano e 900 ou 400 ou 90 ou 9 ou 4
+        -:  101: Parâmetros:
+        -:  102:    input - numero romano a ser verificado
+        -:  103: Retorno:
+        -:  104:    True se o numero romano existir, False do contrario
+        -:  105: */
+        -:  106:
+        -:  107:
+       28:  108:TEST_F(AddTest, it_contains){
+        2:  109:    string caseA = "CM";
+        2:  110:    string caseB = "CD";
+        2:  111:    string caseC = "XC";
+        2:  112:    string caseD = "XL";
+        2:  113:    string caseE = "IX";
+        2:  114:    string caseF = "IV";
+        2:  115:    string err1  = "MCMXDXCIX";
+        2:  116:    string emp   = ""; /* string vazia */
+        2:  117:    string num   = "MDCC"; /* 1700 */
+        -:  118:    
+        -:  119:    Addition addition;
+        -:  120:    
+       16:  121:    EXPECT_EQ(true, addition.it_contains(caseA));
+       16:  122:    EXPECT_EQ(true, addition.it_contains(caseB));
+       16:  123:    EXPECT_EQ(true, addition.it_contains(caseC));
+       16:  124:    EXPECT_EQ(true, addition.it_contains(caseD));
+       16:  125:    EXPECT_EQ(true, addition.it_contains(caseF));
+       16:  126:    EXPECT_EQ(true, addition.it_contains(caseE));
+       16:  127:    EXPECT_EQ(true, addition.it_contains(caseF));
+       16:  128:    EXPECT_NE(true, addition.it_contains(err1));
+       16:  129:    EXPECT_NE(true, addition.it_contains(emp));
+       16:  130:    EXPECT_NE(true, addition.it_contains(num));
+       18:  131:}

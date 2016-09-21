@@ -1,3 +1,15 @@
+commit 1ce55729a508d39f90bb2a4801abdb0fb413e20b
+Author: Lukas Ferreira Machado <unlisislukasferreira@hotmail.com>
+Date:   Tue Sep 20 16:44:34 2016 -0300
+
+    Update README.md
+
+commit 25fc04050214a6b23fff90d67df335623e10d69a
+Author: lukas <unlisislukasferreira@hotmail.com>
+Date:   Tue Sep 20 16:43:34 2016 -0300
+
+    Modificacoes em README.txt
+
 commit 0741f2622f2be5f735c5cd752755c8eda9f0c2c2
 Author: lukas <unlisislukasferreira@hotmail.com>
 Date:   Tue Sep 20 16:37:11 2016 -0300
