@@ -174,3 +174,43 @@ bool Addition::it_contains (string input)
 
     return false;
 }
+
+/* Descrição:
+ Converte um numero decimal para romano
+ Parâmetros:
+ value - inteiro a ser convertido para romano
+ Retorno:
+ string - numero decimal em sua forma romana 
+ */
+
+string Addition::to_roman(int value)
+{
+    struct romandata_t { int value; char const* numeral; };
+    /* Look-up table para os numeros validos */
+    static romandata_t const romandata[] = {
+        {1000, "M"},
+        {900, "CM"},
+        {500, "D"},
+        {400, "CD"},
+        {100, "C"},
+        {90, "XC"},
+        {50, "L"},
+        {40, "XL"},
+        {10, "X"},
+        {9, "IX"},
+        {5, "V"},
+        {4, "IV"},
+        {1, "I"},
+        {0, NULL} };
+    string result;
+    
+    for (romandata_t const* current = romandata; current->value > 0; ++current)
+    {
+        while (value >= current->value)
+        {
+            result += current->numeral;
+            value  -= current->value;
+        }
+    }
+    return result;
+}

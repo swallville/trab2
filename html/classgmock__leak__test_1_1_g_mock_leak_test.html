@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classgmock__leak__test_1_1_g_mock_leak_test.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('classgmock__leak__test_1_1_g_mock_leak
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacegmock__leak__test.html">gmock_leak_test</a></li><li class="navelem"><a class="el" href="classgmock__leak__test_1_1_g_mock_leak_test.html">GMockLeakTest</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -100,21 +83,18 @@ Inheritance diagram for gmock_leak_test.GMockLeakTest:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad87d271de7b3f106e51272d6e9139c76"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgmock__leak__test_1_1_g_mock_leak_test.html#ad87d271de7b3f106e51272d6e9139c76">testCatchesLeakedMockByDefault</a> (self)</td></tr>
+<tr class="memitem:ad87d271de7b3f106e51272d6e9139c76"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgmock__leak__test_1_1_g_mock_leak_test.html#ad87d271de7b3f106e51272d6e9139c76">testCatchesLeakedMockByDefault</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
 <tr class="separator:ad87d271de7b3f106e51272d6e9139c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3107bf5a603558ab2d97d88fb5589951"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgmock__leak__test_1_1_g_mock_leak_test.html#a3107bf5a603558ab2d97d88fb5589951">testDoesNotCatchLeakedMockWhenDisabled</a> (self)</td></tr>
+<tr class="memitem:a3107bf5a603558ab2d97d88fb5589951"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgmock__leak__test_1_1_g_mock_leak_test.html#a3107bf5a603558ab2d97d88fb5589951">testDoesNotCatchLeakedMockWhenDisabled</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
 <tr class="separator:a3107bf5a603558ab2d97d88fb5589951"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78f4040a392d183597f71d92da8c1246"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgmock__leak__test_1_1_g_mock_leak_test.html#a78f4040a392d183597f71d92da8c1246">testCatchesLeakedMockWhenEnabled</a> (self)</td></tr>
+<tr class="memitem:a78f4040a392d183597f71d92da8c1246"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgmock__leak__test_1_1_g_mock_leak_test.html#a78f4040a392d183597f71d92da8c1246">testCatchesLeakedMockWhenEnabled</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
 <tr class="separator:a78f4040a392d183597f71d92da8c1246"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab19cf302ea06e1b186bd6ab951d9161e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgmock__leak__test_1_1_g_mock_leak_test.html#ab19cf302ea06e1b186bd6ab951d9161e">testCatchesLeakedMockWhenEnabledWithExplictFlagValue</a> (self)</td></tr>
+<tr class="memitem:ab19cf302ea06e1b186bd6ab951d9161e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgmock__leak__test_1_1_g_mock_leak_test.html#ab19cf302ea06e1b186bd6ab951d9161e">testCatchesLeakedMockWhenEnabledWithExplictFlagValue</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
 <tr class="separator:ab19cf302ea06e1b186bd6ab951d9161e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09465b2bfde98834e4bb9563c035f034"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgmock__leak__test_1_1_g_mock_leak_test.html#a09465b2bfde98834e4bb9563c035f034">testCatchesMultipleLeakedMocks</a> (self)</td></tr>
+<tr class="memitem:a09465b2bfde98834e4bb9563c035f034"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgmock__leak__test_1_1_g_mock_leak_test.html#a09465b2bfde98834e4bb9563c035f034">testCatchesMultipleLeakedMocks</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
 <tr class="separator:a09465b2bfde98834e4bb9563c035f034"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="gmock__leak__test_8py_source.html#l00056">56</a> of file <a class="el" href="gmock__leak__test_8py_source.html">gmock_leak_test.py</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad87d271de7b3f106e51272d6e9139c76"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad87d271de7b3f106e51272d6e9139c76">&sect;&nbsp;</a></span>testCatchesLeakedMockByDefault()</h2>
 
@@ -130,8 +110,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock__leak__test_8py_source.html#l00058">58</a> of file <a class="el" href="gmock__leak__test_8py_source.html">gmock_leak_test.py</a>.</p>
 
 </div>
 </div>
@@ -151,8 +129,6 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock__leak__test_8py_source.html#l00080">80</a> of file <a class="el" href="gmock__leak__test_8py_source.html">gmock_leak_test.py</a>.</p>
-
 </div>
 </div>
 <a id="ab19cf302ea06e1b186bd6ab951d9161e"></a>
@@ -170,8 +146,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock__leak__test_8py_source.html#l00092">92</a> of file <a class="el" href="gmock__leak__test_8py_source.html">gmock_leak_test.py</a>.</p>
 
 </div>
 </div>
@@ -191,8 +165,6 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock__leak__test_8py_source.html#l00099">99</a> of file <a class="el" href="gmock__leak__test_8py_source.html">gmock_leak_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a3107bf5a603558ab2d97d88fb5589951"></a>
@@ -211,23 +183,17 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock__leak__test_8py_source.html#l00068">68</a> of file <a class="el" href="gmock__leak__test_8py_source.html">gmock_leak_test.py</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>lib/googletest-master/googlemock/test/<a class="el" href="gmock__leak__test_8py_source.html">gmock_leak_test.py</a></li>
+<li>lib/googletest-master/googlemock/test/<a class="el" href="gmock__leak__test_8py.html">gmock_leak_test.py</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacegmock__leak__test.html">gmock_leak_test</a></li><li class="navelem"><a class="el" href="classgmock__leak__test_1_1_g_mock_leak_test.html">GMockLeakTest</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

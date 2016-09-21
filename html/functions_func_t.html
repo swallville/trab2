@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -53,20 +46,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('functions_func_t.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +64,20 @@ $(document).ready(function(){initNavTree('functions_func_t.html','');});
 &#160;
 
 <h3><a id="index_t"></a>- t -</h3><ul>
+<li>tagged_version()
+: <a class="el" href="classsetuptools_1_1command_1_1egg__info_1_1egg__info.html#adce4960bb768bd4cdd1e34b5c4a26854">setuptools.command.egg_info.egg_info</a>
+</li>
+<li>tagNameState()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1tokenizer_1_1_h_t_m_l_tokenizer.html#a5407843def7549224512c605e2203c8e">pip._vendor.html5lib.tokenizer.HTMLTokenizer</a>
+</li>
+<li>tagOpenState()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1tokenizer_1_1_h_t_m_l_tokenizer.html#acbcedb18fe124fd55dddaebdc2ed0398">pip._vendor.html5lib.tokenizer.HTMLTokenizer</a>
+</li>
+<li>tags()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1wheel_1_1_wheel.html#a02d69461124ef17ab7d4fc8e26d46ee5">pip._vendor.distlib.wheel.Wheel</a>
+, <a class="el" href="classsetuptools_1_1command_1_1egg__info_1_1egg__info.html#a2d0d71f1feed8e38db6925e4d3287793">setuptools.command.egg_info.egg_info</a>
+, <a class="el" href="classwheel_1_1install_1_1_wheel_file.html#a40ecd6ad8bf646b53e2293342c64720f">wheel.install.WheelFile</a>
+</li>
 <li>TakesConst()
 : <a class="el" href="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface.html#a8c53e87edf0b9da878e5259f02b7f5dc">testing::gmock_generated_function_mockers_test::FooInterface</a>
 </li>
@@ -93,6 +86,18 @@ $(document).ready(function(){initNavTree('functions_func_t.html','');});
 </li>
 <li>TakesNonConstReference()
 : <a class="el" href="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface.html#a694354adfffcee58093298bc12182ff5">testing::gmock_generated_function_mockers_test::FooInterface</a>
+</li>
+<li>target_cpu()
+: <a class="el" href="classsetuptools_1_1msvc_1_1_platform_info.html#a2c7d1dc5add6f0b2494e161f364c4644">setuptools.msvc.PlatformInfo</a>
+</li>
+<li>target_dir()
+: <a class="el" href="classsetuptools_1_1msvc_1_1_platform_info.html#a8ff098933fbab72ab767191b392e486b">setuptools.msvc.PlatformInfo</a>
+</li>
+<li>target_is_x86()
+: <a class="el" href="classsetuptools_1_1msvc_1_1_platform_info.html#a33202c8f736ad183994d06b48b7afd6f">setuptools.msvc.PlatformInfo</a>
+</li>
+<li>taropen()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1__backport_1_1tarfile_1_1_tar_file.html#a371e1e882262ee77cbbc6f9d80c863f6">pip._vendor.distlib._backport.tarfile.TarFile</a>
 </li>
 <li>TearDown()
 : <a class="el" href="class_bar_environment.html#a384f951da72a2a18bb0c2b3506376b09">BarEnvironment</a>
@@ -122,6 +127,9 @@ $(document).ready(function(){initNavTree('functions_func_t.html','');});
 , <a class="el" href="classtesting_1_1internal_1_1_listener_test.html#ad112535025d668e3ea14e71d8741c810">testing::internal::ListenerTest</a>
 , <a class="el" href="classtesting_1_1_test.html#a5f0ab439802cbe0ef7552f1a9f791923">testing::Test</a>
 </li>
+<li>tearDown()
+: <a class="el" href="classwheel_1_1test_1_1test__keys_1_1_test_wheel_keys.html#a6429172a9dd08a35f66ca5560192b577">wheel.test.test_keys.TestWheelKeys</a>
+</li>
 <li>TearDownTestCase()
 : <a class="el" href="class_common_test.html#a68d2bf5108cf28478331588fbdff4838">CommonTest&lt; T &gt;</a>
 , <a class="el" href="class_property_recording_test.html#ac0d2d47efbdc4399777dffca6071d15d">PropertyRecordingTest</a>
@@ -130,14 +138,29 @@ $(document).ready(function(){initNavTree('functions_func_t.html','');});
 , <a class="el" href="classtesting_1_1_set_up_test_case_test.html#abdc133cd161ff2fa317f489da9bdccf3">testing::SetUpTestCaseTest</a>
 , <a class="el" href="classtesting_1_1_test.html#af374706cbaf0ffc460f4fd04e7c150f1">testing::Test</a>
 </li>
+<li>tell()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1__backport_1_1tarfile_1_1___b_z2_proxy.html#ac4937671960a4f60961a9cd81fa21910">pip._vendor.distlib._backport.tarfile._BZ2Proxy</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1__backport_1_1tarfile_1_1___file_in_file.html#aeddacf4c7a064aac77aac0a864e0211d">pip._vendor.distlib._backport.tarfile._FileInFile</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1__backport_1_1tarfile_1_1___stream.html#a7ac63395858d58d97a4ea8bc0ee0e77c">pip._vendor.distlib._backport.tarfile._Stream</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1__backport_1_1tarfile_1_1_ex_file_object.html#a63fe1519f28ce433a33eed6cf9bc2e59">pip._vendor.distlib._backport.tarfile.ExFileObject</a>
+, <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1inputstream_1_1_buffered_stream.html#ad70aeefed29a580c1f7f3f9762e59575">pip._vendor.html5lib.inputstream.BufferedStream</a>
+, <a class="el" href="classpip_1_1__vendor_1_1requests_1_1packages_1_1urllib3_1_1response_1_1_h_t_t_p_response.html#a950f9f48f3f59d83116fa44f0f7eba24">pip._vendor.requests.packages.urllib3.response.HTTPResponse</a>
+, <a class="el" href="classsre__parse_1_1_tokenizer.html#a9df7c4e8f66249013820a446c5b0714d">sre_parse.Tokenizer</a>
+</li>
 <li>TenArgConstructorClass()
 : <a class="el" href="classtesting_1_1gmock__generated__actions__test_1_1_ten_arg_constructor_class.html#ac17a2190151616f986a193dfe0a03cb5">testing::gmock_generated_actions_test::TenArgConstructorClass</a>
+</li>
+<li>teredo()
+: <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1_i_pv6_address.html#a491c94c2b594a98cd28034d61de0a61f">pip._vendor.ipaddress.IPv6Address</a>
 </li>
 <li>Ternary()
 : <a class="el" href="classtesting_1_1gmock__more__actions__test_1_1_foo.html#afc5b86988210ad598fa3a2a9822297e4">testing::gmock_more_actions_test::Foo</a>
 </li>
 <li>Test()
 : <a class="el" href="classtesting_1_1_test.html#a99f2bbfac6c95612322b0f10e607ebe5">testing::Test</a>
+</li>
+<li>test_args()
+: <a class="el" href="classsetuptools_1_1command_1_1test_1_1test.html#a564891bf89c556a90daa47a113393637">setuptools.command.test.test</a>
 </li>
 <li>test_case_name()
 : <a class="el" href="classtesting_1_1_test_info.html#a036a20710c8c2252889544daba9a8ff9">testing::TestInfo</a>
@@ -146,11 +169,23 @@ $(document).ready(function(){initNavTree('functions_func_t.html','');});
 : <a class="el" href="classtesting_1_1internal_1_1_unit_test_impl.html#aff65061646c6b9857b37097423500bfe">testing::internal::UnitTestImpl</a>
 , <a class="el" href="classtesting_1_1_unit_test.html#a965248fbe72f9fede5de921b6666943b">testing::UnitTest</a>
 </li>
+<li>test_comparison()
+: <a class="el" href="classwheel_1_1test_1_1test__ranking_1_1_test_ranking.html#abbc1459bfa325d927bfc4164f32e8049">wheel.test.test_ranking.TestRanking</a>
+</li>
+<li>test_load_save()
+: <a class="el" href="classwheel_1_1test_1_1test__keys_1_1_test_wheel_keys.html#ad00bfefe373e008c5aabc40e321aa7e6">wheel.test.test_keys.TestWheelKeys</a>
+</li>
+<li>test_load_save_incomplete()
+: <a class="el" href="classwheel_1_1test_1_1test__keys_1_1_test_wheel_keys.html#a02e30beda6ddcf4e994bb277e2288d88">wheel.test.test_keys.TestWheelKeys</a>
+</li>
 <li>test_part_results()
 : <a class="el" href="classtesting_1_1internal_1_1_test_result_accessor.html#a55d771904317c1b0cc380104d175f1db">testing::internal::TestResultAccessor</a>
 </li>
 <li>test_property_count()
 : <a class="el" href="classtesting_1_1_test_result.html#afe4523257bbea8bc63b0950b702790be">testing::TestResult</a>
+</li>
+<li>test_requires()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1database_1_1_distribution.html#a6b2bf786c4358b542a9a960d3699e187">pip._vendor.distlib.database.Distribution</a>
 </li>
 <li>test_to_run_count()
 : <a class="el" href="classtesting_1_1internal_1_1_unit_test_impl.html#a0f15365d1d1ce00eaeb6f8a1370113ec">testing::internal::UnitTestImpl</a>
@@ -421,6 +456,10 @@ $(document).ready(function(){initNavTree('functions_func_t.html','');});
 <li>TestSehExceptions()
 : <a class="el" href="classgtest__catch__exceptions__test_1_1_catch_seh_exceptions_test.html#a737bbcc64405854aa8e0aea87ca5850b">gtest_catch_exceptions_test.CatchSehExceptionsTest</a>
 </li>
+<li>testSerializer()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1treebuilders_1_1__base_1_1_tree_builder.html#a32089eb80860c2780c41a8c81c7bb688">pip._vendor.html5lib.treebuilders._base.TreeBuilder</a>
+, <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1treebuilders_1_1etree__lxml_1_1_tree_builder.html#a1c783de40366d121ca089093866b764b">pip._vendor.html5lib.treebuilders.etree_lxml.TreeBuilder</a>
+</li>
 <li>testShardingWorksWithDeathTests()
 : <a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a4b4f7428d9219dff5960968477927626">gtest_filter_unittest.GTestFilterUnitTest</a>
 </li>
@@ -541,6 +580,10 @@ $(document).ready(function(){initNavTree('functions_func_t.html','');});
 <li>testXmlOutputFileOverride()
 : <a class="el" href="classgtest__env__var__test_1_1_g_test_env_var_test.html#ae41b9b9569eb327d5886cb811c2995a7">gtest_env_var_test.GTestEnvVarTest</a>
 </li>
+<li>text()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1treewalkers_1_1__base_1_1_tree_walker.html#a02469dbc7730557f89970d580bdeedab">pip._vendor.html5lib.treewalkers._base.TreeWalker</a>
+, <a class="el" href="classpip_1_1__vendor_1_1requests_1_1models_1_1_response.html#a62a305a37be74c9dfaae9452fe2e2291">pip._vendor.requests.models.Response</a>
+</li>
 <li>ThreadLocal()
 : <a class="el" href="classtesting_1_1internal_1_1_thread_local.html#a85610bdfdbc93a4c56215e0aad7da870">testing::internal::ThreadLocal&lt; T &gt;</a>
 </li>
@@ -550,14 +593,34 @@ $(document).ready(function(){initNavTree('functions_func_t.html','');});
 <li>Times()
 : <a class="el" href="classtesting_1_1internal_1_1_typed_expectation.html#a92d56ee785d38ec8193aed2a0fcbccf0">testing::internal::TypedExpectation&lt; F &gt;</a>
 </li>
+<li>tmpnam()
+: <a class="el" href="classsetuptools_1_1sandbox_1_1_directory_sandbox.html#a18c44e615e844e4b235eb65cdbc0faea">setuptools.sandbox.DirectorySandbox</a>
+</li>
 <li>To()
 : <a class="el" href="classtesting_1_1internal_1_1_to.html#a447354e55d855ed0f1a1de8b2b54d345">testing::internal::To</a>
+</li>
+<li>to_dot()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1database_1_1_dependency_graph.html#a781f2bf3dce5bbc552bdb7f5fd6b5e9b">pip._vendor.distlib.database.DependencyGraph</a>
 </li>
 <li>to_roman()
 : <a class="el" href="class_add_1_1_addition.html#a373126f61b305328a95ae529a3149017">Add::Addition</a>
 </li>
+<li>tobuf()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1__backport_1_1tarfile_1_1_tar_info.html#a08bb83dcbd0061866526b4a8023b08fc">pip._vendor.distlib._backport.tarfile.TarInfo</a>
+</li>
+<li>todict()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1metadata_1_1_legacy_metadata.html#a536602a48821bb0182c5425f86f1116d">pip._vendor.distlib.metadata.LegacyMetadata</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1metadata_1_1_metadata.html#a4885b3e47d3f6ba4dfd5ea7d3af29244">pip._vendor.distlib.metadata.Metadata</a>
+</li>
+<li>tokens()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1treewalkers_1_1genshistream_1_1_tree_walker.html#af184967136eebe955f0dc3ae08f83438">pip._vendor.html5lib.treewalkers.genshistream.TreeWalker</a>
+, <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1treewalkers_1_1pulldom_1_1_tree_walker.html#aa43d616706e81e86b31c40fc07816977">pip._vendor.html5lib.treewalkers.pulldom.TreeWalker</a>
+</li>
 <li>ToParameters()
 : <a class="el" href="classcpp_1_1ast_1_1_type_converter.html#aeaf27fb1890f65d7216703df610b46d5">cpp.ast.TypeConverter</a>
+</li>
+<li>topological_sort()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1database_1_1_dependency_graph.html#af79cfdb1bc73ef831fb4e05affd7af7b">pip._vendor.distlib.database.DependencyGraph</a>
 </li>
 <li>ToString()
 : <a class="el" href="classcpp_1_1ast_1_1_variable_declaration.html#a047aa4afddf7b7823a4095cea9477a21">cpp.ast.VariableDeclaration</a>
@@ -577,11 +640,34 @@ $(document).ready(function(){initNavTree('functions_func_t.html','');});
 <li>ToType()
 : <a class="el" href="classcpp_1_1ast_1_1_type_converter.html#aa6ea82e40cd30e5dfcd471ff144a19cf">cpp.ast.TypeConverter</a>
 </li>
+<li>toXmlName()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1ihatexml_1_1_infoset_filter.html#a8a3a458ccd90ee544d085e1426017d74">pip._vendor.html5lib.ihatexml.InfosetFilter</a>
+</li>
+<li>transformString()
+: <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_parser_element.html#af2799a3c5f3d6c1375c9ebbe19df9b26">pip._vendor.pyparsing.ParserElement</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1pyparsing_1_1_parser_element.html#af9259df34d2c525d5dc935fe4082d40c">pkg_resources._vendor.pyparsing.ParserElement</a>
+</li>
+<li>translate_egg_surname()
+: <a class="el" href="classpip_1_1vcs_1_1_version_control.html#af73480f0d550add342360ffc32aea21e">pip.vcs.VersionControl</a>
+</li>
 <li>TrulyMatcher()
 : <a class="el" href="classtesting_1_1internal_1_1_truly_matcher.html#a9fdc4ddba121e0dad4773b5685e0f28d">testing::internal::TrulyMatcher&lt; Predicate &gt;</a>
 </li>
+<li>trust()
+: <a class="el" href="classwheel_1_1signatures_1_1keys_1_1_wheel_keys.html#a81d8d2b7fb014a0648f5f3cdd96e2cbf">wheel.signatures.keys.WheelKeys</a>
+</li>
+<li>trusted()
+: <a class="el" href="classwheel_1_1signatures_1_1keys_1_1_wheel_keys.html#a80a589d45d75f9cfaaf4afa661f6dc8b">wheel.signatures.keys.WheelKeys</a>
+</li>
+<li>try_to_replace()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1locators_1_1_dependency_finder.html#ae5188bef19f3bfb756cb122d2ffbd6a7">pip._vendor.distlib.locators.DependencyFinder</a>
+</li>
+<li>tryParse()
+: <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_parser_element.html#a5ae937dc1d5970a3838ac12b7c64cfac">pip._vendor.pyparsing.ParserElement</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1pyparsing_1_1_parser_element.html#af8000cbf8e6f7daf91b5572a1d6c1266">pkg_resources._vendor.pyparsing.ParserElement</a>
+</li>
 <li>tuple()
-: <a class="el" href="classstd_1_1tr1_1_1tuple.html#ade1807f6e6b36daa6387c3b00dbd3be6">std::tr1::tuple&lt;&gt;</a>
+: <a class="el" href="classstd_1_1tr1_1_1tuple.html#adcea1a41d0521157971339d279aad469">std::tr1::tuple&lt;&gt;</a>
 </li>
 <li>type()
 : <a class="el" href="classtesting_1_1_test_part_result.html#aab92b225e8a472e78bd3889ca6df0d2a">testing::TestPartResult</a>
@@ -601,14 +687,11 @@ $(document).ready(function(){initNavTree('functions_func_t.html','');});
 </li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

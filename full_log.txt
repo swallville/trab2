@@ -1,3 +1,9 @@
+commit 7d5eb0a002cd89bf8d00d3e474bb41d3c1546092
+Author: lukas <unlisislukasferreira@hotmail.com>
+Date:   Wed Sep 21 13:07:19 2016 -0300
+
+    Retirando funcao redudante em funcs.cpp
+
 commit 1ce55729a508d39f90bb2a4801abdb0fb413e20b
 Author: Lukas Ferreira Machado <unlisislukasferreira@hotmail.com>
 Date:   Tue Sep 20 16:44:34 2016 -0300

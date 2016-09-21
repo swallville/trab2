@@ -1,7 +1,7 @@
         -:    0:Source:main.cpp
         -:    0:Graph:main.gcno
         -:    0:Data:main.gcda
-        -:    0:Runs:2
+        -:    0:Runs:1
         -:    0:Programs:1
         -:    1:/*
         -:    2:*  main.cpp
@@ -16,6 +16,6 @@
         -:   11:
         -:   12:int main(int argc, char **argv)
         -:   13:{
-        2:   14:    InitGoogleTest(&argc, argv);
-        2:   15:    return RUN_ALL_TESTS();
+        1:   14:    InitGoogleTest(&argc, argv);
+        1:   15:    return RUN_ALL_TESTS();
         -:   16:}

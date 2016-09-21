@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classtesting_1_1_test_property.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('classtesting_1_1_test_property.html','
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="classtesting_1_1_test_property.html">TestProperty</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -94,19 +77,16 @@ $(document).ready(function(){initNavTree('classtesting_1_1_test_property.html','
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a25a0ccf1c75a92af46a48d3c2a873e6d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_test_property.html#a25a0ccf1c75a92af46a48d3c2a873e6d">TestProperty</a> (const std::string &amp;a_key, const std::string &amp;a_value)</td></tr>
+<tr class="memitem:a25a0ccf1c75a92af46a48d3c2a873e6d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_test_property.html#a25a0ccf1c75a92af46a48d3c2a873e6d">TestProperty</a> (const <a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">std::string</a> &amp;a_key, const <a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">std::string</a> &amp;a_value)</td></tr>
 <tr class="separator:a25a0ccf1c75a92af46a48d3c2a873e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad60435d4ad04ac030487d8998fc61c5f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_test_property.html#ad60435d4ad04ac030487d8998fc61c5f">key</a> () const</td></tr>
 <tr class="separator:ad60435d4ad04ac030487d8998fc61c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad423a07af33c88b0c9ed33ee74815a63"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_test_property.html#ad423a07af33c88b0c9ed33ee74815a63">value</a> () const</td></tr>
 <tr class="separator:ad423a07af33c88b0c9ed33ee74815a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a377245335d9f614cd06d1650e3358e1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_test_property.html#a377245335d9f614cd06d1650e3358e1d">SetValue</a> (const std::string &amp;new_value)</td></tr>
+<tr class="memitem:a377245335d9f614cd06d1650e3358e1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_test_property.html#a377245335d9f614cd06d1650e3358e1d">SetValue</a> (const <a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">std::string</a> &amp;new_value)</td></tr>
 <tr class="separator:a377245335d9f614cd06d1650e3358e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="gtest_8h_source.html#l00486">486</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a25a0ccf1c75a92af46a48d3c2a873e6d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a25a0ccf1c75a92af46a48d3c2a873e6d">&sect;&nbsp;</a></span>TestProperty()</h2>
 
@@ -119,13 +99,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">testing::TestProperty::TestProperty </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">std::string</a> &amp;&#160;</td>
           <td class="paramname"><em>a_key</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">std::string</a> &amp;&#160;</td>
           <td class="paramname"><em>a_value</em>&#160;</td>
         </tr>
         <tr>
@@ -140,8 +120,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest_8h_source.html#l00491">491</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
 
 </div>
 </div>
@@ -169,8 +147,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest_8h_source.html#l00496">496</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
-
 </div>
 </div>
 <a id="a377245335d9f614cd06d1650e3358e1d"></a>
@@ -185,7 +161,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void testing::TestProperty::SetValue </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">std::string</a> &amp;&#160;</td>
           <td class="paramname"><em>new_value</em></td><td>)</td>
           <td></td>
         </tr>
@@ -196,8 +172,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest_8h_source.html#l00506">506</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
 
 </div>
 </div>
@@ -224,23 +198,17 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest_8h_source.html#l00501">501</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>lib/googletest-master/googletest/include/gtest/<a class="el" href="gtest_8h_source.html">gtest.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="classtesting_1_1_test_property.html">TestProperty</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

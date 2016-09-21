@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -53,20 +46,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('functions_func_a.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -88,6 +67,14 @@ $(document).ready(function(){initNavTree('functions_func_a.html','');});
 <li>AClass()
 : <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_a_class.html#ac43d717a80bb6fad8c77dc36f963ca88">testing::gmock_matchers_test::AClass</a>
 </li>
+<li>acquire()
+: <a class="el" href="classpip_1_1__vendor_1_1lockfile_1_1___shared_base.html#af7fc738e2a6b7b378be696d73715b8fb">pip._vendor.lockfile._SharedBase</a>
+, <a class="el" href="classpip_1_1__vendor_1_1lockfile_1_1linklockfile_1_1_link_lock_file.html#a67aa12d6e500eeb7991478350191c1cf">pip._vendor.lockfile.linklockfile.LinkLockFile</a>
+, <a class="el" href="classpip_1_1__vendor_1_1lockfile_1_1mkdirlockfile_1_1_mkdir_lock_file.html#a684dab31ff0e18c3b742bbea315be911">pip._vendor.lockfile.mkdirlockfile.MkdirLockFile</a>
+, <a class="el" href="classpip_1_1__vendor_1_1lockfile_1_1pidlockfile_1_1_p_i_d_lock_file.html#adaf0f8944e9525e5ecf0f8b9fef9f163">pip._vendor.lockfile.pidlockfile.PIDLockFile</a>
+, <a class="el" href="classpip_1_1__vendor_1_1lockfile_1_1sqlitelockfile_1_1_s_q_lite_lock_file.html#a3243f66fa3e4c223f674bbd4ab4b516b">pip._vendor.lockfile.sqlitelockfile.SQLiteLockFile</a>
+, <a class="el" href="classpip_1_1__vendor_1_1lockfile_1_1symlinklockfile_1_1_symlink_lock_file.html#ab9b9172579bb16300c07a719aad0ca08">pip._vendor.lockfile.symlinklockfile.SymlinkLockFile</a>
+</li>
 <li>Action()
 : <a class="el" href="classtesting_1_1_action.html#a967772922a39dd7098bee429d749f277">testing::Action&lt; F &gt;</a>
 </li>
@@ -97,10 +84,95 @@ $(document).ready(function(){initNavTree('functions_func_a.html','');});
 <li>ActionInterface()
 : <a class="el" href="classtesting_1_1_action_interface.html#a0f1d44e4c669a9cae5ee5b28419a6f52">testing::ActionInterface&lt; F &gt;</a>
 </li>
+<li>activate()
+: <a class="el" href="classpip_1_1__vendor_1_1pkg__resources_1_1_distribution.html#a24d42f32c239a4223fe01036ac381efc">pip._vendor.pkg_resources.Distribution</a>
+, <a class="el" href="classpkg__resources_1_1_distribution.html#a4c4474f066527ee18c2dc15af67911df">pkg_resources.Distribution</a>
+</li>
 <li>ad_hoc_test_result()
 : <a class="el" href="classtesting_1_1internal_1_1_unit_test_impl.html#a8be26dc90e0fac8f8be3552ffd98c69c">testing::internal::UnitTestImpl</a>
 , <a class="el" href="classtesting_1_1_test_case.html#a6d5fc5003bc3352f3ddae7dadc6d2364">testing::TestCase</a>
 , <a class="el" href="classtesting_1_1_unit_test.html#aa59dde4c3dc43a920ed142a27670686c">testing::UnitTest</a>
+</li>
+<li>add()
+: <a class="el" href="class__abcoll_1_1_mutable_set.html#a91a203afcf1a55b96e7b7da24f567a97">_abcoll.MutableSet</a>
+, <a class="el" href="class__weakrefset_1_1_weak_set.html#ae1e11052984296f5baa270625ec19ff8">_weakrefset.WeakSet</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1__backport_1_1tarfile_1_1_tar_file.html#a79067a66314d66032cb43144c54355a2">pip._vendor.distlib._backport.tarfile.TarFile</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1database_1_1___cache.html#a98296c2e1af8395fc035df3fdfc400fc">pip._vendor.distlib.database._Cache</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1manifest_1_1_manifest.html#adb54bd095e16a9e59e0e674bd4808dad">pip._vendor.distlib.manifest.Manifest</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1util_1_1_event_mixin.html#a59395574411aaf4383687b2d5b0b9acd">pip._vendor.distlib.util.EventMixin</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1util_1_1_sequencer.html#a233a50f436076c741b223f7fe801f53e">pip._vendor.distlib.util.Sequencer</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1wheel_1_1_mounter.html#ac9bb94a1cb0d08a857ec40c605a94b63">pip._vendor.distlib.wheel.Mounter</a>
+, <a class="el" href="classpip_1_1__vendor_1_1pkg__resources_1_1_environment.html#a81284f46d9fa7b21a5f9a4e710fe80cf">pip._vendor.pkg_resources.Environment</a>
+, <a class="el" href="classpip_1_1__vendor_1_1pkg__resources_1_1_working_set.html#a721315d2a4a0a3ead71bf8d1b83261ce">pip._vendor.pkg_resources.WorkingSet</a>
+, <a class="el" href="classpip_1_1__vendor_1_1requests_1_1packages_1_1urllib3_1_1__collections_1_1_h_t_t_p_header_dict.html#a5158d0bd9e6fe84377060d8914a32b2b">pip._vendor.requests.packages.urllib3._collections.HTTPHeaderDict</a>
+, <a class="el" href="classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set.html#a5dc9701f07416fc0a0339298644ab9b9">pip.req.req_uninstall.UninstallPathSet</a>
+, <a class="el" href="classpip_1_1req_1_1req__uninstall_1_1_uninstall_pth_entries.html#a7cece5c1b5717f6d49c313f35dbfda59">pip.req.req_uninstall.UninstallPthEntries</a>
+, <a class="el" href="classpkg__resources_1_1_environment.html#a0ba8999abdb4cbc7a1965766560197fc">pkg_resources.Environment</a>
+, <a class="el" href="classpkg__resources_1_1_working_set.html#ab12bd19b39a01d6013544ab543401a16">pkg_resources.WorkingSet</a>
+, <a class="el" href="classsetuptools_1_1command_1_1easy__install_1_1_pth_distributions.html#a9225a5df3c1a4af13a45aa4d92e83cbf">setuptools.command.easy_install.PthDistributions</a>
+</li>
+<li>add_defaults()
+: <a class="el" href="classsetuptools_1_1command_1_1egg__info_1_1manifest__maker.html#a5bb8f3befc6b69fe079f67aa239e7ef5">setuptools.command.egg_info.manifest_maker</a>
+, <a class="el" href="classsetuptools_1_1command_1_1sdist_1_1sdist.html#a0f4497f3677a83ed6372089917fb062f">setuptools.command.sdist.sdist</a>
+</li>
+<li>add_distribution()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1database_1_1_dependency_graph.html#a7f6602ca9050ec3c01cdf446f7b30665">pip._vendor.distlib.database.DependencyGraph</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1locators_1_1_dependency_finder.html#a256ba1ddbc7415fedc398a1c9acc90ae">pip._vendor.distlib.locators.DependencyFinder</a>
+</li>
+<li>add_edge()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1database_1_1_dependency_graph.html#aad458a901fef164e4b4d26d162ef4ab7">pip._vendor.distlib.database.DependencyGraph</a>
+</li>
+<li>add_entry()
+: <a class="el" href="classpip_1_1__vendor_1_1pkg__resources_1_1_working_set.html#a10dbfcb72bfdc7c7b16d764c7002a87d">pip._vendor.pkg_resources.WorkingSet</a>
+, <a class="el" href="classpkg__resources_1_1_working_set.html#aed20abcb6a85cdc25dff1686ad480958">pkg_resources.WorkingSet</a>
+</li>
+<li>add_filters()
+: <a class="el" href="classpip_1_1compat_1_1dictconfig_1_1_dict_configurator.html#ae021ebb8efb45bd7d55fc63d1d83660a">pip.compat.dictconfig.DictConfigurator</a>
+</li>
+<li>add_find_links()
+: <a class="el" href="classsetuptools_1_1package__index_1_1_package_index.html#af2814314197cc6aee392b64f303f08c4">setuptools.package_index.PackageIndex</a>
+</li>
+<li>add_handlers()
+: <a class="el" href="classpip_1_1compat_1_1dictconfig_1_1_dict_configurator.html#ac0a9c1f0f10ee7c36b751f008d82db1d">pip.compat.dictconfig.DictConfigurator</a>
+</li>
+<li>add_header()
+: <a class="el" href="classpip_1_1__vendor_1_1requests_1_1cookies_1_1_mock_request.html#ad39c402ac97aae9d784304260b308c45">pip._vendor.requests.cookies.MockRequest</a>
+</li>
+<li>add_headers()
+: <a class="el" href="classpip_1_1__vendor_1_1requests_1_1adapters_1_1_h_t_t_p_adapter.html#a7d90fba8580b3f96dd51b0858c120329">pip._vendor.requests.adapters.HTTPAdapter</a>
+</li>
+<li>add_many()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1manifest_1_1_manifest.html#aa18ac58e0425c6d4de8ac182a52145fe">pip._vendor.distlib.manifest.Manifest</a>
+</li>
+<li>add_missing()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1database_1_1_dependency_graph.html#a372a05efe7243ce822e03da20181f7e6">pip._vendor.distlib.database.DependencyGraph</a>
+</li>
+<li>add_node()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1util_1_1_sequencer.html#a0ded535de1742bae3f41bfe634e74a4e">pip._vendor.distlib.util.Sequencer</a>
+</li>
+<li>add_output()
+: <a class="el" href="classsetuptools_1_1command_1_1easy__install_1_1easy__install.html#aaf0949c3bcc6f3247e0c87b5dff2a070">setuptools.command.easy_install.easy_install</a>
+</li>
+<li>add_pth()
+: <a class="el" href="classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set.html#a4e0c9effe7b1b3ecc727d9fec06ee25a">pip.req.req_uninstall.UninstallPathSet</a>
+</li>
+<li>add_requirement()
+: <a class="el" href="classpip_1_1req_1_1req__set_1_1_requirement_set.html#aee88d45c9cd6c70ed902f03fc49a4d5b">pip.req.req_set.RequirementSet</a>
+</li>
+<li>add_requirements()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1metadata_1_1_legacy_metadata.html#a5cb93b476488e133ca5fbb088bf393fd">pip._vendor.distlib.metadata.LegacyMetadata</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1metadata_1_1_metadata.html#aa5d0c9aa256b9eb979330d4c8a08212a">pip._vendor.distlib.metadata.Metadata</a>
+, <a class="el" href="classwheel_1_1bdist__wheel_1_1bdist__wheel.html#a75c4ea2c2f406481fe40c4d84b4d04cf">wheel.bdist_wheel.bdist_wheel</a>
+</li>
+<li>add_signer()
+: <a class="el" href="classwheel_1_1signatures_1_1keys_1_1_wheel_keys.html#ace82447ea10cdf82075f2cf715a2984a">wheel.signatures.keys.WheelKeys</a>
+</li>
+<li>add_unredirected_header()
+: <a class="el" href="classpip_1_1__vendor_1_1requests_1_1cookies_1_1_mock_request.html#a04e9926025d34d38e8959870ea751d83">pip._vendor.requests.cookies.MockRequest</a>
+</li>
+<li>addCondition()
+: <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_parser_element.html#ae73a731157475ddfba89da9127dc5937">pip._vendor.pyparsing.ParserElement</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1pyparsing_1_1_parser_element.html#aa60387fa923bdb94d8eb4f0e69261963">pkg_resources._vendor.pyparsing.ParserElement</a>
 </li>
 <li>AddExpectation()
 : <a class="el" href="classtesting_1_1_sequence.html#ac5b77b3b5b2e229ccbc13be1f3d17a9c">testing::Sequence</a>
@@ -108,23 +180,69 @@ $(document).ready(function(){initNavTree('functions_func_a.html','');});
 <li>AddFailure()
 : <a class="el" href="class_expect_failure_test.html#ab9aeb7820ff7953fc2975ecc5abd046b">ExpectFailureTest</a>
 </li>
+<li>addfile()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1__backport_1_1tarfile_1_1_tar_file.html#a9f460122e2a988ec31b0e1a7a2d18244">pip._vendor.distlib._backport.tarfile.TarFile</a>
+</li>
 <li>AddNewExpectation()
 : <a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#aa2c35c565f08d3649436af443ece468f">testing::internal::FunctionMockerBase&lt; F &gt;</a>
 </li>
 <li>AddNewOnCallSpec()
 : <a class="el" href="classtesting_1_1internal_1_1_function_mocker_base.html#a22ece3b6e8d24f11d8f4ba9c17b737c4">testing::internal::FunctionMockerBase&lt; F &gt;</a>
 </li>
+<li>addParseAction()
+: <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_parser_element.html#af122b31c7582cc1f2173ff99e2eed313">pip._vendor.pyparsing.ParserElement</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1pyparsing_1_1_parser_element.html#a21d9aab48590eca6709948628a4df8cd">pkg_resources._vendor.pyparsing.ParserElement</a>
+</li>
+<li>address_exclude()
+: <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1___base_network.html#a0b8901ed8c17e7407c2f43da50a55eb8">pip._vendor.ipaddress._BaseNetwork</a>
+</li>
 <li>AddTestInfo()
 : <a class="el" href="classtesting_1_1internal_1_1_unit_test_impl.html#a1cc87dfc91377ebec4a3ff4192dfcba9">testing::internal::UnitTestImpl</a>
+</li>
+<li>adjustForeignAttributes()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1html5parser_1_1_h_t_m_l_parser.html#a451a11a2e2ba0be3b2df58c849f03034">pip._vendor.html5lib.html5parser.HTMLParser</a>
 </li>
 <li>AdjustForParameterizedTests()
 : <a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a11c48bf404bca6806b14a1a71d169ace">gtest_filter_unittest.GTestFilterUnitTest</a>
 </li>
+<li>adjustMathMLAttributes()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1html5parser_1_1_h_t_m_l_parser.html#a30e9ea73e903053a1d094b06875f2dcd">pip._vendor.html5lib.html5parser.HTMLParser</a>
+</li>
+<li>adjustSVGAttributes()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1html5parser_1_1_h_t_m_l_parser.html#af64b7c5c43747a8d960c6480ed8a98b1">pip._vendor.html5lib.html5parser.HTMLParser</a>
+</li>
 <li>After()
 : <a class="el" href="classtesting_1_1internal_1_1_typed_expectation.html#a30f320d18ebf1a40e94883d7a56c6c8c">testing::internal::TypedExpectation&lt; F &gt;</a>
 </li>
+<li>afterAttributeNameState()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1tokenizer_1_1_h_t_m_l_tokenizer.html#ad1226ca4d9f37a12acf4ca59a744ebc2">pip._vendor.html5lib.tokenizer.HTMLTokenizer</a>
+</li>
+<li>afterAttributeValueState()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1tokenizer_1_1_h_t_m_l_tokenizer.html#a7e9e5cf70ab5cb8e2413dd33880021f6">pip._vendor.html5lib.tokenizer.HTMLTokenizer</a>
+</li>
+<li>afterDoctypeNameState()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1tokenizer_1_1_h_t_m_l_tokenizer.html#a0e3976978eefe8fe6ad18e0438b25b4e">pip._vendor.html5lib.tokenizer.HTMLTokenizer</a>
+</li>
+<li>afterDoctypePublicIdentifierState()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1tokenizer_1_1_h_t_m_l_tokenizer.html#a10340d8a1dd41ed3fd7af920697fc7b7">pip._vendor.html5lib.tokenizer.HTMLTokenizer</a>
+</li>
+<li>afterDoctypePublicKeywordState()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1tokenizer_1_1_h_t_m_l_tokenizer.html#acdfa910d12da89df201b6e99c2e9f205">pip._vendor.html5lib.tokenizer.HTMLTokenizer</a>
+</li>
+<li>afterDoctypeSystemIdentifierState()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1tokenizer_1_1_h_t_m_l_tokenizer.html#aa9b9f421077f3d67a7ab00b8950a1ced">pip._vendor.html5lib.tokenizer.HTMLTokenizer</a>
+</li>
+<li>afterDoctypeSystemKeywordState()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1tokenizer_1_1_h_t_m_l_tokenizer.html#a7ad75cc0526ce2657f393328c43e28c5">pip._vendor.html5lib.tokenizer.HTMLTokenizer</a>
+</li>
+<li>all_schemes()
+: <a class="el" href="classpip_1_1vcs_1_1_vcs_support.html#a796c6619733d08fe0b22f663d56c9762">pip.vcs.VcsSupport</a>
+</li>
 <li>AllArgsHelper()
 : <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_all_args_helper.html#afffee92e50b5545e5b4be8c989ff63ab">testing::gmock_matchers_test::AllArgsHelper</a>
+</li>
+<li>allowed_token()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1sanitizer_1_1_h_t_m_l_sanitizer_mixin.html#aaa50e620d6378b545be51eec4b5b9a11">pip._vendor.html5lib.sanitizer.HTMLSanitizerMixin</a>
 </li>
 <li>AllPrerequisitesAreSatisfied()
 : <a class="el" href="classtesting_1_1internal_1_1_expectation_base.html#a82ba68cdd71a8b5aff5a5be24c23a637">testing::internal::ExpectationBase</a>
@@ -135,17 +253,80 @@ $(document).ready(function(){initNavTree('functions_func_a.html','');});
 <li>AlsoRunDisabledTests()
 : <a class="el" href="structtesting_1_1_flags.html#a8bee2b5f94d8248b6791d6b005db146f">testing::Flags</a>
 </li>
+<li>always_reject()
+: <a class="el" href="classpip_1_1__vendor_1_1retrying_1_1_retrying.html#ad8e003c67972962f26075e0aa7b3b65b">pip._vendor.retrying.Retrying</a>
+</li>
+<li>analyze_manifest()
+: <a class="el" href="classsetuptools_1_1command_1_1build__py_1_1build__py.html#a55dcdddb2d785198bcca45dc83494740">setuptools.command.build_py.build_py</a>
+</li>
+<li>apparent_encoding()
+: <a class="el" href="classpip_1_1__vendor_1_1requests_1_1models_1_1_response.html#a69b4988a89cdf1b94c41086584456f70">pip._vendor.requests.models.Response</a>
+</li>
+<li>append()
+: <a class="el" href="class__abcoll_1_1_mutable_sequence.html#a692b343a27c08ad6166c1b2164ca6651">_abcoll.MutableSequence</a>
+, <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1treebuilders_1_1__base_1_1_active_formatting_elements.html#ad13ffa51d33b33473d69c4c4f4eeab90">pip._vendor.html5lib.treebuilders._base.ActiveFormattingElements</a>
+, <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_parse_expression.html#ac899bfcc8e7f11cf5616cb0a8096f30b">pip._vendor.pyparsing.ParseExpression</a>
+, <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_parse_results.html#a31699d5a98e62c36e2701d0d721a6e1c">pip._vendor.pyparsing.ParseResults</a>
+, <a class="el" href="classpip_1_1exceptions_1_1_hash_errors.html#a4c1e5dc5bd44ab6aef64f2bae6930914">pip.exceptions.HashErrors</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1pyparsing_1_1_parse_expression.html#a09836179cd57eede9e0f7a9e504bbf6e">pkg_resources._vendor.pyparsing.ParseExpression</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1pyparsing_1_1_parse_results.html#a45a5ff7aa33f1c393c793f2751036531">pkg_resources._vendor.pyparsing.ParseResults</a>
+</li>
 <li>Append()
 : <a class="el" href="classpump_1_1_output.html#a6f284bb3f80e03594bc28286c695f5a7">pump.Output</a>
-, <a class="el" href="classtesting_1_1internal_1_1_test_event_repeater.html#ad154ce021881721a5c46994316b14cb1">testing::internal::TestEventRepeater</a>
+</li>
+<li>append()
+: <a class="el" href="classsetuptools_1_1command_1_1egg__info_1_1_file_list.html#a8f5c1a299b05cc91a266116514a841c5">setuptools.command.egg_info.FileList</a>
+, <a class="el" href="classsre__parse_1_1_sub_pattern.html#af8c2a184b316d9cd68ce1df547e51909">sre_parse.SubPattern</a>
+</li>
+<li>Append()
+: <a class="el" href="classtesting_1_1internal_1_1_test_event_repeater.html#ad154ce021881721a5c46994316b14cb1">testing::internal::TestEventRepeater</a>
 , <a class="el" href="classtesting_1_1_test_event_listeners.html#a1207dce74d64c1c39ffa6105560536a0">testing::TestEventListeners</a>
 , <a class="el" href="classtesting_1_1_test_part_result_array.html#a01844bd505b18a666324617a1b459558">testing::TestPartResultArray</a>
+</li>
+<li>appendChild()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1treebuilders_1_1__base_1_1_node.html#a2d6d12eca020a058a7e2fd5842f373a8">pip._vendor.html5lib.treebuilders._base.Node</a>
+, <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1treebuilders_1_1etree__lxml_1_1_document.html#a289abb5a0dc80ba753c45d91d9c8beae">pip._vendor.html5lib.treebuilders.etree_lxml.Document</a>
+</li>
+<li>apply()
+: <a class="el" href="classpip_1_1__vendor_1_1cachecontrol_1_1heuristics_1_1_base_heuristic.html#a71faff258b36ba951716a724386d4d06">pip._vendor.cachecontrol.heuristics.BaseHeuristic</a>
+</li>
+<li>archive()
+: <a class="el" href="classpip_1_1req_1_1req__install_1_1_install_requirement.html#a6d794bdf80dfd4adf2e3805dc5cbb272">pip.req.req_install.InstallRequirement</a>
 </li>
 <li>ArgsMatcher()
 : <a class="el" href="classtesting_1_1internal_1_1_args_matcher.html#a2879d7455f2da2a5a2f2b6759dbc0561">testing::internal::ArgsMatcher&lt; InnerMatcher, k0, k1, k2, k3, k4, k5, k6, k7, k8, k9 &gt;</a>
 </li>
 <li>ArgsMatcherImpl()
 : <a class="el" href="classtesting_1_1internal_1_1_args_matcher_impl.html#a7f7a9a826d130d11fe30633d79f59a06">testing::internal::ArgsMatcherImpl&lt; ArgsTuple, k0, k1, k2, k3, k4, k5, k6, k7, k8, k9 &gt;</a>
+</li>
+<li>arity()
+: <a class="el" href="classwheel_1_1install_1_1_wheel_file.html#aaf0fc43c2c0aa8e0f0be792af262c514">wheel.install.WheelFile</a>
+</li>
+<li>as_header()
+: <a class="el" href="classsetuptools_1_1command_1_1easy__install_1_1_command_spec.html#aa60f3c4d8e0502a97722c9a91fd94594">setuptools.command.easy_install.CommandSpec</a>
+</li>
+<li>as_requirement()
+: <a class="el" href="classpip_1_1__vendor_1_1pkg__resources_1_1_distribution.html#a80af36e436571d5d02e27e627829fd6c">pip._vendor.pkg_resources.Distribution</a>
+, <a class="el" href="classpkg__resources_1_1_distribution.html#a2c549b93626be28f83a4bc1734821c2b">pkg_resources.Distribution</a>
+, <a class="el" href="classsetuptools_1_1command_1_1develop_1_1_versionless_requirement.html#ab9bc06f36f92fb67455cc2bf0e53ccb3">setuptools.command.develop.VersionlessRequirement</a>
+</li>
+<li>as_stream()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1resources_1_1_resource.html#a7eca91a0a970083732db80544bd7dae9">pip._vendor.distlib.resources.Resource</a>
+</li>
+<li>as_tuple()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1compat_1_1_base_configurator.html#ae736e3174fb056998a66ebdc08b28b65">pip._vendor.distlib.compat.BaseConfigurator</a>
+, <a class="el" href="classpip_1_1compat_1_1dictconfig_1_1_base_configurator.html#a2125f5c394bb8bbae02b1ecf89b6ba10">pip.compat.dictconfig.BaseConfigurator</a>
+</li>
+<li>asDict()
+: <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_parse_results.html#a2a26c1c250002905345967e6cc0bd632">pip._vendor.pyparsing.ParseResults</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1pyparsing_1_1_parse_results.html#ab73f26af9e7cc95de6dbb0d54d7a81ba">pkg_resources._vendor.pyparsing.ParseResults</a>
+</li>
+<li>asList()
+: <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_parse_results.html#a0ab042edd2e7a65684f0c89d7b523f67">pip._vendor.pyparsing.ParseResults</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1pyparsing_1_1_parse_results.html#aa7e886aa0826871511b189660343f3aa">pkg_resources._vendor.pyparsing.ParseResults</a>
+</li>
+<li>assert_source_matches_version()
+: <a class="el" href="classpip_1_1req_1_1req__install_1_1_install_requirement.html#afd28f23680f785970d34f4a17d94db81">pip.req.req_install.InstallRequirement</a>
 </li>
 <li>assertEqualIgnoreLeadingWhitespace()
 : <a class="el" href="classcpp_1_1gmock__class__test_1_1_test_case.html#a68f88bba11511f8c582123d47bf80464">cpp.gmock_class_test.TestCase</a>
@@ -160,7 +341,7 @@ $(document).ready(function(){initNavTree('functions_func_a.html','');});
 : <a class="el" href="classtesting_1_1internal_1_1_assert_helper.html#ac2c9334518fd4087189b4505567a3c90">testing::internal::AssertHelper</a>
 </li>
 <li>AssertionResult()
-: <a class="el" href="classtesting_1_1_assertion_result.html#a9b8d1d6d0a979d0769ed4ff97d06c4e3">testing::AssertionResult</a>
+: <a class="el" href="classtesting_1_1_assertion_result.html#a27788116f03f90aec4daf592fd809ead">testing::AssertionResult</a>
 </li>
 <li>AssertPartitionIsValid()
 : <a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a87656eac0cf4136252eef43da0121381">gtest_filter_unittest.GTestFilterUnitTest</a>
@@ -179,18 +360,34 @@ $(document).ready(function(){initNavTree('functions_func_a.html','');});
 : <a class="el" href="classtesting_1_1internal_1_1_assign_action.html#ae5a8fe8954ff3f8b26a08b57c3afdf9a">testing::internal::AssignAction&lt; T1, T2 &gt;</a>
 </li>
 <li>AStruct()
-: <a class="el" href="structtesting_1_1gmock__matchers__test_1_1_a_struct.html#ac5b9c0054e929e8883e13123aef50ff3">testing::gmock_matchers_test::AStruct</a>
+: <a class="el" href="structtesting_1_1gmock__matchers__test_1_1_a_struct.html#a6774561607c8ca64809e9ebde4b62b0e">testing::gmock_matchers_test::AStruct</a>
+</li>
+<li>asXML()
+: <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_parse_results.html#a5898c1783e968686d2e55c0e72a6031b">pip._vendor.pyparsing.ParseResults</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1pyparsing_1_1_parse_results.html#a5a6a33bef33c1cd43437358783fdffde">pkg_resources._vendor.pyparsing.ParseResults</a>
+</li>
+<li>attributeNameState()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1tokenizer_1_1_h_t_m_l_tokenizer.html#ae01c479175b89d1098f56e32438d8603">pip._vendor.html5lib.tokenizer.HTMLTokenizer</a>
+</li>
+<li>attributeValueDoubleQuotedState()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1tokenizer_1_1_h_t_m_l_tokenizer.html#a7aaebdd5b59460e1bf39aefe1e3c2189">pip._vendor.html5lib.tokenizer.HTMLTokenizer</a>
+</li>
+<li>attributeValueSingleQuotedState()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1tokenizer_1_1_h_t_m_l_tokenizer.html#ab4fe341b158aa796043db69f2e20af3b">pip._vendor.html5lib.tokenizer.HTMLTokenizer</a>
+</li>
+<li>attributeValueUnQuotedState()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1tokenizer_1_1_h_t_m_l_tokenizer.html#ae07d852f2a84cb7d2ee49b201cb0115a">pip._vendor.html5lib.tokenizer.HTMLTokenizer</a>
+</li>
+<li>avg()
+: <a class="el" href="classpip_1_1__vendor_1_1progress_1_1_infinite.html#ad434b678fdff7f1a063c6644b1864a8a">pip._vendor.progress.Infinite</a>
 </li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('gtest__pred__impl__unittest_8cc.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('gtest__pred__impl__unittest_8cc.html',
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_acf1f0b8874b1064b8fc0cfc28c4e3cc.html">lib</a></li><li class="navelem"><a class="el" href="dir_be221b699d2f9bf4112c9d2789356b2c.html">googletest-master</a></li><li class="navelem"><a class="el" href="dir_f00c82e995c68d908486b449fc23a3ec.html">googletest</a></li><li class="navelem"><a class="el" href="dir_156b872751d758061c3ae95d7b0cdaa6.html">test</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -93,9 +76,7 @@ $(document).ready(function(){initNavTree('gtest__pred__impl__unittest_8cc.html',
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
 <code>#include &quot;<a class="el" href="gtest_8h_source.html">gtest/gtest.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="gtest-spi_8h_source.html">gtest/gtest-spi.h</a>&quot;</code><br />
-</div>
-<p><a href="gtest__pred__impl__unittest_8cc_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_bool.html">Bool</a></td></tr>
@@ -176,14 +157,14 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0bf98bd8ef2c5ea5ea36ff15c1248b8a"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#a0bf98bd8ef2c5ea5ea36ff15c1248b8a">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="struct_bool.html">Bool</a> &amp;x)</td></tr>
+<tr class="memitem:a0bf98bd8ef2c5ea5ea36ff15c1248b8a"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#a0bf98bd8ef2c5ea5ea36ff15c1248b8a">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="struct_bool.html">Bool</a> &amp;<a class="el" href="stringobject_8h.html#a280f2393c503127fff91ecbc558e288d">x</a>)</td></tr>
 <tr class="separator:a0bf98bd8ef2c5ea5ea36ff15c1248b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8827b7fab495de26f406affdf47a697"><td class="memTemplParams" colspan="2">template&lt;typename T1 &gt; </td></tr>
-<tr class="memitem:aa8827b7fab495de26f406affdf47a697"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#aa8827b7fab495de26f406affdf47a697">PredFunction1</a> (T1 v1)</td></tr>
+<tr class="memitem:aa8827b7fab495de26f406affdf47a697"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#aa8827b7fab495de26f406affdf47a697">PredFunction1</a> (T1 v1)</td></tr>
 <tr class="separator:aa8827b7fab495de26f406affdf47a697"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cfa23f9b62be9c5bf65d0971510bac5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#a0cfa23f9b62be9c5bf65d0971510bac5">PredFunction1Int</a> (int v1)</td></tr>
+<tr class="memitem:a0cfa23f9b62be9c5bf65d0971510bac5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#a0cfa23f9b62be9c5bf65d0971510bac5">PredFunction1Int</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> v1)</td></tr>
 <tr class="separator:a0cfa23f9b62be9c5bf65d0971510bac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c12be7e61ecd333d5c9d5f251d3809f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#a1c12be7e61ecd333d5c9d5f251d3809f">PredFunction1Bool</a> (<a class="el" href="struct_bool.html">Bool</a> v1)</td></tr>
+<tr class="memitem:a1c12be7e61ecd333d5c9d5f251d3809f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#a1c12be7e61ecd333d5c9d5f251d3809f">PredFunction1Bool</a> (<a class="el" href="struct_bool.html">Bool</a> v1)</td></tr>
 <tr class="separator:a1c12be7e61ecd333d5c9d5f251d3809f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5b63802199e417c73c46cbacc73f4ed"><td class="memTemplParams" colspan="2">template&lt;typename T1 &gt; </td></tr>
 <tr class="memitem:af5b63802199e417c73c46cbacc73f4ed"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1_assertion_result.html">testing::AssertionResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#af5b63802199e417c73c46cbacc73f4ed">PredFormatFunction1</a> (const char *e1, const T1 &amp;v1)</td></tr>
@@ -205,11 +186,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a00575e7356ae80bbd71ab684ccd65ac3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#a00575e7356ae80bbd71ab684ccd65ac3">TEST_F</a> (<a class="el" href="gtest__pred__impl__unittest_8cc.html#ad745775376a8f891faadd4d168798bab">EXPECT_PRED1Test</a>, FunctorOnUserTypeFailure)</td></tr>
 <tr class="separator:a00575e7356ae80bbd71ab684ccd65ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6af405b7411fcd37c51a5fc96a869eef"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
-<tr class="memitem:a6af405b7411fcd37c51a5fc96a869eef"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#a6af405b7411fcd37c51a5fc96a869eef">PredFunction2</a> (T1 v1, T2 v2)</td></tr>
+<tr class="memitem:a6af405b7411fcd37c51a5fc96a869eef"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#a6af405b7411fcd37c51a5fc96a869eef">PredFunction2</a> (T1 v1, T2 v2)</td></tr>
 <tr class="separator:a6af405b7411fcd37c51a5fc96a869eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a3b834b08a5176afbd4bfc97d06bedd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#a7a3b834b08a5176afbd4bfc97d06bedd">PredFunction2Int</a> (int v1, int v2)</td></tr>
+<tr class="memitem:a7a3b834b08a5176afbd4bfc97d06bedd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#a7a3b834b08a5176afbd4bfc97d06bedd">PredFunction2Int</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> v1, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> v2)</td></tr>
 <tr class="separator:a7a3b834b08a5176afbd4bfc97d06bedd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab00487cdc08174c122cfaccc6abf221d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#ab00487cdc08174c122cfaccc6abf221d">PredFunction2Bool</a> (<a class="el" href="struct_bool.html">Bool</a> v1, <a class="el" href="struct_bool.html">Bool</a> v2)</td></tr>
+<tr class="memitem:ab00487cdc08174c122cfaccc6abf221d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#ab00487cdc08174c122cfaccc6abf221d">PredFunction2Bool</a> (<a class="el" href="struct_bool.html">Bool</a> v1, <a class="el" href="struct_bool.html">Bool</a> v2)</td></tr>
 <tr class="separator:ab00487cdc08174c122cfaccc6abf221d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac47f2d44062a47c907d113375ec47d47"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
 <tr class="memitem:ac47f2d44062a47c907d113375ec47d47"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1_assertion_result.html">testing::AssertionResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#ac47f2d44062a47c907d113375ec47d47">PredFormatFunction2</a> (const char *e1, const char *e2, const T1 &amp;v1, const T2 &amp;v2)</td></tr>
@@ -231,11 +212,11 @@ Functions</h2></td></tr>
 <tr class="memitem:aab4f3bf01d55a7228147db3c959fd830"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#aab4f3bf01d55a7228147db3c959fd830">TEST_F</a> (<a class="el" href="gtest__pred__impl__unittest_8cc.html#a232826190f0ba7ce5dffa1ced1219acc">EXPECT_PRED2Test</a>, FunctorOnUserTypeFailure)</td></tr>
 <tr class="separator:aab4f3bf01d55a7228147db3c959fd830"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78a1ff258fe5a85da5b2645983311a70"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 , typename T3 &gt; </td></tr>
-<tr class="memitem:a78a1ff258fe5a85da5b2645983311a70"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#a78a1ff258fe5a85da5b2645983311a70">PredFunction3</a> (T1 v1, T2 v2, T3 v3)</td></tr>
+<tr class="memitem:a78a1ff258fe5a85da5b2645983311a70"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#a78a1ff258fe5a85da5b2645983311a70">PredFunction3</a> (T1 v1, T2 v2, T3 v3)</td></tr>
 <tr class="separator:a78a1ff258fe5a85da5b2645983311a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31b4c93e469feb1523b6073634c1ca4c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#a31b4c93e469feb1523b6073634c1ca4c">PredFunction3Int</a> (int v1, int v2, int v3)</td></tr>
+<tr class="memitem:a31b4c93e469feb1523b6073634c1ca4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#a31b4c93e469feb1523b6073634c1ca4c">PredFunction3Int</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> v1, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> v2, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> v3)</td></tr>
 <tr class="separator:a31b4c93e469feb1523b6073634c1ca4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa4ce2143c2ffedb2fa5d5f8cff6f6e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#afa4ce2143c2ffedb2fa5d5f8cff6f6e6">PredFunction3Bool</a> (<a class="el" href="struct_bool.html">Bool</a> v1, <a class="el" href="struct_bool.html">Bool</a> v2, <a class="el" href="struct_bool.html">Bool</a> v3)</td></tr>
+<tr class="memitem:afa4ce2143c2ffedb2fa5d5f8cff6f6e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#afa4ce2143c2ffedb2fa5d5f8cff6f6e6">PredFunction3Bool</a> (<a class="el" href="struct_bool.html">Bool</a> v1, <a class="el" href="struct_bool.html">Bool</a> v2, <a class="el" href="struct_bool.html">Bool</a> v3)</td></tr>
 <tr class="separator:afa4ce2143c2ffedb2fa5d5f8cff6f6e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abddc62e1faf4d19992a0acb69577e0f3"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 , typename T3 &gt; </td></tr>
 <tr class="memitem:abddc62e1faf4d19992a0acb69577e0f3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1_assertion_result.html">testing::AssertionResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#abddc62e1faf4d19992a0acb69577e0f3">PredFormatFunction3</a> (const char *e1, const char *e2, const char *e3, const T1 &amp;v1, const T2 &amp;v2, const T3 &amp;v3)</td></tr>
@@ -257,11 +238,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a1d3e62b254c408b35bf05205699dca87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#a1d3e62b254c408b35bf05205699dca87">TEST_F</a> (<a class="el" href="gtest__pred__impl__unittest_8cc.html#a15eb53ab3f302d7bfffe1352f3902eb4">EXPECT_PRED3Test</a>, FunctorOnUserTypeFailure)</td></tr>
 <tr class="separator:a1d3e62b254c408b35bf05205699dca87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69db8bec40f25365dbd42dbe6c3319fe"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 , typename T3 , typename T4 &gt; </td></tr>
-<tr class="memitem:a69db8bec40f25365dbd42dbe6c3319fe"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#a69db8bec40f25365dbd42dbe6c3319fe">PredFunction4</a> (T1 v1, T2 v2, T3 v3, T4 v4)</td></tr>
+<tr class="memitem:a69db8bec40f25365dbd42dbe6c3319fe"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#a69db8bec40f25365dbd42dbe6c3319fe">PredFunction4</a> (T1 v1, T2 v2, T3 v3, T4 v4)</td></tr>
 <tr class="separator:a69db8bec40f25365dbd42dbe6c3319fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a105a045112a34fb2b65360c0d5daf81e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#a105a045112a34fb2b65360c0d5daf81e">PredFunction4Int</a> (int v1, int v2, int v3, int v4)</td></tr>
+<tr class="memitem:a105a045112a34fb2b65360c0d5daf81e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#a105a045112a34fb2b65360c0d5daf81e">PredFunction4Int</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> v1, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> v2, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> v3, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> v4)</td></tr>
 <tr class="separator:a105a045112a34fb2b65360c0d5daf81e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d842d3bce2d16793299e77d1cb5c980"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#a5d842d3bce2d16793299e77d1cb5c980">PredFunction4Bool</a> (<a class="el" href="struct_bool.html">Bool</a> v1, <a class="el" href="struct_bool.html">Bool</a> v2, <a class="el" href="struct_bool.html">Bool</a> v3, <a class="el" href="struct_bool.html">Bool</a> v4)</td></tr>
+<tr class="memitem:a5d842d3bce2d16793299e77d1cb5c980"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#a5d842d3bce2d16793299e77d1cb5c980">PredFunction4Bool</a> (<a class="el" href="struct_bool.html">Bool</a> v1, <a class="el" href="struct_bool.html">Bool</a> v2, <a class="el" href="struct_bool.html">Bool</a> v3, <a class="el" href="struct_bool.html">Bool</a> v4)</td></tr>
 <tr class="separator:a5d842d3bce2d16793299e77d1cb5c980"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fbd4c3333dcc98c0cfee19ce28bc2b1"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 , typename T3 , typename T4 &gt; </td></tr>
 <tr class="memitem:a9fbd4c3333dcc98c0cfee19ce28bc2b1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1_assertion_result.html">testing::AssertionResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#a9fbd4c3333dcc98c0cfee19ce28bc2b1">PredFormatFunction4</a> (const char *e1, const char *e2, const char *e3, const char *e4, const T1 &amp;v1, const T2 &amp;v2, const T3 &amp;v3, const T4 &amp;v4)</td></tr>
@@ -283,11 +264,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a1a34c19097ac1b8c806460f6bbaad59a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#a1a34c19097ac1b8c806460f6bbaad59a">TEST_F</a> (<a class="el" href="gtest__pred__impl__unittest_8cc.html#abbf7ac63ea663c0dec815df5770cd2a8">EXPECT_PRED4Test</a>, FunctorOnUserTypeFailure)</td></tr>
 <tr class="separator:a1a34c19097ac1b8c806460f6bbaad59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacb9302c548682f154ddf1a02a23a99f"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 &gt; </td></tr>
-<tr class="memitem:aacb9302c548682f154ddf1a02a23a99f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#aacb9302c548682f154ddf1a02a23a99f">PredFunction5</a> (T1 v1, T2 v2, T3 v3, T4 v4, T5 v5)</td></tr>
+<tr class="memitem:aacb9302c548682f154ddf1a02a23a99f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#aacb9302c548682f154ddf1a02a23a99f">PredFunction5</a> (T1 v1, T2 v2, T3 v3, T4 v4, T5 v5)</td></tr>
 <tr class="separator:aacb9302c548682f154ddf1a02a23a99f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2bb9ad4db9fc578bd739bbba5aa374f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#ac2bb9ad4db9fc578bd739bbba5aa374f">PredFunction5Int</a> (int v1, int v2, int v3, int v4, int v5)</td></tr>
+<tr class="memitem:ac2bb9ad4db9fc578bd739bbba5aa374f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#ac2bb9ad4db9fc578bd739bbba5aa374f">PredFunction5Int</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> v1, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> v2, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> v3, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> v4, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> v5)</td></tr>
 <tr class="separator:ac2bb9ad4db9fc578bd739bbba5aa374f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e081dd19571256aef33154ce936563f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#a6e081dd19571256aef33154ce936563f">PredFunction5Bool</a> (<a class="el" href="struct_bool.html">Bool</a> v1, <a class="el" href="struct_bool.html">Bool</a> v2, <a class="el" href="struct_bool.html">Bool</a> v3, <a class="el" href="struct_bool.html">Bool</a> v4, <a class="el" href="struct_bool.html">Bool</a> v5)</td></tr>
+<tr class="memitem:a6e081dd19571256aef33154ce936563f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#a6e081dd19571256aef33154ce936563f">PredFunction5Bool</a> (<a class="el" href="struct_bool.html">Bool</a> v1, <a class="el" href="struct_bool.html">Bool</a> v2, <a class="el" href="struct_bool.html">Bool</a> v3, <a class="el" href="struct_bool.html">Bool</a> v4, <a class="el" href="struct_bool.html">Bool</a> v5)</td></tr>
 <tr class="separator:a6e081dd19571256aef33154ce936563f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09cbd3b6651151c3b97a890d28bdb75f"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 &gt; </td></tr>
 <tr class="memitem:a09cbd3b6651151c3b97a890d28bdb75f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1_assertion_result.html">testing::AssertionResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="gtest__pred__impl__unittest_8cc.html#a09cbd3b6651151c3b97a890d28bdb75f">PredFormatFunction5</a> (const char *e1, const char *e2, const char *e3, const char *e4, const char *e5, const T1 &amp;v1, const T2 &amp;v2, const T3 &amp;v3, const T4 &amp;v4, const T5 &amp;v5)</td></tr>
@@ -322,8 +303,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00163">163</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="a1b78024909002227ea625b831d27ea8b"></a>
@@ -337,8 +316,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00560">560</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -354,8 +331,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00999">999</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="a0467f5052687e11dccf9f45db63e9941"></a>
@@ -369,8 +344,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01480">1480</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -386,8 +359,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l02003">2003</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="a74baa3f09c1626584580dd9595545a9a"></a>
@@ -401,8 +372,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00161">161</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -418,8 +387,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00558">558</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="ac2bfdb213c3119d730d1aa3fcc4daa56"></a>
@@ -433,8 +400,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00997">997</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -450,8 +415,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01478">1478</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="acd5253924c1b0c73917bb9b180805798"></a>
@@ -465,8 +428,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l02001">2001</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -482,8 +443,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00162">162</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="a232826190f0ba7ce5dffa1ced1219acc"></a>
@@ -497,8 +456,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00559">559</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -514,8 +471,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00998">998</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="abbf7ac63ea663c0dec815df5770cd2a8"></a>
@@ -529,8 +484,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01479">1479</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -546,8 +499,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l02002">2002</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="a35f3fc7e63ce8c37737b59138d45b871"></a>
@@ -561,8 +512,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00160">160</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -578,8 +527,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00557">557</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="a338bfbaa3935e8ed55c11195e5b53c20"></a>
@@ -593,8 +540,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00996">996</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -610,8 +555,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01477">1477</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="aedface39db3a4a232e856e9e5b0d93b4"></a>
@@ -625,8 +568,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l02000">2000</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -657,8 +598,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00069">69</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="af5b63802199e417c73c46cbacc73f4ed"></a>
@@ -688,8 +627,6 @@ template&lt;typename T1 &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00101">101</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -732,8 +669,6 @@ template&lt;typename T1 , typename T2 &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00489">489</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -788,8 +723,6 @@ template&lt;typename T1 , typename T2 , typename T3 &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00919">919</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -856,8 +789,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01391">1391</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -937,8 +868,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01905">1905</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="aa8827b7fab495de26f406affdf47a697"></a>
@@ -950,7 +879,7 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
 template&lt;typename T1 &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool PredFunction1 </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> PredFunction1 </td>
           <td>(</td>
           <td class="paramtype">T1&#160;</td>
           <td class="paramname"><em>v1</em></td><td>)</td>
@@ -958,8 +887,6 @@ template&lt;typename T1 &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00077">77</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -970,7 +897,7 @@ template&lt;typename T1 &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PredFunction1Bool </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> PredFunction1Bool </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_bool.html">Bool</a>&#160;</td>
           <td class="paramname"><em>v1</em></td><td>)</td>
@@ -978,8 +905,6 @@ template&lt;typename T1 &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00087">87</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -990,16 +915,14 @@ template&lt;typename T1 &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PredFunction1Int </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> PredFunction1Int </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>v1</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00084">84</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -1012,7 +935,7 @@ template&lt;typename T1 &gt; </div>
 template&lt;typename T1 , typename T2 &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool PredFunction2 </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> PredFunction2 </td>
           <td>(</td>
           <td class="paramtype">T1&#160;</td>
           <td class="paramname"><em>v1</em>, </td>
@@ -1031,8 +954,6 @@ template&lt;typename T1 , typename T2 &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00464">464</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="ab00487cdc08174c122cfaccc6abf221d"></a>
@@ -1042,7 +963,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PredFunction2Bool </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> PredFunction2Bool </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_bool.html">Bool</a>&#160;</td>
           <td class="paramname"><em>v1</em>, </td>
@@ -1060,8 +981,6 @@ template&lt;typename T1 , typename T2 &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00474">474</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -1072,15 +991,15 @@ template&lt;typename T1 , typename T2 &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PredFunction2Int </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> PredFunction2Int </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>v1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>v2</em>&#160;</td>
         </tr>
         <tr>
@@ -1090,8 +1009,6 @@ template&lt;typename T1 , typename T2 &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00471">471</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -1104,7 +1021,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
 template&lt;typename T1 , typename T2 , typename T3 &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool PredFunction3 </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> PredFunction3 </td>
           <td>(</td>
           <td class="paramtype">T1&#160;</td>
           <td class="paramname"><em>v1</em>, </td>
@@ -1129,8 +1046,6 @@ template&lt;typename T1 , typename T2 , typename T3 &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00893">893</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="afa4ce2143c2ffedb2fa5d5f8cff6f6e6"></a>
@@ -1140,7 +1055,7 @@ template&lt;typename T1 , typename T2 , typename T3 &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PredFunction3Bool </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> PredFunction3Bool </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_bool.html">Bool</a>&#160;</td>
           <td class="paramname"><em>v1</em>, </td>
@@ -1164,8 +1079,6 @@ template&lt;typename T1 , typename T2 , typename T3 &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00903">903</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -1176,21 +1089,21 @@ template&lt;typename T1 , typename T2 , typename T3 &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PredFunction3Int </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> PredFunction3Int </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>v1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>v2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>v3</em>&#160;</td>
         </tr>
         <tr>
@@ -1200,8 +1113,6 @@ template&lt;typename T1 , typename T2 , typename T3 &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00900">900</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -1214,7 +1125,7 @@ template&lt;typename T1 , typename T2 , typename T3 &gt; </div>
 template&lt;typename T1 , typename T2 , typename T3 , typename T4 &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool PredFunction4 </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> PredFunction4 </td>
           <td>(</td>
           <td class="paramtype">T1&#160;</td>
           <td class="paramname"><em>v1</em>, </td>
@@ -1245,8 +1156,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01364">1364</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="a5d842d3bce2d16793299e77d1cb5c980"></a>
@@ -1256,7 +1165,7 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PredFunction4Bool </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> PredFunction4Bool </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_bool.html">Bool</a>&#160;</td>
           <td class="paramname"><em>v1</em>, </td>
@@ -1286,8 +1195,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01374">1374</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -1298,27 +1205,27 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PredFunction4Int </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> PredFunction4Int </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>v1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>v2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>v3</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>v4</em>&#160;</td>
         </tr>
         <tr>
@@ -1328,8 +1235,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01371">1371</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -1342,7 +1247,7 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 &gt; </div>
 template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool PredFunction5 </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> PredFunction5 </td>
           <td>(</td>
           <td class="paramtype">T1&#160;</td>
           <td class="paramname"><em>v1</em>, </td>
@@ -1379,8 +1284,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01877">1877</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="a6e081dd19571256aef33154ce936563f"></a>
@@ -1390,7 +1293,7 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PredFunction5Bool </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> PredFunction5Bool </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_bool.html">Bool</a>&#160;</td>
           <td class="paramname"><em>v1</em>, </td>
@@ -1426,8 +1329,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01887">1887</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -1438,33 +1339,33 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PredFunction5Int </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> PredFunction5Int </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>v1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>v2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>v3</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>v4</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>v5</em>&#160;</td>
         </tr>
         <tr>
@@ -1474,8 +1375,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01884">1884</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -1505,8 +1404,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00167">167</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="a7ae9f4aac70507b021c7f828ba06c600"></a>
@@ -1534,8 +1431,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00175">175</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -1565,8 +1460,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00183">183</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="acaedb8d892427455232522cca9d0ce36"></a>
@@ -1594,8 +1487,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00191">191</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -1625,8 +1516,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00199">199</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="a6c7394c22028809dd2a31ec37021957d"></a>
@@ -1654,8 +1543,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00209">209</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -1685,8 +1572,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00219">219</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="a00575e7356ae80bbd71ab684ccd65ac3"></a>
@@ -1714,8 +1599,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00229">229</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -1745,8 +1628,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00564">564</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="a6c5a246f545dedba3863fc60fdcec435"></a>
@@ -1774,8 +1655,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00573">573</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -1805,8 +1684,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00582">582</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="a4ce1ae190c7b5477db170623d18ea48f"></a>
@@ -1834,8 +1711,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00591">591</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -1865,8 +1740,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00600">600</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="a590341b72b346a170ff6d8c73bf559b8"></a>
@@ -1894,8 +1767,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00611">611</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -1925,8 +1796,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00622">622</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="aab4f3bf01d55a7228147db3c959fd830"></a>
@@ -1954,8 +1823,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l00633">633</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -1985,8 +1852,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01003">1003</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="a509632492410e91aa0d85ff1cdeaf1cc"></a>
@@ -2014,8 +1879,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01013">1013</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -2045,8 +1908,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01023">1023</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="a199c9d914ca008105f5521d245e7c1d9"></a>
@@ -2074,8 +1935,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01033">1033</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -2105,8 +1964,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01043">1043</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="a106aff3a64136441885a6948e79a35fd"></a>
@@ -2134,8 +1991,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01055">1055</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -2165,8 +2020,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01067">1067</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="a1d3e62b254c408b35bf05205699dca87"></a>
@@ -2194,8 +2047,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01079">1079</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -2225,8 +2076,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01484">1484</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="a666c4a544439533ef0fbac4fad0b3cf4"></a>
@@ -2254,8 +2103,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01495">1495</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -2285,8 +2132,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01506">1506</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="ac6b2261e169a9c32d631ac71909a0458"></a>
@@ -2314,8 +2159,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01517">1517</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -2345,8 +2188,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01528">1528</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="a952a5460f9f761948d852ce164241e0f"></a>
@@ -2374,8 +2215,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01541">1541</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -2405,8 +2244,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01554">1554</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="a1a34c19097ac1b8c806460f6bbaad59a"></a>
@@ -2434,8 +2271,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l01567">1567</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -2465,8 +2300,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l02007">2007</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="a2d0901e19bffadc3482d9116cd590eb0"></a>
@@ -2494,8 +2327,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l02019">2019</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -2525,8 +2356,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l02031">2031</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="a4afff8ae16f447497e2d682ab8835470"></a>
@@ -2554,8 +2383,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l02043">2043</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -2585,8 +2412,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l02055">2055</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="a6188c218f102846ec55e25fcd29c1e8e"></a>
@@ -2614,8 +2439,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l02069">2069</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
 
 </div>
 </div>
@@ -2645,8 +2468,6 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l02083">2083</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 <a id="ada0ed61c55660de8027dfe787136c0d8"></a>
@@ -2675,20 +2496,14 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl__unittest_8cc_source.html#l02097">2097</a> of file <a class="el" href="gtest__pred__impl__unittest_8cc_source.html">gtest_pred_impl_unittest.cc</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_b80f002a4112fc8defa29deee9464b28.html">googletest-master</a></li><li class="navelem"><a class="el" href="dir_8339ebd0c16062e901f0dca0f5626014.html">googletest</a></li><li class="navelem"><a class="el" href="dir_de2fa21a95c91204b56df0f993ff4735.html">test</a></li><li class="navelem"><a class="el" href="gtest__pred__impl__unittest_8cc.html">gtest_pred_impl_unittest.cc</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

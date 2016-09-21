@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('namespacepump.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,7 @@ $(document).ready(function(){initNavTree('namespacepump.html','');});
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -124,31 +103,31 @@ Classes</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a38844b22bd5a51c098b07c2c36c5c5b3"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a38844b22bd5a51c098b07c2c36c5c5b3">Eof</a> ()</td></tr>
 <tr class="separator:a38844b22bd5a51c098b07c2c36c5c5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9353db466a97e632058887a77c3b26aa"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a9353db466a97e632058887a77c3b26aa">StartsWith</a> (lines, pos, string)</td></tr>
+<tr class="memitem:a9353db466a97e632058887a77c3b26aa"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a9353db466a97e632058887a77c3b26aa">StartsWith</a> (lines, <a class="el" href="setobject_8h.html#a0cdb1b70380fd629358aa8be81bb89b6">pos</a>, <a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>)</td></tr>
 <tr class="separator:a9353db466a97e632058887a77c3b26aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9f92ec64fe45399c7e051115a107ee7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#af9f92ec64fe45399c7e051115a107ee7">FindFirstInLine</a> (line, token_table)</td></tr>
 <tr class="separator:af9f92ec64fe45399c7e051115a107ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08f2d05c192d11a134c008287bafef07"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a08f2d05c192d11a134c008287bafef07">FindFirst</a> (lines, token_table, cursor)</td></tr>
 <tr class="separator:a08f2d05c192d11a134c008287bafef07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a859edb180cfc24c24fabcfb4f2bedf9e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a859edb180cfc24c24fabcfb4f2bedf9e">SubString</a> (lines, start, end)</td></tr>
+<tr class="memitem:a859edb180cfc24c24fabcfb4f2bedf9e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a859edb180cfc24c24fabcfb4f2bedf9e">SubString</a> (lines, <a class="el" href="sliceobject_8h.html#ab80172fa2f374f0198e6186560ed619e">start</a>, end)</td></tr>
 <tr class="separator:a859edb180cfc24c24fabcfb4f2bedf9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c50cb40d65f26771c6f51eb265bb569"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a8c50cb40d65f26771c6f51eb265bb569">StripMetaComments</a> (str)</td></tr>
+<tr class="memitem:a8c50cb40d65f26771c6f51eb265bb569"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a8c50cb40d65f26771c6f51eb265bb569">StripMetaComments</a> (<a class="el" href="node_8h.html#a62b34ca1362fe946082b7aa0cd9be844">str</a>)</td></tr>
 <tr class="separator:a8c50cb40d65f26771c6f51eb265bb569"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af96d60dc97b160f3a18e63857aabeef7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#af96d60dc97b160f3a18e63857aabeef7">MakeToken</a> (lines, start, end, token_type)</td></tr>
+<tr class="memitem:af96d60dc97b160f3a18e63857aabeef7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#af96d60dc97b160f3a18e63857aabeef7">MakeToken</a> (lines, <a class="el" href="sliceobject_8h.html#ab80172fa2f374f0198e6186560ed619e">start</a>, end, token_type)</td></tr>
 <tr class="separator:af96d60dc97b160f3a18e63857aabeef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23761d99dd43d642e94d845218573035"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a23761d99dd43d642e94d845218573035">ParseToken</a> (lines, pos, regex, token_type)</td></tr>
+<tr class="memitem:a23761d99dd43d642e94d845218573035"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a23761d99dd43d642e94d845218573035">ParseToken</a> (lines, <a class="el" href="setobject_8h.html#a0cdb1b70380fd629358aa8be81bb89b6">pos</a>, regex, token_type)</td></tr>
 <tr class="separator:a23761d99dd43d642e94d845218573035"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a869bd8932d9ee97f3a0e789abd05d590"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a869bd8932d9ee97f3a0e789abd05d590">Skip</a> (lines, pos, regex)</td></tr>
+<tr class="memitem:a869bd8932d9ee97f3a0e789abd05d590"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a869bd8932d9ee97f3a0e789abd05d590">Skip</a> (lines, <a class="el" href="setobject_8h.html#a0cdb1b70380fd629358aa8be81bb89b6">pos</a>, regex)</td></tr>
 <tr class="separator:a869bd8932d9ee97f3a0e789abd05d590"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8935d04d89047866b07c59845e2d7d29"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a8935d04d89047866b07c59845e2d7d29">SkipUntil</a> (lines, pos, regex, token_type)</td></tr>
+<tr class="memitem:a8935d04d89047866b07c59845e2d7d29"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a8935d04d89047866b07c59845e2d7d29">SkipUntil</a> (lines, <a class="el" href="setobject_8h.html#a0cdb1b70380fd629358aa8be81bb89b6">pos</a>, regex, token_type)</td></tr>
 <tr class="separator:a8935d04d89047866b07c59845e2d7d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae094486db14ecec9347129c5f230042d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#ae094486db14ecec9347129c5f230042d">ParseExpTokenInParens</a> (lines, pos)</td></tr>
+<tr class="memitem:ae094486db14ecec9347129c5f230042d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#ae094486db14ecec9347129c5f230042d">ParseExpTokenInParens</a> (lines, <a class="el" href="setobject_8h.html#a0cdb1b70380fd629358aa8be81bb89b6">pos</a>)</td></tr>
 <tr class="separator:ae094486db14ecec9347129c5f230042d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae07150d94399cbe1661abe5929f921e0"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#ae07150d94399cbe1661abe5929f921e0">RStripNewLineFromToken</a> (token)</td></tr>
 <tr class="separator:ae07150d94399cbe1661abe5929f921e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa383d59e8e2a9507a576fd4c6b68b6b7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#aa383d59e8e2a9507a576fd4c6b68b6b7">TokenizeLines</a> (lines, pos)</td></tr>
+<tr class="memitem:aa383d59e8e2a9507a576fd4c6b68b6b7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#aa383d59e8e2a9507a576fd4c6b68b6b7">TokenizeLines</a> (lines, <a class="el" href="setobject_8h.html#a0cdb1b70380fd629358aa8be81bb89b6">pos</a>)</td></tr>
 <tr class="separator:aa383d59e8e2a9507a576fd4c6b68b6b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa42c23b1c914c0f86a94f2fa32999905"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#aa42c23b1c914c0f86a94f2fa32999905">Tokenize</a> (s)</td></tr>
+<tr class="memitem:aa42c23b1c914c0f86a94f2fa32999905"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#aa42c23b1c914c0f86a94f2fa32999905">Tokenize</a> (<a class="el" href="stringobject_8h.html#ad912d811fca4c9cfee37905bed81eb65">s</a>)</td></tr>
 <tr class="separator:aa42c23b1c914c0f86a94f2fa32999905"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e2ff118da88397e88ccf68ebcd2df79"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a8e2ff118da88397e88ccf68ebcd2df79">PopFront</a> (a_list)</td></tr>
 <tr class="separator:a8e2ff118da88397e88ccf68ebcd2df79"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,7 +147,7 @@ Functions</h2></td></tr>
 <tr class="separator:aabbc064b8664abbe05618b3a0f5a6c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56ac10a83a3a875d305c9aae71fc0549"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a56ac10a83a3a875d305c9aae71fc0549">ParseToAST</a> (pump_src_text)</td></tr>
 <tr class="separator:a56ac10a83a3a875d305c9aae71fc0549"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a901e6abd34691a0d779178a615cc09c1"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a901e6abd34691a0d779178a615cc09c1">RunAtomicCode</a> (env, node, output)</td></tr>
+<tr class="memitem:a901e6abd34691a0d779178a615cc09c1"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a901e6abd34691a0d779178a615cc09c1">RunAtomicCode</a> (env, <a class="el" href="node_8h.html#addb697c9bca6f8981a870daa4953af4f">node</a>, output)</td></tr>
 <tr class="separator:a901e6abd34691a0d779178a615cc09c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6a714a44e28c2a19a1dfabeb9c9d4f1"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#ac6a714a44e28c2a19a1dfabeb9c9d4f1">RunCode</a> (env, code_node, output)</td></tr>
 <tr class="separator:ac6a714a44e28c2a19a1dfabeb9c9d4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,28 +169,28 @@ Functions</h2></td></tr>
 <tr class="separator:ac8a553b60dc83d100361a0e98d98451b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02427e2ddc80f0f408e27dfc3e38e702"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a02427e2ddc80f0f408e27dfc3e38e702">WrapLongLine</a> (line, output)</td></tr>
 <tr class="separator:a02427e2ddc80f0f408e27dfc3e38e702"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3456db8d85605892d670669c4e238cd7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a3456db8d85605892d670669c4e238cd7">BeautifyCode</a> (string)</td></tr>
+<tr class="memitem:a3456db8d85605892d670669c4e238cd7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a3456db8d85605892d670669c4e238cd7">BeautifyCode</a> (<a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>)</td></tr>
 <tr class="separator:a3456db8d85605892d670669c4e238cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a568fe53d1443489ac15bac4a0f9faf91"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a568fe53d1443489ac15bac4a0f9faf91">ConvertFromPumpSource</a> (src_text)</td></tr>
 <tr class="separator:a568fe53d1443489ac15bac4a0f9faf91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcf26971f7bdbad77c2c168c110312df"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#abcf26971f7bdbad77c2c168c110312df">main</a> (argv)</td></tr>
+<tr class="memitem:abcf26971f7bdbad77c2c168c110312df"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#abcf26971f7bdbad77c2c168c110312df">main</a> (<a class="el" href="pythonrun_8h.html#af3cb49c013b6d4b79e7a00fc6807e954">argv</a>)</td></tr>
 <tr class="separator:abcf26971f7bdbad77c2c168c110312df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a132b35d1104c7f479aa21c345f413477"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a132b35d1104c7f479aa21c345f413477">TOKEN_TABLE</a></td></tr>
 <tr class="separator:a132b35d1104c7f479aa21c345f413477"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e008923b6c378b8d3df611fb07d6dda"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a8e008923b6c378b8d3df611fb07d6dda">ID_REGEX</a> = re.compile(r'[_A-Za-z]\w*')</td></tr>
+<tr class="memitem:a8e008923b6c378b8d3df611fb07d6dda"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a8e008923b6c378b8d3df611fb07d6dda">ID_REGEX</a> = <a class="el" href="namespacere.html#afa1292bd279ff38b6cbfd3eb69ba83cc">re.compile</a>(r'[_A-Za-z]\w*')</td></tr>
 <tr class="separator:a8e008923b6c378b8d3df611fb07d6dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6397ed9bab62b5c6f60a6626f6b287e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a6397ed9bab62b5c6f60a6626f6b287e0">EQ_REGEX</a> = re.compile(r'=')</td></tr>
+<tr class="memitem:a6397ed9bab62b5c6f60a6626f6b287e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a6397ed9bab62b5c6f60a6626f6b287e0">EQ_REGEX</a> = <a class="el" href="namespacere.html#afa1292bd279ff38b6cbfd3eb69ba83cc">re.compile</a>(r'=')</td></tr>
 <tr class="separator:a6397ed9bab62b5c6f60a6626f6b287e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c1f68b32fcb8366051b574cf2e6aef1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a4c1f68b32fcb8366051b574cf2e6aef1">REST_OF_LINE_REGEX</a> = re.compile(r'.*?(?=$|\$\$)')</td></tr>
+<tr class="memitem:a4c1f68b32fcb8366051b574cf2e6aef1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a4c1f68b32fcb8366051b574cf2e6aef1">REST_OF_LINE_REGEX</a> = <a class="el" href="namespacere.html#afa1292bd279ff38b6cbfd3eb69ba83cc">re.compile</a>(r'.*?(?=$|\$\$)')</td></tr>
 <tr class="separator:a4c1f68b32fcb8366051b574cf2e6aef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81f03eaffd2c0f4c6a453a0b179e51ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a81f03eaffd2c0f4c6a453a0b179e51ca">OPTIONAL_WHITE_SPACES_REGEX</a> = re.compile(r'\s*')</td></tr>
+<tr class="memitem:a81f03eaffd2c0f4c6a453a0b179e51ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a81f03eaffd2c0f4c6a453a0b179e51ca">OPTIONAL_WHITE_SPACES_REGEX</a> = <a class="el" href="namespacere.html#afa1292bd279ff38b6cbfd3eb69ba83cc">re.compile</a>(r'\<a class="el" href="stringobject_8h.html#ad912d811fca4c9cfee37905bed81eb65">s</a>*')</td></tr>
 <tr class="separator:a81f03eaffd2c0f4c6a453a0b179e51ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ab1be351870f785a72d324bf56c8316"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a4ab1be351870f785a72d324bf56c8316">WHITE_SPACE_REGEX</a> = re.compile(r'\s')</td></tr>
+<tr class="memitem:a4ab1be351870f785a72d324bf56c8316"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a4ab1be351870f785a72d324bf56c8316">WHITE_SPACE_REGEX</a> = <a class="el" href="namespacere.html#afa1292bd279ff38b6cbfd3eb69ba83cc">re.compile</a>(r'\<a class="el" href="stringobject_8h.html#ad912d811fca4c9cfee37905bed81eb65">s</a>')</td></tr>
 <tr class="separator:a4ab1be351870f785a72d324bf56c8316"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45644ad738e584ec754f6d9f45fe693c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a45644ad738e584ec754f6d9f45fe693c">DOT_DOT_REGEX</a> = re.compile(r'\.\.')</td></tr>
+<tr class="memitem:a45644ad738e584ec754f6d9f45fe693c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepump.html#a45644ad738e584ec754f6d9f45fe693c">DOT_DOT_REGEX</a> = <a class="el" href="namespacere.html#afa1292bd279ff38b6cbfd3eb69ba83cc">re.compile</a>(r'\.\.')</td></tr>
 <tr class="separator:a45644ad738e584ec754f6d9f45fe693c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -231,8 +210,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00814">814</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
 </div>
 </div>
 <a id="a568fe53d1443489ac15bac4a0f9faf91"></a>
@@ -251,8 +228,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Return the text generated from the given Pump source text.</pre> 
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00823">823</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
 </div>
 </div>
 <a id="a38844b22bd5a51c098b07c2c36c5c5b3"></a>
@@ -270,8 +245,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Returns the special cursor to denote the end-of-file.</pre> 
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00132">132</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
 </div>
 </div>
 <a id="a08f2d05c192d11a134c008287bafef07"></a>
@@ -306,8 +279,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Finds the first occurrence of any string in strings in lines.</pre> 
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00186">186</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
 </div>
 </div>
 <a id="af9f92ec64fe45399c7e051115a107ee7"></a>
@@ -336,8 +307,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00169">169</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
 </div>
 </div>
 <a id="ac8a553b60dc83d100361a0e98d98451b"></a>
@@ -355,8 +324,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00783">783</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
 
 </div>
 </div>
@@ -386,8 +353,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00711">711</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
 </div>
 </div>
 <a id="a707a3ff4514c89607e48a87589aed787"></a>
@@ -405,8 +370,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00779">779</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
 
 </div>
 </div>
@@ -426,8 +389,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00707">707</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
 </div>
 </div>
 <a id="abcf26971f7bdbad77c2c168c110312df"></a>
@@ -445,8 +406,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00831">831</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
 
 </div>
 </div>
@@ -488,8 +447,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Creates a new instance of Token.</pre> 
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00237">237</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
 </div>
 </div>
 <a id="a5532710f334f026f80fc485decf5078e"></a>
@@ -507,8 +464,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00503">503</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
 
 </div>
 </div>
@@ -528,8 +483,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00564">564</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
 </div>
 </div>
 <a id="ae40493525a993e81929c6905e329a406"></a>
@@ -548,8 +501,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00475">475</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
 </div>
 </div>
 <a id="af62b08489d90e69d0577e82c98383ba7"></a>
@@ -567,8 +518,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00470">470</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
 
 </div>
 </div>
@@ -598,8 +547,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00281">281</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
 </div>
 </div>
 <a id="a56ac10a83a3a875d305c9aae71fc0549"></a>
@@ -618,8 +565,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Convert the given Pump source text into an AST.</pre> 
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00577">577</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
 </div>
 </div>
 <a id="a23761d99dd43d642e94d845218573035"></a>
@@ -660,8 +605,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00243">243</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
 </div>
 </div>
 <a id="ab12085e099ab4bd0cd968efdc435ec31"></a>
@@ -680,8 +623,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00463">463</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
 </div>
 </div>
 <a id="a8e2ff118da88397e88ccf68ebcd2df79"></a>
@@ -699,8 +640,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00443">443</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
 
 </div>
 </div>
@@ -730,8 +669,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00453">453</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
 </div>
 </div>
 <a id="a12c70577eb727526ac0ad17bf3b6c3a4"></a>
@@ -760,8 +697,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00449">449</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
 </div>
 </div>
 <a id="ae07150d94399cbe1661abe5929f921e0"></a>
@@ -779,8 +714,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00303">303</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
 
 </div>
 </div>
@@ -816,8 +749,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00656">656</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
 </div>
 </div>
 <a id="ac6a714a44e28c2a19a1dfabeb9c9d4f1"></a>
@@ -852,8 +783,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00702">702</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
 </div>
 </div>
 <a id="a869bd8932d9ee97f3a0e789abd05d590"></a>
@@ -887,8 +816,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00261">261</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
 
 </div>
 </div>
@@ -930,8 +857,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00270">270</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
 </div>
 </div>
 <a id="a9353db466a97e632058887a77c3b26aa"></a>
@@ -966,8 +891,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Returns True iff the given position in lines starts with 'string'.</pre> 
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00163">163</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
 </div>
 </div>
 <a id="a8c50cb40d65f26771c6f51eb265bb569"></a>
@@ -986,8 +909,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Strip meta comments from each line in the given string.</pre> 
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00226">226</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
 </div>
 </div>
 <a id="a859edb180cfc24c24fabcfb4f2bedf9e"></a>
@@ -1022,8 +943,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Returns a substring in lines.</pre> 
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00208">208</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
 </div>
 </div>
 <a id="aa42c23b1c914c0f86a94f2fa32999905"></a>
@@ -1042,8 +961,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <pre class="fragment">A generator that yields the tokens in the given string.</pre> 
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00382">382</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
 </div>
 </div>
 <a id="aa383d59e8e2a9507a576fd4c6b68b6b7"></a>
@@ -1071,8 +988,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00310">310</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
 
 </div>
 </div>
@@ -1108,8 +1023,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00741">741</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
 </div>
 </div>
 <a id="a73951c98652038351b1cd24291433e12"></a>
@@ -1137,8 +1050,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00717">717</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
 
 </div>
 </div>
@@ -1168,8 +1079,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00790">790</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
 </div>
 </div>
 <a id="a60723738cc38d8ced7e2cfecc72d8b11"></a>
@@ -1197,8 +1106,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00775">775</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
 
 </div>
 </div>
@@ -1228,8 +1135,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00771">771</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -1240,12 +1145,10 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pump.DOT_DOT_REGEX = re.compile(r'\.\.')</td>
+          <td class="memname">pump.DOT_DOT_REGEX = <a class="el" href="namespacere.html#afa1292bd279ff38b6cbfd3eb69ba83cc">re.compile</a>(r'\.\.')</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00258">258</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
 
 </div>
 </div>
@@ -1256,12 +1159,10 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pump.EQ_REGEX = re.compile(r'=')</td>
+          <td class="memname">pump.EQ_REGEX = <a class="el" href="namespacere.html#afa1292bd279ff38b6cbfd3eb69ba83cc">re.compile</a>(r'=')</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00254">254</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
 
 </div>
 </div>
@@ -1272,12 +1173,10 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pump.ID_REGEX = re.compile(r'[_A-Za-z]\w*')</td>
+          <td class="memname">pump.ID_REGEX = <a class="el" href="namespacere.html#afa1292bd279ff38b6cbfd3eb69ba83cc">re.compile</a>(r'[_A-Za-z]\w*')</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00253">253</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
 
 </div>
 </div>
@@ -1288,12 +1187,10 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pump.OPTIONAL_WHITE_SPACES_REGEX = re.compile(r'\s*')</td>
+          <td class="memname">pump.OPTIONAL_WHITE_SPACES_REGEX = <a class="el" href="namespacere.html#afa1292bd279ff38b6cbfd3eb69ba83cc">re.compile</a>(r'\<a class="el" href="stringobject_8h.html#ad912d811fca4c9cfee37905bed81eb65">s</a>*')</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00256">256</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
 
 </div>
 </div>
@@ -1304,12 +1201,10 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pump.REST_OF_LINE_REGEX = re.compile(r'.*?(?=$|\$\$)')</td>
+          <td class="memname">pump.REST_OF_LINE_REGEX = <a class="el" href="namespacere.html#afa1292bd279ff38b6cbfd3eb69ba83cc">re.compile</a>(r'.*?(?=$|\$\$)')</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00255">255</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
 
 </div>
 </div>
@@ -1324,9 +1219,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;=  [</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    (re.compile(<span class="stringliteral">r&#39;\$var\s+&#39;</span>), <span class="stringliteral">&#39;$var&#39;</span>),</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    (re.compile(<span class="stringliteral">r&#39;\$elif\s+&#39;</span>), <span class="stringliteral">&#39;$elif&#39;</span>),</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    (re.compile(<span class="stringliteral">r&#39;\$else\s+&#39;</span>), <span class="stringliteral">&#39;$else&#39;</span>),</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    (re.compile(<span class="stringliteral">r&#39;\$for\s+&#39;</span>), <span class="stringliteral">&#39;$for&#39;</span>),</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    (re.compile(<span class="stringliteral">r&#39;\$if\s+&#39;</span>), <span class="stringliteral">&#39;$if&#39;</span>),</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    (re.compile(<span class="stringliteral">r&#39;\$range\s+&#39;</span>), <span class="stringliteral">&#39;$range&#39;</span>),</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    (re.compile(<span class="stringliteral">r&#39;\$[_A-Za-z]\w*&#39;</span>), <span class="stringliteral">&#39;$id&#39;</span>),</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    (re.compile(<span class="stringliteral">r&#39;\$\(\$\)&#39;</span>), <span class="stringliteral">&#39;$($)&#39;</span>),</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    (re.compile(<span class="stringliteral">r&#39;\$&#39;</span>), <span class="stringliteral">&#39;$&#39;</span>),</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    (re.compile(<span class="stringliteral">r&#39;\[\[\n?&#39;</span>), <span class="stringliteral">&#39;[[&#39;</span>),</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    (re.compile(<span class="stringliteral">r&#39;\]\]\n?&#39;</span>), <span class="stringliteral">&#39;]]&#39;</span>),</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    ]</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00072">72</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
+<b>Initial value:</b><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;=  [</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    (<a class="code" href="namespacere.html#afa1292bd279ff38b6cbfd3eb69ba83cc">re.compile</a>(<span class="stringliteral">r&#39;\$var\s+&#39;</span>), <span class="stringliteral">&#39;$var&#39;</span>),</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    (<a class="code" href="namespacere.html#afa1292bd279ff38b6cbfd3eb69ba83cc">re.compile</a>(<span class="stringliteral">r&#39;\$elif\s+&#39;</span>), <span class="stringliteral">&#39;$elif&#39;</span>),</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    (<a class="code" href="namespacere.html#afa1292bd279ff38b6cbfd3eb69ba83cc">re.compile</a>(<span class="stringliteral">r&#39;\$else\s+&#39;</span>), <span class="stringliteral">&#39;$else&#39;</span>),</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    (<a class="code" href="namespacere.html#afa1292bd279ff38b6cbfd3eb69ba83cc">re.compile</a>(<span class="stringliteral">r&#39;\$for\s+&#39;</span>), <span class="stringliteral">&#39;$for&#39;</span>),</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    (<a class="code" href="namespacere.html#afa1292bd279ff38b6cbfd3eb69ba83cc">re.compile</a>(<span class="stringliteral">r&#39;\$if\s+&#39;</span>), <span class="stringliteral">&#39;$if&#39;</span>),</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    (<a class="code" href="namespacere.html#afa1292bd279ff38b6cbfd3eb69ba83cc">re.compile</a>(<span class="stringliteral">r&#39;\$range\s+&#39;</span>), <span class="stringliteral">&#39;$range&#39;</span>),</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    (<a class="code" href="namespacere.html#afa1292bd279ff38b6cbfd3eb69ba83cc">re.compile</a>(<span class="stringliteral">r&#39;\$[_A-Za-z]\w*&#39;</span>), <span class="stringliteral">&#39;$id&#39;</span>),</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    (<a class="code" href="namespacere.html#afa1292bd279ff38b6cbfd3eb69ba83cc">re.compile</a>(<span class="stringliteral">r&#39;\$\(\$\)&#39;</span>), <span class="stringliteral">&#39;$($)&#39;</span>),</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    (<a class="code" href="namespacere.html#afa1292bd279ff38b6cbfd3eb69ba83cc">re.compile</a>(<span class="stringliteral">r&#39;\$&#39;</span>), <span class="stringliteral">&#39;$&#39;</span>),</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    (<a class="code" href="namespacere.html#afa1292bd279ff38b6cbfd3eb69ba83cc">re.compile</a>(<span class="stringliteral">r&#39;\[\[\n?&#39;</span>), <span class="stringliteral">&#39;[[&#39;</span>),</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    (<a class="code" href="namespacere.html#afa1292bd279ff38b6cbfd3eb69ba83cc">re.compile</a>(<span class="stringliteral">r&#39;\]\]\n?&#39;</span>), <span class="stringliteral">&#39;]]&#39;</span>),</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    ]</div><div class="ttc" id="namespacere_html_afa1292bd279ff38b6cbfd3eb69ba83cc"><div class="ttname"><a href="namespacere.html#afa1292bd279ff38b6cbfd3eb69ba83cc">re.compile</a></div><div class="ttdeci">def compile(pattern, flags=0)</div><div class="ttdef"><b>Definition:</b> re.py:192</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4ab1be351870f785a72d324bf56c8316"></a>
@@ -1336,25 +1230,19 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pump.WHITE_SPACE_REGEX = re.compile(r'\s')</td>
+          <td class="memname">pump.WHITE_SPACE_REGEX = <a class="el" href="namespacere.html#afa1292bd279ff38b6cbfd3eb69ba83cc">re.compile</a>(r'\<a class="el" href="stringobject_8h.html#ad912d811fca4c9cfee37905bed81eb65">s</a>')</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pump_8py_source.html#l00257">257</a> of file <a class="el" href="pump_8py_source.html">pump.py</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacepump.html">pump</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

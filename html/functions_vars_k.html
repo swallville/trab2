@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -53,20 +46,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('functions_vars_k.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -88,6 +67,17 @@ $(document).ready(function(){initNavTree('functions_vars_k.html','');});
 <li>kBitCount
 : <a class="el" href="classtesting_1_1internal_1_1_floating_point.html#ab819d2e8f93e9e482373999f0f8d71b9">testing::internal::FloatingPoint&lt; RawType &gt;</a>
 </li>
+<li>keep
+: <a class="el" href="classsetuptools_1_1command_1_1rotate_1_1rotate.html#a5d5aeaa431c28bf2504ae02606f40342">setuptools.command.rotate.rotate</a>
+</li>
+<li>keep_temp
+: <a class="el" href="classsetuptools_1_1command_1_1bdist__egg_1_1bdist__egg.html#a2555cb62790306478e063514959fcca3">setuptools.command.bdist_egg.bdist_egg</a>
+, <a class="el" href="classwheel_1_1bdist__wheel_1_1bdist__wheel.html#adf5fd182a2a50a82d6a4124d7be2e2e6">wheel.bdist_wheel.bdist_wheel</a>
+</li>
+<li>keepTabs
+: <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_parser_element.html#a98a466764cbd1715eec4eb3415cf406c">pip._vendor.pyparsing.ParserElement</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1pyparsing_1_1_parser_element.html#ae93d8183eecae74400ed240710586937">pkg_resources._vendor.pyparsing.ParserElement</a>
+</li>
 <li>kElidedFramesMarker
 : <a class="el" href="classtesting_1_1internal_1_1_os_stack_trace_getter_interface.html#a669c49ce9ae05935e70bddb35a81ceb8">testing::internal::OsStackTraceGetterInterface</a>
 </li>
@@ -97,8 +87,30 @@ $(document).ready(function(){initNavTree('functions_vars_k.html','');});
 <li>kExponentBitMask
 : <a class="el" href="classtesting_1_1internal_1_1_floating_point.html#a66065dfc4d5f41100f686159637af23b">testing::internal::FloatingPoint&lt; RawType &gt;</a>
 </li>
+<li>key
+: <a class="el" href="struct__expr.html#af1e96cb8f6533bcd6f2380239aa5d0bf">_expr</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1database_1_1_distribution.html#ae942e497260a26f3f0359b15d224b45c">pip._vendor.distlib.database.Distribution</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1version_1_1_matcher.html#af7de148dbf8e2020068b8c57108247b5">pip._vendor.distlib.version.Matcher</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1version_1_1_version_scheme.html#a7935f941e8213e7c2cc6221e68e6311f">pip._vendor.distlib.version.VersionScheme</a>
+, <a class="el" href="classpip_1_1__vendor_1_1pkg__resources_1_1_distribution.html#a5654f3a35763ffac3c23579d041b83d3">pip._vendor.pkg_resources.Distribution</a>
+, <a class="el" href="classpip_1_1__vendor_1_1pkg__resources_1_1_requirement.html#a67311882f033af220ec23e3ac88f7aa2">pip._vendor.pkg_resources.Requirement</a>
+, <a class="el" href="classpkg__resources_1_1_distribution.html#acd3cd8d8ebc1d5b72cee86c87e45049f">pkg_resources.Distribution</a>
+, <a class="el" href="classpkg__resources_1_1_requirement.html#a87c67bd2d8f19575cc4f0a5928b1cea9">pkg_resources.Requirement</a>
+, <a class="el" href="structsetentry.html#a1825321554c31751882b7f447dbb2a28">setentry</a>
+</li>
+<li>key_file
+: <a class="el" href="classpip_1_1__vendor_1_1requests_1_1packages_1_1urllib3_1_1connection_1_1_h_t_t_p_s_connection.html#aa2c0d663875d7870af17de2e90669472">pip._vendor.requests.packages.urllib3.connection.HTTPSConnection</a>
+, <a class="el" href="classpip_1_1__vendor_1_1requests_1_1packages_1_1urllib3_1_1connection_1_1_verified_h_t_t_p_s_connection.html#a7a15b2b187d449d2f119b46dc2dd2af8">pip._vendor.requests.packages.urllib3.connection.VerifiedHTTPSConnection</a>
+, <a class="el" href="classpip_1_1__vendor_1_1requests_1_1packages_1_1urllib3_1_1connectionpool_1_1_h_t_t_p_s_connection_pool.html#a9a0d910bf9bd1a7be1460600ca369947">pip._vendor.requests.packages.urllib3.connectionpool.HTTPSConnectionPool</a>
+</li>
 <li>keys
-: <a class="el" href="classcpp_1_1ast_1_1___null_dict.html#abb0b7884aa59bede0a8503dffcd1733f">cpp.ast._NullDict</a>
+: <a class="el" href="struct__expr.html#a051be7d75dcaf30b244f0af24bfa6fdc">_expr</a>
+, <a class="el" href="classcpp_1_1ast_1_1___null_dict.html#abb0b7884aa59bede0a8503dffcd1733f">cpp.ast._NullDict</a>
+, <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_parse_results.html#af117a302af09f2e5e7a06670e4a82e0a">pip._vendor.pyparsing.ParseResults</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1pyparsing_1_1_parse_results.html#a17ed00f4f3dfeb5d5a64efffef447c35">pkg_resources._vendor.pyparsing.ParseResults</a>
+</li>
+<li>keywords
+: <a class="el" href="struct__expr.html#a57407aa982252ece65dece1af8041f57">_expr</a>
 </li>
 <li>kFractionBitCount
 : <a class="el" href="classtesting_1_1internal_1_1_floating_point.html#a0b756a6d2a4f5f5b41ca79651c06c043">testing::internal::FloatingPoint&lt; RawType &gt;</a>
@@ -106,25 +118,39 @@ $(document).ready(function(){initNavTree('functions_vars_k.html','');});
 <li>kFractionBitMask
 : <a class="el" href="classtesting_1_1internal_1_1_floating_point.html#a0ac75d4ffd24f14bca452abe8a718da1">testing::internal::FloatingPoint&lt; RawType &gt;</a>
 </li>
+<li>kind
+: <a class="el" href="struct__excepthandler.html#a4b560643cf632a1a95ad8233043fa642">_excepthandler</a>
+, <a class="el" href="struct__expr.html#a588eb2205de8b0b03e0edd5143a26cd0">_expr</a>
+, <a class="el" href="struct__mod.html#aa3c9c2b9eed3828cf2bcf8400859dcc0">_mod</a>
+, <a class="el" href="struct__slice.html#a9db6ac61022be11837644803e62dbae3">_slice</a>
+, <a class="el" href="struct__stmt.html#a9074cf45fef325a5baa737d59102ec9a">_stmt</a>
+</li>
 <li>kMaxRange
 : <a class="el" href="classtesting_1_1internal_1_1_random.html#a36d72dd7063d0b5338f229e75382fdd2">testing::internal::Random</a>
 </li>
 <li>kMaxUlps
 : <a class="el" href="classtesting_1_1internal_1_1_floating_point.html#aac498b3714d93f8e88cdc30e4c5935f6">testing::internal::FloatingPoint&lt; RawType &gt;</a>
 </li>
+<li>known_modules
+: <a class="el" href="classpip_1_1__vendor_1_1six_1_1___six_meta_path_importer.html#aa1e57b2dd8d238a687bc9cce4297cf5c">pip._vendor.six._SixMetaPathImporter</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1six_1_1___six_meta_path_importer.html#ae0f0cb99d40726a0c1cf7dbdde254486">pkg_resources._vendor.six._SixMetaPathImporter</a>
+</li>
 <li>kSignBitMask
 : <a class="el" href="classtesting_1_1internal_1_1_floating_point.html#aca98b5ea6f2222a66a82e52421682efa">testing::internal::FloatingPoint&lt; RawType &gt;</a>
 </li>
+<li>kwarg
+: <a class="el" href="struct__arguments.html#adaf47d76b5e7fd83511eceee4768b411">_arguments</a>
+</li>
+<li>kwargs
+: <a class="el" href="struct__expr.html#a123ee11e6d074da4cbcd6af56ef4be42">_expr</a>
+</li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

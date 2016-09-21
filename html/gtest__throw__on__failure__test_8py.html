@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('gtest__throw__on__failure__test_8py.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('gtest__throw__on__failure__test_8py.ht
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_acf1f0b8874b1064b8fc0cfc28c4e3cc.html">lib</a></li><li class="navelem"><a class="el" href="dir_be221b699d2f9bf4112c9d2789356b2c.html">googletest-master</a></li><li class="navelem"><a class="el" href="dir_f00c82e995c68d908486b449fc23a3ec.html">googletest</a></li><li class="navelem"><a class="el" href="dir_156b872751d758061c3ae95d7b0cdaa6.html">test</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -91,8 +74,6 @@ $(document).ready(function(){initNavTree('gtest__throw__on__failure__test_8py.ht
 <div class="title">gtest_throw_on_failure_test.py File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><a href="gtest__throw__on__failure__test_8py_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -106,28 +87,24 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a79d85cfffbf8e8381ba32483ddc305c0"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__throw__on__failure__test.html#a79d85cfffbf8e8381ba32483ddc305c0">gtest_throw_on_failure_test.SetEnvVar</a> (env_var, value)</td></tr>
+<tr class="memitem:a79d85cfffbf8e8381ba32483ddc305c0"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__throw__on__failure__test.html#a79d85cfffbf8e8381ba32483ddc305c0">gtest_throw_on_failure_test.SetEnvVar</a> (env_var, <a class="el" href="dictobject_8h.html#a4eabde677fab7743b016294ac2f430b9">value</a>)</td></tr>
 <tr class="separator:a79d85cfffbf8e8381ba32483ddc305c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ffdd989cd023f53d37f4f7993c017fe"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__throw__on__failure__test.html#a8ffdd989cd023f53d37f4f7993c017fe">gtest_throw_on_failure_test.Run</a> (command)</td></tr>
 <tr class="separator:a8ffdd989cd023f53d37f4f7993c017fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:af837d05b7ed8498aed8202c1d83d1e7a"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__throw__on__failure__test.html#af837d05b7ed8498aed8202c1d83d1e7a">gtest_throw_on_failure_test.THROW_ON_FAILURE</a> = 'gtest_throw_on_failure'</td></tr>
+<tr class="memitem:af837d05b7ed8498aed8202c1d83d1e7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__throw__on__failure__test.html#af837d05b7ed8498aed8202c1d83d1e7a">gtest_throw_on_failure_test.THROW_ON_FAILURE</a> = 'gtest_throw_on_failure'</td></tr>
 <tr class="separator:af837d05b7ed8498aed8202c1d83d1e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac38dda23e362ecc76943073d173294f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__throw__on__failure__test.html#ac38dda23e362ecc76943073d173294f1">gtest_throw_on_failure_test.EXE_PATH</a></td></tr>
 <tr class="separator:ac38dda23e362ecc76943073d173294f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_b80f002a4112fc8defa29deee9464b28.html">googletest-master</a></li><li class="navelem"><a class="el" href="dir_8339ebd0c16062e901f0dca0f5626014.html">googletest</a></li><li class="navelem"><a class="el" href="dir_de2fa21a95c91204b56df0f993ff4735.html">test</a></li><li class="navelem"><a class="el" href="gtest__throw__on__failure__test_8py.html">gtest_throw_on_failure_test.py</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classtesting_1_1internal_1_1_eq_helper_3_01true_01_4.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('classtesting_1_1internal_1_1_eq_helper
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="namespacetesting_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classtesting_1_1internal_1_1_eq_helper_3_01true_01_4.html">EqHelper&lt; true &gt;</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
@@ -95,19 +78,13 @@ $(document).ready(function(){initNavTree('classtesting_1_1internal_1_1_eq_helper
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a12c7194b2a210b61f06c912eef484ca6"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
-<tr class="memitem:a12c7194b2a210b61f06c912eef484ca6"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classtesting_1_1_assertion_result.html">AssertionResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_eq_helper_3_01true_01_4.html#a12c7194b2a210b61f06c912eef484ca6">Compare</a> (const char *lhs_expression, const char *rhs_expression, const T1 &amp;lhs, const T2 &amp;rhs, typename <a class="el" href="structtesting_1_1internal_1_1_enable_if.html">EnableIf</a>&lt;!<a class="el" href="structtesting_1_1internal_1_1is__pointer.html">is_pointer</a>&lt; T2 &gt;::value &gt;::type *=0)</td></tr>
+<tr class="memitem:a12c7194b2a210b61f06c912eef484ca6"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classtesting_1_1_assertion_result.html">AssertionResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_eq_helper_3_01true_01_4.html#a12c7194b2a210b61f06c912eef484ca6">Compare</a> (const char *lhs_expression, const char *rhs_expression, const T1 &amp;lhs, const T2 &amp;rhs, typename <a class="el" href="structtesting_1_1internal_1_1_enable_if.html">EnableIf</a>&lt;!<a class="el" href="structtesting_1_1internal_1_1is__pointer.html">is_pointer</a>&lt; T2 &gt;::<a class="el" href="dictobject_8h.html#a4eabde677fab7743b016294ac2f430b9">value</a> &gt;::<a class="el" href="pystrtod_8h.html#aa4a86d796321c3142c092ce30a5c2512">type</a> *=0)</td></tr>
 <tr class="separator:a12c7194b2a210b61f06c912eef484ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f292601a68c8f0d49e6d48bd309b900"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a6f292601a68c8f0d49e6d48bd309b900"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classtesting_1_1_assertion_result.html">AssertionResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_eq_helper_3_01true_01_4.html#a6f292601a68c8f0d49e6d48bd309b900">Compare</a> (const char *lhs_expression, const char *rhs_expression, Secret *, T *rhs)</td></tr>
 <tr class="separator:a6f292601a68c8f0d49e6d48bd309b900"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;&gt;<br />
-class testing::internal::EqHelper&lt; true &gt;</h3>
-
-
-<p>Definition at line <a class="el" href="gtest_8h_source.html#l01441">1441</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a12c7194b2a210b61f06c912eef484ca6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a12c7194b2a210b61f06c912eef484ca6">&sect;&nbsp;</a></span>Compare() <span class="overload">[1/2]</span></h2>
 
@@ -120,7 +97,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classtesting_1_1_assertion_result.html">AssertionResult</a> <a class="el" href="classtesting_1_1internal_1_1_eq_helper.html">testing::internal::EqHelper</a>&lt; true &gt;::Compare </td>
+          <td class="memname">static <a class="el" href="classtesting_1_1_assertion_result.html">AssertionResult</a> <a class="el" href="classtesting_1_1internal_1_1_eq_helper.html">testing::internal::EqHelper</a>&lt; <a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b">true</a> &gt;::Compare </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>lhs_expression</em>, </td>
@@ -146,7 +123,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">typename <a class="el" href="structtesting_1_1internal_1_1_enable_if.html">EnableIf</a>&lt;!<a class="el" href="structtesting_1_1internal_1_1is__pointer.html">is_pointer</a>&lt; T2 &gt;::value &gt;::type *&#160;</td>
+          <td class="paramtype">typename <a class="el" href="structtesting_1_1internal_1_1_enable_if.html">EnableIf</a>&lt;!<a class="el" href="structtesting_1_1internal_1_1is__pointer.html">is_pointer</a>&lt; T2 &gt;::<a class="el" href="dictobject_8h.html#a4eabde677fab7743b016294ac2f430b9">value</a> &gt;::<a class="el" href="pystrtod_8h.html#aa4a86d796321c3142c092ce30a5c2512">type</a> *&#160;</td>
           <td class="paramname"> = <code>0</code>&#160;</td>
         </tr>
         <tr>
@@ -162,8 +139,6 @@ template&lt;typename T1 , typename T2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest_8h_source.html#l01448">1448</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
-
 </div>
 </div>
 <a id="a6f292601a68c8f0d49e6d48bd309b900"></a>
@@ -178,7 +153,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classtesting_1_1_assertion_result.html">AssertionResult</a> <a class="el" href="classtesting_1_1internal_1_1_eq_helper.html">testing::internal::EqHelper</a>&lt; true &gt;::Compare </td>
+          <td class="memname">static <a class="el" href="classtesting_1_1_assertion_result.html">AssertionResult</a> <a class="el" href="classtesting_1_1internal_1_1_eq_helper.html">testing::internal::EqHelper</a>&lt; <a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b">true</a> &gt;::Compare </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>lhs_expression</em>, </td>
@@ -214,23 +189,17 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest_8h_source.html#l01465">1465</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>lib/googletest-master/googletest/include/gtest/<a class="el" href="gtest_8h_source.html">gtest.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="namespacetesting_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classtesting_1_1internal_1_1_eq_helper_3_01true_01_4.html">EqHelper&lt; true &gt;</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('namespacegmock__output__test.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,7 @@ $(document).ready(function(){initNavTree('namespacegmock__output__test.html','')
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -98,7 +77,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5c9ae3611cc4fac1e1340a3345865cf3"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegmock__output__test.html#a5c9ae3611cc4fac1e1340a3345865cf3">ToUnixLineEnding</a> (s)</td></tr>
+<tr class="memitem:a5c9ae3611cc4fac1e1340a3345865cf3"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegmock__output__test.html#a5c9ae3611cc4fac1e1340a3345865cf3">ToUnixLineEnding</a> (<a class="el" href="stringobject_8h.html#ad912d811fca4c9cfee37905bed81eb65">s</a>)</td></tr>
 <tr class="separator:a5c9ae3611cc4fac1e1340a3345865cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ebfc0abfb0ed307021ecaa9da465c55"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegmock__output__test.html#a2ebfc0abfb0ed307021ecaa9da465c55">RemoveReportHeaderAndFooter</a> (<a class="el" href="namespacegmock__output__test.html#a4277f8598ba3835393fe82e82d09375d">output</a>)</td></tr>
 <tr class="separator:a2ebfc0abfb0ed307021ecaa9da465c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,13 +100,13 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a0bd3131fe8262154217588fed6b28d45"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegmock__output__test.html#a0bd3131fe8262154217588fed6b28d45">GENGOLDEN_FLAG</a> = '--gengolden'</td></tr>
+<tr class="memitem:a0bd3131fe8262154217588fed6b28d45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegmock__output__test.html#a0bd3131fe8262154217588fed6b28d45">GENGOLDEN_FLAG</a> = '--gengolden'</td></tr>
 <tr class="separator:a0bd3131fe8262154217588fed6b28d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03aac0fac952a0b3648340f529af7f59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegmock__output__test.html#a03aac0fac952a0b3648340f529af7f59">PROGRAM_PATH</a> = <a class="el" href="namespacegmock__test__utils.html#aadd2927024e24f0c53f7ba283402cdb1">gmock_test_utils.GetTestExecutablePath</a>('gmock_output_test_')</td></tr>
 <tr class="separator:a03aac0fac952a0b3648340f529af7f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33f8ca97d99711e23517962ca4c729af"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegmock__output__test.html#a33f8ca97d99711e23517962ca4c729af">COMMAND</a> = [<a class="el" href="namespacegmock__output__test.html#a03aac0fac952a0b3648340f529af7f59">PROGRAM_PATH</a>, '--gtest_stack_trace_depth=0', '--gtest_print_time=0']</td></tr>
 <tr class="separator:a33f8ca97d99711e23517962ca4c729af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6e9298ea3967e6fa704c9c246d6cc18"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegmock__output__test.html#ac6e9298ea3967e6fa704c9c246d6cc18">GOLDEN_NAME</a> = 'gmock_output_test_golden.txt'</td></tr>
+<tr class="memitem:ac6e9298ea3967e6fa704c9c246d6cc18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegmock__output__test.html#ac6e9298ea3967e6fa704c9c246d6cc18">GOLDEN_NAME</a> = 'gmock_output_test_golden.txt'</td></tr>
 <tr class="separator:ac6e9298ea3967e6fa704c9c246d6cc18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a632c0fbf08500e4ed3c0e33f5e2ac771"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegmock__output__test.html#a632c0fbf08500e4ed3c0e33f5e2ac771">GOLDEN_PATH</a> = os.path.join(<a class="el" href="namespacegmock__test__utils.html#ab7217591e655e80392c9db6b99d04765">gmock_test_utils.GetSourceDir</a>(), <a class="el" href="namespacegmock__output__test.html#ac6e9298ea3967e6fa704c9c246d6cc18">GOLDEN_NAME</a>)</td></tr>
 <tr class="separator:a632c0fbf08500e4ed3c0e33f5e2ac771"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,8 +132,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Returns a list of test names that leak mock objects.</pre> 
-<p>Definition at line <a class="el" href="gmock__output__test_8py_source.html#l00110">110</a> of file <a class="el" href="gmock__output__test_8py_source.html">gmock_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a1796bc395fbfb8873992e3f84378e4bf"></a>
@@ -177,8 +154,6 @@ Variables</h2></td></tr>
 Args:
   cmd:  the shell command.
 </pre> 
-<p>Definition at line <a class="el" href="gmock__output__test_8py_source.html#l00144">144</a> of file <a class="el" href="gmock__output__test_8py_source.html">gmock_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a590ba3b918e5599eeabc2cbf597e2ce1"></a>
@@ -205,8 +180,6 @@ Returns:
   A tuple (the normalized test output, the list of test names that have
   leaked mocks).
 </pre> 
-<p>Definition at line <a class="el" href="gmock__output__test_8py_source.html#l00119">119</a> of file <a class="el" href="gmock__output__test_8py_source.html">gmock_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a001498a3e9bf552ee429e434eb00cb08"></a>
@@ -225,8 +198,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Runs a command in a sub-process, and returns its STDOUT in a string.</pre> 
-<p>Definition at line <a class="el" href="gmock__output__test_8py_source.html#l00138">138</a> of file <a class="el" href="gmock__output__test_8py_source.html">gmock_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="af3c1f95f19b9f048843a2d562d459b24"></a>
@@ -245,8 +216,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Normalizes the error marker, which is different on Windows vs on Linux.</pre> 
-<p>Definition at line <a class="el" href="gmock__output__test_8py_source.html#l00092">92</a> of file <a class="el" href="gmock__output__test_8py_source.html">gmock_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="aa3c93f8085ff0886bf0d160d71af2452"></a>
@@ -275,8 +244,6 @@ Returns:
      'DIRECTORY\\FILE_NAME(LINE_NUMBER): ') replaced by
      'FILE:#: '.
 </pre> 
-<p>Definition at line <a class="el" href="gmock__output__test_8py_source.html#l00076">76</a> of file <a class="el" href="gmock__output__test_8py_source.html">gmock_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a58b4fdb82b40d01d32b09d4c14ba11a5"></a>
@@ -295,8 +262,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Removes memory addresses from the test output.</pre> 
-<p>Definition at line <a class="el" href="gmock__output__test_8py_source.html#l00098">98</a> of file <a class="el" href="gmock__output__test_8py_source.html">gmock_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a2ebfc0abfb0ed307021ecaa9da465c55"></a>
@@ -315,8 +280,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Removes Google Test result report's header and footer from the output.</pre> 
-<p>Definition at line <a class="el" href="gmock__output__test_8py_source.html#l00065">65</a> of file <a class="el" href="gmock__output__test_8py_source.html">gmock_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="ac0628c5630d869dae45601df9d909638"></a>
@@ -335,8 +298,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Removes the test names of leaked mock objects from the test output.</pre> 
-<p>Definition at line <a class="el" href="gmock__output__test_8py_source.html#l00104">104</a> of file <a class="el" href="gmock__output__test_8py_source.html">gmock_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a5c9ae3611cc4fac1e1340a3345865cf3"></a>
@@ -355,8 +316,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Changes all Windows/Mac line endings in s to UNIX line endings.</pre> 
-<p>Definition at line <a class="el" href="gmock__output__test_8py_source.html#l00059">59</a> of file <a class="el" href="gmock__output__test_8py_source.html">gmock_output_test.py</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -372,8 +331,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock__output__test_8py_source.html#l00054">54</a> of file <a class="el" href="gmock__output__test_8py_source.html">gmock_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a0bd3131fe8262154217588fed6b28d45"></a>
@@ -383,12 +340,10 @@ Returns:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string gmock_output_test.GENGOLDEN_FLAG = '--gengolden'</td>
+          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> gmock_output_test.GENGOLDEN_FLAG = '--gengolden'</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock__output__test_8py_source.html#l00051">51</a> of file <a class="el" href="gmock__output__test_8py_source.html">gmock_output_test.py</a>.</p>
 
 </div>
 </div>
@@ -404,8 +359,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock__output__test_8py_source.html#l00176">176</a> of file <a class="el" href="gmock__output__test_8py_source.html">gmock_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="ac6e9298ea3967e6fa704c9c246d6cc18"></a>
@@ -415,12 +368,10 @@ Returns:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string gmock_output_test.GOLDEN_NAME = 'gmock_output_test_golden.txt'</td>
+          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> gmock_output_test.GOLDEN_NAME = 'gmock_output_test_golden.txt'</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock__output__test_8py_source.html#l00055">55</a> of file <a class="el" href="gmock__output__test_8py_source.html">gmock_output_test.py</a>.</p>
 
 </div>
 </div>
@@ -436,8 +387,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock__output__test_8py_source.html#l00056">56</a> of file <a class="el" href="gmock__output__test_8py_source.html">gmock_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a4277f8598ba3835393fe82e82d09375d"></a>
@@ -451,8 +400,6 @@ Returns:
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock__output__test_8py_source.html#l00175">175</a> of file <a class="el" href="gmock__output__test_8py_source.html">gmock_output_test.py</a>.</p>
 
 </div>
 </div>
@@ -468,20 +415,14 @@ Returns:
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock__output__test_8py_source.html#l00053">53</a> of file <a class="el" href="gmock__output__test_8py_source.html">gmock_output_test.py</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacegmock__output__test.html">gmock_output_test</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

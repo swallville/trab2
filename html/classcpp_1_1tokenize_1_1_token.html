@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classcpp_1_1tokenize_1_1_token.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('classcpp_1_1tokenize_1_1_token.html','
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacecpp.html">cpp</a></li><li class="navelem"><a class="el" href="namespacecpp_1_1tokenize.html">tokenize</a></li><li class="navelem"><a class="el" href="classcpp_1_1tokenize_1_1_token.html">Token</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -96,14 +79,15 @@ Inheritance diagram for cpp.tokenize.Token:</div>
  <div class="center">
   <img src="classcpp_1_1tokenize_1_1_token.png" usemap="#cpp.tokenize.Token_map" alt=""/>
   <map id="cpp.tokenize.Token_map" name="cpp.tokenize.Token_map">
+<area href="struct__object.html" alt="_object" shape="rect" coords="0,0,121,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7da7659a5a6c61d0f4b8590cf96e19fd"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcpp_1_1tokenize_1_1_token.html#a7da7659a5a6c61d0f4b8590cf96e19fd">__init__</a> (self, <a class="el" href="classcpp_1_1tokenize_1_1_token.html#a60c6e5120f3947885f10788ceb69a660">token_type</a>, <a class="el" href="classcpp_1_1tokenize_1_1_token.html#a90859dd16bde71bc38f717f5119e63b9">name</a>, <a class="el" href="classcpp_1_1tokenize_1_1_token.html#a8ec48e348ff29901857cb21553da464b">start</a>, <a class="el" href="classcpp_1_1tokenize_1_1_token.html#a9935738c382352eca19834c2533715db">end</a>)</td></tr>
+<tr class="memitem:a7da7659a5a6c61d0f4b8590cf96e19fd"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcpp_1_1tokenize_1_1_token.html#a7da7659a5a6c61d0f4b8590cf96e19fd">__init__</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>, <a class="el" href="classcpp_1_1tokenize_1_1_token.html#a60c6e5120f3947885f10788ceb69a660">token_type</a>, <a class="el" href="classcpp_1_1tokenize_1_1_token.html#a90859dd16bde71bc38f717f5119e63b9">name</a>, <a class="el" href="classcpp_1_1tokenize_1_1_token.html#a8ec48e348ff29901857cb21553da464b">start</a>, <a class="el" href="classcpp_1_1tokenize_1_1_token.html#a9935738c382352eca19834c2533715db">end</a>)</td></tr>
 <tr class="separator:a7da7659a5a6c61d0f4b8590cf96e19fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98e024051039637a18601fcbb0232cc2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcpp_1_1tokenize_1_1_token.html#a98e024051039637a18601fcbb0232cc2">__str__</a> (self)</td></tr>
+<tr class="memitem:a98e024051039637a18601fcbb0232cc2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcpp_1_1tokenize_1_1_token.html#a98e024051039637a18601fcbb0232cc2">__str__</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
 <tr class="separator:a98e024051039637a18601fcbb0232cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -127,9 +111,7 @@ pre-processor directives.
 
 start contains the index of the first char of the token in the source
 end contains the index of the last char of the token in the source
-</pre> 
-<p>Definition at line <a class="el" href="tokenize_8py_source.html#l00064">64</a> of file <a class="el" href="tokenize_8py_source.html">tokenize.py</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7da7659a5a6c61d0f4b8590cf96e19fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7da7659a5a6c61d0f4b8590cf96e19fd">&sect;&nbsp;</a></span>__init__()</h2>
 
@@ -174,8 +156,6 @@ end contains the index of the last char of the token in the source
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tokenize_8py_source.html#l00074">74</a> of file <a class="el" href="tokenize_8py_source.html">tokenize.py</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -195,8 +175,6 @@ end contains the index of the last char of the token in the source
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tokenize_8py_source.html#l00081">81</a> of file <a class="el" href="tokenize_8py_source.html">tokenize.py</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -212,8 +190,6 @@ end contains the index of the last char of the token in the source
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tokenize_8py_source.html#l00078">78</a> of file <a class="el" href="tokenize_8py_source.html">tokenize.py</a>.</p>
-
 </div>
 </div>
 <a id="a90859dd16bde71bc38f717f5119e63b9"></a>
@@ -227,8 +203,6 @@ end contains the index of the last char of the token in the source
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="tokenize_8py_source.html#l00076">76</a> of file <a class="el" href="tokenize_8py_source.html">tokenize.py</a>.</p>
 
 </div>
 </div>
@@ -244,8 +218,6 @@ end contains the index of the last char of the token in the source
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tokenize_8py_source.html#l00077">77</a> of file <a class="el" href="tokenize_8py_source.html">tokenize.py</a>.</p>
-
 </div>
 </div>
 <a id="a60c6e5120f3947885f10788ceb69a660"></a>
@@ -259,8 +231,6 @@ end contains the index of the last char of the token in the source
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="tokenize_8py_source.html#l00075">75</a> of file <a class="el" href="tokenize_8py_source.html">tokenize.py</a>.</p>
 
 </div>
 </div>
@@ -276,23 +246,17 @@ end contains the index of the last char of the token in the source
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tokenize_8py_source.html#l00079">79</a> of file <a class="el" href="tokenize_8py_source.html">tokenize.py</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>lib/googletest-master/googlemock/scripts/generator/cpp/<a class="el" href="tokenize_8py_source.html">tokenize.py</a></li>
+<li>lib/googletest-master/googlemock/scripts/generator/cpp/<a class="el" href="tokenize_8py.html">tokenize.py</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacecpp.html">cpp</a></li><li class="navelem"><a class="el" href="namespacecpp_1_1tokenize.html">tokenize</a></li><li class="navelem"><a class="el" href="classcpp_1_1tokenize_1_1_token.html">Token</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

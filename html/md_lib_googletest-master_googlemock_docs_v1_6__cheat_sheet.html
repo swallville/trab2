@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('md_lib_googletest-master_googlemock_docs_v1_6__cheat_sheet.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,7 @@ $(document).ready(function(){initNavTree('md_lib_googletest-master_googlemock_do
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">Defining a <a class="el" href="class_mock.html">Mock</a> Class </div>  </div>
@@ -237,24 +216,24 @@ $(document).ready(function(){initNavTree('md_lib_googletest-master_googlemock_do
 <p>Technically, all matchers match a <em>single</em> value. A "multi-argument" matcher is just one that matches a <em>tuple</em>. The following matchers can be used to match a tuple <code>(x, y)</code>:</p>
 <table class="doxtable">
 <tr>
-<th align="left"><code><a class="el" href="namespacetesting.html#a0cb8ba7eae844c871eccb29e7c81635f">Eq()</a></code></th><th align="left"><code>x == y</code>  </th></tr>
+<th align="left"><code><a class="el" href="_python-ast_8h.html#aeae2807c86997ffad2fa6d972a29ee1fae1f850d18e84a62c4d982716d88c9956">Eq()</a></code></th><th align="left"><code>x == y</code>  </th></tr>
 <tr>
 <td align="left"><code><a class="el" href="namespacetesting.html#a42bb19b42d7830b972973a103d5e00f2">Ge()</a></code></td><td align="left"><code>x &gt;= y</code> </td></tr>
 <tr>
-<td align="left"><code><a class="el" href="namespacetesting.html#a493fc1bafd7b3945ba06ace80e74b0d5">Gt()</a></code></td><td align="left"><code>x &gt; y</code> </td></tr>
+<td align="left"><code><a class="el" href="_python-ast_8h.html#aeae2807c86997ffad2fa6d972a29ee1fa5537aeeb812d680758d86f3a7a5f4008">Gt()</a></code></td><td align="left"><code>x &gt; y</code> </td></tr>
 <tr>
 <td align="left"><code><a class="el" href="namespacetesting.html#a2e33596921b80a7fdaff3f62bf18a478">Le()</a></code></td><td align="left"><code>x &lt;= y</code> </td></tr>
 <tr>
-<td align="left"><code><a class="el" href="namespacetesting.html#ad621459957a8bcdd3c256b7940ecbf99">Lt()</a></code></td><td align="left"><code>x &lt; y</code> </td></tr>
+<td align="left"><code><a class="el" href="_python-ast_8h.html#aeae2807c86997ffad2fa6d972a29ee1fafa56747a82e24ea192125ef6dbd04d90">Lt()</a></code></td><td align="left"><code>x &lt; y</code> </td></tr>
 <tr>
 <td align="left"><code><a class="el" href="namespacetesting.html#afe42d41d5171234cb9da5da27faeb7e8">Ne()</a></code></td><td align="left"><code>x != y</code> </td></tr>
 </table>
 <p>You can use the following selectors to pick a subset of the arguments (or reorder them) to participate in the matching:</p>
 <table class="doxtable">
 <tr>
-<th align="left"><code>AllArgs(m)</code></th><th align="left">Equivalent to <code>m</code>. Useful as syntactic sugar in <code>.With(AllArgs(m))</code>.  </th></tr>
+<th align="left"><code>AllArgs(m)</code></th><th align="left">Equivalent to <code>m</code>. Useful as syntactic sugar in <code>.<a class="el" href="_python-ast_8h.html#a0ef7ddc3b9bcb5c59195acbe024e3938">With(AllArgs(m))</a></code>.  </th></tr>
 <tr>
-<td align="left"><code>Args&lt;N1, N2, ..., Nk&gt;(m)</code></td><td align="left">The tuple of the <code>k</code> selected (using 0-based indices) arguments matches <code>m</code>, e.g. <code>Args&lt;1, 2&gt;(<a class="el" href="namespacetesting.html#a0cb8ba7eae844c871eccb29e7c81635f">Eq()</a>)</code>. </td></tr>
+<td align="left"><code>Args&lt;N1, N2, ..., Nk&gt;(m)</code></td><td align="left">The tuple of the <code>k</code> selected (using 0-based indices) arguments matches <code>m</code>, e.g. <code>Args&lt;1, 2&gt;(<a class="el" href="_python-ast_8h.html#aeae2807c86997ffad2fa6d972a29ee1fae1f850d18e84a62c4d982716d88c9956">Eq()</a>)</code>. </td></tr>
 </table>
 <h2>Composite Matchers</h2>
 <p>You can make a matcher from one or more other matchers:</p>
@@ -315,9 +294,9 @@ $(document).ready(function(){initNavTree('md_lib_googletest-master_googlemock_do
 <h2>Returning a Value</h2>
 <table class="doxtable">
 <tr>
-<th align="left"><code><a class="el" href="namespacetesting.html#af6d1c13e9376c77671e37545cd84359c">Return()</a></code></th><th align="left">Return from a <code>void</code> mock function.  </th></tr>
+<th align="left"><code><a class="el" href="_python-ast_8h.html#abdae7f49d66ce8e500825bb53aa14901">Return()</a></code></th><th align="left">Return from a <code>void</code> mock function.  </th></tr>
 <tr>
-<td align="left"><code>Return(value)</code></td><td align="left">Return <code>value</code>. If the type of <code>value</code> is different to the mock function's return type, <code>value</code> is converted to the latter type <em>at the time the expectation is set</em>, not when the action is executed. </td></tr>
+<td align="left"><code><a class="el" href="_python-ast_8h.html#abdae7f49d66ce8e500825bb53aa14901">Return(value)</a></code></td><td align="left">Return <code>value</code>. If the type of <code>value</code> is different to the mock function's return type, <code>value</code> is converted to the latter type <em>at the time the expectation is set</em>, not when the action is executed. </td></tr>
 <tr>
 <td align="left"><code>ReturnArg&lt;N&gt;()</code></td><td align="left">Return the <code>N</code>-th (0-based) argument. </td></tr>
 <tr>
@@ -334,7 +313,7 @@ $(document).ready(function(){initNavTree('md_lib_googletest-master_googlemock_do
 <h2>Side Effects</h2>
 <table class="doxtable">
 <tr>
-<th align="left"><code>Assign(&amp;variable, value)</code></th><th align="left">Assign <code>value</code> to variable.  </th></tr>
+<th align="left"><code><a class="el" href="_python-ast_8h.html#a20ef6778f00445938f70621bb6bcc118">Assign(&amp;variable, value)</a></code></th><th align="left">Assign <code>value</code> to variable.  </th></tr>
 <tr>
 <td align="left"><code>DeleteArg&lt;N&gt;()</code> </td><td align="left">Delete the <code>N</code>-th (0-based) argument, which must be a pointer. </td></tr>
 <tr>
@@ -432,14 +411,11 @@ $(document).ready(function(){initNavTree('md_lib_googletest-master_googlemock_do
 <td align="left"><code>--gmock_verbose=LEVEL</code> </td><td align="left">Sets the default verbosity level (<code>info</code>, <code>warning</code>, or <code>error</code>) of Google <a class="el" href="class_mock.html">Mock</a> messages. </td></tr>
 </table>
 </div></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('gtest-tuple_8h.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('gtest-tuple_8h.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_acf1f0b8874b1064b8fc0cfc28c4e3cc.html">lib</a></li><li class="navelem"><a class="el" href="dir_be221b699d2f9bf4112c9d2789356b2c.html">googletest-master</a></li><li class="navelem"><a class="el" href="dir_f00c82e995c68d908486b449fc23a3ec.html">googletest</a></li><li class="navelem"><a class="el" href="dir_80c21876318c16a0ba91a2796d235bf6.html">include</a></li><li class="navelem"><a class="el" href="dir_dd30ce38926dbb746a1d8882761a0693.html">gtest</a></li><li class="navelem"><a class="el" href="dir_bd9cd5c651657a65776957b485c04a52.html">internal</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -246,11 +229,11 @@ Macros</h2></td></tr>
 <tr class="separator:abddffb3c94eb04c852731e04af7bd338"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35f7cff9ee700bdb34a0582aad09c3ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest-tuple_8h.html#a35f7cff9ee700bdb34a0582aad09c3ab">GTEST_10_TYPENAMES_</a>(T)</td></tr>
 <tr class="separator:a35f7cff9ee700bdb34a0582aad09c3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcf9057737a411d833fac0382c13a181"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest-tuple_8h.html#adcf9057737a411d833fac0382c13a181">GTEST_BY_REF_</a>(T)&#160;&#160;&#160;typename ::<a class="el" href="structstd_1_1tr1_1_1gtest__internal_1_1_by_ref.html">std::tr1::gtest_internal::ByRef</a>&lt;T&gt;::type</td></tr>
+<tr class="memitem:adcf9057737a411d833fac0382c13a181"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest-tuple_8h.html#adcf9057737a411d833fac0382c13a181">GTEST_BY_REF_</a>(T)&#160;&#160;&#160;typename ::<a class="el" href="structstd_1_1tr1_1_1gtest__internal_1_1_by_ref.html">std::tr1::gtest_internal::ByRef</a>&lt;T&gt;::<a class="el" href="pystrtod_8h.html#aa4a86d796321c3142c092ce30a5c2512">type</a></td></tr>
 <tr class="separator:adcf9057737a411d833fac0382c13a181"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9d1fecdd5e7dcd9d0c9b75e31f5ee46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest-tuple_8h.html#aa9d1fecdd5e7dcd9d0c9b75e31f5ee46">GTEST_ADD_REF_</a>(T)&#160;&#160;&#160;typename ::<a class="el" href="structstd_1_1tr1_1_1gtest__internal_1_1_add_ref.html">std::tr1::gtest_internal::AddRef</a>&lt;T&gt;::type</td></tr>
+<tr class="memitem:aa9d1fecdd5e7dcd9d0c9b75e31f5ee46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest-tuple_8h.html#aa9d1fecdd5e7dcd9d0c9b75e31f5ee46">GTEST_ADD_REF_</a>(T)&#160;&#160;&#160;typename ::<a class="el" href="structstd_1_1tr1_1_1gtest__internal_1_1_add_ref.html">std::tr1::gtest_internal::AddRef</a>&lt;T&gt;::<a class="el" href="pystrtod_8h.html#aa4a86d796321c3142c092ce30a5c2512">type</a></td></tr>
 <tr class="separator:aa9d1fecdd5e7dcd9d0c9b75e31f5ee46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b7f133d8aa02e0b7afed7b66781eeb7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest-tuple_8h.html#a1b7f133d8aa02e0b7afed7b66781eeb7">GTEST_TUPLE_ELEMENT_</a>(k,  Tuple)&#160;&#160;&#160;typename tuple_element&lt;k, Tuple &gt;::type</td></tr>
+<tr class="memitem:a1b7f133d8aa02e0b7afed7b66781eeb7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest-tuple_8h.html#a1b7f133d8aa02e0b7afed7b66781eeb7">GTEST_TUPLE_ELEMENT_</a>(k,  <a class="el" href="_python-ast_8h.html#a3f332c0be139cb870e516bad9b6a9366">Tuple</a>)&#160;&#160;&#160;typename tuple_element&lt;k, <a class="el" href="_python-ast_8h.html#a3f332c0be139cb870e516bad9b6a9366">Tuple</a> &gt;::<a class="el" href="pystrtod_8h.html#aa4a86d796321c3142c092ce30a5c2512">type</a></td></tr>
 <tr class="separator:a1b7f133d8aa02e0b7afed7b66781eeb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -321,10 +304,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a7c131d0c2462612a78012be16114f61d"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestd_1_1tr1.html#a7c131d0c2462612a78012be16114f61d">std::tr1::GTEST_BY_REF_</a> (<a class="el" href="gtest-tuple_8h.html#a1b7f133d8aa02e0b7afed7b66781eeb7">GTEST_TUPLE_ELEMENT_</a>(k, <a class="el" href="gtest-tuple_8h.html#a275e7bcd84299cc44b9c1dba971951c4">GTEST_10_TUPLE_</a>(T))) get(const <a class="el" href="gtest-tuple_8h.html#a275e7bcd84299cc44b9c1dba971951c4">GTEST_10_TUPLE_</a>(T)&amp;t)</td></tr>
 <tr class="separator:a7c131d0c2462612a78012be16114f61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4516de784404381f9b14797694b6311"><td class="memTemplParams" colspan="2">template&lt;GTEST_10_TYPENAMES_(T) , GTEST_10_TYPENAMES_(U) &gt; </td></tr>
-<tr class="memitem:af4516de784404381f9b14797694b6311"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestd_1_1tr1.html#af4516de784404381f9b14797694b6311">std::tr1::operator==</a> (const <a class="el" href="gtest-tuple_8h.html#a275e7bcd84299cc44b9c1dba971951c4">GTEST_10_TUPLE_</a>(T)&amp;t, const <a class="el" href="gtest-tuple_8h.html#a275e7bcd84299cc44b9c1dba971951c4">GTEST_10_TUPLE_</a>(U)&amp;u)</td></tr>
+<tr class="memitem:af4516de784404381f9b14797694b6311"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestd_1_1tr1.html#af4516de784404381f9b14797694b6311">std::tr1::operator==</a> (const <a class="el" href="gtest-tuple_8h.html#a275e7bcd84299cc44b9c1dba971951c4">GTEST_10_TUPLE_</a>(T)&amp;t, const <a class="el" href="gtest-tuple_8h.html#a275e7bcd84299cc44b9c1dba971951c4">GTEST_10_TUPLE_</a>(U)&amp;u)</td></tr>
 <tr class="separator:af4516de784404381f9b14797694b6311"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a058882c51de469b5e78d29076f864940"><td class="memTemplParams" colspan="2">template&lt;GTEST_10_TYPENAMES_(T) , GTEST_10_TYPENAMES_(U) &gt; </td></tr>
-<tr class="memitem:a058882c51de469b5e78d29076f864940"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestd_1_1tr1.html#a058882c51de469b5e78d29076f864940">std::tr1::operator!=</a> (const <a class="el" href="gtest-tuple_8h.html#a275e7bcd84299cc44b9c1dba971951c4">GTEST_10_TUPLE_</a>(T)&amp;t, const <a class="el" href="gtest-tuple_8h.html#a275e7bcd84299cc44b9c1dba971951c4">GTEST_10_TUPLE_</a>(U)&amp;u)</td></tr>
+<tr class="memitem:a058882c51de469b5e78d29076f864940"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestd_1_1tr1.html#a058882c51de469b5e78d29076f864940">std::tr1::operator!=</a> (const <a class="el" href="gtest-tuple_8h.html#a275e7bcd84299cc44b9c1dba971951c4">GTEST_10_TUPLE_</a>(T)&amp;t, const <a class="el" href="gtest-tuple_8h.html#a275e7bcd84299cc44b9c1dba971951c4">GTEST_10_TUPLE_</a>(U)&amp;u)</td></tr>
 <tr class="separator:a058882c51de469b5e78d29076f864940"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -365,8 +348,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-tuple_8h_source.html#l00065">65</a> of file <a class="el" href="gtest-tuple_8h_source.html">gtest-tuple.h</a>.</p>
-
 </div>
 </div>
 <a id="ac6784ade57659fbc58baa03c265ca0ac"></a>
@@ -385,8 +366,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-tuple_8h_source.html#l00088">88</a> of file <a class="el" href="gtest-tuple_8h_source.html">gtest-tuple.h</a>.</p>
-
 </div>
 </div>
 <a id="a275e7bcd84299cc44b9c1dba971951c4"></a>
@@ -404,9 +383,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">tuple&lt;T##0, T##1, T##2, T##3, T##4, T##5, T##6, \</div><div class="line">    T##7, T##8, T##9&gt;</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest-tuple_8h_source.html#l00084">84</a> of file <a class="el" href="gtest-tuple_8h_source.html">gtest-tuple.h</a>.</p>
-
+<b>Value:</b><div class="fragment"><div class="line">tuple&lt;<a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##0, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##1, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##2, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##3, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##4, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##5, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##6, \</div><div class="line">    T##7, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##8, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##9&gt;</div><div class="ttc" id="namespacere_html_a0a6ad2ab717216278b20a707fbc1ff8b"><div class="ttname"><a href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">re.T</a></div><div class="ttdeci">T</div><div class="ttdef"><b>Definition:</b> re.py:129</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a35f7cff9ee700bdb34a0582aad09c3ab"></a>
@@ -424,9 +402,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">typename</span> T##0, <span class="keyword">typename</span> T##1, <span class="keyword">typename</span> T##2, \</div><div class="line">    typename T##3, <span class="keyword">typename</span> T##4, <span class="keyword">typename</span> T##5, <span class="keyword">typename</span> T##6, \</div><div class="line">    typename T##7, <span class="keyword">typename</span> T##8, <span class="keyword">typename</span> T##9</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest-tuple_8h_source.html#l00105">105</a> of file <a class="el" href="gtest-tuple_8h_source.html">gtest-tuple.h</a>.</p>
-
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##0, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##1, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##2, \</div><div class="line">    typename <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##3, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##4, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##5, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##6, \</div><div class="line">    typename <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##7, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##8, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##9</div><div class="ttc" id="namespacere_html_a0a6ad2ab717216278b20a707fbc1ff8b"><div class="ttname"><a href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">re.T</a></div><div class="ttdeci">T</div><div class="ttdef"><b>Definition:</b> re.py:129</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a544374090885c4127adc2c618570323c"></a>
@@ -444,9 +421,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">tuple&lt;T##0, void, void, void, void, void, void, \</div><div class="line">    void, void, <span class="keywordtype">void</span>&gt;</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest-tuple_8h_source.html#l00066">66</a> of file <a class="el" href="gtest-tuple_8h_source.html">gtest-tuple.h</a>.</p>
-
+<b>Value:</b><div class="fragment"><div class="line">tuple&lt;<a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##0, void, void, void, void, void, void, \</div><div class="line">    void, void, <span class="keywordtype">void</span>&gt;</div><div class="ttc" id="namespacere_html_a0a6ad2ab717216278b20a707fbc1ff8b"><div class="ttname"><a href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">re.T</a></div><div class="ttdeci">T</div><div class="ttdef"><b>Definition:</b> re.py:129</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2042d8e9fefb83752b1028d640adfaf2"></a>
@@ -465,8 +441,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-tuple_8h_source.html#l00089">89</a> of file <a class="el" href="gtest-tuple_8h_source.html">gtest-tuple.h</a>.</p>
-
 </div>
 </div>
 <a id="a93229c3f009273c73eca237b4d19f326"></a>
@@ -484,9 +458,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">tuple&lt;T##0, T##1, void, void, void, void, void, \</div><div class="line">    void, void, <span class="keywordtype">void</span>&gt;</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest-tuple_8h_source.html#l00068">68</a> of file <a class="el" href="gtest-tuple_8h_source.html">gtest-tuple.h</a>.</p>
-
+<b>Value:</b><div class="fragment"><div class="line">tuple&lt;<a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##0, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##1, void, void, void, void, void, \</div><div class="line">    void, void, <span class="keywordtype">void</span>&gt;</div><div class="ttc" id="namespacere_html_a0a6ad2ab717216278b20a707fbc1ff8b"><div class="ttname"><a href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">re.T</a></div><div class="ttdeci">T</div><div class="ttdef"><b>Definition:</b> re.py:129</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a665ccbdcd2c47415856cefe730e5e282"></a>
@@ -505,8 +478,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-tuple_8h_source.html#l00090">90</a> of file <a class="el" href="gtest-tuple_8h_source.html">gtest-tuple.h</a>.</p>
-
 </div>
 </div>
 <a id="af2c3eab3f1a5197b408fce44eb3ed9da"></a>
@@ -524,9 +495,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">tuple&lt;T##0, T##1, T##2, void, void, void, void, \</div><div class="line">    void, void, <span class="keywordtype">void</span>&gt;</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest-tuple_8h_source.html#l00070">70</a> of file <a class="el" href="gtest-tuple_8h_source.html">gtest-tuple.h</a>.</p>
-
+<b>Value:</b><div class="fragment"><div class="line">tuple&lt;<a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##0, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##1, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##2, void, void, void, void, \</div><div class="line">    void, void, <span class="keywordtype">void</span>&gt;</div><div class="ttc" id="namespacere_html_a0a6ad2ab717216278b20a707fbc1ff8b"><div class="ttname"><a href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">re.T</a></div><div class="ttdeci">T</div><div class="ttdef"><b>Definition:</b> re.py:129</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a535b68cc32f2d48e6d6d2a30eff606c9"></a>
@@ -545,8 +515,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-tuple_8h_source.html#l00091">91</a> of file <a class="el" href="gtest-tuple_8h_source.html">gtest-tuple.h</a>.</p>
-
 </div>
 </div>
 <a id="a3625feb24d5e6eb9926fd558e4a2e3ff"></a>
@@ -564,9 +532,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">tuple&lt;T##0, T##1, T##2, T##3, void, void, void, \</div><div class="line">    void, void, <span class="keywordtype">void</span>&gt;</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest-tuple_8h_source.html#l00072">72</a> of file <a class="el" href="gtest-tuple_8h_source.html">gtest-tuple.h</a>.</p>
-
+<b>Value:</b><div class="fragment"><div class="line">tuple&lt;<a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##0, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##1, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##2, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##3, void, void, void, \</div><div class="line">    void, void, <span class="keywordtype">void</span>&gt;</div><div class="ttc" id="namespacere_html_a0a6ad2ab717216278b20a707fbc1ff8b"><div class="ttname"><a href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">re.T</a></div><div class="ttdeci">T</div><div class="ttdef"><b>Definition:</b> re.py:129</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af63ec5728af4beedddae6e674c60d9e1"></a>
@@ -584,9 +551,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">typename</span> T##0, <span class="keyword">typename</span> T##1, <span class="keyword">typename</span> T##2, \</div><div class="line">    typename T##3</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest-tuple_8h_source.html#l00092">92</a> of file <a class="el" href="gtest-tuple_8h_source.html">gtest-tuple.h</a>.</p>
-
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##0, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##1, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##2, \</div><div class="line">    typename <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##3</div><div class="ttc" id="namespacere_html_a0a6ad2ab717216278b20a707fbc1ff8b"><div class="ttname"><a href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">re.T</a></div><div class="ttdeci">T</div><div class="ttdef"><b>Definition:</b> re.py:129</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a64e6f4a4cf55f62cde94066c6d5d5c74"></a>
@@ -604,9 +570,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">tuple&lt;T##0, T##1, T##2, T##3, T##4, void, void, \</div><div class="line">    void, void, <span class="keywordtype">void</span>&gt;</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest-tuple_8h_source.html#l00074">74</a> of file <a class="el" href="gtest-tuple_8h_source.html">gtest-tuple.h</a>.</p>
-
+<b>Value:</b><div class="fragment"><div class="line">tuple&lt;<a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##0, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##1, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##2, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##3, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##4, void, void, \</div><div class="line">    void, void, <span class="keywordtype">void</span>&gt;</div><div class="ttc" id="namespacere_html_a0a6ad2ab717216278b20a707fbc1ff8b"><div class="ttname"><a href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">re.T</a></div><div class="ttdeci">T</div><div class="ttdef"><b>Definition:</b> re.py:129</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a203a696b247f45ebfce1d54d77facd7e"></a>
@@ -624,9 +589,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">typename</span> T##0, <span class="keyword">typename</span> T##1, <span class="keyword">typename</span> T##2, \</div><div class="line">    typename T##3, <span class="keyword">typename</span> T##4</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest-tuple_8h_source.html#l00094">94</a> of file <a class="el" href="gtest-tuple_8h_source.html">gtest-tuple.h</a>.</p>
-
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##0, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##1, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##2, \</div><div class="line">    typename <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##3, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##4</div><div class="ttc" id="namespacere_html_a0a6ad2ab717216278b20a707fbc1ff8b"><div class="ttname"><a href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">re.T</a></div><div class="ttdeci">T</div><div class="ttdef"><b>Definition:</b> re.py:129</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a53f36c86a979ed8285bf3c6f82f16483"></a>
@@ -644,9 +608,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">tuple&lt;T##0, T##1, T##2, T##3, T##4, T##5, void, \</div><div class="line">    void, void, <span class="keywordtype">void</span>&gt;</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest-tuple_8h_source.html#l00076">76</a> of file <a class="el" href="gtest-tuple_8h_source.html">gtest-tuple.h</a>.</p>
-
+<b>Value:</b><div class="fragment"><div class="line">tuple&lt;<a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##0, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##1, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##2, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##3, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##4, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##5, void, \</div><div class="line">    void, void, <span class="keywordtype">void</span>&gt;</div><div class="ttc" id="namespacere_html_a0a6ad2ab717216278b20a707fbc1ff8b"><div class="ttname"><a href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">re.T</a></div><div class="ttdeci">T</div><div class="ttdef"><b>Definition:</b> re.py:129</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a32679ec05b85f9b8130c4e8f93440f30"></a>
@@ -664,9 +627,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">typename</span> T##0, <span class="keyword">typename</span> T##1, <span class="keyword">typename</span> T##2, \</div><div class="line">    typename T##3, <span class="keyword">typename</span> T##4, <span class="keyword">typename</span> T##5</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest-tuple_8h_source.html#l00096">96</a> of file <a class="el" href="gtest-tuple_8h_source.html">gtest-tuple.h</a>.</p>
-
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##0, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##1, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##2, \</div><div class="line">    typename <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##3, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##4, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##5</div><div class="ttc" id="namespacere_html_a0a6ad2ab717216278b20a707fbc1ff8b"><div class="ttname"><a href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">re.T</a></div><div class="ttdeci">T</div><div class="ttdef"><b>Definition:</b> re.py:129</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8987baf82ee028d1d778447413a02c0c"></a>
@@ -684,9 +646,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">tuple&lt;T##0, T##1, T##2, T##3, T##4, T##5, T##6, \</div><div class="line">    void, void, <span class="keywordtype">void</span>&gt;</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest-tuple_8h_source.html#l00078">78</a> of file <a class="el" href="gtest-tuple_8h_source.html">gtest-tuple.h</a>.</p>
-
+<b>Value:</b><div class="fragment"><div class="line">tuple&lt;<a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##0, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##1, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##2, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##3, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##4, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##5, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##6, \</div><div class="line">    void, void, <span class="keywordtype">void</span>&gt;</div><div class="ttc" id="namespacere_html_a0a6ad2ab717216278b20a707fbc1ff8b"><div class="ttname"><a href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">re.T</a></div><div class="ttdeci">T</div><div class="ttdef"><b>Definition:</b> re.py:129</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af381ce2b1b801f7b5a50046f3715d3f6"></a>
@@ -704,9 +665,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">typename</span> T##0, <span class="keyword">typename</span> T##1, <span class="keyword">typename</span> T##2, \</div><div class="line">    typename T##3, <span class="keyword">typename</span> T##4, <span class="keyword">typename</span> T##5, <span class="keyword">typename</span> T##6</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest-tuple_8h_source.html#l00098">98</a> of file <a class="el" href="gtest-tuple_8h_source.html">gtest-tuple.h</a>.</p>
-
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##0, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##1, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##2, \</div><div class="line">    typename <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##3, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##4, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##5, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##6</div><div class="ttc" id="namespacere_html_a0a6ad2ab717216278b20a707fbc1ff8b"><div class="ttname"><a href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">re.T</a></div><div class="ttdeci">T</div><div class="ttdef"><b>Definition:</b> re.py:129</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2bc36d1a71a551e6cda2ac5504fb7ce3"></a>
@@ -724,9 +684,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">tuple&lt;T##0, T##1, T##2, T##3, T##4, T##5, T##6, \</div><div class="line">    T##7, void, <span class="keywordtype">void</span>&gt;</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest-tuple_8h_source.html#l00080">80</a> of file <a class="el" href="gtest-tuple_8h_source.html">gtest-tuple.h</a>.</p>
-
+<b>Value:</b><div class="fragment"><div class="line">tuple&lt;<a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##0, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##1, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##2, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##3, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##4, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##5, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##6, \</div><div class="line">    T##7, void, <span class="keywordtype">void</span>&gt;</div><div class="ttc" id="namespacere_html_a0a6ad2ab717216278b20a707fbc1ff8b"><div class="ttname"><a href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">re.T</a></div><div class="ttdeci">T</div><div class="ttdef"><b>Definition:</b> re.py:129</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a671a16a68d7f67df1677740fe451b3ba"></a>
@@ -744,9 +703,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">typename</span> T##0, <span class="keyword">typename</span> T##1, <span class="keyword">typename</span> T##2, \</div><div class="line">    typename T##3, <span class="keyword">typename</span> T##4, <span class="keyword">typename</span> T##5, <span class="keyword">typename</span> T##6, <span class="keyword">typename</span> T##7</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest-tuple_8h_source.html#l00100">100</a> of file <a class="el" href="gtest-tuple_8h_source.html">gtest-tuple.h</a>.</p>
-
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##0, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##1, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##2, \</div><div class="line">    typename <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##3, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##4, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##5, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##6, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##7</div><div class="ttc" id="namespacere_html_a0a6ad2ab717216278b20a707fbc1ff8b"><div class="ttname"><a href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">re.T</a></div><div class="ttdeci">T</div><div class="ttdef"><b>Definition:</b> re.py:129</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1a81c17bfe3cdceb4d56b15985a44a7e"></a>
@@ -764,9 +722,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">tuple&lt;T##0, T##1, T##2, T##3, T##4, T##5, T##6, \</div><div class="line">    T##7, T##8, <span class="keywordtype">void</span>&gt;</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest-tuple_8h_source.html#l00082">82</a> of file <a class="el" href="gtest-tuple_8h_source.html">gtest-tuple.h</a>.</p>
-
+<b>Value:</b><div class="fragment"><div class="line">tuple&lt;<a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##0, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##1, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##2, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##3, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##4, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##5, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##6, \</div><div class="line">    T##7, <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##8, <span class="keywordtype">void</span>&gt;</div><div class="ttc" id="namespacere_html_a0a6ad2ab717216278b20a707fbc1ff8b"><div class="ttname"><a href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">re.T</a></div><div class="ttdeci">T</div><div class="ttdef"><b>Definition:</b> re.py:129</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abddffb3c94eb04c852731e04af7bd338"></a>
@@ -784,9 +741,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">typename</span> T##0, <span class="keyword">typename</span> T##1, <span class="keyword">typename</span> T##2, \</div><div class="line">    typename T##3, <span class="keyword">typename</span> T##4, <span class="keyword">typename</span> T##5, <span class="keyword">typename</span> T##6, \</div><div class="line">    typename T##7, <span class="keyword">typename</span> T##8</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest-tuple_8h_source.html#l00102">102</a> of file <a class="el" href="gtest-tuple_8h_source.html">gtest-tuple.h</a>.</p>
-
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##0, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##1, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##2, \</div><div class="line">    typename <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##3, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##4, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##5, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##6, \</div><div class="line">    typename <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##7, <span class="keyword">typename</span> <a class="code" href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">T</a>##8</div><div class="ttc" id="namespacere_html_a0a6ad2ab717216278b20a707fbc1ff8b"><div class="ttname"><a href="namespacere.html#a0a6ad2ab717216278b20a707fbc1ff8b">re.T</a></div><div class="ttdeci">T</div><div class="ttdef"><b>Definition:</b> re.py:129</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa9d1fecdd5e7dcd9d0c9b75e31f5ee46"></a>
@@ -800,12 +756,10 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">T</td><td>)</td>
-          <td>&#160;&#160;&#160;typename ::<a class="el" href="structstd_1_1tr1_1_1gtest__internal_1_1_add_ref.html">std::tr1::gtest_internal::AddRef</a>&lt;T&gt;::type</td>
+          <td>&#160;&#160;&#160;typename ::<a class="el" href="structstd_1_1tr1_1_1gtest__internal_1_1_add_ref.html">std::tr1::gtest_internal::AddRef</a>&lt;T&gt;::<a class="el" href="pystrtod_8h.html#aa4a86d796321c3142c092ce30a5c2512">type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-tuple_8h_source.html#l00142">142</a> of file <a class="el" href="gtest-tuple_8h_source.html">gtest-tuple.h</a>.</p>
 
 </div>
 </div>
@@ -820,12 +774,10 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">T</td><td>)</td>
-          <td>&#160;&#160;&#160;typename ::<a class="el" href="structstd_1_1tr1_1_1gtest__internal_1_1_by_ref.html">std::tr1::gtest_internal::ByRef</a>&lt;T&gt;::type</td>
+          <td>&#160;&#160;&#160;typename ::<a class="el" href="structstd_1_1tr1_1_1gtest__internal_1_1_by_ref.html">std::tr1::gtest_internal::ByRef</a>&lt;T&gt;::<a class="el" href="pystrtod_8h.html#aa4a86d796321c3142c092ce30a5c2512">type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-tuple_8h_source.html#l00132">132</a> of file <a class="el" href="gtest-tuple_8h_source.html">gtest-tuple.h</a>.</p>
 
 </div>
 </div>
@@ -841,8 +793,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;GTEST_10_TYPENAMES_(U)&gt; <span class="keyword">friend</span> <span class="keyword">class </span>tuple; \</div><div class="line">   private:</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest-tuple_8h_source.html#l00051">51</a> of file <a class="el" href="gtest-tuple_8h_source.html">gtest-tuple.h</a>.</p>
-
 </div>
 </div>
 <a id="a1b7f133d8aa02e0b7afed7b66781eeb7"></a>
@@ -861,30 +811,24 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">Tuple&#160;</td>
+          <td class="paramname"><a class="el" href="_python-ast_8h.html#a3f332c0be139cb870e516bad9b6a9366">Tuple</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;typename tuple_element&lt;k, Tuple &gt;::type</td>
+          <td></td><td>&#160;&#160;&#160;typename tuple_element&lt;k, <a class="el" href="_python-ast_8h.html#a3f332c0be139cb870e516bad9b6a9366">Tuple</a> &gt;::<a class="el" href="pystrtod_8h.html#aa4a86d796321c3142c092ce30a5c2512">type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-tuple_8h_source.html#l00801">801</a> of file <a class="el" href="gtest-tuple_8h_source.html">gtest-tuple.h</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_b80f002a4112fc8defa29deee9464b28.html">googletest-master</a></li><li class="navelem"><a class="el" href="dir_8339ebd0c16062e901f0dca0f5626014.html">googletest</a></li><li class="navelem"><a class="el" href="dir_7bdf76898677ff32d1912ff4489ec9f5.html">include</a></li><li class="navelem"><a class="el" href="dir_b3e1a8ca349b609fcf0866d66d008233.html">gtest</a></li><li class="navelem"><a class="el" href="dir_48a3fa24ff2a394e3a036d7f29de5070.html">internal</a></li><li class="navelem"><a class="el" href="gtest-tuple_8h.html">gtest-tuple.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

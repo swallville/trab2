@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classtesting_1_1_matcher_describer_interface.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('classtesting_1_1_matcher_describer_int
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="classtesting_1_1_matcher_describer_interface.html">MatcherDescriberInterface</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -121,10 +104,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2071afbc47097c4d1c0064275af34db0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_matcher_describer_interface.html#a2071afbc47097c4d1c0064275af34db0">DescribeNegationTo</a> (::std::ostream *os) const</td></tr>
 <tr class="separator:a2071afbc47097c4d1c0064275af34db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="gmock-matchers_8h_source.html#l00117">117</a> of file <a class="el" href="gmock-matchers_8h_source.html">gmock-matchers.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae2236a56ad2cc35cad10efc1208854f4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae2236a56ad2cc35cad10efc1208854f4">&sect;&nbsp;</a></span>~MatcherDescriberInterface()</h2>
 
@@ -147,8 +127,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers_8h_source.html#l00119">119</a> of file <a class="el" href="gmock-matchers_8h_source.html">gmock-matchers.h</a>.</p>
 
 </div>
 </div>
@@ -178,8 +156,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reimplemented in <a class="el" href="classtesting_1_1internal_1_1_unordered_elements_are_matcher_impl.html#af2185915595c02d6132ba5f3f9ccb6cd">testing::internal::UnorderedElementsAreMatcherImpl&lt; Container &gt;</a>, <a class="el" href="classtesting_1_1internal_1_1_elements_are_matcher_impl.html#ab8485a836eb7ffabc43b05187e58616d">testing::internal::ElementsAreMatcherImpl&lt; Container &gt;</a>, <a class="el" href="classtesting_1_1internal_1_1_pair_matcher_impl.html#a41ef8b1ae031cf342a380e2f2fb2a526">testing::internal::PairMatcherImpl&lt; PairType &gt;</a>, <a class="el" href="classtesting_1_1internal_1_1_key_matcher_impl.html#a4be87d136547063a16777151b691046d">testing::internal::KeyMatcherImpl&lt; PairType &gt;</a>, <a class="el" href="classtesting_1_1internal_1_1_each_matcher_impl.html#a5be5bbd61f7a350fcbe30deea4c2a0c6">testing::internal::EachMatcherImpl&lt; Container &gt;</a>, <a class="el" href="classtesting_1_1internal_1_1_contains_matcher_impl.html#a9d7867110ba3f346399f23e41cc75c5b">testing::internal::ContainsMatcherImpl&lt; Container &gt;</a>, <a class="el" href="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl.html#a26d3a829149e4c497aaced42aad7b247">testing::internal::PointwiseMatcher&lt; TupleMatcher, RhsContainer &gt;::Impl&lt; LhsContainer &gt;</a>, <a class="el" href="classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl.html#a0a59f77fdbb88a6326e5aba671f2aa3e">testing::internal::WhenSortedByMatcher&lt; Comparator, ContainerMatcher &gt;::Impl&lt; LhsContainer &gt;</a>, <a class="el" href="classtesting_1_1internal_1_1_begin_end_distance_is_matcher_1_1_impl.html#a359711f21b6f116a5233fca78736fa47">testing::internal::BeginEndDistanceIsMatcher&lt; DistanceMatcher &gt;::Impl&lt; Container &gt;</a>, <a class="el" href="classtesting_1_1internal_1_1_size_is_matcher_1_1_impl.html#a24b76fc2ac7b8d58cb5c7a3c5d5d35ab">testing::internal::SizeIsMatcher&lt; SizeMatcher &gt;::Impl&lt; Container &gt;</a>, <a class="el" href="classtesting_1_1internal_1_1_floating_eq_matcher_1_1_impl.html#a3eff238a812f4a105df1222a28f6cdbf">testing::internal::FloatingEqMatcher&lt; FloatType &gt;::Impl&lt; T &gt;</a>, <a class="el" href="classtesting_1_1internal_1_1_either_of_matcher_impl.html#ab5a4eac981acde377a4fd344507b1d71">testing::internal::EitherOfMatcherImpl&lt; T &gt;</a>, <a class="el" href="classtesting_1_1internal_1_1_both_of_matcher_impl.html#a4f6017c7aca6e5c8166ff4c613d8dbec">testing::internal::BothOfMatcherImpl&lt; T &gt;</a>, <a class="el" href="classtesting_1_1internal_1_1_not_matcher_impl.html#a960f799e25ba7264d0d45fa61bb9271c">testing::internal::NotMatcherImpl&lt; T &gt;</a>, <a class="el" href="classtesting_1_1internal_1_1_any_matcher_impl.html#ac6570e881174ba774b8d56abaa4f7d25">testing::internal::AnyMatcherImpl&lt; T &gt;</a>, and <a class="el" href="classtesting_1_1internal_1_1_args_matcher_impl.html#ac8ff5369879836567cedb5434bcca5b9">testing::internal::ArgsMatcherImpl&lt; ArgsTuple, k0, k1, k2, k3, k4, k5, k6, k7, k8, k9 &gt;</a>.</p>
-
-<p>Definition at line <a class="el" href="gmock-matchers_8h_source.html#l00134">134</a> of file <a class="el" href="gmock-matchers_8h_source.html">gmock-matchers.h</a>.</p>
 
 </div>
 </div>
@@ -215,15 +191,11 @@ Public Member Functions</h2></td></tr>
 <li>lib/googletest-master/googlemock/include/gmock/<a class="el" href="gmock-matchers_8h_source.html">gmock-matchers.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="classtesting_1_1_matcher_describer_interface.html">MatcherDescriberInterface</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

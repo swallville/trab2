@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('namespacefoo.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,7 @@ $(document).ready(function(){initNavTree('namespacefoo.html','');});
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -109,15 +88,15 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac435de653934c97045bbdba8c8afbe3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefoo.html#ac435de653934c97045bbdba8c8afbe3f">PrintTo</a> (const <a class="el" href="structfoo_1_1_printable_via_print_to.html">PrintableViaPrintTo</a> &amp;x, ::std::ostream *os)</td></tr>
+<tr class="memitem:ac435de653934c97045bbdba8c8afbe3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefoo.html#ac435de653934c97045bbdba8c8afbe3f">PrintTo</a> (const <a class="el" href="structfoo_1_1_printable_via_print_to.html">PrintableViaPrintTo</a> &amp;<a class="el" href="stringobject_8h.html#a280f2393c503127fff91ecbc558e288d">x</a>, ::std::ostream *os)</td></tr>
 <tr class="separator:ac435de653934c97045bbdba8c8afbe3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65f8809f6af7f69f5cc842493caf4491"><td class="memItemLeft" align="right" valign="top">::std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefoo.html#a65f8809f6af7f69f5cc842493caf4491">operator&lt;&lt;</a> (::std::ostream &amp;os, const <a class="el" href="structfoo_1_1_pointer_printable.html">PointerPrintable</a> *)</td></tr>
 <tr class="separator:a65f8809f6af7f69f5cc842493caf4491"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b78eba501ea7ff1226a8cb40b6e3d92"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a7b78eba501ea7ff1226a8cb40b6e3d92"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefoo.html#a7b78eba501ea7ff1226a8cb40b6e3d92">PrintTo</a> (const <a class="el" href="classfoo_1_1_printable_via_print_to_template.html">PrintableViaPrintToTemplate</a>&lt; T &gt; &amp;x, ::std::ostream *os)</td></tr>
+<tr class="memitem:a7b78eba501ea7ff1226a8cb40b6e3d92"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefoo.html#a7b78eba501ea7ff1226a8cb40b6e3d92">PrintTo</a> (const <a class="el" href="classfoo_1_1_printable_via_print_to_template.html">PrintableViaPrintToTemplate</a>&lt; T &gt; &amp;<a class="el" href="stringobject_8h.html#a280f2393c503127fff91ecbc558e288d">x</a>, ::std::ostream *os)</td></tr>
 <tr class="separator:a7b78eba501ea7ff1226a8cb40b6e3d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe04f604d114085b0b9af25600ef00da"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:abe04f604d114085b0b9af25600ef00da"><td class="memTemplItemLeft" align="right" valign="top">inline ::std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefoo.html#abe04f604d114085b0b9af25600ef00da">operator&lt;&lt;</a> (::std::ostream &amp;os, const <a class="el" href="classfoo_1_1_streamable_template_in_foo.html">StreamableTemplateInFoo</a>&lt; T &gt; &amp;x)</td></tr>
+<tr class="memitem:abe04f604d114085b0b9af25600ef00da"><td class="memTemplItemLeft" align="right" valign="top">inline ::std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefoo.html#abe04f604d114085b0b9af25600ef00da">operator&lt;&lt;</a> (::std::ostream &amp;os, const <a class="el" href="classfoo_1_1_streamable_template_in_foo.html">StreamableTemplateInFoo</a>&lt; T &gt; &amp;<a class="el" href="stringobject_8h.html#a280f2393c503127fff91ecbc558e288d">x</a>)</td></tr>
 <tr class="separator:abe04f604d114085b0b9af25600ef00da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d50eecc97df56ae625078848ba9c98a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefoo.html#a0d50eecc97df56ae625078848ba9c98a">TEST_F</a> (<a class="el" href="classfoo_1_1_mixed_up_test_case_test.html">MixedUpTestCaseTest</a>, FirstTestFromNamespaceFoo)</td></tr>
 <tr class="separator:a0d50eecc97df56ae625078848ba9c98a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,8 +132,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00152">152</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="abe04f604d114085b0b9af25600ef00da"></a>
@@ -185,8 +162,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00185">185</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ac435de653934c97045bbdba8c8afbe3f"></a>
@@ -214,8 +189,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00144">144</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -247,8 +220,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00169">169</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a0d50eecc97df56ae625078848ba9c98a"></a>
@@ -276,8 +247,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00538">538</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
 
 </div>
 </div>
@@ -307,8 +276,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00539">539</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 <a id="a2bc2a2547ff38da0ecf68676e75583cd"></a>
@@ -337,20 +304,14 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00544">544</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacefoo.html">foo</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

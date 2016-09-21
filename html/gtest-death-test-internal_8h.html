@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('gtest-death-test-internal_8h.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('gtest-death-test-internal_8h.html','')
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_acf1f0b8874b1064b8fc0cfc28c4e3cc.html">lib</a></li><li class="navelem"><a class="el" href="dir_be221b699d2f9bf4112c9d2789356b2c.html">googletest-master</a></li><li class="navelem"><a class="el" href="dir_f00c82e995c68d908486b449fc23a3ec.html">googletest</a></li><li class="navelem"><a class="el" href="dir_80c21876318c16a0ba91a2796d235bf6.html">include</a></li><li class="navelem"><a class="el" href="dir_dd30ce38926dbb746a1d8882761a0693.html">gtest</a></li><li class="navelem"><a class="el" href="dir_bd9cd5c651657a65776957b485c04a52.html">internal</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
@@ -154,24 +137,18 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">GTEST_AMBIGUOUS_ELSE_BLOCKER_ \</div><div class="line">    if (::<a class="code" href="namespacetesting_1_1internal.html#a922c9da63cd4bf94fc473b9ecac76414">testing::internal::AlwaysTrue</a>()) { \</div><div class="line">      GTEST_LOG_(WARNING) \</div><div class="line">          &lt;&lt; <span class="stringliteral">&quot;Death tests are not supported on this platform.\n&quot;</span> \</div><div class="line">          &lt;&lt; <span class="stringliteral">&quot;Statement &#39;&quot;</span> #statement <span class="stringliteral">&quot;&#39; cannot be verified.&quot;</span>; \</div><div class="line">    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (::<a class="code" href="namespacetesting_1_1internal.html#a4b24c851ab13569b1b15b3d259b60d2e">testing::internal::AlwaysFalse</a>()) { <a class="code" href="classtesting_1_1internal_1_1_r_e.html#a1e81f9a87211bdca645e025f8f0236c8">\</a></div><div class="line"><a class="code" href="classtesting_1_1internal_1_1_r_e.html#a1e81f9a87211bdca645e025f8f0236c8">      ::testing::internal::RE::PartialMatch</a>(<span class="stringliteral">&quot;.*&quot;</span>, (regex)); \</div><div class="line">      GTEST_SUPPRESS_UNREACHABLE_CODE_WARNING_BELOW_(statement); \</div><div class="line">      terminator; \</div><div class="line">    } else \</div><div class="line">      ::testing::Message()</div><div class="ttc" id="classtesting_1_1internal_1_1_r_e_html_a1e81f9a87211bdca645e025f8f0236c8"><div class="ttname"><a href="classtesting_1_1internal_1_1_r_e.html#a1e81f9a87211bdca645e025f8f0236c8">testing::internal::RE::PartialMatch</a></div><div class="ttdeci">static bool PartialMatch(const ::std::string &amp;str, const RE &amp;re)</div><div class="ttdef"><b>Definition:</b> <a href="gtest-port_8h_source.html#l01193">gtest-port.h:1193</a></div></div>
-<div class="ttc" id="namespacetesting_1_1internal_html_a922c9da63cd4bf94fc473b9ecac76414"><div class="ttname"><a href="namespacetesting_1_1internal.html#a922c9da63cd4bf94fc473b9ecac76414">testing::internal::AlwaysTrue</a></div><div class="ttdeci">GTEST_API_ bool AlwaysTrue()</div><div class="ttdef"><b>Definition:</b> <a href="gtest_8cc_source.html#l04988">gtest.cc:4988</a></div></div>
-<div class="ttc" id="namespacetesting_1_1internal_html_a4b24c851ab13569b1b15b3d259b60d2e"><div class="ttname"><a href="namespacetesting_1_1internal.html#a4b24c851ab13569b1b15b3d259b60d2e">testing::internal::AlwaysFalse</a></div><div class="ttdeci">bool AlwaysFalse()</div><div class="ttdef"><b>Definition:</b> <a href="gtest-internal_8h_source.html#l00736">gtest-internal.h:736</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">GTEST_AMBIGUOUS_ELSE_BLOCKER_ \</div><div class="line">    if (::<a class="code" href="namespacetesting_1_1internal.html#a922c9da63cd4bf94fc473b9ecac76414">testing::internal::AlwaysTrue</a>()) { \</div><div class="line">      GTEST_LOG_(WARNING) \</div><div class="line">          &lt;&lt; <span class="stringliteral">&quot;Death tests are not supported on this platform.\n&quot;</span> \</div><div class="line">          &lt;&lt; <span class="stringliteral">&quot;Statement &#39;&quot;</span> #statement <span class="stringliteral">&quot;&#39; cannot be verified.&quot;</span>; \</div><div class="line">    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (::<a class="code" href="namespacetesting_1_1internal.html#a4b24c851ab13569b1b15b3d259b60d2e">testing::internal::AlwaysFalse</a>()) { <a class="code" href="classtesting_1_1internal_1_1_r_e.html#a1e81f9a87211bdca645e025f8f0236c8">\</a></div><div class="line"><a class="code" href="classtesting_1_1internal_1_1_r_e.html#a1e81f9a87211bdca645e025f8f0236c8">      ::testing::internal::RE::PartialMatch</a>(<span class="stringliteral">&quot;.*&quot;</span>, (regex)); \</div><div class="line">      GTEST_SUPPRESS_UNREACHABLE_CODE_WARNING_BELOW_(statement); \</div><div class="line">      terminator; \</div><div class="line">    } else \</div><div class="line">      ::testing::Message()</div><div class="ttc" id="classtesting_1_1internal_1_1_r_e_html_a1e81f9a87211bdca645e025f8f0236c8"><div class="ttname"><a href="classtesting_1_1internal_1_1_r_e.html#a1e81f9a87211bdca645e025f8f0236c8">testing::internal::RE::PartialMatch</a></div><div class="ttdeci">static bool PartialMatch(const ::std::string &amp;str, const RE &amp;re)</div><div class="ttdef"><b>Definition:</b> gtest-port.h:1193</div></div>
+<div class="ttc" id="namespacetesting_1_1internal_html_a922c9da63cd4bf94fc473b9ecac76414"><div class="ttname"><a href="namespacetesting_1_1internal.html#a922c9da63cd4bf94fc473b9ecac76414">testing::internal::AlwaysTrue</a></div><div class="ttdeci">GTEST_API_ bool AlwaysTrue()</div><div class="ttdef"><b>Definition:</b> gtest.cc:4988</div></div>
+<div class="ttc" id="namespacetesting_1_1internal_html_a4b24c851ab13569b1b15b3d259b60d2e"><div class="ttname"><a href="namespacetesting_1_1internal.html#a4b24c851ab13569b1b15b3d259b60d2e">testing::internal::AlwaysFalse</a></div><div class="ttdeci">bool AlwaysFalse()</div><div class="ttdef"><b>Definition:</b> gtest-internal.h:736</div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest-death-test-internal_8h_source.html#l00301">301</a> of file <a class="el" href="gtest-death-test-internal_8h_source.html">gtest-death-test-internal.h</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_b80f002a4112fc8defa29deee9464b28.html">googletest-master</a></li><li class="navelem"><a class="el" href="dir_8339ebd0c16062e901f0dca0f5626014.html">googletest</a></li><li class="navelem"><a class="el" href="dir_7bdf76898677ff32d1912ff4489ec9f5.html">include</a></li><li class="navelem"><a class="el" href="dir_b3e1a8ca349b609fcf0866d66d008233.html">gtest</a></li><li class="navelem"><a class="el" href="dir_48a3fa24ff2a394e3a036d7f29de5070.html">internal</a></li><li class="navelem"><a class="el" href="gtest-death-test-internal_8h.html">gtest-death-test-internal.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

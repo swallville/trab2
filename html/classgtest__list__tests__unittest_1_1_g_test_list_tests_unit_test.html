@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classgtest__list__tests__unittest_1_1_g_test_list_tests_unit_test.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('classgtest__list__tests__unittest_1_1_
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacegtest__list__tests__unittest.html">gtest_list_tests_unittest</a></li><li class="navelem"><a class="el" href="classgtest__list__tests__unittest_1_1_g_test_list_tests_unit_test.html">GTestListTestsUnitTest</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -100,21 +83,19 @@ Inheritance diagram for gtest_list_tests_unittest.GTestListTestsUnitTest:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a965601cd1882fdeca94d2461bd033c40"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__list__tests__unittest_1_1_g_test_list_tests_unit_test.html#a965601cd1882fdeca94d2461bd033c40">RunAndVerify</a> (self, flag_value, expected_output_re, other_flag)</td></tr>
+<tr class="memitem:a965601cd1882fdeca94d2461bd033c40"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__list__tests__unittest_1_1_g_test_list_tests_unit_test.html#a965601cd1882fdeca94d2461bd033c40">RunAndVerify</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>, flag_value, expected_output_re, other_flag)</td></tr>
 <tr class="separator:a965601cd1882fdeca94d2461bd033c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4168d086b7ec31f86ab548b6fd79b27e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__list__tests__unittest_1_1_g_test_list_tests_unit_test.html#a4168d086b7ec31f86ab548b6fd79b27e">testDefaultBehavior</a> (self)</td></tr>
+<tr class="memitem:a4168d086b7ec31f86ab548b6fd79b27e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__list__tests__unittest_1_1_g_test_list_tests_unit_test.html#a4168d086b7ec31f86ab548b6fd79b27e">testDefaultBehavior</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
 <tr class="separator:a4168d086b7ec31f86ab548b6fd79b27e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d3e8738bd4b7494867cac464d342944"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__list__tests__unittest_1_1_g_test_list_tests_unit_test.html#a6d3e8738bd4b7494867cac464d342944">testFlag</a> (self)</td></tr>
+<tr class="memitem:a6d3e8738bd4b7494867cac464d342944"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__list__tests__unittest_1_1_g_test_list_tests_unit_test.html#a6d3e8738bd4b7494867cac464d342944">testFlag</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
 <tr class="separator:a6d3e8738bd4b7494867cac464d342944"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1ccba3f21c8e25968834607f7db2b10"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__list__tests__unittest_1_1_g_test_list_tests_unit_test.html#ae1ccba3f21c8e25968834607f7db2b10">testOverrideNonFilterFlags</a> (self)</td></tr>
+<tr class="memitem:ae1ccba3f21c8e25968834607f7db2b10"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__list__tests__unittest_1_1_g_test_list_tests_unit_test.html#ae1ccba3f21c8e25968834607f7db2b10">testOverrideNonFilterFlags</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
 <tr class="separator:ae1ccba3f21c8e25968834607f7db2b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5bef6c9fb78b8eef84427de811fd70f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__list__tests__unittest_1_1_g_test_list_tests_unit_test.html#ac5bef6c9fb78b8eef84427de811fd70f">testWithFilterFlags</a> (self)</td></tr>
+<tr class="memitem:ac5bef6c9fb78b8eef84427de811fd70f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__list__tests__unittest_1_1_g_test_list_tests_unit_test.html#ac5bef6c9fb78b8eef84427de811fd70f">testWithFilterFlags</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
 <tr class="separator:ac5bef6c9fb78b8eef84427de811fd70f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">Tests using the --gtest_list_tests flag to list all tests.</pre> 
-<p>Definition at line <a class="el" href="gtest__list__tests__unittest_8py_source.html#l00126">126</a> of file <a class="el" href="gtest__list__tests__unittest_8py_source.html">gtest_list_tests_unittest.py</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><pre class="fragment">Tests using the --gtest_list_tests flag to list all tests.</pre> </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a965601cd1882fdeca94d2461bd033c40"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a965601cd1882fdeca94d2461bd033c40">&sect;&nbsp;</a></span>RunAndVerify()</h2>
 
@@ -164,8 +145,6 @@ Args:
                   along with gtest_list_tests;
                   None if the flag should not be present.
 </pre> 
-<p>Definition at line <a class="el" href="gtest__list__tests__unittest_8py_source.html#l00129">129</a> of file <a class="el" href="gtest__list__tests__unittest_8py_source.html">gtest_list_tests_unittest.py</a>.</p>
-
 </div>
 </div>
 <a id="a4168d086b7ec31f86ab548b6fd79b27e"></a>
@@ -184,8 +163,6 @@ Args:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Tests the behavior of the default mode.</pre> 
-<p>Definition at line <a class="el" href="gtest__list__tests__unittest_8py_source.html#l00173">173</a> of file <a class="el" href="gtest__list__tests__unittest_8py_source.html">gtest_list_tests_unittest.py</a>.</p>
-
 </div>
 </div>
 <a id="a6d3e8738bd4b7494867cac464d342944"></a>
@@ -204,8 +181,6 @@ Args:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Tests using the --gtest_list_tests flag.</pre> 
-<p>Definition at line <a class="el" href="gtest__list__tests__unittest_8py_source.html#l00180">180</a> of file <a class="el" href="gtest__list__tests__unittest_8py_source.html">gtest_list_tests_unittest.py</a>.</p>
-
 </div>
 </div>
 <a id="ae1ccba3f21c8e25968834607f7db2b10"></a>
@@ -224,8 +199,6 @@ Args:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Tests that --gtest_list_tests overrides the non-filter flags.</pre> 
-<p>Definition at line <a class="el" href="gtest__list__tests__unittest_8py_source.html#l00190">190</a> of file <a class="el" href="gtest__list__tests__unittest_8py_source.html">gtest_list_tests_unittest.py</a>.</p>
-
 </div>
 </div>
 <a id="ac5bef6c9fb78b8eef84427de811fd70f"></a>
@@ -245,23 +218,17 @@ Args:
 </div><div class="memdoc">
 <pre class="fragment">Tests that --gtest_list_tests takes into account the
 --gtest_filter flag.</pre> 
-<p>Definition at line <a class="el" href="gtest__list__tests__unittest_8py_source.html#l00197">197</a> of file <a class="el" href="gtest__list__tests__unittest_8py_source.html">gtest_list_tests_unittest.py</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>lib/googletest-master/googletest/test/<a class="el" href="gtest__list__tests__unittest_8py_source.html">gtest_list_tests_unittest.py</a></li>
+<li>lib/googletest-master/googletest/test/<a class="el" href="gtest__list__tests__unittest_8py.html">gtest_list_tests_unittest.py</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacegtest__list__tests__unittest.html">gtest_list_tests_unittest</a></li><li class="navelem"><a class="el" href="classgtest__list__tests__unittest_1_1_g_test_list_tests_unit_test.html">GTestListTestsUnitTest</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

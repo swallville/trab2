@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classtesting_1_1_mock_function_3_01_r_07_a0_00_01_a1_00_01_a2_00_01_a3_00_01_a4_00_01_a5_00_01_a6_08_4.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('classtesting_1_1_mock_function_3_01_r_
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="classtesting_1_1_mock_function_3_01_r_07_a0_00_01_a1_00_01_a2_00_01_a3_00_01_a4_00_01_a5_00_01_a6_08_4.html">MockFunction&lt; R(A0, A1, A2, A3, A4, A5, A6)&gt;</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -96,16 +79,10 @@ $(document).ready(function(){initNavTree('classtesting_1_1_mock_function_3_01_r_
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6d91c54d0d03b96fd08a852fb40a57d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_mock_function_3_01_r_07_a0_00_01_a1_00_01_a2_00_01_a3_00_01_a4_00_01_a5_00_01_a6_08_4.html#a6d91c54d0d03b96fd08a852fb40a57d8">MockFunction</a> ()</td></tr>
 <tr class="separator:a6d91c54d0d03b96fd08a852fb40a57d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a965d96b3e212c5bd0391302fcee943d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_mock_function_3_01_r_07_a0_00_01_a1_00_01_a2_00_01_a3_00_01_a4_00_01_a5_00_01_a6_08_4.html#a965d96b3e212c5bd0391302fcee943d6">MOCK_METHOD7_T</a> (Call, R(A0, A1, A2, A3, A4, A5, A6))</td></tr>
+<tr class="memitem:a965d96b3e212c5bd0391302fcee943d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_mock_function_3_01_r_07_a0_00_01_a1_00_01_a2_00_01_a3_00_01_a4_00_01_a5_00_01_a6_08_4.html#a965d96b3e212c5bd0391302fcee943d6">MOCK_METHOD7_T</a> (<a class="el" href="_python-ast_8h.html#a67521ede95e4d7bdfd5aced80c17a3aa">Call</a>, R(A0, A1, A2, A3, A4, A5, A6))</td></tr>
 <tr class="separator:a965d96b3e212c5bd0391302fcee943d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename R, typename A0, typename A1, typename A2, typename A3, typename A4, typename A5, typename A6&gt;<br />
-class testing::MockFunction&lt; R(A0, A1, A2, A3, A4, A5, A6)&gt;</h3>
-
-
-<p>Definition at line <a class="el" href="gmock-generated-function-mockers_8h_source.html#l01012">1012</a> of file <a class="el" href="gmock-generated-function-mockers_8h_source.html">gmock-generated-function-mockers.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6d91c54d0d03b96fd08a852fb40a57d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6d91c54d0d03b96fd08a852fb40a57d8">&sect;&nbsp;</a></span>MockFunction()</h2>
 
@@ -131,8 +108,6 @@ template&lt;typename R , typename A0 , typename A1 , typename A2 , typename A3 ,
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-generated-function-mockers_8h_source.html#l01014">1014</a> of file <a class="el" href="gmock-generated-function-mockers_8h_source.html">gmock-generated-function-mockers.h</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -147,7 +122,7 @@ template&lt;typename R , typename A0 , typename A1 , typename A2 , typename A3 ,
         <tr>
           <td class="memname"><a class="el" href="classtesting_1_1_mock_function.html">testing::MockFunction</a>&lt; R(A0, A1, A2, A3, A4, A5, A6)&gt;::MOCK_METHOD7_T </td>
           <td>(</td>
-          <td class="paramtype">Call&#160;</td>
+          <td class="paramtype"><a class="el" href="_python-ast_8h.html#a67521ede95e4d7bdfd5aced80c17a3aa">Call</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -170,15 +145,11 @@ template&lt;typename R , typename A0 , typename A1 , typename A2 , typename A3 ,
 <li>lib/googletest-master/googlemock/include/gmock/<a class="el" href="gmock-generated-function-mockers_8h_source.html">gmock-generated-function-mockers.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="classtesting_1_1_mock_function_3_01_r_07_a0_00_01_a1_00_01_a2_00_01_a3_00_01_a4_00_01_a5_00_01_a6_08_4.html">MockFunction&lt; R(A0, A1, A2, A3, A4, A5, A6)&gt;</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

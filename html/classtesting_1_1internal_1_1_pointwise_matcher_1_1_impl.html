@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('classtesting_1_1internal_1_1_pointwise
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="namespacetesting_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classtesting_1_1internal_1_1_pointwise_matcher.html">PointwiseMatcher</a></li><li class="navelem"><a class="el" href="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl.html">Impl</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -124,20 +107,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0c699f62bbd02595471b793baa9cc75e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26d3a829149e4c497aaced42aad7b247"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl.html#a26d3a829149e4c497aaced42aad7b247">DescribeNegationTo</a> (::std::ostream *os) const</td></tr>
 <tr class="separator:a26d3a829149e4c497aaced42aad7b247"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4253946989f3743c4dd983909f2d062b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl.html#a4253946989f3743c4dd983909f2d062b">MatchAndExplain</a> (LhsContainer lhs, <a class="el" href="classtesting_1_1_match_result_listener.html">MatchResultListener</a> *listener) const</td></tr>
+<tr class="memitem:a4253946989f3743c4dd983909f2d062b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl.html#a4253946989f3743c4dd983909f2d062b">MatchAndExplain</a> (LhsContainer lhs, <a class="el" href="classtesting_1_1_match_result_listener.html">MatchResultListener</a> *listener) const</td></tr>
 <tr class="separator:a4253946989f3743c4dd983909f2d062b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classtesting_1_1_matcher_describer_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classtesting_1_1_matcher_describer_interface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classtesting_1_1_matcher_describer_interface.html">testing::MatcherDescriberInterface</a></td></tr>
 <tr class="memitem:ae2236a56ad2cc35cad10efc1208854f4 inherit pub_methods_classtesting_1_1_matcher_describer_interface"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_matcher_describer_interface.html#ae2236a56ad2cc35cad10efc1208854f4">~MatcherDescriberInterface</a> ()</td></tr>
 <tr class="separator:ae2236a56ad2cc35cad10efc1208854f4 inherit pub_methods_classtesting_1_1_matcher_describer_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename TupleMatcher, typename RhsContainer&gt;<br />
-template&lt;typename LhsContainer&gt;<br />
-class testing::internal::PointwiseMatcher&lt; TupleMatcher, RhsContainer &gt;::Impl&lt; LhsContainer &gt;</h3>
-
-
-<p>Definition at line <a class="el" href="gmock-matchers_8h_source.html#l02715">2715</a> of file <a class="el" href="gmock-matchers_8h_source.html">gmock-matchers.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aba9d983881cbfbb37724b8b40e863898"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aba9d983881cbfbb37724b8b40e863898">&sect;&nbsp;</a></span>InnerMatcherArg</h2>
 
@@ -153,8 +129,6 @@ template&lt;typename LhsContainer &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers_8h_source.html#l02726">2726</a> of file <a class="el" href="gmock-matchers_8h_source.html">gmock-matchers.h</a>.</p>
 
 </div>
 </div>
@@ -174,8 +148,6 @@ template&lt;typename LhsContainer &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers_8h_source.html#l02719">2719</a> of file <a class="el" href="gmock-matchers_8h_source.html">gmock-matchers.h</a>.</p>
-
 </div>
 </div>
 <a id="a9df3eb0866f76d59dbdd35fafeb5590c"></a>
@@ -193,8 +165,6 @@ template&lt;typename LhsContainer &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers_8h_source.html#l02720">2720</a> of file <a class="el" href="gmock-matchers_8h_source.html">gmock-matchers.h</a>.</p>
 
 </div>
 </div>
@@ -214,8 +184,6 @@ template&lt;typename LhsContainer &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers_8h_source.html#l02721">2721</a> of file <a class="el" href="gmock-matchers_8h_source.html">gmock-matchers.h</a>.</p>
-
 </div>
 </div>
 <a id="a5240abc710bb0a5bedfd180bf6701fae"></a>
@@ -233,8 +201,6 @@ template&lt;typename LhsContainer &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers_8h_source.html#l02718">2718</a> of file <a class="el" href="gmock-matchers_8h_source.html">gmock-matchers.h</a>.</p>
 
 </div>
 </div>
@@ -277,8 +243,6 @@ template&lt;typename LhsContainer &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers_8h_source.html#l02728">2728</a> of file <a class="el" href="gmock-matchers_8h_source.html">gmock-matchers.h</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -312,8 +276,6 @@ template&lt;typename LhsContainer &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classtesting_1_1_matcher_describer_interface.html#a2071afbc47097c4d1c0064275af34db0">testing::MatcherDescriberInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="gmock-matchers_8h_source.html#l02740">2740</a> of file <a class="el" href="gmock-matchers_8h_source.html">gmock-matchers.h</a>.</p>
-
 </div>
 </div>
 <a id="a0c699f62bbd02595471b793baa9cc75e"></a>
@@ -346,8 +308,6 @@ template&lt;typename LhsContainer &gt; </div>
 
 <p>Implements <a class="el" href="classtesting_1_1_matcher_describer_interface.html#ad9f861588bd969b6e3e717f13bb94e7b">testing::MatcherDescriberInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="gmock-matchers_8h_source.html#l02733">2733</a> of file <a class="el" href="gmock-matchers_8h_source.html">gmock-matchers.h</a>.</p>
-
 </div>
 </div>
 <a id="a4253946989f3743c4dd983909f2d062b"></a>
@@ -364,7 +324,7 @@ template&lt;typename LhsContainer &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="classtesting_1_1internal_1_1_pointwise_matcher.html">testing::internal::PointwiseMatcher</a>&lt; TupleMatcher, RhsContainer &gt;::<a class="el" href="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl.html">Impl</a>&lt; LhsContainer &gt;::MatchAndExplain </td>
+          <td class="memname">virtual <a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> <a class="el" href="classtesting_1_1internal_1_1_pointwise_matcher.html">testing::internal::PointwiseMatcher</a>&lt; TupleMatcher, RhsContainer &gt;::<a class="el" href="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl.html">Impl</a>&lt; LhsContainer &gt;::MatchAndExplain </td>
           <td>(</td>
           <td class="paramtype">LhsContainer&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -390,23 +350,17 @@ template&lt;typename LhsContainer &gt; </div>
 
 <p>Implements <a class="el" href="classtesting_1_1_matcher_interface.html#a296b43607cd99d60365f0e6a762777cf">testing::MatcherInterface&lt; LhsContainer &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="gmock-matchers_8h_source.html#l02749">2749</a> of file <a class="el" href="gmock-matchers_8h_source.html">gmock-matchers.h</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>lib/googletest-master/googlemock/include/gmock/<a class="el" href="gmock-matchers_8h_source.html">gmock-matchers.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="namespacetesting_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classtesting_1_1internal_1_1_pointwise_matcher.html">PointwiseMatcher</a></li><li class="navelem"><a class="el" href="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl.html">Impl</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

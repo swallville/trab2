@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('namespacecpp_1_1ast.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('namespacecpp_1_1ast.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacecpp.html">cpp</a></li><li class="navelem"><a class="el" href="namespacecpp_1_1ast.html">ast</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -146,7 +129,7 @@ Classes</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a0b1c00fd4aaa476b10de6b3a2550f39f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecpp_1_1ast.html#a0b1c00fd4aaa476b10de6b3a2550f39f">reversed</a> (seq)</td></tr>
 <tr class="separator:a0b1c00fd4aaa476b10de6b3a2550f39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39ad8261fef5e0a7c1c17c510541b66f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecpp_1_1ast.html#a39ad8261fef5e0a7c1c17c510541b66f">next</a> (obj)</td></tr>
+<tr class="memitem:a39ad8261fef5e0a7c1c17c510541b66f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecpp_1_1ast.html#a39ad8261fef5e0a7c1c17c510541b66f">next</a> (<a class="el" href="abstract_8h.html#aaa12580403a2cc24c96324b4c5715889">obj</a>)</td></tr>
 <tr class="separator:a39ad8261fef5e0a7c1c17c510541b66f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a696471f0d7971a0789824803a008cf6b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecpp_1_1ast.html#a696471f0d7971a0789824803a008cf6b">BuilderFromSource</a> (source, filename)</td></tr>
 <tr class="separator:a696471f0d7971a0789824803a008cf6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,30 +137,30 @@ Functions</h2></td></tr>
 <tr class="separator:a6a793b93aff7779af7017d001ce3b226"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc501124095357c1cf56eaf10e1df327"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecpp_1_1ast.html#abc501124095357c1cf56eaf10e1df327">PrintAllIndentifiers</a> (filenames, should_print)</td></tr>
 <tr class="separator:abc501124095357c1cf56eaf10e1df327"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd29cc27c3bff13bf3e055575b8e958a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecpp_1_1ast.html#acd29cc27c3bff13bf3e055575b8e958a">main</a> (argv)</td></tr>
+<tr class="memitem:acd29cc27c3bff13bf3e055575b8e958a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecpp_1_1ast.html#acd29cc27c3bff13bf3e055575b8e958a">main</a> (<a class="el" href="pythonrun_8h.html#af3cb49c013b6d4b79e7a00fc6807e954">argv</a>)</td></tr>
 <tr class="separator:acd29cc27c3bff13bf3e055575b8e958a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a8f1229df8e1348664a7e6142c2d0ae0b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecpp_1_1ast.html#a8f1229df8e1348664a7e6142c2d0ae0b">FUNCTION_NONE</a> = 0x00</td></tr>
+<tr class="memitem:a8f1229df8e1348664a7e6142c2d0ae0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecpp_1_1ast.html#a8f1229df8e1348664a7e6142c2d0ae0b">FUNCTION_NONE</a> = 0x00</td></tr>
 <tr class="separator:a8f1229df8e1348664a7e6142c2d0ae0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73fe57808e7f2e3f3e9d0e1088f183be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecpp_1_1ast.html#a73fe57808e7f2e3f3e9d0e1088f183be">FUNCTION_CONST</a> = 0x01</td></tr>
+<tr class="memitem:a73fe57808e7f2e3f3e9d0e1088f183be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecpp_1_1ast.html#a73fe57808e7f2e3f3e9d0e1088f183be">FUNCTION_CONST</a> = 0x01</td></tr>
 <tr class="separator:a73fe57808e7f2e3f3e9d0e1088f183be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d444baf6763d374aa4ef9c3f0e6d5b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecpp_1_1ast.html#a7d444baf6763d374aa4ef9c3f0e6d5b3">FUNCTION_VIRTUAL</a> = 0x02</td></tr>
+<tr class="memitem:a7d444baf6763d374aa4ef9c3f0e6d5b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecpp_1_1ast.html#a7d444baf6763d374aa4ef9c3f0e6d5b3">FUNCTION_VIRTUAL</a> = 0x02</td></tr>
 <tr class="separator:a7d444baf6763d374aa4ef9c3f0e6d5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8f597c9a3e49e1a29e8da1848d40ff1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecpp_1_1ast.html#ae8f597c9a3e49e1a29e8da1848d40ff1">FUNCTION_PURE_VIRTUAL</a> = 0x04</td></tr>
+<tr class="memitem:ae8f597c9a3e49e1a29e8da1848d40ff1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecpp_1_1ast.html#ae8f597c9a3e49e1a29e8da1848d40ff1">FUNCTION_PURE_VIRTUAL</a> = 0x04</td></tr>
 <tr class="separator:ae8f597c9a3e49e1a29e8da1848d40ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae380e31bf1bce9757f3289a704715c2d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecpp_1_1ast.html#ae380e31bf1bce9757f3289a704715c2d">FUNCTION_CTOR</a> = 0x08</td></tr>
+<tr class="memitem:ae380e31bf1bce9757f3289a704715c2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecpp_1_1ast.html#ae380e31bf1bce9757f3289a704715c2d">FUNCTION_CTOR</a> = 0x08</td></tr>
 <tr class="separator:ae380e31bf1bce9757f3289a704715c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4491e62237a2689be078bf3b455549e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecpp_1_1ast.html#a4491e62237a2689be078bf3b455549e6">FUNCTION_DTOR</a> = 0x10</td></tr>
+<tr class="memitem:a4491e62237a2689be078bf3b455549e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecpp_1_1ast.html#a4491e62237a2689be078bf3b455549e6">FUNCTION_DTOR</a> = 0x10</td></tr>
 <tr class="separator:a4491e62237a2689be078bf3b455549e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6462424cd2b9884f63bf7594811321cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecpp_1_1ast.html#a6462424cd2b9884f63bf7594811321cd">FUNCTION_ATTRIBUTE</a> = 0x20</td></tr>
+<tr class="memitem:a6462424cd2b9884f63bf7594811321cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecpp_1_1ast.html#a6462424cd2b9884f63bf7594811321cd">FUNCTION_ATTRIBUTE</a> = 0x20</td></tr>
 <tr class="separator:a6462424cd2b9884f63bf7594811321cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d3ba548a6c733892e60c8accdc96639"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecpp_1_1ast.html#a9d3ba548a6c733892e60c8accdc96639">FUNCTION_UNKNOWN_ANNOTATION</a> = 0x40</td></tr>
+<tr class="memitem:a9d3ba548a6c733892e60c8accdc96639"><td class="memItemLeft" align="right" valign="top"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecpp_1_1ast.html#a9d3ba548a6c733892e60c8accdc96639">FUNCTION_UNKNOWN_ANNOTATION</a> = 0x40</td></tr>
 <tr class="separator:a9d3ba548a6c733892e60c8accdc96639"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3384f360da38e3df526d189238118fb5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecpp_1_1ast.html#a3384f360da38e3df526d189238118fb5">FUNCTION_THROW</a> = 0x80</td></tr>
+<tr class="memitem:a3384f360da38e3df526d189238118fb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecpp_1_1ast.html#a3384f360da38e3df526d189238118fb5">FUNCTION_THROW</a> = 0x80</td></tr>
 <tr class="separator:a3384f360da38e3df526d189238118fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecf2f8a17fb10fe367d2da84849c06c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecpp_1_1ast.html#aecf2f8a17fb10fe367d2da84849c06c9">FUNCTION_OVERRIDE</a> = 0x100</td></tr>
+<tr class="memitem:aecf2f8a17fb10fe367d2da84849c06c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecpp_1_1ast.html#aecf2f8a17fb10fe367d2da84849c06c9">FUNCTION_OVERRIDE</a> = 0x100</td></tr>
 <tr class="separator:aecf2f8a17fb10fe367d2da84849c06c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -215,8 +198,6 @@ Args:
 Returns:
   AstBuilder
 </pre> 
-<p>Definition at line <a class="el" href="ast_8py_source.html#l01663">1663</a> of file <a class="el" href="ast_8py_source.html">ast.py</a>.</p>
-
 </div>
 </div>
 <a id="acd29cc27c3bff13bf3e055575b8e958a"></a>
@@ -235,8 +216,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ast_8py_source.html#l01711">1711</a> of file <a class="el" href="ast_8py_source.html">ast.py</a>.</p>
-
 </div>
 </div>
 <a id="a39ad8261fef5e0a7c1c17c510541b66f"></a>
@@ -254,8 +233,6 @@ Returns:
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ast_8py_source.html#l00058">58</a> of file <a class="el" href="ast_8py_source.html">ast.py</a>.</p>
 
 </div>
 </div>
@@ -290,8 +267,6 @@ Args:
   filenames: ['file1', 'file2', ...]
   should_print: predicate with signature: bool Function(token)
 </pre> 
-<p>Definition at line <a class="el" href="ast_8py_source.html#l01700">1700</a> of file <a class="el" href="ast_8py_source.html">ast.py</a>.</p>
-
 </div>
 </div>
 <a id="a6a793b93aff7779af7017d001ce3b226"></a>
@@ -325,8 +300,6 @@ Args:
   filename: 'file1'
   should_print: predicate with signature: bool Function(token)
 </pre> 
-<p>Definition at line <a class="el" href="ast_8py_source.html#l01676">1676</a> of file <a class="el" href="ast_8py_source.html">ast.py</a>.</p>
-
 </div>
 </div>
 <a id="a0b1c00fd4aaa476b10de6b3a2550f39f"></a>
@@ -345,8 +318,6 @@ Args:
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ast_8py_source.html#l00052">52</a> of file <a class="el" href="ast_8py_source.html">ast.py</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -357,12 +328,10 @@ Args:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int cpp.ast.FUNCTION_ATTRIBUTE = 0x20</td>
+          <td class="memname"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> cpp.ast.FUNCTION_ATTRIBUTE = 0x20</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ast_8py_source.html#l00070">70</a> of file <a class="el" href="ast_8py_source.html">ast.py</a>.</p>
 
 </div>
 </div>
@@ -373,12 +342,10 @@ Args:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int cpp.ast.FUNCTION_CONST = 0x01</td>
+          <td class="memname"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> cpp.ast.FUNCTION_CONST = 0x01</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ast_8py_source.html#l00065">65</a> of file <a class="el" href="ast_8py_source.html">ast.py</a>.</p>
 
 </div>
 </div>
@@ -389,12 +356,10 @@ Args:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int cpp.ast.FUNCTION_CTOR = 0x08</td>
+          <td class="memname"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> cpp.ast.FUNCTION_CTOR = 0x08</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ast_8py_source.html#l00068">68</a> of file <a class="el" href="ast_8py_source.html">ast.py</a>.</p>
 
 </div>
 </div>
@@ -405,12 +370,10 @@ Args:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int cpp.ast.FUNCTION_DTOR = 0x10</td>
+          <td class="memname"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> cpp.ast.FUNCTION_DTOR = 0x10</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ast_8py_source.html#l00069">69</a> of file <a class="el" href="ast_8py_source.html">ast.py</a>.</p>
 
 </div>
 </div>
@@ -421,12 +384,10 @@ Args:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int cpp.ast.FUNCTION_NONE = 0x00</td>
+          <td class="memname"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> cpp.ast.FUNCTION_NONE = 0x00</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ast_8py_source.html#l00064">64</a> of file <a class="el" href="ast_8py_source.html">ast.py</a>.</p>
 
 </div>
 </div>
@@ -437,12 +398,10 @@ Args:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int cpp.ast.FUNCTION_OVERRIDE = 0x100</td>
+          <td class="memname"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> cpp.ast.FUNCTION_OVERRIDE = 0x100</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ast_8py_source.html#l00073">73</a> of file <a class="el" href="ast_8py_source.html">ast.py</a>.</p>
 
 </div>
 </div>
@@ -453,12 +412,10 @@ Args:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int cpp.ast.FUNCTION_PURE_VIRTUAL = 0x04</td>
+          <td class="memname"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> cpp.ast.FUNCTION_PURE_VIRTUAL = 0x04</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ast_8py_source.html#l00067">67</a> of file <a class="el" href="ast_8py_source.html">ast.py</a>.</p>
 
 </div>
 </div>
@@ -469,12 +426,10 @@ Args:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int cpp.ast.FUNCTION_THROW = 0x80</td>
+          <td class="memname"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> cpp.ast.FUNCTION_THROW = 0x80</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ast_8py_source.html#l00072">72</a> of file <a class="el" href="ast_8py_source.html">ast.py</a>.</p>
 
 </div>
 </div>
@@ -485,12 +440,10 @@ Args:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int cpp.ast.FUNCTION_UNKNOWN_ANNOTATION = 0x40</td>
+          <td class="memname"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> cpp.ast.FUNCTION_UNKNOWN_ANNOTATION = 0x40</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ast_8py_source.html#l00071">71</a> of file <a class="el" href="ast_8py_source.html">ast.py</a>.</p>
 
 </div>
 </div>
@@ -501,25 +454,19 @@ Args:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int cpp.ast.FUNCTION_VIRTUAL = 0x02</td>
+          <td class="memname"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> cpp.ast.FUNCTION_VIRTUAL = 0x02</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ast_8py_source.html#l00066">66</a> of file <a class="el" href="ast_8py_source.html">ast.py</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacecpp.html">cpp</a></li><li class="navelem"><a class="el" href="namespacecpp_1_1ast.html">ast</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

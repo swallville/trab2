@@ -1,7 +1,7 @@
         -:    0:Source:../lib/googletest-master/googletest/include/gtest/gtest.h
-        -:    0:Graph:AddTest.gcno
-        -:    0:Data:AddTest.gcda
-        -:    0:Runs:2
+        -:    0:Graph:main.gcno
+        -:    0:Data:main.gcda
+        -:    0:Runs:1
         -:    0:Programs:1
         -:    1:// Copyright 2005, Google Inc.
         -:    2:// All rights reserved.
@@ -258,7 +258,7 @@
         -:  253://   Expected: Foo() is even
         -:  254://     Actual: it's 5
         -:  255://
-      164:  256:class GTEST_API_ AssertionResult {
+        -:  256:class GTEST_API_ AssertionResult {
         -:  257: public:
         -:  258:  // Copy constructor.
         -:  259:  // Used in EXPECT_TRUE/FALSE(assertion_result).
@@ -290,7 +290,7 @@
         -:  285:  }
         -:  286:
         -:  287:  // Returns true iff the assertion succeeded.
-       82:  288:  operator bool() const { return success_; }  // NOLINT
+        -:  288:  operator bool() const { return success_; }  // NOLINT
         -:  289:
         -:  290:  // Returns the assertion's negation. Used with EXPECT/ASSERT_FALSE.
         -:  291:  AssertionResult operator!() const;
@@ -300,17 +300,17 @@
         -:  295:  // assertion's expectation). When nothing has been streamed into the
         -:  296:  // object, returns an empty string.
         -:  297:  const char* message() const {
-    #####:  298:    return message_.get() != NULL ?  message_->c_str() : "";
+        -:  298:    return message_.get() != NULL ?  message_->c_str() : "";
         -:  299:  }
         -:  300:  // TODO(vladl@google.com): Remove this after making sure no clients use it.
         -:  301:  // Deprecated; please use message() instead.
-    #####:  302:  const char* failure_message() const { return message(); }
+        -:  302:  const char* failure_message() const { return message(); }
         -:  303:
         -:  304:  // Streams a custom failure message into this object.
         -:  305:  template <typename T> AssertionResult& operator<<(const T& value) {
-    #####:  306:    AppendMessage(Message() << value);
-    #####:  307:    return *this;
-    #####:  308:  }
+        -:  306:    AppendMessage(Message() << value);
+        -:  307:    return *this;
+        -:  308:  }
         -:  309:
         -:  310:  // Allows streaming basic output manipulators such as endl or flush into
         -:  311:  // this object.
@@ -323,10 +323,10 @@
         -:  318: private:
         -:  319:  // Appends the contents of message to message_.
         -:  320:  void AppendMessage(const Message& a_message) {
-    #####:  321:    if (message_.get() == NULL)
-    #####:  322:      message_.reset(new ::std::string);
-    #####:  323:    message_->append(a_message.GetString().c_str());
-    #####:  324:  }
+        -:  321:    if (message_.get() == NULL)
+        -:  322:      message_.reset(new ::std::string);
+        -:  323:    message_->append(a_message.GetString().c_str());
+        -:  324:  }
         -:  325:
         -:  326:  // Swap the contents of this AssertionResult with other.
         -:  327:  void swap(AssertionResult& other);
@@ -391,7 +391,7 @@
         -:  386:  // test in test case Foo.  Hence a sub-class can define its own
         -:  387:  // SetUpTestCase() method to shadow the one defined in the super
         -:  388:  // class.
-        4:  389:  static void SetUpTestCase() {}
+        -:  389:  static void SetUpTestCase() {}
         -:  390:
         -:  391:  // Tears down the stuff shared by all tests in this test case.
         -:  392:  //
@@ -399,7 +399,7 @@
         -:  394:  // test in test case Foo.  Hence a sub-class can define its own
         -:  395:  // TearDownTestCase() method to shadow the one defined in the super
         -:  396:  // class.
-        4:  397:  static void TearDownTestCase() {}
+        -:  397:  static void TearDownTestCase() {}
         -:  398:
         -:  399:  // Returns true iff the current test has a fatal failure.
         -:  400:  static bool HasFatalFailure();
@@ -476,7 +476,7 @@
         -:  471:  // If you see an error about overriding the following function or
         -:  472:  // about it being private, you have mis-spelled SetUp() as Setup().
         -:  473:  struct Setup_should_be_spelled_SetUp {};
-    #####:  474:  virtual Setup_should_be_spelled_SetUp* Setup() { return NULL; }
+        -:  474:  virtual Setup_should_be_spelled_SetUp* Setup() { return NULL; }
         -:  475:
         -:  476:  // We disallow copying Tests.
         -:  477:  GTEST_DISALLOW_COPY_AND_ASSIGN_(Test);
@@ -1380,12 +1380,12 @@
         -: 1375:AssertionResult CmpHelperEQFailure(const char* lhs_expression,
         -: 1376:                                   const char* rhs_expression,
         -: 1377:                                   const T1& lhs, const T2& rhs) {
-    #####: 1378:  return EqFailure(lhs_expression,
-    #####: 1379:                   rhs_expression,
-    #####: 1380:                   FormatForComparisonFailureMessage(lhs, rhs),
-    #####: 1381:                   FormatForComparisonFailureMessage(rhs, lhs),
+        -: 1378:  return EqFailure(lhs_expression,
+        -: 1379:                   rhs_expression,
+        -: 1380:                   FormatForComparisonFailureMessage(lhs, rhs),
+        -: 1381:                   FormatForComparisonFailureMessage(rhs, lhs),
         -: 1382:                   false);
-    #####: 1383:}
+        -: 1383:}
         -: 1384:
         -: 1385:// The helper function for {ASSERT|EXPECT}_EQ.
         -: 1386:template <typename T1, typename T2>
@@ -1394,13 +1394,13 @@
         -: 1389:                            const T1& lhs,
         -: 1390:                            const T2& rhs) {
         -: 1391:GTEST_DISABLE_MSC_WARNINGS_PUSH_(4389 /* signed/unsigned mismatch */)
-       76: 1392:  if (lhs == rhs) {
-       76: 1393:    return AssertionSuccess();
+        -: 1392:  if (lhs == rhs) {
+        -: 1393:    return AssertionSuccess();
         -: 1394:  }
         -: 1395:GTEST_DISABLE_MSC_WARNINGS_POP_()
         -: 1396:
-    #####: 1397:  return CmpHelperEQFailure(lhs_expression, rhs_expression, lhs, rhs);
-       76: 1398:}
+        -: 1397:  return CmpHelperEQFailure(lhs_expression, rhs_expression, lhs, rhs);
+        -: 1398:}
         -: 1399:
         -: 1400:// With this overloaded version, we allow anonymous enums to be used
         -: 1401:// in {ASSERT|EXPECT}_EQ when compiled with gcc 4, as anonymous enums
@@ -1423,7 +1423,7 @@
         -: 1418:                                 const char* rhs_expression,
         -: 1419:                                 const T1& lhs,
         -: 1420:                                 const T2& rhs) {
-       76: 1421:    return CmpHelperEQ(lhs_expression, rhs_expression, lhs, rhs);
+        -: 1421:    return CmpHelperEQ(lhs_expression, rhs_expression, lhs, rhs);
         -: 1422:  }
         -: 1423:
         -: 1424:  // With this overloaded version, we allow anonymous enums to be used
@@ -1491,11 +1491,11 @@
         -: 1486:AssertionResult CmpHelperOpFailure(const char* expr1, const char* expr2,
         -: 1487:                                   const T1& val1, const T2& val2,
         -: 1488:                                   const char* op) {
-    #####: 1489:  return AssertionFailure()
-    #####: 1490:         << "Expected: (" << expr1 << ") " << op << " (" << expr2
-    #####: 1491:         << "), actual: " << FormatForComparisonFailureMessage(val1, val2)
-    #####: 1492:         << " vs " << FormatForComparisonFailureMessage(val2, val1);
-    #####: 1493:}
+        -: 1489:  return AssertionFailure()
+        -: 1490:         << "Expected: (" << expr1 << ") " << op << " (" << expr2
+        -: 1491:         << "), actual: " << FormatForComparisonFailureMessage(val1, val2)
+        -: 1492:         << " vs " << FormatForComparisonFailureMessage(val2, val1);
+        -: 1493:}
         -: 1494:
         -: 1495:// A macro for implementing the helper functions needed to implement
         -: 1496:// ASSERT_?? and EXPECT_??.  It is here just to avoid copy-and-paste
@@ -1524,7 +1524,7 @@
         -: 1519:// INTERNAL IMPLEMENTATION - DO NOT USE IN A USER PROGRAM.
         -: 1520:
         -: 1521:// Implements the helper function for {ASSERT|EXPECT}_NE
-       18: 1522:GTEST_IMPL_CMP_HELPER_(NE, !=);
+        -: 1522:GTEST_IMPL_CMP_HELPER_(NE, !=);
         -: 1523:// Implements the helper function for {ASSERT|EXPECT}_LE
         -: 1524:GTEST_IMPL_CMP_HELPER_(LE, <=);
         -: 1525:// Implements the helper function for {ASSERT|EXPECT}_LT
@@ -2235,7 +2235,7 @@
         -: 2230:int RUN_ALL_TESTS() GTEST_MUST_USE_RESULT_;
         -: 2231:
         -: 2232:inline int RUN_ALL_TESTS() {
-        -: 2233:  return ::testing::UnitTest::GetInstance()->Run();
+        2: 2233:  return ::testing::UnitTest::GetInstance()->Run();
         -: 2234:}
         -: 2235:
         -: 2236:#endif  // GTEST_INCLUDE_GTEST_GTEST_H_

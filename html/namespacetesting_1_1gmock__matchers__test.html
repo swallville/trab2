@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('namespacetesting_1_1gmock__matchers__test.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('namespacetesting_1_1gmock__matchers__t
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html">gmock_matchers_test</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -169,7 +152,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a8b82c859cd28da9e7f7d4c6091a3165c"><td class="memItemLeft" align="right" valign="top">typedef ::testing::tuple&lt; long, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a8b82c859cd28da9e7f7d4c6091a3165c">Tuple2</a></td></tr>
+<tr class="memitem:a8b82c859cd28da9e7f7d4c6091a3165c"><td class="memItemLeft" align="right" valign="top">typedef ::testing::tuple&lt; <a class="el" href="modsupport_8h.html#a0cb68e00fb9fb1260ee2daadd9fe6611">long</a>, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a8b82c859cd28da9e7f7d4c6091a3165c">Tuple2</a></td></tr>
 <tr class="separator:a8b82c859cd28da9e7f7d4c6091a3165c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a145329e433869625f9f0e98a0cdfd7b4"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_floating_point_test.html">FloatingPointTest</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a145329e433869625f9f0e98a0cdfd7b4">FloatTest</a></td></tr>
 <tr class="separator:a145329e433869625f9f0e98a0cdfd7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,18 +165,18 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8cf8614a7c9adc8fb00e8af04895f97c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1_matcher.html">Matcher</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a8cf8614a7c9adc8fb00e8af04895f97c">GreaterThan</a> (int n)</td></tr>
+<tr class="memitem:a8cf8614a7c9adc8fb00e8af04895f97c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1_matcher.html">Matcher</a>&lt; <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a8cf8614a7c9adc8fb00e8af04895f97c">GreaterThan</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> <a class="el" href="longobject_8h.html#a0a1cb627ccae562872efc91e5b752be1">n</a>)</td></tr>
 <tr class="separator:a8cf8614a7c9adc8fb00e8af04895f97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d48d2ef7ca374de369c5f0a30e32343"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a5d48d2ef7ca374de369c5f0a30e32343">OfType</a> (const string &amp;type_name)</td></tr>
+<tr class="memitem:a5d48d2ef7ca374de369c5f0a30e32343"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a5d48d2ef7ca374de369c5f0a30e32343">OfType</a> (const <a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> &amp;type_name)</td></tr>
 <tr class="separator:a5d48d2ef7ca374de369c5f0a30e32343"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36ae44e4f6c8e9fe3fe9162132503717"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a36ae44e4f6c8e9fe3fe9162132503717"><td class="memTemplItemLeft" align="right" valign="top">string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a36ae44e4f6c8e9fe3fe9162132503717">Describe</a> (const <a class="el" href="classtesting_1_1_matcher.html">Matcher</a>&lt; T &gt; &amp;m)</td></tr>
+<tr class="memitem:a36ae44e4f6c8e9fe3fe9162132503717"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a36ae44e4f6c8e9fe3fe9162132503717">Describe</a> (const <a class="el" href="classtesting_1_1_matcher.html">Matcher</a>&lt; T &gt; &amp;<a class="el" href="abstract_8h.html#a61c2f43341311f6f63e8f440c4fd3892">m</a>)</td></tr>
 <tr class="separator:a36ae44e4f6c8e9fe3fe9162132503717"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbc8022da5a58aa467ec414ab3e90908"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:afbc8022da5a58aa467ec414ab3e90908"><td class="memTemplItemLeft" align="right" valign="top">string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#afbc8022da5a58aa467ec414ab3e90908">DescribeNegation</a> (const <a class="el" href="classtesting_1_1_matcher.html">Matcher</a>&lt; T &gt; &amp;m)</td></tr>
+<tr class="memitem:afbc8022da5a58aa467ec414ab3e90908"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#afbc8022da5a58aa467ec414ab3e90908">DescribeNegation</a> (const <a class="el" href="classtesting_1_1_matcher.html">Matcher</a>&lt; T &gt; &amp;<a class="el" href="abstract_8h.html#a61c2f43341311f6f63e8f440c4fd3892">m</a>)</td></tr>
 <tr class="separator:afbc8022da5a58aa467ec414ab3e90908"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6215aeb6213a03f4233924ef1c74d968"><td class="memTemplParams" colspan="2">template&lt;typename MatcherType , typename Value &gt; </td></tr>
-<tr class="memitem:a6215aeb6213a03f4233924ef1c74d968"><td class="memTemplItemLeft" align="right" valign="top">string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a6215aeb6213a03f4233924ef1c74d968">Explain</a> (const MatcherType &amp;m, const <a class="el" href="namespacetesting.html#ae44c50a3a7f0a46f05c8a0b0592b4a62">Value</a> &amp;x)</td></tr>
+<tr class="memitem:a6215aeb6213a03f4233924ef1c74d968"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a6215aeb6213a03f4233924ef1c74d968">Explain</a> (const MatcherType &amp;<a class="el" href="abstract_8h.html#a61c2f43341311f6f63e8f440c4fd3892">m</a>, const <a class="el" href="namespacetesting.html#ae44c50a3a7f0a46f05c8a0b0592b4a62">Value</a> &amp;<a class="el" href="stringobject_8h.html#a280f2393c503127fff91ecbc558e288d">x</a>)</td></tr>
 <tr class="separator:a6215aeb6213a03f4233924ef1c74d968"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bc21ec910c3861034d1336fecfcc260"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a7bc21ec910c3861034d1336fecfcc260">TEST</a> (MatchResultListenerTest, StreamingWorks)</td></tr>
 <tr class="separator:a7bc21ec910c3861034d1336fecfcc260"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,7 +218,7 @@ Functions</h2></td></tr>
 <tr class="separator:a619d872aa86419c5093327f64c466df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afffaa6f2c436edb7c46e7a16ed2de825"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#afffaa6f2c436edb7c46e7a16ed2de825">TEST</a> (MatcherCastTest, FromPolymorphicMatcher)</td></tr>
 <tr class="separator:afffaa6f2c436edb7c46e7a16ed2de825"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68565741c989968637db5a9e10e55020"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a68565741c989968637db5a9e10e55020">IsPositiveIntValue</a> (const <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_int_value.html">IntValue</a> &amp;<a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a3536e68112ffbb1f76887cd15bb45c15">foo</a>)</td></tr>
+<tr class="memitem:a68565741c989968637db5a9e10e55020"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a68565741c989968637db5a9e10e55020">IsPositiveIntValue</a> (const <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_int_value.html">IntValue</a> &amp;<a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a3536e68112ffbb1f76887cd15bb45c15">foo</a>)</td></tr>
 <tr class="separator:a68565741c989968637db5a9e10e55020"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7a28536a6c59d56bbbbdb4fa5ba9e4d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#aa7a28536a6c59d56bbbbdb4fa5ba9e4d">TEST</a> (MatcherCastTest, FromCompatibleType)</td></tr>
 <tr class="separator:aa7a28536a6c59d56bbbbdb4fa5ba9e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -249,7 +232,7 @@ Functions</h2></td></tr>
 <tr class="separator:ab8d3174b8f1ab799906938ed9984643b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f845dd5b1bcdc660926d67dce32b5d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a8f845dd5b1bcdc660926d67dce32b5d2">TEST</a> (MatcherCastTest, FromSameType)</td></tr>
 <tr class="separator:a8f845dd5b1bcdc660926d67dce32b5d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0b7ba716a9150ff6db37abda4b44fc8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#af0b7ba716a9150ff6db37abda4b44fc8">operator==</a> (const <a class="el" href="structtesting_1_1gmock__matchers__test_1_1_convertible_from_any.html">ConvertibleFromAny</a> &amp;a, const <a class="el" href="structtesting_1_1gmock__matchers__test_1_1_convertible_from_any.html">ConvertibleFromAny</a> &amp;b)</td></tr>
+<tr class="memitem:af0b7ba716a9150ff6db37abda4b44fc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#af0b7ba716a9150ff6db37abda4b44fc8">operator==</a> (const <a class="el" href="structtesting_1_1gmock__matchers__test_1_1_convertible_from_any.html">ConvertibleFromAny</a> &amp;a, const <a class="el" href="structtesting_1_1gmock__matchers__test_1_1_convertible_from_any.html">ConvertibleFromAny</a> &amp;b)</td></tr>
 <tr class="separator:af0b7ba716a9150ff6db37abda4b44fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a2abd1e49c201ae26ed96211d4225eb"><td class="memItemLeft" align="right" valign="top">ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a2a2abd1e49c201ae26ed96211d4225eb">operator&lt;&lt;</a> (ostream &amp;os, const <a class="el" href="structtesting_1_1gmock__matchers__test_1_1_convertible_from_any.html">ConvertibleFromAny</a> &amp;a)</td></tr>
 <tr class="separator:a2a2abd1e49c201ae26ed96211d4225eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,7 +240,7 @@ Functions</h2></td></tr>
 <tr class="separator:a42e4d7d26704516436281897cb41bb1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae51787fccc0f0a27e3725039c6cd48dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#ae51787fccc0f0a27e3725039c6cd48dc">TEST</a> (MatcherCastTest, FromConvertibleFromAny)</td></tr>
 <tr class="separator:ae51787fccc0f0a27e3725039c6cd48dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33c068c32bf5118e5be92771b146db77"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a33c068c32bf5118e5be92771b146db77">operator==</a> (const <a class="el" href="structtesting_1_1gmock__matchers__test_1_1_int_reference_wrapper.html">IntReferenceWrapper</a> &amp;a, const <a class="el" href="structtesting_1_1gmock__matchers__test_1_1_int_reference_wrapper.html">IntReferenceWrapper</a> &amp;b)</td></tr>
+<tr class="memitem:a33c068c32bf5118e5be92771b146db77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a33c068c32bf5118e5be92771b146db77">operator==</a> (const <a class="el" href="structtesting_1_1gmock__matchers__test_1_1_int_reference_wrapper.html">IntReferenceWrapper</a> &amp;a, const <a class="el" href="structtesting_1_1gmock__matchers__test_1_1_int_reference_wrapper.html">IntReferenceWrapper</a> &amp;b)</td></tr>
 <tr class="separator:a33c068c32bf5118e5be92771b146db77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae99c08c8a815964b61f98a4785cf79b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#ae99c08c8a815964b61f98a4785cf79b5">TEST</a> (MatcherCastTest, ValueIsNotCopied)</td></tr>
 <tr class="separator:ae99c08c8a815964b61f98a4785cf79b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -301,7 +284,7 @@ Functions</h2></td></tr>
 <tr class="separator:a25ae831c15c9ca918ed847ba147ac572"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ac5d4c2fae3e7f2e6c6be657a61f86a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a2ac5d4c2fae3e7f2e6c6be657a61f86a">TEST</a> (EqTest, MatchesEqualValue)</td></tr>
 <tr class="separator:a2ac5d4c2fae3e7f2e6c6be657a61f86a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b9f261a3b98ba0e0bca21b69d593241"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a4b9f261a3b98ba0e0bca21b69d593241">operator==</a> (const <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_unprintable.html">Unprintable</a> &amp;, const <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_unprintable.html">Unprintable</a> &amp;)</td></tr>
+<tr class="memitem:a4b9f261a3b98ba0e0bca21b69d593241"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a4b9f261a3b98ba0e0bca21b69d593241">operator==</a> (const <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_unprintable.html">Unprintable</a> &amp;, const <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_unprintable.html">Unprintable</a> &amp;)</td></tr>
 <tr class="separator:a4b9f261a3b98ba0e0bca21b69d593241"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c86e845cb44f34eeac4863041c871c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a1c86e845cb44f34eeac4863041c871c6">TEST</a> (EqTest, CanDescribeSelf)</td></tr>
 <tr class="separator:a1c86e845cb44f34eeac4863041c871c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -453,7 +436,7 @@ Functions</h2></td></tr>
 <tr class="separator:a831db2bf90c3950953cdceaefebddd40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46849e0c019e331f830ed91137fa417a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a46849e0c019e331f830ed91137fa417a">TEST</a> (NotTest, NotMatcherSafelyCastsMonomorphicMatchers)</td></tr>
 <tr class="separator:a46849e0c019e331f830ed91137fa417a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51d8731c3824a6acdaa594645dd46779"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a51d8731c3824a6acdaa594645dd46779">AllOfMatches</a> (int num, const <a class="el" href="classtesting_1_1_matcher.html">Matcher</a>&lt; int &gt; &amp;m)</td></tr>
+<tr class="memitem:a51d8731c3824a6acdaa594645dd46779"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a51d8731c3824a6acdaa594645dd46779">AllOfMatches</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> num, const <a class="el" href="classtesting_1_1_matcher.html">Matcher</a>&lt; <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> &gt; &amp;<a class="el" href="abstract_8h.html#a61c2f43341311f6f63e8f440c4fd3892">m</a>)</td></tr>
 <tr class="separator:a51d8731c3824a6acdaa594645dd46779"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7714d041eb2dd2e233db7f175fedef5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a7714d041eb2dd2e233db7f175fedef5a">TEST</a> (AllOfTest, MatchesWhenAllMatch)</td></tr>
 <tr class="separator:a7714d041eb2dd2e233db7f175fedef5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -465,7 +448,7 @@ Functions</h2></td></tr>
 <tr class="separator:a4196a4000390e2378954d55b4f6d2893"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b9f4a791dd4f1fb9f8a1400883a5db4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a2b9f4a791dd4f1fb9f8a1400883a5db4">TEST</a> (AllOfTest, ExplainsResult)</td></tr>
 <tr class="separator:a2b9f4a791dd4f1fb9f8a1400883a5db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4e9deb0a98413e62516451e7c060c7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#aa4e9deb0a98413e62516451e7c060c7a">AnyOfMatches</a> (int num, const <a class="el" href="classtesting_1_1_matcher.html">Matcher</a>&lt; int &gt; &amp;m)</td></tr>
+<tr class="memitem:aa4e9deb0a98413e62516451e7c060c7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#aa4e9deb0a98413e62516451e7c060c7a">AnyOfMatches</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> num, const <a class="el" href="classtesting_1_1_matcher.html">Matcher</a>&lt; <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> &gt; &amp;<a class="el" href="abstract_8h.html#a61c2f43341311f6f63e8f440c4fd3892">m</a>)</td></tr>
 <tr class="separator:aa4e9deb0a98413e62516451e7c060c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4949d40a1ac77182274189c21848af00"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a4949d40a1ac77182274189c21848af00">TEST</a> (AnyOfTest, MatchesWhenAnyMatches)</td></tr>
 <tr class="separator:a4949d40a1ac77182274189c21848af00"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -477,15 +460,15 @@ Functions</h2></td></tr>
 <tr class="separator:a8fb1598253450afeb0440682cd23999e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4c09014fce6029575e2c337cde85bdf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#ad4c09014fce6029575e2c337cde85bdf">TEST</a> (AnyOfTest, ExplainsResult)</td></tr>
 <tr class="separator:ad4c09014fce6029575e2c337cde85bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70e728cf67d0224c3ebb9eb8959cc39d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a70e728cf67d0224c3ebb9eb8959cc39d">IsPositive</a> (double x)</td></tr>
+<tr class="memitem:a70e728cf67d0224c3ebb9eb8959cc39d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a70e728cf67d0224c3ebb9eb8959cc39d">IsPositive</a> (double <a class="el" href="stringobject_8h.html#a280f2393c503127fff91ecbc558e288d">x</a>)</td></tr>
 <tr class="separator:a70e728cf67d0224c3ebb9eb8959cc39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdce9daf2e3d3721d68f76680129f03b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#abdce9daf2e3d3721d68f76680129f03b">ReferencesFooAndIsZero</a> (const int &amp;n)</td></tr>
+<tr class="memitem:abdce9daf2e3d3721d68f76680129f03b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#abdce9daf2e3d3721d68f76680129f03b">ReferencesFooAndIsZero</a> (const <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> &amp;<a class="el" href="longobject_8h.html#a0a1cb627ccae562872efc91e5b752be1">n</a>)</td></tr>
 <tr class="separator:abdce9daf2e3d3721d68f76680129f03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7761562a8ffea67a485f3f649f6430a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#ab7761562a8ffea67a485f3f649f6430a">TEST</a> (TrulyTest, MatchesWhatSatisfiesThePredicate)</td></tr>
 <tr class="separator:ab7761562a8ffea67a485f3f649f6430a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3e259f3ae45e199474d7c6d554852f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#ab3e259f3ae45e199474d7c6d554852f0">TEST</a> (TrulyTest, CanBeUsedWithFunctor)</td></tr>
 <tr class="separator:ab3e259f3ae45e199474d7c6d554852f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a248045bc57c8bad87b7d185b5c292f60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1gmock__matchers__test_1_1_convertible_to_bool.html">ConvertibleToBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a248045bc57c8bad87b7d185b5c292f60">IsNotZero</a> (int number)</td></tr>
+<tr class="memitem:a248045bc57c8bad87b7d185b5c292f60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1gmock__matchers__test_1_1_convertible_to_bool.html">ConvertibleToBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a248045bc57c8bad87b7d185b5c292f60">IsNotZero</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> number)</td></tr>
 <tr class="separator:a248045bc57c8bad87b7d185b5c292f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24529fd7834d272009af74106422fe54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a24529fd7834d272009af74106422fe54">TEST</a> (TrulyTest, PredicateCanReturnAClassConvertibleToBool)</td></tr>
 <tr class="separator:a24529fd7834d272009af74106422fe54"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -597,7 +580,7 @@ Functions</h2></td></tr>
 <tr class="separator:a263ede06f6b32a625bb40e4f4c58c8dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00128de027ff6f49f82a7011dd346d43"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a00128de027ff6f49f82a7011dd346d43">TEST</a> (PointeeTest, AlwaysExplainsPointee)</td></tr>
 <tr class="separator:a00128de027ff6f49f82a7011dd346d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c429b4fa8a7835724d9e28033e908b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a7c429b4fa8a7835724d9e28033e908b2">ValueIsPositive</a> (const <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_uncopyable.html">Uncopyable</a> &amp;x)</td></tr>
+<tr class="memitem:a7c429b4fa8a7835724d9e28033e908b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a7c429b4fa8a7835724d9e28033e908b2">ValueIsPositive</a> (const <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_uncopyable.html">Uncopyable</a> &amp;<a class="el" href="stringobject_8h.html#a280f2393c503127fff91ecbc558e288d">x</a>)</td></tr>
 <tr class="separator:a7c429b4fa8a7835724d9e28033e908b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55a8eba9beb33753baf7690d4cb9cd7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a55a8eba9beb33753baf7690d4cb9cd7e">MATCHER_P</a> (UncopyableIs, inner_matcher, &quot;&quot;)</td></tr>
 <tr class="separator:a55a8eba9beb33753baf7690d4cb9cd7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -663,13 +646,13 @@ Functions</h2></td></tr>
 <tr class="separator:a064fc5dd5ca0106e8ed0fbc483472186"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a7e2a9641a06e492d58c75d900330d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a1a7e2a9641a06e492d58c75d900330d3">TEST</a> (PropertyForPointerTest, CanExplainMatchResult)</td></tr>
 <tr class="separator:a1a7e2a9641a06e492d58c75d900330d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2399c4fae49f898c02f57a42047d80f2"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a2399c4fae49f898c02f57a42047d80f2">IntToStringFunction</a> (int input)</td></tr>
+<tr class="memitem:a2399c4fae49f898c02f57a42047d80f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a2399c4fae49f898c02f57a42047d80f2">IntToStringFunction</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> input)</td></tr>
 <tr class="separator:a2399c4fae49f898c02f57a42047d80f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5aea17c7d3dd74cbc0cbf181b3a9e5f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a5aea17c7d3dd74cbc0cbf181b3a9e5f8">TEST</a> (ResultOfTest, WorksForFunctionPointers)</td></tr>
 <tr class="separator:a5aea17c7d3dd74cbc0cbf181b3a9e5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b5240d2272b679d7e3035554c2c5688"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a1b5240d2272b679d7e3035554c2c5688">TEST</a> (ResultOfTest, CanDescribeItself)</td></tr>
 <tr class="separator:a1b5240d2272b679d7e3035554c2c5688"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e957b9dcda1186c6274a8895d1514b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a6e957b9dcda1186c6274a8895d1514b5">IntFunction</a> (int input)</td></tr>
+<tr class="memitem:a6e957b9dcda1186c6274a8895d1514b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a6e957b9dcda1186c6274a8895d1514b5">IntFunction</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> input)</td></tr>
 <tr class="separator:a6e957b9dcda1186c6274a8895d1514b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7fe283b2955ca8bb11b2984a08eef33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#ab7fe283b2955ca8bb11b2984a08eef33">TEST</a> (ResultOfTest, CanExplainMatchResult)</td></tr>
 <tr class="separator:ab7fe283b2955ca8bb11b2984a08eef33"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -677,11 +660,11 @@ Functions</h2></td></tr>
 <tr class="separator:a86f01e29ee48050d401fceca21d1041e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48350ba4c1ce65694ec07e9c1c49a452"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a48350ba4c1ce65694ec07e9c1c49a452">DoubleFunction</a> (double &amp;input)</td></tr>
 <tr class="separator:a48350ba4c1ce65694ec07e9c1c49a452"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6f7dd285163d5880cfd6685bec8cab4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1gmock__matchers__test_1_1_uncopyable.html">Uncopyable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#aa6f7dd285163d5880cfd6685bec8cab4">RefUncopyableFunction</a> (<a class="el" href="classtesting_1_1gmock__matchers__test_1_1_uncopyable.html">Uncopyable</a> &amp;obj)</td></tr>
+<tr class="memitem:aa6f7dd285163d5880cfd6685bec8cab4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1gmock__matchers__test_1_1_uncopyable.html">Uncopyable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#aa6f7dd285163d5880cfd6685bec8cab4">RefUncopyableFunction</a> (<a class="el" href="classtesting_1_1gmock__matchers__test_1_1_uncopyable.html">Uncopyable</a> &amp;<a class="el" href="abstract_8h.html#aaa12580403a2cc24c96324b4c5715889">obj</a>)</td></tr>
 <tr class="separator:aa6f7dd285163d5880cfd6685bec8cab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a505e866c4066d27854cb6754c66a3eec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a505e866c4066d27854cb6754c66a3eec">TEST</a> (ResultOfTest, WorksForReferenceToNonConstResults)</td></tr>
 <tr class="separator:a505e866c4066d27854cb6754c66a3eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fdf1ecaf8e8e8ef5d57c311e675841d"><td class="memItemLeft" align="right" valign="top">const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a5fdf1ecaf8e8e8ef5d57c311e675841d">StringFunction</a> (const string &amp;input)</td></tr>
+<tr class="memitem:a5fdf1ecaf8e8e8ef5d57c311e675841d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a5fdf1ecaf8e8e8ef5d57c311e675841d">StringFunction</a> (const <a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> &amp;input)</td></tr>
 <tr class="separator:a5fdf1ecaf8e8e8ef5d57c311e675841d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17b952cce22be6338fb1369f886d61c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a17b952cce22be6338fb1369f886d61c4">TEST</a> (ResultOfTest, WorksForReferenceToConstResults)</td></tr>
 <tr class="separator:a17b952cce22be6338fb1369f886d61c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -695,11 +678,11 @@ Functions</h2></td></tr>
 <tr class="separator:a19b7a39915f7ad5a0b741caf7ae4e619"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a976290e53e319b06c51a94f7e450d765"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a976290e53e319b06c51a94f7e450d765">TEST</a> (ResultOfTest, WorksForPolymorphicFunctors)</td></tr>
 <tr class="separator:a976290e53e319b06c51a94f7e450d765"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3164fc302e0b727c1eb745bdeb959f6"><td class="memItemLeft" align="right" valign="top">const int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#af3164fc302e0b727c1eb745bdeb959f6">ReferencingFunction</a> (const int &amp;n)</td></tr>
+<tr class="memitem:af3164fc302e0b727c1eb745bdeb959f6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#af3164fc302e0b727c1eb745bdeb959f6">ReferencingFunction</a> (const <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> &amp;<a class="el" href="longobject_8h.html#a0a1cb627ccae562872efc91e5b752be1">n</a>)</td></tr>
 <tr class="separator:af3164fc302e0b727c1eb745bdeb959f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00ee08657c9e9e0c306be7b84cd2848c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a00ee08657c9e9e0c306be7b84cd2848c">TEST</a> (ResultOfTest, WorksForReferencingCallables)</td></tr>
 <tr class="separator:a00ee08657c9e9e0c306be7b84cd2848c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5b1fd3b6a8141c7e83ef6040ed4630f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1_polymorphic_matcher.html">PolymorphicMatcher</a>&lt; <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_divisible_by_impl.html">DivisibleByImpl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#ac5b1fd3b6a8141c7e83ef6040ed4630f">DivisibleBy</a> (int n)</td></tr>
+<tr class="memitem:ac5b1fd3b6a8141c7e83ef6040ed4630f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1_polymorphic_matcher.html">PolymorphicMatcher</a>&lt; <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_divisible_by_impl.html">DivisibleByImpl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#ac5b1fd3b6a8141c7e83ef6040ed4630f">DivisibleBy</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> <a class="el" href="longobject_8h.html#a0a1cb627ccae562872efc91e5b752be1">n</a>)</td></tr>
 <tr class="separator:ac5b1fd3b6a8141c7e83ef6040ed4630f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9a60a406d9f495de8c8552abf577dd1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#aa9a60a406d9f495de8c8552abf577dd1">TEST</a> (ExplainMatchResultTest, AllOf_False_False)</td></tr>
 <tr class="separator:aa9a60a406d9f495de8c8552abf577dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -925,9 +908,9 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a55dcc962203a3a3361d2e7e00ed99b4d"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a55dcc962203a3a3361d2e7e00ed99b4d">g_bar</a> = 1</td></tr>
+<tr class="memitem:a55dcc962203a3a3361d2e7e00ed99b4d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a55dcc962203a3a3361d2e7e00ed99b4d">g_bar</a> = 1</td></tr>
 <tr class="separator:a55dcc962203a3a3361d2e7e00ed99b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3536e68112ffbb1f76887cd15bb45c15"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a3536e68112ffbb1f76887cd15bb45c15">foo</a> = 0</td></tr>
+<tr class="memitem:a3536e68112ffbb1f76887cd15bb45c15"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a3536e68112ffbb1f76887cd15bb45c15">foo</a> = 0</td></tr>
 <tr class="separator:a3536e68112ffbb1f76887cd15bb45c15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -943,8 +926,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03071">3071</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a944cdd366ed240f29ae8e3ebc753ad5c"></a>
@@ -958,8 +939,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03015">3015</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -975,8 +954,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02956">2956</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a145329e433869625f9f0e98a0cdfd7b4"></a>
@@ -991,8 +968,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02900">2900</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a8b82c859cd28da9e7f7d4c6091a3165c"></a>
@@ -1002,12 +977,10 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef ::testing::tuple&lt;long, int&gt; <a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a8b82c859cd28da9e7f7d4c6091a3165c">testing::gmock_matchers_test::Tuple2</a></td>
+          <td class="memname">typedef ::testing::tuple&lt;<a class="el" href="modsupport_8h.html#a0cb68e00fb9fb1260ee2daadd9fe6611">long</a>, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&gt; <a class="el" href="namespacetesting_1_1gmock__matchers__test.html#a8b82c859cd28da9e7f7d4c6091a3165c">testing::gmock_matchers_test::Tuple2</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01930">1930</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1021,13 +994,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void testing::gmock_matchers_test::AllOfMatches </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>num</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtesting_1_1_matcher.html">Matcher</a>&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtesting_1_1_matcher.html">Matcher</a>&lt; <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>m</em>&#160;</td>
         </tr>
         <tr>
@@ -1037,8 +1010,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02046">2046</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1051,13 +1022,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void testing::gmock_matchers_test::AnyOfMatches </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>num</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtesting_1_1_matcher.html">Matcher</a>&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtesting_1_1_matcher.html">Matcher</a>&lt; <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>m</em>&#160;</td>
         </tr>
         <tr>
@@ -1067,8 +1038,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02244">2244</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1081,7 +1050,7 @@ Variables</h2></td></tr>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">string testing::gmock_matchers_test::Describe </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> testing::gmock_matchers_test::Describe </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classtesting_1_1_matcher.html">Matcher</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -1089,8 +1058,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00202">202</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1103,7 +1070,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">string testing::gmock_matchers_test::DescribeNegation </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> testing::gmock_matchers_test::DescribeNegation </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classtesting_1_1_matcher.html">Matcher</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -1111,8 +1078,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00210">210</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1125,14 +1090,12 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtesting_1_1_polymorphic_matcher.html">PolymorphicMatcher</a>&lt;<a class="el" href="classtesting_1_1gmock__matchers__test_1_1_divisible_by_impl.html">DivisibleByImpl</a>&gt; testing::gmock_matchers_test::DivisibleBy </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03990">3990</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1152,8 +1115,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03845">3845</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a6215aeb6213a03f4233924ef1c74d968"></a>
@@ -1165,7 +1126,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename MatcherType , typename Value &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">string testing::gmock_matchers_test::Explain </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> testing::gmock_matchers_test::Explain </td>
           <td>(</td>
           <td class="paramtype">const MatcherType &amp;&#160;</td>
           <td class="paramname"><em>m</em>, </td>
@@ -1183,8 +1144,6 @@ template&lt;typename MatcherType , typename Value &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00218">218</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1206,8 +1165,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05091">5091</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a8cf8614a7c9adc8fb00e8af04895f97c"></a>
@@ -1217,16 +1174,14 @@ template&lt;typename Graph &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtesting_1_1_matcher.html">Matcher</a>&lt;int&gt; testing::gmock_matchers_test::GreaterThan </td>
+          <td class="memname"><a class="el" href="classtesting_1_1_matcher.html">Matcher</a>&lt;<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&gt; testing::gmock_matchers_test::GreaterThan </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00188">188</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1339,16 +1294,14 @@ template&lt;typename Graph &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int testing::gmock_matchers_test::IntFunction </td>
+          <td class="memname"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> testing::gmock_matchers_test::IntFunction </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>input</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03822">3822</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1359,16 +1312,14 @@ template&lt;typename Graph &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string testing::gmock_matchers_test::IntToStringFunction </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> testing::gmock_matchers_test::IntToStringFunction </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>input</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03802">3802</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1387,8 +1338,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05433">5433</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a248045bc57c8bad87b7d185b5c292f60"></a>
@@ -1400,14 +1349,12 @@ template&lt;typename Graph &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtesting_1_1gmock__matchers__test_1_1_convertible_to_bool.html">ConvertibleToBool</a> testing::gmock_matchers_test::IsNotZero </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>number</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02485">2485</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1418,7 +1365,7 @@ template&lt;typename Graph &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int testing::gmock_matchers_test::IsPositive </td>
+          <td class="memname"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> testing::gmock_matchers_test::IsPositive </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
@@ -1426,8 +1373,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02435">2435</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1438,7 +1383,7 @@ template&lt;typename Graph &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool testing::gmock_matchers_test::IsPositiveIntValue </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> testing::gmock_matchers_test::IsPositiveIntValue </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_int_value.html">IntValue</a> &amp;&#160;</td>
           <td class="paramname"><em>foo</em></td><td>)</td>
@@ -1446,8 +1391,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00549">549</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1483,8 +1426,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02578">2578</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a3d3f285bba1766bf9daf840a16e79924"></a>
@@ -1518,8 +1459,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03184">3184</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1555,8 +1494,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03373">3373</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a5d48d2ef7ca374de369c5f0a30e32343"></a>
@@ -1566,16 +1503,14 @@ template&lt;typename Graph &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string testing::gmock_matchers_test::OfType </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> testing::gmock_matchers_test::OfType </td>
           <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> &amp;&#160;</td>
           <td class="paramname"><em>type_name</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00192">192</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1605,8 +1540,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00626">626</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="af0b7ba716a9150ff6db37abda4b44fc8"></a>
@@ -1616,7 +1549,7 @@ template&lt;typename Graph &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool testing::gmock_matchers_test::operator== </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> testing::gmock_matchers_test::operator== </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structtesting_1_1gmock__matchers__test_1_1_convertible_from_any.html">ConvertibleFromAny</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
@@ -1634,8 +1567,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00622">622</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1646,7 +1577,7 @@ template&lt;typename Graph &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool testing::gmock_matchers_test::operator== </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> testing::gmock_matchers_test::operator== </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structtesting_1_1gmock__matchers__test_1_1_int_reference_wrapper.html">IntReferenceWrapper</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
@@ -1664,8 +1595,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00648">648</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1679,7 +1608,7 @@ template&lt;typename Graph &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool testing::gmock_matchers_test::operator== </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> testing::gmock_matchers_test::operator== </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_unprintable.html">Unprintable</a> &amp;&#160;</td>
           <td class="paramname">, </td>
@@ -1703,8 +1632,6 @@ template&lt;typename Graph &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00874">874</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a8a0035a0de2d219d89ff7070762ece72"></a>
@@ -1721,8 +1648,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00501">501</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1741,8 +1666,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00458">458</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="abdce9daf2e3d3721d68f76680129f03b"></a>
@@ -1752,16 +1675,14 @@ template&lt;typename Graph &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool testing::gmock_matchers_test::ReferencesFooAndIsZero </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> testing::gmock_matchers_test::ReferencesFooAndIsZero </td>
           <td>(</td>
-          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> &amp;&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02456">2456</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1772,16 +1693,14 @@ template&lt;typename Graph &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const int* testing::gmock_matchers_test::ReferencingFunction </td>
+          <td class="memname">const <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>* testing::gmock_matchers_test::ReferencingFunction </td>
           <td>(</td>
-          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> &amp;&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03944">3944</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1801,8 +1720,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03847">3847</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a5fdf1ecaf8e8e8ef5d57c311e675841d"></a>
@@ -1812,16 +1729,14 @@ template&lt;typename Graph &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const string&amp; testing::gmock_matchers_test::StringFunction </td>
+          <td class="memname">const <a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&amp; testing::gmock_matchers_test::StringFunction </td>
           <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> &amp;&#160;</td>
           <td class="paramname"><em>input</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03871">3871</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1851,8 +1766,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00224">224</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="abc02b215e80c57464c83abdf297b9db7"></a>
@@ -1880,8 +1793,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00240">240</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1911,8 +1822,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00247">247</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a2d73acaddb6b28a827ce0e475ffc9cde"></a>
@@ -1940,8 +1849,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00274">274</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1971,8 +1878,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00299">299</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a8843a1545b9e09d73b565cf94f2e5f8b"></a>
@@ -2000,8 +1905,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00308">308</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2031,8 +1934,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00313">313</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a2bd9ad37a8b9f03b10a15ed322c3249c"></a>
@@ -2060,8 +1961,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00321">321</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2091,8 +1990,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00328">328</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ab37bd0e535503a8f39e34b0554b2fb28"></a>
@@ -2120,8 +2017,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00336">336</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2151,8 +2046,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00350">350</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="aee6cef32b22ddd6ce8b87578c3de4198"></a>
@@ -2180,8 +2073,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00356">356</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2211,8 +2102,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00369">369</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a6786eca17f1fc4d6250470cc21ec79f1"></a>
@@ -2240,8 +2129,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00381">381</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2271,8 +2158,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00432">432</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="aad0604e47fea147ae133d134b4606a26"></a>
@@ -2300,8 +2185,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00462">462</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2331,8 +2214,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00505">505</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="afffaa6f2c436edb7c46e7a16ed2de825"></a>
@@ -2360,8 +2241,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00530">530</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2391,8 +2270,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00555">555</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a9d25aac0defd9296bf207cacd342aff0"></a>
@@ -2420,8 +2297,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00571">571</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2451,8 +2326,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00579">579</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a6fd48b8275f96d9d4ee840f0ec590fb1"></a>
@@ -2480,8 +2353,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00587">587</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2511,8 +2382,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00595">595</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a8f845dd5b1bcdc660926d67dce32b5d2"></a>
@@ -2540,8 +2409,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00605">605</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2571,8 +2438,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00630">630</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ae51787fccc0f0a27e3725039c6cd48dc"></a>
@@ -2600,8 +2465,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00636">636</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2631,8 +2494,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00652">652</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a29c04361c022a71711dbf9d3cf2a5050"></a>
@@ -2660,8 +2521,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00676">676</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2691,8 +2550,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00685">685</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a937469149aee65efde526091af1e4f78"></a>
@@ -2720,8 +2577,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00698">698</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2751,8 +2606,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00712">712</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ad53741423311d4f76d9d980f59ec8d65"></a>
@@ -2780,8 +2633,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00722">722</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2811,8 +2662,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00730">730</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a9fc149b429176a45e45267132ae901bd"></a>
@@ -2840,8 +2689,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00740">740</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2871,8 +2718,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00747">747</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a0490279eed67f8fa45f83c4951e1d8a1"></a>
@@ -2900,8 +2745,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00753">753</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2931,8 +2774,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00760">760</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a7672c72f955b937542acd87d18dd7ea6"></a>
@@ -2960,8 +2801,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00767">767</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2991,8 +2830,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00773">773</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="af15da53cdc65283b8ca688a03801fd12"></a>
@@ -3020,8 +2857,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00783">783</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -3051,8 +2886,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00797">797</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a24432bc861bee430fb8ac1a4e5463ecf"></a>
@@ -3080,8 +2913,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00807">807</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -3111,8 +2942,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00812">812</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ac3b18688ca5b5cf2d6137ce3e7397691"></a>
@@ -3140,8 +2969,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00827">827</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -3171,8 +2998,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00833">833</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a25ae831c15c9ca918ed847ba147ac572"></a>
@@ -3200,8 +3025,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00848">848</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -3231,8 +3054,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00854">854</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a1c86e845cb44f34eeac4863041c871c6"></a>
@@ -3260,8 +3081,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00879">879</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -3291,8 +3110,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00886">886</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a3e8d6cc259c1410a85572bc773bb21b9"></a>
@@ -3320,8 +3137,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00897">897</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -3351,8 +3166,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00908">908</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ae0255a5de2ef537512379c3f8ff9e34f"></a>
@@ -3380,8 +3193,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00926">926</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -3411,8 +3222,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00933">933</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a2718c8d5456b62ab7b060b2723939a72"></a>
@@ -3440,8 +3249,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00941">941</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -3471,8 +3278,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00947">947</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a2981bbdbf9cbd8864a6dde4ff4b06050"></a>
@@ -3500,8 +3305,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00955">955</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -3531,8 +3334,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00961">961</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a463bc4f6cdca489c05ad691e1254e2f3"></a>
@@ -3560,8 +3361,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00969">969</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -3591,8 +3390,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00975">975</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ae29bb32c74970fc22e7ac5d86e7e6c26"></a>
@@ -3620,8 +3417,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00983">983</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -3651,8 +3446,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00989">989</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a8a743510a5256803d75c2d7735ec515a"></a>
@@ -3680,8 +3473,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00997">997</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -3711,8 +3502,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01003">1003</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a0b1655e1640b7da6e1e7cc35074d9274"></a>
@@ -3740,8 +3529,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01031">1031</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -3771,8 +3558,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01040">1040</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a5ba91e0b79fcc0b17b1c1e373e741c38"></a>
@@ -3800,8 +3585,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01059">1059</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -3831,8 +3614,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01066">1066</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="aec956599ef91df968fec972247c7a28a"></a>
@@ -3860,8 +3641,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01079">1079</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -3891,8 +3670,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01088">1088</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a68da7653e6a480c60a3a03fe8afb20fc"></a>
@@ -3920,8 +3697,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01107">1107</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -3951,8 +3726,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01114">1114</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ad8fc5a82cbb4b5b8147798be06d7059b"></a>
@@ -3980,8 +3753,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01123">1123</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -4011,8 +3782,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01133">1133</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a03b45cf0f65f33208ac378b8603ff67a"></a>
@@ -4040,8 +3809,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01145">1145</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -4071,8 +3838,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01159">1159</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a5956b46686ad29d2d29b313bce9eba8a"></a>
@@ -4100,8 +3865,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01171">1171</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -4131,8 +3894,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01182">1182</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a3c0a0ca54e3d34c55bd30c2b5572d902"></a>
@@ -4160,8 +3921,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01196">1196</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -4191,8 +3950,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01207">1207</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ae0c0b82b3895923747dc70cb9339a8dc"></a>
@@ -4220,8 +3977,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01212">1212</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -4251,8 +4006,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01224">1224</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ab4fb6542ea3a7789850668a9266a80ef"></a>
@@ -4280,8 +4033,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01249">1249</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -4311,8 +4062,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01254">1254</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ae953891c7961b6ffd51dc712be8d24de"></a>
@@ -4340,8 +4089,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01266">1266</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -4371,8 +4118,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01272">1272</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a147dde340ba8f77308cd116d3bb831d6"></a>
@@ -4400,8 +4145,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01283">1283</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -4431,8 +4174,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01296">1296</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="acdbdca45a537261fd168cdb8df9348d7"></a>
@@ -4460,8 +4201,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01301">1301</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -4491,8 +4230,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01307">1307</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a39f4f76617c414ab715b701eb82eeee4"></a>
@@ -4520,8 +4257,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01315">1315</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -4551,8 +4286,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01323">1323</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="af9f4e295413489a7e3acafc59584c3c4"></a>
@@ -4580,8 +4313,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01331">1331</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -4611,8 +4342,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01340">1340</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a5689064ea3fe50424dd1ea036d107aa8"></a>
@@ -4640,8 +4369,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01356">1356</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -4671,8 +4398,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01366">1366</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a4ee8f3967e3658cd7bd340558922f131"></a>
@@ -4700,8 +4425,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01381">1381</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -4731,8 +4454,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01419">1419</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ad2110445fe8f2f8ca947540f2a400228"></a>
@@ -4760,8 +4481,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01439">1439</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -4791,8 +4510,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01449">1449</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ac8a66c592ff57cce28b6f1d5211fd370"></a>
@@ -4820,8 +4537,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01462">1462</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -4851,8 +4566,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01476">1476</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ac3d41540d2ae7956d33c9eae1be67d91"></a>
@@ -4880,8 +4593,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01483">1483</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -4911,8 +4622,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01497">1497</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a5983e981b59498c6427ddb183c414bb7"></a>
@@ -4940,8 +4649,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01504">1504</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -4971,8 +4678,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01516">1516</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a0a23f3ff8f97ccf74cd64673edc6694f"></a>
@@ -5000,8 +4705,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01526">1526</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -5031,8 +4734,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01538">1538</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a768adf8450910e4c3ac0cb2caec8a4c2"></a>
@@ -5060,8 +4761,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01934">1934</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -5091,8 +4790,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01941">1941</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a100bae52c11f2e44a141652002d3bee2"></a>
@@ -5120,8 +4817,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01948">1948</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -5151,8 +4846,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01956">1956</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a4ef0cb0e88b7801075798649189d7b72"></a>
@@ -5180,8 +4873,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01963">1963</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -5211,8 +4902,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01971">1971</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="add304ba60989990fc78a616c9592a948"></a>
@@ -5240,8 +4929,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01978">1978</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -5271,8 +4958,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01986">1986</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ac7ecdd71d0cc49438f7ad1863fdfab05"></a>
@@ -5300,8 +4985,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l01993">1993</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -5331,8 +5014,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02001">2001</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a69692057d2825f6fc8a37265667867c7"></a>
@@ -5360,8 +5041,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02008">2008</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -5391,8 +5070,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02016">2016</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ab41b57eeaea5568064b6ed3725316c73"></a>
@@ -5420,8 +5097,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02022">2022</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -5451,8 +5126,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02030">2030</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a46849e0c019e331f830ed91137fa417a"></a>
@@ -5480,8 +5153,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02036">2036</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -5511,8 +5182,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02057">2057</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a31056975d89eea2786997cf18b086bf4"></a>
@@ -5540,8 +5209,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02124">2124</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -5571,8 +5238,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02154">2154</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a4196a4000390e2378954d55b4f6d2893"></a>
@@ -5600,8 +5265,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02186">2186</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -5631,8 +5294,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02200">2200</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a4949d40a1ac77182274189c21848af00"></a>
@@ -5660,8 +5321,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02255">2255</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -5691,8 +5350,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02315">2315</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="acc5e849e0765f00a48581e9480f3c8e2"></a>
@@ -5720,8 +5377,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02343">2343</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -5751,8 +5406,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02371">2371</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ad4c09014fce6029575e2c337cde85bdf"></a>
@@ -5780,8 +5433,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02385">2385</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -5811,8 +5462,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02462">2462</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ab3e259f3ae45e199474d7c6d554852f0"></a>
@@ -5840,8 +5489,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02469">2469</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -5871,8 +5518,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02492">2492</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="af474a9719e614d521c71bdf7c39f6a7a"></a>
@@ -5900,8 +5545,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02499">2499</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -5931,8 +5574,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02507">2507</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a6617484cbb644af9882fc5d853112aae"></a>
@@ -5960,8 +5601,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02516">2516</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -5991,8 +5630,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02523">2523</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a9fd734ae5afb64a7285503bc0870c255"></a>
@@ -6020,8 +5657,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02531">2531</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -6051,8 +5686,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02540">2540</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a53403682e9ffc12152b0b1c7f55dfa12"></a>
@@ -6080,8 +5713,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02545">2545</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -6111,8 +5742,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02556">2556</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="aeff2711a03b27a66c1c98ed97ff49b09"></a>
@@ -6140,8 +5769,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02566">2566</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -6171,8 +5798,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02582">2582</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="aeea300647af4c7611f4e491cabcbf950"></a>
@@ -6200,8 +5825,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02586">2586</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -6231,8 +5854,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02591">2591</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ad62534535946b2ef45457fb653f73a98"></a>
@@ -6260,8 +5881,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02606">2606</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -6291,8 +5910,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02622">2622</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a2f3755be7052d6e7769e3323053399d0"></a>
@@ -6320,8 +5937,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02631">2631</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -6351,8 +5966,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02656">2656</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a0fe4bde05f667c4877e3b4a4a7bde002"></a>
@@ -6380,8 +5993,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02684">2684</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -6411,8 +6022,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03142">3142</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a84a21ee7de697401049cb932f859ee33"></a>
@@ -6440,8 +6049,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03152">3152</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -6471,8 +6078,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03162">3162</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a2d2296f6b23130be225b8df48746dfd5"></a>
@@ -6500,8 +6105,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03172">3172</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -6531,8 +6134,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03304">3304</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ac778a9cebf9306a5efd27cc1186d8269"></a>
@@ -6560,8 +6161,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03316">3316</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -6591,8 +6190,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03322">3322</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ac8b9baa938635d587f0b0df1073208e2"></a>
@@ -6620,8 +6217,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03332">3332</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -6651,8 +6246,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03339">3339</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a00128de027ff6f49f82a7011dd346d43"></a>
@@ -6680,8 +6273,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03350">3350</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -6711,8 +6302,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03401">3401</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a065efc397a420d3dde87909b4a9a6285"></a>
@@ -6740,8 +6329,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03411">3411</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -6771,8 +6358,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03421">3421</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a56b1c75b98aaa5c9d3a6dec2d3ba30dc"></a>
@@ -6800,8 +6385,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03431">3431</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -6831,8 +6414,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03448">3448</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ae720452c3587433e26bea2ea7e91f8e6"></a>
@@ -6860,8 +6441,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03459">3459</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -6891,8 +6470,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03472">3472</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ac43583cb3c4221aa6bd0132c2cb3fed6"></a>
@@ -6920,8 +6497,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03484">3484</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -6951,8 +6526,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03492">3492</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="af5c12cdd12f8778074ad0714b83858ed"></a>
@@ -6980,8 +6553,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03506">3506</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -7011,8 +6582,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03516">3516</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a603253edc7a2310c8a1db225cb589a99"></a>
@@ -7040,8 +6609,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03526">3526</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -7071,8 +6638,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03536">3536</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a5447541a290e16a81aec6dd975983d57"></a>
@@ -7100,8 +6665,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03543">3543</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -7131,8 +6694,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03555">3555</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a6a4ffd283f91f4e085aa582aedefe38e"></a>
@@ -7160,8 +6721,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03563">3563</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -7191,8 +6750,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03613">3613</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a7254899c6d45df648d5b4ef6eece3ae0"></a>
@@ -7220,8 +6777,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03626">3626</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -7251,8 +6806,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03639">3639</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="af703b24e2bee13cf7a042f699809a5ab"></a>
@@ -7280,8 +6833,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03652">3652</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -7311,8 +6862,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03665">3665</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a17b7a59d1dbca0692ebaa71e6f46f1d6"></a>
@@ -7340,8 +6889,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03680">3680</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -7371,8 +6918,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03692">3692</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="aff810d2cdd79c55d483965a28bb5069a"></a>
@@ -7400,8 +6945,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03701">3701</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -7431,8 +6974,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03715">3715</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="acc639f3cbeacf4af712bf02ac451b160"></a>
@@ -7460,8 +7001,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03727">3727</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -7491,8 +7030,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03740">3740</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a78762b60c9d0c985916b698e6d4c55e3"></a>
@@ -7520,8 +7057,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03752">3752</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -7551,8 +7086,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03759">3759</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a064fc5dd5ca0106e8ed0fbc483472186"></a>
@@ -7580,8 +7113,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03773">3773</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -7611,8 +7142,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03782">3782</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a5aea17c7d3dd74cbc0cbf181b3a9e5f8"></a>
@@ -7640,8 +7169,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03804">3804</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -7671,8 +7198,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03812">3812</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ab7fe283b2955ca8bb11b2984a08eef33"></a>
@@ -7700,8 +7225,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03824">3824</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -7731,8 +7254,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03836">3836</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a505e866c4066d27854cb6754c66a3eec"></a>
@@ -7760,8 +7281,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03851">3851</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -7791,8 +7310,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03873">3873</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a1aceb307c843f0f5532053e390a7c654"></a>
@@ -7820,8 +7337,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03884">3884</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -7851,8 +7366,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03894">3894</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a1638ee6460100cbe21c65b6cdc06579a"></a>
@@ -7880,8 +7393,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03902">3902</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -7911,8 +7422,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03916">3916</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a976290e53e319b06c51a94f7e450d765"></a>
@@ -7940,8 +7449,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03932">3932</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -7971,8 +7478,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03951">3951</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="aa9a60a406d9f495de8c8552abf577dd1"></a>
@@ -8000,8 +7505,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03996">3996</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -8031,8 +7534,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04003">4003</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a5d386691eaed59994a1d2b65f94b23a9"></a>
@@ -8060,8 +7561,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04010">4010</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -8091,8 +7590,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04017">4017</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="af1ba4010a24716a51a302f9a518023b5"></a>
@@ -8120,8 +7617,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04022">4022</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -8151,8 +7646,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04027">4027</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="aab82f120c70dc7d8bc2fd74ac6897486"></a>
@@ -8180,8 +7673,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04055">4055</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -8211,8 +7702,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04064">4064</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ab63796f77c7572f6f1aef01cb140f99e"></a>
@@ -8240,8 +7729,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04073">4073</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -8271,8 +7758,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04082">4082</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="adcf3743190f973f2773296d0772e8950"></a>
@@ -8300,8 +7785,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04091">4091</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -8331,8 +7814,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04097">4097</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="abe619d5d1910e1f2e8b169622d1d8592"></a>
@@ -8360,8 +7841,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04105">4105</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -8391,8 +7870,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04117">4117</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a53bcd375786f69d889a8e8891ff8e0b0"></a>
@@ -8420,8 +7897,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04129">4129</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -8451,8 +7926,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04137">4137</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a6c218845fd345302c490ef53f0d36995"></a>
@@ -8480,8 +7953,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04143">4143</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -8511,8 +7982,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04239">4239</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="acc28beb0f3d3fbd8923bad7eb08ce6a6"></a>
@@ -8540,8 +8009,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04252">4252</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -8571,8 +8038,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04264">4264</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a6bce9564bb713ffb690b776e35d2e6cf"></a>
@@ -8600,8 +8065,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04278">4278</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -8631,8 +8094,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04292">4292</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ae5e5420340c8cf91d24af11feca669b0"></a>
@@ -8660,8 +8121,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04310">4310</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -8691,8 +8150,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04319">4319</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a94e4a2a02cde84ac51e37cda1813bc77"></a>
@@ -8720,8 +8177,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04333">4333</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -8751,8 +8206,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04346">4346</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a9d88fbc6e2d01b66a1c10b192b25a802"></a>
@@ -8780,8 +8233,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04364">4364</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -8811,8 +8262,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04370">4370</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a24d3caacabfef918b7a5b9dacc5e3a66"></a>
@@ -8840,8 +8289,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04382">4382</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -8871,8 +8318,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04393">4393</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="afc2d1e86837d8e3103748cb2e96b61c3"></a>
@@ -8900,8 +8345,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04402">4402</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -8931,8 +8374,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04414">4414</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a76aaffd49c78fdee18f11fae5ea3f6fb"></a>
@@ -8960,8 +8401,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04425">4425</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -8991,8 +8430,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04431">4431</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="acc4a96f3aa369fda8f554f5ac4495f4b"></a>
@@ -9020,8 +8457,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04441">4441</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -9051,8 +8486,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04452">4452</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a587c3799433426782ccdcfe5cb07f5bc"></a>
@@ -9080,8 +8513,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04474">4474</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -9111,8 +8542,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04482">4482</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a5aa4eed927d4a1a8ea306d5e47dce94f"></a>
@@ -9140,8 +8569,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04572">4572</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -9171,8 +8598,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04597">4597</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="aa4ef2a94a7d75aa6116e8537deaa5f56"></a>
@@ -9200,8 +8625,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04603">4603</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -9231,8 +8654,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04610">4610</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a8de8e3760418cfcd33913cd30f16d117"></a>
@@ -9260,8 +8681,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04640">4640</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -9291,8 +8710,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04649">4649</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="adb0f512a2369d69f056e42e1cc5f3fc2"></a>
@@ -9320,8 +8737,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04660">4660</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -9351,8 +8766,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04667">4667</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ab403dce87c2d198a4f709d7f781d03c6"></a>
@@ -9380,8 +8793,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04683">4683</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -9411,8 +8822,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04690">4690</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="adb7e47654f1536fc049243f765292825"></a>
@@ -9440,8 +8849,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04705">4705</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -9471,8 +8878,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04715">4715</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a1ff2a93a8f031a5b23dbc699a462043b"></a>
@@ -9500,8 +8905,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04725">4725</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -9531,8 +8934,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04744">4744</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="aef0bf5f855b1e75c63ec45408b5a23ba"></a>
@@ -9560,8 +8961,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05218">5218</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -9591,8 +8990,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05225">5225</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ad1630d47de9f4fcdc00ab4962eaeea05"></a>
@@ -9620,8 +9017,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05231">5231</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -9651,8 +9046,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05237">5237</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="aa633c0b7e0f0316c23bff10e9963f773"></a>
@@ -9680,8 +9073,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05243">5243</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -9711,8 +9102,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05247">5247</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a0831a9160c5420fcd363e4a520f0fb61"></a>
@@ -9740,8 +9129,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05252">5252</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -9771,8 +9158,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05257">5257</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ae104f652fab7d1b3c3873f6987401481"></a>
@@ -9800,8 +9185,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05265">5265</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -9831,8 +9214,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05283">5283</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a918a64c4594ef6b30f53d735c2e6e6ac"></a>
@@ -9860,8 +9241,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05293">5293</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -9891,8 +9270,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05299">5299</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="adf46df588332aa839b52af952fface1a"></a>
@@ -9920,8 +9297,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05325">5325</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -9951,8 +9326,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05350">5350</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a1310e7e85bf8ea8f2281850167e15465"></a>
@@ -9980,8 +9353,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05358">5358</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -10011,8 +9382,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05378">5378</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a74f7c802ddb6879d3c76ff08d3e242b9"></a>
@@ -10040,8 +9409,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05396">5396</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -10071,8 +9438,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05402">5402</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a2c4c39058405e13e6c6b7fcf8e6bfe43"></a>
@@ -10100,8 +9465,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05437">5437</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -10131,8 +9494,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05452">5452</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ad0e797104a482eba2d6c137cf9b676a5"></a>
@@ -10160,8 +9521,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05466">5466</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -10191,8 +9550,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05476">5476</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a1f73a8fa9dd9560bd606a990444a81fe"></a>
@@ -10220,8 +9577,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05496">5496</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -10251,8 +9606,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05507">5507</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a42b98b370f1897cecfafbbfba53f4f38"></a>
@@ -10280,8 +9633,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05516">5516</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -10311,8 +9662,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05523">5523</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="af3307f88a321331155a146d49974e3e3"></a>
@@ -10340,8 +9689,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05537">5537</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -10371,8 +9718,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05563">5563</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a57e330a5ae600f65d4daa2ed57bbc887"></a>
@@ -10400,8 +9745,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05577">5577</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -10431,8 +9774,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05587">5587</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a50412d02c70f8303a087e6832d26ba62"></a>
@@ -10460,8 +9801,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05607">5607</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -10491,8 +9830,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05618">5618</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="aa68bf48e4a8fa41fcd60f59cc60ede8f"></a>
@@ -10520,8 +9857,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05627">5627</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -10551,8 +9886,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05633">5633</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="af16d28a9f3a07b8ef2962b868b4f8399"></a>
@@ -10580,8 +9913,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05639">5639</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -10611,8 +9942,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02902">2902</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="abb691880cd22f6f444c978547b13f792"></a>
@@ -10640,8 +9969,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02906">2906</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -10671,8 +9998,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02910">2910</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a4e9d89902e088a10915b4f9463ac0f09"></a>
@@ -10700,8 +10025,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02918">2918</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -10731,8 +10054,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02926">2926</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a95a2bbc273ff70fc364c5c9c4697834c"></a>
@@ -10760,8 +10081,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02940">2940</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -10791,8 +10110,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02958">2958</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ad396e996ed685fd80cbd78740b8d01a8"></a>
@@ -10820,8 +10137,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02962">2962</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -10851,8 +10166,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02966">2966</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a4e90d53ea578d6b767559d8615a4c0c2"></a>
@@ -10880,8 +10193,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02982">2982</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -10911,8 +10222,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02998">2998</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ae7521865828fba53b45cc2819bec1273"></a>
@@ -10940,8 +10249,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03006">3006</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -10971,8 +10278,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03017">3017</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ab100ee4a4b0340e31212fb43c9e28255"></a>
@@ -11000,8 +10305,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03021">3021</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -11031,8 +10334,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03025">3025</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ab42c199ae0008ce7550f584742caec28"></a>
@@ -11060,8 +10361,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03033">3033</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -11091,8 +10390,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03041">3041</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a2d101d1823617f9b1346ee64cdce5216"></a>
@@ -11120,8 +10417,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03055">3055</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -11151,8 +10446,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03073">3073</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="add8765ad2bb98f4b064ee77b4c21a612"></a>
@@ -11180,8 +10473,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03077">3077</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -11211,8 +10502,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03081">3081</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a4250d3de38128f3452a0a9e93173bdb4"></a>
@@ -11240,8 +10529,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03097">3097</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -11271,8 +10558,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03110">3110</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a9542b930e1de4d087a8655855edcc13c"></a>
@@ -11300,8 +10585,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03126">3126</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -11331,8 +10614,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03134">3134</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ab09132c3b991b8f104f3091370d2fe55"></a>
@@ -11360,8 +10641,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04798">4798</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -11391,8 +10670,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04806">4806</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a62fd481b1160a667c785e6009ff87163"></a>
@@ -11420,8 +10697,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04816">4816</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -11451,8 +10726,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04829">4829</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a074ca2babea203d1a54d69ff1fde5c59"></a>
@@ -11480,8 +10753,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04846">4846</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -11511,8 +10782,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04862">4862</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a5dd3b28b540c1ef01e623f840c48e7b4"></a>
@@ -11540,8 +10809,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04878">4878</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -11571,8 +10838,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04887">4887</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a11b785087491ae58b074fa8dbbc88cd4"></a>
@@ -11600,8 +10865,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04895">4895</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -11631,8 +10894,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04908">4908</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a2395b7e71b7ad50af72caa61c10e6898"></a>
@@ -11660,8 +10921,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04921">4921</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -11691,8 +10950,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04946">4946</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a937f4d835023cd6322eb7d32596f3f43"></a>
@@ -11720,8 +10977,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04976">4976</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -11751,8 +11006,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04991">4991</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a7d2395b1cb6a90bdc8d46ae06f99f6c7"></a>
@@ -11780,8 +11033,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05135">5135</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -11811,8 +11062,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05102">5102</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a3ac913ed55a7ac2636ae7bfce04296e9"></a>
@@ -11840,8 +11089,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05155">5155</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -11871,8 +11118,6 @@ template&lt;typename Graph &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l05186">5186</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a7c429b4fa8a7835724d9e28033e908b2"></a>
@@ -11882,7 +11127,7 @@ template&lt;typename Graph &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool testing::gmock_matchers_test::ValueIsPositive </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> testing::gmock_matchers_test::ValueIsPositive </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_uncopyable.html">Uncopyable</a> &amp;&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
@@ -11890,8 +11135,6 @@ template&lt;typename Graph &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l03371">3371</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -11903,12 +11146,10 @@ template&lt;typename Graph &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const int testing::gmock_matchers_test::foo = 0</td>
+          <td class="memname">const <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> testing::gmock_matchers_test::foo = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l02452">2452</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -11919,25 +11160,19 @@ template&lt;typename Graph &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const int testing::gmock_matchers_test::g_bar = 1</td>
+          <td class="memname">const <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> testing::gmock_matchers_test::g_bar = 1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l00439">439</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html">gmock_matchers_test</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

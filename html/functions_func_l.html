@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -53,20 +46,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('functions_func_l.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -88,6 +67,16 @@ $(document).ready(function(){initNavTree('functions_func_l.html','');});
 <li>Last()
 : <a class="el" href="class_queue.html#a430aca3d3b9f5fd588b215028d134b74">Queue&lt; E &gt;</a>
 </li>
+<li>leaveWhitespace()
+: <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_forward.html#a4ed667b109557562d143e82e9167a823">pip._vendor.pyparsing.Forward</a>
+, <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_parse_element_enhance.html#a84cb38c815e2e384b6616702eacc35ac">pip._vendor.pyparsing.ParseElementEnhance</a>
+, <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_parse_expression.html#a493a22e063162597c0c7d737610830e2">pip._vendor.pyparsing.ParseExpression</a>
+, <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_parser_element.html#a5506c999238c1eecc7ac47af6cd699cb">pip._vendor.pyparsing.ParserElement</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1pyparsing_1_1_forward.html#a7d8086963ff517abd0fe841f47b7a655">pkg_resources._vendor.pyparsing.Forward</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1pyparsing_1_1_parse_element_enhance.html#a6c3493cab839bc356697e0658d250f46">pkg_resources._vendor.pyparsing.ParseElementEnhance</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1pyparsing_1_1_parse_expression.html#a92305dfced0c62b9242cd2546c745ef5">pkg_resources._vendor.pyparsing.ParseExpression</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1pyparsing_1_1_parser_element.html#a8e5f94959acd269bf7ac67458755913a">pkg_resources._vendor.pyparsing.ParserElement</a>
+</li>
 <li>LeMatcher()
 : <a class="el" href="classtesting_1_1internal_1_1_le_matcher.html#ae3dce3765263397fa5de202d45d0bdb5">testing::internal::LeMatcher&lt; Rhs &gt;</a>
 </li>
@@ -96,6 +85,9 @@ $(document).ready(function(){initNavTree('functions_func_l.html','');});
 </li>
 <li>LhsSize()
 : <a class="el" href="classtesting_1_1internal_1_1_match_matrix.html#a337d9793c61d985dbc1be166e34eed61">testing::internal::MatchMatrix</a>
+</li>
+<li>license_file()
+: <a class="el" href="classwheel_1_1bdist__wheel_1_1bdist__wheel.html#af9ffed0333f87dea5fbfd159301f7d2a">wheel.bdist_wheel.bdist_wheel</a>
 </li>
 <li>line()
 : <a class="el" href="classtesting_1_1internal_1_1_expectation_base.html#a6a44d831449d31e0e46d0070625b452c">testing::internal::ExpectationBase</a>
@@ -106,7 +98,31 @@ $(document).ready(function(){initNavTree('functions_func_l.html','');});
 : <a class="el" href="classtesting_1_1_test_part_result.html#ad4c5da5f13245ac18cf256d0d9f3eda9">testing::TestPartResult</a>
 </li>
 <li>linked_ptr()
-: <a class="el" href="classtesting_1_1internal_1_1linked__ptr.html#a7597ed91006edd0467c99bd1aaab07f5">testing::internal::linked_ptr&lt; T &gt;</a>
+: <a class="el" href="classtesting_1_1internal_1_1linked__ptr.html#ae805418b9f03f14ff49649e710475dba">testing::internal::linked_ptr&lt; T &gt;</a>
+</li>
+<li>links()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page.html#a9f601ca69162baf958e39b9b17dabe71">pip._vendor.distlib.locators.Page</a>
+, <a class="el" href="classpip_1_1__vendor_1_1requests_1_1models_1_1_response.html#a15dba82018e412fafd2c94fb43548e77">pip._vendor.requests.models.Response</a>
+</li>
+<li>links_to_dynamic()
+: <a class="el" href="classsetuptools_1_1command_1_1build__ext_1_1build__ext.html#a26e3f247bf436a79048835621d25416a">setuptools.command.build_ext.build_ext</a>
+</li>
+<li>list()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1__backport_1_1tarfile_1_1_tar_file.html#ab9aea2de950c8e5330ac6be26a8a3afd">pip._vendor.distlib._backport.tarfile.TarFile</a>
+</li>
+<li>list_distinfo_files()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1database_1_1_egg_info_distribution.html#a81eb42fe04552504c3c44bae820de34b">pip._vendor.distlib.database.EggInfoDistribution</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1database_1_1_installed_distribution.html#a91b6c8c2a299a9b1436538ad0cfe37d7">pip._vendor.distlib.database.InstalledDistribution</a>
+</li>
+<li>list_domains()
+: <a class="el" href="classpip_1_1__vendor_1_1requests_1_1cookies_1_1_requests_cookie_jar.html#acaec0bacd8ec7eaf581431561d478320">pip._vendor.requests.cookies.RequestsCookieJar</a>
+</li>
+<li>list_installed_files()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1database_1_1_egg_info_distribution.html#ad11f1a01b3d7117ca45670f4de85b97c">pip._vendor.distlib.database.EggInfoDistribution</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1database_1_1_installed_distribution.html#ac8334af46ee0a8db7654afeba7951647">pip._vendor.distlib.database.InstalledDistribution</a>
+</li>
+<li>list_paths()
+: <a class="el" href="classpip_1_1__vendor_1_1requests_1_1cookies_1_1_requests_cookie_jar.html#af922c3ca25c775188ed3a015274b53dc">pip._vendor.requests.cookies.RequestsCookieJar</a>
 </li>
 <li>listeners()
 : <a class="el" href="classtesting_1_1internal_1_1_unit_test_impl.html#a67211f8475936f88d0e4d30f841c0da4">testing::internal::UnitTestImpl</a>
@@ -118,22 +134,74 @@ $(document).ready(function(){initNavTree('functions_func_l.html','');});
 <li>ListTestsMatchingFilter()
 : <a class="el" href="classtesting_1_1internal_1_1_unit_test_impl.html#ad2cfedef41d3d29aad23c2c64214e6f3">testing::internal::UnitTestImpl</a>
 </li>
+<li>load()
+: <a class="el" href="classpip_1_1__vendor_1_1pkg__resources_1_1_entry_point.html#a50797fcb50ff289c64454d1415d14e83">pip._vendor.pkg_resources.EntryPoint</a>
+, <a class="el" href="classpip_1_1__vendor_1_1pkg__resources_1_1_memoized_zip_manifests.html#ab20afedc63633f10e121b813ee787de5">pip._vendor.pkg_resources.MemoizedZipManifests</a>
+, <a class="el" href="classpkg__resources_1_1_entry_point.html#a5438200cf3226e4762a3b94a456be23a">pkg_resources.EntryPoint</a>
+, <a class="el" href="classpkg__resources_1_1_memoized_zip_manifests.html#a50bc96483413c076fed78057393f6d3c">pkg_resources.MemoizedZipManifests</a>
+, <a class="el" href="classwheel_1_1signatures_1_1keys_1_1_wheel_keys.html#a6ba856781fba3ec8bdfdc0677395f427">wheel.signatures.keys.WheelKeys</a>
+</li>
+<li>load_entry_point()
+: <a class="el" href="classpip_1_1__vendor_1_1pkg__resources_1_1_distribution.html#a263ed52645359c1a003f0f8b0bfd666f">pip._vendor.pkg_resources.Distribution</a>
+, <a class="el" href="classpkg__resources_1_1_distribution.html#a2a3097439745646ac5be811f39c2aca8">pkg_resources.Distribution</a>
+</li>
+<li>load_module()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1wheel_1_1_mounter.html#af38343d58a8458c1995a3076fc23cd2a">pip._vendor.distlib.wheel.Mounter</a>
+, <a class="el" href="classpip_1_1__vendor_1_1six_1_1___six_meta_path_importer.html#af4d2ccfec558c02e91324c35dc06587d">pip._vendor.six._SixMetaPathImporter</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1six_1_1___six_meta_path_importer.html#ab72a0de7983409c0b10497cf94c6cd91">pkg_resources._vendor.six._SixMetaPathImporter</a>
+, <a class="el" href="classpkg__resources_1_1extern_1_1_vendor_importer.html#aa34920cbe53734c059a0565d5403aebc">pkg_resources.extern.VendorImporter</a>
+</li>
+<li>loads()
+: <a class="el" href="classpip_1_1__vendor_1_1cachecontrol_1_1serialize_1_1_serializer.html#a61a7b81edc4e8dd2863e1421a67fb7ab">pip._vendor.cachecontrol.serialize.Serializer</a>
+</li>
+<li>loadTestsFromModule()
+: <a class="el" href="classsetuptools_1_1command_1_1test_1_1_scanning_loader.html#a29cd676380d82375863012b7cc1feb80">setuptools.command.test.ScanningLoader</a>
+</li>
+<li>local()
+: <a class="el" href="classpip_1_1__vendor_1_1packaging_1_1version_1_1_legacy_version.html#aa9235448296342c68fdf10eb62df58d2">pip._vendor.packaging.version.LegacyVersion</a>
+, <a class="el" href="classpip_1_1__vendor_1_1packaging_1_1version_1_1_version.html#aa56fefde7bc6c16690c03d29513fbcd0">pip._vendor.packaging.version.Version</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1packaging_1_1version_1_1_legacy_version.html#a9ffd76cde683437bb134266d2480e23d">pkg_resources._vendor.packaging.version.LegacyVersion</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1packaging_1_1version_1_1_version.html#a42fcad5b56f4cba8bb585c85b4d823e6">pkg_resources._vendor.packaging.version.Version</a>
+</li>
+<li>locate()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1locators_1_1_locator.html#a52564972db53ebf3ebfc4ec6bf2020e3">pip._vendor.distlib.locators.Locator</a>
+</li>
 <li>Lock()
 : <a class="el" href="classtesting_1_1internal_1_1_mutex.html#ae7e2191886c00182176b23c4f4d049f8">testing::internal::Mutex</a>
+</li>
+<li>log_debug()
+: <a class="el" href="classsetuptools_1_1lib2to3__ex_1_1_distutils_refactoring_tool.html#a64caed9a054319ad50eff6a7eaec85fd">setuptools.lib2to3_ex.DistutilsRefactoringTool</a>
+</li>
+<li>log_error()
+: <a class="el" href="classsetuptools_1_1lib2to3__ex_1_1_distutils_refactoring_tool.html#afab7dd5ab0853f37be028101f5615e63">setuptools.lib2to3_ex.DistutilsRefactoringTool</a>
+</li>
+<li>log_message()
+: <a class="el" href="classsetuptools_1_1lib2to3__ex_1_1_distutils_refactoring_tool.html#abd4e41a1094e843d498e86b9a48e4872">setuptools.lib2to3_ex.DistutilsRefactoringTool</a>
+</li>
+<li>longest_prefix()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1trie_1_1__base_1_1_trie.html#a6a605d6e711f7540c2c7cc68b46da5a2">pip._vendor.html5lib.trie._base.Trie</a>
+, <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1trie_1_1datrie_1_1_trie.html#acc6a4c0598760e36aa40eb94b24f0714">pip._vendor.html5lib.trie.datrie.Trie</a>
+</li>
+<li>longest_prefix_item()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1trie_1_1__base_1_1_trie.html#a36df2ff62eb752f3298cbfbc2a15443c">pip._vendor.html5lib.trie._base.Trie</a>
+, <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1trie_1_1datrie_1_1_trie.html#a4edcc79c9a10eda122b1e780005aa108">pip._vendor.html5lib.trie.datrie.Trie</a>
+</li>
+<li>lookup()
+: <a class="el" href="classsetuptools_1_1msvc_1_1_registry_info.html#afc91b9bf7451e111733eebb84a3b27f6">setuptools.msvc.RegistryInfo</a>
+</li>
+<li>lower_items()
+: <a class="el" href="classpip_1_1__vendor_1_1requests_1_1structures_1_1_case_insensitive_dict.html#ac97d90e15e0694b54a675b57bcfaac62">pip._vendor.requests.structures.CaseInsensitiveDict</a>
 </li>
 <li>LtMatcher()
 : <a class="el" href="classtesting_1_1internal_1_1_lt_matcher.html#af5275d78fc5499e4757f1b3ecca67e15">testing::internal::LtMatcher&lt; Rhs &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

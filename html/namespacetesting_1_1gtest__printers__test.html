@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('namespacetesting_1_1gtest__printers__test.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('namespacetesting_1_1gtest__printers__t
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="namespacetesting_1_1gtest__printers__test.html">gtest_printers_test</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -110,10 +93,10 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:adab26e59d2d7781c06a2c1c5948a8f65"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:adab26e59d2d7781c06a2c1c5948a8f65"><td class="memTemplItemLeft" align="right" valign="top">string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#adab26e59d2d7781c06a2c1c5948a8f65">Print</a> (const T &amp;value)</td></tr>
+<tr class="memitem:adab26e59d2d7781c06a2c1c5948a8f65"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#adab26e59d2d7781c06a2c1c5948a8f65">Print</a> (const T &amp;<a class="el" href="dictobject_8h.html#a4eabde677fab7743b016294ac2f430b9">value</a>)</td></tr>
 <tr class="separator:adab26e59d2d7781c06a2c1c5948a8f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e4be1dea6a05e53db4fd20d259ffdd7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a8e4be1dea6a05e53db4fd20d259ffdd7"><td class="memTemplItemLeft" align="right" valign="top">string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#a8e4be1dea6a05e53db4fd20d259ffdd7">PrintByRef</a> (const T &amp;value)</td></tr>
+<tr class="memitem:a8e4be1dea6a05e53db4fd20d259ffdd7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#a8e4be1dea6a05e53db4fd20d259ffdd7">PrintByRef</a> (const T &amp;<a class="el" href="dictobject_8h.html#a4eabde677fab7743b016294ac2f430b9">value</a>)</td></tr>
 <tr class="separator:a8e4be1dea6a05e53db4fd20d259ffdd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac79ac1529e754dddbaff5ba108ba3de3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#ac79ac1529e754dddbaff5ba108ba3de3">TEST</a> (PrintEnumTest, <a class="el" href="gtest-printers__test_8cc.html#a7a5ee9fe858568a85d80af1312aefb8b">AnonymousEnum</a>)</td></tr>
 <tr class="separator:ac79ac1529e754dddbaff5ba108ba3de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,19 +158,19 @@ Functions</h2></td></tr>
 <tr class="separator:a8819fb42392faae72e8bc594d498085d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afee54807b15b623718c62008bd743d4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#afee54807b15b623718c62008bd743d4b">TEST</a> (PrintPointerToPointerTest, IntPointerPointer)</td></tr>
 <tr class="separator:afee54807b15b623718c62008bd743d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf0e590d6776ecb7095a989ff2272d7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#adf0e590d6776ecb7095a989ff2272d7b">MyFunction</a> (int)</td></tr>
+<tr class="memitem:adf0e590d6776ecb7095a989ff2272d7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#adf0e590d6776ecb7095a989ff2272d7b">MyFunction</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>)</td></tr>
 <tr class="separator:adf0e590d6776ecb7095a989ff2272d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3cb60cf6f3a4a0cd7d9873cd597ffd8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#aa3cb60cf6f3a4a0cd7d9873cd597ffd8">TEST</a> (PrintPointerTest, NonMemberFunctionPointer)</td></tr>
 <tr class="separator:aa3cb60cf6f3a4a0cd7d9873cd597ffd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbd436200da6c80944c8a7504fb56ea1"><td class="memTemplParams" colspan="2">template&lt;typename StringType &gt; </td></tr>
-<tr class="memitem:abbd436200da6c80944c8a7504fb56ea1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1_assertion_result.html">AssertionResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#abbd436200da6c80944c8a7504fb56ea1">HasPrefix</a> (const StringType &amp;str, const StringType &amp;prefix)</td></tr>
+<tr class="memitem:abbd436200da6c80944c8a7504fb56ea1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1_assertion_result.html">AssertionResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#abbd436200da6c80944c8a7504fb56ea1">HasPrefix</a> (const StringType &amp;<a class="el" href="node_8h.html#a62b34ca1362fe946082b7aa0cd9be844">str</a>, const StringType &amp;prefix)</td></tr>
 <tr class="separator:abbd436200da6c80944c8a7504fb56ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a434cafcc1dbee409992bbb1593034480"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#a434cafcc1dbee409992bbb1593034480">TEST</a> (PrintPointerTest, MemberVariablePointer)</td></tr>
 <tr class="separator:a434cafcc1dbee409992bbb1593034480"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d998b210890d3d7e085d01c457f650f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#a9d998b210890d3d7e085d01c457f650f">TEST</a> (PrintPointerTest, MemberFunctionPointer)</td></tr>
 <tr class="separator:a9d998b210890d3d7e085d01c457f650f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10300ded1e327c98c6a36beb7ad49e58"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
-<tr class="memitem:a10300ded1e327c98c6a36beb7ad49e58"><td class="memTemplItemLeft" align="right" valign="top">string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#a10300ded1e327c98c6a36beb7ad49e58">PrintArrayHelper</a> (T(&amp;a)[N])</td></tr>
+<tr class="memitem:a10300ded1e327c98c6a36beb7ad49e58"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#a10300ded1e327c98c6a36beb7ad49e58">PrintArrayHelper</a> (T(&amp;a)[N])</td></tr>
 <tr class="separator:a10300ded1e327c98c6a36beb7ad49e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3845c4717b03cb5ad309c7d9a37acb0a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#a3845c4717b03cb5ad309c7d9a37acb0a">TEST</a> (PrintArrayTest, OneDimensionalArray)</td></tr>
 <tr class="separator:a3845c4717b03cb5ad309c7d9a37acb0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,13 +213,13 @@ Functions</h2></td></tr>
 <tr class="separator:a1ce10b8a3634e0f6bfbfbb5888c04a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a249d482cf4a1525bd043489dcbd3e200"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#a249d482cf4a1525bd043489dcbd3e200">TEST</a> (PrintStlContainerTest, NonEmptyDeque)</td></tr>
 <tr class="separator:a249d482cf4a1525bd043489dcbd3e200"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa135672ff79ecaef82c6046f2ab8d29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#aaa135672ff79ecaef82c6046f2ab8d29">TEST</a> (PrintStlContainerTest, List)</td></tr>
+<tr class="memitem:aaa135672ff79ecaef82c6046f2ab8d29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#aaa135672ff79ecaef82c6046f2ab8d29">TEST</a> (PrintStlContainerTest, <a class="el" href="_python-ast_8h.html#a201830357d214aabbdb46b4163c792cf">List</a>)</td></tr>
 <tr class="separator:aaa135672ff79ecaef82c6046f2ab8d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d701a1866f260a42411e9041894c49c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#a3d701a1866f260a42411e9041894c49c">TEST</a> (PrintStlContainerTest, Map)</td></tr>
 <tr class="separator:a3d701a1866f260a42411e9041894c49c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a498c956a5b1c0358d126e1ad56fac0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#a8a498c956a5b1c0358d126e1ad56fac0">TEST</a> (PrintStlContainerTest, MultiMap)</td></tr>
 <tr class="separator:a8a498c956a5b1c0358d126e1ad56fac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdc498462741033074f8e86b7c0bd480"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#abdc498462741033074f8e86b7c0bd480">TEST</a> (PrintStlContainerTest, Set)</td></tr>
+<tr class="memitem:abdc498462741033074f8e86b7c0bd480"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#abdc498462741033074f8e86b7c0bd480">TEST</a> (PrintStlContainerTest, <a class="el" href="_python-ast_8h.html#a8b39bad9fda6bc73af75e4d6085bcf91">Set</a>)</td></tr>
 <tr class="separator:abdc498462741033074f8e86b7c0bd480"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaa3e1cfa3feca377b3958edb41fc0f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#adaa3e1cfa3feca377b3958edb41fc0f1">TEST</a> (PrintStlContainerTest, MultiSet)</td></tr>
 <tr class="separator:adaa3e1cfa3feca377b3958edb41fc0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -362,8 +345,6 @@ template&lt;typename StringType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00542">542</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="adf0e590d6776ecb7095a989ff2272d7b"></a>
@@ -375,14 +356,12 @@ template&lt;typename StringType &gt; </div>
         <tr>
           <td class="memname">void testing::gtest_printers_test::MyFunction </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00524">524</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -414,8 +393,6 @@ template&lt;typename Char , typename CharTraits &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00736">736</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a5464168e925b1adf29986c8e544e908e"></a>
@@ -445,8 +422,6 @@ template&lt;typename Char , typename CharTraits , typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00753">753</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -478,8 +453,6 @@ template&lt;typename Char , typename CharTraits , typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00774">774</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="adab26e59d2d7781c06a2c1c5948a8f65"></a>
@@ -491,7 +464,7 @@ template&lt;typename Char , typename CharTraits , typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">string testing::gtest_printers_test::Print </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> testing::gtest_printers_test::Print </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
@@ -499,8 +472,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00235">235</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -513,7 +484,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T , size_t N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">string testing::gtest_printers_test::PrintArrayHelper </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> testing::gtest_printers_test::PrintArrayHelper </td>
           <td>(</td>
           <td class="paramtype">T(&amp;)&#160;</td>
           <td class="paramname"><em>a</em>[N]</td><td>)</td>
@@ -521,8 +492,6 @@ template&lt;typename T , size_t N&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00595">595</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -535,7 +504,7 @@ template&lt;typename T , size_t N&gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">string testing::gtest_printers_test::PrintByRef </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> testing::gtest_printers_test::PrintByRef </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
@@ -543,8 +512,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00245">245</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -574,8 +541,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00253">253</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ae435934e9be88c7813ac6aee2ce0ce53"></a>
@@ -603,8 +568,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00258">258</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -634,8 +597,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00263">263</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a171e23e5a52e6b7355c00daf8391ec12"></a>
@@ -663,8 +624,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00268">268</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -694,8 +653,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00275">275</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="aa0a012b88bd8dee46707bf308aa312d1"></a>
@@ -723,8 +680,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00282">282</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -754,8 +709,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00302">302</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a54554ba079349cf09dcb6d522cfb70de"></a>
@@ -783,8 +736,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00309">309</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -814,8 +765,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00318">318</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ab567ebd97eff0a4b9a20a5f5cb77d678"></a>
@@ -843,8 +792,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00324">324</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -874,8 +821,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00346">346</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a278d53e99390c7b31ff531524fe5e86e"></a>
@@ -903,8 +848,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00351">351</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -934,8 +877,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00365">365</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="acde0b28d177604ddb5e185d7b107f6f7"></a>
@@ -963,8 +904,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00374">374</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -994,8 +933,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00391">391</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a89d9905fecee1b976c26d35498734dd4"></a>
@@ -1023,8 +960,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00397">397</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1054,8 +989,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00404">404</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a140030b990011abab91d4c0b59f21edd"></a>
@@ -1083,8 +1016,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00410">410</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1114,8 +1045,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00426">426</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a8812b5f088e13083ebb8a7e35fbcdae7"></a>
@@ -1143,8 +1072,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00432">432</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1174,8 +1101,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00439">439</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="aa80d6bb47e6bf997dacf0c75322d12cf"></a>
@@ -1203,8 +1128,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00445">445</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1234,8 +1157,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00457">457</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ae854b0ca4d06ffc273c391f262884681"></a>
@@ -1263,8 +1184,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00465">465</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1294,8 +1213,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00473">473</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="aa0487f8fd5052f7d6afe2b18ad7931f9"></a>
@@ -1323,8 +1240,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00481">481</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1354,8 +1269,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00491">491</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ac6d8b84db9386b399eb431b5b1668e87"></a>
@@ -1383,8 +1296,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00499">499</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1414,8 +1325,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00507">507</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="afee54807b15b623718c62008bd743d4b"></a>
@@ -1443,8 +1352,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00515">515</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1474,8 +1381,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00526">526</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a434cafcc1dbee409992bbb1593034480"></a>
@@ -1503,8 +1408,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00567">567</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1534,8 +1437,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00579">579</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a3845c4717b03cb5ad309c7d9a37acb0a"></a>
@@ -1563,8 +1464,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00600">600</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1594,8 +1493,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00606">606</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a8b5638f178c12f58707ca0f02a3b4d41"></a>
@@ -1623,8 +1520,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00615">615</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1654,8 +1549,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00621">621</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ab51b9ecaca7d635326101b23d5e8afd2"></a>
@@ -1683,8 +1576,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00628">628</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1714,8 +1605,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00634">634</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a6a7cbcdbe748a1d4e90658f48f36c9da"></a>
@@ -1743,8 +1632,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00641">641</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1774,8 +1661,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00647">647</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a596493b56489aa1571fa26d1402e7116"></a>
@@ -1803,8 +1688,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00653">653</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1834,8 +1717,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00672">672</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ac20ee165500471e363011c3f664d2fb8"></a>
@@ -1863,8 +1744,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00679">679</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1894,8 +1773,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00742">742</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a6e180c85f307712a995985f7bc735fd1"></a>
@@ -1923,8 +1800,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00759">759</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1954,8 +1829,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00780">780</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a1ce10b8a3634e0f6bfbfbb5888c04a95"></a>
@@ -1983,8 +1856,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00804">804</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2014,8 +1885,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00809">809</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="aaa135672ff79ecaef82c6046f2ab8d29"></a>
@@ -2033,7 +1902,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">List&#160;</td>
+          <td class="paramtype"><a class="el" href="_python-ast_8h.html#a201830357d214aabbdb46b4163c792cf">List</a>&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -2043,8 +1912,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00877">877</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2074,8 +1941,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00886">886</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a8a498c956a5b1c0358d126e1ad56fac0"></a>
@@ -2104,8 +1969,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00894">894</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="abdc498462741033074f8e86b7c0bd480"></a>
@@ -2123,7 +1986,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Set&#160;</td>
+          <td class="paramtype"><a class="el" href="_python-ast_8h.html#a8b39bad9fda6bc73af75e4d6085bcf91">Set</a>&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -2133,8 +1996,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00908">908</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2164,8 +2025,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00914">914</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ad5d3e873b00c1c9e3f5924e106dd7831"></a>
@@ -2193,8 +2052,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00931">931</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2224,8 +2081,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00936">936</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a55eca253f3365ad26183bcc711cb257a"></a>
@@ -2253,8 +2108,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00943">943</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2284,8 +2137,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00950">950</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a6dd59bbdea483f662fe62e2c55c106ce"></a>
@@ -2313,8 +2164,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00962">962</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2344,8 +2193,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00968">968</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a01ec32faf0032f9fbcf4895d8d6e4aa9"></a>
@@ -2373,8 +2220,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00980">980</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2404,8 +2249,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00991">991</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a805264fd24de8e65cba977a798abc54c"></a>
@@ -2433,8 +2276,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01117">1117</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2464,8 +2305,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01123">1123</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a6b6fba2a191094244f8aa78a4933a2c5"></a>
@@ -2493,8 +2332,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01135">1135</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2524,8 +2361,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01149">1149</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a8ccd96504d676671a0429073d5012ff1"></a>
@@ -2553,8 +2388,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01156">1156</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2584,8 +2417,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01162">1162</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a3da6191eff6b016540024c2bfccdd90b"></a>
@@ -2613,8 +2444,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01169">1169</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2644,8 +2473,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01175">1175</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="aeae9b61a9fe582c72580db1466631846"></a>
@@ -2673,8 +2500,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01182">1182</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2704,8 +2529,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01201">1201</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a88f9089e0b19be4bda74a953d6a47d7b"></a>
@@ -2733,8 +2556,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01217">1217</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2764,8 +2585,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01233">1233</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="aa7429c3701e464d0047a82686a5e8a46"></a>
@@ -2793,8 +2612,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01245">1245</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2824,8 +2641,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01251">1251</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a3571808f93f419268b6aed1aa127ea30"></a>
@@ -2853,8 +2668,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01258">1258</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2884,8 +2697,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01271">1271</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a735171f4ba0a9dffee9c4c7321107822"></a>
@@ -2913,8 +2724,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01289">1289</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2944,8 +2753,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01325">1325</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ac25834e0463cf9f3d231db24e7b220e5"></a>
@@ -2973,8 +2780,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01372">1372</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -3004,8 +2809,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01380">1380</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a1e95289500400eff5fdcd45c5864a6d2"></a>
@@ -3033,8 +2836,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01387">1387</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -3064,8 +2865,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01395">1395</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ac2300073f401f783ff7b1ef97d2cbd6d"></a>
@@ -3093,8 +2892,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01415">1415</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -3124,8 +2921,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01448">1448</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a68100148758516ebab9c761ca7778586"></a>
@@ -3153,8 +2948,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01452">1452</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -3184,8 +2977,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01457">1457</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ab8fce4287e837cfcd851ded56b62f9ce"></a>
@@ -3213,8 +3004,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01463">1463</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -3244,8 +3033,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01468">1468</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a78bd89af8a8505880b78ec2a001d3cb8"></a>
@@ -3273,8 +3060,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01474">1474</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -3304,8 +3089,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01479">1479</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a65e208358dddc7747f4519410c71d877"></a>
@@ -3333,8 +3116,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01484">1484</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -3364,8 +3145,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01494">1494</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ab7adb58a0e08e0830157a5a1c7bceac5"></a>
@@ -3393,8 +3172,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01500">1500</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -3424,8 +3201,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01507">1507</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a43d4efc91c2ea7d8220891df9b0437df"></a>
@@ -3453,8 +3228,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01524">1524</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -3484,8 +3257,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01530">1530</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ac20aca012aca1ca9589dbf7483fbbbd1"></a>
@@ -3513,8 +3284,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01537">1537</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -3544,20 +3313,14 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01554">1554</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="namespacetesting_1_1gtest__printers__test.html">gtest_printers_test</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

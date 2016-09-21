@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('classgtest__shuffle__test_1_1_g_test_s
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacegtest__shuffle__test.html">gtest_shuffle_test</a></li><li class="navelem"><a class="el" href="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html">GTestShuffleUnitTest</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -100,35 +83,33 @@ Inheritance diagram for gtest_shuffle_test.GTestShuffleUnitTest:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adf9841ae9c86eaafc3c3f7c9690c7bd8"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html#adf9841ae9c86eaafc3c3f7c9690c7bd8">setUp</a> (self)</td></tr>
+<tr class="memitem:adf9841ae9c86eaafc3c3f7c9690c7bd8"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html#adf9841ae9c86eaafc3c3f7c9690c7bd8">setUp</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
 <tr class="separator:adf9841ae9c86eaafc3c3f7c9690c7bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafc33d6129c37043ef5c95dbe766a8db"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html#aafc33d6129c37043ef5c95dbe766a8db">testShufflePreservesNumberOfTests</a> (self)</td></tr>
+<tr class="memitem:aafc33d6129c37043ef5c95dbe766a8db"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html#aafc33d6129c37043ef5c95dbe766a8db">testShufflePreservesNumberOfTests</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
 <tr class="separator:aafc33d6129c37043ef5c95dbe766a8db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ba25ee553b62281e16b6a28873abc01"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html#a0ba25ee553b62281e16b6a28873abc01">testShuffleChangesTestOrder</a> (self)</td></tr>
+<tr class="memitem:a0ba25ee553b62281e16b6a28873abc01"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html#a0ba25ee553b62281e16b6a28873abc01">testShuffleChangesTestOrder</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
 <tr class="separator:a0ba25ee553b62281e16b6a28873abc01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a82320ea310d1e3660bef2efb665bd2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html#a8a82320ea310d1e3660bef2efb665bd2">testShuffleChangesTestCaseOrder</a> (self)</td></tr>
+<tr class="memitem:a8a82320ea310d1e3660bef2efb665bd2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html#a8a82320ea310d1e3660bef2efb665bd2">testShuffleChangesTestCaseOrder</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
 <tr class="separator:a8a82320ea310d1e3660bef2efb665bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7537baa50e9e14b430fb80eaf4ea18f6"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html#a7537baa50e9e14b430fb80eaf4ea18f6">testShuffleDoesNotRepeatTest</a> (self)</td></tr>
+<tr class="memitem:a7537baa50e9e14b430fb80eaf4ea18f6"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html#a7537baa50e9e14b430fb80eaf4ea18f6">testShuffleDoesNotRepeatTest</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
 <tr class="separator:a7537baa50e9e14b430fb80eaf4ea18f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeea745f7ce2ab19a067c5cde6e083ba7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html#aeea745f7ce2ab19a067c5cde6e083ba7">testShuffleDoesNotCreateNewTest</a> (self)</td></tr>
+<tr class="memitem:aeea745f7ce2ab19a067c5cde6e083ba7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html#aeea745f7ce2ab19a067c5cde6e083ba7">testShuffleDoesNotCreateNewTest</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
 <tr class="separator:aeea745f7ce2ab19a067c5cde6e083ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9e25e62817f7cdbd32833f9b2be5794"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html#ab9e25e62817f7cdbd32833f9b2be5794">testShuffleIncludesAllTests</a> (self)</td></tr>
+<tr class="memitem:ab9e25e62817f7cdbd32833f9b2be5794"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html#ab9e25e62817f7cdbd32833f9b2be5794">testShuffleIncludesAllTests</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
 <tr class="separator:ab9e25e62817f7cdbd32833f9b2be5794"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fa91b262595e35bd3e9b52e188dc634"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html#a6fa91b262595e35bd3e9b52e188dc634">testShuffleLeavesDeathTestsAtFront</a> (self)</td></tr>
+<tr class="memitem:a6fa91b262595e35bd3e9b52e188dc634"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html#a6fa91b262595e35bd3e9b52e188dc634">testShuffleLeavesDeathTestsAtFront</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
 <tr class="separator:a6fa91b262595e35bd3e9b52e188dc634"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34bfc9696191f4c2782327e1e35ae902"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html#a34bfc9696191f4c2782327e1e35ae902">testShuffleDoesNotInterleaveTestCases</a> (self)</td></tr>
+<tr class="memitem:a34bfc9696191f4c2782327e1e35ae902"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html#a34bfc9696191f4c2782327e1e35ae902">testShuffleDoesNotInterleaveTestCases</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
 <tr class="separator:a34bfc9696191f4c2782327e1e35ae902"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77b83a9870ad8d68524e1177f5320fb0"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html#a77b83a9870ad8d68524e1177f5320fb0">testShuffleRestoresOrderAfterEachIteration</a> (self)</td></tr>
+<tr class="memitem:a77b83a9870ad8d68524e1177f5320fb0"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html#a77b83a9870ad8d68524e1177f5320fb0">testShuffleRestoresOrderAfterEachIteration</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
 <tr class="separator:a77b83a9870ad8d68524e1177f5320fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada78bae27e0d82d07bd663d53a36552b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html#ada78bae27e0d82d07bd663d53a36552b">testShuffleGeneratesNewOrderInEachIteration</a> (self)</td></tr>
+<tr class="memitem:ada78bae27e0d82d07bd663d53a36552b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html#ada78bae27e0d82d07bd663d53a36552b">testShuffleGeneratesNewOrderInEachIteration</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
 <tr class="separator:ada78bae27e0d82d07bd663d53a36552b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd33c5ef01ce6d1d025ebcc816d47c19"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html#abd33c5ef01ce6d1d025ebcc816d47c19">testShuffleShardedTestsPreservesPartition</a> (self)</td></tr>
+<tr class="memitem:abd33c5ef01ce6d1d025ebcc816d47c19"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html#abd33c5ef01ce6d1d025ebcc816d47c19">testShuffleShardedTestsPreservesPartition</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>)</td></tr>
 <tr class="separator:abd33c5ef01ce6d1d025ebcc816d47c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">Tests test shuffling.</pre> 
-<p>Definition at line <a class="el" href="gtest__shuffle__test_8py_source.html#l00169">169</a> of file <a class="el" href="gtest__shuffle__test_8py_source.html">gtest_shuffle_test.py</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><pre class="fragment">Tests test shuffling.</pre> </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="adf9841ae9c86eaafc3c3f7c9690c7bd8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf9841ae9c86eaafc3c3f7c9690c7bd8">&sect;&nbsp;</a></span>setUp()</h2>
 
@@ -144,8 +125,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__shuffle__test_8py_source.html#l00172">172</a> of file <a class="el" href="gtest__shuffle__test_8py_source.html">gtest_shuffle_test.py</a>.</p>
 
 </div>
 </div>
@@ -165,8 +144,6 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__shuffle__test_8py_source.html#l00189">189</a> of file <a class="el" href="gtest__shuffle__test_8py_source.html">gtest_shuffle_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a0ba25ee553b62281e16b6a28873abc01"></a>
@@ -184,8 +161,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__shuffle__test_8py_source.html#l00181">181</a> of file <a class="el" href="gtest__shuffle__test_8py_source.html">gtest_shuffle_test.py</a>.</p>
 
 </div>
 </div>
@@ -205,8 +180,6 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__shuffle__test_8py_source.html#l00216">216</a> of file <a class="el" href="gtest__shuffle__test_8py_source.html">gtest_shuffle_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a34bfc9696191f4c2782327e1e35ae902"></a>
@@ -224,8 +197,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__shuffle__test_8py_source.html#l00255">255</a> of file <a class="el" href="gtest__shuffle__test_8py_source.html">gtest_shuffle_test.py</a>.</p>
 
 </div>
 </div>
@@ -245,8 +216,6 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__shuffle__test_8py_source.html#l00202">202</a> of file <a class="el" href="gtest__shuffle__test_8py_source.html">gtest_shuffle_test.py</a>.</p>
-
 </div>
 </div>
 <a id="ada78bae27e0d82d07bd663d53a36552b"></a>
@@ -264,8 +233,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__shuffle__test_8py_source.html#l00293">293</a> of file <a class="el" href="gtest__shuffle__test_8py_source.html">gtest_shuffle_test.py</a>.</p>
 
 </div>
 </div>
@@ -285,8 +252,6 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__shuffle__test_8py_source.html#l00226">226</a> of file <a class="el" href="gtest__shuffle__test_8py_source.html">gtest_shuffle_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a6fa91b262595e35bd3e9b52e188dc634"></a>
@@ -304,8 +269,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__shuffle__test_8py_source.html#l00236">236</a> of file <a class="el" href="gtest__shuffle__test_8py_source.html">gtest_shuffle_test.py</a>.</p>
 
 </div>
 </div>
@@ -325,8 +288,6 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__shuffle__test_8py_source.html#l00175">175</a> of file <a class="el" href="gtest__shuffle__test_8py_source.html">gtest_shuffle_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a77b83a9870ad8d68524e1177f5320fb0"></a>
@@ -344,8 +305,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__shuffle__test_8py_source.html#l00261">261</a> of file <a class="el" href="gtest__shuffle__test_8py_source.html">gtest_shuffle_test.py</a>.</p>
 
 </div>
 </div>
@@ -365,23 +324,17 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__shuffle__test_8py_source.html#l00305">305</a> of file <a class="el" href="gtest__shuffle__test_8py_source.html">gtest_shuffle_test.py</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>lib/googletest-master/googletest/test/<a class="el" href="gtest__shuffle__test_8py_source.html">gtest_shuffle_test.py</a></li>
+<li>lib/googletest-master/googletest/test/<a class="el" href="gtest__shuffle__test_8py.html">gtest_shuffle_test.py</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacegtest__shuffle__test.html">gtest_shuffle_test</a></li><li class="navelem"><a class="el" href="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html">GTestShuffleUnitTest</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

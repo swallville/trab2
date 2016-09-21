@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -53,20 +46,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('globals_defs_t.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,22 +64,136 @@ $(document).ready(function(){initNavTree('globals_defs_t.html','');});
 &#160;
 
 <h3><a id="index_t"></a>- t -</h3><ul>
+<li>T_BOOL
+: <a class="el" href="structmember_8h.html#a00fede80c71216441bc0e0f040d403b2">structmember.h</a>
+</li>
+<li>T_BYTE
+: <a class="el" href="structmember_8h.html#a6f64c98fe49fdcf1d2939db817918696">structmember.h</a>
+</li>
+<li>T_CHAR
+: <a class="el" href="structmember_8h.html#ae2381f297a8fbb736886d7d1b6b99b42">structmember.h</a>
+</li>
+<li>T_DOUBLE
+: <a class="el" href="structmember_8h.html#a6e80924a839d0f80571bcd1d2b6ec084">structmember.h</a>
+</li>
+<li>T_FLOAT
+: <a class="el" href="structmember_8h.html#a3d072e0c25cf678e9b8601b957b92eae">structmember.h</a>
+</li>
+<li>T_INT
+: <a class="el" href="structmember_8h.html#a4fa28a492427bc4af75248e22537e9b4">structmember.h</a>
+</li>
+<li>T_LONG
+: <a class="el" href="structmember_8h.html#a2d9ac9f51c75bdb21cf9dfd1412fa194">structmember.h</a>
+</li>
+<li>T_OBJECT
+: <a class="el" href="structmember_8h.html#abed71c72d5c3083041d52ad25630270e">structmember.h</a>
+</li>
+<li>T_OBJECT_EX
+: <a class="el" href="structmember_8h.html#a3078f746f1adbb0aa1a3ab0abb912fb4">structmember.h</a>
+</li>
+<li>T_PYSSIZET
+: <a class="el" href="structmember_8h.html#ac715b2f74550bcf2810f56a5dde24514">structmember.h</a>
+</li>
+<li>T_SHORT
+: <a class="el" href="structmember_8h.html#a23ab0d39813d2d5a59ccb7b9b68c3e6d">structmember.h</a>
+</li>
+<li>T_STRING
+: <a class="el" href="structmember_8h.html#a22a8c2a4bbaae9b68f65c9bb92fd4e39">structmember.h</a>
+</li>
+<li>T_STRING_INPLACE
+: <a class="el" href="structmember_8h.html#a425de217bea9b073288def9b1cef663e">structmember.h</a>
+</li>
+<li>T_UBYTE
+: <a class="el" href="structmember_8h.html#a168de161aeeef2df339baad620804621">structmember.h</a>
+</li>
+<li>T_UINT
+: <a class="el" href="structmember_8h.html#a8fd0e0a95483454b574c9995585ecad9">structmember.h</a>
+</li>
+<li>T_ULONG
+: <a class="el" href="structmember_8h.html#a0de57d11248b3f36250d24a737c445aa">structmember.h</a>
+</li>
+<li>T_USHORT
+: <a class="el" href="structmember_8h.html#a2a1f23d6154f6827608b843f226b5d18">structmember.h</a>
+</li>
+<li>TANH_PRESERVES_ZERO_SIGN
+: <a class="el" href="pyconfig_8h.html#ae1a8440728fbf3de762251c7c076aa65">pyconfig.h</a>
+</li>
+<li>term
+: <a class="el" href="graminit_8h.html#ab78c93f3cda7c78677099c1dd0185418">graminit.h</a>
+</li>
+<li>test
+: <a class="el" href="graminit_8h.html#af04af1bc6d042a68a2b24d6e1312d253">graminit.h</a>
+</li>
 <li>TEST
 : <a class="el" href="gtest_8h.html#ad8b332753515c0ab8baada563c2547eb">gtest.h</a>
 </li>
 <li>TEST_F
 : <a class="el" href="gtest_8h.html#a0ee66d464d1a06c20c1929cae09d8758">gtest.h</a>
 </li>
+<li>testbit
+: <a class="el" href="bitset_8h.html#ab0d80d9d22cf43d5fec82bb3d7ad7f15">bitset.h</a>
+</li>
+<li>testlist
+: <a class="el" href="graminit_8h.html#a54871c414f7cc7e3c6b83f2a67d7a3ba">graminit.h</a>
+</li>
+<li>testlist1
+: <a class="el" href="graminit_8h.html#a40b76d642b6ae7ff0cbca0d2409588dc">graminit.h</a>
+</li>
+<li>testlist_comp
+: <a class="el" href="graminit_8h.html#a4589b63ab39791bb253044260b2f495d">graminit.h</a>
+</li>
+<li>testlist_safe
+: <a class="el" href="graminit_8h.html#aaf84c7be7faeb92d03a9abb88c74ec03">graminit.h</a>
+</li>
+<li>TILDE
+: <a class="el" href="token_8h.html#af8fcc20bc3c07231ed32dd372a78b78e">token.h</a>
+</li>
+<li>TIME_WITH_SYS_TIME
+: <a class="el" href="pyconfig_8h.html#a2b44ef64cf38e064ef11e11f35271380">pyconfig.h</a>
+</li>
+<li>tok_dump
+: <a class="el" href="pgenheaders_8h.html#a27532228903995116477a098c4a2b900">pgenheaders.h</a>
+</li>
+<li>tolower
+: <a class="el" href="bytes__methods_8h.html#a422175620f52b1ca4dbc39d627296d83">bytes_methods.h</a>
+</li>
+<li>TOLOWER
+: <a class="el" href="bytes__methods_8h.html#ad4771ad2e5dd6a87c83ecf879b7985de">bytes_methods.h</a>
+</li>
+<li>TOUPPER
+: <a class="el" href="bytes__methods_8h.html#ab54417c7c018570043920af66ba7457f">bytes_methods.h</a>
+</li>
+<li>toupper
+: <a class="el" href="bytes__methods_8h.html#adda03014c30b02d7b496fce96f37951b">bytes_methods.h</a>
+</li>
+<li>trailer
+: <a class="el" href="graminit_8h.html#a8749ec842c41c25d2482030dba7592b6">graminit.h</a>
+</li>
+<li>translatelabels
+: <a class="el" href="pgenheaders_8h.html#aa762185ff079a6b5b694110545e6ef03">pgenheaders.h</a>
+</li>
+<li>try_stmt
+: <a class="el" href="graminit_8h.html#ae17f341b9a578cb98f70c6b721e22dfd">graminit.h</a>
+</li>
+<li>TryExcept
+: <a class="el" href="_python-ast_8h.html#a88c347936a7d01ec132bdc2411ad5ba5">Python-ast.h</a>
+</li>
+<li>TryFinally
+: <a class="el" href="_python-ast_8h.html#a72f1c5def10d26a6fd8c0d19dcdd4b08">Python-ast.h</a>
+</li>
+<li>Tuple
+: <a class="el" href="_python-ast_8h.html#a3f332c0be139cb870e516bad9b6a9366">Python-ast.h</a>
+</li>
+<li>TYPE
+: <a class="el" href="node_8h.html#a71fef1a9182c7451b07752233174cac2">node.h</a>
+</li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

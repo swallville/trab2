@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('gtest-printers__test_8cc.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('gtest-printers__test_8cc.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_acf1f0b8874b1064b8fc0cfc28c4e3cc.html">lib</a></li><li class="navelem"><a class="el" href="dir_be221b699d2f9bf4112c9d2789356b2c.html">googletest-master</a></li><li class="navelem"><a class="el" href="dir_f00c82e995c68d908486b449fc23a3ec.html">googletest</a></li><li class="navelem"><a class="el" href="dir_156b872751d758061c3ae95d7b0cdaa6.html">test</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -106,9 +89,7 @@ $(document).ready(function(){initNavTree('gtest-printers__test_8cc.html','');});
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="gtest_8h_source.html">gtest/gtest.h</a>&quot;</code><br />
-</div>
-<p><a href="gtest-printers__test_8cc_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_biggest_int_convertible.html">BiggestIntConvertible</a></td></tr>
@@ -153,7 +134,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aa0ed482a6777cce04eecd24c530c78ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest-printers__test_8cc.html#aa0ed482a6777cce04eecd24c530c78ec">EXPECT_PRINT_TO_STRING_</a>(value,  expected_string)</td></tr>
+<tr class="memitem:aa0ed482a6777cce04eecd24c530c78ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest-printers__test_8cc.html#aa0ed482a6777cce04eecd24c530c78ec">EXPECT_PRINT_TO_STRING_</a>(<a class="el" href="dictobject_8h.html#a4eabde677fab7743b016294ac2f430b9">value</a>,  expected_string)</td></tr>
 <tr class="separator:aa0ed482a6777cce04eecd24c530c78ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -175,29 +156,29 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab3395b6b04bac565a0bd2fb36fbbb339"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest-printers__test_8cc.html#ab3395b6b04bac565a0bd2fb36fbbb339">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="gtest-printers__test_8cc.html#a52d9f846ca7a081ba3acf88dd6cd46dc">EnumWithStreaming</a> e)</td></tr>
+<tr class="memitem:ab3395b6b04bac565a0bd2fb36fbbb339"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest-printers__test_8cc.html#ab3395b6b04bac565a0bd2fb36fbbb339">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="gtest-printers__test_8cc.html#a52d9f846ca7a081ba3acf88dd6cd46dc">EnumWithStreaming</a> <a class="el" href="longobject_8h.html#a28cf183ea1588229c01af441267bc98c">e</a>)</td></tr>
 <tr class="separator:ab3395b6b04bac565a0bd2fb36fbbb339"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad8245a4b48cd65607b86153d0f9dbe6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest-printers__test_8cc.html#aad8245a4b48cd65607b86153d0f9dbe6">PrintTo</a> (<a class="el" href="gtest-printers__test_8cc.html#a904d619d593201ed509be794aed041ec">EnumWithPrintTo</a> e, std::ostream *os)</td></tr>
+<tr class="memitem:aad8245a4b48cd65607b86153d0f9dbe6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest-printers__test_8cc.html#aad8245a4b48cd65607b86153d0f9dbe6">PrintTo</a> (<a class="el" href="gtest-printers__test_8cc.html#a904d619d593201ed509be794aed041ec">EnumWithPrintTo</a> <a class="el" href="longobject_8h.html#a28cf183ea1588229c01af441267bc98c">e</a>, std::ostream *os)</td></tr>
 <tr class="separator:aad8245a4b48cd65607b86153d0f9dbe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b9d893679e433b9a70f15a9c9d6446c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest-printers__test_8cc.html#a7b9d893679e433b9a70f15a9c9d6446c">operator&lt;&lt;</a> (::std::ostream &amp;os, const <a class="el" href="class_streamable_in_global.html">StreamableInGlobal</a> &amp;)</td></tr>
 <tr class="separator:a7b9d893679e433b9a70f15a9c9d6446c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0794c66a458fe922bfb717080d047311"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest-printers__test_8cc.html#a0794c66a458fe922bfb717080d047311">operator&lt;&lt;</a> (::std::ostream &amp;os, const <a class="el" href="class_streamable_in_global.html">StreamableInGlobal</a> *)</td></tr>
 <tr class="separator:a0794c66a458fe922bfb717080d047311"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac435de653934c97045bbdba8c8afbe3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefoo.html#ac435de653934c97045bbdba8c8afbe3f">foo::PrintTo</a> (const PrintableViaPrintTo &amp;x, ::std::ostream *os)</td></tr>
+<tr class="memitem:ac435de653934c97045bbdba8c8afbe3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefoo.html#ac435de653934c97045bbdba8c8afbe3f">foo::PrintTo</a> (const PrintableViaPrintTo &amp;<a class="el" href="stringobject_8h.html#a280f2393c503127fff91ecbc558e288d">x</a>, ::std::ostream *os)</td></tr>
 <tr class="separator:ac435de653934c97045bbdba8c8afbe3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65f8809f6af7f69f5cc842493caf4491"><td class="memItemLeft" align="right" valign="top">::std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefoo.html#a65f8809f6af7f69f5cc842493caf4491">foo::operator&lt;&lt;</a> (::std::ostream &amp;os, const PointerPrintable *)</td></tr>
 <tr class="separator:a65f8809f6af7f69f5cc842493caf4491"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b78eba501ea7ff1226a8cb40b6e3d92"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a7b78eba501ea7ff1226a8cb40b6e3d92"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefoo.html#a7b78eba501ea7ff1226a8cb40b6e3d92">foo::PrintTo</a> (const PrintableViaPrintToTemplate&lt; T &gt; &amp;x, ::std::ostream *os)</td></tr>
+<tr class="memitem:a7b78eba501ea7ff1226a8cb40b6e3d92"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefoo.html#a7b78eba501ea7ff1226a8cb40b6e3d92">foo::PrintTo</a> (const PrintableViaPrintToTemplate&lt; T &gt; &amp;<a class="el" href="stringobject_8h.html#a280f2393c503127fff91ecbc558e288d">x</a>, ::std::ostream *os)</td></tr>
 <tr class="separator:a7b78eba501ea7ff1226a8cb40b6e3d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe04f604d114085b0b9af25600ef00da"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:abe04f604d114085b0b9af25600ef00da"><td class="memTemplItemLeft" align="right" valign="top">inline ::std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefoo.html#abe04f604d114085b0b9af25600ef00da">foo::operator&lt;&lt;</a> (::std::ostream &amp;os, const StreamableTemplateInFoo&lt; T &gt; &amp;x)</td></tr>
+<tr class="memitem:abe04f604d114085b0b9af25600ef00da"><td class="memTemplItemLeft" align="right" valign="top">inline ::std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefoo.html#abe04f604d114085b0b9af25600ef00da">foo::operator&lt;&lt;</a> (::std::ostream &amp;os, const StreamableTemplateInFoo&lt; T &gt; &amp;<a class="el" href="stringobject_8h.html#a280f2393c503127fff91ecbc558e288d">x</a>)</td></tr>
 <tr class="separator:abe04f604d114085b0b9af25600ef00da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adab26e59d2d7781c06a2c1c5948a8f65"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:adab26e59d2d7781c06a2c1c5948a8f65"><td class="memTemplItemLeft" align="right" valign="top">string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#adab26e59d2d7781c06a2c1c5948a8f65">testing::gtest_printers_test::Print</a> (const T &amp;value)</td></tr>
+<tr class="memitem:adab26e59d2d7781c06a2c1c5948a8f65"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#adab26e59d2d7781c06a2c1c5948a8f65">testing::gtest_printers_test::Print</a> (const T &amp;<a class="el" href="dictobject_8h.html#a4eabde677fab7743b016294ac2f430b9">value</a>)</td></tr>
 <tr class="separator:adab26e59d2d7781c06a2c1c5948a8f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e4be1dea6a05e53db4fd20d259ffdd7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a8e4be1dea6a05e53db4fd20d259ffdd7"><td class="memTemplItemLeft" align="right" valign="top">string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#a8e4be1dea6a05e53db4fd20d259ffdd7">testing::gtest_printers_test::PrintByRef</a> (const T &amp;value)</td></tr>
+<tr class="memitem:a8e4be1dea6a05e53db4fd20d259ffdd7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#a8e4be1dea6a05e53db4fd20d259ffdd7">testing::gtest_printers_test::PrintByRef</a> (const T &amp;<a class="el" href="dictobject_8h.html#a4eabde677fab7743b016294ac2f430b9">value</a>)</td></tr>
 <tr class="separator:a8e4be1dea6a05e53db4fd20d259ffdd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac79ac1529e754dddbaff5ba108ba3de3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#ac79ac1529e754dddbaff5ba108ba3de3">testing::gtest_printers_test::TEST</a> (PrintEnumTest, <a class="el" href="gtest-printers__test_8cc.html#a7a5ee9fe858568a85d80af1312aefb8b">AnonymousEnum</a>)</td></tr>
 <tr class="separator:ac79ac1529e754dddbaff5ba108ba3de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -259,19 +240,19 @@ Functions</h2></td></tr>
 <tr class="separator:a8819fb42392faae72e8bc594d498085d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afee54807b15b623718c62008bd743d4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#afee54807b15b623718c62008bd743d4b">testing::gtest_printers_test::TEST</a> (PrintPointerToPointerTest, IntPointerPointer)</td></tr>
 <tr class="separator:afee54807b15b623718c62008bd743d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf0e590d6776ecb7095a989ff2272d7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#adf0e590d6776ecb7095a989ff2272d7b">testing::gtest_printers_test::MyFunction</a> (int)</td></tr>
+<tr class="memitem:adf0e590d6776ecb7095a989ff2272d7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#adf0e590d6776ecb7095a989ff2272d7b">testing::gtest_printers_test::MyFunction</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>)</td></tr>
 <tr class="separator:adf0e590d6776ecb7095a989ff2272d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3cb60cf6f3a4a0cd7d9873cd597ffd8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#aa3cb60cf6f3a4a0cd7d9873cd597ffd8">testing::gtest_printers_test::TEST</a> (PrintPointerTest, NonMemberFunctionPointer)</td></tr>
 <tr class="separator:aa3cb60cf6f3a4a0cd7d9873cd597ffd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbd436200da6c80944c8a7504fb56ea1"><td class="memTemplParams" colspan="2">template&lt;typename StringType &gt; </td></tr>
-<tr class="memitem:abbd436200da6c80944c8a7504fb56ea1"><td class="memTemplItemLeft" align="right" valign="top">AssertionResult&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#abbd436200da6c80944c8a7504fb56ea1">testing::gtest_printers_test::HasPrefix</a> (const StringType &amp;str, const StringType &amp;prefix)</td></tr>
+<tr class="memitem:abbd436200da6c80944c8a7504fb56ea1"><td class="memTemplItemLeft" align="right" valign="top">AssertionResult&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#abbd436200da6c80944c8a7504fb56ea1">testing::gtest_printers_test::HasPrefix</a> (const StringType &amp;<a class="el" href="node_8h.html#a62b34ca1362fe946082b7aa0cd9be844">str</a>, const StringType &amp;prefix)</td></tr>
 <tr class="separator:abbd436200da6c80944c8a7504fb56ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a434cafcc1dbee409992bbb1593034480"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#a434cafcc1dbee409992bbb1593034480">testing::gtest_printers_test::TEST</a> (PrintPointerTest, MemberVariablePointer)</td></tr>
 <tr class="separator:a434cafcc1dbee409992bbb1593034480"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d998b210890d3d7e085d01c457f650f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#a9d998b210890d3d7e085d01c457f650f">testing::gtest_printers_test::TEST</a> (PrintPointerTest, MemberFunctionPointer)</td></tr>
 <tr class="separator:a9d998b210890d3d7e085d01c457f650f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10300ded1e327c98c6a36beb7ad49e58"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
-<tr class="memitem:a10300ded1e327c98c6a36beb7ad49e58"><td class="memTemplItemLeft" align="right" valign="top">string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#a10300ded1e327c98c6a36beb7ad49e58">testing::gtest_printers_test::PrintArrayHelper</a> (T(&amp;a)[N])</td></tr>
+<tr class="memitem:a10300ded1e327c98c6a36beb7ad49e58"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#a10300ded1e327c98c6a36beb7ad49e58">testing::gtest_printers_test::PrintArrayHelper</a> (T(&amp;a)[N])</td></tr>
 <tr class="separator:a10300ded1e327c98c6a36beb7ad49e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3845c4717b03cb5ad309c7d9a37acb0a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#a3845c4717b03cb5ad309c7d9a37acb0a">testing::gtest_printers_test::TEST</a> (PrintArrayTest, OneDimensionalArray)</td></tr>
 <tr class="separator:a3845c4717b03cb5ad309c7d9a37acb0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -314,13 +295,13 @@ Functions</h2></td></tr>
 <tr class="separator:a1ce10b8a3634e0f6bfbfbb5888c04a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a249d482cf4a1525bd043489dcbd3e200"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#a249d482cf4a1525bd043489dcbd3e200">testing::gtest_printers_test::TEST</a> (PrintStlContainerTest, NonEmptyDeque)</td></tr>
 <tr class="separator:a249d482cf4a1525bd043489dcbd3e200"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa135672ff79ecaef82c6046f2ab8d29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#aaa135672ff79ecaef82c6046f2ab8d29">testing::gtest_printers_test::TEST</a> (PrintStlContainerTest, List)</td></tr>
+<tr class="memitem:aaa135672ff79ecaef82c6046f2ab8d29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#aaa135672ff79ecaef82c6046f2ab8d29">testing::gtest_printers_test::TEST</a> (PrintStlContainerTest, <a class="el" href="_python-ast_8h.html#a201830357d214aabbdb46b4163c792cf">List</a>)</td></tr>
 <tr class="separator:aaa135672ff79ecaef82c6046f2ab8d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d701a1866f260a42411e9041894c49c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#a3d701a1866f260a42411e9041894c49c">testing::gtest_printers_test::TEST</a> (PrintStlContainerTest, Map)</td></tr>
 <tr class="separator:a3d701a1866f260a42411e9041894c49c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a498c956a5b1c0358d126e1ad56fac0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#a8a498c956a5b1c0358d126e1ad56fac0">testing::gtest_printers_test::TEST</a> (PrintStlContainerTest, MultiMap)</td></tr>
 <tr class="separator:a8a498c956a5b1c0358d126e1ad56fac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdc498462741033074f8e86b7c0bd480"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#abdc498462741033074f8e86b7c0bd480">testing::gtest_printers_test::TEST</a> (PrintStlContainerTest, Set)</td></tr>
+<tr class="memitem:abdc498462741033074f8e86b7c0bd480"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#abdc498462741033074f8e86b7c0bd480">testing::gtest_printers_test::TEST</a> (PrintStlContainerTest, <a class="el" href="_python-ast_8h.html#a8b39bad9fda6bc73af75e4d6085bcf91">Set</a>)</td></tr>
 <tr class="separator:abdc498462741033074f8e86b7c0bd480"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaa3e1cfa3feca377b3958edb41fc0f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gtest__printers__test.html#adaa3e1cfa3feca377b3958edb41fc0f1">testing::gtest_printers_test::TEST</a> (PrintStlContainerTest, MultiSet)</td></tr>
 <tr class="separator:adaa3e1cfa3feca377b3958edb41fc0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -428,7 +409,7 @@ Functions</h2></td></tr>
           <td class="memname">#define EXPECT_PRINT_TO_STRING_</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">value, </td>
+          <td class="paramname"><a class="el" href="dictobject_8h.html#a4eabde677fab7743b016294ac2f430b9">value</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -443,11 +424,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="gtest_8h.html#ac33e7cdfb5d44a7a0f0ab552eb5c3c6a">EXPECT_TRUE</a>(<a class="code" href="namespacetesting.html#aa5717bb1144edd1d262d310ba70c82ed">PrintToString</a>(value) == (expected_string))        \</div><div class="line">      &lt;&lt; <span class="stringliteral">&quot; where &quot;</span> #value <span class="stringliteral">&quot; prints as &quot;</span> &lt;&lt; (<a class="code" href="namespacetesting.html#aa5717bb1144edd1d262d310ba70c82ed">PrintToString</a>(value))</div><div class="ttc" id="namespacetesting_html_aa5717bb1144edd1d262d310ba70c82ed"><div class="ttname"><a href="namespacetesting.html#aa5717bb1144edd1d262d310ba70c82ed">testing::PrintToString</a></div><div class="ttdeci">::std::string PrintToString(const T &amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="gtest-printers_8h_source.html#l00980">gtest-printers.h:980</a></div></div>
-<div class="ttc" id="gtest_8h_html_ac33e7cdfb5d44a7a0f0ab552eb5c3c6a"><div class="ttname"><a href="gtest_8h.html#ac33e7cdfb5d44a7a0f0ab552eb5c3c6a">EXPECT_TRUE</a></div><div class="ttdeci">#define EXPECT_TRUE(condition)</div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l01859">gtest.h:1859</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="gtest_8h.html#ac33e7cdfb5d44a7a0f0ab552eb5c3c6a">EXPECT_TRUE</a>(<a class="code" href="namespacetesting.html#aa5717bb1144edd1d262d310ba70c82ed">PrintToString</a>(<a class="code" href="abstract_8h.html#a3a0f45a8cd645a6ab8f2c793db266109">value</a>) == (expected_string))        \</div><div class="line">      &lt;&lt; <span class="stringliteral">&quot; where &quot;</span> #<a class="code" href="abstract_8h.html#a3a0f45a8cd645a6ab8f2c793db266109">value</a> <span class="stringliteral">&quot; prints as &quot;</span> &lt;&lt; (<a class="code" href="namespacetesting.html#aa5717bb1144edd1d262d310ba70c82ed">PrintToString</a>(<a class="code" href="abstract_8h.html#a3a0f45a8cd645a6ab8f2c793db266109">value</a>))</div><div class="ttc" id="namespacetesting_html_aa5717bb1144edd1d262d310ba70c82ed"><div class="ttname"><a href="namespacetesting.html#aa5717bb1144edd1d262d310ba70c82ed">testing::PrintToString</a></div><div class="ttdeci">::std::string PrintToString(const T &amp;value)</div><div class="ttdef"><b>Definition:</b> gtest-printers.h:980</div></div>
+<div class="ttc" id="abstract_8h_html_a3a0f45a8cd645a6ab8f2c793db266109"><div class="ttname"><a href="abstract_8h.html#a3a0f45a8cd645a6ab8f2c793db266109">value</a></div><div class="ttdeci">PyObject * value</div><div class="ttdef"><b>Definition:</b> abstract.h:1186</div></div>
+<div class="ttc" id="gtest_8h_html_ac33e7cdfb5d44a7a0f0ab552eb5c3c6a"><div class="ttname"><a href="gtest_8h.html#ac33e7cdfb5d44a7a0f0ab552eb5c3c6a">EXPECT_TRUE</a></div><div class="ttdeci">#define EXPECT_TRUE(condition)</div><div class="ttdef"><b>Definition:</b> gtest.h:1859</div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l01444">1444</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
@@ -467,8 +447,6 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a7a5ee9fe858568a85d80af1312aefb8ba67ee14379c1b9fd5ae5616a1b3f0d5d5"></a>kAE2&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00068">68</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a404f735da62338180a19ae16f80e09c8"></a>
@@ -487,8 +465,6 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a404f735da62338180a19ae16f80e09c8ae3b0361263e2ff24730ff9f2e2177a11"></a>kEWP2&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00074">74</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a904d619d593201ed509be794aed041ec"></a>
@@ -506,8 +482,6 @@ Functions</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a904d619d593201ed509be794aed041eca72ccaf1f38be3cad8d1d6b0811467125"></a>kEWPT1&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00089">89</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a52d9f846ca7a081ba3acf88dd6cd46dc"></a>
@@ -524,8 +498,6 @@ Functions</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a52d9f846ca7a081ba3acf88dd6cd46dca8d4bcf477f5a23ce8569a2a404327839"></a>kEWS1&#160;</td><td class="fielddoc"></td></tr>
 </table>
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00080">80</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -555,8 +527,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00084">84</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -594,8 +564,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00118">118</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a0794c66a458fe922bfb717080d047311"></a>
@@ -623,8 +591,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00122">122</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
 
 </div>
 </div>
@@ -654,20 +620,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers__test_8cc_source.html#l00093">93</a> of file <a class="el" href="gtest-printers__test_8cc_source.html">gtest-printers_test.cc</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_b80f002a4112fc8defa29deee9464b28.html">googletest-master</a></li><li class="navelem"><a class="el" href="dir_8339ebd0c16062e901f0dca0f5626014.html">googletest</a></li><li class="navelem"><a class="el" href="dir_de2fa21a95c91204b56df0f993ff4735.html">test</a></li><li class="navelem"><a class="el" href="gtest-printers__test_8cc.html">gtest-printers_test.cc</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

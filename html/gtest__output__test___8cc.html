@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('gtest__output__test___8cc.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('gtest__output__test___8cc.html','');})
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_acf1f0b8874b1064b8fc0cfc28c4e3cc.html">lib</a></li><li class="navelem"><a class="el" href="dir_be221b699d2f9bf4112c9d2789356b2c.html">googletest-master</a></li><li class="navelem"><a class="el" href="dir_f00c82e995c68d908486b449fc23a3ec.html">googletest</a></li><li class="navelem"><a class="el" href="dir_156b872751d758061c3ae95d7b0cdaa6.html">test</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -96,9 +79,7 @@ $(document).ready(function(){initNavTree('gtest__output__test___8cc.html','');})
 <code>#include &quot;<a class="el" href="gtest_8h_source.html">gtest/gtest.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="gtest-internal-inl_8h_source.html">src/gtest-internal-inl.h</a>&quot;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
-</div>
-<p><a href="gtest__output__test___8cc_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_failing_param_test.html">FailingParamTest</a></td></tr>
@@ -144,7 +125,7 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8f28d985b030c6dd2714d1e884c62c41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__output__test___8cc.html#a8f28d985b030c6dd2714d1e884c62c41">TestEq1</a> (int x)</td></tr>
+<tr class="memitem:a8f28d985b030c6dd2714d1e884c62c41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__output__test___8cc.html#a8f28d985b030c6dd2714d1e884c62c41">TestEq1</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> <a class="el" href="stringobject_8h.html#a280f2393c503127fff91ecbc558e288d">x</a>)</td></tr>
 <tr class="separator:a8f28d985b030c6dd2714d1e884c62c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14e796981ca8d3c71dbd2b839c1ce784"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__output__test___8cc.html#a14e796981ca8d3c71dbd2b839c1ce784">TryTestSubroutine</a> ()</td></tr>
 <tr class="separator:a14e796981ca8d3c71dbd2b839c1ce784"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,9 +149,9 @@ Functions</h2></td></tr>
 <tr class="separator:afe609aef34a68a2ab9809eb48112c5cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9bbf46060935b29c42d3116ddbc3566"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__output__test___8cc.html#ad9bbf46060935b29c42d3116ddbc3566">TEST</a> (LoggingTest, InterleavingLoggingAndAssertions)</td></tr>
 <tr class="separator:ad9bbf46060935b29c42d3116ddbc3566"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e222b468bbde7215ce826f10993e746"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__output__test___8cc.html#a7e222b468bbde7215ce826f10993e746">SubWithoutTrace</a> (int n)</td></tr>
+<tr class="memitem:a7e222b468bbde7215ce826f10993e746"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__output__test___8cc.html#a7e222b468bbde7215ce826f10993e746">SubWithoutTrace</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> <a class="el" href="longobject_8h.html#a0a1cb627ccae562872efc91e5b752be1">n</a>)</td></tr>
 <tr class="separator:a7e222b468bbde7215ce826f10993e746"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a543ee38e0824e47113bb12c3277e09ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__output__test___8cc.html#a543ee38e0824e47113bb12c3277e09ae">SubWithTrace</a> (int n)</td></tr>
+<tr class="memitem:a543ee38e0824e47113bb12c3277e09ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__output__test___8cc.html#a543ee38e0824e47113bb12c3277e09ae">SubWithTrace</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> <a class="el" href="longobject_8h.html#a0a1cb627ccae562872efc91e5b752be1">n</a>)</td></tr>
 <tr class="separator:a543ee38e0824e47113bb12c3277e09ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82f82f6a7caa426cccf8d20113f897c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__output__test___8cc.html#a82f82f6a7caa426cccf8d20113f897c0">TEST</a> (SCOPED_TRACETest, ObeysScopes)</td></tr>
 <tr class="separator:a82f82f6a7caa426cccf8d20113f897c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,7 +167,7 @@ Functions</h2></td></tr>
 <tr class="separator:a2bdac0e0076d65fa77a967c0fdb46e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36cd4d21174efaa3066237d716028d49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__output__test___8cc.html#a36cd4d21174efaa3066237d716028d49">AdHocTest</a> ()</td></tr>
 <tr class="separator:a36cd4d21174efaa3066237d716028d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0ca194f6b730e168850ce3179ad4f63"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__output__test___8cc.html#ae0ca194f6b730e168850ce3179ad4f63">RunAllTests</a> ()</td></tr>
+<tr class="memitem:ae0ca194f6b730e168850ce3179ad4f63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__output__test___8cc.html#ae0ca194f6b730e168850ce3179ad4f63">RunAllTests</a> ()</td></tr>
 <tr class="separator:ae0ca194f6b730e168850ce3179ad4f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad122def39d78da61690433e185611737"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__output__test___8cc.html#ad122def39d78da61690433e185611737">TEST_F</a> (<a class="el" href="class_non_fatal_failure_in_fixture_constructor_test.html">NonFatalFailureInFixtureConstructorTest</a>, FailureInConstructor)</td></tr>
 <tr class="separator:ad122def39d78da61690433e185611737"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -256,12 +237,12 @@ Functions</h2></td></tr>
 <tr class="separator:a1f29562e9248524dda90aa6d641d77ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7714d1899711a604704737897595e7c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__output__test___8cc.html#a7714d1899711a604704737897595e7c3">TEST_F</a> (<a class="el" href="class_expect_failure_test.html">ExpectFailureTest</a>, ExpectNonFatalFailureOnAllThreads)</td></tr>
 <tr class="separator:a7714d1899711a604704737897595e7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__output__test___8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
+<tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__output__test___8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> <a class="el" href="eval_8h.html#a9e4bf27daf5ceabe639e59fd5e9fd3b2">argc</a>, char **<a class="el" href="pythonrun_8h.html#af3cb49c013b6d4b79e7a00fc6807e954">argv</a>)</td></tr>
 <tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a81be7f35ea2573ecc7ca08b26b56bccf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__output__test___8cc.html#a81be7f35ea2573ecc7ca08b26b56bccf">global_integer</a> = 0</td></tr>
+<tr class="memitem:a81be7f35ea2573ecc7ca08b26b56bccf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__output__test___8cc.html#a81be7f35ea2573ecc7ca08b26b56bccf">global_integer</a> = 0</td></tr>
 <tr class="separator:a81be7f35ea2573ecc7ca08b26b56bccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -276,8 +257,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00046">46</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
 
 </div>
 </div>
@@ -297,8 +276,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00337">337</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 <a id="acdca9b16622e8a506a39240c8809af38"></a>
@@ -315,8 +292,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00710">710</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
 
 </div>
 </div>
@@ -361,9 +336,9 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int main </td>
+          <td class="memname"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> main </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>argc</em>, </td>
         </tr>
         <tr>
@@ -380,8 +355,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l01024">1024</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 <a id="ae0ca194f6b730e168850ce3179ad4f63"></a>
@@ -391,15 +364,13 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int RunAllTests </td>
+          <td class="memname"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> RunAllTests </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00344">344</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
 
 </div>
 </div>
@@ -412,14 +383,12 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void SubWithoutTrace </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00167">167</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
 
 </div>
 </div>
@@ -432,14 +401,12 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void SubWithTrace </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00173">173</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
 
 </div>
 </div>
@@ -469,8 +436,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00085">85</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 <a id="aaf792b2d65c4aeb1e2f1804e2319afd2"></a>
@@ -498,8 +463,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00088">88</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
 
 </div>
 </div>
@@ -529,8 +492,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00107">107</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 <a id="aaa6c1704a62b7412fd5e053614f47650"></a>
@@ -558,8 +519,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00115">115</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
 
 </div>
 </div>
@@ -589,8 +548,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00121">121</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 <a id="a8763e3844bd21de9bd7126658a4279c5"></a>
@@ -618,8 +575,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00128">128</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
 
 </div>
 </div>
@@ -649,8 +604,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00145">145</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 <a id="ad9bbf46060935b29c42d3116ddbc3566"></a>
@@ -678,8 +631,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00152">152</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
 
 </div>
 </div>
@@ -709,8 +660,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00180">180</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 <a id="a46dcedbe67765adaebc7740ee17a88de"></a>
@@ -738,8 +687,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00199">199</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
 
 </div>
 </div>
@@ -769,8 +716,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00210">210</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 <a id="ae402e91f305e54f5f14a172a0fb0831b"></a>
@@ -798,8 +743,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00218">218</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
 
 </div>
 </div>
@@ -829,8 +772,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00227">227</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 <a id="a2bdac0e0076d65fa77a967c0fdb46e2a"></a>
@@ -858,8 +799,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00326">326</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
 
 </div>
 </div>
@@ -889,8 +828,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00461">461</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 <a id="a4b026b84b5a6dcbfa586f406e7c6b79c"></a>
@@ -918,8 +855,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00581">581</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
 
 </div>
 </div>
@@ -949,8 +884,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00586">586</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 <a id="a3dd01f9996bd85dd50bd7632f58cbf8c"></a>
@@ -978,8 +911,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00597">597</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
 
 </div>
 </div>
@@ -1009,8 +940,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00606">606</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 <a id="ac144593aa4a95ae47c0bb03def354f66"></a>
@@ -1038,8 +967,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00617">617</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
 
 </div>
 </div>
@@ -1069,8 +996,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00625">625</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 <a id="a17f835822727dac7b75b74ed70d2fbd2"></a>
@@ -1098,8 +1023,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00633">633</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
 
 </div>
 </div>
@@ -1129,8 +1052,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00643">643</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 <a id="aa5976cbca1620f7fea18689a3cbf5333"></a>
@@ -1158,8 +1079,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00652">652</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
 
 </div>
 </div>
@@ -1189,8 +1108,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00676">676</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 <a id="ac6646aa5f6d4ea21c0528259118754a4"></a>
@@ -1218,8 +1135,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00685">685</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
 
 </div>
 </div>
@@ -1249,8 +1164,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00695">695</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 <a id="af8e8545243605b2ba121e253ec48785e"></a>
@@ -1278,8 +1191,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00703">703</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
 
 </div>
 </div>
@@ -1309,8 +1220,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00716">716</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 <a id="a35fafc42558ee14c42320b359c270026"></a>
@@ -1338,8 +1247,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00726">726</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
 
 </div>
 </div>
@@ -1369,8 +1276,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00735">735</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 <a id="ad122def39d78da61690433e185611737"></a>
@@ -1398,8 +1303,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00370">370</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
 
 </div>
 </div>
@@ -1429,8 +1332,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00404">404</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 <a id="aaa9d6fcc5d9910aedb42ff3db3cc313c"></a>
@@ -1458,8 +1359,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00431">431</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
 
 </div>
 </div>
@@ -1489,8 +1388,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00456">456</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 <a id="ae71a8d4934e768af615b9b09418f15c3"></a>
@@ -1518,8 +1415,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00577">577</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
 
 </div>
 </div>
@@ -1549,8 +1444,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00590">590</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 <a id="ae7459e6b9516821fd0e77eb3aa9b7413"></a>
@@ -1578,8 +1471,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00892">892</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
 
 </div>
 </div>
@@ -1609,8 +1500,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00906">906</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 <a id="a1f29562e9248524dda90aa6d641d77ea"></a>
@@ -1638,8 +1527,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00963">963</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
 
 </div>
 </div>
@@ -1669,8 +1556,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00977">977</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 <a id="a680b45844b58c5367da52c5383aea03a"></a>
@@ -1699,8 +1584,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00095">95</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 <a id="a8f28d985b030c6dd2714d1e884c62c41"></a>
@@ -1712,14 +1595,12 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void TestEq1 </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00065">65</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
 
 </div>
 </div>
@@ -1738,8 +1619,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00071">71</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -1750,25 +1629,19 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int global_integer = 0</td>
+          <td class="memname"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> global_integer = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test___8cc_source.html#l00594">594</a> of file <a class="el" href="gtest__output__test___8cc_source.html">gtest_output_test_.cc</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_b80f002a4112fc8defa29deee9464b28.html">googletest-master</a></li><li class="navelem"><a class="el" href="dir_8339ebd0c16062e901f0dca0f5626014.html">googletest</a></li><li class="navelem"><a class="el" href="dir_de2fa21a95c91204b56df0f993ff4735.html">test</a></li><li class="navelem"><a class="el" href="gtest__output__test___8cc.html">gtest_output_test_.cc</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

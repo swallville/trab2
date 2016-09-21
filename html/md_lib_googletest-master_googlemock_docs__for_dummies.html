@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('md_lib_googletest-master_googlemock_docs__for_dummies.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,7 @@ $(document).ready(function(){initNavTree('md_lib_googletest-master_googlemock_do
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">ForDummies </div>  </div>
@@ -222,9 +201,9 @@ $(document).ready(function(){initNavTree('md_lib_googletest-master_googlemock_do
 <div class="fragment"><div class="line">using ::testing::Return;...</div><div class="line">EXPECT_CALL(turtle, GetX())</div><div class="line">    .WillOnce(Return(100))</div><div class="line">    .WillOnce(Return(200))</div><div class="line">    .WillOnce(Return(300));</div></div><!-- fragment --><p>This says that <code>turtle.GetX()</code> will be called <em>exactly three times</em> (Google <a class="el" href="class_mock.html">Mock</a> inferred this from how many <code>WillOnce()</code> clauses we've written, since we didn't explicitly write <code>Times()</code>), and will return 100, 200, and 300 respectively.</p>
 <div class="fragment"><div class="line">using ::testing::Return;...</div><div class="line">EXPECT_CALL(turtle, GetY())</div><div class="line">    .WillOnce(Return(100))</div><div class="line">    .WillOnce(Return(200))</div><div class="line">    .WillRepeatedly(Return(300));</div></div><!-- fragment --><p>says that <code>turtle.GetY()</code> will be called <em>at least twice</em> (Google <a class="el" href="class_mock.html">Mock</a> knows this as we've written two <code>WillOnce()</code> clauses and a <code>WillRepeatedly()</code> while having no explicit <code>Times()</code>), will return 100 the first time, 200 the second time, and 300 from the third time on.</p>
 <p>Of course, if you explicitly write a <code>Times()</code>, Google <a class="el" href="class_mock.html">Mock</a> will not try to infer the cardinality itself. What if the number you specified is larger than there are <code>WillOnce()</code> clauses? Well, after all <code>WillOnce()</code>s are used up, Google <a class="el" href="class_mock.html">Mock</a> will do the <em>default</em> action for the function every time (unless, of course, you have a <code>WillRepeatedly()</code>.).</p>
-<p>What can we do inside <code>WillOnce()</code> besides <code><a class="el" href="namespacetesting.html#af6d1c13e9376c77671e37545cd84359c">Return()</a></code>? You can return a reference using <code>ReturnRef(variable)</code>, or invoke a pre-defined function, among <a href="CheatSheet.md#actions">others</a>.</p>
+<p>What can we do inside <code>WillOnce()</code> besides <code><a class="el" href="_python-ast_8h.html#abdae7f49d66ce8e500825bb53aa14901">Return()</a></code>? You can return a reference using <code>ReturnRef(variable)</code>, or invoke a pre-defined function, among <a href="CheatSheet.md#actions">others</a>.</p>
 <p><b>Important note:</b> The <code><a class="el" href="gmock-spec-builders_8h.html#a535a6156de72c1a2e25a127e38ee5232">EXPECT_CALL()</a></code> statement evaluates the action clause only once, even though the action may be performed many times. Therefore you must be careful about side effects. The following may not do what you want:</p>
-<div class="fragment"><div class="line">int n = 100;</div><div class="line">EXPECT_CALL(turtle, GetX())</div><div class="line">.Times(4)</div><div class="line">.WillRepeatedly(Return(n++));</div></div><!-- fragment --><p>Instead of returning 100, 101, 102, ..., consecutively, this mock function will always return 100 as <code>n++</code> is only evaluated once. Similarly, <code>Return(new Foo)</code> will create a new <code>Foo</code> object when the <code><a class="el" href="gmock-spec-builders_8h.html#a535a6156de72c1a2e25a127e38ee5232">EXPECT_CALL()</a></code> is executed, and will return the same pointer every time. If you want the side effect to happen every time, you need to define a custom action, which we'll teach in the <a class="el" href="v1__7_2_cook_book_8md.html">CookBook</a>.</p>
+<div class="fragment"><div class="line">int n = 100;</div><div class="line">EXPECT_CALL(turtle, GetX())</div><div class="line">.Times(4)</div><div class="line">.WillRepeatedly(Return(n++));</div></div><!-- fragment --><p>Instead of returning 100, 101, 102, ..., consecutively, this mock function will always return 100 as <code>n++</code> is only evaluated once. Similarly, <code><a class="el" href="_python-ast_8h.html#abdae7f49d66ce8e500825bb53aa14901">Return(new Foo)</a></code> will create a new <code>Foo</code> object when the <code><a class="el" href="gmock-spec-builders_8h.html#a535a6156de72c1a2e25a127e38ee5232">EXPECT_CALL()</a></code> is executed, and will return the same pointer every time. If you want the side effect to happen every time, you need to define a custom action, which we'll teach in the <a class="el" href="v1__7_2_cook_book_8md.html">CookBook</a>.</p>
 <p>Time for another quiz! What do you think the following means?</p>
 <div class="fragment"><div class="line">using ::testing::Return;...</div><div class="line">EXPECT_CALL(turtle, GetY())</div><div class="line">.Times(4)</div><div class="line">.WillOnce(Return(100));</div></div><!-- fragment --><p>Obviously <code>turtle.GetY()</code> is expected to be called four times. But if you think it will return 100 every time, think twice! Remember that one <code>WillOnce()</code> clause will be consumed each time the function is invoked and the default action will be taken afterwards. So the right answer is that <code>turtle.GetY()</code> will return 100 the first time, but <b>return 0 from the second time on</b>, as returning 0 is the default action for <code>int</code> functions.</p>
 <h2>Using Multiple Expectations</h2>
@@ -255,14 +234,11 @@ $(document).ready(function(){initNavTree('md_lib_googletest-master_googlemock_do
 <p>Congratulations! You've learned enough about Google <a class="el" href="class_mock.html">Mock</a> to start using it. Now, you might want to join the <a href="http://groups.google.com/group/googlemock">googlemock</a> discussion group and actually write some tests using Google <a class="el" href="class_mock.html">Mock</a> - it will be fun. Hey, it may even be addictive - you've been warned.</p>
 <p>Then, if you feel like increasing your mock quotient, you should move on to the <a class="el" href="v1__7_2_cook_book_8md.html">CookBook</a>. You can learn many advanced features of Google <a class="el" href="class_mock.html">Mock</a> there &ndash; and advance your level of enjoyment and testing bliss. </p>
 </div></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

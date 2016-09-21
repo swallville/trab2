@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('namespacetesting_1_1gmock__nice__strict__test.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('namespacetesting_1_1gmock__nice__stric
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="namespacetesting_1_1gmock__nice__strict__test.html">gmock_nice_strict_test</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -163,8 +146,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-nice-strict__test_8cc_source.html#l00204">204</a> of file <a class="el" href="gmock-nice-strict__test_8cc_source.html">gmock-nice-strict_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a2bad58b3a12ea95eb4a731026c576b40"></a>
@@ -192,8 +173,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-nice-strict__test_8cc_source.html#l00212">212</a> of file <a class="el" href="gmock-nice-strict__test_8cc_source.html">gmock-nice-strict_test.cc</a>.</p>
 
 </div>
 </div>
@@ -223,8 +202,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-nice-strict__test_8cc_source.html#l00221">221</a> of file <a class="el" href="gmock-nice-strict__test_8cc_source.html">gmock-nice-strict_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a81bfeea94824935648545225f5dd3c00"></a>
@@ -252,8 +229,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-nice-strict__test_8cc_source.html#l00231">231</a> of file <a class="el" href="gmock-nice-strict__test_8cc_source.html">gmock-nice-strict_test.cc</a>.</p>
 
 </div>
 </div>
@@ -283,8 +258,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-nice-strict__test_8cc_source.html#l00249">249</a> of file <a class="el" href="gmock-nice-strict__test_8cc_source.html">gmock-nice-strict_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a8ae416186af77fc0d066467be92c6c86"></a>
@@ -312,8 +285,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-nice-strict__test_8cc_source.html#l00296">296</a> of file <a class="el" href="gmock-nice-strict__test_8cc_source.html">gmock-nice-strict_test.cc</a>.</p>
 
 </div>
 </div>
@@ -343,8 +314,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-nice-strict__test_8cc_source.html#l00304">304</a> of file <a class="el" href="gmock-nice-strict__test_8cc_source.html">gmock-nice-strict_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a9618de98b38e8e4270873d9b2616e3e1"></a>
@@ -372,8 +341,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-nice-strict__test_8cc_source.html#l00314">314</a> of file <a class="el" href="gmock-nice-strict__test_8cc_source.html">gmock-nice-strict_test.cc</a>.</p>
 
 </div>
 </div>
@@ -403,8 +370,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-nice-strict__test_8cc_source.html#l00324">324</a> of file <a class="el" href="gmock-nice-strict__test_8cc_source.html">gmock-nice-strict_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="af147980581baec3cf492457c2d1e0276"></a>
@@ -432,8 +397,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-nice-strict__test_8cc_source.html#l00342">342</a> of file <a class="el" href="gmock-nice-strict__test_8cc_source.html">gmock-nice-strict_test.cc</a>.</p>
 
 </div>
 </div>
@@ -463,8 +426,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-nice-strict__test_8cc_source.html#l00350">350</a> of file <a class="el" href="gmock-nice-strict__test_8cc_source.html">gmock-nice-strict_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ae58ab074e0f9218a727d1fec0793667e"></a>
@@ -492,8 +453,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-nice-strict__test_8cc_source.html#l00358">358</a> of file <a class="el" href="gmock-nice-strict__test_8cc_source.html">gmock-nice-strict_test.cc</a>.</p>
 
 </div>
 </div>
@@ -523,8 +482,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-nice-strict__test_8cc_source.html#l00367">367</a> of file <a class="el" href="gmock-nice-strict__test_8cc_source.html">gmock-nice-strict_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a04e9402fd03549e1eda88659b6eac174"></a>
@@ -552,8 +509,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-nice-strict__test_8cc_source.html#l00376">376</a> of file <a class="el" href="gmock-nice-strict__test_8cc_source.html">gmock-nice-strict_test.cc</a>.</p>
 
 </div>
 </div>
@@ -583,8 +538,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-nice-strict__test_8cc_source.html#l00388">388</a> of file <a class="el" href="gmock-nice-strict__test_8cc_source.html">gmock-nice-strict_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ae52f11a6045e9c307237cf02b85e6b79"></a>
@@ -612,8 +565,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-nice-strict__test_8cc_source.html#l00398">398</a> of file <a class="el" href="gmock-nice-strict__test_8cc_source.html">gmock-nice-strict_test.cc</a>.</p>
 
 </div>
 </div>
@@ -643,20 +594,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-nice-strict__test_8cc_source.html#l00416">416</a> of file <a class="el" href="gmock-nice-strict__test_8cc_source.html">gmock-nice-strict_test.cc</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="namespacetesting_1_1gmock__nice__strict__test.html">gmock_nice_strict_test</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

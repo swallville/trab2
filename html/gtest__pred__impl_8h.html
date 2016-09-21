@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('gtest__pred__impl_8h.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('gtest__pred__impl_8h.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_acf1f0b8874b1064b8fc0cfc28c4e3cc.html">lib</a></li><li class="navelem"><a class="el" href="dir_be221b699d2f9bf4112c9d2789356b2c.html">googletest-master</a></li><li class="navelem"><a class="el" href="dir_f00c82e995c68d908486b449fc23a3ec.html">googletest</a></li><li class="navelem"><a class="el" href="dir_80c21876318c16a0ba91a2796d235bf6.html">include</a></li><li class="navelem"><a class="el" href="dir_dd30ce38926dbb746a1d8882761a0693.html">gtest</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
@@ -202,8 +185,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00119">119</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
-
 </div>
 </div>
 <a id="a4e9b777cce4e5423f4c2e491be7aa818"></a>
@@ -237,8 +218,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00167">167</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
 
 </div>
 </div>
@@ -279,8 +258,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00222">222</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
 
 </div>
 </div>
@@ -327,8 +304,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00284">284</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
 
 </div>
 </div>
@@ -382,8 +357,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00353">353</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
-
 </div>
 </div>
 <a id="a3771ca0d1a72013aebc3d66e046491ed"></a>
@@ -411,8 +384,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00117">117</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
 
 </div>
 </div>
@@ -447,8 +418,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00165">165</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
 
 </div>
 </div>
@@ -489,8 +458,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00220">220</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
 
 </div>
 </div>
@@ -537,8 +504,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00282">282</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
 
 </div>
 </div>
@@ -592,8 +557,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00351">351</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
-
 </div>
 </div>
 <a id="a6d09aa83f8d297481380c7c073c9f070"></a>
@@ -621,8 +584,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00115">115</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
 
 </div>
 </div>
@@ -657,8 +618,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00163">163</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
 
 </div>
 </div>
@@ -699,8 +658,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00218">218</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
 
 </div>
 </div>
@@ -747,8 +704,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00280">280</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
 
 </div>
 </div>
@@ -802,8 +757,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00349">349</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
-
 </div>
 </div>
 <a id="a07132aa62cf4902e50e68d0265f573b6"></a>
@@ -831,8 +784,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00113">113</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
 
 </div>
 </div>
@@ -867,8 +818,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00161">161</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
 
 </div>
 </div>
@@ -909,8 +858,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00216">216</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
 
 </div>
 </div>
@@ -957,8 +904,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00278">278</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
 
 </div>
 </div>
@@ -1012,8 +957,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00347">347</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
-
 </div>
 </div>
 <a id="a8c09939dd67f1bb5b68c9f6a44ea75db"></a>
@@ -1042,8 +985,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">GTEST_AMBIGUOUS_ELSE_BLOCKER_ \</div><div class="line">  if (const ::testing::AssertionResult gtest_ar = (expression)) \</div><div class="line">    ; \</div><div class="line">  else \</div><div class="line">    on_failure(gtest_ar.failure_message())</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00075">75</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
-
 </div>
 </div>
 <a id="ad44cf322952076d85305bbdf39769ac1"></a>
@@ -1077,11 +1018,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a>(::<a class="code" href="gtest__pred__impl_8h.html#a41d32b74fac585ac04cc9ba037c9fed4">testing::AssertPred1Helper</a>(#pred, \</div><div class="line">                                             #v1, \</div><div class="line">                                             pred, \</div><div class="line">                                             v1), on_failure)</div><div class="ttc" id="gtest__pred__impl_8h_html_a41d32b74fac585ac04cc9ba037c9fed4"><div class="ttname"><a href="gtest__pred__impl_8h.html#a41d32b74fac585ac04cc9ba037c9fed4">AssertPred1Helper</a></div><div class="ttdeci">AssertionResult AssertPred1Helper(const char *pred_text, const char *e1, Pred pred, const T1 &amp;v1)</div><div class="ttdef"><b>Definition:</b> <a href="gtest__pred__impl_8h_source.html#l00087">gtest_pred_impl.h:87</a></div></div>
-<div class="ttc" id="gtest__pred__impl_8h_html_a8c09939dd67f1bb5b68c9f6a44ea75db"><div class="ttname"><a href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a></div><div class="ttdeci">#define GTEST_ASSERT_(expression, on_failure)</div><div class="ttdef"><b>Definition:</b> <a href="gtest__pred__impl_8h_source.html#l00075">gtest_pred_impl.h:75</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a>(::<a class="code" href="gtest__pred__impl_8h.html#a41d32b74fac585ac04cc9ba037c9fed4">testing::AssertPred1Helper</a>(#pred, \</div><div class="line">                                             #v1, \</div><div class="line">                                             pred, \</div><div class="line">                                             v1), on_failure)</div><div class="ttc" id="gtest__pred__impl_8h_html_a41d32b74fac585ac04cc9ba037c9fed4"><div class="ttname"><a href="gtest__pred__impl_8h.html#a41d32b74fac585ac04cc9ba037c9fed4">AssertPred1Helper</a></div><div class="ttdeci">AssertionResult AssertPred1Helper(const char *pred_text, const char *e1, Pred pred, const T1 &amp;v1)</div><div class="ttdef"><b>Definition:</b> gtest_pred_impl.h:87</div></div>
+<div class="ttc" id="gtest__pred__impl_8h_html_a8c09939dd67f1bb5b68c9f6a44ea75db"><div class="ttname"><a href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a></div><div class="ttdeci">#define GTEST_ASSERT_(expression, on_failure)</div><div class="ttdef"><b>Definition:</b> gtest_pred_impl.h:75</div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00106">106</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
-
 </div>
 </div>
 <a id="ac560264104bd030b64034505d294a7b6"></a>
@@ -1121,11 +1060,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a>(::<a class="code" href="gtest__pred__impl_8h.html#aa21b5175030ef2d76837bde68459effe">testing::AssertPred2Helper</a>(#pred, \</div><div class="line">                                             #v1, \</div><div class="line">                                             #v2, \</div><div class="line">                                             pred, \</div><div class="line">                                             v1, \</div><div class="line">                                             v2), on_failure)</div><div class="ttc" id="gtest__pred__impl_8h_html_aa21b5175030ef2d76837bde68459effe"><div class="ttname"><a href="gtest__pred__impl_8h.html#aa21b5175030ef2d76837bde68459effe">AssertPred2Helper</a></div><div class="ttdeci">AssertionResult AssertPred2Helper(const char *pred_text, const char *e1, const char *e2, Pred pred, const T1 &amp;v1, const T2 &amp;v2)</div><div class="ttdef"><b>Definition:</b> <a href="gtest__pred__impl_8h_source.html#l00129">gtest_pred_impl.h:129</a></div></div>
-<div class="ttc" id="gtest__pred__impl_8h_html_a8c09939dd67f1bb5b68c9f6a44ea75db"><div class="ttname"><a href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a></div><div class="ttdeci">#define GTEST_ASSERT_(expression, on_failure)</div><div class="ttdef"><b>Definition:</b> <a href="gtest__pred__impl_8h_source.html#l00075">gtest_pred_impl.h:75</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a>(::<a class="code" href="gtest__pred__impl_8h.html#aa21b5175030ef2d76837bde68459effe">testing::AssertPred2Helper</a>(#pred, \</div><div class="line">                                             #v1, \</div><div class="line">                                             #v2, \</div><div class="line">                                             pred, \</div><div class="line">                                             v1, \</div><div class="line">                                             v2), on_failure)</div><div class="ttc" id="gtest__pred__impl_8h_html_aa21b5175030ef2d76837bde68459effe"><div class="ttname"><a href="gtest__pred__impl_8h.html#aa21b5175030ef2d76837bde68459effe">AssertPred2Helper</a></div><div class="ttdeci">AssertionResult AssertPred2Helper(const char *pred_text, const char *e1, const char *e2, Pred pred, const T1 &amp;v1, const T2 &amp;v2)</div><div class="ttdef"><b>Definition:</b> gtest_pred_impl.h:129</div></div>
+<div class="ttc" id="gtest__pred__impl_8h_html_a8c09939dd67f1bb5b68c9f6a44ea75db"><div class="ttname"><a href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a></div><div class="ttdeci">#define GTEST_ASSERT_(expression, on_failure)</div><div class="ttdef"><b>Definition:</b> gtest_pred_impl.h:75</div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00152">152</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
-
 </div>
 </div>
 <a id="af30518f03233bc4486b55284b0827eb8"></a>
@@ -1171,11 +1108,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a>(::<a class="code" href="gtest__pred__impl_8h.html#ae48a4ec033f85849b47bcbd2aa94baab">testing::AssertPred3Helper</a>(#pred, \</div><div class="line">                                             #v1, \</div><div class="line">                                             #v2, \</div><div class="line">                                             #v3, \</div><div class="line">                                             pred, \</div><div class="line">                                             v1, \</div><div class="line">                                             v2, \</div><div class="line">                                             v3), on_failure)</div><div class="ttc" id="gtest__pred__impl_8h_html_ae48a4ec033f85849b47bcbd2aa94baab"><div class="ttname"><a href="gtest__pred__impl_8h.html#ae48a4ec033f85849b47bcbd2aa94baab">AssertPred3Helper</a></div><div class="ttdeci">AssertionResult AssertPred3Helper(const char *pred_text, const char *e1, const char *e2, const char *e3, Pred pred, const T1 &amp;v1, const T2 &amp;v2, const T3 &amp;v3)</div><div class="ttdef"><b>Definition:</b> <a href="gtest__pred__impl_8h_source.html#l00178">gtest_pred_impl.h:178</a></div></div>
-<div class="ttc" id="gtest__pred__impl_8h_html_a8c09939dd67f1bb5b68c9f6a44ea75db"><div class="ttname"><a href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a></div><div class="ttdeci">#define GTEST_ASSERT_(expression, on_failure)</div><div class="ttdef"><b>Definition:</b> <a href="gtest__pred__impl_8h_source.html#l00075">gtest_pred_impl.h:75</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a>(::<a class="code" href="gtest__pred__impl_8h.html#ae48a4ec033f85849b47bcbd2aa94baab">testing::AssertPred3Helper</a>(#pred, \</div><div class="line">                                             #v1, \</div><div class="line">                                             #v2, \</div><div class="line">                                             #v3, \</div><div class="line">                                             pred, \</div><div class="line">                                             v1, \</div><div class="line">                                             v2, \</div><div class="line">                                             v3), on_failure)</div><div class="ttc" id="gtest__pred__impl_8h_html_ae48a4ec033f85849b47bcbd2aa94baab"><div class="ttname"><a href="gtest__pred__impl_8h.html#ae48a4ec033f85849b47bcbd2aa94baab">AssertPred3Helper</a></div><div class="ttdeci">AssertionResult AssertPred3Helper(const char *pred_text, const char *e1, const char *e2, const char *e3, Pred pred, const T1 &amp;v1, const T2 &amp;v2, const T3 &amp;v3)</div><div class="ttdef"><b>Definition:</b> gtest_pred_impl.h:178</div></div>
+<div class="ttc" id="gtest__pred__impl_8h_html_a8c09939dd67f1bb5b68c9f6a44ea75db"><div class="ttname"><a href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a></div><div class="ttdeci">#define GTEST_ASSERT_(expression, on_failure)</div><div class="ttdef"><b>Definition:</b> gtest_pred_impl.h:75</div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00205">205</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
-
 </div>
 </div>
 <a id="a14e8c70455104fac032efec097ef668b"></a>
@@ -1227,11 +1162,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a>(::<a class="code" href="gtest__pred__impl_8h.html#a22f4e27e6b18091281c45d4395c98517">testing::AssertPred4Helper</a>(#pred, \</div><div class="line">                                             #v1, \</div><div class="line">                                             #v2, \</div><div class="line">                                             #v3, \</div><div class="line">                                             #v4, \</div><div class="line">                                             pred, \</div><div class="line">                                             v1, \</div><div class="line">                                             v2, \</div><div class="line">                                             v3, \</div><div class="line">                                             v4), on_failure)</div><div class="ttc" id="gtest__pred__impl_8h_html_a22f4e27e6b18091281c45d4395c98517"><div class="ttname"><a href="gtest__pred__impl_8h.html#a22f4e27e6b18091281c45d4395c98517">AssertPred4Helper</a></div><div class="ttdeci">AssertionResult AssertPred4Helper(const char *pred_text, const char *e1, const char *e2, const char *e3, const char *e4, Pred pred, const T1 &amp;v1, const T2 &amp;v2, const T3 &amp;v3, const T4 &amp;v4)</div><div class="ttdef"><b>Definition:</b> <a href="gtest__pred__impl_8h_source.html#l00234">gtest_pred_impl.h:234</a></div></div>
-<div class="ttc" id="gtest__pred__impl_8h_html_a8c09939dd67f1bb5b68c9f6a44ea75db"><div class="ttname"><a href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a></div><div class="ttdeci">#define GTEST_ASSERT_(expression, on_failure)</div><div class="ttdef"><b>Definition:</b> <a href="gtest__pred__impl_8h_source.html#l00075">gtest_pred_impl.h:75</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a>(::<a class="code" href="gtest__pred__impl_8h.html#a22f4e27e6b18091281c45d4395c98517">testing::AssertPred4Helper</a>(#pred, \</div><div class="line">                                             #v1, \</div><div class="line">                                             #v2, \</div><div class="line">                                             #v3, \</div><div class="line">                                             #v4, \</div><div class="line">                                             pred, \</div><div class="line">                                             v1, \</div><div class="line">                                             v2, \</div><div class="line">                                             v3, \</div><div class="line">                                             v4), on_failure)</div><div class="ttc" id="gtest__pred__impl_8h_html_a22f4e27e6b18091281c45d4395c98517"><div class="ttname"><a href="gtest__pred__impl_8h.html#a22f4e27e6b18091281c45d4395c98517">AssertPred4Helper</a></div><div class="ttdeci">AssertionResult AssertPred4Helper(const char *pred_text, const char *e1, const char *e2, const char *e3, const char *e4, Pred pred, const T1 &amp;v1, const T2 &amp;v2, const T3 &amp;v3, const T4 &amp;v4)</div><div class="ttdef"><b>Definition:</b> gtest_pred_impl.h:234</div></div>
+<div class="ttc" id="gtest__pred__impl_8h_html_a8c09939dd67f1bb5b68c9f6a44ea75db"><div class="ttname"><a href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a></div><div class="ttdeci">#define GTEST_ASSERT_(expression, on_failure)</div><div class="ttdef"><b>Definition:</b> gtest_pred_impl.h:75</div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00265">265</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
-
 </div>
 </div>
 <a id="a2c42692f7d910dc2fe57869883190e6c"></a>
@@ -1289,11 +1222,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a>(::<a class="code" href="gtest__pred__impl_8h.html#a1012d0b317e600d13b1a74712f0d8a48">testing::AssertPred5Helper</a>(#pred, \</div><div class="line">                                             #v1, \</div><div class="line">                                             #v2, \</div><div class="line">                                             #v3, \</div><div class="line">                                             #v4, \</div><div class="line">                                             #v5, \</div><div class="line">                                             pred, \</div><div class="line">                                             v1, \</div><div class="line">                                             v2, \</div><div class="line">                                             v3, \</div><div class="line">                                             v4, \</div><div class="line">                                             v5), on_failure)</div><div class="ttc" id="gtest__pred__impl_8h_html_a1012d0b317e600d13b1a74712f0d8a48"><div class="ttname"><a href="gtest__pred__impl_8h.html#a1012d0b317e600d13b1a74712f0d8a48">AssertPred5Helper</a></div><div class="ttdeci">AssertionResult AssertPred5Helper(const char *pred_text, const char *e1, const char *e2, const char *e3, const char *e4, const char *e5, Pred pred, const T1 &amp;v1, const T2 &amp;v2, const T3 &amp;v3, const T4 &amp;v4, const T5 &amp;v5)</div><div class="ttdef"><b>Definition:</b> <a href="gtest__pred__impl_8h_source.html#l00297">gtest_pred_impl.h:297</a></div></div>
-<div class="ttc" id="gtest__pred__impl_8h_html_a8c09939dd67f1bb5b68c9f6a44ea75db"><div class="ttname"><a href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a></div><div class="ttdeci">#define GTEST_ASSERT_(expression, on_failure)</div><div class="ttdef"><b>Definition:</b> <a href="gtest__pred__impl_8h_source.html#l00075">gtest_pred_impl.h:75</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a>(::<a class="code" href="gtest__pred__impl_8h.html#a1012d0b317e600d13b1a74712f0d8a48">testing::AssertPred5Helper</a>(#pred, \</div><div class="line">                                             #v1, \</div><div class="line">                                             #v2, \</div><div class="line">                                             #v3, \</div><div class="line">                                             #v4, \</div><div class="line">                                             #v5, \</div><div class="line">                                             pred, \</div><div class="line">                                             v1, \</div><div class="line">                                             v2, \</div><div class="line">                                             v3, \</div><div class="line">                                             v4, \</div><div class="line">                                             v5), on_failure)</div><div class="ttc" id="gtest__pred__impl_8h_html_a1012d0b317e600d13b1a74712f0d8a48"><div class="ttname"><a href="gtest__pred__impl_8h.html#a1012d0b317e600d13b1a74712f0d8a48">AssertPred5Helper</a></div><div class="ttdeci">AssertionResult AssertPred5Helper(const char *pred_text, const char *e1, const char *e2, const char *e3, const char *e4, const char *e5, Pred pred, const T1 &amp;v1, const T2 &amp;v2, const T3 &amp;v3, const T4 &amp;v4, const T5 &amp;v5)</div><div class="ttdef"><b>Definition:</b> gtest_pred_impl.h:297</div></div>
+<div class="ttc" id="gtest__pred__impl_8h_html_a8c09939dd67f1bb5b68c9f6a44ea75db"><div class="ttname"><a href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a></div><div class="ttdeci">#define GTEST_ASSERT_(expression, on_failure)</div><div class="ttdef"><b>Definition:</b> gtest_pred_impl.h:75</div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00332">332</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
-
 </div>
 </div>
 <a id="aa3e3bfe04bb0e54d7f0e57e2f991d1eb"></a>
@@ -1327,10 +1258,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a>(pred_format(#v1, v1), \</div><div class="line">                on_failure)</div><div class="ttc" id="gtest__pred__impl_8h_html_a8c09939dd67f1bb5b68c9f6a44ea75db"><div class="ttname"><a href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a></div><div class="ttdeci">#define GTEST_ASSERT_(expression, on_failure)</div><div class="ttdef"><b>Definition:</b> <a href="gtest__pred__impl_8h_source.html#l00075">gtest_pred_impl.h:75</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a>(pred_format(#v1, v1), \</div><div class="line">                on_failure)</div><div class="ttc" id="gtest__pred__impl_8h_html_a8c09939dd67f1bb5b68c9f6a44ea75db"><div class="ttname"><a href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a></div><div class="ttdeci">#define GTEST_ASSERT_(expression, on_failure)</div><div class="ttdef"><b>Definition:</b> gtest_pred_impl.h:75</div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00100">100</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
-
 </div>
 </div>
 <a id="a115c18d1f752b7f091d577fb69cac372"></a>
@@ -1370,10 +1299,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a>(pred_format(#v1, #v2, v1, v2), \</div><div class="line">                on_failure)</div><div class="ttc" id="gtest__pred__impl_8h_html_a8c09939dd67f1bb5b68c9f6a44ea75db"><div class="ttname"><a href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a></div><div class="ttdeci">#define GTEST_ASSERT_(expression, on_failure)</div><div class="ttdef"><b>Definition:</b> <a href="gtest__pred__impl_8h_source.html#l00075">gtest_pred_impl.h:75</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a>(pred_format(#v1, #v2, v1, v2), \</div><div class="line">                on_failure)</div><div class="ttc" id="gtest__pred__impl_8h_html_a8c09939dd67f1bb5b68c9f6a44ea75db"><div class="ttname"><a href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a></div><div class="ttdeci">#define GTEST_ASSERT_(expression, on_failure)</div><div class="ttdef"><b>Definition:</b> gtest_pred_impl.h:75</div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00146">146</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
-
 </div>
 </div>
 <a id="a49cdf8707268ee932bb772d879a226cc"></a>
@@ -1419,10 +1346,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a>(pred_format(#v1, #v2, #v3, v1, v2, v3), \</div><div class="line">                on_failure)</div><div class="ttc" id="gtest__pred__impl_8h_html_a8c09939dd67f1bb5b68c9f6a44ea75db"><div class="ttname"><a href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a></div><div class="ttdeci">#define GTEST_ASSERT_(expression, on_failure)</div><div class="ttdef"><b>Definition:</b> <a href="gtest__pred__impl_8h_source.html#l00075">gtest_pred_impl.h:75</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a>(pred_format(#v1, #v2, #v3, v1, v2, v3), \</div><div class="line">                on_failure)</div><div class="ttc" id="gtest__pred__impl_8h_html_a8c09939dd67f1bb5b68c9f6a44ea75db"><div class="ttname"><a href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a></div><div class="ttdeci">#define GTEST_ASSERT_(expression, on_failure)</div><div class="ttdef"><b>Definition:</b> gtest_pred_impl.h:75</div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00199">199</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
-
 </div>
 </div>
 <a id="abd207ed869491ba4bba29f8df37b7355"></a>
@@ -1474,10 +1399,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a>(pred_format(#v1, #v2, #v3, #v4, v1, v2, v3, v4), \</div><div class="line">                on_failure)</div><div class="ttc" id="gtest__pred__impl_8h_html_a8c09939dd67f1bb5b68c9f6a44ea75db"><div class="ttname"><a href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a></div><div class="ttdeci">#define GTEST_ASSERT_(expression, on_failure)</div><div class="ttdef"><b>Definition:</b> <a href="gtest__pred__impl_8h_source.html#l00075">gtest_pred_impl.h:75</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a>(pred_format(#v1, #v2, #v3, #v4, v1, v2, v3, v4), \</div><div class="line">                on_failure)</div><div class="ttc" id="gtest__pred__impl_8h_html_a8c09939dd67f1bb5b68c9f6a44ea75db"><div class="ttname"><a href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a></div><div class="ttdeci">#define GTEST_ASSERT_(expression, on_failure)</div><div class="ttdef"><b>Definition:</b> gtest_pred_impl.h:75</div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00259">259</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
-
 </div>
 </div>
 <a id="a107623ee191560f703a3fdc983803c8e"></a>
@@ -1535,10 +1458,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a>(pred_format(#v1, #v2, #v3, #v4, #v5, v1, v2, v3, v4, v5), \</div><div class="line">                on_failure)</div><div class="ttc" id="gtest__pred__impl_8h_html_a8c09939dd67f1bb5b68c9f6a44ea75db"><div class="ttname"><a href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a></div><div class="ttdeci">#define GTEST_ASSERT_(expression, on_failure)</div><div class="ttdef"><b>Definition:</b> <a href="gtest__pred__impl_8h_source.html#l00075">gtest_pred_impl.h:75</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a>(pred_format(#v1, #v2, #v3, #v4, #v5, v1, v2, v3, v4, v5), \</div><div class="line">                on_failure)</div><div class="ttc" id="gtest__pred__impl_8h_html_a8c09939dd67f1bb5b68c9f6a44ea75db"><div class="ttname"><a href="gtest__pred__impl_8h.html#a8c09939dd67f1bb5b68c9f6a44ea75db">GTEST_ASSERT_</a></div><div class="ttdeci">#define GTEST_ASSERT_(expression, on_failure)</div><div class="ttdef"><b>Definition:</b> gtest_pred_impl.h:75</div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00326">326</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
@@ -1581,8 +1502,6 @@ template&lt;typename Pred , typename T1 &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00087">87</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
 
 </div>
 </div>
@@ -1637,8 +1556,6 @@ template&lt;typename Pred , typename T1 , typename T2 &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00129">129</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
 
 </div>
 </div>
@@ -1705,8 +1622,6 @@ template&lt;typename Pred , typename T1 , typename T2 , typename T3 &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00178">178</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
 
 </div>
 </div>
@@ -1785,8 +1700,6 @@ template&lt;typename Pred , typename T1 , typename T2 , typename T3 , typename T
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00234">234</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
 
 </div>
 </div>
@@ -1878,20 +1791,14 @@ template&lt;typename Pred , typename T1 , typename T2 , typename T3 , typename T
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__pred__impl_8h_source.html#l00297">297</a> of file <a class="el" href="gtest__pred__impl_8h_source.html">gtest_pred_impl.h</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_b80f002a4112fc8defa29deee9464b28.html">googletest-master</a></li><li class="navelem"><a class="el" href="dir_8339ebd0c16062e901f0dca0f5626014.html">googletest</a></li><li class="navelem"><a class="el" href="dir_7bdf76898677ff32d1912ff4489ec9f5.html">include</a></li><li class="navelem"><a class="el" href="dir_b3e1a8ca349b609fcf0866d66d008233.html">gtest</a></li><li class="navelem"><a class="el" href="gtest__pred__impl_8h.html">gtest_pred_impl.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

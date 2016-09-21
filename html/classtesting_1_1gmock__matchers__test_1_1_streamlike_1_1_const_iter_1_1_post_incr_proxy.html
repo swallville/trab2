@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classtesting_1_1gmock__matchers__test_1_1_streamlike_1_1_const_iter_1_1_post_incr_proxy.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('classtesting_1_1gmock__matchers__test_
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html">gmock_matchers_test</a></li><li class="navelem"><a class="el" href="classtesting_1_1gmock__matchers__test_1_1_streamlike.html">Streamlike</a></li><li class="navelem"><b>ConstIter</b></li><li class="navelem"><a class="el" href="classtesting_1_1gmock__matchers__test_1_1_streamlike_1_1_const_iter_1_1_post_incr_proxy.html">PostIncrProxy</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -92,25 +75,19 @@ $(document).ready(function(){initNavTree('classtesting_1_1gmock__matchers__test_
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1915f8db9943b0a995c4e01d6120fc80"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1gmock__matchers__test_1_1_streamlike_1_1_const_iter_1_1_post_incr_proxy.html#a1915f8db9943b0a995c4e01d6120fc80">PostIncrProxy</a> (const <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_streamlike.html#a7e2c2e021676c1ed5dea63cdd019661c">value_type</a> &amp;value)</td></tr>
+<tr class="memitem:a1915f8db9943b0a995c4e01d6120fc80"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1gmock__matchers__test_1_1_streamlike_1_1_const_iter_1_1_post_incr_proxy.html#a1915f8db9943b0a995c4e01d6120fc80">PostIncrProxy</a> (const <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_streamlike.html#a7e2c2e021676c1ed5dea63cdd019661c">value_type</a> &amp;<a class="el" href="dictobject_8h.html#a4eabde677fab7743b016294ac2f430b9">value</a>)</td></tr>
 <tr class="separator:a1915f8db9943b0a995c4e01d6120fc80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d5416380b6b6cec0d0ed5b5c9be17b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1gmock__matchers__test_1_1_streamlike.html#a7e2c2e021676c1ed5dea63cdd019661c">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1gmock__matchers__test_1_1_streamlike_1_1_const_iter_1_1_post_incr_proxy.html#a7d5416380b6b6cec0d0ed5b5c9be17b3">operator*</a> () const</td></tr>
 <tr class="separator:a7d5416380b6b6cec0d0ed5b5c9be17b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T&gt;<br />
-class testing::gmock_matchers_test::Streamlike&lt; T &gt;::ConstIter::PostIncrProxy</h3>
-
-
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04532">4532</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1915f8db9943b0a995c4e01d6120fc80"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1915f8db9943b0a995c4e01d6120fc80">&sect;&nbsp;</a></span>PostIncrProxy()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T&gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -130,8 +107,6 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04534">4534</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -141,7 +116,7 @@ template&lt;typename T&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T&gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -160,23 +135,17 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-matchers__test_8cc_source.html#l04535">4535</a> of file <a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>lib/googletest-master/googlemock/test/<a class="el" href="gmock-matchers__test_8cc_source.html">gmock-matchers_test.cc</a></li>
+<li>lib/googletest-master/googlemock/test/<a class="el" href="gmock-matchers__test_8cc.html">gmock-matchers_test.cc</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="namespacetesting_1_1gmock__matchers__test.html">gmock_matchers_test</a></li><li class="navelem"><a class="el" href="classtesting_1_1gmock__matchers__test_1_1_streamlike.html">Streamlike</a></li><li class="navelem"><b>ConstIter</b></li><li class="navelem"><a class="el" href="classtesting_1_1gmock__matchers__test_1_1_streamlike_1_1_const_iter_1_1_post_incr_proxy.html">PostIncrProxy</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

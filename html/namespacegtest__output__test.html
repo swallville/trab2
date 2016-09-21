@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('namespacegtest__output__test.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,7 @@ $(document).ready(function(){initNavTree('namespacegtest__output__test.html','')
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -98,7 +77,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa9ee981e855b986a7fc513a4ab68dd3e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__output__test.html#aa9ee981e855b986a7fc513a4ab68dd3e">ToUnixLineEnding</a> (s)</td></tr>
+<tr class="memitem:aa9ee981e855b986a7fc513a4ab68dd3e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__output__test.html#aa9ee981e855b986a7fc513a4ab68dd3e">ToUnixLineEnding</a> (<a class="el" href="stringobject_8h.html#ad912d811fca4c9cfee37905bed81eb65">s</a>)</td></tr>
 <tr class="separator:aa9ee981e855b986a7fc513a4ab68dd3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5ff97e572c5ef7aaf1a414eb52282cf"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__output__test.html#ad5ff97e572c5ef7aaf1a414eb52282cf">RemoveLocations</a> (test_output)</td></tr>
 <tr class="separator:ad5ff97e572c5ef7aaf1a414eb52282cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,13 +106,13 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a25addad68fc28461f31e7f473bb7643f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__output__test.html#a25addad68fc28461f31e7f473bb7643f">GENGOLDEN_FLAG</a> = '--gengolden'</td></tr>
+<tr class="memitem:a25addad68fc28461f31e7f473bb7643f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__output__test.html#a25addad68fc28461f31e7f473bb7643f">GENGOLDEN_FLAG</a> = '--gengolden'</td></tr>
 <tr class="separator:a25addad68fc28461f31e7f473bb7643f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b2d61497a354f214b5a086dcff420ee"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__output__test.html#a3b2d61497a354f214b5a086dcff420ee">CATCH_EXCEPTIONS_ENV_VAR_NAME</a> = 'GTEST_CATCH_EXCEPTIONS'</td></tr>
+<tr class="memitem:a3b2d61497a354f214b5a086dcff420ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__output__test.html#a3b2d61497a354f214b5a086dcff420ee">CATCH_EXCEPTIONS_ENV_VAR_NAME</a> = 'GTEST_CATCH_EXCEPTIONS'</td></tr>
 <tr class="separator:a3b2d61497a354f214b5a086dcff420ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76e823e0e56e3c25aa8b0aab4431f763"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__output__test.html#a76e823e0e56e3c25aa8b0aab4431f763">IS_WINDOWS</a> = 'nt'</td></tr>
+<tr class="memitem:a76e823e0e56e3c25aa8b0aab4431f763"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__output__test.html#a76e823e0e56e3c25aa8b0aab4431f763">IS_WINDOWS</a> = 'nt'</td></tr>
 <tr class="separator:a76e823e0e56e3c25aa8b0aab4431f763"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a317ece7d11d9103a7bdbf0320b64a981"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__output__test.html#a317ece7d11d9103a7bdbf0320b64a981">GOLDEN_NAME</a> = 'gtest_output_test_golden_lin.txt'</td></tr>
+<tr class="memitem:a317ece7d11d9103a7bdbf0320b64a981"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__output__test.html#a317ece7d11d9103a7bdbf0320b64a981">GOLDEN_NAME</a> = 'gtest_output_test_golden_lin.txt'</td></tr>
 <tr class="separator:a317ece7d11d9103a7bdbf0320b64a981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92a4b0bd0a29b350050d03bccb125f60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__output__test.html#a92a4b0bd0a29b350050d03bccb125f60">PROGRAM_PATH</a> = <a class="el" href="namespacegtest__test__utils.html#a89ed3717984a80ffbb7a9c92f71b86a2">gtest_test_utils.GetTestExecutablePath</a>('gtest_output_test_')</td></tr>
 <tr class="separator:a92a4b0bd0a29b350050d03bccb125f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,13 +130,13 @@ Variables</h2></td></tr>
 <tr class="separator:aa592d897eeba0ac7e1a3c7d84f182c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e17eb07fcc42eefeed11a5f87b2d3ae"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__output__test.html#a1e17eb07fcc42eefeed11a5f87b2d3ae">test_list</a> = <a class="el" href="namespacegtest__output__test.html#a0dbdd37611259249a58ab13ed60d8172">GetShellCommandOutput</a>(<a class="el" href="namespacegtest__output__test.html#ad57de209fb07e1002c8a929dd8a15dc9">COMMAND_LIST_TESTS</a>)</td></tr>
 <tr class="separator:a1e17eb07fcc42eefeed11a5f87b2d3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a401e837dae10d6c728bd74684884a77f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__output__test.html#a401e837dae10d6c728bd74684884a77f">SUPPORTS_DEATH_TESTS</a> = 'DeathTest' in <a class="el" href="namespacegtest__output__test.html#a1e17eb07fcc42eefeed11a5f87b2d3ae">test_list</a></td></tr>
+<tr class="memitem:a401e837dae10d6c728bd74684884a77f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__output__test.html#a401e837dae10d6c728bd74684884a77f">SUPPORTS_DEATH_TESTS</a> = 'DeathTest' in <a class="el" href="namespacegtest__output__test.html#a1e17eb07fcc42eefeed11a5f87b2d3ae">test_list</a></td></tr>
 <tr class="separator:a401e837dae10d6c728bd74684884a77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa762abdf62ac6efe1aa2405b3f506380"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__output__test.html#aa762abdf62ac6efe1aa2405b3f506380">SUPPORTS_TYPED_TESTS</a> = '<a class="el" href="class_typed_test.html">TypedTest</a>' in <a class="el" href="namespacegtest__output__test.html#a1e17eb07fcc42eefeed11a5f87b2d3ae">test_list</a></td></tr>
+<tr class="memitem:aa762abdf62ac6efe1aa2405b3f506380"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__output__test.html#aa762abdf62ac6efe1aa2405b3f506380">SUPPORTS_TYPED_TESTS</a> = '<a class="el" href="class_typed_test.html">TypedTest</a>' in <a class="el" href="namespacegtest__output__test.html#a1e17eb07fcc42eefeed11a5f87b2d3ae">test_list</a></td></tr>
 <tr class="separator:aa762abdf62ac6efe1aa2405b3f506380"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c611ee196914defbb5d32a47c606640"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__output__test.html#a9c611ee196914defbb5d32a47c606640">SUPPORTS_THREADS</a> = 'ExpectFailureWithThreadsTest' in <a class="el" href="namespacegtest__output__test.html#a1e17eb07fcc42eefeed11a5f87b2d3ae">test_list</a></td></tr>
+<tr class="memitem:a9c611ee196914defbb5d32a47c606640"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__output__test.html#a9c611ee196914defbb5d32a47c606640">SUPPORTS_THREADS</a> = 'ExpectFailureWithThreadsTest' in <a class="el" href="namespacegtest__output__test.html#a1e17eb07fcc42eefeed11a5f87b2d3ae">test_list</a></td></tr>
 <tr class="separator:a9c611ee196914defbb5d32a47c606640"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e8e722c50268029e33d6fde753cff54"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__output__test.html#a1e8e722c50268029e33d6fde753cff54">SUPPORTS_STACK_TRACES</a> = False</td></tr>
+<tr class="memitem:a1e8e722c50268029e33d6fde753cff54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__output__test.html#a1e8e722c50268029e33d6fde753cff54">SUPPORTS_STACK_TRACES</a> = False</td></tr>
 <tr class="separator:a1e8e722c50268029e33d6fde753cff54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa370a0da630f54a564d79507df196854"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__output__test.html#aa370a0da630f54a564d79507df196854">CAN_GENERATE_GOLDEN_FILE</a></td></tr>
 <tr class="separator:aa370a0da630f54a564d79507df196854"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,8 +171,6 @@ Args:
             environment variables to set, and element 1 is a string with
             the command and any flags.
 </pre> 
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00222">222</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a9d88a4a9a91b97a369abac2170a23ebe"></a>
@@ -211,8 +188,6 @@ Args:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Returns concatenated output from several representative commands.</pre> 
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00239">239</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a0dbdd37611259249a58ab13ed60d8172"></a>
@@ -240,8 +215,6 @@ Args:
 Returns:
   A string with the command's combined standard and diagnostic output.
 </pre> 
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00201">201</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a457700303177f330388e249a23b0c63a"></a>
@@ -260,8 +233,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Normalizes output (the output of gtest_output_test_.exe).</pre> 
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00191">191</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a597325056856f8805a518c2952a3233e"></a>
@@ -280,8 +251,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Normalizes platform specific output details for easier comparison.</pre> 
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00140">140</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="ad5ff97e572c5ef7aaf1a414eb52282cf"></a>
@@ -310,8 +279,6 @@ Returns:
      'DIRECTORY\\FILE_NAME(LINE_NUMBER): ') replaced by
      'FILE_NAME:#: '.
 </pre> 
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00089">89</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="ad1c5969bc410dc44be069ab453ce8840"></a>
@@ -352,8 +319,6 @@ Args:
 Returns:
   Contents of test_output with tests whose names match pattern removed.
 </pre> 
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00168">168</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a15bbf618beea12685dc5c9630ec18120"></a>
@@ -372,8 +337,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Removes all stack traces from a Google Test program's output.</pre> 
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00105">105</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a5fa2201583a11780279aa720dea5dd4e"></a>
@@ -392,8 +355,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Removes all traces of stack traces from a Google Test program's output.</pre> 
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00113">113</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a74ae74aaa09cc2651aabbec468a878d9"></a>
@@ -412,8 +373,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Removes test counts from a Google Test program's output.</pre> 
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00154">154</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a2f40fbdd1c9f47da27109abb3fd2d80d"></a>
@@ -432,8 +391,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Removes all time information from a Google Test program's output.</pre> 
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00120">120</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="addbdacea2fbdaacb3a0328425b3218c9"></a>
@@ -459,8 +416,6 @@ Args:
 Returns:
      output with type information normalized to canonical form.
 </pre> 
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00126">126</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="aa9ee981e855b986a7fc513a4ab68dd3e"></a>
@@ -479,8 +434,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Changes all Windows/Mac line endings in s to UNIX line endings.</pre> 
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00083">83</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -496,8 +449,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;=  (SUPPORTS_DEATH_TESTS <span class="keywordflow">and</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;                            SUPPORTS_TYPED_TESTS <span class="keywordflow">and</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;                            SUPPORTS_THREADS <span class="keywordflow">and</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;                            <span class="keywordflow">not</span> IS_WINDOWS)</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00254">254</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a3b2d61497a354f214b5a086dcff420ee"></a>
@@ -507,12 +458,10 @@ Returns:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string gtest_output_test.CATCH_EXCEPTIONS_ENV_VAR_NAME = 'GTEST_CATCH_EXCEPTIONS'</td>
+          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> gtest_output_test.CATCH_EXCEPTIONS_ENV_VAR_NAME = 'GTEST_CATCH_EXCEPTIONS'</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00052">52</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
 
 </div>
 </div>
@@ -528,8 +477,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00063">63</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="adbeb34904b377333d8168d1b54584b53"></a>
@@ -543,8 +490,6 @@ Returns:
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00064">64</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
 
 </div>
 </div>
@@ -560,8 +505,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;=  (</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    {}, [PROGRAM_PATH,</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;         <span class="stringliteral">&#39;--gtest_also_run_disabled_tests&#39;</span>,</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;         <span class="stringliteral">&#39;internal_skip_environment_and_ad_hoc_tests&#39;</span>,</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;         <span class="stringliteral">&#39;--gtest_filter=*DISABLED_*&#39;</span>])</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00069">69</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a462eef2a00782001d491b7a38a847bec"></a>
@@ -576,8 +519,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;=  (</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    {<span class="stringliteral">&#39;GTEST_SHARD_INDEX&#39;</span>: <span class="stringliteral">&#39;1&#39;</span>, <span class="stringliteral">&#39;GTEST_TOTAL_SHARDS&#39;</span>: <span class="stringliteral">&#39;2&#39;</span>},</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    [PROGRAM_PATH,</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;     <span class="stringliteral">&#39;internal_skip_environment_and_ad_hoc_tests&#39;</span>,</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;     <span class="stringliteral">&#39;--gtest_filter=PassingTest.*&#39;</span>])</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00074">74</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a1c27d93a57990d21461436f2d5ff3064"></a>
@@ -592,8 +533,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;=  ({}, [PROGRAM_PATH,</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;                          <span class="stringliteral">&#39;--gtest_print_time&#39;</span>,</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;                          <span class="stringliteral">&#39;internal_skip_environment_and_ad_hoc_tests&#39;</span>,</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;                          <span class="stringliteral">&#39;--gtest_filter=FatalFailureTest.*:LoggingTest.*&#39;</span>])</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00065">65</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a25addad68fc28461f31e7f473bb7643f"></a>
@@ -603,12 +542,10 @@ Returns:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string gtest_output_test.GENGOLDEN_FLAG = '--gengolden'</td>
+          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> gtest_output_test.GENGOLDEN_FLAG = '--gengolden'</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00051">51</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
 
 </div>
 </div>
@@ -624,8 +561,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00327">327</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a317ece7d11d9103a7bdbf0320b64a981"></a>
@@ -635,12 +570,10 @@ Returns:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string gtest_output_test.GOLDEN_NAME = 'gtest_output_test_golden_lin.txt'</td>
+          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> gtest_output_test.GOLDEN_NAME = 'gtest_output_test_golden_lin.txt'</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00057">57</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
 
 </div>
 </div>
@@ -656,8 +589,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00080">80</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a76e823e0e56e3c25aa8b0aab4431f763"></a>
@@ -667,12 +598,10 @@ Returns:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string gtest_output_test.IS_WINDOWS = 'nt'</td>
+          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> gtest_output_test.IS_WINDOWS = 'nt'</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00054">54</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
 
 </div>
 </div>
@@ -688,8 +617,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;=  (</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;          )</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00331">331</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="ab2bb62f6e360282592cb10d76c25750c"></a>
@@ -703,8 +630,6 @@ Returns:
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00326">326</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
 
 </div>
 </div>
@@ -720,8 +645,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00059">59</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
-
 </div>
 </div>
 <a id="a401e837dae10d6c728bd74684884a77f"></a>
@@ -731,12 +654,10 @@ Returns:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string gtest_output_test.SUPPORTS_DEATH_TESTS = 'DeathTest' in <a class="el" href="namespacegtest__output__test.html#a1e17eb07fcc42eefeed11a5f87b2d3ae">test_list</a></td>
+          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> gtest_output_test.SUPPORTS_DEATH_TESTS = 'DeathTest' in <a class="el" href="namespacegtest__output__test.html#a1e17eb07fcc42eefeed11a5f87b2d3ae">test_list</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00249">249</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
 
 </div>
 </div>
@@ -747,12 +668,10 @@ Returns:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool gtest_output_test.SUPPORTS_STACK_TRACES = False</td>
+          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> gtest_output_test.SUPPORTS_STACK_TRACES = False</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00252">252</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
 
 </div>
 </div>
@@ -763,12 +682,10 @@ Returns:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string gtest_output_test.SUPPORTS_THREADS = 'ExpectFailureWithThreadsTest' in <a class="el" href="namespacegtest__output__test.html#a1e17eb07fcc42eefeed11a5f87b2d3ae">test_list</a></td>
+          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> gtest_output_test.SUPPORTS_THREADS = 'ExpectFailureWithThreadsTest' in <a class="el" href="namespacegtest__output__test.html#a1e17eb07fcc42eefeed11a5f87b2d3ae">test_list</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00251">251</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
 
 </div>
 </div>
@@ -779,12 +696,10 @@ Returns:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string gtest_output_test.SUPPORTS_TYPED_TESTS = '<a class="el" href="class_typed_test.html">TypedTest</a>' in <a class="el" href="namespacegtest__output__test.html#a1e17eb07fcc42eefeed11a5f87b2d3ae">test_list</a></td>
+          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> gtest_output_test.SUPPORTS_TYPED_TESTS = '<a class="el" href="class_typed_test.html">TypedTest</a>' in <a class="el" href="namespacegtest__output__test.html#a1e17eb07fcc42eefeed11a5f87b2d3ae">test_list</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00250">250</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
 
 </div>
 </div>
@@ -800,20 +715,14 @@ Returns:
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest__output__test_8py_source.html#l00248">248</a> of file <a class="el" href="gtest__output__test_8py_source.html">gtest_output_test.py</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacegtest__output__test.html">gtest_output_test</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

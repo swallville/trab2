@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['failuremode',['FailureMode',['../class_expect_failure_test.html#aad05da10bb15d21a434eba3b37011406',1,'ExpectFailureTest']]],
-  ['failuretype',['FailureType',['../gtest__environment__test_8cc.html#aa43ad7e2c1c5c5150ba8d95607a96263',1,'gtest_environment_test.cc']]]
+  ['callreaction',['CallReaction',['../namespacetesting_1_1internal.html#adfcd859062983a889f4bd18e6977357e',1,'testing::internal']]],
+  ['charformat',['CharFormat',['../namespacetesting_1_1internal.html#ae2ef98247c76a50cdc80ceb4a6c81793',1,'testing::internal']]],
+  ['clause',['Clause',['../classtesting_1_1internal_1_1_untyped_on_call_spec_base.html#a78ebf16bfee40375e33a983f3100f354',1,'testing::internal::UntypedOnCallSpecBase::Clause()'],['../classtesting_1_1internal_1_1_expectation_base.html#a450f34b979ec5814c91d4eab6b78cfc2',1,'testing::internal::ExpectationBase::Clause()']]],
+  ['cmp_5fop',['cmp_op',['../opcode_8h.html#a3375211f4343540eb93660ba96cf7a70',1,'opcode.h']]]
 ];

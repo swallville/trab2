@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('gmock-generated-function-mockers__test_8cc.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('gmock-generated-function-mockers__test
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_acf1f0b8874b1064b8fc0cfc28c4e3cc.html">lib</a></li><li class="navelem"><a class="el" href="dir_be221b699d2f9bf4112c9d2789356b2c.html">googletest-master</a></li><li class="navelem"><a class="el" href="dir_2d61cc43f21aa33bebd1aca4ab170a67.html">googlemock</a></li><li class="navelem"><a class="el" href="dir_f8b4127c23f94ca33a939cbe5b31bcb4.html">test</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -96,9 +79,7 @@ $(document).ready(function(){initNavTree('gmock-generated-function-mockers__test
 <code>#include &lt;string&gt;</code><br />
 <code>#include &quot;<a class="el" href="gmock_8h_source.html">gmock/gmock.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="gtest_8h_source.html">gtest/gtest.h</a>&quot;</code><br />
-</div>
-<p><a href="gmock-generated-function-mockers__test_8cc_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface.html">testing::gmock_generated_function_mockers_test::FooInterface</a></td></tr>
@@ -194,8 +175,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-generated-function-mockers__test_8cc_source.html#l00054">54</a> of file <a class="el" href="gmock-generated-function-mockers__test_8cc_source.html">gmock-generated-function-mockers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a9ae68063487fddb9f678e66728fae155"></a>
@@ -209,10 +188,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="gmock-generated-function-mockers_8h.html#a411c69e9d489d590480f728d365ae450">MOCK_METHOD0</a>(Overloaded, <span class="keywordtype">void</span>()); \</div><div class="line">    MOCK_CONST_METHOD1(Overloaded, <span class="keywordtype">int</span>(<span class="keywordtype">int</span> n)); \</div><div class="line">    MOCK_METHOD2(Overloaded, <span class="keywordtype">bool</span>(<span class="keywordtype">bool</span> f, <span class="keywordtype">int</span> n))</div><div class="ttc" id="gmock-generated-function-mockers_8h_html_a411c69e9d489d590480f728d365ae450"><div class="ttname"><a href="gmock-generated-function-mockers_8h.html#a411c69e9d489d590480f728d365ae450">MOCK_METHOD0</a></div><div class="ttdeci">#define MOCK_METHOD0(m,...)</div><div class="ttdef"><b>Definition:</b> <a href="gmock-generated-function-mockers_8h_source.html#l00675">gmock-generated-function-mockers.h:675</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="gmock-generated-function-mockers_8h.html#a411c69e9d489d590480f728d365ae450">MOCK_METHOD0</a>(Overloaded, <span class="keywordtype">void</span>()); \</div><div class="line">    MOCK_CONST_METHOD1(Overloaded, <span class="keywordtype">int</span>(<span class="keywordtype">int</span> <a class="code" href="longobject_8h.html#a0a1cb627ccae562872efc91e5b752be1">n</a>)); \</div><div class="line">    MOCK_METHOD2(Overloaded, <span class="keywordtype">bool</span>(<span class="keywordtype">bool</span> <a class="code" href="namespacesre__constants.html#a539a5734c25724e522ad7bb1b53cf056">f</a>, <span class="keywordtype">int</span> <a class="code" href="longobject_8h.html#a0a1cb627ccae562872efc91e5b752be1">n</a>))</div><div class="ttc" id="namespacesre__constants_html_a539a5734c25724e522ad7bb1b53cf056"><div class="ttname"><a href="namespacesre__constants.html#a539a5734c25724e522ad7bb1b53cf056">sre_constants.f</a></div><div class="ttdeci">f</div><div class="ttdef"><b>Definition:</b> sre_constants.py:227</div></div>
+<div class="ttc" id="longobject_8h_html_a0a1cb627ccae562872efc91e5b752be1"><div class="ttname"><a href="longobject_8h.html#a0a1cb627ccae562872efc91e5b752be1">n</a></div><div class="ttdeci">size_t n</div><div class="ttdef"><b>Definition:</b> longobject.h:93</div></div>
+<div class="ttc" id="gmock-generated-function-mockers_8h_html_a411c69e9d489d590480f728d365ae450"><div class="ttname"><a href="gmock-generated-function-mockers_8h.html#a411c69e9d489d590480f728d365ae450">MOCK_METHOD0</a></div><div class="ttdeci">#define MOCK_METHOD0(m,...)</div><div class="ttdef"><b>Definition:</b> gmock-generated-function-mockers.h:675</div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-function-mockers__test_8cc_source.html#l00505">505</a> of file <a class="el" href="gmock-generated-function-mockers__test_8cc_source.html">gmock-generated-function-mockers_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ac36252ad7584222cebc036d56465d652"></a>
@@ -226,22 +205,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="gmock-generated-function-mockers_8h.html#a6f76aeb56f492cfe538e177b6aa77965">MOCK_CONST_METHOD1</a>(Overloaded, <span class="keywordtype">int</span>(<span class="keywordtype">int</span> n)); \</div><div class="line">    MOCK_METHOD1(Overloaded, <span class="keywordtype">int</span>(<span class="keywordtype">int</span> n));</div><div class="ttc" id="gmock-generated-function-mockers_8h_html_a6f76aeb56f492cfe538e177b6aa77965"><div class="ttname"><a href="gmock-generated-function-mockers_8h.html#a6f76aeb56f492cfe538e177b6aa77965">MOCK_CONST_METHOD1</a></div><div class="ttdeci">#define MOCK_CONST_METHOD1(m,...)</div><div class="ttdef"><b>Definition:</b> <a href="gmock-generated-function-mockers_8h_source.html#l00688">gmock-generated-function-mockers.h:688</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="gmock-generated-function-mockers_8h.html#a6f76aeb56f492cfe538e177b6aa77965">MOCK_CONST_METHOD1</a>(Overloaded, <span class="keywordtype">int</span>(<span class="keywordtype">int</span> <a class="code" href="longobject_8h.html#a0a1cb627ccae562872efc91e5b752be1">n</a>)); \</div><div class="line">    MOCK_METHOD1(Overloaded, <span class="keywordtype">int</span>(<span class="keywordtype">int</span> <a class="code" href="longobject_8h.html#a0a1cb627ccae562872efc91e5b752be1">n</a>));</div><div class="ttc" id="longobject_8h_html_a0a1cb627ccae562872efc91e5b752be1"><div class="ttname"><a href="longobject_8h.html#a0a1cb627ccae562872efc91e5b752be1">n</a></div><div class="ttdeci">size_t n</div><div class="ttdef"><b>Definition:</b> longobject.h:93</div></div>
+<div class="ttc" id="gmock-generated-function-mockers_8h_html_a6f76aeb56f492cfe538e177b6aa77965"><div class="ttname"><a href="gmock-generated-function-mockers_8h.html#a6f76aeb56f492cfe538e177b6aa77965">MOCK_CONST_METHOD1</a></div><div class="ttdeci">#define MOCK_CONST_METHOD1(m,...)</div><div class="ttdef"><b>Definition:</b> gmock-generated-function-mockers.h:688</div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-function-mockers__test_8cc_source.html#l00531">531</a> of file <a class="el" href="gmock-generated-function-mockers__test_8cc_source.html">gmock-generated-function-mockers_test.cc</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_b80f002a4112fc8defa29deee9464b28.html">googletest-master</a></li><li class="navelem"><a class="el" href="dir_8bfa859b63a87f624554ba57ff7df488.html">googlemock</a></li><li class="navelem"><a class="el" href="dir_824fa66a05f8f971de6150c7500e1a3d.html">test</a></li><li class="navelem"><a class="el" href="gmock-generated-function-mockers__test_8cc.html">gmock-generated-function-mockers_test.cc</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

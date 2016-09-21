@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['const_5fiterator',['const_iterator',['../classtesting_1_1_expectation_set.html#ab269a45f80d8c4f747b29de454a084bb',1,'testing::ExpectationSet::const_iterator()'],['../classtesting_1_1gmock__matchers__test_1_1_streamlike.html#a2eeb61dca56f70d0266f5f8ae91d2c7b',1,'testing::gmock_matchers_test::Streamlike::const_iterator()'],['../classtesting_1_1internal_1_1_native_array.html#a9ce7c8408460d7158a2870456d134557',1,'testing::internal::NativeArray::const_iterator()']]],
-  ['const_5freference',['const_reference',['../classtesting_1_1internal_1_1_stl_container_view.html#a9cd4f6ed689b3938cdb7b3c4cbf1b36b',1,'testing::internal::StlContainerView::const_reference()'],['../classtesting_1_1internal_1_1_stl_container_view_3_01_element[_n]_4.html#a481e6ab99316939484fad9c561af5e28',1,'testing::internal::StlContainerView&lt; Element[N]&gt;::const_reference()'],['../classtesting_1_1internal_1_1_stl_container_view_3_01_1_1testing_1_1tuple_3_01_element_pointer_00_01_size_01_4_01_4.html#a4c69a4e22173b0e6f3eb55636d6a38f1',1,'testing::internal::StlContainerView&lt; ::testing::tuple&lt; ElementPointer, Size &gt; &gt;::const_reference()']]],
-  ['containerview',['ContainerView',['../classtesting_1_1internal_1_1_size_is_matcher_1_1_impl.html#ae848755998eaaaa5e38366a2fc8b55e2',1,'testing::internal::SizeIsMatcher::Impl::ContainerView()'],['../classtesting_1_1internal_1_1_begin_end_distance_is_matcher_1_1_impl.html#a5c76ede38c6143430f56e02e9024f535',1,'testing::internal::BeginEndDistanceIsMatcher::Impl::ContainerView()']]]
+  ['biggestint',['BiggestInt',['../namespacetesting_1_1internal.html#a05c6bd9ede5ccdf25191a590d610dcc6',1,'testing::internal']]],
+  ['binaryfunc',['binaryfunc',['../object_8h.html#a1a50b2d154f36acb9d215f2cdc1561a8',1,'object.h']]],
+  ['bits',['Bits',['../classtesting_1_1gmock__matchers__test_1_1_floating_point_test.html#addf899bd832ae51103198d201d2f2ea2',1,'testing::gmock_matchers_test::FloatingPointTest::Bits()'],['../classtesting_1_1internal_1_1_floating_point.html#abf228bf6cd48f12c8b44c85b4971a731',1,'testing::internal::FloatingPoint::Bits()']]],
+  ['bitset',['bitset',['../bitset_8h.html#ac7e27e031c9c878d9fc78425c9724038',1,'bitset.h']]],
+  ['boolop_5fty',['boolop_ty',['../_python-ast_8h.html#ab7ba8d66d81017932471af1f2609a830',1,'Python-ast.h']]]
 ];

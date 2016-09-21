@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('gmock-generated-actions_8h.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('gmock-generated-actions_8h.html','');}
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_acf1f0b8874b1064b8fc0cfc28c4e3cc.html">lib</a></li><li class="navelem"><a class="el" href="dir_be221b699d2f9bf4112c9d2789356b2c.html">googletest-master</a></li><li class="navelem"><a class="el" href="dir_2d61cc43f21aa33bebd1aca4ab170a67.html">googlemock</a></li><li class="navelem"><a class="el" href="dir_d6892680dc64308264a8a816012b1f00.html">include</a></li><li class="navelem"><a class="el" href="dir_68ae3633783cb126fa79b36fd71229fc.html">gmock</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -165,7 +148,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a6eb3ce92b0613603057a20ec9e593317"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#a6eb3ce92b0613603057a20ec9e593317">GMOCK_FIELD_</a>(Tuple,  N)&#160;&#160;&#160;typename ::testing::tuple_element&lt;N, Tuple&gt;::type</td></tr>
+<tr class="memitem:a6eb3ce92b0613603057a20ec9e593317"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#a6eb3ce92b0613603057a20ec9e593317">GMOCK_FIELD_</a>(<a class="el" href="_python-ast_8h.html#a3f332c0be139cb870e516bad9b6a9366">Tuple</a>,  N)&#160;&#160;&#160;typename ::testing::tuple_element&lt;N, <a class="el" href="_python-ast_8h.html#a3f332c0be139cb870e516bad9b6a9366">Tuple</a>&gt;::<a class="el" href="pystrtod_8h.html#aa4a86d796321c3142c092ce30a5c2512">type</a></td></tr>
 <tr class="separator:a6eb3ce92b0613603057a20ec9e593317"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a069f37fdbe36aabe65da6eb6221b9b19"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#a069f37fdbe36aabe65da6eb6221b9b19">GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_</a></td></tr>
 <tr class="separator:a069f37fdbe36aabe65da6eb6221b9b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -363,31 +346,31 @@ Macros</h2></td></tr>
 <tr class="separator:a425b81bf1cdf7cd14d1e0184df9f204f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfe1adfe26341b5270a8d3385035c464"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#abfe1adfe26341b5270a8d3385035c464">GMOCK_INTERNAL_COUNT_AND_10_VALUE_PARAMS</a>(p0,  p1,  p2,  p3,  p4,  p5,  p6,  p7,  p8,  p9)&#160;&#160;&#160;P10</td></tr>
 <tr class="separator:abfe1adfe26341b5270a8d3385035c464"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1442d2b3f80b5d04b409bca938fdcc5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#af1442d2b3f80b5d04b409bca938fdcc5">GMOCK_ACTION_CLASS_</a>(name,  value_params)&#160;&#160;&#160;<a class="el" href="gtest-internal_8h.html#ae3c336cbe1ae2bd1b1d019333e4428a0">GTEST_CONCAT_TOKEN_</a>(name##Action, GMOCK_INTERNAL_COUNT_##value_params)</td></tr>
+<tr class="memitem:af1442d2b3f80b5d04b409bca938fdcc5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#af1442d2b3f80b5d04b409bca938fdcc5">GMOCK_ACTION_CLASS_</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>,  value_params)&#160;&#160;&#160;<a class="el" href="gtest-internal_8h.html#ae3c336cbe1ae2bd1b1d019333e4428a0">GTEST_CONCAT_TOKEN_</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>##Action, GMOCK_INTERNAL_COUNT_##value_params)</td></tr>
 <tr class="separator:af1442d2b3f80b5d04b409bca938fdcc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad04fa741f313f0c23924d61fcfb1536d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#ad04fa741f313f0c23924d61fcfb1536d">ACTION_TEMPLATE</a>(name,  template_params,  value_params)</td></tr>
+<tr class="memitem:ad04fa741f313f0c23924d61fcfb1536d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#ad04fa741f313f0c23924d61fcfb1536d">ACTION_TEMPLATE</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>,  template_params,  value_params)</td></tr>
 <tr class="separator:ad04fa741f313f0c23924d61fcfb1536d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7af7137aa4871df4235881af377205fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#a7af7137aa4871df4235881af377205fe">ACTION</a>(name)</td></tr>
+<tr class="memitem:a7af7137aa4871df4235881af377205fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#a7af7137aa4871df4235881af377205fe">ACTION</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>)</td></tr>
 <tr class="separator:a7af7137aa4871df4235881af377205fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ee9766f611f068271ca37a90c0e5960"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#a8ee9766f611f068271ca37a90c0e5960">ACTION_P</a>(name,  p0)</td></tr>
+<tr class="memitem:a8ee9766f611f068271ca37a90c0e5960"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#a8ee9766f611f068271ca37a90c0e5960">ACTION_P</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>,  p0)</td></tr>
 <tr class="separator:a8ee9766f611f068271ca37a90c0e5960"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69fbf9ae696cc4cf779e22cb0960a067"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#a69fbf9ae696cc4cf779e22cb0960a067">ACTION_P2</a>(name,  p0,  p1)</td></tr>
+<tr class="memitem:a69fbf9ae696cc4cf779e22cb0960a067"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#a69fbf9ae696cc4cf779e22cb0960a067">ACTION_P2</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>,  p0,  p1)</td></tr>
 <tr class="separator:a69fbf9ae696cc4cf779e22cb0960a067"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab038de3f66ae709773473c18b6a43b29"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#ab038de3f66ae709773473c18b6a43b29">ACTION_P3</a>(name,  p0,  p1,  p2)</td></tr>
+<tr class="memitem:ab038de3f66ae709773473c18b6a43b29"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#ab038de3f66ae709773473c18b6a43b29">ACTION_P3</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>,  p0,  p1,  p2)</td></tr>
 <tr class="separator:ab038de3f66ae709773473c18b6a43b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af416cf9b0288fce8b2c4b71e4df6cfc0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#af416cf9b0288fce8b2c4b71e4df6cfc0">ACTION_P4</a>(name,  p0,  p1,  p2,  p3)</td></tr>
+<tr class="memitem:af416cf9b0288fce8b2c4b71e4df6cfc0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#af416cf9b0288fce8b2c4b71e4df6cfc0">ACTION_P4</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>,  p0,  p1,  p2,  p3)</td></tr>
 <tr class="separator:af416cf9b0288fce8b2c4b71e4df6cfc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0bb4c20795e7efe55b9b76f334554b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#ad0bb4c20795e7efe55b9b76f334554b2">ACTION_P5</a>(name,  p0,  p1,  p2,  p3,  p4)</td></tr>
+<tr class="memitem:ad0bb4c20795e7efe55b9b76f334554b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#ad0bb4c20795e7efe55b9b76f334554b2">ACTION_P5</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>,  p0,  p1,  p2,  p3,  p4)</td></tr>
 <tr class="separator:ad0bb4c20795e7efe55b9b76f334554b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a8af72f23167873fcd5fc7476a4fabc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#a3a8af72f23167873fcd5fc7476a4fabc">ACTION_P6</a>(name,  p0,  p1,  p2,  p3,  p4,  p5)</td></tr>
+<tr class="memitem:a3a8af72f23167873fcd5fc7476a4fabc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#a3a8af72f23167873fcd5fc7476a4fabc">ACTION_P6</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>,  p0,  p1,  p2,  p3,  p4,  p5)</td></tr>
 <tr class="separator:a3a8af72f23167873fcd5fc7476a4fabc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82d96846bae4fee8432385fd24b0a7ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#a82d96846bae4fee8432385fd24b0a7ee">ACTION_P7</a>(name,  p0,  p1,  p2,  p3,  p4,  p5,  p6)</td></tr>
+<tr class="memitem:a82d96846bae4fee8432385fd24b0a7ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#a82d96846bae4fee8432385fd24b0a7ee">ACTION_P7</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>,  p0,  p1,  p2,  p3,  p4,  p5,  p6)</td></tr>
 <tr class="separator:a82d96846bae4fee8432385fd24b0a7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a150147ecae8b84107be8575e4b2560cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#a150147ecae8b84107be8575e4b2560cc">ACTION_P8</a>(name,  p0,  p1,  p2,  p3,  p4,  p5,  p6,  p7)</td></tr>
+<tr class="memitem:a150147ecae8b84107be8575e4b2560cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#a150147ecae8b84107be8575e4b2560cc">ACTION_P8</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>,  p0,  p1,  p2,  p3,  p4,  p5,  p6,  p7)</td></tr>
 <tr class="separator:a150147ecae8b84107be8575e4b2560cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a38804f2dce3fa758335676b4c26cda"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#a6a38804f2dce3fa758335676b4c26cda">ACTION_P9</a>(name,  p0,  p1,  p2,  p3,  p4,  p5,  p6,  p7,  p8)</td></tr>
+<tr class="memitem:a6a38804f2dce3fa758335676b4c26cda"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#a6a38804f2dce3fa758335676b4c26cda">ACTION_P9</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>,  p0,  p1,  p2,  p3,  p4,  p5,  p6,  p7,  p8)</td></tr>
 <tr class="separator:a6a38804f2dce3fa758335676b4c26cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff3ff3b23965dd03539aa4cbc5181002"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#aff3ff3b23965dd03539aa4cbc5181002">ACTION_P10</a>(name,  p0,  p1,  p2,  p3,  p4,  p5,  p6,  p7,  p8,  p9)</td></tr>
+<tr class="memitem:aff3ff3b23965dd03539aa4cbc5181002"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-generated-actions_8h.html#aff3ff3b23965dd03539aa4cbc5181002">ACTION_P10</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>,  p0,  p1,  p2,  p3,  p4,  p5,  p6,  p7,  p8,  p9)</td></tr>
 <tr class="separator:aff3ff3b23965dd03539aa4cbc5181002"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -482,27 +465,27 @@ Functions</h2></td></tr>
 <tr class="memitem:abd36164191a3e386c50243074854b272"><td class="memTemplParams" colspan="2">template&lt;typename R , typename F , typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 , typename A9 , typename A10 &gt; </td></tr>
 <tr class="memitem:abd36164191a3e386c50243074854b272"><td class="memTemplItemLeft" align="right" valign="top">R&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal_1_1invoke__argument.html#abd36164191a3e386c50243074854b272">testing::internal::invoke_argument::InvokeArgumentAdl</a> (AdlTag, F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8, A9 a9, A10 a10)</td></tr>
 <tr class="separator:abd36164191a3e386c50243074854b272"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a02397c7fdf8e84d559ab72dcc28eb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a8a02397c7fdf8e84d559ab72dcc28eb1">testing::ACTION_TEMPLATE</a> (InvokeArgument, HAS_1_TEMPLATE_PARAMS(int, k), AND_0_VALUE_PARAMS())</td></tr>
+<tr class="memitem:a8a02397c7fdf8e84d559ab72dcc28eb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a8a02397c7fdf8e84d559ab72dcc28eb1">testing::ACTION_TEMPLATE</a> (InvokeArgument, HAS_1_TEMPLATE_PARAMS(<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>, k), AND_0_VALUE_PARAMS())</td></tr>
 <tr class="separator:a8a02397c7fdf8e84d559ab72dcc28eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afaa0d88f5442f9aee5d6147377d3e50c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#afaa0d88f5442f9aee5d6147377d3e50c">testing::ACTION_TEMPLATE</a> (InvokeArgument, HAS_1_TEMPLATE_PARAMS(int, k), AND_1_VALUE_PARAMS(p0))</td></tr>
+<tr class="memitem:afaa0d88f5442f9aee5d6147377d3e50c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#afaa0d88f5442f9aee5d6147377d3e50c">testing::ACTION_TEMPLATE</a> (InvokeArgument, HAS_1_TEMPLATE_PARAMS(<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>, k), AND_1_VALUE_PARAMS(p0))</td></tr>
 <tr class="separator:afaa0d88f5442f9aee5d6147377d3e50c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39bf6c49dc1323cc9539a12249e60aba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a39bf6c49dc1323cc9539a12249e60aba">testing::ACTION_TEMPLATE</a> (InvokeArgument, HAS_1_TEMPLATE_PARAMS(int, k), AND_2_VALUE_PARAMS(p0, p1))</td></tr>
+<tr class="memitem:a39bf6c49dc1323cc9539a12249e60aba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a39bf6c49dc1323cc9539a12249e60aba">testing::ACTION_TEMPLATE</a> (InvokeArgument, HAS_1_TEMPLATE_PARAMS(<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>, k), AND_2_VALUE_PARAMS(p0, p1))</td></tr>
 <tr class="separator:a39bf6c49dc1323cc9539a12249e60aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac50647216fdf5197899a3d5034a9a670"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#ac50647216fdf5197899a3d5034a9a670">testing::ACTION_TEMPLATE</a> (InvokeArgument, HAS_1_TEMPLATE_PARAMS(int, k), AND_3_VALUE_PARAMS(p0, p1, p2))</td></tr>
+<tr class="memitem:ac50647216fdf5197899a3d5034a9a670"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#ac50647216fdf5197899a3d5034a9a670">testing::ACTION_TEMPLATE</a> (InvokeArgument, HAS_1_TEMPLATE_PARAMS(<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>, k), AND_3_VALUE_PARAMS(p0, p1, p2))</td></tr>
 <tr class="separator:ac50647216fdf5197899a3d5034a9a670"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae98e43eecf8f44990b39b460f00b397b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#ae98e43eecf8f44990b39b460f00b397b">testing::ACTION_TEMPLATE</a> (InvokeArgument, HAS_1_TEMPLATE_PARAMS(int, k), AND_4_VALUE_PARAMS(p0, p1, p2, p3))</td></tr>
+<tr class="memitem:ae98e43eecf8f44990b39b460f00b397b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#ae98e43eecf8f44990b39b460f00b397b">testing::ACTION_TEMPLATE</a> (InvokeArgument, HAS_1_TEMPLATE_PARAMS(<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>, k), AND_4_VALUE_PARAMS(p0, p1, p2, p3))</td></tr>
 <tr class="separator:ae98e43eecf8f44990b39b460f00b397b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a505f6d82df233802c5f4235d77dca164"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a505f6d82df233802c5f4235d77dca164">testing::ACTION_TEMPLATE</a> (InvokeArgument, HAS_1_TEMPLATE_PARAMS(int, k), AND_5_VALUE_PARAMS(p0, p1, p2, p3, p4))</td></tr>
+<tr class="memitem:a505f6d82df233802c5f4235d77dca164"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a505f6d82df233802c5f4235d77dca164">testing::ACTION_TEMPLATE</a> (InvokeArgument, HAS_1_TEMPLATE_PARAMS(<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>, k), AND_5_VALUE_PARAMS(p0, p1, p2, p3, p4))</td></tr>
 <tr class="separator:a505f6d82df233802c5f4235d77dca164"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab85e5f54a209bf141fc04f8612fbe887"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#ab85e5f54a209bf141fc04f8612fbe887">testing::ACTION_TEMPLATE</a> (InvokeArgument, HAS_1_TEMPLATE_PARAMS(int, k), AND_6_VALUE_PARAMS(p0, p1, p2, p3, p4, p5))</td></tr>
+<tr class="memitem:ab85e5f54a209bf141fc04f8612fbe887"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#ab85e5f54a209bf141fc04f8612fbe887">testing::ACTION_TEMPLATE</a> (InvokeArgument, HAS_1_TEMPLATE_PARAMS(<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>, k), AND_6_VALUE_PARAMS(p0, p1, p2, p3, p4, p5))</td></tr>
 <tr class="separator:ab85e5f54a209bf141fc04f8612fbe887"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d3590561f334d165c620f522219831b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a8d3590561f334d165c620f522219831b">testing::ACTION_TEMPLATE</a> (InvokeArgument, HAS_1_TEMPLATE_PARAMS(int, k), AND_7_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6))</td></tr>
+<tr class="memitem:a8d3590561f334d165c620f522219831b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a8d3590561f334d165c620f522219831b">testing::ACTION_TEMPLATE</a> (InvokeArgument, HAS_1_TEMPLATE_PARAMS(<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>, k), AND_7_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6))</td></tr>
 <tr class="separator:a8d3590561f334d165c620f522219831b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8725892aafb62cc8f6f76280d29595d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a8725892aafb62cc8f6f76280d29595d8">testing::ACTION_TEMPLATE</a> (InvokeArgument, HAS_1_TEMPLATE_PARAMS(int, k), AND_8_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, p7))</td></tr>
+<tr class="memitem:a8725892aafb62cc8f6f76280d29595d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a8725892aafb62cc8f6f76280d29595d8">testing::ACTION_TEMPLATE</a> (InvokeArgument, HAS_1_TEMPLATE_PARAMS(<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>, k), AND_8_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, p7))</td></tr>
 <tr class="separator:a8725892aafb62cc8f6f76280d29595d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a910551adbfeb1854071ef55ae54a5c0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a910551adbfeb1854071ef55ae54a5c0f">testing::ACTION_TEMPLATE</a> (InvokeArgument, HAS_1_TEMPLATE_PARAMS(int, k), AND_9_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, p7, p8))</td></tr>
+<tr class="memitem:a910551adbfeb1854071ef55ae54a5c0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a910551adbfeb1854071ef55ae54a5c0f">testing::ACTION_TEMPLATE</a> (InvokeArgument, HAS_1_TEMPLATE_PARAMS(<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>, k), AND_9_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, p7, p8))</td></tr>
 <tr class="separator:a910551adbfeb1854071ef55ae54a5c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7bf885ff274cbdc09f19c39e43b7f2b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#ab7bf885ff274cbdc09f19c39e43b7f2b">testing::ACTION_TEMPLATE</a> (InvokeArgument, HAS_1_TEMPLATE_PARAMS(int, k), AND_10_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9))</td></tr>
+<tr class="memitem:ab7bf885ff274cbdc09f19c39e43b7f2b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#ab7bf885ff274cbdc09f19c39e43b7f2b">testing::ACTION_TEMPLATE</a> (InvokeArgument, HAS_1_TEMPLATE_PARAMS(<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>, k), AND_10_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9))</td></tr>
 <tr class="separator:ab7bf885ff274cbdc09f19c39e43b7f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a468e601467d018ab7566f321d3f7e871"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a468e601467d018ab7566f321d3f7e871">testing::ACTION_TEMPLATE</a> (ReturnNew, HAS_1_TEMPLATE_PARAMS(typename, T), AND_0_VALUE_PARAMS())</td></tr>
 <tr class="separator:a468e601467d018ab7566f321d3f7e871"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -538,13 +521,11 @@ Functions</h2></td></tr>
           <td class="memname">#define ACTION</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name</td><td>)</td>
+          <td class="paramname"><a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01308">1308</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -558,7 +539,7 @@ Functions</h2></td></tr>
           <td class="memname">#define ACTION_P</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -574,8 +555,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01353">1353</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="aff3ff3b23965dd03539aa4cbc5181002"></a>
@@ -588,7 +567,7 @@ Functions</h2></td></tr>
           <td class="memname">#define ACTION_P10</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -658,8 +637,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01985">1985</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a69fbf9ae696cc4cf779e22cb0960a067"></a>
@@ -672,7 +649,7 @@ Functions</h2></td></tr>
           <td class="memname">#define ACTION_P2</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -694,8 +671,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01403">1403</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="ab038de3f66ae709773473c18b6a43b29"></a>
@@ -708,7 +683,7 @@ Functions</h2></td></tr>
           <td class="memname">#define ACTION_P3</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -736,8 +711,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01458">1458</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="af416cf9b0288fce8b2c4b71e4df6cfc0"></a>
@@ -750,7 +723,7 @@ Functions</h2></td></tr>
           <td class="memname">#define ACTION_P4</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -784,8 +757,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01516">1516</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="ad0bb4c20795e7efe55b9b76f334554b2"></a>
@@ -798,7 +769,7 @@ Functions</h2></td></tr>
           <td class="memname">#define ACTION_P5</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -838,8 +809,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01583">1583</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a3a8af72f23167873fcd5fc7476a4fabc"></a>
@@ -852,7 +821,7 @@ Functions</h2></td></tr>
           <td class="memname">#define ACTION_P6</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -898,8 +867,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01653">1653</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a82d96846bae4fee8432385fd24b0a7ee"></a>
@@ -912,7 +879,7 @@ Functions</h2></td></tr>
           <td class="memname">#define ACTION_P7</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -964,8 +931,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01726">1726</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a150147ecae8b84107be8575e4b2560cc"></a>
@@ -978,7 +943,7 @@ Functions</h2></td></tr>
           <td class="memname">#define ACTION_P8</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1036,8 +1001,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01807">1807</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a6a38804f2dce3fa758335676b4c26cda"></a>
@@ -1050,7 +1013,7 @@ Functions</h2></td></tr>
           <td class="memname">#define ACTION_P9</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1114,8 +1077,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01894">1894</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="ad04fa741f313f0c23924d61fcfb1536d"></a>
@@ -1128,7 +1089,7 @@ Functions</h2></td></tr>
           <td class="memname">#define ACTION_TEMPLATE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1150,8 +1111,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01244">1244</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a069f37fdbe36aabe65da6eb6221b9b19"></a>
@@ -1165,10 +1124,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">const</span> args_type&amp; args <a class="code" href="gtest-port_8h.html#a01f3b31960fc7c4c7ee4b398a914f89a">GTEST_ATTRIBUTE_UNUSED_</a>, \</div><div class="line">    arg0_type arg0 <a class="code" href="gtest-port_8h.html#a01f3b31960fc7c4c7ee4b398a914f89a">GTEST_ATTRIBUTE_UNUSED_</a>, \</div><div class="line">    arg1_type arg1 <a class="code" href="gtest-port_8h.html#a01f3b31960fc7c4c7ee4b398a914f89a">GTEST_ATTRIBUTE_UNUSED_</a>, \</div><div class="line">    arg2_type arg2 <a class="code" href="gtest-port_8h.html#a01f3b31960fc7c4c7ee4b398a914f89a">GTEST_ATTRIBUTE_UNUSED_</a>, \</div><div class="line">    arg3_type arg3 <a class="code" href="gtest-port_8h.html#a01f3b31960fc7c4c7ee4b398a914f89a">GTEST_ATTRIBUTE_UNUSED_</a>, \</div><div class="line">    arg4_type arg4 <a class="code" href="gtest-port_8h.html#a01f3b31960fc7c4c7ee4b398a914f89a">GTEST_ATTRIBUTE_UNUSED_</a>, \</div><div class="line">    arg5_type arg5 <a class="code" href="gtest-port_8h.html#a01f3b31960fc7c4c7ee4b398a914f89a">GTEST_ATTRIBUTE_UNUSED_</a>, \</div><div class="line">    arg6_type arg6 <a class="code" href="gtest-port_8h.html#a01f3b31960fc7c4c7ee4b398a914f89a">GTEST_ATTRIBUTE_UNUSED_</a>, \</div><div class="line">    arg7_type arg7 <a class="code" href="gtest-port_8h.html#a01f3b31960fc7c4c7ee4b398a914f89a">GTEST_ATTRIBUTE_UNUSED_</a>, \</div><div class="line">    arg8_type arg8 <a class="code" href="gtest-port_8h.html#a01f3b31960fc7c4c7ee4b398a914f89a">GTEST_ATTRIBUTE_UNUSED_</a>, \</div><div class="line">    arg9_type arg9 <a class="code" href="gtest-port_8h.html#a01f3b31960fc7c4c7ee4b398a914f89a">GTEST_ATTRIBUTE_UNUSED_</a></div><div class="ttc" id="gtest-port_8h_html_a01f3b31960fc7c4c7ee4b398a914f89a"><div class="ttname"><a href="gtest-port_8h.html#a01f3b31960fc7c4c7ee4b398a914f89a">GTEST_ATTRIBUTE_UNUSED_</a></div><div class="ttdeci">#define GTEST_ATTRIBUTE_UNUSED_</div><div class="ttdef"><b>Definition:</b> <a href="gtest-port_8h_source.html#l00870">gtest-port.h:870</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">const</span> args_type&amp; <a class="code" href="abstract_8h.html#af45a903b674dc99af91d19ea08bb386d">args</a> <a class="code" href="gtest-port_8h.html#a01f3b31960fc7c4c7ee4b398a914f89a">GTEST_ATTRIBUTE_UNUSED_</a>, \</div><div class="line">    arg0_type arg0 <a class="code" href="gtest-port_8h.html#a01f3b31960fc7c4c7ee4b398a914f89a">GTEST_ATTRIBUTE_UNUSED_</a>, \</div><div class="line">    arg1_type arg1 <a class="code" href="gtest-port_8h.html#a01f3b31960fc7c4c7ee4b398a914f89a">GTEST_ATTRIBUTE_UNUSED_</a>, \</div><div class="line">    arg2_type arg2 <a class="code" href="gtest-port_8h.html#a01f3b31960fc7c4c7ee4b398a914f89a">GTEST_ATTRIBUTE_UNUSED_</a>, \</div><div class="line">    arg3_type arg3 <a class="code" href="gtest-port_8h.html#a01f3b31960fc7c4c7ee4b398a914f89a">GTEST_ATTRIBUTE_UNUSED_</a>, \</div><div class="line">    arg4_type arg4 <a class="code" href="gtest-port_8h.html#a01f3b31960fc7c4c7ee4b398a914f89a">GTEST_ATTRIBUTE_UNUSED_</a>, \</div><div class="line">    arg5_type arg5 <a class="code" href="gtest-port_8h.html#a01f3b31960fc7c4c7ee4b398a914f89a">GTEST_ATTRIBUTE_UNUSED_</a>, \</div><div class="line">    arg6_type arg6 <a class="code" href="gtest-port_8h.html#a01f3b31960fc7c4c7ee4b398a914f89a">GTEST_ATTRIBUTE_UNUSED_</a>, \</div><div class="line">    arg7_type arg7 <a class="code" href="gtest-port_8h.html#a01f3b31960fc7c4c7ee4b398a914f89a">GTEST_ATTRIBUTE_UNUSED_</a>, \</div><div class="line">    arg8_type arg8 <a class="code" href="gtest-port_8h.html#a01f3b31960fc7c4c7ee4b398a914f89a">GTEST_ATTRIBUTE_UNUSED_</a>, \</div><div class="line">    arg9_type arg9 <a class="code" href="gtest-port_8h.html#a01f3b31960fc7c4c7ee4b398a914f89a">GTEST_ATTRIBUTE_UNUSED_</a></div><div class="ttc" id="gtest-port_8h_html_a01f3b31960fc7c4c7ee4b398a914f89a"><div class="ttname"><a href="gtest-port_8h.html#a01f3b31960fc7c4c7ee4b398a914f89a">GTEST_ATTRIBUTE_UNUSED_</a></div><div class="ttdeci">#define GTEST_ATTRIBUTE_UNUSED_</div><div class="ttdef"><b>Definition:</b> gtest-port.h:870</div></div>
+<div class="ttc" id="abstract_8h_html_af45a903b674dc99af91d19ea08bb386d"><div class="ttname"><a href="abstract_8h.html#af45a903b674dc99af91d19ea08bb386d">args</a></div><div class="ttdeci">PyObject * args</div><div class="ttdef"><b>Definition:</b> abstract.h:305</div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l00881">881</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="af1442d2b3f80b5d04b409bca938fdcc5"></a>
@@ -1181,7 +1139,7 @@ Functions</h2></td></tr>
           <td class="memname">#define GMOCK_ACTION_CLASS_</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1192,12 +1150,10 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="gtest-internal_8h.html#ae3c336cbe1ae2bd1b1d019333e4428a0">GTEST_CONCAT_TOKEN_</a>(name##Action, GMOCK_INTERNAL_COUNT_##value_params)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="gtest-internal_8h.html#ae3c336cbe1ae2bd1b1d019333e4428a0">GTEST_CONCAT_TOKEN_</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>##Action, GMOCK_INTERNAL_COUNT_##value_params)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01241">1241</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -1211,7 +1167,7 @@ Functions</h2></td></tr>
           <td class="memname">#define GMOCK_FIELD_</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">Tuple, </td>
+          <td class="paramname"><a class="el" href="_python-ast_8h.html#a3f332c0be139cb870e516bad9b6a9366">Tuple</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1222,12 +1178,10 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;typename ::testing::tuple_element&lt;N, Tuple&gt;::type</td>
+          <td></td><td>&#160;&#160;&#160;typename ::testing::tuple_element&lt;N, <a class="el" href="_python-ast_8h.html#a3f332c0be139cb870e516bad9b6a9366">Tuple</a>&gt;::<a class="el" href="pystrtod_8h.html#aa4a86d796321c3142c092ce30a5c2512">type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l00272">272</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -1245,8 +1199,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01225">1225</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -1324,8 +1276,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01237">1237</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a372a4dbbfeba17c2af89aa1027cb7f67"></a>
@@ -1343,8 +1293,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01226">1226</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -1373,8 +1321,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01227">1227</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -1409,8 +1355,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01228">1228</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -1451,8 +1395,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01229">1229</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -1499,8 +1441,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01230">1230</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -1553,8 +1493,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01231">1231</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -1613,8 +1551,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01232">1232</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -1679,8 +1615,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01233">1233</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -1752,8 +1686,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01235">1235</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="afbcc498768661d32cb658a8eb28535a9"></a>
@@ -1770,8 +1702,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01197">1197</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -1849,8 +1779,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">p0##_type p0, p1##_type p1, p2##_type p2, p3##_type p3, \</div><div class="line">    p4##_type p4, p5##_type p5, p6##_type p6, p7##_type p7, p8##_type p8, \</div><div class="line">    p9##_type p9</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01219">1219</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a4440fd8222dde30e41f05209f06a2d00"></a>
@@ -1868,8 +1796,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01198">1198</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -1899,8 +1825,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">p0##_type p0, \</div><div class="line">    p1##_type p1</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01199">1199</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a81147c9dca4694a07acccd9324990585"></a>
@@ -1935,8 +1859,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">p0##_type p0, \</div><div class="line">    p1##_type p1, p2##_type p2</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01201">1201</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a0580c33b8405f1820a382f9b9471f157"></a>
@@ -1977,8 +1899,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">p0##_type p0, \</div><div class="line">    p1##_type p1, p2##_type p2, p3##_type p3</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01203">1203</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a0fd289b917553899d908b0f406f8f75d"></a>
@@ -2024,8 +1944,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01205">1205</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -2079,8 +1997,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">p0##_type p0, p1##_type p1, p2##_type p2, p3##_type p3, p4##_type p4, \</div><div class="line">    p5##_type p5</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01207">1207</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="af762ce6b60357100fd2c8176ef2f4102"></a>
@@ -2139,8 +2055,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">p0##_type p0, p1##_type p1, p2##_type p2, p3##_type p3, p4##_type p4, \</div><div class="line">    p5##_type p5, p6##_type p6</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01210">1210</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a3ce778c4907edf2818c948a78a94760a"></a>
@@ -2205,8 +2119,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">p0##_type p0, p1##_type p1, p2##_type p2, p3##_type p3, p4##_type p4, \</div><div class="line">    p5##_type p5, p6##_type p6, p7##_type p7</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01213">1213</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a94ebf056f6c78d158bf16eec04583dd0"></a>
@@ -2277,8 +2189,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">p0##_type p0, p1##_type p1, p2##_type p2, p3##_type p3, \</div><div class="line">    p4##_type p4, p5##_type p5, p6##_type p6, p7##_type p7, p8##_type p8</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01216">1216</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="aa3db5758c68ca3a45a795d91fea7bb42"></a>
@@ -2415,8 +2325,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">kind0 name0, \</div><div class="line">    kind1 name1, kind2 name2, kind3 name3, kind4 name4, kind5 name5, \</div><div class="line">    kind6 name6, kind7 name7, kind8 name8, kind9 name9</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01003">1003</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a8b8b1a43495f82aefe40c410bc1ce392"></a>
@@ -2444,8 +2352,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l00976">976</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -2486,8 +2392,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l00977">977</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -2540,8 +2444,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l00979">979</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -2607,8 +2509,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">kind0 name0, kind1 name1, kind2 name2, \</div><div class="line">    kind3 name3</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l00981">981</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="aef0f11711d63f65561ce5a4d032673f8"></a>
@@ -2685,8 +2585,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">kind0 name0, kind1 name1, \</div><div class="line">    kind2 name2, kind3 name3, kind4 name4</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l00984">984</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a4c90362350df0faa6e866642f44708fe"></a>
@@ -2775,8 +2673,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">kind0 name0, \</div><div class="line">    kind1 name1, kind2 name2, kind3 name3, kind4 name4, kind5 name5</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l00987">987</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="aaafa5e8b1a116aa8e7f88653415e60cd"></a>
@@ -2877,8 +2773,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">kind0 name0, kind1 name1, kind2 name2, kind3 name3, kind4 name4, \</div><div class="line">    kind5 name5, kind6 name6</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l00990">990</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a8d8ec2523daa6fc6c5b8f6a45898e0b1"></a>
@@ -2991,8 +2885,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">kind0 name0, kind1 name1, kind2 name2, kind3 name3, \</div><div class="line">    kind4 name4, kind5 name5, kind6 name6, kind7 name7</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l00994">994</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="ae6dd478ff5757fa4e66ef2dcf6e22325"></a>
@@ -3117,8 +3009,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">kind0 name0, kind1 name1, kind2 name2, \</div><div class="line">    kind3 name3, kind4 name4, kind5 name5, kind6 name6, kind7 name7, \</div><div class="line">    kind8 name8</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l00998">998</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a9eda3221eac423c7026d63fc486d1296"></a>
@@ -3135,8 +3025,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01039">1039</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -3214,8 +3102,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">, <span class="keyword">typename</span> p0##_type, <span class="keyword">typename</span> p1##_type, \</div><div class="line">    typename p2##_type, <span class="keyword">typename</span> p3##_type, <span class="keyword">typename</span> p4##_type, \</div><div class="line">    typename p5##_type, <span class="keyword">typename</span> p6##_type, <span class="keyword">typename</span> p7##_type, \</div><div class="line">    typename p8##_type, <span class="keyword">typename</span> p9##_type</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01066">1066</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a462396713d8024e37a66fb12abd87a00"></a>
@@ -3233,8 +3119,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01040">1040</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -3264,8 +3148,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">, \</div><div class="line">    typename p0##_type, <span class="keyword">typename</span> p1##_type</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01041">1041</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a2def1ab63696280e9b8c20ed176d0c92"></a>
@@ -3300,8 +3182,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">, \</div><div class="line">    typename p0##_type, <span class="keyword">typename</span> p1##_type, <span class="keyword">typename</span> p2##_type</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01043">1043</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="aff64ba07ea8171eb7bacb655127120f7"></a>
@@ -3342,8 +3222,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">, \</div><div class="line">    typename p0##_type, <span class="keyword">typename</span> p1##_type, <span class="keyword">typename</span> p2##_type, \</div><div class="line">    typename p3##_type</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01045">1045</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a1f0b43fe98dabf52fa9dbffa0966d7f3"></a>
@@ -3390,8 +3268,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">, \</div><div class="line">    typename p0##_type, <span class="keyword">typename</span> p1##_type, <span class="keyword">typename</span> p2##_type, \</div><div class="line">    typename p3##_type, <span class="keyword">typename</span> p4##_type</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01048">1048</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="abffe20cc195c1f2a1682878bb7f7a35d"></a>
@@ -3444,8 +3320,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">, \</div><div class="line">    typename p0##_type, <span class="keyword">typename</span> p1##_type, <span class="keyword">typename</span> p2##_type, \</div><div class="line">    typename p3##_type, <span class="keyword">typename</span> p4##_type, <span class="keyword">typename</span> p5##_type</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01051">1051</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="acb3b2a137310a0ac944d3695a0911a64"></a>
@@ -3504,8 +3378,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">, <span class="keyword">typename</span> p0##_type, <span class="keyword">typename</span> p1##_type, <span class="keyword">typename</span> p2##_type, \</div><div class="line">    typename p3##_type, <span class="keyword">typename</span> p4##_type, <span class="keyword">typename</span> p5##_type, \</div><div class="line">    typename p6##_type</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01054">1054</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="af6338728a5c12281280830ec7c5f685a"></a>
@@ -3570,8 +3442,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">, <span class="keyword">typename</span> p0##_type, <span class="keyword">typename</span> p1##_type, <span class="keyword">typename</span> p2##_type, \</div><div class="line">    typename p3##_type, <span class="keyword">typename</span> p4##_type, <span class="keyword">typename</span> p5##_type, \</div><div class="line">    typename p6##_type, <span class="keyword">typename</span> p7##_type</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01058">1058</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a27e84307ea95be9e2e4526cd6b34a151"></a>
@@ -3642,8 +3512,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">, <span class="keyword">typename</span> p0##_type, <span class="keyword">typename</span> p1##_type, <span class="keyword">typename</span> p2##_type, \</div><div class="line">    typename p3##_type, <span class="keyword">typename</span> p4##_type, <span class="keyword">typename</span> p5##_type, \</div><div class="line">    typename p6##_type, <span class="keyword">typename</span> p7##_type, <span class="keyword">typename</span> p8##_type</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01062">1062</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a3fef729577c726683358d924c3d31c18"></a>
@@ -3660,8 +3528,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01124">1124</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -3739,8 +3605,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">p0##_type p0; p1##_type p1; p2##_type p2; p3##_type p3; \</div><div class="line">    p4##_type p4; p5##_type p5; p6##_type p6; p7##_type p7; p8##_type p8; \</div><div class="line">    p9##_type p9;</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01146">1146</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a9a2a07e6eff8e4ca6d45b8f7ea11cf3b"></a>
@@ -3758,8 +3622,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01125">1125</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -3789,8 +3651,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">p0##_type p0; \</div><div class="line">    p1##_type p1;</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01126">1126</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a584f78b5777db084208f151d7e4d51b7"></a>
@@ -3825,8 +3685,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">p0##_type p0; \</div><div class="line">    p1##_type p1; p2##_type p2;</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01128">1128</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a1c04daeff7ae92839f33727e264f227f"></a>
@@ -3867,8 +3725,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">p0##_type p0; \</div><div class="line">    p1##_type p1; p2##_type p2; p3##_type p3;</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01130">1130</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="ae8e67227205c5f57cbe9c885271d8f82"></a>
@@ -3914,8 +3770,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01132">1132</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -3969,8 +3823,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">p0##_type p0; p1##_type p1; p2##_type p2; p3##_type p3; p4##_type p4; \</div><div class="line">    p5##_type p5;</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01134">1134</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="aa0f3292bceb484af4271eb50de9d5ead"></a>
@@ -4029,8 +3881,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">p0##_type p0; p1##_type p1; p2##_type p2; p3##_type p3; p4##_type p4; \</div><div class="line">    p5##_type p5; p6##_type p6;</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01137">1137</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a028ed15e5ba3301a85b859792e9fb7c9"></a>
@@ -4095,8 +3945,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">p0##_type p0; p1##_type p1; p2##_type p2; p3##_type p3; p4##_type p4; \</div><div class="line">    p5##_type p5; p6##_type p6; p7##_type p7;</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01140">1140</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a9565bbd3c2624487ccb71f325fd96596"></a>
@@ -4167,8 +4015,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">p0##_type p0; p1##_type p1; p2##_type p2; p3##_type p3; \</div><div class="line">    p4##_type p4; p5##_type p5; p6##_type p6; p7##_type p7; p8##_type p8;</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01143">1143</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="aea5ee581daf40874ee7777e3c2b6d4ff"></a>
@@ -4185,8 +4031,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01073">1073</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -4264,8 +4108,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \</div><div class="line">        p3##_type gmock_p3, p4##_type gmock_p4, p5##_type gmock_p5, \</div><div class="line">        p6##_type gmock_p6, p7##_type gmock_p7, p8##_type gmock_p8, \</div><div class="line">        p9##_type gmock_p9) : p0(gmock_p0), p1(gmock_p1), p2(gmock_p2), \</div><div class="line">        p3(gmock_p3), p4(gmock_p4), p5(gmock_p5), p6(gmock_p6), p7(gmock_p7), \</div><div class="line">        p8(gmock_p8), p9(gmock_p9)</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01114">1114</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="ad9d6ae16782bf5b8ffa096356f20b5ef"></a>
@@ -4283,8 +4125,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01075">1075</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -4313,8 +4153,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01077">1077</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -4350,8 +4188,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(p0##_type gmock_p0, p1##_type gmock_p1, \</div><div class="line">        p2##_type gmock_p2) : p0(gmock_p0), p1(gmock_p1), p2(gmock_p2)</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01079">1079</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a9749c8366b3617ee3d14f4f4e9ae18ae"></a>
@@ -4392,8 +4228,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \</div><div class="line">        p3##_type gmock_p3) : p0(gmock_p0), p1(gmock_p1), p2(gmock_p2), \</div><div class="line">        p3(gmock_p3)</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01082">1082</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="ab3c77cabbb94ae2e3a4f9fdbda784731"></a>
@@ -4440,8 +4274,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \</div><div class="line">        p3##_type gmock_p3, p4##_type gmock_p4) : p0(gmock_p0), p1(gmock_p1), \</div><div class="line">        p2(gmock_p2), p3(gmock_p3), p4(gmock_p4)</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01086">1086</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="aef68add35463c75130872b22d07c43ff"></a>
@@ -4494,8 +4326,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \</div><div class="line">        p3##_type gmock_p3, p4##_type gmock_p4, \</div><div class="line">        p5##_type gmock_p5) : p0(gmock_p0), p1(gmock_p1), p2(gmock_p2), \</div><div class="line">        p3(gmock_p3), p4(gmock_p4), p5(gmock_p5)</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01090">1090</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="aa1ba027eec9b36d5e710bfe9da99d443"></a>
@@ -4554,8 +4384,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \</div><div class="line">        p3##_type gmock_p3, p4##_type gmock_p4, p5##_type gmock_p5, \</div><div class="line">        p6##_type gmock_p6) : p0(gmock_p0), p1(gmock_p1), p2(gmock_p2), \</div><div class="line">        p3(gmock_p3), p4(gmock_p4), p5(gmock_p5), p6(gmock_p6)</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01095">1095</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a12a0e970438c008214093b98b8eefa68"></a>
@@ -4620,8 +4448,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \</div><div class="line">        p3##_type gmock_p3, p4##_type gmock_p4, p5##_type gmock_p5, \</div><div class="line">        p6##_type gmock_p6, p7##_type gmock_p7) : p0(gmock_p0), p1(gmock_p1), \</div><div class="line">        p2(gmock_p2), p3(gmock_p3), p4(gmock_p4), p5(gmock_p5), p6(gmock_p6), \</div><div class="line">        p7(gmock_p7)</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01100">1100</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="aa69890581b384540649239847bd7dcbf"></a>
@@ -4692,8 +4518,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \</div><div class="line">        p3##_type gmock_p3, p4##_type gmock_p4, p5##_type gmock_p5, \</div><div class="line">        p6##_type gmock_p6, p7##_type gmock_p7, \</div><div class="line">        p8##_type gmock_p8) : p0(gmock_p0), p1(gmock_p1), p2(gmock_p2), \</div><div class="line">        p3(gmock_p3), p4(gmock_p4), p5(gmock_p5), p6(gmock_p6), p7(gmock_p7), \</div><div class="line">        p8(gmock_p8)</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01106">1106</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a2dbeccb9f6d632f5e7e2c1421cd549aa"></a>
@@ -4710,8 +4534,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01152">1152</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -4789,8 +4611,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01167">1167</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a12895511e72c47c78850542b68fe83d4"></a>
@@ -4808,8 +4628,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01153">1153</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -4838,8 +4656,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01154">1154</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -4874,8 +4690,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01155">1155</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -4916,8 +4730,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01156">1156</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -4965,8 +4777,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">p0, p1, \</div><div class="line">    p2, p3, p4</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01157">1157</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a553114b6d5e3f751a9f122fb71a3abdb"></a>
@@ -5019,8 +4829,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">p0, \</div><div class="line">    p1, p2, p3, p4, p5</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01159">1159</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a6a66c76963794fca308b7e2852188e06"></a>
@@ -5078,8 +4886,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01161">1161</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -5144,8 +4950,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01163">1163</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -5216,8 +5020,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01165">1165</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -5355,8 +5157,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">name0, name1, name2, \</div><div class="line">    name3, name4, name5, name6, name7, name8, name9</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01033">1033</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a900f637cda387230021133903f5e078b"></a>
@@ -5384,8 +5184,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01010">1010</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -5426,8 +5224,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01011">1011</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -5480,8 +5276,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01013">1013</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -5546,8 +5340,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01015">1015</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -5625,8 +5417,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">name0, name1, name2, name3, \</div><div class="line">    name4</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01017">1017</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="ae9d4c983c2aba6b0fa5725118bb11cbd"></a>
@@ -5715,8 +5505,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">name0, name1, \</div><div class="line">    name2, name3, name4, name5</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01020">1020</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="ad76d91a49b437e52790b3d7efeb6f289"></a>
@@ -5816,8 +5604,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01023">1023</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -5930,8 +5716,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01026">1026</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -6057,8 +5841,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">name0, name1, name2, name3, name4, name5, \</div><div class="line">    name6, name7, name8</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01029">1029</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a76ec2981c2b6c52e3c6cdd1eba7f37ac"></a>
@@ -6075,8 +5857,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01171">1171</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -6154,8 +5934,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">, p0##_type, p1##_type, p2##_type, p3##_type, p4##_type, \</div><div class="line">    p5##_type, p6##_type, p7##_type, p8##_type, p9##_type</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01192">1192</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="aa6b8f71158f750363cbf016eb92e0865"></a>
@@ -6173,8 +5951,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01172">1172</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
 
 </div>
 </div>
@@ -6204,8 +5980,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">, p0##_type, \</div><div class="line">    p1##_type</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01173">1173</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a5654c0d7f59fc85880c24738b6cb5976"></a>
@@ -6240,8 +6014,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">, p0##_type, \</div><div class="line">    p1##_type, p2##_type</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01175">1175</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="ad00ece06c41ce47e499fef47d0ee9459"></a>
@@ -6282,8 +6054,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">, \</div><div class="line">    p0##_type, p1##_type, p2##_type, p3##_type</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01177">1177</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a48e2764f7132a1840c2a4afe8d43556b"></a>
@@ -6330,8 +6100,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">, \</div><div class="line">    p0##_type, p1##_type, p2##_type, p3##_type, p4##_type</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01179">1179</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="ab2f48b9bf3f455e081eac982aee31740"></a>
@@ -6384,8 +6152,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">, \</div><div class="line">    p0##_type, p1##_type, p2##_type, p3##_type, p4##_type, p5##_type</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01181">1181</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="aa090e804a45b4373d38e6a0aa35e5997"></a>
@@ -6444,8 +6210,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">, p0##_type, p1##_type, p2##_type, p3##_type, p4##_type, p5##_type, \</div><div class="line">    p6##_type</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01183">1183</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="ac46093455522025b3461ed0dfd326836"></a>
@@ -6510,8 +6274,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">, p0##_type, p1##_type, p2##_type, p3##_type, p4##_type, \</div><div class="line">    p5##_type, p6##_type, p7##_type</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01186">1186</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 <a id="a3f7dd2bdf5feb78d9cd6a538366fed46"></a>
@@ -6582,20 +6344,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">, p0##_type, p1##_type, p2##_type, p3##_type, p4##_type, \</div><div class="line">    p5##_type, p6##_type, p7##_type, p8##_type</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="gmock-generated-actions_8h_source.html#l01189">1189</a> of file <a class="el" href="gmock-generated-actions_8h_source.html">gmock-generated-actions.h</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_b80f002a4112fc8defa29deee9464b28.html">googletest-master</a></li><li class="navelem"><a class="el" href="dir_8bfa859b63a87f624554ba57ff7df488.html">googlemock</a></li><li class="navelem"><a class="el" href="dir_45a0859a1de6ede9f8dd632c95469544.html">include</a></li><li class="navelem"><a class="el" href="dir_89e14424eabda61878d2b529645c19b0.html">gmock</a></li><li class="navelem"><a class="el" href="gmock-generated-actions_8h.html">gmock-generated-actions.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

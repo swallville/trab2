@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classtesting_1_1internal_1_1_format_for_comparison_3_01_to_print[_n]_00_01_other_operand_01_4.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('classtesting_1_1internal_1_1_format_fo
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="namespacetesting_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classtesting_1_1internal_1_1_format_for_comparison_3_01_to_print[_n]_00_01_other_operand_01_4.html">FormatForComparison&lt; ToPrint[N], OtherOperand &gt;</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
@@ -94,16 +77,10 @@ $(document).ready(function(){initNavTree('classtesting_1_1internal_1_1_format_fo
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a76c526461c8fa7df75f7b32ab889b9e0"><td class="memItemLeft" align="right" valign="top">::std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_format_for_comparison_3_01_to_print[_n]_00_01_other_operand_01_4.html#a76c526461c8fa7df75f7b32ab889b9e0">Format</a> (const ToPrint *value)</td></tr>
+<tr class="memitem:a76c526461c8fa7df75f7b32ab889b9e0"><td class="memItemLeft" align="right" valign="top">::<a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_format_for_comparison_3_01_to_print[_n]_00_01_other_operand_01_4.html#a76c526461c8fa7df75f7b32ab889b9e0">Format</a> (const ToPrint *<a class="el" href="dictobject_8h.html#a4eabde677fab7743b016294ac2f430b9">value</a>)</td></tr>
 <tr class="separator:a76c526461c8fa7df75f7b32ab889b9e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename ToPrint, size_t N, typename OtherOperand&gt;<br />
-class testing::internal::FormatForComparison&lt; ToPrint[N], OtherOperand &gt;</h3>
-
-
-<p>Definition at line <a class="el" href="gtest-printers_8h_source.html#l00282">282</a> of file <a class="el" href="gtest-printers_8h_source.html">gtest-printers.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a76c526461c8fa7df75f7b32ab889b9e0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a76c526461c8fa7df75f7b32ab889b9e0">&sect;&nbsp;</a></span>Format()</h2>
 
@@ -116,7 +93,7 @@ template&lt;typename ToPrint , size_t N, typename OtherOperand &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">::std::string <a class="el" href="classtesting_1_1internal_1_1_format_for_comparison.html">testing::internal::FormatForComparison</a>&lt; ToPrint[N], OtherOperand &gt;::Format </td>
+          <td class="memname">::<a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">std::string</a> <a class="el" href="classtesting_1_1internal_1_1_format_for_comparison.html">testing::internal::FormatForComparison</a>&lt; ToPrint[N], OtherOperand &gt;::Format </td>
           <td>(</td>
           <td class="paramtype">const ToPrint *&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
@@ -130,23 +107,17 @@ template&lt;typename ToPrint , size_t N, typename OtherOperand &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gtest-printers_8h_source.html#l00284">284</a> of file <a class="el" href="gtest-printers_8h_source.html">gtest-printers.h</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>lib/googletest-master/googletest/include/gtest/<a class="el" href="gtest-printers_8h_source.html">gtest-printers.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="namespacetesting_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classtesting_1_1internal_1_1_format_for_comparison_3_01_to_print[_n]_00_01_other_operand_01_4.html">FormatForComparison&lt; ToPrint[N], OtherOperand &gt;</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

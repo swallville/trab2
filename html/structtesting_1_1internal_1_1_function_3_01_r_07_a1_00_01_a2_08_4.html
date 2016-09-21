@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('structtesting_1_1internal_1_1_function_3_01_r_07_a1_00_01_a2_08_4.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('structtesting_1_1internal_1_1_function
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="namespacetesting_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_a1_00_01_a2_08_4.html">Function&lt; R(A1, A2)&gt;</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -116,7 +99,7 @@ Public Types</h2></td></tr>
 <tr class="separator:a025f5192252366d73aa19718bb0ea89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2de00437877c29ec6cb78396928b8e3e"><td class="memItemLeft" align="right" valign="top">typedef ::testing::tuple&lt; A1, A2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_a1_00_01_a2_08_4.html#a2de00437877c29ec6cb78396928b8e3e">ArgumentTuple</a></td></tr>
 <tr class="separator:a2de00437877c29ec6cb78396928b8e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad07042129ff6370f55a279ad12f5e80f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structtesting_1_1internal_1_1_matcher_tuple.html">MatcherTuple</a>&lt; <a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html#ad483c3128c470d8cdb55c3ac1c575c11">ArgumentTuple</a> &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_a1_00_01_a2_08_4.html#ad07042129ff6370f55a279ad12f5e80f">ArgumentMatcherTuple</a></td></tr>
+<tr class="memitem:ad07042129ff6370f55a279ad12f5e80f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structtesting_1_1internal_1_1_matcher_tuple.html">MatcherTuple</a>&lt; <a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html#ad483c3128c470d8cdb55c3ac1c575c11">ArgumentTuple</a> &gt;::<a class="el" href="pystrtod_8h.html#aa4a86d796321c3142c092ce30a5c2512">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_a1_00_01_a2_08_4.html#ad07042129ff6370f55a279ad12f5e80f">ArgumentMatcherTuple</a></td></tr>
 <tr class="separator:ad07042129ff6370f55a279ad12f5e80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada1ad22fa21c84ec3faea47ed20c1b46"><td class="memItemLeft" align="right" valign="top">typedef void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_a1_00_01_a2_08_4.html#ada1ad22fa21c84ec3faea47ed20c1b46">MakeResultVoid</a>(A1, A2)</td></tr>
 <tr class="separator:ada1ad22fa21c84ec3faea47ed20c1b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,7 +110,7 @@ Public Types</h2></td></tr>
 <tr class="separator:aca36c8586218fd015cc4736dc8d4c14f inherit pub_types_structtesting_1_1internal_1_1_function_3_01_r_07_a1_08_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd48881a58d72658e547a170fb0f2087 inherit pub_types_structtesting_1_1internal_1_1_function_3_01_r_07_a1_08_4"><td class="memItemLeft" align="right" valign="top">typedef ::testing::tuple&lt; A1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_a1_08_4.html#afd48881a58d72658e547a170fb0f2087">ArgumentTuple</a></td></tr>
 <tr class="separator:afd48881a58d72658e547a170fb0f2087 inherit pub_types_structtesting_1_1internal_1_1_function_3_01_r_07_a1_08_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e35671ae43c3d3310893e1d6d895d06 inherit pub_types_structtesting_1_1internal_1_1_function_3_01_r_07_a1_08_4"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structtesting_1_1internal_1_1_matcher_tuple.html">MatcherTuple</a>&lt; <a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html#ad483c3128c470d8cdb55c3ac1c575c11">ArgumentTuple</a> &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_a1_08_4.html#a0e35671ae43c3d3310893e1d6d895d06">ArgumentMatcherTuple</a></td></tr>
+<tr class="memitem:a0e35671ae43c3d3310893e1d6d895d06 inherit pub_types_structtesting_1_1internal_1_1_function_3_01_r_07_a1_08_4"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structtesting_1_1internal_1_1_matcher_tuple.html">MatcherTuple</a>&lt; <a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html#ad483c3128c470d8cdb55c3ac1c575c11">ArgumentTuple</a> &gt;::<a class="el" href="pystrtod_8h.html#aa4a86d796321c3142c092ce30a5c2512">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_a1_08_4.html#a0e35671ae43c3d3310893e1d6d895d06">ArgumentMatcherTuple</a></td></tr>
 <tr class="separator:a0e35671ae43c3d3310893e1d6d895d06 inherit pub_types_structtesting_1_1internal_1_1_function_3_01_r_07_a1_08_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab10495172953eb51fc3940c4c1e890a inherit pub_types_structtesting_1_1internal_1_1_function_3_01_r_07_a1_08_4"><td class="memItemLeft" align="right" valign="top">typedef void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_a1_08_4.html#aab10495172953eb51fc3940c4c1e890a">MakeResultVoid</a>(A1)</td></tr>
 <tr class="separator:aab10495172953eb51fc3940c4c1e890a inherit pub_types_structtesting_1_1internal_1_1_function_3_01_r_07_a1_08_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,20 +121,14 @@ Public Types</h2></td></tr>
 <tr class="separator:a5c228a886ef598ac10988f8de5e32ca1 inherit pub_types_structtesting_1_1internal_1_1_function_3_01_r_07_08_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad483c3128c470d8cdb55c3ac1c575c11 inherit pub_types_structtesting_1_1internal_1_1_function_3_01_r_07_08_4"><td class="memItemLeft" align="right" valign="top">typedef ::testing::tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html#ad483c3128c470d8cdb55c3ac1c575c11">ArgumentTuple</a></td></tr>
 <tr class="separator:ad483c3128c470d8cdb55c3ac1c575c11 inherit pub_types_structtesting_1_1internal_1_1_function_3_01_r_07_08_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bec5cf8937e8af99dedab2f40129fab inherit pub_types_structtesting_1_1internal_1_1_function_3_01_r_07_08_4"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structtesting_1_1internal_1_1_matcher_tuple.html">MatcherTuple</a>&lt; <a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html#ad483c3128c470d8cdb55c3ac1c575c11">ArgumentTuple</a> &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html#a9bec5cf8937e8af99dedab2f40129fab">ArgumentMatcherTuple</a></td></tr>
+<tr class="memitem:a9bec5cf8937e8af99dedab2f40129fab inherit pub_types_structtesting_1_1internal_1_1_function_3_01_r_07_08_4"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structtesting_1_1internal_1_1_matcher_tuple.html">MatcherTuple</a>&lt; <a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html#ad483c3128c470d8cdb55c3ac1c575c11">ArgumentTuple</a> &gt;::<a class="el" href="pystrtod_8h.html#aa4a86d796321c3142c092ce30a5c2512">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html#a9bec5cf8937e8af99dedab2f40129fab">ArgumentMatcherTuple</a></td></tr>
 <tr class="separator:a9bec5cf8937e8af99dedab2f40129fab inherit pub_types_structtesting_1_1internal_1_1_function_3_01_r_07_08_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a666b5ad3bf155529d3a0f9fe6d5c897b inherit pub_types_structtesting_1_1internal_1_1_function_3_01_r_07_08_4"><td class="memItemLeft" align="right" valign="top">typedef void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html#a666b5ad3bf155529d3a0f9fe6d5c897b">MakeResultVoid</a>()</td></tr>
 <tr class="separator:a666b5ad3bf155529d3a0f9fe6d5c897b inherit pub_types_structtesting_1_1internal_1_1_function_3_01_r_07_08_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa459093a5b52ef54e2544b5a6c054383 inherit pub_types_structtesting_1_1internal_1_1_function_3_01_r_07_08_4"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classtesting_1_1internal_1_1_ignored_value.html">IgnoredValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html#aa459093a5b52ef54e2544b5a6c054383">MakeResultIgnoredValue</a>()</td></tr>
 <tr class="separator:aa459093a5b52ef54e2544b5a6c054383 inherit pub_types_structtesting_1_1internal_1_1_function_3_01_r_07_08_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename R, typename A1, typename A2&gt;<br />
-struct testing::internal::Function&lt; R(A1, A2)&gt;</h3>
-
-
-<p>Definition at line <a class="el" href="gmock-generated-internal-utils_8h_source.html#l00176">176</a> of file <a class="el" href="gmock-generated-internal-utils_8h_source.html">gmock-generated-internal-utils.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a025f5192252366d73aa19718bb0ea89d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a025f5192252366d73aa19718bb0ea89d">&sect;&nbsp;</a></span>Argument2</h2>
 
@@ -166,8 +143,6 @@ template&lt;typename R , typename A1 , typename A2 &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-generated-internal-utils_8h_source.html#l00178">178</a> of file <a class="el" href="gmock-generated-internal-utils_8h_source.html">gmock-generated-internal-utils.h</a>.</p>
-
 </div>
 </div>
 <a id="ad07042129ff6370f55a279ad12f5e80f"></a>
@@ -179,12 +154,10 @@ template&lt;typename R , typename A1 , typename A2 &gt; </div>
 template&lt;typename R , typename A1 , typename A2 &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="structtesting_1_1internal_1_1_matcher_tuple.html">MatcherTuple</a>&lt;<a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html#ad483c3128c470d8cdb55c3ac1c575c11">ArgumentTuple</a>&gt;::type <a class="el" href="structtesting_1_1internal_1_1_function.html">testing::internal::Function</a>&lt; R(A1, A2)&gt;::<a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html#a9bec5cf8937e8af99dedab2f40129fab">ArgumentMatcherTuple</a></td>
+          <td class="memname">typedef <a class="el" href="structtesting_1_1internal_1_1_matcher_tuple.html">MatcherTuple</a>&lt;<a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html#ad483c3128c470d8cdb55c3ac1c575c11">ArgumentTuple</a>&gt;::<a class="el" href="pystrtod_8h.html#aa4a86d796321c3142c092ce30a5c2512">type</a> <a class="el" href="structtesting_1_1internal_1_1_function.html">testing::internal::Function</a>&lt; R(A1, A2)&gt;::<a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_08_4.html#a9bec5cf8937e8af99dedab2f40129fab">ArgumentMatcherTuple</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-internal-utils_8h_source.html#l00180">180</a> of file <a class="el" href="gmock-generated-internal-utils_8h_source.html">gmock-generated-internal-utils.h</a>.</p>
 
 </div>
 </div>
@@ -202,8 +175,6 @@ template&lt;typename R , typename A1 , typename A2 &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-generated-internal-utils_8h_source.html#l00179">179</a> of file <a class="el" href="gmock-generated-internal-utils_8h_source.html">gmock-generated-internal-utils.h</a>.</p>
-
 </div>
 </div>
 <a id="a89033ea870fe831b13899ce36666e102"></a>
@@ -219,8 +190,6 @@ template&lt;typename R , typename A1 , typename A2 &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-generated-internal-utils_8h_source.html#l00182">182</a> of file <a class="el" href="gmock-generated-internal-utils_8h_source.html">gmock-generated-internal-utils.h</a>.</p>
 
 </div>
 </div>
@@ -238,23 +207,17 @@ template&lt;typename R , typename A1 , typename A2 &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-generated-internal-utils_8h_source.html#l00181">181</a> of file <a class="el" href="gmock-generated-internal-utils_8h_source.html">gmock-generated-internal-utils.h</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>lib/googletest-master/googlemock/include/gmock/internal/<a class="el" href="gmock-generated-internal-utils_8h_source.html">gmock-generated-internal-utils.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="namespacetesting_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="structtesting_1_1internal_1_1_function_3_01_r_07_a1_00_01_a2_08_4.html">Function&lt; R(A1, A2)&gt;</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

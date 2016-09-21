@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classupload_1_1_abstract_rpc_server.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('classupload_1_1_abstract_rpc_server.ht
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceupload.html">upload</a></li><li class="navelem"><a class="el" href="classupload_1_1_abstract_rpc_server.html">AbstractRpcServer</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -96,6 +79,8 @@ Inheritance diagram for upload.AbstractRpcServer:</div>
  <div class="center">
   <img src="classupload_1_1_abstract_rpc_server.png" usemap="#upload.AbstractRpcServer_map" alt=""/>
   <map id="upload.AbstractRpcServer_map" name="upload.AbstractRpcServer_map">
+<area href="struct__object.html" alt="_object" shape="rect" coords="0,0,162,24"/>
+<area href="struct__object.html" alt="_object" shape="rect" coords="172,0,334,24"/>
 <area href="classupload_1_1_http_rpc_server.html" title="elif e.code &gt;= 500 and e.code &lt; 600: Server Error - try again." alt="upload.HttpRpcServer" shape="rect" coords="0,112,162,136"/>
 <area href="classupload_1_1_http_rpc_server.html" title="elif e.code &gt;= 500 and e.code &lt; 600: Server Error - try again." alt="upload.HttpRpcServer" shape="rect" coords="172,112,334,136"/>
 </map>
@@ -103,13 +88,13 @@ Inheritance diagram for upload.AbstractRpcServer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3f6bc1bd16b52bd5a5c33a1fedeef2d0"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_abstract_rpc_server.html#a3f6bc1bd16b52bd5a5c33a1fedeef2d0">__init__</a> (self, <a class="el" href="classupload_1_1_abstract_rpc_server.html#ab7188d827e2faddcf970f524f5856192">host</a>, <a class="el" href="classupload_1_1_abstract_rpc_server.html#aee0090a3bcf07b913a7dd596a5dabb8f">auth_function</a>, <a class="el" href="classupload_1_1_abstract_rpc_server.html#a783a4a7e4ffb776a57a3f267300a213b">host_override</a>=None, <a class="el" href="classupload_1_1_abstract_rpc_server.html#adbbf0109afc13d58d7815fa143cb779f">extra_headers</a>={}, <a class="el" href="classupload_1_1_abstract_rpc_server.html#affe342205c4647d41b127f5a5634858b">save_cookies</a>=False)</td></tr>
+<tr class="memitem:a3f6bc1bd16b52bd5a5c33a1fedeef2d0"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_abstract_rpc_server.html#a3f6bc1bd16b52bd5a5c33a1fedeef2d0">__init__</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>, <a class="el" href="classupload_1_1_abstract_rpc_server.html#ab7188d827e2faddcf970f524f5856192">host</a>, <a class="el" href="classupload_1_1_abstract_rpc_server.html#aee0090a3bcf07b913a7dd596a5dabb8f">auth_function</a>, <a class="el" href="classupload_1_1_abstract_rpc_server.html#a783a4a7e4ffb776a57a3f267300a213b">host_override</a>=None, <a class="el" href="classupload_1_1_abstract_rpc_server.html#adbbf0109afc13d58d7815fa143cb779f">extra_headers</a>={}, <a class="el" href="classupload_1_1_abstract_rpc_server.html#affe342205c4647d41b127f5a5634858b">save_cookies</a>=False)</td></tr>
 <tr class="separator:a3f6bc1bd16b52bd5a5c33a1fedeef2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1b913f8bd00da4741c47ab49ea94cb5"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_abstract_rpc_server.html#ac1b913f8bd00da4741c47ab49ea94cb5">Send</a> (self, request_path, payload=None, content_type=&quot;application/octet-stream&quot;, timeout=None, kwargs)</td></tr>
+<tr class="memitem:ac1b913f8bd00da4741c47ab49ea94cb5"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_abstract_rpc_server.html#ac1b913f8bd00da4741c47ab49ea94cb5">Send</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>, request_path, payload=None, content_type=&quot;application/octet-<a class="el" href="codecs_8h.html#a66d2f2e4fec1f7c40846b9c893c6b84d">stream</a>&quot;, timeout=None, kwargs)</td></tr>
 <tr class="separator:ac1b913f8bd00da4741c47ab49ea94cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f6bc1bd16b52bd5a5c33a1fedeef2d0"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_abstract_rpc_server.html#a3f6bc1bd16b52bd5a5c33a1fedeef2d0">__init__</a> (self, <a class="el" href="classupload_1_1_abstract_rpc_server.html#ab7188d827e2faddcf970f524f5856192">host</a>, <a class="el" href="classupload_1_1_abstract_rpc_server.html#aee0090a3bcf07b913a7dd596a5dabb8f">auth_function</a>, <a class="el" href="classupload_1_1_abstract_rpc_server.html#a783a4a7e4ffb776a57a3f267300a213b">host_override</a>=None, <a class="el" href="classupload_1_1_abstract_rpc_server.html#adbbf0109afc13d58d7815fa143cb779f">extra_headers</a>={}, <a class="el" href="classupload_1_1_abstract_rpc_server.html#affe342205c4647d41b127f5a5634858b">save_cookies</a>=False)</td></tr>
+<tr class="memitem:a3f6bc1bd16b52bd5a5c33a1fedeef2d0"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_abstract_rpc_server.html#a3f6bc1bd16b52bd5a5c33a1fedeef2d0">__init__</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>, <a class="el" href="classupload_1_1_abstract_rpc_server.html#ab7188d827e2faddcf970f524f5856192">host</a>, <a class="el" href="classupload_1_1_abstract_rpc_server.html#aee0090a3bcf07b913a7dd596a5dabb8f">auth_function</a>, <a class="el" href="classupload_1_1_abstract_rpc_server.html#a783a4a7e4ffb776a57a3f267300a213b">host_override</a>=None, <a class="el" href="classupload_1_1_abstract_rpc_server.html#adbbf0109afc13d58d7815fa143cb779f">extra_headers</a>={}, <a class="el" href="classupload_1_1_abstract_rpc_server.html#affe342205c4647d41b127f5a5634858b">save_cookies</a>=False)</td></tr>
 <tr class="separator:a3f6bc1bd16b52bd5a5c33a1fedeef2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1b913f8bd00da4741c47ab49ea94cb5"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_abstract_rpc_server.html#ac1b913f8bd00da4741c47ab49ea94cb5">Send</a> (self, request_path, payload=None, content_type=&quot;application/octet-stream&quot;, timeout=None, kwargs)</td></tr>
+<tr class="memitem:ac1b913f8bd00da4741c47ab49ea94cb5"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classupload_1_1_abstract_rpc_server.html#ac1b913f8bd00da4741c47ab49ea94cb5">Send</a> (<a class="el" href="modsupport_8h.html#a0180ca1808366e5da641475e8bf8cca3">self</a>, request_path, payload=None, content_type=&quot;application/octet-<a class="el" href="codecs_8h.html#a66d2f2e4fec1f7c40846b9c893c6b84d">stream</a>&quot;, timeout=None, kwargs)</td></tr>
 <tr class="separator:ac1b913f8bd00da4741c47ab49ea94cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -130,9 +115,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aa931446476e0e86f3ade7fef0a0aea5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">Provides a common interface for a simple RPC server.</pre> 
-<p>Definition at line <a class="el" href="googlemock_2scripts_2upload_8py_source.html#l00124">124</a> of file <a class="el" href="googlemock_2scripts_2upload_8py_source.html">upload.py</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<div class="textblock"><pre class="fragment">Provides a common interface for a simple RPC server.</pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3f6bc1bd16b52bd5a5c33a1fedeef2d0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3f6bc1bd16b52bd5a5c33a1fedeef2d0">&sect;&nbsp;</a></span>__init__() <span class="overload">[1/2]</span></h2>
 
@@ -195,8 +178,6 @@ is required.
 If False, use an in-memory cookiejar instead.  Subclasses must
 implement this functionality.  Defaults to False.
 </pre> 
-<p>Definition at line <a class="el" href="googlemock_2scripts_2upload_8py_source.html#l00128">128</a> of file <a class="el" href="googlemock_2scripts_2upload_8py_source.html">upload.py</a>.</p>
-
 </div>
 </div>
 <a id="a3f6bc1bd16b52bd5a5c33a1fedeef2d0"></a>
@@ -261,8 +242,6 @@ is required.
 If False, use an in-memory cookiejar instead.  Subclasses must
 implement this functionality.  Defaults to False.
 </pre> 
-<p>Definition at line <a class="el" href="googletest_2scripts_2upload_8py_source.html#l00128">128</a> of file <a class="el" href="googletest_2scripts_2upload_8py_source.html">upload.py</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -294,7 +273,7 @@ implement this functionality.  Defaults to False.
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>content_type</em> = <code>&quot;application/octet-stream&quot;</code>, </td>
+          <td class="paramname"><em>content_type</em> = <code>&quot;application/octet-<a class="el" href="codecs_8h.html#a66d2f2e4fec1f7c40846b9c893c6b84d">stream</a>&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -328,8 +307,6 @@ Args:
 Returns:
   The response body, as a string.
 </pre> 
-<p>Definition at line <a class="el" href="googlemock_2scripts_2upload_8py_source.html#l00294">294</a> of file <a class="el" href="googlemock_2scripts_2upload_8py_source.html">upload.py</a>.</p>
-
 </div>
 </div>
 <a id="ac1b913f8bd00da4741c47ab49ea94cb5"></a>
@@ -360,7 +337,7 @@ Returns:
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>content_type</em> = <code>&quot;application/octet-stream&quot;</code>, </td>
+          <td class="paramname"><em>content_type</em> = <code>&quot;application/octet-<a class="el" href="codecs_8h.html#a66d2f2e4fec1f7c40846b9c893c6b84d">stream</a>&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -394,8 +371,6 @@ Args:
 Returns:
   The response body, as a string.
 </pre> 
-<p>Definition at line <a class="el" href="googletest_2scripts_2upload_8py_source.html#l00294">294</a> of file <a class="el" href="googletest_2scripts_2upload_8py_source.html">upload.py</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -411,8 +386,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="googlemock_2scripts_2upload_8py_source.html#l00144">144</a> of file <a class="el" href="googlemock_2scripts_2upload_8py_source.html">upload.py</a>.</p>
-
 </div>
 </div>
 <a id="a692955750c802e461c6336d3000cd365"></a>
@@ -426,8 +399,6 @@ Returns:
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="googlemock_2scripts_2upload_8py_source.html#l00145">145</a> of file <a class="el" href="googlemock_2scripts_2upload_8py_source.html">upload.py</a>.</p>
 
 </div>
 </div>
@@ -443,8 +414,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="googlemock_2scripts_2upload_8py_source.html#l00146">146</a> of file <a class="el" href="googlemock_2scripts_2upload_8py_source.html">upload.py</a>.</p>
-
 </div>
 </div>
 <a id="ab7188d827e2faddcf970f524f5856192"></a>
@@ -458,8 +427,6 @@ Returns:
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="googlemock_2scripts_2upload_8py_source.html#l00142">142</a> of file <a class="el" href="googlemock_2scripts_2upload_8py_source.html">upload.py</a>.</p>
 
 </div>
 </div>
@@ -475,8 +442,6 @@ Returns:
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="googlemock_2scripts_2upload_8py_source.html#l00143">143</a> of file <a class="el" href="googlemock_2scripts_2upload_8py_source.html">upload.py</a>.</p>
-
 </div>
 </div>
 <a id="aa931446476e0e86f3ade7fef0a0aea5a"></a>
@@ -490,8 +455,6 @@ Returns:
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="googlemock_2scripts_2upload_8py_source.html#l00148">148</a> of file <a class="el" href="googlemock_2scripts_2upload_8py_source.html">upload.py</a>.</p>
 
 </div>
 </div>
@@ -507,23 +470,17 @@ Returns:
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="googlemock_2scripts_2upload_8py_source.html#l00147">147</a> of file <a class="el" href="googlemock_2scripts_2upload_8py_source.html">upload.py</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>lib/googletest-master/googlemock/scripts/<a class="el" href="googlemock_2scripts_2upload_8py_source.html">upload.py</a></li>
+<li>lib/googletest-master/googlemock/scripts/<a class="el" href="googletest-master_2googlemock_2scripts_2upload_8py.html">upload.py</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceupload.html">upload</a></li><li class="navelem"><a class="el" href="classupload_1_1_abstract_rpc_server.html">AbstractRpcServer</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

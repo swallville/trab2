@@ -20,6 +20,7 @@ namespace Add {
     public:
         int value(char roman);
         int from_roman(const string& input);
+        string to_roman(int value);
         bool it_contains (string input);
     };
     /* just tell the compiler to expect a class def */

@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('gmock-port_8h.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('gmock-port_8h.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_acf1f0b8874b1064b8fc0cfc28c4e3cc.html">lib</a></li><li class="navelem"><a class="el" href="dir_be221b699d2f9bf4112c9d2789356b2c.html">googletest-master</a></li><li class="navelem"><a class="el" href="dir_2d61cc43f21aa33bebd1aca4ab170a67.html">googlemock</a></li><li class="navelem"><a class="el" href="dir_d6892680dc64308264a8a816012b1f00.html">include</a></li><li class="navelem"><a class="el" href="dir_68ae3633783cb126fa79b36fd71229fc.html">gmock</a></li><li class="navelem"><a class="el" href="dir_9992bc78aeaf0152b320d1861309192d.html">internal</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a>  </div>
@@ -99,19 +82,19 @@ $(document).ready(function(){initNavTree('gmock-port_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ad7119adfef06be5e7b1551633f5a1436"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-port_8h.html#ad7119adfef06be5e7b1551633f5a1436">GMOCK_FLAG</a>(name)&#160;&#160;&#160;FLAGS_gmock_##name</td></tr>
+<tr class="memitem:ad7119adfef06be5e7b1551633f5a1436"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-port_8h.html#ad7119adfef06be5e7b1551633f5a1436">GMOCK_FLAG</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>)&#160;&#160;&#160;FLAGS_gmock_##<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a></td></tr>
 <tr class="separator:ad7119adfef06be5e7b1551633f5a1436"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a0a953221ea8ef5aaa6c644a48af599"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-port_8h.html#a7a0a953221ea8ef5aaa6c644a48af599">GMOCK_DECLARE_bool_</a>(name)&#160;&#160;&#160;extern <a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> bool <a class="el" href="gmock-port_8h.html#ad7119adfef06be5e7b1551633f5a1436">GMOCK_FLAG</a>(name)</td></tr>
+<tr class="memitem:a7a0a953221ea8ef5aaa6c644a48af599"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-port_8h.html#a7a0a953221ea8ef5aaa6c644a48af599">GMOCK_DECLARE_bool_</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>)&#160;&#160;&#160;extern <a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> <a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> <a class="el" href="gmock-port_8h.html#ad7119adfef06be5e7b1551633f5a1436">GMOCK_FLAG</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>)</td></tr>
 <tr class="separator:a7a0a953221ea8ef5aaa6c644a48af599"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adeb7f0a8d842d1d541615763835af3f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-port_8h.html#adeb7f0a8d842d1d541615763835af3f9">GMOCK_DECLARE_int32_</a>(name)&#160;&#160;&#160;extern <a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> ::<a class="el" href="namespacetesting_1_1internal.html#a8ee38faaf875f133358abaf9bc056cec">testing::internal::Int32</a> <a class="el" href="gmock-port_8h.html#ad7119adfef06be5e7b1551633f5a1436">GMOCK_FLAG</a>(name)</td></tr>
+<tr class="memitem:adeb7f0a8d842d1d541615763835af3f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-port_8h.html#adeb7f0a8d842d1d541615763835af3f9">GMOCK_DECLARE_int32_</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>)&#160;&#160;&#160;extern <a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> ::<a class="el" href="namespacetesting_1_1internal.html#a8ee38faaf875f133358abaf9bc056cec">testing::internal::Int32</a> <a class="el" href="gmock-port_8h.html#ad7119adfef06be5e7b1551633f5a1436">GMOCK_FLAG</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>)</td></tr>
 <tr class="separator:adeb7f0a8d842d1d541615763835af3f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35af08c45131cf68d78446cb8cfe40fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-port_8h.html#a35af08c45131cf68d78446cb8cfe40fe">GMOCK_DECLARE_string_</a>(name)&#160;&#160;&#160;extern <a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> ::std::string <a class="el" href="gmock-port_8h.html#ad7119adfef06be5e7b1551633f5a1436">GMOCK_FLAG</a>(name)</td></tr>
+<tr class="memitem:a35af08c45131cf68d78446cb8cfe40fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-port_8h.html#a35af08c45131cf68d78446cb8cfe40fe">GMOCK_DECLARE_string_</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>)&#160;&#160;&#160;extern <a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> ::<a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">std::string</a> <a class="el" href="gmock-port_8h.html#ad7119adfef06be5e7b1551633f5a1436">GMOCK_FLAG</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>)</td></tr>
 <tr class="separator:a35af08c45131cf68d78446cb8cfe40fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a470be328fabbeef3987127adc18a1433"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-port_8h.html#a470be328fabbeef3987127adc18a1433">GMOCK_DEFINE_bool_</a>(name,  default_val,  doc)&#160;&#160;&#160;<a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> bool <a class="el" href="gmock-port_8h.html#ad7119adfef06be5e7b1551633f5a1436">GMOCK_FLAG</a>(name) = (default_val)</td></tr>
+<tr class="memitem:a470be328fabbeef3987127adc18a1433"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-port_8h.html#a470be328fabbeef3987127adc18a1433">GMOCK_DEFINE_bool_</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>,  default_val,  <a class="el" href="pyerrors_8h.html#a7ea52c0c994d7e75db8c3dc0c33dcbec">doc</a>)&#160;&#160;&#160;<a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> <a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> <a class="el" href="gmock-port_8h.html#ad7119adfef06be5e7b1551633f5a1436">GMOCK_FLAG</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>) = (default_val)</td></tr>
 <tr class="separator:a470be328fabbeef3987127adc18a1433"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19d91081ff0aaab2f60ef1dc2d6e6b34"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-port_8h.html#a19d91081ff0aaab2f60ef1dc2d6e6b34">GMOCK_DEFINE_int32_</a>(name,  default_val,  doc)&#160;&#160;&#160;<a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> ::<a class="el" href="namespacetesting_1_1internal.html#a8ee38faaf875f133358abaf9bc056cec">testing::internal::Int32</a> <a class="el" href="gmock-port_8h.html#ad7119adfef06be5e7b1551633f5a1436">GMOCK_FLAG</a>(name) = (default_val)</td></tr>
+<tr class="memitem:a19d91081ff0aaab2f60ef1dc2d6e6b34"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-port_8h.html#a19d91081ff0aaab2f60ef1dc2d6e6b34">GMOCK_DEFINE_int32_</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>,  default_val,  <a class="el" href="pyerrors_8h.html#a7ea52c0c994d7e75db8c3dc0c33dcbec">doc</a>)&#160;&#160;&#160;<a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> ::<a class="el" href="namespacetesting_1_1internal.html#a8ee38faaf875f133358abaf9bc056cec">testing::internal::Int32</a> <a class="el" href="gmock-port_8h.html#ad7119adfef06be5e7b1551633f5a1436">GMOCK_FLAG</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>) = (default_val)</td></tr>
 <tr class="separator:a19d91081ff0aaab2f60ef1dc2d6e6b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6badbf90e5a813e2bd5668fc6b6a8f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-port_8h.html#ad6badbf90e5a813e2bd5668fc6b6a8f7">GMOCK_DEFINE_string_</a>(name,  default_val,  doc)&#160;&#160;&#160;<a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> ::std::string <a class="el" href="gmock-port_8h.html#ad7119adfef06be5e7b1551633f5a1436">GMOCK_FLAG</a>(name) = (default_val)</td></tr>
+<tr class="memitem:ad6badbf90e5a813e2bd5668fc6b6a8f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gmock-port_8h.html#ad6badbf90e5a813e2bd5668fc6b6a8f7">GMOCK_DEFINE_string_</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>,  default_val,  <a class="el" href="pyerrors_8h.html#a7ea52c0c994d7e75db8c3dc0c33dcbec">doc</a>)&#160;&#160;&#160;<a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> ::<a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">std::string</a> <a class="el" href="gmock-port_8h.html#ad7119adfef06be5e7b1551633f5a1436">GMOCK_FLAG</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>) = (default_val)</td></tr>
 <tr class="separator:ad6badbf90e5a813e2bd5668fc6b6a8f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -125,13 +108,11 @@ Macros</h2></td></tr>
           <td class="memname">#define GMOCK_DECLARE_bool_</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name</td><td>)</td>
-          <td>&#160;&#160;&#160;extern <a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> bool <a class="el" href="gmock-port_8h.html#ad7119adfef06be5e7b1551633f5a1436">GMOCK_FLAG</a>(name)</td>
+          <td class="paramname"><a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a></td><td>)</td>
+          <td>&#160;&#160;&#160;extern <a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> <a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> <a class="el" href="gmock-port_8h.html#ad7119adfef06be5e7b1551633f5a1436">GMOCK_FLAG</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-port_8h_source.html#l00075">75</a> of file <a class="el" href="gmock-port_8h_source.html">gmock-port.h</a>.</p>
 
 </div>
 </div>
@@ -145,13 +126,11 @@ Macros</h2></td></tr>
           <td class="memname">#define GMOCK_DECLARE_int32_</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name</td><td>)</td>
-          <td>&#160;&#160;&#160;extern <a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> ::<a class="el" href="namespacetesting_1_1internal.html#a8ee38faaf875f133358abaf9bc056cec">testing::internal::Int32</a> <a class="el" href="gmock-port_8h.html#ad7119adfef06be5e7b1551633f5a1436">GMOCK_FLAG</a>(name)</td>
+          <td class="paramname"><a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a></td><td>)</td>
+          <td>&#160;&#160;&#160;extern <a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> ::<a class="el" href="namespacetesting_1_1internal.html#a8ee38faaf875f133358abaf9bc056cec">testing::internal::Int32</a> <a class="el" href="gmock-port_8h.html#ad7119adfef06be5e7b1551633f5a1436">GMOCK_FLAG</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-port_8h_source.html#l00076">76</a> of file <a class="el" href="gmock-port_8h_source.html">gmock-port.h</a>.</p>
 
 </div>
 </div>
@@ -165,13 +144,11 @@ Macros</h2></td></tr>
           <td class="memname">#define GMOCK_DECLARE_string_</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name</td><td>)</td>
-          <td>&#160;&#160;&#160;extern <a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> ::std::string <a class="el" href="gmock-port_8h.html#ad7119adfef06be5e7b1551633f5a1436">GMOCK_FLAG</a>(name)</td>
+          <td class="paramname"><a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a></td><td>)</td>
+          <td>&#160;&#160;&#160;extern <a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> ::<a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">std::string</a> <a class="el" href="gmock-port_8h.html#ad7119adfef06be5e7b1551633f5a1436">GMOCK_FLAG</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-port_8h_source.html#l00078">78</a> of file <a class="el" href="gmock-port_8h_source.html">gmock-port.h</a>.</p>
 
 </div>
 </div>
@@ -185,7 +162,7 @@ Macros</h2></td></tr>
           <td class="memname">#define GMOCK_DEFINE_bool_</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -197,17 +174,15 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">doc&#160;</td>
+          <td class="paramname"><a class="el" href="pyerrors_8h.html#a7ea52c0c994d7e75db8c3dc0c33dcbec">doc</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> bool <a class="el" href="gmock-port_8h.html#ad7119adfef06be5e7b1551633f5a1436">GMOCK_FLAG</a>(name) = (default_val)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> <a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> <a class="el" href="gmock-port_8h.html#ad7119adfef06be5e7b1551633f5a1436">GMOCK_FLAG</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>) = (default_val)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-port_8h_source.html#l00082">82</a> of file <a class="el" href="gmock-port_8h_source.html">gmock-port.h</a>.</p>
 
 </div>
 </div>
@@ -221,7 +196,7 @@ Macros</h2></td></tr>
           <td class="memname">#define GMOCK_DEFINE_int32_</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -233,17 +208,15 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">doc&#160;</td>
+          <td class="paramname"><a class="el" href="pyerrors_8h.html#a7ea52c0c994d7e75db8c3dc0c33dcbec">doc</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> ::<a class="el" href="namespacetesting_1_1internal.html#a8ee38faaf875f133358abaf9bc056cec">testing::internal::Int32</a> <a class="el" href="gmock-port_8h.html#ad7119adfef06be5e7b1551633f5a1436">GMOCK_FLAG</a>(name) = (default_val)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> ::<a class="el" href="namespacetesting_1_1internal.html#a8ee38faaf875f133358abaf9bc056cec">testing::internal::Int32</a> <a class="el" href="gmock-port_8h.html#ad7119adfef06be5e7b1551633f5a1436">GMOCK_FLAG</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>) = (default_val)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-port_8h_source.html#l00084">84</a> of file <a class="el" href="gmock-port_8h_source.html">gmock-port.h</a>.</p>
 
 </div>
 </div>
@@ -257,7 +230,7 @@ Macros</h2></td></tr>
           <td class="memname">#define GMOCK_DEFINE_string_</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -269,17 +242,15 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">doc&#160;</td>
+          <td class="paramname"><a class="el" href="pyerrors_8h.html#a7ea52c0c994d7e75db8c3dc0c33dcbec">doc</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> ::std::string <a class="el" href="gmock-port_8h.html#ad7119adfef06be5e7b1551633f5a1436">GMOCK_FLAG</a>(name) = (default_val)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> ::<a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">std::string</a> <a class="el" href="gmock-port_8h.html#ad7119adfef06be5e7b1551633f5a1436">GMOCK_FLAG</a>(<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a>) = (default_val)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-port_8h_source.html#l00086">86</a> of file <a class="el" href="gmock-port_8h_source.html">gmock-port.h</a>.</p>
 
 </div>
 </div>
@@ -293,26 +264,20 @@ Macros</h2></td></tr>
           <td class="memname">#define GMOCK_FLAG</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name</td><td>)</td>
-          <td>&#160;&#160;&#160;FLAGS_gmock_##name</td>
+          <td class="paramname"><a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a></td><td>)</td>
+          <td>&#160;&#160;&#160;FLAGS_gmock_##<a class="el" href="_python_8h.html#ab3978d96531ad97f1c3139b11f771f98">name</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-port_8h_source.html#l00070">70</a> of file <a class="el" href="gmock-port_8h_source.html">gmock-port.h</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_b80f002a4112fc8defa29deee9464b28.html">googletest-master</a></li><li class="navelem"><a class="el" href="dir_8bfa859b63a87f624554ba57ff7df488.html">googlemock</a></li><li class="navelem"><a class="el" href="dir_45a0859a1de6ede9f8dd632c95469544.html">include</a></li><li class="navelem"><a class="el" href="dir_89e14424eabda61878d2b529645c19b0.html">gmock</a></li><li class="navelem"><a class="el" href="dir_0c602377209123345e91a85a3619b03a.html">internal</a></li><li class="navelem"><a class="el" href="gmock-port_8h.html">gmock-port.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

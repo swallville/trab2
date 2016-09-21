@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -53,20 +46,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('functions_func_v.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,11 +64,24 @@ $(document).ready(function(){initNavTree('functions_func_v.html','');});
 &#160;
 
 <h3><a id="index_v"></a>- v -</h3><ul>
+<li>validate()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1metadata_1_1_metadata.html#a19d6c7da3d1e3f4155a59dc4b6fd3ffa">pip._vendor.distlib.metadata.Metadata</a>
+, <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_forward.html#a1fe80cfda194f577451f81e1d752c763">pip._vendor.pyparsing.Forward</a>
+, <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_parse_element_enhance.html#ae87733601a525ed7a5d12ca2b571aab8">pip._vendor.pyparsing.ParseElementEnhance</a>
+, <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_parse_expression.html#aac2a7f908bd0f7f3efdbd053dd35e9cf">pip._vendor.pyparsing.ParseExpression</a>
+, <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_parser_element.html#aa169747d86f500ab51058958b91b9c17">pip._vendor.pyparsing.ParserElement</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1pyparsing_1_1_forward.html#a59125ffa3d42492c89e898fc40e3d018">pkg_resources._vendor.pyparsing.Forward</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1pyparsing_1_1_parse_element_enhance.html#a84ea6a2aac0f4058a4e989a4284010d5">pkg_resources._vendor.pyparsing.ParseElementEnhance</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1pyparsing_1_1_parse_expression.html#a1b1f5c9a08dd00461b991465cc5e2fd6">pkg_resources._vendor.pyparsing.ParseExpression</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1pyparsing_1_1_parser_element.html#acef95ab1d929446bddf8dc7c5e143c43">pkg_resources._vendor.pyparsing.ParserElement</a>
+, <a class="el" href="classsetuptools_1_1dist_1_1_feature.html#a4d60dcf37f70c14ee94f92a3dd1a9e2c">setuptools.dist.Feature</a>
+</li>
 <li>value()
 : <a class="el" href="class_add_1_1_addition.html#a92d85c569b8dcd65c84e99845c499787">Add::Addition</a>
 , <a class="el" href="classfoo_1_1_printable_via_print_to_template.html#a14e0fcac9ae264e37e6212994b2920f6">foo::PrintableViaPrintToTemplate&lt; T &gt;</a>
 , <a class="el" href="classfoo_1_1_streamable_template_in_foo.html#aa6e29a9a298014ce74c65423b6985023">foo::StreamableTemplateInFoo&lt; T &gt;</a>
 , <a class="el" href="class_my_type.html#a04eaace57f0ecd8ee8898defbdee31b4">MyType</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1util_1_1_export_entry.html#a9539b5979cb04b54812b45cd4482c1be">pip._vendor.distlib.util.ExportEntry</a>
 , <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_int_value.html#a6da000ea8ff787591e07ffaa3c1027d4">testing::gmock_matchers_test::IntValue</a>
 , <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_not_copyable.html#af6c134767462948fa8dbd35c68370004">testing::gmock_matchers_test::NotCopyable</a>
 , <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_uncopyable.html#a23512131b948e40ded06555848829866">testing::gmock_matchers_test::Uncopyable</a>
@@ -98,11 +90,84 @@ $(document).ready(function(){initNavTree('functions_func_v.html','');});
 <li>value_param()
 : <a class="el" href="classtesting_1_1_test_info.html#abdf2c6cfcf4819e725816c64e1c1fc24">testing::TestInfo</a>
 </li>
+<li>values()
+: <a class="el" href="class__abcoll_1_1_mapping.html#a530f7fba4dac7c38f3b944a7a3b2ed68">_abcoll.Mapping</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1compat_1_1_ordered_dict.html#ae885e700527a49116c9ba513931ee1e5">pip._vendor.distlib.compat.OrderedDict</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1metadata_1_1_legacy_metadata.html#a16fbb10c4986368f35f737299db137d2">pip._vendor.distlib.metadata.LegacyMetadata</a>
+, <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_parse_results.html#aadf8bd3b43b8adad0b8aa9f4a4ea1041">pip._vendor.pyparsing.ParseResults</a>
+, <a class="el" href="classpip_1_1__vendor_1_1requests_1_1cookies_1_1_requests_cookie_jar.html#ab1664c19386b98ad1335989e85f40ce0">pip._vendor.requests.cookies.RequestsCookieJar</a>
+, <a class="el" href="classpip_1_1__vendor_1_1requests_1_1packages_1_1urllib3_1_1packages_1_1ordered__dict_1_1_ordered_dict.html#a099ab38a563685d99f6619b8c1e07c50">pip._vendor.requests.packages.urllib3.packages.ordered_dict.OrderedDict</a>
+, <a class="el" href="classpip_1_1req_1_1req__set_1_1_requirements.html#a68f9d94a673319da4677165d0a04ac6d">pip.req.req_set.Requirements</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1pyparsing_1_1_parse_results.html#afb27b1e16010219f2a19c5605f5f1163">pkg_resources._vendor.pyparsing.ParseResults</a>
+, <a class="el" href="class_user_dict_1_1_dict_mixin.html#a55ab7e5d4d6b39d1aacb56f51635d3e8">UserDict.DictMixin</a>
+, <a class="el" href="class_user_dict_1_1_user_dict.html#afde338cfbd1b0bd414911c6db217a10c">UserDict.UserDict</a>
+</li>
+<li>vc()
+: <a class="el" href="classsetuptools_1_1msvc_1_1_registry_info.html#a15b2a92fa7a73cdab831a78bddeaa9ce">setuptools.msvc.RegistryInfo</a>
+</li>
+<li>vc_for_python()
+: <a class="el" href="classsetuptools_1_1msvc_1_1_registry_info.html#a0b3312fb81aa1413b38c3b334330e008">setuptools.msvc.RegistryInfo</a>
+</li>
+<li>vc_ver()
+: <a class="el" href="classsetuptools_1_1msvc_1_1_environment_info.html#aa769874f258713a660628e8e8abf92d0">setuptools.msvc.EnvironmentInfo</a>
+</li>
+<li>VCIncludes()
+: <a class="el" href="classsetuptools_1_1msvc_1_1_environment_info.html#a01956a4af56037f7bc86f061ca57ed59">setuptools.msvc.EnvironmentInfo</a>
+</li>
+<li>VCInstallDir()
+: <a class="el" href="classsetuptools_1_1msvc_1_1_system_info.html#a64320eef8ba2ab8929cb03aa8308fc2d">setuptools.msvc.SystemInfo</a>
+</li>
+<li>VCLibraries()
+: <a class="el" href="classsetuptools_1_1msvc_1_1_environment_info.html#a801f70fc7fcfdee61534e8ffa5153eb2">setuptools.msvc.EnvironmentInfo</a>
+</li>
+<li>VCRuntimeRedist()
+: <a class="el" href="classsetuptools_1_1msvc_1_1_environment_info.html#a2ad0b92bc587a134b6eddb0b970df495">setuptools.msvc.EnvironmentInfo</a>
+</li>
+<li>VCStoreRefs()
+: <a class="el" href="classsetuptools_1_1msvc_1_1_environment_info.html#ae133809f045deeb9edfa3641ddeda5fd">setuptools.msvc.EnvironmentInfo</a>
+</li>
+<li>VCTools()
+: <a class="el" href="classsetuptools_1_1msvc_1_1_environment_info.html#a564e72c39cd5aced619098af952cca3d">setuptools.msvc.EnvironmentInfo</a>
+</li>
+<li>verify()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1wheel_1_1_wheel.html#a3792fb283924a1add010ebf4fc259a76">pip._vendor.distlib.wheel.Wheel</a>
+, <a class="el" href="classwheel_1_1install_1_1_wheel_file.html#a5e8f7ae8953de6446d346dbe0af1ca74">wheel.install.WheelFile</a>
+</li>
+<li>verify_signature()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1index_1_1_package_index.html#a54c6290115dc97752df48e2d6a7d512c">pip._vendor.distlib.index.PackageIndex</a>
+</li>
 <li>VerifyAllElementsAndMatchersAreMatched()
 : <a class="el" href="classtesting_1_1internal_1_1_unordered_elements_are_matcher_impl_base.html#a515ec900bd84fe4d28e3ccf55db25822">testing::internal::UnorderedElementsAreMatcherImplBase</a>
 </li>
 <li>VerifyAndClearExpectationsLocked()
 : <a class="el" href="classtesting_1_1internal_1_1_untyped_function_mocker_base.html#a3f1d62a1662a3daa2895b3af963be269">testing::internal::UntypedFunctionMockerBase</a>
+</li>
+<li>version()
+: <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1___base_v4.html#aa5e069619ac5a0f7dfff65e492259a59">pip._vendor.ipaddress._BaseV4</a>
+, <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1___base_v6.html#a016fff0b8a6095d6f3596a31e286d8c0">pip._vendor.ipaddress._BaseV6</a>
+, <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1___i_p_address_base.html#a7fd526613a418ef1714a19d3fdf42a7f">pip._vendor.ipaddress._IPAddressBase</a>
+, <a class="el" href="classpip_1_1__vendor_1_1packaging_1_1specifiers_1_1___individual_specifier.html#a846a9d6b835dd92b19fb330eb1867b66">pip._vendor.packaging.specifiers._IndividualSpecifier</a>
+, <a class="el" href="classpip_1_1__vendor_1_1pkg__resources_1_1_distribution.html#acd94a7f669ee4fc277245673ea39e748">pip._vendor.pkg_resources.Distribution</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1packaging_1_1specifiers_1_1___individual_specifier.html#a98ff7bb31634856e5dda863aacbcb98b">pkg_resources._vendor.packaging.specifiers._IndividualSpecifier</a>
+, <a class="el" href="classpkg__resources_1_1_distribution.html#a454a1c3eae52dee89980a24d7c67f036">pkg_resources.Distribution</a>
+</li>
+<li>version_ok()
+: <a class="el" href="classsetuptools_1_1depends_1_1_require.html#ae09a6a0a9d85091433a92026a2540e27">setuptools.depends.Require</a>
+</li>
+<li>viewitems()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1compat_1_1_ordered_dict.html#a26e3c313a33f200f0a46e790221f9b8b">pip._vendor.distlib.compat.OrderedDict</a>
+, <a class="el" href="classpip_1_1__vendor_1_1requests_1_1packages_1_1urllib3_1_1packages_1_1ordered__dict_1_1_ordered_dict.html#a8566a8aca63ba7e4374a3c455c8b3a39">pip._vendor.requests.packages.urllib3.packages.ordered_dict.OrderedDict</a>
+</li>
+<li>viewkeys()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1compat_1_1_ordered_dict.html#a7f506e75f42b107f91c110d401b639b1">pip._vendor.distlib.compat.OrderedDict</a>
+, <a class="el" href="classpip_1_1__vendor_1_1requests_1_1packages_1_1urllib3_1_1packages_1_1ordered__dict_1_1_ordered_dict.html#adf4951dde26575b28600cb67e5a22ff4">pip._vendor.requests.packages.urllib3.packages.ordered_dict.OrderedDict</a>
+</li>
+<li>viewvalues()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1compat_1_1_ordered_dict.html#a3ef3ae6f092c0239fb19b4eca4a2175a">pip._vendor.distlib.compat.OrderedDict</a>
+, <a class="el" href="classpip_1_1__vendor_1_1requests_1_1packages_1_1urllib3_1_1packages_1_1ordered__dict_1_1_ordered_dict.html#a56b9fa0a740c88b297844bf06d0a1d52">pip._vendor.requests.packages.urllib3.packages.ordered_dict.OrderedDict</a>
+</li>
+<li>visualstudio()
+: <a class="el" href="classsetuptools_1_1msvc_1_1_registry_info.html#a0b1853b483f8b7be15c5eb2ee344d856">setuptools.msvc.RegistryInfo</a>
 </li>
 <li>VoidFromDouble()
 : <a class="el" href="class_interface.html#aa56524017aabdbe46510648c711ab8a8">Interface</a>
@@ -129,16 +194,25 @@ $(document).ready(function(){initNavTree('functions_func_v.html','');});
 <li>VoidReturning()
 : <a class="el" href="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface.html#adf968115cf1260004d8abe372dc71c85">testing::gmock_generated_function_mockers_test::FooInterface</a>
 </li>
+<li>vs()
+: <a class="el" href="classsetuptools_1_1msvc_1_1_registry_info.html#a2316fd853eba9e0738e067fe1cb50941">setuptools.msvc.RegistryInfo</a>
+</li>
+<li>VSInstallDir()
+: <a class="el" href="classsetuptools_1_1msvc_1_1_system_info.html#aa117395fa193bff19dde5fbb4cf6e3a3">setuptools.msvc.SystemInfo</a>
+</li>
+<li>VsTDb()
+: <a class="el" href="classsetuptools_1_1msvc_1_1_environment_info.html#a028eec8868bc5260636919e7765abe0b">setuptools.msvc.EnvironmentInfo</a>
+</li>
+<li>VSTools()
+: <a class="el" href="classsetuptools_1_1msvc_1_1_environment_info.html#a942785692dbd53f81650af2a9c18e0ff">setuptools.msvc.EnvironmentInfo</a>
+</li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

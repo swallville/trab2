@@ -1,29 +1,30 @@
-* 1ce5572 - Lukas Ferreira Machado, 2 minutes ago : Update README.md
-* 25fc040 - lukas, 3 minutes ago : Modificacoes em README.txt
-* 0741f26 - lukas, 9 minutes ago : Adicionado mudancas na documentacao Doxygen
-* 9c2c76e - lukas, 34 minutes ago : Adicionando Documentacao Doxygen
-* e50832f - lukas, 5 hours ago : Corrigido bugs no programa e adicionada mais testes para verificar erros
-*   fd02b93 - lukas, 15 hours ago : Merge branch 'master' of github.com:swallville/trab2
+* 7d5eb0a - lukas, 6 hours ago : Retirando funcao redudante em funcs.cpp
+* 1ce5572 - Lukas Ferreira Machado, 27 hours ago : Update README.md
+* 25fc040 - lukas, 27 hours ago : Modificacoes em README.txt
+* 0741f26 - lukas, 27 hours ago : Adicionado mudancas na documentacao Doxygen
+* 9c2c76e - lukas, 27 hours ago : Adicionando Documentacao Doxygen
+* e50832f - lukas, 31 hours ago : Corrigido bugs no programa e adicionada mais testes para verificar erros
+*   fd02b93 - lukas, 2 days ago : Merge branch 'master' of github.com:swallville/trab2
 |\  
-| * cd8d645 - Lukas Ferreira Machado, 15 hours ago : Update README.md
-* | 896162d - lukas, 15 hours ago : Adicionando full_log
+| * cd8d645 - Lukas Ferreira Machado, 2 days ago : Update README.md
+* | 896162d - lukas, 2 days ago : Adicionando full_log
 |/  
-* a5f0dc5 - lukas, 15 hours ago : Editando log.txt
-* 24bd7c8 - lukas, 15 hours ago : Adicionando comentarios nos testes
-* 37f305a - Lukas Ferreira Machado, 15 hours ago : Update README.md
-* 644ffb8 - Lukas Ferreira Machado, 15 hours ago : Update README.md
-* 4920840 - Lukas Ferreira Machado, 16 hours ago : Update README.md
-* 4e4f781 - Lukas Ferreira Machado, 16 hours ago : Update README.md
-* 1127200 - Lukas Ferreira Machado, 16 hours ago : Update README.md
-* df89e6c - lukas, 16 hours ago : Adicionando README.md
-* 04e22bc - lukas, 16 hours ago : Editando log.txt
-* 994a1d4 - lukas, 16 hours ago : Adicinando modulo de teste para funcao it_contains e reducao de codigo em funcs.cpp
-* 7f6e408 - lukas, 16 hours ago : Adicionando arquivos intermediarios de execucao do programa: *.o, *.gcda, *.gcov
-* 602c393 - lukas, 16 hours ago : Adicionando log.txt
-* ac77fea - lukas, 16 hours ago : Editando README.txt
-* c04a543 - lukas, 16 hours ago : Verificando virtualenv do projeto, adicionando makefile e verificado funcionamento do gtest, gconv e cppcheck
-* 762d76a - lukas, 16 hours ago : Adicionando .cpp com as funcoes do programa
-* fae8630 - lukas, 16 hours ago : Adicionando testes para func. auxiliar que tranforma um int para uma string corresponde em romano
-* eac38cf - lukas, 16 hours ago : Versionando: Adicionando testes para verificar casos de erro de string de numero romano: string vazia, num nao existente, caracteres invalidos, mais que 30 chars
-* 5891140 - lukas, 16 hours ago : Adicionando testes para funcao from_roman: se a string romana devolve o numero em int correto
-* 2cbe5c8 - lukas, 16 hours ago : Setando Projeto
+* a5f0dc5 - lukas, 2 days ago : Editando log.txt
+* 24bd7c8 - lukas, 2 days ago : Adicionando comentarios nos testes
+* 37f305a - Lukas Ferreira Machado, 2 days ago : Update README.md
+* 644ffb8 - Lukas Ferreira Machado, 2 days ago : Update README.md
+* 4920840 - Lukas Ferreira Machado, 2 days ago : Update README.md
+* 4e4f781 - Lukas Ferreira Machado, 2 days ago : Update README.md
+* 1127200 - Lukas Ferreira Machado, 2 days ago : Update README.md
+* df89e6c - lukas, 2 days ago : Adicionando README.md
+* 04e22bc - lukas, 2 days ago : Editando log.txt
+* 994a1d4 - lukas, 2 days ago : Adicinando modulo de teste para funcao it_contains e reducao de codigo em funcs.cpp
+* 7f6e408 - lukas, 2 days ago : Adicionando arquivos intermediarios de execucao do programa: *.o, *.gcda, *.gcov
+* 602c393 - lukas, 2 days ago : Adicionando log.txt
+* ac77fea - lukas, 2 days ago : Editando README.txt
+* c04a543 - lukas, 2 days ago : Verificando virtualenv do projeto, adicionando makefile e verificado funcionamento do gtest, gconv e cppcheck
+* 762d76a - lukas, 2 days ago : Adicionando .cpp com as funcoes do programa
+* fae8630 - lukas, 2 days ago : Adicionando testes para func. auxiliar que tranforma um int para uma string corresponde em romano
+* eac38cf - lukas, 2 days ago : Versionando: Adicionando testes para verificar casos de erro de string de numero romano: string vazia, num nao existente, caracteres invalidos, mais que 30 chars
+* 5891140 - lukas, 2 days ago : Adicionando testes para funcao from_roman: se a string romana devolve o numero em int correto
+* 2cbe5c8 - lukas, 2 days ago : Setando Projeto

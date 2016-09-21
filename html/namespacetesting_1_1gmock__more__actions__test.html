@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -52,21 +45,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('namespacetesting_1_1gmock__more__actions__test.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +59,11 @@ $(document).ready(function(){initNavTree('namespacetesting_1_1gmock__more__actio
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html">gmock_more_actions_test</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -110,57 +93,57 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a00503d3168f1123e314c0d42b7e10b88"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a00503d3168f1123e314c0d42b7e10b88">Short</a> (short n)</td></tr>
+<tr class="memitem:a00503d3168f1123e314c0d42b7e10b88"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a00503d3168f1123e314c0d42b7e10b88">Short</a> (short <a class="el" href="longobject_8h.html#a0a1cb627ccae562872efc91e5b752be1">n</a>)</td></tr>
 <tr class="separator:a00503d3168f1123e314c0d42b7e10b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af69e6906d734a99d60480e4291891d66"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#af69e6906d734a99d60480e4291891d66">Char</a> (char ch)</td></tr>
 <tr class="separator:af69e6906d734a99d60480e4291891d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdd2dd80f777fdb770b513b63064ac19"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#acdd2dd80f777fdb770b513b63064ac19">Nullary</a> ()</td></tr>
+<tr class="memitem:acdd2dd80f777fdb770b513b63064ac19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#acdd2dd80f777fdb770b513b63064ac19">Nullary</a> ()</td></tr>
 <tr class="separator:acdd2dd80f777fdb770b513b63064ac19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a061f6d66383a4e793b4d4ca93bd8ca2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a061f6d66383a4e793b4d4ca93bd8ca2f">VoidNullary</a> ()</td></tr>
 <tr class="separator:a061f6d66383a4e793b4d4ca93bd8ca2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad456ea2ee1b0cb2741b676a34f540a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#aad456ea2ee1b0cb2741b676a34f540a3">Unary</a> (int x)</td></tr>
+<tr class="memitem:aad456ea2ee1b0cb2741b676a34f540a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#aad456ea2ee1b0cb2741b676a34f540a3">Unary</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> <a class="el" href="stringobject_8h.html#a280f2393c503127fff91ecbc558e288d">x</a>)</td></tr>
 <tr class="separator:aad456ea2ee1b0cb2741b676a34f540a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a986ada18d3311d3fa3a7c33e54e18f33"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a986ada18d3311d3fa3a7c33e54e18f33">Plus1</a> (const char *s)</td></tr>
+<tr class="memitem:a986ada18d3311d3fa3a7c33e54e18f33"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a986ada18d3311d3fa3a7c33e54e18f33">Plus1</a> (const char *<a class="el" href="stringobject_8h.html#ad912d811fca4c9cfee37905bed81eb65">s</a>)</td></tr>
 <tr class="separator:a986ada18d3311d3fa3a7c33e54e18f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a163632ef644604032f00334fce36de1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a163632ef644604032f00334fce36de1a">VoidUnary</a> (int)</td></tr>
+<tr class="memitem:a163632ef644604032f00334fce36de1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a163632ef644604032f00334fce36de1a">VoidUnary</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>)</td></tr>
 <tr class="separator:a163632ef644604032f00334fce36de1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab175725bcdacf7a00948c7d5c1a36419"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#ab175725bcdacf7a00948c7d5c1a36419">ByConstRef</a> (const string &amp;s)</td></tr>
+<tr class="memitem:ab175725bcdacf7a00948c7d5c1a36419"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#ab175725bcdacf7a00948c7d5c1a36419">ByConstRef</a> (const <a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> &amp;<a class="el" href="stringobject_8h.html#ad912d811fca4c9cfee37905bed81eb65">s</a>)</td></tr>
 <tr class="separator:ab175725bcdacf7a00948c7d5c1a36419"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2d3dddc96f5657127593f129cd3fc51"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#ae2d3dddc96f5657127593f129cd3fc51">ReferencesGlobalDouble</a> (const double &amp;x)</td></tr>
+<tr class="memitem:ae2d3dddc96f5657127593f129cd3fc51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#ae2d3dddc96f5657127593f129cd3fc51">ReferencesGlobalDouble</a> (const double &amp;<a class="el" href="stringobject_8h.html#a280f2393c503127fff91ecbc558e288d">x</a>)</td></tr>
 <tr class="separator:ae2d3dddc96f5657127593f129cd3fc51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0099e2d9f40351252df31feda822b71"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#ac0099e2d9f40351252df31feda822b71">ByNonConstRef</a> (string &amp;s)</td></tr>
+<tr class="memitem:ac0099e2d9f40351252df31feda822b71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#ac0099e2d9f40351252df31feda822b71">ByNonConstRef</a> (<a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> &amp;<a class="el" href="stringobject_8h.html#ad912d811fca4c9cfee37905bed81eb65">s</a>)</td></tr>
 <tr class="separator:ac0099e2d9f40351252df31feda822b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a853c9f048674a60798b930750b74a1df"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a853c9f048674a60798b930750b74a1df">Binary</a> (const char *input, short n)</td></tr>
+<tr class="memitem:a853c9f048674a60798b930750b74a1df"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a853c9f048674a60798b930750b74a1df">Binary</a> (const char *input, short <a class="el" href="longobject_8h.html#a0a1cb627ccae562872efc91e5b752be1">n</a>)</td></tr>
 <tr class="separator:a853c9f048674a60798b930750b74a1df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec71bd163ae67ec97e073bd13a4ac039"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#aec71bd163ae67ec97e073bd13a4ac039">VoidBinary</a> (int, char)</td></tr>
+<tr class="memitem:aec71bd163ae67ec97e073bd13a4ac039"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#aec71bd163ae67ec97e073bd13a4ac039">VoidBinary</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>, char)</td></tr>
 <tr class="separator:aec71bd163ae67ec97e073bd13a4ac039"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab98b352528a0b72625b4710a6fc648a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#ab98b352528a0b72625b4710a6fc648a1">Ternary</a> (int x, char y, short z)</td></tr>
+<tr class="memitem:ab98b352528a0b72625b4710a6fc648a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#ab98b352528a0b72625b4710a6fc648a1">Ternary</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> <a class="el" href="stringobject_8h.html#a280f2393c503127fff91ecbc558e288d">x</a>, char y, short z)</td></tr>
 <tr class="separator:ab98b352528a0b72625b4710a6fc648a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac41b49dc8ab365ccad7b332796421cd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#ac41b49dc8ab365ccad7b332796421cd4">VoidTernary</a> (int, char, bool)</td></tr>
+<tr class="memitem:ac41b49dc8ab365ccad7b332796421cd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#ac41b49dc8ab365ccad7b332796421cd4">VoidTernary</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>, char, <a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>)</td></tr>
 <tr class="separator:ac41b49dc8ab365ccad7b332796421cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41c348fff8608825239a276b8426a475"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a41c348fff8608825239a276b8426a475">SumOf4</a> (int a, int b, int c, int d)</td></tr>
+<tr class="memitem:a41c348fff8608825239a276b8426a475"><td class="memItemLeft" align="right" valign="top"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a41c348fff8608825239a276b8426a475">SumOf4</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> a, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> b, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> c, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> <a class="el" href="pystrtod_8h.html#aebc55cdba1447f899efca30032620f9e">d</a>)</td></tr>
 <tr class="separator:a41c348fff8608825239a276b8426a475"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa60ddffb96ddc3a73b0b22929ca5bec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#aaa60ddffb96ddc3a73b0b22929ca5bec">SumOfFirst2</a> (int a, int b, <a class="el" href="namespacetesting.html#a603e329ec0263ebfcf16f712810bd511">Unused</a>, <a class="el" href="namespacetesting.html#a603e329ec0263ebfcf16f712810bd511">Unused</a>)</td></tr>
+<tr class="memitem:aaa60ddffb96ddc3a73b0b22929ca5bec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#aaa60ddffb96ddc3a73b0b22929ca5bec">SumOfFirst2</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> a, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> b, <a class="el" href="namespacetesting.html#a603e329ec0263ebfcf16f712810bd511">Unused</a>, <a class="el" href="namespacetesting.html#a603e329ec0263ebfcf16f712810bd511">Unused</a>)</td></tr>
 <tr class="separator:aaa60ddffb96ddc3a73b0b22929ca5bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c952be61635486e84c1eca3bf3acd9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a8c952be61635486e84c1eca3bf3acd9b">VoidFunctionWithFourArguments</a> (char, int, float, double)</td></tr>
+<tr class="memitem:a8c952be61635486e84c1eca3bf3acd9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a8c952be61635486e84c1eca3bf3acd9b">VoidFunctionWithFourArguments</a> (char, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>, float, double)</td></tr>
 <tr class="separator:a8c952be61635486e84c1eca3bf3acd9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa423cedcbd858249b616f0c537a1e4cf"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#aa423cedcbd858249b616f0c537a1e4cf">Concat4</a> (const char *s1, const char *s2, const char *s3, const char *s4)</td></tr>
+<tr class="memitem:aa423cedcbd858249b616f0c537a1e4cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#aa423cedcbd858249b616f0c537a1e4cf">Concat4</a> (const char *s1, const char *s2, const char *s3, const char *s4)</td></tr>
 <tr class="separator:aa423cedcbd858249b616f0c537a1e4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38e64569bf08e83c6db22c1fb0fe0af6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a38e64569bf08e83c6db22c1fb0fe0af6">SumOf5</a> (int a, int b, int c, int d, int e)</td></tr>
+<tr class="memitem:a38e64569bf08e83c6db22c1fb0fe0af6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a38e64569bf08e83c6db22c1fb0fe0af6">SumOf5</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> a, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> b, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> c, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> <a class="el" href="pystrtod_8h.html#aebc55cdba1447f899efca30032620f9e">d</a>, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> <a class="el" href="longobject_8h.html#a28cf183ea1588229c01af441267bc98c">e</a>)</td></tr>
 <tr class="separator:a38e64569bf08e83c6db22c1fb0fe0af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ac9917d1aa19cd7ac32bba837f4eacc"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a2ac9917d1aa19cd7ac32bba837f4eacc">Concat5</a> (const char *s1, const char *s2, const char *s3, const char *s4, const char *s5)</td></tr>
+<tr class="memitem:a2ac9917d1aa19cd7ac32bba837f4eacc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a2ac9917d1aa19cd7ac32bba837f4eacc">Concat5</a> (const char *s1, const char *s2, const char *s3, const char *s4, const char *s5)</td></tr>
 <tr class="separator:a2ac9917d1aa19cd7ac32bba837f4eacc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a139632d344348fdfa25111d4e43f70ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a139632d344348fdfa25111d4e43f70ba">SumOf6</a> (int a, int b, int c, int d, int e, int f)</td></tr>
+<tr class="memitem:a139632d344348fdfa25111d4e43f70ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a139632d344348fdfa25111d4e43f70ba">SumOf6</a> (<a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> a, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> b, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> c, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> <a class="el" href="pystrtod_8h.html#aebc55cdba1447f899efca30032620f9e">d</a>, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> <a class="el" href="longobject_8h.html#a28cf183ea1588229c01af441267bc98c">e</a>, <a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> f)</td></tr>
 <tr class="separator:a139632d344348fdfa25111d4e43f70ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4de188277a85d007de0aa6e8dc364b75"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a4de188277a85d007de0aa6e8dc364b75">Concat6</a> (const char *s1, const char *s2, const char *s3, const char *s4, const char *s5, const char *s6)</td></tr>
+<tr class="memitem:a4de188277a85d007de0aa6e8dc364b75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a4de188277a85d007de0aa6e8dc364b75">Concat6</a> (const char *s1, const char *s2, const char *s3, const char *s4, const char *s5, const char *s6)</td></tr>
 <tr class="separator:a4de188277a85d007de0aa6e8dc364b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5628f71ebb5ae61a6e56396145a76da4"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a5628f71ebb5ae61a6e56396145a76da4">Concat7</a> (const char *s1, const char *s2, const char *s3, const char *s4, const char *s5, const char *s6, const char *s7)</td></tr>
+<tr class="memitem:a5628f71ebb5ae61a6e56396145a76da4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a5628f71ebb5ae61a6e56396145a76da4">Concat7</a> (const char *s1, const char *s2, const char *s3, const char *s4, const char *s5, const char *s6, const char *s7)</td></tr>
 <tr class="separator:a5628f71ebb5ae61a6e56396145a76da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a122e4affe78745eef3dd748e88bd248c"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a122e4affe78745eef3dd748e88bd248c">Concat8</a> (const char *s1, const char *s2, const char *s3, const char *s4, const char *s5, const char *s6, const char *s7, const char *s8)</td></tr>
+<tr class="memitem:a122e4affe78745eef3dd748e88bd248c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a122e4affe78745eef3dd748e88bd248c">Concat8</a> (const char *s1, const char *s2, const char *s3, const char *s4, const char *s5, const char *s6, const char *s7, const char *s8)</td></tr>
 <tr class="separator:a122e4affe78745eef3dd748e88bd248c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f8c8c01bc080a04d798060dad757cf9"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a9f8c8c01bc080a04d798060dad757cf9">Concat9</a> (const char *s1, const char *s2, const char *s3, const char *s4, const char *s5, const char *s6, const char *s7, const char *s8, const char *s9)</td></tr>
+<tr class="memitem:a9f8c8c01bc080a04d798060dad757cf9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a9f8c8c01bc080a04d798060dad757cf9">Concat9</a> (const char *s1, const char *s2, const char *s3, const char *s4, const char *s5, const char *s6, const char *s7, const char *s8, const char *s9)</td></tr>
 <tr class="separator:a9f8c8c01bc080a04d798060dad757cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba6aadf0de090a08bf9e467cdc09ffd8"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#aba6aadf0de090a08bf9e467cdc09ffd8">Concat10</a> (const char *s1, const char *s2, const char *s3, const char *s4, const char *s5, const char *s6, const char *s7, const char *s8, const char *s9, const char *s10)</td></tr>
+<tr class="memitem:aba6aadf0de090a08bf9e467cdc09ffd8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#aba6aadf0de090a08bf9e467cdc09ffd8">Concat10</a> (const char *s1, const char *s2, const char *s3, const char *s4, const char *s5, const char *s6, const char *s7, const char *s8, const char *s9, const char *s10)</td></tr>
 <tr class="separator:aba6aadf0de090a08bf9e467cdc09ffd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c5fbd26c6cc6ed31aed5bafb2fa8e5c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a9c5fbd26c6cc6ed31aed5bafb2fa8e5c">TEST</a> (InvokeTest, <a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#acdd2dd80f777fdb770b513b63064ac19">Nullary</a>)</td></tr>
 <tr class="separator:a9c5fbd26c6cc6ed31aed5bafb2fa8e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,7 +159,7 @@ Functions</h2></td></tr>
 <tr class="separator:a3b6b1b682295a1d04d57374445359e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a6c89b83ba253838d05d7ee5da7d954"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a9a6c89b83ba253838d05d7ee5da7d954">TEST</a> (InvokeTest, FunctionThatTakes6Arguments)</td></tr>
 <tr class="separator:a9a6c89b83ba253838d05d7ee5da7d954"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa19ac39aaa785adeb8d7837d58b824f3"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#aa19ac39aaa785adeb8d7837d58b824f3">CharPtr</a> (const char *s)</td></tr>
+<tr class="memitem:aa19ac39aaa785adeb8d7837d58b824f3"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#aa19ac39aaa785adeb8d7837d58b824f3">CharPtr</a> (const char *<a class="el" href="stringobject_8h.html#ad912d811fca4c9cfee37905bed81eb65">s</a>)</td></tr>
 <tr class="separator:aa19ac39aaa785adeb8d7837d58b824f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4756ff87444dc6deb438a350ab5527f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#af4756ff87444dc6deb438a350ab5527f">TEST</a> (InvokeTest, FunctionThatTakes7Arguments)</td></tr>
 <tr class="separator:af4756ff87444dc6deb438a350ab5527f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,7 +244,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ab2d168581c62c89bd00cdadcccd9e8e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#ab2d168581c62c89bd00cdadcccd9e8e4">g_done</a> = false</td></tr>
+<tr class="memitem:ab2d168581c62c89bd00cdadcccd9e8e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#ab2d168581c62c89bd00cdadcccd9e8e4">g_done</a> = <a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c">false</a></td></tr>
 <tr class="separator:ab2d168581c62c89bd00cdadcccd9e8e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73552112032ff5d5900dd6f128a62718"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html#a73552112032ff5d5900dd6f128a62718">g_double</a> = 0</td></tr>
 <tr class="separator:a73552112032ff5d5900dd6f128a62718"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -293,8 +276,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00108">108</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ab175725bcdacf7a00948c7d5c1a36419"></a>
@@ -304,16 +285,14 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool testing::gmock_more_actions_test::ByConstRef </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> testing::gmock_more_actions_test::ByConstRef </td>
           <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> &amp;&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00097">97</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -324,16 +303,14 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string testing::gmock_more_actions_test::ByNonConstRef </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> testing::gmock_more_actions_test::ByNonConstRef </td>
           <td>(</td>
-          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> &amp;&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00102">102</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -361,8 +338,6 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00073">73</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="aa19ac39aaa785adeb8d7837d58b824f3"></a>
@@ -389,8 +364,6 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00279">279</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="aba6aadf0de090a08bf9e467cdc09ffd8"></a>
@@ -400,7 +373,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string testing::gmock_more_actions_test::Concat10 </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> testing::gmock_more_actions_test::Concat10 </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>s1</em>, </td>
@@ -467,8 +440,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00173">173</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="aa423cedcbd858249b616f0c537a1e4cf"></a>
@@ -478,7 +449,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string testing::gmock_more_actions_test::Concat4 </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> testing::gmock_more_actions_test::Concat4 </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>s1</em>, </td>
@@ -509,8 +480,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00122">122</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a2ac9917d1aa19cd7ac32bba837f4eacc"></a>
@@ -520,7 +489,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string testing::gmock_more_actions_test::Concat5 </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> testing::gmock_more_actions_test::Concat5 </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>s1</em>, </td>
@@ -557,8 +526,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00135">135</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a4de188277a85d007de0aa6e8dc364b75"></a>
@@ -568,7 +535,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string testing::gmock_more_actions_test::Concat6 </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> testing::gmock_more_actions_test::Concat6 </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>s1</em>, </td>
@@ -611,8 +578,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00150">150</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a5628f71ebb5ae61a6e56396145a76da4"></a>
@@ -622,7 +587,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string testing::gmock_more_actions_test::Concat7 </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> testing::gmock_more_actions_test::Concat7 </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>s1</em>, </td>
@@ -671,8 +636,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00155">155</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a122e4affe78745eef3dd748e88bd248c"></a>
@@ -682,7 +645,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string testing::gmock_more_actions_test::Concat8 </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> testing::gmock_more_actions_test::Concat8 </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>s1</em>, </td>
@@ -737,8 +700,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00161">161</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a9f8c8c01bc080a04d798060dad757cf9"></a>
@@ -748,7 +709,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string testing::gmock_more_actions_test::Concat9 </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#aafa21ae74f7a3e4ac0c645f0f30ee853">string</a> testing::gmock_more_actions_test::Concat9 </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>s1</em>, </td>
@@ -809,8 +770,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00167">167</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="acdd2dd80f777fdb770b513b63064ac19"></a>
@@ -820,15 +779,13 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int testing::gmock_more_actions_test::Nullary </td>
+          <td class="memname"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> testing::gmock_more_actions_test::Nullary </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00076">76</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -848,8 +805,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00093">93</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ae2d3dddc96f5657127593f129cd3fc51"></a>
@@ -859,7 +814,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool testing::gmock_more_actions_test::ReferencesGlobalDouble </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> testing::gmock_more_actions_test::ReferencesGlobalDouble </td>
           <td>(</td>
           <td class="paramtype">const double &amp;&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
@@ -867,8 +822,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00100">100</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -896,8 +849,6 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00072">72</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a41c348fff8608825239a276b8426a475"></a>
@@ -907,27 +858,27 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int testing::gmock_more_actions_test::SumOf4 </td>
+          <td class="memname"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> testing::gmock_more_actions_test::SumOf4 </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>c</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>d</em>&#160;</td>
         </tr>
         <tr>
@@ -938,8 +889,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00116">116</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a38e64569bf08e83c6db22c1fb0fe0af6"></a>
@@ -949,33 +898,33 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int testing::gmock_more_actions_test::SumOf5 </td>
+          <td class="memname"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> testing::gmock_more_actions_test::SumOf5 </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>c</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>d</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>e</em>&#160;</td>
         </tr>
         <tr>
@@ -986,8 +935,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00127">127</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a139632d344348fdfa25111d4e43f70ba"></a>
@@ -997,39 +944,39 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int testing::gmock_more_actions_test::SumOf6 </td>
+          <td class="memname"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> testing::gmock_more_actions_test::SumOf6 </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>c</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>d</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>e</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>f</em>&#160;</td>
         </tr>
         <tr>
@@ -1040,8 +987,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00140">140</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="aaa60ddffb96ddc3a73b0b22929ca5bec"></a>
@@ -1051,15 +996,15 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int testing::gmock_more_actions_test::SumOfFirst2 </td>
+          <td class="memname"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> testing::gmock_more_actions_test::SumOfFirst2 </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -1082,8 +1027,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00118">118</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ab98b352528a0b72625b4710a6fc648a1"></a>
@@ -1093,9 +1036,9 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int testing::gmock_more_actions_test::Ternary </td>
+          <td class="memname"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a> testing::gmock_more_actions_test::Ternary </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
@@ -1117,8 +1060,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00112">112</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1148,8 +1089,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00234">234</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a28b57a9f9d38574b7c033988ad528ddd"></a>
@@ -1177,8 +1116,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00240">240</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1208,8 +1145,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00247">247</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a424fb6113c6c1ab2157edf854a4ae9fe"></a>
@@ -1237,8 +1172,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00254">254</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1268,8 +1201,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00260">260</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a3b6b1b682295a1d04d57374445359e94"></a>
@@ -1297,8 +1228,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00266">266</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1328,8 +1257,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00272">272</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="af4756ff87444dc6deb438a350ab5527f"></a>
@@ -1357,8 +1284,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00282">282</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1388,8 +1313,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00293">293</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a65d674aacb46d8bf79dbdfe0d49df442"></a>
@@ -1417,8 +1340,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00304">304</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1448,8 +1369,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00315">315</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a0dd6901e637db57c56f1cf8052b6e1bf"></a>
@@ -1477,8 +1396,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00327">327</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1508,8 +1425,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00340">340</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ac56a4cb164b338d3f388ed3f4306a5a5"></a>
@@ -1537,8 +1452,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00352">352</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1568,8 +1481,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00358">358</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="abb046fd809977722720c9ce63afd7af5"></a>
@@ -1597,8 +1508,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00366">366</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1628,8 +1537,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00373">373</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a86221fa7d09853358e38c01b0d6ceced"></a>
@@ -1657,8 +1564,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00380">380</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1688,8 +1593,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00389">389</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="af0ab6ef9fdf48e8442a5579ab27eb517"></a>
@@ -1717,8 +1620,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00396">396</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1748,8 +1649,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00403">403</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a715c088109e141aa577e497e3729b98b"></a>
@@ -1777,8 +1676,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00410">410</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1808,8 +1705,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00418">418</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a5bfedd2255bbfe7ffcbc76ec581b2ff6"></a>
@@ -1837,8 +1732,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00430">430</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1868,8 +1761,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00442">442</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a14b55eb4c0d0b3149e269eea1443cb58"></a>
@@ -1897,8 +1788,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00454">454</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1928,8 +1817,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00467">467</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a68748f21021e787dfdc095691c94d495"></a>
@@ -1957,8 +1844,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00475">475</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -1988,8 +1873,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00481">481</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a717ea38d7b78b6d51b4d617ed317d26e"></a>
@@ -2017,8 +1900,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00487">487</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2048,8 +1929,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00492">492</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ae280b3b95b0cdfcf7b81de95c8fe942d"></a>
@@ -2077,8 +1956,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00497">497</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2108,8 +1985,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00502">502</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a2b92b573de73fdf97dad4da8a67d7fc0"></a>
@@ -2137,8 +2012,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00509">509</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2168,8 +2041,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00516">516</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a35b74b32b6a222e048706e6ce8d64118"></a>
@@ -2197,8 +2068,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00524">524</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2228,8 +2097,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00532">532</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="aa9fa575b30dca09e9886722b78415a22"></a>
@@ -2257,8 +2124,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00540">540</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2288,8 +2153,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00547">547</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a0ea4f3d8f1a643726e37825c58d8741f"></a>
@@ -2317,8 +2180,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00554">554</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2348,8 +2209,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00579">579</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a972b47a7e96b95606190afa928ea2db4"></a>
@@ -2377,8 +2236,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00588">588</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2408,8 +2265,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00621">621</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a63a338ef41086b80dba5729ecd1073e5"></a>
@@ -2437,8 +2292,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00657">657</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2468,8 +2321,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00673">673</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a5db6a5413414f6d9bb8a24d1f07bf882"></a>
@@ -2497,8 +2348,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00688">688</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2528,8 +2377,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00698">698</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="aad456ea2ee1b0cb2741b676a34f540a3"></a>
@@ -2539,16 +2386,14 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool testing::gmock_more_actions_test::Unary </td>
+          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> testing::gmock_more_actions_test::Unary </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00091">91</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2561,7 +2406,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void testing::gmock_more_actions_test::VoidBinary </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -2577,8 +2422,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00110">110</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2597,7 +2440,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -2620,8 +2463,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00120">120</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="a061f6d66383a4e793b4d4ca93bd8ca2f"></a>
@@ -2639,8 +2480,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00084">84</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 <a id="ac41b49dc8ab365ccad7b332796421cd4"></a>
@@ -2652,7 +2491,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void testing::gmock_more_actions_test::VoidTernary </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -2664,7 +2503,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
+          <td class="paramtype"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -2674,8 +2513,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00114">114</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2688,14 +2525,12 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void testing::gmock_more_actions_test::VoidUnary </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="warnings_8h.html#a74f207b5aa4ba51c3a2ad59b219a423b">int</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00095">95</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2707,12 +2542,10 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool testing::gmock_more_actions_test::g_done = false</td>
+          <td class="memname"><a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> testing::gmock_more_actions_test::g_done = <a class="el" href="asdl_8h.html#af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c">false</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00083">83</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
 
 </div>
 </div>
@@ -2728,20 +2561,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gmock-more-actions__test_8cc_source.html#l00099">99</a> of file <a class="el" href="gmock-more-actions__test_8cc_source.html">gmock-more-actions_test.cc</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacetesting.html">testing</a></li><li class="navelem"><a class="el" href="namespacetesting_1_1gmock__more__actions__test.html">gmock_more_actions_test</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>

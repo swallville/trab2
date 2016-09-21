@@ -9,13 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_roman.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trab2
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
    <div id="projectbrief">Trabalho para converter numeros romanos para inteiros</div>
   </td>
@@ -53,20 +46,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('functions_func_i.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +64,24 @@ $(document).ready(function(){initNavTree('functions_func_i.html','');});
 &#160;
 
 <h3><a id="index_i"></a>- i -</h3><ul>
+<li>i_am_locking()
+: <a class="el" href="classpip_1_1__vendor_1_1lockfile_1_1linklockfile_1_1_link_lock_file.html#a9a3c175411f68393fbb290950fd373d3">pip._vendor.lockfile.linklockfile.LinkLockFile</a>
+, <a class="el" href="classpip_1_1__vendor_1_1lockfile_1_1_lock_base.html#a7c452bf13d96861405ccc7a518b8ce8a">pip._vendor.lockfile.LockBase</a>
+, <a class="el" href="classpip_1_1__vendor_1_1lockfile_1_1mkdirlockfile_1_1_mkdir_lock_file.html#a6a8d3f54bd4260afd6d3ca495555684b">pip._vendor.lockfile.mkdirlockfile.MkdirLockFile</a>
+, <a class="el" href="classpip_1_1__vendor_1_1lockfile_1_1pidlockfile_1_1_p_i_d_lock_file.html#a961c040c1109995445f14baf70eb0d06">pip._vendor.lockfile.pidlockfile.PIDLockFile</a>
+, <a class="el" href="classpip_1_1__vendor_1_1lockfile_1_1sqlitelockfile_1_1_s_q_lite_lock_file.html#a64b5f77976fa90cbc2d32da992536fa4">pip._vendor.lockfile.sqlitelockfile.SQLiteLockFile</a>
+, <a class="el" href="classpip_1_1__vendor_1_1lockfile_1_1symlinklockfile_1_1_symlink_lock_file.html#aaa2ff1c12c7282d7e36e9d18153a1f00">pip._vendor.lockfile.symlinklockfile.SymlinkLockFile</a>
+</li>
+<li>ignore()
+: <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_combine.html#a52c285338d1dcd3aa52ea876620d1053">pip._vendor.pyparsing.Combine</a>
+, <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_parse_element_enhance.html#a255dfc9812e718bab064c6db0ab3ef56">pip._vendor.pyparsing.ParseElementEnhance</a>
+, <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_parse_expression.html#a04d78cc9a328f47fd25bc79b3a9ad1e3">pip._vendor.pyparsing.ParseExpression</a>
+, <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_parser_element.html#ade9a209a0e02b223cb330dd33b1618a8">pip._vendor.pyparsing.ParserElement</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1pyparsing_1_1_combine.html#a201aab275db8da28248836cd7b06051b">pkg_resources._vendor.pyparsing.Combine</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1pyparsing_1_1_parse_element_enhance.html#a231b3fb1c8e2eaeef3e2945185d8c005">pkg_resources._vendor.pyparsing.ParseElementEnhance</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1pyparsing_1_1_parse_expression.html#a6d254b91e3a765657c4714b48a2246c0">pkg_resources._vendor.pyparsing.ParseExpression</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1pyparsing_1_1_parser_element.html#ac2708a9557b2c3724ceb052e45ef8903">pkg_resources._vendor.pyparsing.ParserElement</a>
+</li>
 <li>IgnoredValue()
 : <a class="el" href="classtesting_1_1internal_1_1_ignored_value.html#a6c72839c07a9da8d027efb253144bd91">testing::internal::IgnoredValue</a>
 </li>
@@ -101,24 +98,193 @@ $(document).ready(function(){initNavTree('functions_func_i.html','');});
 <li>impl()
 : <a class="el" href="classtesting_1_1_polymorphic_matcher.html#ab10e4858d8dc903d3e1e378d53d25882">testing::PolymorphicMatcher&lt; Impl &gt;</a>
 </li>
+<li>inc_convert()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1util_1_1_configurator.html#a77abdca1b0e13cf3597eb67fa42bc238">pip._vendor.distlib.util.Configurator</a>
+</li>
+<li>include()
+: <a class="el" href="classsetuptools_1_1dist_1_1_distribution.html#a2306d43f883208c7a145e26056ee4fc9">setuptools.dist.Distribution</a>
+</li>
+<li>include_by_default()
+: <a class="el" href="classsetuptools_1_1dist_1_1_feature.html#ac3896cc19837e04ab7b51a01368c9c7a">setuptools.dist.Feature</a>
+</li>
+<li>include_feature()
+: <a class="el" href="classsetuptools_1_1dist_1_1_distribution.html#ab1eb484dfaf40518287829723ef5a456">setuptools.dist.Distribution</a>
+</li>
+<li>include_in()
+: <a class="el" href="classsetuptools_1_1dist_1_1_feature.html#a02c6d97eea9aa58d36a60fa33dac0b97">setuptools.dist.Feature</a>
+</li>
 <li>Increment()
 : <a class="el" href="class_counter.html#a0a0ca9fdb580a2aec9a5a62ebed2b5ab">Counter</a>
+</li>
+<li>increment()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1util_1_1_progress.html#a32ab66122aabe4fc821ac7d8e9914242">pip._vendor.distlib.util.Progress</a>
+, <a class="el" href="classpip_1_1__vendor_1_1requests_1_1packages_1_1urllib3_1_1util_1_1retry_1_1_retry.html#ab1ff90dac7bfc4c16714178de9457f8d">pip._vendor.requests.packages.urllib3.util.retry.Retry</a>
 </li>
 <li>IncrementCallCount()
 : <a class="el" href="classtesting_1_1internal_1_1_expectation_base.html#aef1766c39ad6478f9041e0f5c5000532">testing::internal::ExpectationBase</a>
 </li>
+<li>incrementing_sleep()
+: <a class="el" href="classpip_1_1__vendor_1_1retrying_1_1_retrying.html#aa92ec4578a9d3e2f58631ee483e2dd40">pip._vendor.retrying.Retrying</a>
+</li>
+<li>indent_lines()
+: <a class="el" href="classpip_1_1baseparser_1_1_pretty_help_formatter.html#aa47b6da92951a2ffa4903046c3fbd076">pip.baseparser.PrettyHelpFormatter</a>
+</li>
+<li>index()
+: <a class="el" href="class__abcoll_1_1_sequence.html#a45cdcc0bd01a1149a7061429c73e5b8a">_abcoll.Sequence</a>
+</li>
 <li>Infinity()
 : <a class="el" href="classtesting_1_1internal_1_1_floating_point.html#a460027cc19cf01ae8e09cc3796b2b575">testing::internal::FloatingPoint&lt; RawType &gt;</a>
 </li>
+<li>info()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1wheel_1_1_wheel.html#a6748bdb231092617672c163d8de404fe">pip._vendor.distlib.wheel.Wheel</a>
+, <a class="el" href="classpip_1_1__vendor_1_1requests_1_1cookies_1_1_mock_response.html#a6057235d2da9c755a933bb53334868cc">pip._vendor.requests.cookies.MockResponse</a>
+, <a class="el" href="classsetuptools_1_1package__index_1_1_package_index.html#aaf8b3976306c8eaa1f0c8c70c080efc1">setuptools.package_index.PackageIndex</a>
+</li>
+<li>init()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1__backport_1_1tarfile_1_1___b_z2_proxy.html#a293e1a2d3f508f048ed1caf7c6d39e29">pip._vendor.distlib._backport.tarfile._BZ2Proxy</a>
+</li>
+<li>init_per_thread_state()
+: <a class="el" href="classpip_1_1__vendor_1_1requests_1_1auth_1_1_h_t_t_p_digest_auth.html#a9d566117b579fd34e43b19e0d70ee374">pip._vendor.requests.auth.HTTPDigestAuth</a>
+</li>
+<li>init_poolmanager()
+: <a class="el" href="classpip_1_1__vendor_1_1requests_1_1adapters_1_1_h_t_t_p_adapter.html#a40dcd38587377f194d9e1347e8b2e709">pip._vendor.requests.adapters.HTTPAdapter</a>
+</li>
+<li>initialize_options()
+: <a class="el" href="classsetuptools_1_1command_1_1alias_1_1alias.html#a0aeb707cb88f10ec59c302f165d1cfd0">setuptools.command.alias.alias</a>
+, <a class="el" href="classsetuptools_1_1command_1_1bdist__egg_1_1bdist__egg.html#a5e0bf3917774256abc0c560b0aa60666">setuptools.command.bdist_egg.bdist_egg</a>
+, <a class="el" href="classsetuptools_1_1command_1_1build__ext_1_1build__ext.html#a6376896e22a6d2a234af6cb1df5c637f">setuptools.command.build_ext.build_ext</a>
+, <a class="el" href="classsetuptools_1_1command_1_1build__py_1_1build__py.html#ac1dedf42c24e46f783273379898dfc0c">setuptools.command.build_py.build_py</a>
+, <a class="el" href="classsetuptools_1_1command_1_1develop_1_1develop.html#a68852e42237fb4b147f8883ff11003ed">setuptools.command.develop.develop</a>
+, <a class="el" href="classsetuptools_1_1command_1_1easy__install_1_1easy__install.html#a2768394d7d0bb243e7ca4a8c037cc1e0">setuptools.command.easy_install.easy_install</a>
+, <a class="el" href="classsetuptools_1_1command_1_1egg__info_1_1egg__info.html#af10eb67dccf35e8622926eeeaa471232">setuptools.command.egg_info.egg_info</a>
+, <a class="el" href="classsetuptools_1_1command_1_1egg__info_1_1manifest__maker.html#ab7483578356eab12661fbdb5a51983bf">setuptools.command.egg_info.manifest_maker</a>
+, <a class="el" href="classsetuptools_1_1command_1_1install_1_1install.html#ae8b8774d2a59024777c3c2042121a0a6">setuptools.command.install.install</a>
+, <a class="el" href="classsetuptools_1_1command_1_1install__egg__info_1_1install__egg__info.html#a5ab5aa08ad756bca1e88696028a02193">setuptools.command.install_egg_info.install_egg_info</a>
+, <a class="el" href="classsetuptools_1_1command_1_1install__scripts_1_1install__scripts.html#aa30384b8a35469d73e4da8b343f338a5">setuptools.command.install_scripts.install_scripts</a>
+, <a class="el" href="classsetuptools_1_1command_1_1rotate_1_1rotate.html#a5ec8c4fb43507418406dabbc1ccba524">setuptools.command.rotate.rotate</a>
+, <a class="el" href="classsetuptools_1_1command_1_1sdist_1_1sdist.html#a96d37cc74ac618035e3ffb7bbaf99c66">setuptools.command.sdist.sdist</a>
+, <a class="el" href="classsetuptools_1_1command_1_1setopt_1_1option__base.html#a6a84366f824dca28ccda2b6c4dfa13fd">setuptools.command.setopt.option_base</a>
+, <a class="el" href="classsetuptools_1_1command_1_1setopt_1_1setopt.html#af8e183abb2cbd9fcba068aacc26bc559">setuptools.command.setopt.setopt</a>
+, <a class="el" href="classsetuptools_1_1command_1_1test_1_1test.html#a337f4e04623d21e3cf482973c4c3a5ea">setuptools.command.test.test</a>
+, <a class="el" href="classsetuptools_1_1command_1_1upload__docs_1_1upload__docs.html#a2f63bded4d91b7eb5c9dc81948ebf223">setuptools.command.upload_docs.upload_docs</a>
+, <a class="el" href="classwheel_1_1bdist__wheel_1_1bdist__wheel.html#ac2f0264d9e3c98181d9aa9e87e45676f">wheel.bdist_wheel.bdist_wheel</a>
+</li>
+<li>inlineLiteralsUsing()
+: <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_parser_element.html#abf245d50cf0b9de45b5453647caa1b71">pip._vendor.pyparsing.ParserElement</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1pyparsing_1_1_parser_element.html#a0cc7c1046ec15301a82d135bad3190ba">pkg_resources._vendor.pyparsing.ParserElement</a>
+</li>
 <li>InSequence()
 : <a class="el" href="classtesting_1_1_in_sequence.html#ac40a4ac3e4f26e088ebc09e543514b6b">testing::InSequence</a>
-, <a class="el" href="classtesting_1_1internal_1_1_typed_expectation.html#aa60bae1cf536651dc5efcd8110bea4fd">testing::internal::TypedExpectation&lt; F &gt;</a>
+, <a class="el" href="classtesting_1_1internal_1_1_typed_expectation.html#ac0f45c73e3f816796f6c5dea2dc70131">testing::internal::TypedExpectation&lt; F &gt;</a>
+</li>
+<li>insert()
+: <a class="el" href="class__abcoll_1_1_mutable_sequence.html#a01d8e81c054931c6bc6160a6de51b19e">_abcoll.MutableSequence</a>
+, <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_parse_results.html#ac1af53822eb92b36a8289d91ab77240f">pip._vendor.pyparsing.ParseResults</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1pyparsing_1_1_parse_results.html#a15ad117e9b3bda325f66d4fbb68a47f6">pkg_resources._vendor.pyparsing.ParseResults</a>
+, <a class="el" href="classsre__parse_1_1_sub_pattern.html#a4290945a26ebeedef9147adc22c4f260">sre_parse.SubPattern</a>
+</li>
+<li>insert_on()
+: <a class="el" href="classpip_1_1__vendor_1_1pkg__resources_1_1_distribution.html#aa808bc24580f0d7069eaaabaecf74b47">pip._vendor.pkg_resources.Distribution</a>
+, <a class="el" href="classpkg__resources_1_1_distribution.html#a26864ad682f37623654f162a1d0a4c8b">pkg_resources.Distribution</a>
+</li>
+<li>insert_option_group()
+: <a class="el" href="classpip_1_1baseparser_1_1_custom_option_parser.html#a8ddac9db87b0e94814ef16238bee717f">pip.baseparser.CustomOptionParser</a>
+</li>
+<li>insertBefore()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1treebuilders_1_1__base_1_1_node.html#ab1b8fd995317a0e37586df80762a3392">pip._vendor.html5lib.treebuilders._base.Node</a>
+</li>
+<li>insertComment()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1treebuilders_1_1__base_1_1_tree_builder.html#a63948dee86065ede37e4fe069f525f88">pip._vendor.html5lib.treebuilders._base.TreeBuilder</a>
+</li>
+<li>insertCommentInitial()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1treebuilders_1_1etree__lxml_1_1_tree_builder.html#af6a17d25eb06e78ada3a03524aa7530c">pip._vendor.html5lib.treebuilders.etree_lxml.TreeBuilder</a>
+</li>
+<li>insertCommentMain()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1treebuilders_1_1etree__lxml_1_1_tree_builder.html#a0648d9235b353ced1af77c22a58f9d2a">pip._vendor.html5lib.treebuilders.etree_lxml.TreeBuilder</a>
+</li>
+<li>insertDoctype()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1treebuilders_1_1__base_1_1_tree_builder.html#a698bdc709fa3e683dee9a8a2284846d4">pip._vendor.html5lib.treebuilders._base.TreeBuilder</a>
+, <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1treebuilders_1_1etree__lxml_1_1_tree_builder.html#af7b42fa26f5c86b7d99edd7ddf3f0073">pip._vendor.html5lib.treebuilders.etree_lxml.TreeBuilder</a>
+</li>
+<li>insertElementNormal()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1treebuilders_1_1__base_1_1_tree_builder.html#ab48d74a07d0221eb6c11f2ec270eb04c">pip._vendor.html5lib.treebuilders._base.TreeBuilder</a>
+</li>
+<li>insertElementTable()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1treebuilders_1_1__base_1_1_tree_builder.html#a9d0dcf7a26383d552103a5e17d33063a">pip._vendor.html5lib.treebuilders._base.TreeBuilder</a>
+</li>
+<li>insertRoot()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1treebuilders_1_1__base_1_1_tree_builder.html#ac09d8e14929638cc9a376f3962df14de">pip._vendor.html5lib.treebuilders._base.TreeBuilder</a>
+, <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1treebuilders_1_1etree__lxml_1_1_tree_builder.html#a464b9339aa7969c678202e0e445fee38">pip._vendor.html5lib.treebuilders.etree_lxml.TreeBuilder</a>
+</li>
+<li>insertText()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1treebuilders_1_1__base_1_1_node.html#a745aff3acc903b98179e0edce8644ed0">pip._vendor.html5lib.treebuilders._base.Node</a>
+, <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1treebuilders_1_1__base_1_1_tree_builder.html#a724081b544bd8e0c144f9f4bd1db8e80">pip._vendor.html5lib.treebuilders._base.TreeBuilder</a>
+</li>
+<li>install()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1wheel_1_1_wheel.html#a1210bb0d68e586635bc971abb108b4d4">pip._vendor.distlib.wheel.Wheel</a>
+, <a class="el" href="classpip_1_1req_1_1req__install_1_1_install_requirement.html#a600c863cd223b45f735dbcf569a40b8d">pip.req.req_install.InstallRequirement</a>
+, <a class="el" href="classpip_1_1req_1_1req__set_1_1_requirement_set.html#a5fc5856a0f940e3ad65734be3f360e6c">pip.req.req_set.RequirementSet</a>
+, <a class="el" href="classpkg__resources_1_1extern_1_1_vendor_importer.html#a94f50109a30bf7e9e5914c8f0f41b7dc">pkg_resources.extern.VendorImporter</a>
+, <a class="el" href="classwheel_1_1install_1_1_wheel_file.html#a4b7440b5af2fd3ba8bebda4c4cf207b5">wheel.install.WheelFile</a>
+</li>
+<li>install_editable()
+: <a class="el" href="classpip_1_1req_1_1req__install_1_1_install_requirement.html#a6298ddabea4db7f6f4d017f2dc692f4d">pip.req.req_install.InstallRequirement</a>
+</li>
+<li>install_egg()
+: <a class="el" href="classsetuptools_1_1command_1_1easy__install_1_1easy__install.html#a04769d37e9ac958b38314bf794fed23d">setuptools.command.easy_install.easy_install</a>
+</li>
+<li>install_egg_scripts()
+: <a class="el" href="classsetuptools_1_1command_1_1develop_1_1develop.html#abfc03a01676df9150420f8573f159604">setuptools.command.develop.develop</a>
+, <a class="el" href="classsetuptools_1_1command_1_1easy__install_1_1easy__install.html#a9f5abab719e7bae26b43d2f823bc52c0">setuptools.command.easy_install.easy_install</a>
+</li>
+<li>install_eggs()
+: <a class="el" href="classsetuptools_1_1command_1_1easy__install_1_1easy__install.html#afb2b25bc2760450a095011037b5bc5f5">setuptools.command.easy_install.easy_install</a>
+</li>
+<li>install_exe()
+: <a class="el" href="classsetuptools_1_1command_1_1easy__install_1_1easy__install.html#aa6205c453a7e8eefbf75ec80ee93195d">setuptools.command.easy_install.easy_install</a>
+</li>
+<li>install_for_development()
+: <a class="el" href="classsetuptools_1_1command_1_1develop_1_1develop.html#a0334bc03494f1c1b9361789a1f080b36">setuptools.command.develop.develop</a>
+</li>
+<li>install_item()
+: <a class="el" href="classsetuptools_1_1command_1_1easy__install_1_1easy__install.html#a436bb487b6dcb071193cdf4cc5dd9f3b">setuptools.command.easy_install.easy_install</a>
+</li>
+<li>install_namespaces()
+: <a class="el" href="classsetuptools_1_1command_1_1install__egg__info_1_1install__egg__info.html#a25d92bae015670fb7ef82eeb4c88f174">setuptools.command.install_egg_info.install_egg_info</a>
+</li>
+<li>install_options()
+: <a class="el" href="classsetuptools_1_1command_1_1easy__install_1_1_command_spec.html#a039822c09205774f5c43d7dced759696">setuptools.command.easy_install.CommandSpec</a>
+</li>
+<li>install_paths()
+: <a class="el" href="classwheel_1_1install_1_1_wheel_file.html#a7853793663aeb22ed85330942b2405cc">wheel.install.WheelFile</a>
+</li>
+<li>install_script()
+: <a class="el" href="classsetuptools_1_1command_1_1easy__install_1_1easy__install.html#af6e499b6e280b6f2a69e8a3d4d82e7a5">setuptools.command.easy_install.easy_install</a>
+</li>
+<li>install_site_py()
+: <a class="el" href="classsetuptools_1_1command_1_1easy__install_1_1easy__install.html#a2c06c83145c9aac6a5e30074dd2f9e20">setuptools.command.easy_install.easy_install</a>
+</li>
+<li>install_wrapper_scripts()
+: <a class="el" href="classsetuptools_1_1command_1_1develop_1_1develop.html#a5553fb3c32f948489fa06b23012b07c9">setuptools.command.develop.develop</a>
+, <a class="el" href="classsetuptools_1_1command_1_1easy__install_1_1easy__install.html#a35dd854e1ef13388ddc20486d5f7e96d">setuptools.command.easy_install.easy_install</a>
+</li>
+<li>installation_report()
+: <a class="el" href="classsetuptools_1_1command_1_1easy__install_1_1easy__install.html#a401fe17bba1bfa778030054fc488f71b">setuptools.command.easy_install.easy_install</a>
+</li>
+<li>installed_version()
+: <a class="el" href="classpip_1_1req_1_1req__install_1_1_install_requirement.html#ace4df52e4a45d822a0725db688ba9fd0">pip.req.req_install.InstallRequirement</a>
 </li>
 <li>InternalDefaultActionSetAt()
 : <a class="el" href="classtesting_1_1internal_1_1_mock_spec.html#a875c99443da1265604d87429693457f4">testing::internal::MockSpec&lt; F &gt;</a>
 </li>
 <li>InternalExpectedAt()
 : <a class="el" href="classtesting_1_1internal_1_1_mock_spec.html#a503a434637634014b9bb6c5d68fd336c">testing::internal::MockSpec&lt; F &gt;</a>
+</li>
+<li>intersection()
+: <a class="el" href="class__weakrefset_1_1_weak_set.html#a0efcb0affee4117f0b8ad50887bac52e">_weakrefset.WeakSet</a>
+</li>
+<li>intersection_update()
+: <a class="el" href="class__weakrefset_1_1_weak_set.html#a9faf87ecf79a4229c33e5658d2adf5d3">_weakrefset.WeakSet</a>
 </li>
 <li>IntFromString()
 : <a class="el" href="class_interface.html#ab34c8a5fd2236a6b009f86a4e5851b61">Interface</a>
@@ -186,17 +352,193 @@ $(document).ready(function(){initNavTree('functions_func_i.html','');});
 <li>InvokeWithoutArgsAction()
 : <a class="el" href="classtesting_1_1internal_1_1_invoke_without_args_action.html#a05d4006d8ab70e78172bf678b1d15f18">testing::internal::InvokeWithoutArgsAction&lt; FunctionImpl &gt;</a>
 </li>
+<li>ip()
+: <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1_i_pv4_interface.html#adf8fa8cbdab8c40fa2d22d8858842f50">pip._vendor.ipaddress.IPv4Interface</a>
+, <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1_i_pv6_interface.html#aa32a0386abdd6c7b67b71395b2b444b9">pip._vendor.ipaddress.IPv6Interface</a>
+</li>
+<li>ipv4_mapped()
+: <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1_i_pv6_address.html#ace7a1d3c3bac02cf4a1aa57eca0a0498">pip._vendor.ipaddress.IPv6Address</a>
+</li>
+<li>is_compatible()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1wheel_1_1_wheel.html#adda0c357fe3d41a65ae43d8e9e2a5e82">pip._vendor.distlib.wheel.Wheel</a>
+</li>
+<li>is_container()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1resources_1_1_resource_finder.html#a9139d97cf587ad566708374aa5da811f">pip._vendor.distlib.resources.ResourceFinder</a>
+</li>
+<li>is_current()
+: <a class="el" href="classsetuptools_1_1depends_1_1_require.html#aca429ced44bae94f3ff8af55745d60ed">setuptools.depends.Require</a>
+</li>
+<li>is_download()
+: <a class="el" href="classpip_1_1req_1_1req__set_1_1_requirement_set.html#a89dcc99f372cf40c324e70dec48fecfc">pip.req.req_set.RequirementSet</a>
+</li>
+<li>is_exhausted()
+: <a class="el" href="classpip_1_1__vendor_1_1requests_1_1packages_1_1urllib3_1_1util_1_1retry_1_1_retry.html#a193083dbe2dbe5725b809a88a1281b0d">pip._vendor.requests.packages.urllib3.util.retry.Retry</a>
+</li>
+<li>is_field()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1metadata_1_1_legacy_metadata.html#a4fe0f9dd6ff38c8ae53e29ea5348dbec">pip._vendor.distlib.metadata.LegacyMetadata</a>
+</li>
+<li>is_final()
+: <a class="el" href="classpip_1_1__vendor_1_1requests_1_1packages_1_1chardet_1_1hebrewprober_1_1_hebrew_prober.html#a30e53dfcf6e53dcbe8e4dc9d26a3a176">pip._vendor.requests.packages.chardet.hebrewprober.HebrewProber</a>
+</li>
+<li>is_forced_retry()
+: <a class="el" href="classpip_1_1__vendor_1_1requests_1_1packages_1_1urllib3_1_1util_1_1retry_1_1_retry.html#aee2d5ab08b0548966c96dd1534d53762">pip._vendor.requests.packages.urllib3.util.retry.Retry</a>
+</li>
+<li>is_global()
+: <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1___base_network.html#a90413c94ed4487fad0dc9411b65a1ef4">pip._vendor.ipaddress._BaseNetwork</a>
+, <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1_i_pv4_network.html#a7ed8b9b8fff65964ce8b8baba3ea87b4">pip._vendor.ipaddress.IPv4Network</a>
+, <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1_i_pv6_address.html#a4e354ed9ab2574de0dcea6308cad285e">pip._vendor.ipaddress.IPv6Address</a>
+</li>
+<li>is_link_local()
+: <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1___base_network.html#aa40fa12ac78029876d8ac28852d205ba">pip._vendor.ipaddress._BaseNetwork</a>
+, <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1_i_pv4_address.html#afb6c46e3179b1fdd298b30b8a97fb1c0">pip._vendor.ipaddress.IPv4Address</a>
+, <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1_i_pv6_address.html#a4d0b1bf37653a408536d2a4dc6aba91e">pip._vendor.ipaddress.IPv6Address</a>
+</li>
+<li>is_locked()
+: <a class="el" href="classpip_1_1__vendor_1_1lockfile_1_1linklockfile_1_1_link_lock_file.html#a28f4bd2efe161d824c698a1c5295ae8e">pip._vendor.lockfile.linklockfile.LinkLockFile</a>
+, <a class="el" href="classpip_1_1__vendor_1_1lockfile_1_1_lock_base.html#afea6075abaa17b9ed35b8c7bed656dfb">pip._vendor.lockfile.LockBase</a>
+, <a class="el" href="classpip_1_1__vendor_1_1lockfile_1_1mkdirlockfile_1_1_mkdir_lock_file.html#afa7b04022cb00f78e0b4c469b59cd24a">pip._vendor.lockfile.mkdirlockfile.MkdirLockFile</a>
+, <a class="el" href="classpip_1_1__vendor_1_1lockfile_1_1pidlockfile_1_1_p_i_d_lock_file.html#a2de37023e99f6f182a997f3f59ba0590">pip._vendor.lockfile.pidlockfile.PIDLockFile</a>
+, <a class="el" href="classpip_1_1__vendor_1_1lockfile_1_1sqlitelockfile_1_1_s_q_lite_lock_file.html#a1152c9ddadd80f579bcad0e528323955">pip._vendor.lockfile.sqlitelockfile.SQLiteLockFile</a>
+, <a class="el" href="classpip_1_1__vendor_1_1lockfile_1_1symlinklockfile_1_1_symlink_lock_file.html#a0b2310ee1b4ac071c2c7ec9b93c12aa5">pip._vendor.lockfile.symlinklockfile.SymlinkLockFile</a>
+</li>
+<li>is_loopback()
+: <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1___base_network.html#a38669c952ad7e7515565bb6e19bc80ab">pip._vendor.ipaddress._BaseNetwork</a>
+, <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1_i_pv4_address.html#ad3e2da7403ea3d452d2371870b663e3e">pip._vendor.ipaddress.IPv4Address</a>
+, <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1_i_pv6_address.html#ae5c5e186da7d32dfa015e30fd1d710e3">pip._vendor.ipaddress.IPv6Address</a>
+, <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1_i_pv6_interface.html#aee7b53f2e39219657de90c19be5f6f1f">pip._vendor.ipaddress.IPv6Interface</a>
+</li>
+<li>is_mountable()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1wheel_1_1_wheel.html#ac425a3d38c3af5b9a05584d68db70f29">pip._vendor.distlib.wheel.Wheel</a>
+</li>
+<li>is_multi_field()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1metadata_1_1_legacy_metadata.html#ac53bdf681203c4f3881634019dd92271">pip._vendor.distlib.metadata.LegacyMetadata</a>
+</li>
+<li>is_multicast()
+: <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1___base_network.html#ad4cc6a87aeff47c12a5979e1813ada76">pip._vendor.ipaddress._BaseNetwork</a>
+, <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1_i_pv4_address.html#aace557100e4d8caa78b40ea44558df46">pip._vendor.ipaddress.IPv4Address</a>
+, <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1_i_pv6_address.html#ad6ad4673910ee7d0c6041847d22a2134">pip._vendor.ipaddress.IPv6Address</a>
+</li>
 <li>is_nan()
 : <a class="el" href="classtesting_1_1internal_1_1_floating_point.html#a1fc654fd206efa98e480aa1e034f30d5">testing::internal::FloatingPoint&lt; RawType &gt;</a>
+</li>
+<li>is_non_final()
+: <a class="el" href="classpip_1_1__vendor_1_1requests_1_1packages_1_1chardet_1_1hebrewprober_1_1_hebrew_prober.html#af8eaef7b47b29deeff0b0c412931dcfe">pip._vendor.requests.packages.chardet.hebrewprober.HebrewProber</a>
+</li>
+<li>is_optional_end()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1filters_1_1optionaltags_1_1_filter.html#ad6f4a7b17951e591d96c15d7e12a8a9f">pip._vendor.html5lib.filters.optionaltags.Filter</a>
+</li>
+<li>is_optional_start()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1filters_1_1optionaltags_1_1_filter.html#a2253d85e9de72bc1389a04c48ae00106">pip._vendor.html5lib.filters.optionaltags.Filter</a>
+</li>
+<li>is_package()
+: <a class="el" href="classpip_1_1__vendor_1_1six_1_1___six_meta_path_importer.html#ab535787f44cc36decb92c75a354315ff">pip._vendor.six._SixMetaPathImporter</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1six_1_1___six_meta_path_importer.html#ac8e56aa8545e7ad33bc26aac169c2b10">pkg_resources._vendor.six._SixMetaPathImporter</a>
+</li>
+<li>is_permanent_redirect()
+: <a class="el" href="classpip_1_1__vendor_1_1requests_1_1models_1_1_response.html#a5c9dd092d5b5f6dfbb47b76a97077cda">pip._vendor.requests.models.Response</a>
+</li>
+<li>is_pinned()
+: <a class="el" href="classpip_1_1req_1_1req__install_1_1_install_requirement.html#ad27ff0b16cd59e0336bb56e7c7b0137e">pip.req.req_install.InstallRequirement</a>
+</li>
+<li>is_postrelease()
+: <a class="el" href="classpip_1_1__vendor_1_1packaging_1_1version_1_1_legacy_version.html#a1fb443c341afc18ba217c234929ddcc3">pip._vendor.packaging.version.LegacyVersion</a>
+, <a class="el" href="classpip_1_1__vendor_1_1packaging_1_1version_1_1_version.html#ad1a9484ae24ec81597e59092ad48bc63">pip._vendor.packaging.version.Version</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1packaging_1_1version_1_1_legacy_version.html#afb598a951757802d499b33a0d09fea29">pkg_resources._vendor.packaging.version.LegacyVersion</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1packaging_1_1version_1_1_version.html#af9bfffa937f9cf6206e4bd6c183bbb2d">pkg_resources._vendor.packaging.version.Version</a>
+</li>
+<li>is_prerelease()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1version_1_1_legacy_version.html#ae565a43ab0aa34a7097a337ee47fd5e6">pip._vendor.distlib.version.LegacyVersion</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1version_1_1_normalized_version.html#a41c1ad74b3d5c4fbe1c85f8ac760ca94">pip._vendor.distlib.version.NormalizedVersion</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1version_1_1_semantic_version.html#a80d151051adeeb1eed5e5543d6248068">pip._vendor.distlib.version.SemanticVersion</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1version_1_1_version.html#acc07a1192355549844209f2240a7f3af">pip._vendor.distlib.version.Version</a>
+, <a class="el" href="classpip_1_1__vendor_1_1packaging_1_1version_1_1_legacy_version.html#a0da8ea4118325e186966d2f98568baea">pip._vendor.packaging.version.LegacyVersion</a>
+, <a class="el" href="classpip_1_1__vendor_1_1packaging_1_1version_1_1_version.html#a69d62ffb6dd6870444014571d52772a3">pip._vendor.packaging.version.Version</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1packaging_1_1version_1_1_legacy_version.html#af1c08627fa6f1cbfc1d09f2ccb48746a">pkg_resources._vendor.packaging.version.LegacyVersion</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1packaging_1_1version_1_1_version.html#a218307c7e6f5e0d40795560b6ec905d5">pkg_resources._vendor.packaging.version.Version</a>
+</li>
+<li>is_present()
+: <a class="el" href="classsetuptools_1_1depends_1_1_require.html#a69771b02a8e6f6aee88cf1e9dfa0b6d4">setuptools.depends.Require</a>
+</li>
+<li>is_private()
+: <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1___base_network.html#a0bef8652ffe50868723ea64b6694ae09">pip._vendor.ipaddress._BaseNetwork</a>
+, <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1_i_pv4_address.html#ab168462827dfc5da482f6f19592c4564">pip._vendor.ipaddress.IPv4Address</a>
+, <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1_i_pv6_address.html#a006e8b6f061a6aa30a3dea4968b6965b">pip._vendor.ipaddress.IPv6Address</a>
+</li>
+<li>is_redirect()
+: <a class="el" href="classpip_1_1__vendor_1_1requests_1_1models_1_1_response.html#ae28b0ce95db07fc6d0655474a70498b1">pip._vendor.requests.models.Response</a>
+</li>
+<li>is_ref_branch()
+: <a class="el" href="classpip_1_1vcs_1_1git_1_1_git.html#a83bc947cef0a4da006a076189d47930b">pip.vcs.git.Git</a>
+</li>
+<li>is_ref_commit()
+: <a class="el" href="classpip_1_1vcs_1_1git_1_1_git.html#a608b7df61ed6b95a42e6989777e981ca">pip.vcs.git.Git</a>
+</li>
+<li>is_ref_remote()
+: <a class="el" href="classpip_1_1vcs_1_1git_1_1_git.html#afc373f792a7f4f6029298aade14a374c">pip.vcs.git.Git</a>
+</li>
+<li>is_ref_tag()
+: <a class="el" href="classpip_1_1vcs_1_1git_1_1_git.html#aa93078b2632f969cd2df3dec2b31ac41">pip.vcs.git.Git</a>
 </li>
 <li>is_reportable()
 : <a class="el" href="classtesting_1_1_test_info.html#a63e7042028b0b846f4b5a1e5bcffc079">testing::TestInfo</a>
 </li>
+<li>is_reserved()
+: <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1___base_network.html#aac6d26ca8b6c44d4fe889cfba6b5127e">pip._vendor.ipaddress._BaseNetwork</a>
+, <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1_i_pv4_address.html#a6ee7375945e161697fc974e4c37e43b7">pip._vendor.ipaddress.IPv4Address</a>
+, <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1_i_pv6_address.html#aa052a7bee8cc2491d69f8573ab5a3dd0">pip._vendor.ipaddress.IPv6Address</a>
+</li>
 <li>is_retired()
 : <a class="el" href="classtesting_1_1internal_1_1_expectation_base.html#afe539dbc5b29d9635403767a4708c476">testing::internal::ExpectationBase</a>
 </li>
+<li>is_same_host()
+: <a class="el" href="classpip_1_1__vendor_1_1requests_1_1packages_1_1urllib3_1_1connectionpool_1_1_h_t_t_p_connection_pool.html#a922c6ee3a04059cf73228459b852dd7e">pip._vendor.requests.packages.urllib3.connectionpool.HTTPConnectionPool</a>
+</li>
+<li>is_site_local()
+: <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1_i_pv6_address.html#a28b573b57982217c59785773316d6fe1">pip._vendor.ipaddress.IPv6Address</a>
+, <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1_i_pv6_network.html#a5f6dc6727aef3e4b22a90b6a29aeb8d1">pip._vendor.ipaddress.IPv6Network</a>
+</li>
+<li>is_stale()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1resources_1_1_resource_cache.html#ac9c96e1f685c2ffbf21c91a435ba6fae">pip._vendor.distlib.resources.ResourceCache</a>
+</li>
+<li>is_step()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1util_1_1_sequencer.html#afb1d883bb4dcdb6bd19389bbd5d7f4e6">pip._vendor.distlib.util.Sequencer</a>
+</li>
+<li>is_unspecified()
+: <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1___base_network.html#a2c94d2ee478c4578352b9fa0ab017abc">pip._vendor.ipaddress._BaseNetwork</a>
+, <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1_i_pv4_address.html#aa60ed1fa85fe3813ae65c0ebb799ebc1">pip._vendor.ipaddress.IPv4Address</a>
+, <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1_i_pv6_address.html#a19847dfd46b45128e050e32332503521">pip._vendor.ipaddress.IPv6Address</a>
+, <a class="el" href="classpip_1_1__vendor_1_1ipaddress_1_1_i_pv6_interface.html#aa603a17a39780ab1524feceac4c140a0">pip._vendor.ipaddress.IPv6Interface</a>
+</li>
+<li>is_unverifiable()
+: <a class="el" href="classpip_1_1__vendor_1_1requests_1_1cookies_1_1_mock_request.html#a52e39d2166e4abb8b07ce80bb1faf56f">pip._vendor.requests.cookies.MockRequest</a>
+</li>
+<li>is_valid()
+: <a class="el" href="classsetuptools_1_1package__index_1_1_content_checker.html#a981f111f10e8174e1aa6fdc8f7999f26">setuptools.package_index.ContentChecker</a>
+, <a class="el" href="classsetuptools_1_1package__index_1_1_hash_checker.html#a6da0aaa415974e755b5eb11ddadf0826">setuptools.package_index.HashChecker</a>
+</li>
+<li>is_valid_constraint_list()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1version_1_1_version_scheme.html#a1b12704318ce01984b90f7bd8acaaf72">pip._vendor.distlib.version.VersionScheme</a>
+</li>
+<li>is_valid_matcher()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1version_1_1_version_scheme.html#af4865376a14f4f73f77545bdc29a82fc">pip._vendor.distlib.version.VersionScheme</a>
+</li>
+<li>is_valid_version()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1version_1_1_version_scheme.html#ab017e31b1700d18d2b53443572f2d7fb">pip._vendor.distlib.version.VersionScheme</a>
+</li>
+<li>is_wheel()
+: <a class="el" href="classpip_1_1req_1_1req__install_1_1_install_requirement.html#a45e1e6ee63d049103ead51c6a618fead">pip.req.req_install.InstallRequirement</a>
+</li>
+<li>is_writable()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1util_1_1_file_operator.html#a28e0e4507a9ebcc82427dc05c0b722f7">pip._vendor.distlib.util.FileOperator</a>
+</li>
 <li>IsAbsolutePath()
 : <a class="el" href="classtesting_1_1internal_1_1_file_path.html#ae17e5581e7996021e598851fe947df9c">testing::internal::FilePath</a>
+</li>
+<li>isblk()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1__backport_1_1tarfile_1_1_tar_info.html#aef60827bb889f6ee367d1d14b6082d20">pip._vendor.distlib._backport.tarfile.TarInfo</a>
+</li>
+<li>ischr()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1__backport_1_1tarfile_1_1_tar_info.html#aed8325f12054887481182c1b5ddd4383">pip._vendor.distlib._backport.tarfile.TarInfo</a>
 </li>
 <li>IsDeclaration()
 : <a class="el" href="classcpp_1_1ast_1_1_class.html#a4758bfb7c00410575932974e1ed8b7da">cpp.ast.Class</a>
@@ -212,8 +554,18 @@ $(document).ready(function(){initNavTree('functions_func_i.html','');});
 , <a class="el" href="classcpp_1_1ast_1_1_type.html#aedff25dc3736e83388742e55fe29159b">cpp.ast.Type</a>
 , <a class="el" href="classcpp_1_1ast_1_1_typedef.html#a103bf391e665884bfbfd20fc5e6d1a19">cpp.ast.Typedef</a>
 </li>
+<li>isdev()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1__backport_1_1tarfile_1_1_tar_info.html#a76a4fe4591c9dbfc17c25df9d28a5447">pip._vendor.distlib._backport.tarfile.TarInfo</a>
+</li>
+<li>isdir()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1__backport_1_1tarfile_1_1_tar_info.html#aabeda1829335cae040b4bf3f78642374">pip._vendor.distlib._backport.tarfile.TarInfo</a>
+</li>
 <li>IsDirectory()
 : <a class="el" href="classtesting_1_1internal_1_1_file_path.html#a73fc042ad65e85bbecb956eb4603a6f2">testing::internal::FilePath</a>
+</li>
+<li>isdisjoint()
+: <a class="el" href="class__abcoll_1_1_set.html#aa6cf9065b53939aaaf571c6ac436f1fd">_abcoll.Set</a>
+, <a class="el" href="class__weakrefset_1_1_weak_set.html#a89e539705c09cee45dea94f6ddab3d8e">_weakrefset.WeakSet</a>
 </li>
 <li>IsDoDefault()
 : <a class="el" href="classtesting_1_1_action.html#a4468ca2ea5e9f7363271145992d09dba">testing::Action&lt; F &gt;</a>
@@ -229,14 +581,29 @@ $(document).ready(function(){initNavTree('functions_func_i.html','');});
 , <a class="el" href="classcpp_1_1ast_1_1_type.html#a80dce781581c03e550ce51a9a33ca158">cpp.ast.Type</a>
 , <a class="el" href="classcpp_1_1ast_1_1_typedef.html#adee58e4674b049d8e4435b5b6ad8e1d4">cpp.ast.Typedef</a>
 </li>
+<li>isfifo()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1__backport_1_1tarfile_1_1_tar_info.html#a3f67a4d5048c1329ea6b2b1a46b46e7a">pip._vendor.distlib._backport.tarfile.TarInfo</a>
+</li>
+<li>isfile()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1__backport_1_1tarfile_1_1_tar_info.html#a94d5dc390982f7f26eba62f278e90c37">pip._vendor.distlib._backport.tarfile.TarInfo</a>
+</li>
 <li>IsGreaterThan()
 : <a class="el" href="classtesting_1_1gmock__matchers__test_1_1_is_greater_than.html#a6682979fb1ed5511995e575954d07aaf">testing::gmock_matchers_test::IsGreaterThan</a>
+</li>
+<li>isHTMLIntegrationPoint()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1html5parser_1_1_h_t_m_l_parser.html#a9cca5f1a0e9f2be6cf1031b51aa4021a">pip._vendor.html5lib.html5parser.HTMLParser</a>
 </li>
 <li>IsImage()
 : <a class="el" href="classupload_1_1_version_control_system.html#a846889ecd2ef40870b456ddb5b349e02">upload.VersionControlSystem</a>
 </li>
 <li>IsInterested()
 : <a class="el" href="classtesting_1_1_match_result_listener.html#ac34f9771f2ba6128cd6a1348b3aebda3">testing::MatchResultListener</a>
+</li>
+<li>islnk()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1__backport_1_1tarfile_1_1_tar_info.html#a116c32145af021d4b3e933821d823a01">pip._vendor.distlib._backport.tarfile.TarInfo</a>
+</li>
+<li>isMathMLTextIntegrationPoint()
+: <a class="el" href="classpip_1_1__vendor_1_1html5lib_1_1html5parser_1_1_h_t_m_l_parser.html#a742ed787b3b3651f57fb706cf2dc88e4">pip._vendor.html5lib.html5parser.HTMLParser</a>
 </li>
 <li>IsOverSaturated()
 : <a class="el" href="classtesting_1_1internal_1_1_expectation_base.html#a080dab35ecc6c57096f50758a0e8123d">testing::internal::ExpectationBase</a>
@@ -248,6 +615,9 @@ $(document).ready(function(){initNavTree('functions_func_i.html','');});
 : <a class="el" href="class_on_the_fly_prime_table.html#a1d49b78f79e018441289e79d75680067">OnTheFlyPrimeTable</a>
 , <a class="el" href="class_pre_calculated_prime_table.html#a8a9ab7f99b09e5e987933c260e7304cf">PreCalculatedPrimeTable</a>
 , <a class="el" href="class_prime_table.html#a2ab9243364ded0c51541f641b2df362a">PrimeTable</a>
+</li>
+<li>isreg()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1__backport_1_1tarfile_1_1_tar_info.html#a26a1c72c352df248cc43245e2120a071">pip._vendor.distlib._backport.tarfile.TarInfo</a>
 </li>
 <li>IsRootDirectory()
 : <a class="el" href="classtesting_1_1internal_1_1_file_path.html#a0661adf59aec40c40c8e39b888d68142">testing::internal::FilePath</a>
@@ -270,22 +640,95 @@ $(document).ready(function(){initNavTree('functions_func_i.html','');});
 : <a class="el" href="classtesting_1_1_default_value.html#ad49febe2c944cbbd06451ba7d0366ca1">testing::DefaultValue&lt; T &gt;</a>
 , <a class="el" href="classtesting_1_1_default_value_3_01_t_01_6_01_4.html#a3e61547c2f0141cc8004385f3a9c817d">testing::DefaultValue&lt; T &amp; &gt;</a>
 </li>
+<li>issparse()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1__backport_1_1tarfile_1_1_tar_info.html#ab536e47ef073ccce45021d8c06812abc">pip._vendor.distlib._backport.tarfile.TarInfo</a>
+</li>
+<li>issubset()
+: <a class="el" href="class__weakrefset_1_1_weak_set.html#aadd6b0c587a720e6ea820dc523211ac1">_weakrefset.WeakSet</a>
+</li>
+<li>issuperset()
+: <a class="el" href="class__weakrefset_1_1_weak_set.html#a891bccb97c4afc262dc3564bc2f85171">_weakrefset.WeakSet</a>
+</li>
+<li>issym()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1__backport_1_1tarfile_1_1_tar_info.html#a3d4b5bf22bc379ffa07618ac4b759331">pip._vendor.distlib._backport.tarfile.TarInfo</a>
+</li>
 <li>IsTypeOf()
-: <a class="el" href="structtesting_1_1gmock__matchers__test_1_1_type.html#ad0b8d166a185471db49aa9009520d74f">testing::gmock_matchers_test::Type&lt; T &gt;</a>
+: <a class="el" href="structtesting_1_1gmock__matchers__test_1_1_type.html#a5451b10be4ff47bd2dc3741eb70dde59">testing::gmock_matchers_test::Type&lt; T &gt;</a>
 </li>
 <li>it_contains()
 : <a class="el" href="class_add_1_1_addition.html#add003dcc19bd9b55e8d0751724fc4420">Add::Addition</a>
 </li>
+<li>items()
+: <a class="el" href="class__abcoll_1_1_mapping.html#a260d94ff3aae5d54dd9c66c3dcd55cd5">_abcoll.Mapping</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1compat_1_1_ordered_dict.html#a97f6c8e438a9fd542ea4379858e9586a">pip._vendor.distlib.compat.OrderedDict</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1metadata_1_1_legacy_metadata.html#ad75ade4c3fcb143145f1e75dcb2b691d">pip._vendor.distlib.metadata.LegacyMetadata</a>
+, <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_parse_results.html#a5e38a45b5f9f2ab7750435c9cc83e119">pip._vendor.pyparsing.ParseResults</a>
+, <a class="el" href="classpip_1_1__vendor_1_1requests_1_1cookies_1_1_requests_cookie_jar.html#a16943d14660f257b695673e38162c0f7">pip._vendor.requests.cookies.RequestsCookieJar</a>
+, <a class="el" href="classpip_1_1__vendor_1_1requests_1_1packages_1_1urllib3_1_1__collections_1_1_h_t_t_p_header_dict.html#a30fdc105a321b3c98c7d90ba75deb6e1">pip._vendor.requests.packages.urllib3._collections.HTTPHeaderDict</a>
+, <a class="el" href="classpip_1_1__vendor_1_1requests_1_1packages_1_1urllib3_1_1packages_1_1ordered__dict_1_1_ordered_dict.html#afe7691627b4d3132e0b5029d4d0c3d17">pip._vendor.requests.packages.urllib3.packages.ordered_dict.OrderedDict</a>
+, <a class="el" href="classpkg__resources_1_1__vendor_1_1pyparsing_1_1_parse_results.html#aceab5058e66fab6b91ecb9c1c5044797">pkg_resources._vendor.pyparsing.ParseResults</a>
+, <a class="el" href="class_user_dict_1_1_dict_mixin.html#a17b7b683f26147dbe2863555e2277e6a">UserDict.DictMixin</a>
+, <a class="el" href="class_user_dict_1_1_user_dict.html#a2a35aa9a8e553a8efbeade08ecdcda0a">UserDict.UserDict</a>
+</li>
+<li>iter()
+: <a class="el" href="classpip_1_1__vendor_1_1progress_1_1_infinite.html#a8041b71a97f20e9c8a65d89f18a0ee9b">pip._vendor.progress.Infinite</a>
+, <a class="el" href="classpip_1_1__vendor_1_1progress_1_1_progress.html#af58dae555a18100e56380fb679c15eb7">pip._vendor.progress.Progress</a>
+, <a class="el" href="classpip_1_1utils_1_1ui_1_1_download_progress_mixin.html#ac18bfa913c731797bfd37a122abe76f2">pip.utils.ui.DownloadProgressMixin</a>
+</li>
+<li>iter_content()
+: <a class="el" href="classpip_1_1__vendor_1_1requests_1_1models_1_1_response.html#a68fc80b1a8efaf75851183d892434abe">pip._vendor.requests.models.Response</a>
+</li>
+<li>iter_distribution_names()
+: <a class="el" href="classsetuptools_1_1dist_1_1_distribution.html#a598f1821d0e4868b2f1863eae1c2c945">setuptools.dist.Distribution</a>
+</li>
+<li>iter_entry_points()
+: <a class="el" href="classpip_1_1__vendor_1_1pkg__resources_1_1_working_set.html#a27ffb04e9ea00f4300200e68f68f8d86">pip._vendor.pkg_resources.WorkingSet</a>
+, <a class="el" href="classpkg__resources_1_1_working_set.html#a556736951f3aa317fa2d339d64e290ea">pkg_resources.WorkingSet</a>
+</li>
+<li>iter_lines()
+: <a class="el" href="classpip_1_1__vendor_1_1requests_1_1models_1_1_response.html#a2bb713161c3546c24af7635e7d8ff8f3">pip._vendor.requests.models.Response</a>
+</li>
+<li>iterator()
+: <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1resources_1_1_resource_finder.html#ab0f86812727cc97d40911589de5511bc">pip._vendor.distlib.resources.ResourceFinder</a>
+</li>
+<li>iteritems()
+: <a class="el" href="class__abcoll_1_1_mapping.html#ad6b4ff6163e299b4cd4d399a01186d62">_abcoll.Mapping</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1compat_1_1_ordered_dict.html#a3d627da27acea3538e9861ee670fc289">pip._vendor.distlib.compat.OrderedDict</a>
+, <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_parse_results.html#a4a15f8e6739455b5f4eda3f9a0fdaf0e">pip._vendor.pyparsing.ParseResults</a>
+, <a class="el" href="classpip_1_1__vendor_1_1requests_1_1cookies_1_1_requests_cookie_jar.html#a4fdf3181e667a99344da4f476540ad1c">pip._vendor.requests.cookies.RequestsCookieJar</a>
+, <a class="el" href="classpip_1_1__vendor_1_1requests_1_1packages_1_1urllib3_1_1__collections_1_1_h_t_t_p_header_dict.html#ad79b4a4daf1207826efe79ae99cf87cd">pip._vendor.requests.packages.urllib3._collections.HTTPHeaderDict</a>
+, <a class="el" href="classpip_1_1__vendor_1_1requests_1_1packages_1_1urllib3_1_1packages_1_1ordered__dict_1_1_ordered_dict.html#a2389644bd6dc50e4516147322aad4a85">pip._vendor.requests.packages.urllib3.packages.ordered_dict.OrderedDict</a>
+, <a class="el" href="class_user_dict_1_1_dict_mixin.html#a2c35ac1b78fe79651fccb2a5bc68a6b7">UserDict.DictMixin</a>
+, <a class="el" href="class_user_dict_1_1_user_dict.html#ac99d4254d39f08041978700222afb175">UserDict.UserDict</a>
+</li>
+<li>iterkeys()
+: <a class="el" href="class__abcoll_1_1_mapping.html#aa3f7516d28e0aaef0e5239a633d180c0">_abcoll.Mapping</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1compat_1_1_ordered_dict.html#a3b4c1a9145ab532da5e134d099863dfd">pip._vendor.distlib.compat.OrderedDict</a>
+, <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_parse_results.html#aadd7599efa58700a8dfe4c4421aa6795">pip._vendor.pyparsing.ParseResults</a>
+, <a class="el" href="classpip_1_1__vendor_1_1requests_1_1cookies_1_1_requests_cookie_jar.html#a7844c31a11df29b737f6d2899743abaa">pip._vendor.requests.cookies.RequestsCookieJar</a>
+, <a class="el" href="classpip_1_1__vendor_1_1requests_1_1packages_1_1urllib3_1_1packages_1_1ordered__dict_1_1_ordered_dict.html#a0044c0ffa18b35dee0a6e803d2775243">pip._vendor.requests.packages.urllib3.packages.ordered_dict.OrderedDict</a>
+, <a class="el" href="class_user_dict_1_1_dict_mixin.html#a96d16702e7d0a8a2a318efabefe1623c">UserDict.DictMixin</a>
+, <a class="el" href="class_user_dict_1_1_user_dict.html#a0b217ffe281441cfb41b0a89466c511f">UserDict.UserDict</a>
+</li>
+<li>itermerged()
+: <a class="el" href="classpip_1_1__vendor_1_1requests_1_1packages_1_1urllib3_1_1__collections_1_1_h_t_t_p_header_dict.html#aa3a78542a2aec0364264d2d6155e47e5">pip._vendor.requests.packages.urllib3._collections.HTTPHeaderDict</a>
+</li>
+<li>itervalues()
+: <a class="el" href="class__abcoll_1_1_mapping.html#a0b3f540294351a06309b5ea777e3e174">_abcoll.Mapping</a>
+, <a class="el" href="classpip_1_1__vendor_1_1distlib_1_1compat_1_1_ordered_dict.html#aad4371d22b46e3d2483fc544afd0aadf">pip._vendor.distlib.compat.OrderedDict</a>
+, <a class="el" href="classpip_1_1__vendor_1_1pyparsing_1_1_parse_results.html#a2a3d04d032fb362f7d2ab53ffbff1fb6">pip._vendor.pyparsing.ParseResults</a>
+, <a class="el" href="classpip_1_1__vendor_1_1requests_1_1cookies_1_1_requests_cookie_jar.html#a3ba97d46a1ab3f9106097d4e8f918779">pip._vendor.requests.cookies.RequestsCookieJar</a>
+, <a class="el" href="classpip_1_1__vendor_1_1requests_1_1packages_1_1urllib3_1_1packages_1_1ordered__dict_1_1_ordered_dict.html#a2950fd9e68e4816930791561eb033f41">pip._vendor.requests.packages.urllib3.packages.ordered_dict.OrderedDict</a>
+, <a class="el" href="class_user_dict_1_1_dict_mixin.html#a6e6f8daf71015bf5cbbc09b5e3a30d85">UserDict.DictMixin</a>
+, <a class="el" href="class_user_dict_1_1_user_dict.html#ae7cbb3bfcec63ac889ab092a33f2b384">UserDict.UserDict</a>
+</li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
 </body>
 </html>
