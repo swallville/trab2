@@ -12,7 +12,7 @@ Installation
 ---------------
 Faça o checkout do projeto
  
-        $ git@github.com:swallville/trab2.git
+        $ git clone git@github.com:swallville/trab2.git
 
 Instale as bibliotecas de sistema necessárias para usar o programa:
 --------------------------------------------------------------------
